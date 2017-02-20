@@ -3095,7 +3095,7 @@ button,
     left: 16.667%; } }
 
 @media (min-width: 801px) {
-  .push__3, .fallout--left main, .fallout--both main {
+  .push__3, .fallout--left > div, .fallout--both > div {
     left: 25%; } }
 
 @media (min-width: 801px) {
@@ -3770,6 +3770,19 @@ button,
   @media (min-width: 801px) {
     .fallout aside {
       width: 25%; } }
+
+.fallout figure {
+  border: 1px solid #ccc;
+  padding: 10px;
+  clear: both;
+  max-width: 100%; }
+
+.fallout--left figure.left, .fallout--both figure.left {
+  clear: top;
+  float: left;
+  margin-left: -40%;
+  margin-right: 20px;
+  max-width: 80%; }
 
 /**
  * Top-Level Grid
