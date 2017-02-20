@@ -3733,23 +3733,23 @@ button,
     padding-right: 2rem;
     margin-left: -17.5rem; } }
 
-.fallout main {
+.fallout > div {
   min-height: 1px;
   float: left;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   position: relative; }
   @supports (display: flex) {
-    .fallout main {
+    .fallout > div {
       float: none;
       -webkit-box-flex: 0;
           -ms-flex: 0 1 auto;
               flex: 0 1 auto; } }
   @media (max-width: 800px) {
-    .fallout main {
+    .fallout > div {
       width: 100%; } }
   @media (min-width: 801px) {
-    .fallout main {
+    .fallout > div {
       width: 50%; } }
 
 .fallout aside {
