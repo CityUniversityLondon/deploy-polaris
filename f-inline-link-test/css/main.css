@@ -3066,7 +3066,27 @@ p a:active {
   background: #ddd;
   outline: 2px solid #ddd; }
 
+p a:link {
+  color: inherit;
+  border-bottom-width: 0; }
+
+p a:visited {
+  color: inherit; }
+
+p a:focus {
+  background-color: transparent;
+  color: inherit; }
+
+p a:active {
+  background-color: transparent;
+  color: inherit; }
+
 p a:before, p a:after {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  position: relative; }
+
+p a:link p a:before, p a:after {
   opacity: 0;
   -webkit-transition: left 0.2s, right 0.2s, opacity 0.2s;
   transition: left 0.2s, right 0.2s, opacity 0.2s;
@@ -3076,22 +3096,68 @@ p a:before, p a:after {
   font-weight: 700;
   top: -0.3em; }
 
+p a:hover p a:before, p a:after {
+  opacity: 0.6; }
+
+p a:active p a:before, p a:after {
+  display: none; }
+
+p a:focus p a:before, p a:after {
+  display: none; }
+
+p a:link {
+  color: inherit;
+  border-bottom-width: 0; }
+
+p a:visited {
+  color: inherit; }
+
+p a:focus {
+  background-color: transparent;
+  color: inherit; }
+
+p a:active {
+  background-color: transparent;
+  color: inherit; }
+
 p a:before {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  position: relative; }
+
+p a:link p a:before {
   content: '[';
   left: 0; }
 
+p a:hover p a:before {
+  left: -0.3em; }
+
+p a:link {
+  color: inherit;
+  border-bottom-width: 0; }
+
+p a:visited {
+  color: inherit; }
+
+p a:focus {
+  background-color: transparent;
+  color: inherit; }
+
+p a:active {
+  background-color: transparent;
+  color: inherit; }
+
 p a:after {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  position: relative; }
+
+p a:link p a:after {
   content: ']';
   right: 0; }
 
-p a:hover:before, p a:hover:after {
-  opacity: 0.6; }
-
-p a:hover:before {
-  left: -0.25em; }
-
-p a:hover:after {
-  right: -0.25em; }
+p a:hover p a:after {
+  right: -0.3em; }
 
 a.button:link {
   color: inherit;
