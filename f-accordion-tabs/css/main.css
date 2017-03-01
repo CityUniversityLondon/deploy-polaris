@@ -419,7 +419,7 @@ img {
   font-weight: normal;
   font-style: normal; }
 
-.fa {
+.fa, .accordion__heading__icon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -476,10 +476,10 @@ img {
 .fa-pull-right {
   float: right; }
 
-.fa.fa-pull-left {
+.fa.fa-pull-left, .fa-pull-left.accordion__heading__icon {
   margin-right: .3em; }
 
-.fa.fa-pull-right {
+.fa.fa-pull-right, .fa-pull-right.accordion__heading__icon {
   margin-left: .3em; }
 
 /* Deprecated as of 4.4.0 */
@@ -489,10 +489,10 @@ img {
 .pull-left {
   float: left; }
 
-.fa.pull-left {
+.fa.pull-left, .pull-left.accordion__heading__icon {
   margin-right: .3em; }
 
-.fa.pull-right {
+.fa.pull-right, .pull-right.accordion__heading__icon {
   margin-left: .3em; }
 
 .fa-spin {
@@ -877,10 +877,10 @@ img {
 .fa-compress:before {
   content: ""; }
 
-.fa-plus:before {
+.fa-plus:before, .accordion__heading.inactive > a > .accordion__heading__icon:before {
   content: ""; }
 
-.fa-minus:before {
+.fa-minus:before, .accordion__heading.active > a > .accordion__heading__icon:before {
   content: ""; }
 
 .fa-asterisk:before {
@@ -4276,6 +4276,15 @@ button,
     font-size: 1.25em; }
   .tags-list li + li {
     margin-top: 0.5rem; }
+
+.js .accordion__heading.inactive + div {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; }
 
 [class*="highlight--"] {
   text-align: center; }
