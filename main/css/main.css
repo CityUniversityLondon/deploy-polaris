@@ -3527,7 +3527,7 @@ p:empty {
     visibility: hidden;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     p.columns {
         -webkit-column-count: 2;
            -moz-column-count: 2;
@@ -3931,67 +3931,67 @@ button,
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__1 {
         left: 8.333%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__2 {
         left: 16.667%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__3 {
         left: 25%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__4 {
         left: 33.333%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__5 {
         left: 41.667%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__6 {
         left: 50%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__7 {
         left: 58.333%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__8 {
         left: 66.667%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__9 {
         left: 75%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__10 {
         left: 83.333%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .push__11 {
         left: 91.667%;
     }
@@ -4006,67 +4006,67 @@ button,
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__1 {
         right: 8.333%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__2 {
         right: 16.667%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__3 {
         right: 25%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__4 {
         right: 33.333%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__5 {
         right: 41.667%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__6 {
         right: 50%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__7 {
         right: 58.333%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__8 {
         right: 66.667%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__9 {
         right: 75%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__10 {
         right: 83.333%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .pull__11 {
         right: 91.667%;
     }
@@ -4370,7 +4370,7 @@ button,
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
     .container, .fallout {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -4473,7 +4473,7 @@ button,
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .content--fixed {
         width: 100%;
         padding-left: 17.5rem;
@@ -4488,7 +4488,7 @@ button,
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .sidebar--fixed {
         width: 17.5rem;
         float: left;
@@ -4601,6 +4601,17 @@ button,
     }
 }
 
+@media (min-width: 501px) {
+    .fallout--left figure.left,
+    .fallout--left figure.any {
+        max-width: 80%;
+        float: left;
+        clear: top;
+        margin-left: -40%;
+        margin-right: 1rem;
+    }
+}
+
 @media (max-width: 500px) {
     .fallout--left > div {
         left: 0;
@@ -4619,44 +4630,33 @@ button,
     }
 }
 
-@media (min-width: 500px) {
-    .fallout--left figure.left,
-    .fallout--left figure.any {
-        clear: top;
-        float: left;
-        margin-left: -40%;
-        margin-right: 20px;
-        max-width: 80%;
-    }
-}
-
-@media (min-width: 500px) {
+@media (min-width: 501px) {
     .fallout--right figure.right,
     .fallout--right figure.any {
-        clear: top;
-        float: right;
-        margin-right: -40%;
-        margin-left: 20px;
         max-width: 80%;
+        float: right;
+        clear: top;
+        margin-right: -40%;
+        margin-left: 1rem;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     .fallout--both figure.left,
     .fallout--both figure.any {
-        clear: top;
-        float: left;
-        margin-left: -40%;
-        margin-right: 20px;
         max-width: 80%;
+        float: left;
+        clear: top;
+        margin-left: -40%;
+        margin-right: 1rem;
     }
     .fallout--both figure.right,
     .fallout--both figure.any {
-        clear: top;
-        float: right;
-        margin-right: -40%;
-        margin-left: 20px;
         max-width: 80%;
+        float: right;
+        clear: top;
+        margin-right: -40%;
+        margin-left: 1rem;
     }
 }
 
@@ -4688,7 +4688,7 @@ button,
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
     .primary-navigation {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -4816,7 +4816,7 @@ button,
     z-index: 1;
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
     .hallway a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4833,7 +4833,7 @@ button,
     display: block;
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
     .hallway .hallway__image {
         width: 40%;
         height: 100%;
@@ -4848,7 +4848,7 @@ button,
     padding: 0.5em 1em;
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
     .hallway .hallway__content {
         padding-right: 0;
         padding-bottom: 0;
@@ -4860,7 +4860,7 @@ button,
     position: relative;
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
     .hallway .hallway__image + .hallway__content {
         -webkit-box-flex: 1;
             -ms-flex: 1;
@@ -4917,7 +4917,7 @@ button,
     top: -0.5rem;
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 800px) {
     .hallway .image-credit {
         right: auto;
         left: calc(40% + 0.5rem);
@@ -5075,33 +5075,33 @@ button,
 }
 
 .lazy-load {
+    -webkit-transition: opacity 0.2s ease 0;
+    transition: opacity 0.2s ease 0;
+    opacity: 0;
     width: 100%;
     height: 0;
     display: block;
-    opacity: 0;
-    -webkit-transition: opacity 300ms;
-    transition: opacity 300ms;
 }
 
 .lazy-load.loaded {
-    height: auto;
     opacity: 1;
+    height: auto;
 }
 
 .img--16-10 {
-    height: 62.50%;
+    height: 62.5%;
 }
 
 .media--16-10 {
-    padding-top: 62.50%;
+    padding-top: 62.5%;
 }
 
 .img--16-9 {
     height: 56.25%;
 }
 
-.media--16-9,
-.media--vimeo {
+.media--16-9, .media--vimeo,
+.media--youtube {
     padding-top: 56.25%;
 }
 
@@ -5109,8 +5109,7 @@ button,
     height: 75%;
 }
 
-.media--4-3,
-.media--speackerdeck {
+.media--4-3, .media--speackerdeck {
     padding-top: 75%;
 }
 
