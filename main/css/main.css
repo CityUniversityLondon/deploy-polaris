@@ -3430,8 +3430,8 @@ body {
 }
 
 html {
-    font-size: 18px;
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -3461,6 +3461,8 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Meta Sans", Arial, Helvetica, sans-serif;
+    font-display: swap;
     width: 100%;
     display: block;
     -webkit-box-flex: 1;
@@ -3468,7 +3470,6 @@ h6 {
             flex: 1 0 auto;
     position: relative;
     margin-bottom: 1.5rem;
-    font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
 
@@ -3628,6 +3629,7 @@ figure figcaption {
 }
 
 figure figcaption {
+    font-family: Georgia, "Times New Roman", Times, serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3639,7 +3641,6 @@ figure figcaption {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 1rem;
-    font-family: Georgia, "Times New Roman", Times, serif;
     line-height: 1.2;
 }
 
@@ -4710,8 +4711,9 @@ button,
 }
 
 .primary-navigation__list > li.has-menu > a:after {
-    content: "\2003\f0d7";
     font-family: "FontAwesome";
+    font-display: swap;
+    content: "\2003\f0d7";
     font-size: 1.25em;
 }
 
@@ -4877,6 +4879,8 @@ button,
 }
 
 .hallway .hallway__content__title:after {
+    font-family: "FontAwesome";
+    font-display: swap;
     content: "\f105";
     color: #222222;
     position: absolute;
@@ -4884,7 +4888,6 @@ button,
     right: 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-family: "FontAwesome";
 }
 
 .hallway .hallway__content__title span {
@@ -4940,8 +4943,9 @@ button,
 }
 
 .widget__list a::before {
-    content: "\f105";
     font-family: "FontAwesome";
+    font-display: swap;
+    content: "\f105";
     position: absolute;
     top: 50%;
     left: 0;
@@ -4987,11 +4991,12 @@ button,
 
 .image-credit .image-credit__button .fa-info-circle,
 .image-credit .image-credit__button .fa-info {
-    color: inherit;
-    font-size: 1.357em;
     font-family: "FontAwesome";
+    font-display: swap;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    color: inherit;
+    font-size: 1.357em;
 }
 
 .image-credit .image-credit__button[aria-pressed="false"] .fa-info-circle {
@@ -5061,12 +5066,13 @@ button,
 }
 
 .tags-list::before {
+    font-family: "FontAwesome";
+    font-display: swap;
     content: "\f0f7";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    font-family: "FontAwesome";
     font-size: 1.25em;
 }
 
