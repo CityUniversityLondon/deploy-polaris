@@ -4700,7 +4700,7 @@ p > a:hover {
 p > a:focus, p > a:active {
     color: #80afd2;
     border: none;
-    outline: 2px dotted #80afd2;
+    outline: 2px dotted #1e1e1e;
     background-color: transparent;
 }
 
