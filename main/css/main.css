@@ -4694,13 +4694,14 @@ p > a:visited {
 
 p > a:hover {
     color: #2b8cc4;
-    border-bottom: 2px solid #2b8cc4;
+    border-bottom: 1px solid #2b8cc4;
 }
 
 p > a:focus, p > a:active {
-    color: #669ec9;
-    border-bottom: 2px solid #669ec9;
-    background: none;
+    color: #80afd2;
+    border: none;
+    outline: 2px dotted #80afd2;
+    background-color: transparent;
 }
 
 .primary-navigation {
