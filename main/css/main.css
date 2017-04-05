@@ -5165,3 +5165,21 @@ p > a:active {
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
+
+a.embedded-video {
+    display: block;
+}
+
+.embedded-video___wp iframe {
+    display: block;
+}
+
+.embedded-video___wp--ytloading {
+    position: relative;
+}
+
+.embedded-video___wp--ytloading .embedded-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
