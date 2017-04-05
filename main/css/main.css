@@ -3434,7 +3434,7 @@ html {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.375;
 }
 
 /**
@@ -3475,46 +3475,47 @@ h6 {
 h1 {
     font-size: 50.5679px;
     font-size: 3.16049rem;
-    line-height: 1.424;
+    line-height: 1.306;
 }
 
 .beta,
 h2 {
     font-size: 37.92593px;
     font-size: 2.37037rem;
-    line-height: 1.266;
+    line-height: 1.161;
 }
 
 .gamma,
 h3 {
     font-size: 28.44444px;
     font-size: 1.77778rem;
-    line-height: 1.688;
+    line-height: 1.547;
 }
 
 .delta,
 h4 {
     font-size: 21.33333px;
     font-size: 1.33333rem;
-    line-height: 1.125;
+    line-height: 1.032;
 }
 
 .epsilon,
 h5 {
     font-size: 16px;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.375;
 }
 
 .zeta,
 h6 {
     font-size: 16px;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.375;
 }
 
 p {
-    margin: 0 0 1.5em;
+    margin: 0 0 1.375em;
+    color: #1e1e1e;
 }
 
 p:last-child {
@@ -3528,13 +3529,36 @@ p:empty {
 
 @media (min-width: 1201px) {
     p.columns {
+        text-align: justify;
         -webkit-column-count: 2;
            -moz-column-count: 2;
                 column-count: 2;
-        -webkit-column-gap: 1rem;
-           -moz-column-gap: 1rem;
-                column-gap: 1rem;
+        -webkit-column-gap: 2em;
+           -moz-column-gap: 2em;
+                column-gap: 2em;
     }
+}
+
+p > a, p > a:link {
+    color: #005ea5;
+    border-bottom: 1px solid #005ea5;
+}
+
+p > a:visited {
+    color: #4c2c92;
+    border-bottom-color: #4c2c92;
+}
+
+p > a:hover, p > a:focus {
+    color: #2b8cc4;
+    border-bottom-color: #2b8cc4;
+}
+
+p > a:active {
+    background-color: transparent;
+    color: #80afd2;
+    border-bottom-width: 2px;
+    border-bottom-color: #80afd2;
 }
 
 ul,
@@ -4671,33 +4695,6 @@ button,
     }
 }
 
-p {
-    line-height: 22px;
-    color: #1e1e1e;
-}
-
-p > a, p > a:link {
-    color: #005ea5;
-    border-bottom: 1px solid #005ea5;
-}
-
-p > a:visited {
-    color: #4c2c92;
-    border-bottom-color: #4c2c92;
-}
-
-p > a:hover, p > a:focus {
-    color: #2b8cc4;
-    border-bottom-color: #2b8cc4;
-}
-
-p > a:active {
-    background-color: transparent;
-    color: #80afd2;
-    border-bottom-width: 2px;
-    border-bottom-color: #80afd2;
-}
-
 .primary-navigation {
     width: 100%;
     margin-left: auto;
@@ -5129,6 +5126,36 @@ p > a:active {
 .lazy-load.loaded {
     opacity: 1;
     height: auto;
+}
+
+/**
+ * Fix `iframe` and `video`
+ */
+iframe,
+video {
+    width: 100%;
+    border: 0;
+    overflow-x: hidden;
+}
+
+.media {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.media embed, .media
+iframe, .media
+object, .media
+video {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
 }
 
 .img--16-10 {
