@@ -5170,15 +5170,15 @@ a.embedded-video {
     display: block;
 }
 
-.embedded-video___wp iframe {
+.embedded-video-wrap iframe {
     display: block;
 }
 
-.embedded-video___wp--ytloading {
+.embedded-video-wrap--ytloading {
     position: relative;
 }
 
-.embedded-video___wp--ytloading .embedded-video {
+.embedded-video-wrap--ytloading .embedded-video {
     position: absolute;
     top: 0;
     left: 0;
