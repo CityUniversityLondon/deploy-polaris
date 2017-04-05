@@ -5186,3 +5186,21 @@ video,
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
+
+a.video-preview {
+    display: block;
+}
+
+.video-preview-wrapper iframe {
+    display: block;
+}
+
+.video-preview-wrapper--loading {
+    position: relative;
+}
+
+.video-preview-wrapper--loading .video-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
