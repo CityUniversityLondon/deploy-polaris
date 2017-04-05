@@ -3440,16 +3440,6 @@ html {
 /**
  * Content Elements
  */
-p,
-ul,
-ol,
-pre,
-table,
-blockquote,
-figure {
-    margin-bottom: 1rem;
-}
-
 /**
  * Heading Elements
  */
@@ -3467,7 +3457,7 @@ h6 {
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 400;
 }
 
@@ -3561,18 +3551,47 @@ p > a:active {
     border-bottom-color: #80afd2;
 }
 
-ul,
-ol {
+/**
+ * Lists
+ */
+ol,
+ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
-ul ul,
-ol ul, ul
-ol,
-ol
-ol {
-    margin-top: 0;
-    margin-bottom: 0;
+ol:not([class]),
+ul:not([class]),
+.default-list {
+    margin-bottom: 1rem;
+}
+
+ol:not([class]) ol:not([class]),
+ul:not([class]) ol:not([class]),
+.default-list ol:not([class]), ol:not([class])
+ul:not([class]),
+ul:not([class])
+ul:not([class]),
+.default-list
+ul:not([class]), ol:not([class])
+.default-list,
+ul:not([class])
+.default-list,
+.default-list
+.default-list {
+    margin-top: 1rem;
+}
+
+ol:not([class])[reversed],
+ol.default-list[reversed] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 }
 
 /**
@@ -3910,6 +3929,52 @@ button,
     display: inline-block;
     padding: 0.5em;
     position: relative;
+}
+
+/**
+ * Top-Level Grid
+ */
+.container, .fallout {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 1200px;
+}
+
+@supports (display: flex) {
+    .container, .fallout {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px) {
+    .container, .fallout {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .container, .fallout {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.container--full {
+    max-width: 100%;
+}
+
+[class*="container"] + [class*="container"] {
+    margin-top: 2rem;
 }
 
 /**
@@ -4356,52 +4421,6 @@ button,
 }
 
 @supports (display: flex) {
-}
-
-/**
- * Top-Level Grid
- */
-.container, .fallout {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    max-width: 1200px;
-}
-
-@supports (display: flex) {
-    .container, .fallout {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-    }
-}
-
-@media (max-width: 500px) {
-    .container, .fallout {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-}
-
-@media (min-width: 501px) {
-    .container, .fallout {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-.container--full {
-    max-width: 100%;
-}
-
-[class*="container"] + [class*="container"] {
-    margin-top: 2rem;
 }
 
 .content, .content--fixed {
