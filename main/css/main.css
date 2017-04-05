@@ -5136,7 +5136,8 @@ video {
 iframe, .media
 object, .media
 video,
-.media .media__video {
+.media .media__video,
+.media .media__placeholder {
     height: 100%;
     position: absolute;
     top: 0;
@@ -5144,6 +5145,10 @@ video,
     bottom: 0;
     left: 0;
     margin-bottom: 0;
+}
+
+.media:not([class*="media--loading"]) .media__placeholder {
+    display: none;
 }
 
 .img--16-10 {
