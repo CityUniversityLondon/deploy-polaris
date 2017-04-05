@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @font-face {
-    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 300;
     src: local("Meta Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Light.woff) format("woff");
@@ -8,7 +7,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 400;
     src: local("Meta Sans Normal"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Normal.woff) format("woff");
@@ -16,7 +14,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 500;
     src: local("Meta Sans Book"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Book.woff) format("woff");
@@ -24,7 +21,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 600;
     src: local("Meta Sans Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Medium.woff) format("woff");
@@ -32,7 +28,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 700;
     src: local("Meta Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Bold.woff) format("woff");
@@ -40,7 +35,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 300;
     src: local("Meta Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-LightIta.woff) format("woff");
@@ -48,7 +42,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 400;
     src: local("Meta Sans Normal Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-NormalIta.woff) format("woff");
@@ -56,7 +49,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 500;
     src: local("Meta Sans Book Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-BookIta.woff) format("woff");
@@ -64,7 +56,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 600;
     src: local("Meta Sans Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-MediumIta.woff) format("woff");
@@ -72,7 +63,6 @@
 }
 
 @font-face {
-    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 700;
     src: local("Meta Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-BoldIta.woff) format("woff");
@@ -80,7 +70,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 100;
     src: local("Roboto Thin"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff) format("woff");
@@ -88,7 +77,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
     src: local("Roboto Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff) format("woff");
@@ -96,7 +84,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     src: local("Roboto Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff) format("woff");
@@ -104,7 +91,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
     src: local("Roboto Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff) format("woff");
@@ -112,7 +98,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     src: local("Roboto Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff) format("woff");
@@ -120,7 +105,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     src: local("Roboto Black"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff) format("woff");
@@ -128,7 +112,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: italic;
     font-weight: 100;
     src: local("Roboto Thin Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff) format("woff");
@@ -136,7 +119,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
     src: local("Roboto Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff) format("woff");
@@ -144,7 +126,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: italic;
     font-weight: 400;
     src: local("Roboto Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff) format("woff");
@@ -152,7 +133,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: italic;
     font-weight: 600;
     src: local("Roboto Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff) format("woff");
@@ -160,7 +140,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: italic;
     font-weight: 700;
     src: local("Roboto Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff) format("woff");
@@ -168,7 +147,6 @@
 }
 
 @font-face {
-    font-family: "Roboto";
     font-style: italic;
     font-weight: 900;
     src: local("Roboto Black Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff) format("woff");
@@ -176,7 +154,6 @@
 }
 
 @font-face {
-    font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
     src: local("PT Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff) format("woff");
@@ -184,7 +161,6 @@
 }
 
 @font-face {
-    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     src: local("PT Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff) format("woff");
@@ -192,7 +168,6 @@
 }
 
 @font-face {
-    font-family: "PT Sans";
     font-style: italic;
     font-weight: 400;
     src: local("PT Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff) format("woff");
@@ -200,7 +175,6 @@
 }
 
 @font-face {
-    font-family: "PT Sans";
     font-style: italic;
     font-weight: 700;
     src: local("PT Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff) format("woff");
@@ -208,7 +182,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
     src: local("Open Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff) format("woff");
@@ -216,7 +189,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     src: local("Open Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff) format("woff");
@@ -224,7 +196,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     src: local("Open Sans Semibold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff) format("woff");
@@ -232,7 +203,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
     src: local("Open Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff) format("woff");
@@ -240,7 +210,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 800;
     src: local("Open Sans Extrabold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff) format("woff");
@@ -248,7 +217,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: italic;
     font-weight: 300;
     src: local("Open Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff) format("woff");
@@ -256,7 +224,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: italic;
     font-weight: 300;
     src: local("Open Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff) format("woff");
@@ -264,7 +231,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: italic;
     font-weight: 600;
     src: local("Open Sans Semibold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff) format("woff");
@@ -272,7 +238,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: italic;
     font-weight: 700;
     src: local("Open Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff) format("woff");
@@ -280,7 +245,6 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
     font-style: italic;
     font-weight: 800;
     src: local("Open Sans Extrabold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff) format("woff");
@@ -3505,7 +3469,6 @@ h6 {
 
 p {
     margin: 0 0 1.375em;
-    color: #1e1e1e;
 }
 
 p:last-child {
@@ -3921,6 +3884,10 @@ a > span:not([class]):not([itemprop]) {
     position: absolute !important;
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+a.media__video {
+    display: block;
 }
 
 button,
@@ -5160,6 +5127,7 @@ video {
 .media {
     width: 100%;
     height: auto;
+    margin-bottom: 1rem;
     position: relative;
     overflow: hidden;
 }
@@ -5167,7 +5135,8 @@ video {
 .media embed, .media
 iframe, .media
 object, .media
-video {
+video,
+.media .media__video {
     height: 100%;
     position: absolute;
     top: 0;
@@ -5189,7 +5158,8 @@ video {
     height: 56.25%;
 }
 
-.media--16-9, .media--vimeo,
+.media--16-9, .media:not([class*="media--"]),
+.media--vimeo,
 .media--youtube {
     padding-top: 56.25%;
 }
@@ -5210,22 +5180,4 @@ video {
     position: absolute !important;
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
-}
-
-a.embedded-video {
-    display: block;
-}
-
-.embedded-video-wrap iframe {
-    display: block;
-}
-
-.embedded-video-wrap--ytloading {
-    position: relative;
-}
-
-.embedded-video-wrap--ytloading .embedded-video {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
