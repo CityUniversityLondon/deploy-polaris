@@ -3761,35 +3761,32 @@ a {
 }
 
 a:link {
-    color: #4c2c92;
-    border-bottom-color: #d0cfcb;
+    color: #005ea5;
+    border-bottom-color: #005ea5;
 }
 
 a:visited {
     color: #4c2c92;
-}
-
-a:hover {
-    border-bottom-style: solid;
     border-bottom-color: #4c2c92;
 }
 
-a:focus, a:active {
-    background-color: #4c2c92;
-    color: #ffffff;
-    border-bottom-color: transparent;
+a:hover, a:focus {
+    color: #2b8cc4;
+    border-bottom-color: #2b8cc4;
 }
 
-.widget__list a:link, .hallway a:link, a.button:link, .widget__list a:visited, .hallway a:visited, a.button:visited, .widget__list a:focus, .hallway a:focus, a.button:focus, .widget__list a:active, .hallway a:active, a.button:active {
-    color: inherit;
+a:active {
+    color: #80afd2;
+    border-bottom-width: 2px;
+    border-bottom-color: #80afd2;
 }
 
-.widget__list a:link, .hallway a:link, a.button:link {
+.widget__list a, .hallway a, a.button {
     border-bottom-width: 0;
 }
 
-.widget__list a:focus, .hallway a:focus, a.button:focus, .widget__list a:active, .hallway a:active, a.button:active {
-    background-color: transparent;
+.widget__list a:link, .hallway a:link, a.button:link, .widget__list a:visited, .hallway a:visited, a.button:visited, .widget__list a:hover, .hallway a:hover, a.button:hover, .widget__list a:focus, .hallway a:focus, a.button:focus, .widget__list a:active, .hallway a:active, a.button:active {
+    color: inherit;
 }
 
 .widget__list a {
@@ -3884,10 +3881,6 @@ a > span:not([class]):not([itemprop]) {
     position: absolute !important;
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
-}
-
-a.media__video {
-    display: block;
 }
 
 button,
