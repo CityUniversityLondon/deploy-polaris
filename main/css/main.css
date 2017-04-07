@@ -3488,28 +3488,6 @@ p:empty {
     }
 }
 
-p > a, p > a:link {
-    color: #005ea5;
-    border-bottom: 1px solid #005ea5;
-}
-
-p > a:visited {
-    color: #4c2c92;
-    border-bottom-color: #4c2c92;
-}
-
-p > a:hover, p > a:focus {
-    color: #2b8cc4;
-    border-bottom-color: #2b8cc4;
-}
-
-p > a:active {
-    background-color: transparent;
-    color: #80afd2;
-    border-bottom-width: 2px;
-    border-bottom-color: #80afd2;
-}
-
 /**
  * Lists
  */
@@ -3616,18 +3594,6 @@ figure {
     margin: 0 0 1rem;
 }
 
-figure > a {
-    display: block;
-    border-bottom-width: 0;
-}
-
-figure > a:link,
-figure > a:visited,
-figure figcaption {
-    color: #ececec;
-    font-style: italic;
-}
-
 figure figcaption {
     font-family: Georgia, "Times New Roman", Times, serif;
     display: -webkit-box;
@@ -3641,6 +3607,7 @@ figure figcaption {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 1rem;
+    font-style: italic;
     line-height: 1.2;
 }
 
@@ -3793,7 +3760,7 @@ a:hover, a:focus {
 }
 
 a:focus {
-    outline: 1px solid #005ea5;
+    outline: 1px dotted #005ea5;
 }
 
 a:active {
@@ -3801,12 +3768,16 @@ a:active {
     border-bottom-color: #80afd2;
 }
 
-a.button {
+figure > a, a.button {
     border-bottom-width: 0;
 }
 
-a.button:link, a.button:visited, a.button:hover, a.button:focus, a.button:active {
+figure > a:link, a.button:link, figure > a:visited, a.button:visited, figure > a:hover, a.button:hover, figure > a:focus, a.button:focus, figure > a:active, a.button:active {
     color: inherit;
+}
+
+figure > a {
+    display: block;
 }
 
 button,
@@ -4643,16 +4614,6 @@ embed, .media
 iframe, .media
 object, .media
 video,
-.media .video-preview,
-.video-preview-wrapper audio,
-.video-preview-wrapper
-embed,
-.video-preview-wrapper
-iframe,
-.video-preview-wrapper
-object,
-.video-preview-wrapper
-video,
 .video-preview-wrapper .video-preview {
     height: 100%;
     position: absolute;
@@ -4660,14 +4621,11 @@ video,
     right: 0;
     bottom: 0;
     left: 0;
+    margin-bottom: 0;
 }
 
 .video-preview {
     margin-bottom: 1rem;
-}
-
-.video-preview-wrapper .video-preview {
-    margin-bottom: 0;
 }
 
 .img--16-10 {
@@ -4704,8 +4662,4 @@ video,
     position: absolute !important;
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
-}
-
-a.video-preview {
-    display: block;
 }
