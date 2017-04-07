@@ -3899,6 +3899,21 @@ button,
 }
 
 /**
+ * Fix `audio`, `iframe`, and `video`
+ */
+audio,
+iframe,
+video {
+    width: 100%;
+    border: 0;
+    overflow-x: hidden;
+}
+
+iframe {
+    contain: strict;
+}
+
+/**
  * Top-Level Grid
  */
 .container, .fallout {
@@ -5114,17 +5129,8 @@ button,
     height: auto;
 }
 
-/**
- * Fix `iframe` and `video`
- */
-iframe,
-video {
-    width: 100%;
-    border: 0;
-    overflow-x: hidden;
-}
-
-.media {
+.media,
+.video-preview-wrapper {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
@@ -5132,23 +5138,36 @@ video {
     overflow: hidden;
 }
 
-.media embed, .media
+.media audio, .media
+embed, .media
 iframe, .media
 object, .media
 video,
-.media .media__video,
-.media .media__placeholder {
+.media .video-preview,
+.video-preview-wrapper audio,
+.video-preview-wrapper
+embed,
+.video-preview-wrapper
+iframe,
+.video-preview-wrapper
+object,
+.video-preview-wrapper
+video,
+.video-preview-wrapper .video-preview {
     height: 100%;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    margin-bottom: 0;
 }
 
-.media:not([class*="media--loading"]) .media__placeholder {
-    display: none;
+.video-preview {
+    margin-bottom: 1rem;
+}
+
+.video-preview-wrapper .video-preview {
+    margin-bottom: 0;
 }
 
 .img--16-10 {
@@ -5164,7 +5183,7 @@ video,
 }
 
 .media--16-9, .media:not([class*="media--"]),
-.media--vimeo,
+.video-preview-wrapper:not([class*="media--"]), .media--vimeo,
 .media--youtube {
     padding-top: 56.25%;
 }
@@ -5189,18 +5208,4 @@ video,
 
 a.video-preview {
     display: block;
-}
-
-.video-preview-wrapper iframe {
-    display: block;
-}
-
-.video-preview-wrapper--loading {
-    position: relative;
-}
-
-.video-preview-wrapper--loading .video-preview {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
