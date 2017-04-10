@@ -1,5 +1,92 @@
 @charset "UTF-8";
+/**
+ * Managing anchors is a difficult process on a website as vast as ours, and
+ * given the great variety in styles our anchors take, it is of the utmost
+ * importance that they be set up properly and with extensibility on the mind.
+ * The current issue we face is that we are not making proper use of the
+ * cascade. New styles for links are introduced in a bespoke manner, and due to
+ * the way these different designs and patterns are communicated, or lack
+ * thereof, we even have instances where the same stylistic goal is being
+ * accomplished in two or more separate instances of CSS. To properly use the
+ * cascade, we need to dissect the variety of different styles we currently
+ * use, figure out any common denominators and determine how each style
+ * branches away from the default element’s styles—exposing how each style
+ * cascade and iterate on the established patterns.
+ *
+ * The biggest challenge in doing this is understanding the scope of the links
+ * and how far-reaching any high-level styles will cascade, and mentally
+ * extrapolating to understand how the styles will be managed and maintained,
+ * and ensuring that every step of the way takes us closer to unity and
+ * simplicity.
+ *
+ *
+ * It is important to make the details of the anchor tag, its states, and its
+ * functionality and known and understood completely:
+ *
+ * :link
+ *   - Applies to any `<a>` tag with a `href` attribute, whether empty or not
+ *   - Persists regardless of other states based on above criteria
+ * :visited
+ *   - Applies to any `<a>` tag with a `href` in the browser history
+ *   - Applies to any `<a>` tag with a target anchor which has been activated
+ *   - Restricted to styling `color`, `background-color`, `border-color` and
+ *     variants, `outline-color`, and `fill` and `stroke` color values for
+ *     security/privacy reasons
+ *   - Similarly to above, checking for these properties with JS will yield
+ *     results as if `:visited` anchors are just `:link` anchors
+ * :hover
+ *   - Applies to any `<a>` tag which the user designates with a pointing
+ *     device but does not necessarily activate it
+ * :focus
+ *   - Applies to any `<a>` tag which has been activated by the user, either
+ *     from selecting with they keyboard or pointing device
+ * :active
+ *   - Applies to any `<a>` tag which is *currently* being activated by the
+ *     user (i.e. mouse button down)
+ *
+ *
+ * Order of states for a link when it is moused over and clicked:
+ *
+ * :link -> :link:hover -> :link:hover:focus -> :link:visited:hover:active
+ *  N/A  ->  Mouse Over ->  Mouse Down       ->  Mouse Up
+ *
+ * For this reason, it’s important to maintain an order of states in the CSS,
+ * easily memorised with the phrase "LoVe HAte":
+ *   - :link
+ *   - :visited
+ *   - :hover
+ *   - :focus
+ *   - :active
+ *
+ *
+ * The only properties which live inside the `:link`, `:visited`, `:hover`,
+ * `:focus`, and `:active` pseudo classes are as follow:
+ *   - background-color
+ *   - color
+ *   - border-bottom-width
+ *   - border-bottom-style
+ *   - border-bottom-color
+ *   - outline
+ *   - text-decoration
+ *
+ *
+ * It is important to take notice of some other key points regarding anchor
+ * states:
+ *   - `:focus` and `:active` states do not automatically trigger `:hover`;
+ *     this means styles that should apply to all three must be declared for
+ *     all three
+ *
+ *
+ * If a link should *not* appear visually-similar to the default anchor styles,
+ * there are a number of properties/values that need to be reset/unset which
+ * cascade and need to be anticipated.
+ *   1. Set the `border-border-width` to `0` (supercedes `border-bottom-color`
+ *      and `border-bottom-style`)
+ *   2. Set the `background-color` to `transparent` for `:focus` and `:active`
+ *      states
+ */
 @font-face {
+    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 300;
     src: local("Meta Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Light.woff) format("woff");
@@ -7,6 +94,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 400;
     src: local("Meta Sans Normal"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Normal.woff) format("woff");
@@ -14,6 +102,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 500;
     src: local("Meta Sans Book"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Book.woff) format("woff");
@@ -21,6 +110,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 600;
     src: local("Meta Sans Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Medium.woff) format("woff");
@@ -28,6 +118,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: normal;
     font-weight: 700;
     src: local("Meta Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Bold.woff) format("woff");
@@ -35,6 +126,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 300;
     src: local("Meta Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-LightIta.woff) format("woff");
@@ -42,6 +134,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 400;
     src: local("Meta Sans Normal Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-NormalIta.woff) format("woff");
@@ -49,6 +142,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 500;
     src: local("Meta Sans Book Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-BookIta.woff) format("woff");
@@ -56,6 +150,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 600;
     src: local("Meta Sans Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-MediumIta.woff) format("woff");
@@ -63,6 +158,7 @@
 }
 
 @font-face {
+    font-family: "Meta Sans";
     font-style: italic;
     font-weight: 700;
     src: local("Meta Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-BoldIta.woff) format("woff");
@@ -70,6 +166,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 100;
     src: local("Roboto Thin"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff) format("woff");
@@ -77,6 +174,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
     src: local("Roboto Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff) format("woff");
@@ -84,6 +182,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     src: local("Roboto Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff) format("woff");
@@ -91,6 +190,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
     src: local("Roboto Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff) format("woff");
@@ -98,6 +198,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     src: local("Roboto Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff) format("woff");
@@ -105,6 +206,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     src: local("Roboto Black"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff) format("woff");
@@ -112,6 +214,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: italic;
     font-weight: 100;
     src: local("Roboto Thin Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff) format("woff");
@@ -119,6 +222,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
     src: local("Roboto Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff) format("woff");
@@ -126,6 +230,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: italic;
     font-weight: 400;
     src: local("Roboto Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff) format("woff");
@@ -133,6 +238,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: italic;
     font-weight: 600;
     src: local("Roboto Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff) format("woff");
@@ -140,6 +246,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: italic;
     font-weight: 700;
     src: local("Roboto Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff) format("woff");
@@ -147,6 +254,7 @@
 }
 
 @font-face {
+    font-family: "Roboto";
     font-style: italic;
     font-weight: 900;
     src: local("Roboto Black Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff) format("woff");
@@ -154,6 +262,7 @@
 }
 
 @font-face {
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
     src: local("PT Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff) format("woff");
@@ -161,6 +270,7 @@
 }
 
 @font-face {
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     src: local("PT Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff) format("woff");
@@ -168,6 +278,7 @@
 }
 
 @font-face {
+    font-family: "PT Sans";
     font-style: italic;
     font-weight: 400;
     src: local("PT Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff) format("woff");
@@ -175,6 +286,7 @@
 }
 
 @font-face {
+    font-family: "PT Sans";
     font-style: italic;
     font-weight: 700;
     src: local("PT Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff) format("woff");
@@ -182,6 +294,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
     src: local("Open Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff) format("woff");
@@ -189,6 +302,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     src: local("Open Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff) format("woff");
@@ -196,6 +310,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     src: local("Open Sans Semibold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff) format("woff");
@@ -203,6 +318,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
     src: local("Open Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff) format("woff");
@@ -210,6 +326,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 800;
     src: local("Open Sans Extrabold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff) format("woff");
@@ -217,6 +334,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: italic;
     font-weight: 300;
     src: local("Open Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff) format("woff");
@@ -224,6 +342,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: italic;
     font-weight: 300;
     src: local("Open Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff) format("woff");
@@ -231,6 +350,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: italic;
     font-weight: 600;
     src: local("Open Sans Semibold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff) format("woff");
@@ -238,6 +358,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: italic;
     font-weight: 700;
     src: local("Open Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff) format("woff");
@@ -245,6 +366,7 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
     font-style: italic;
     font-weight: 800;
     src: local("Open Sans Extrabold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff) format("woff");
@@ -265,7 +387,7 @@
     font-style: normal;
 }
 
-.fa, .accordion__heading__icon {
+.fa, .accordion__heading__icon, .banner__text__breadcrumbs li:not(:first-child) {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -338,11 +460,11 @@
     float: right;
 }
 
-.fa.fa-pull-left, .fa-pull-left.accordion__heading__icon {
+.fa.fa-pull-left, .fa-pull-left.accordion__heading__icon, .banner__text__breadcrumbs li.fa-pull-left:not(:first-child) {
     margin-right: .3em;
 }
 
-.fa.fa-pull-right, .fa-pull-right.accordion__heading__icon {
+.fa.fa-pull-right, .fa-pull-right.accordion__heading__icon, .banner__text__breadcrumbs li.fa-pull-right:not(:first-child) {
     margin-left: .3em;
 }
 
@@ -355,11 +477,11 @@
     float: left;
 }
 
-.fa.pull-left, .pull-left.accordion__heading__icon {
+.fa.pull-left, .pull-left.accordion__heading__icon, .banner__text__breadcrumbs li.pull-left:not(:first-child) {
     margin-right: .3em;
 }
 
-.fa.pull-right, .pull-right.accordion__heading__icon {
+.fa.pull-right, .pull-right.accordion__heading__icon, .banner__text__breadcrumbs li.pull-right:not(:first-child) {
     margin-left: .3em;
 }
 
@@ -788,7 +910,7 @@
     content: "";
 }
 
-.fa-chevron-right:before {
+.fa-chevron-right:before, .banner__text__breadcrumbs li:not(:first-child):before {
     content: "";
 }
 
@@ -3467,10 +3589,6 @@ p {
     margin: 0 0 1.375em;
 }
 
-p:last-child {
-    margin-bottom: 0;
-}
-
 p:empty {
     display: none;
     visibility: hidden;
@@ -3632,7 +3750,7 @@ sub {
 
 /**
  * If you need to add a new link style, modify an existing link style, or
- * extend an existing style, please do so inside _link-types.scss. This is
+ * extend an existing style, please do so at the bottom of this file. This is
  * where all of our anchor and button styles live.
  * Adding, modifying, or extending styles requires you follow process:
  *   1. Establish full set of styles
@@ -3640,102 +3758,6 @@ sub {
  *      Review. A decision will be made on how the new styles will be
  *      implemented.
  *   3. Push your changes and celebrate!
- */
-a > span:not([class]):not([itemprop]) {
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    border: 0 !important;
-    position: absolute !important;
-    overflow: hidden !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-}
-
-/**
- * Managing anchors is a difficult process on a website as vast as ours, and
- * given the great variety in styles our anchors take, it is of the utmost
- * importance that they be set up properly and with extensibility on the mind.
- * The current issue we face is that we are not making proper use of the
- * cascade. New styles for links are introduced in a bespoke manner, and due to
- * the way these different designs and patterns are communicated, or lack
- * thereof, we even have instances where the same stylistic goal is being
- * accomplished in two or more separate instances of CSS. To properly use the
- * cascade, we need to dissect the variety of different styles we currently
- * use, figure out any common denominators and determine how each style
- * branches away from the default element’s styles—exposing how each style
- * cascade and iterate on the established patterns.
- *
- * The biggest challenge in doing this is understanding the scope of the links
- * and how far-reaching any high-level styles will cascade, and mentally
- * extrapolating to understand how the styles will be managed and maintained,
- * and ensuring that every step of the way takes us closer to unity and
- * simplicity.
- *
- *
- * It is important to make the details of the anchor tag, its states, and its
- * functionality and known and understood completely:
- *
- * :link
- *   - Applies to any `<a>` tag with a `href` attribute, whether empty or not
- *   - Persists regardless of other states based on above criteria
- * :visited
- *   - Applies to any `<a>` tag with a `href` in the browser history
- *   - Applies to any `<a>` tag with a target anchor which has been activated
- *   - Restricted to styling `color`, `background-color`, `border-color` and
- *     variants, `outline-color`, and `fill` and `stroke` color values for
- *     security/privacy reasons
- *   - Similarly to above, checking for these properties with JS will yield
- *     results as if `:visited` anchors are just `:link` anchors
- * :hover
- *   - Applies to any `<a>` tag which the user designates with a pointing
- *     device but does not necessarily activate it
- * :focus
- *   - Applies to any `<a>` tag which has been activated by the user, either
- *     from selecting with they keyboard or pointing device
- * :active
- *   - Applies to any `<a>` tag which is *currently* being activated by the
- *     user (i.e. mouse button down)
- *
- *
- * Order of states for a link when it is moused over and clicked:
- *
- * :link -> :link:hover -> :link:hover:focus -> :link:visited:hover:active
- *  N/A  ->  Mouse Over ->  Mouse Down       ->  Mouse Up
- *
- * For this reason, it’s important to maintain an order of states in the CSS,
- * easily memorised with the phrase "LoVe HAte":
- *   - :link
- *   - :visited
- *   - :hover
- *   - :focus
- *   - :active
- *
- *
- * The only properties which live inside the `:link`, `:visited`, `:hover`,
- * `:focus`, and `:active` pseudo classes are as follow:
- *   - background-color
- *   - color
- *   - border-bottom-width
- *   - border-bottom-style
- *   - border-bottom-color
- *   - outline
- *   - text-decoration
- *
- *
- * It is important to take notice of some other key points regarding anchor
- * states:
- *   - `:focus` and `:active` states do not automatically trigger `:hover`;
- *     this means styles that should apply to all three must be declared for
- *     all three
- *
- *
- * If a link should *not* appear visually-similar to the default anchor styles,
- * there are a number of properties/values that need to be reset/unset which
- * cascade and need to be anticipated.
- *   1. Set the `border-border-width` to `0` (supercedes `border-bottom-color`
- *      and `border-bottom-style`)
- *   2. Set the `background-color` to `transparent` for `:focus` and `:active`
- *      states
  */
 a {
     border-bottom-width: 1px;
@@ -3768,16 +3790,48 @@ a:active {
     border-bottom-color: #80afd2;
 }
 
-figure > a, a.button {
-    border-bottom-width: 0;
-}
-
-figure > a:link, a.button:link, figure > a:visited, a.button:visited, figure > a:hover, a.button:hover, figure > a:focus, a.button:focus, figure > a:active, a.button:active {
-    color: inherit;
+a > span:not([class]):not([itemprop]) {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 figure > a {
+    border-bottom-width: 0;
     display: block;
+}
+
+figure > a:link, figure > a:visited, figure > a:hover, figure > a:focus, figure > a:active {
+    color: inherit;
+}
+
+.banner__cta {
+    display: block;
+    border-bottom: none;
+    padding: 20px;
+}
+
+.banner__cta:link, .banner__cta:visited {
+    color: white;
+    background-color: #497226;
+}
+
+.banner__cta:hover, .banner__cta:focus {
+    color: white;
+    background-color: #294015;
+}
+
+a.button {
+    border-bottom-width: 0;
+    display: inline-block;
+}
+
+a.button:link, a.button:visited, a.button:hover, a.button:focus, a.button:active {
+    color: inherit;
 }
 
 button,
@@ -3806,7 +3860,7 @@ iframe {
 /**
  * Top-Level Grid
  */
-.container, .fallout {
+.container, .fallout, .banner {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -3815,7 +3869,7 @@ iframe {
 }
 
 @supports (display: flex) {
-    .container, .fallout {
+    .container, .fallout, .banner {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -3828,14 +3882,14 @@ iframe {
 }
 
 @media (max-width: 500px) {
-    .container, .fallout {
+    .container, .fallout, .banner {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 }
 
 @media (min-width: 501px) {
-    .container, .fallout {
+    .container, .fallout, .banner {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -4609,6 +4663,20 @@ iframe {
     overflow: hidden;
 }
 
+.video-preview-wrapper--loading audio, .video-preview-wrapper--loading
+embed, .video-preview-wrapper--loading
+iframe, .video-preview-wrapper--loading
+object, .video-preview-wrapper--loading
+video {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
 .media audio, .media
 embed, .media
 iframe, .media
@@ -4662,4 +4730,107 @@ video,
     position: absolute !important;
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.banner__text {
+    position: relative;
+}
+
+.banner__text:before {
+    background: #ffffff;
+    position: absolute;
+    margin-top: -100px;
+    padding: 20px;
+    width: 90%;
+    right: 0;
+    height: 100px;
+    content: " ";
+}
+
+.banner__text > div {
+    min-height: 1px;
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports (display: flex) {
+    .banner__text > div {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner__text > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .banner__text > div {
+        width: 66.667%;
+    }
+}
+
+@media (min-width: 801px) {
+    .banner__text > div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner__text > div {
+        left: 0;
+    }
+}
+
+@media (min-width: 501px) {
+    .banner__text > div {
+        left: 33.333%;
+    }
+}
+
+@media (min-width: 801px) {
+    .banner__text > div {
+        left: 25%;
+    }
+}
+
+.banner__text p {
+    color: #555555;
+    font-size: 1.33333rem;
+    font-family: "Meta Sans", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.banner__text__breadcrumbs {
+    position: relative;
+    top: -2em;
+}
+
+.banner__text__breadcrumbs li {
+    display: inline-block;
+}
+
+.banner__text__breadcrumbs li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.banner__text__breadcrumbs li:not(:first-child):before {
+    margin-right: 10px;
+}
+
+.banner__media {
+    position: relative;
+}
+
+.banner__cta {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1;
 }
