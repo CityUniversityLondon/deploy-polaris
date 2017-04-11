@@ -3730,11 +3730,12 @@ figure figcaption {
             align-items: center;
     padding-top: 1rem;
     font-style: italic;
+    font-size: 14px;
     line-height: 1.2;
 }
 
 small {
-    font-size: 0.75rem;
+    font-size: 14px;
 }
 
 sub,
