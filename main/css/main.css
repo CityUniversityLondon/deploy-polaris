@@ -3713,7 +3713,7 @@ figure {
 }
 
 figure figcaption {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
