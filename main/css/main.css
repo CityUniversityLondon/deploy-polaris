@@ -4557,6 +4557,10 @@ iframe {
     }
 }
 
+.fallout figure {
+    clear: both;
+}
+
 .fallout--none aside,
 .fallout--both aside {
     min-height: 1px;
@@ -4597,21 +4601,9 @@ iframe {
     }
 }
 
-@media (min-width: 501px) {
-    .fallout--none figure.left,
-    .fallout--none figure.any,
-    .fallout--left figure.left,
-    .fallout--left figure.any {
-        max-width: 80%;
-        float: left;
-        clear: top;
-        margin-left: -40%;
-        margin-right: 1rem;
-    }
-}
-
 @media (max-width: 500px) {
     .fallout--none > div,
+    .fallout--both > div,
     .fallout--left > div {
         left: 0;
     }
@@ -4619,6 +4611,7 @@ iframe {
 
 @media (min-width: 501px) {
     .fallout--none > div,
+    .fallout--both > div,
     .fallout--left > div {
         left: 33.333%;
     }
@@ -4626,49 +4619,47 @@ iframe {
 
 @media (min-width: 801px) {
     .fallout--none > div,
+    .fallout--both > div,
     .fallout--left > div {
         left: 25%;
     }
 }
 
 @media (min-width: 501px) {
-    .fallout--left figure.left,
-    .fallout--left figure.any {
+    .fallout--both figure.left {
         max-width: 80%;
-        float: left;
-        clear: top;
         margin-left: -40%;
         margin-right: 1rem;
+        float: left;
+    }
+    .fallout--both figure.right {
+        max-width: 80%;
+        margin-right: -40%;
+        margin-left: 1rem;
+        float: right;
+    }
+    .fallout--both figure.both {
+        max-width: 140%;
+        margin-left: -20%;
+        margin-right: -20%;
     }
 }
 
 @media (min-width: 501px) {
-    .fallout--right figure.right,
-    .fallout--right figure.any {
+    .fallout--left figure.left, .fallout--left figure.any {
         max-width: 80%;
-        float: right;
-        clear: top;
-        margin-right: -40%;
-        margin-left: 1rem;
+        margin-left: -40%;
+        margin-right: 1rem;
+        float: left;
     }
 }
 
-@media (min-width: 801px) {
-    .fallout--both figure.left,
-    .fallout--both figure.any {
+@media (min-width: 501px) {
+    .fallout--right figure.right, .fallout--right figure.any {
         max-width: 80%;
-        float: left;
-        clear: top;
-        margin-left: -40%;
-        margin-right: 1rem;
-    }
-    .fallout--both figure.right,
-    .fallout--both figure.any {
-        max-width: 80%;
-        float: right;
-        clear: top;
         margin-right: -40%;
         margin-left: 1rem;
+        float: right;
     }
 }
 
