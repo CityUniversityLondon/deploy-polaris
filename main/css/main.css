@@ -4862,3 +4862,7 @@ video,
     bottom: 2rem;
     z-index: 2;
 }
+
+.banner__cta div + div {
+    margin-top: 1rem;
+}
