@@ -4627,19 +4627,19 @@ iframe {
 }
 
 @media (min-width: 501px) {
-    .fallout--both figure.left {
+    .fallout--both .fallout__left {
         max-width: 80%;
         margin-left: -40%;
         margin-right: 1rem;
         float: left;
     }
-    .fallout--both figure.right {
+    .fallout--both .fallout__right {
         max-width: 80%;
         margin-right: -40%;
         margin-left: 1rem;
         float: right;
     }
-    .fallout--both figure.both {
+    .fallout--both .fallout__both {
         max-width: 140%;
         margin-left: -20%;
         margin-right: -20%;
@@ -4647,7 +4647,7 @@ iframe {
 }
 
 @media (min-width: 501px) {
-    .fallout--left figure.left, .fallout--left figure.any {
+    .fallout--left .fallout__left, .fallout--left .fallout__any {
         max-width: 80%;
         margin-left: -40%;
         margin-right: 1rem;
@@ -4656,7 +4656,7 @@ iframe {
 }
 
 @media (min-width: 501px) {
-    .fallout--right figure.right, .fallout--right figure.any {
+    .fallout--right .fallout__right, .fallout--right .fallout__any {
         max-width: 80%;
         margin-right: -40%;
         margin-left: 1rem;
