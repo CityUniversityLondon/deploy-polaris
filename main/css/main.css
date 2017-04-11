@@ -3751,10 +3751,6 @@ blockquote,
     quotes: "« " " »" "‹ " " ›";
 }
 
-:lang(es) blockquote {
-    quotes: "«" "»" "“" "“";
-}
-
 blockquote p::before {
     content: open-quote;
 }
