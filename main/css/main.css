@@ -3730,6 +3730,49 @@ figure figcaption {
     line-height: 1.2;
 }
 
+/**
+ * Quotes
+ */
+blockquote {
+    hanging-punctuation: first;
+}
+
+blockquote,
+:lang(en) blockquote {
+    quotes: "“" "”" "‘" "’";
+}
+
+:lang(de) blockquote,
+:lang(pl) blockquote {
+    quotes: "„" "“" "‚" "‘";
+}
+
+:lang(fr) blockquote {
+    quotes: "« " " »" "‹ " " ›";
+}
+
+:lang(es) blockquote {
+    quotes: "«" "»" "“" "“";
+}
+
+blockquote p::before {
+    content: open-quote;
+}
+
+blockquote p::after {
+    content: close-quote;
+}
+
+blockquote p:not(:last-of-type)::after {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
 small {
     font-size: 14px;
 }
