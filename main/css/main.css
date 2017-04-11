@@ -3800,6 +3800,15 @@ a > span:not([class]):not([itemprop]) {
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+    border-bottom-width: 2px;
+}
+
 figure > a {
     border-bottom-width: 0;
     display: block;
@@ -3809,19 +3818,41 @@ figure > a:link, figure > a:visited, figure > a:hover, figure > a:focus, figure 
     color: inherit;
 }
 
-.banner__cta {
-    display: block;
-    border-bottom: none;
-    padding: 20px;
+.card {
+    border-bottom-width: 0;
+    display: inline-block;
 }
 
-.banner__cta:link, .banner__cta:visited {
-    color: white;
+.card:link, .card:visited, .card:hover, .card:focus, .card:active {
+    color: inherit;
+}
+
+.card:link, .card:visited {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.card .card__title {
+    color: #005ea5;
+}
+
+.cta {
+    border-bottom-width: 0;
+    display: block;
+    padding: 1rem;
+}
+
+.cta:link, .cta:visited, .cta:hover, .cta:focus, .cta:active {
+    color: inherit;
+}
+
+.cta:link, .cta:visited {
+    color: #ffffff;
     background-color: #497226;
 }
 
-.banner__cta:hover, .banner__cta:focus {
-    color: white;
+.cta:hover, .ctaactive, .cta:focus {
+    color: #ffffff;
     background-color: #294015;
 }
 
@@ -3836,10 +3867,7 @@ a.button:link, a.button:visited, a.button:hover, a.button:focus, a.button:active
 
 button,
 .button {
-    color: #ececec;
-    display: inline-block;
     padding: 0.5em;
-    position: relative;
 }
 
 /**
@@ -4677,6 +4705,10 @@ video {
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
+.video-preview {
+    margin-bottom: 1rem;
+}
+
 .media audio, .media
 embed, .media
 iframe, .media
@@ -4690,10 +4722,6 @@ video,
     bottom: 0;
     left: 0;
     margin-bottom: 0;
-}
-
-.video-preview {
-    margin-bottom: 1rem;
 }
 
 .img--16-10 {
@@ -4737,14 +4765,14 @@ video,
 }
 
 .banner__text:before {
+    content: "";
     background: #ffffff;
-    position: absolute;
-    margin-top: -100px;
-    padding: 20px;
     width: 90%;
+    height: 5rem;
+    position: absolute;
+    bottom: 100%;
     right: 0;
-    height: 100px;
-    content: " ";
+    padding: 1rem;
 }
 
 .banner__text > div {
@@ -4809,7 +4837,7 @@ video,
 
 .banner__text__breadcrumbs {
     position: relative;
-    top: -2em;
+    top: -2rem;
 }
 
 .banner__text__breadcrumbs li {
@@ -4817,11 +4845,11 @@ video,
 }
 
 .banner__text__breadcrumbs li:not(:first-child) {
-    margin-left: 10px;
+    margin-left: 0.5rem;
 }
 
 .banner__text__breadcrumbs li:not(:first-child):before {
-    margin-right: 10px;
+    margin-right: 0.5rem;
 }
 
 .banner__media {
@@ -4830,7 +4858,7 @@ video,
 
 .banner__cta {
     position: absolute;
-    right: 50px;
-    bottom: 50px;
-    z-index: 1;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 2;
 }
