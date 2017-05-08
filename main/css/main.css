@@ -3891,17 +3891,16 @@ a {
 
 a:link {
     color: #005ea5;
-    border-bottom-color: #005ea5;
+    border-bottom-color: currentColor;
 }
 
 a:visited {
     color: #4c2c92;
-    border-bottom-color: #4c2c92;
 }
 
 a:hover, a:focus {
-    color: #2b8cc4;
-    border-bottom-color: #2b8cc4;
+    color: #035898;
+    border-bottom-width: 2px;
 }
 
 a:focus {
@@ -3909,8 +3908,10 @@ a:focus {
 }
 
 a:active {
-    color: #80afd2;
-    border-bottom-color: #80afd2;
+    background-color: #035898;
+    color: #ffffff;
+    border-bottom-width: 2px;
+    border-bottom-color: #035898;
 }
 
 a > span:not([class]):not([itemprop]) {
