@@ -3890,7 +3890,7 @@ a {
 }
 
 a:link {
-    color: #005ea5;
+    color: #2b8cc4;
     border-bottom-color: currentColor;
 }
 
@@ -3899,7 +3899,7 @@ a:visited {
 }
 
 a:hover, a:focus {
-    color: #035898;
+    color: #005ea5;
     border-bottom-width: 2px;
 }
 
@@ -3908,10 +3908,10 @@ a:focus {
 }
 
 a:active {
-    background-color: #035898;
+    background-color: #005ea5;
     color: #ffffff;
     border-bottom-width: 2px;
-    border-bottom-color: #035898;
+    border-bottom-color: #005ea5;
 }
 
 a > span:not([class]):not([itemprop]) {
