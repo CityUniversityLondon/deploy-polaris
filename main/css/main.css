@@ -5154,6 +5154,30 @@ video,
     right: auto;
 }
 
+[data-tooltip] {
+    position: relative;
+    border-bottom: 1px dotted currentColor;
+}
+
+[data-tooltip]::after {
+    -webkit-transition: opacity 0.2s ease 0;
+    transition: opacity 0.2s ease 0;
+    content: attr(data-tooltip);
+    opacity: 0;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    padding: 0.5rem;
+    display: block;
+    border: 1px solid #1e1e1e;
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
