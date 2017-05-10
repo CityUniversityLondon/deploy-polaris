@@ -4881,6 +4881,67 @@ video,
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
+.tabs-header {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.tabs-header li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.tabs-header a {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: #1e1e1e;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-bottom: 4px solid #d0cfcb;
+    position: relative;
+    text-decoration: none;
+}
+
+.tabs-header a::after {
+    -webkit-transition: -webkit-transform 0.4s ease 0;
+    transition: -webkit-transform 0.4s ease 0;
+    transition: transform 0.4s ease 0;
+    transition: transform 0.4s ease 0, -webkit-transform 0.4s ease 0;
+    content: "";
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    -webkit-transform: translateX(-50%) rotateY(90deg);
+            transform: translateX(-50%) rotateY(90deg);
+}
+
+.tabs-header a:hover, .tabs-header a:focus {
+    border-bottom-color: #1e1e1e;
+}
+
+.tabs-header a:hover::after, .tabs-header a:focus::after {
+    -webkit-transform: translateX(-50%) rotateY(0);
+            transform: translateX(-50%) rotateY(0);
+}
+
+.tabs-header a:focus {
+    outline: 1px dotted #1e1e1e;
+}
+
+.tabs-header a:active {
+    background-color: #d0cfcb;
+}
+
+.tabs-header a.selected {
+    background-color: #ececec;
+    border-bottom-color: #1e1e1e;
+}
+
 .banner__text {
     position: relative;
 }
