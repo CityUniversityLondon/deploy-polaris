@@ -5270,7 +5270,7 @@ video,
     position: absolute;
     top: 0;
     height: 100%;
-    right: 0;
+    right: 2px;
 }
 
 .nav-mobile__goto-link span {
@@ -5299,13 +5299,15 @@ video,
     width: 100%;
     height: 100%;
     background: #ffffff;
-    overflow-y: auto;
-    overflow-x: hidden;
     z-index: 1;
 }
 
 .nav-mobile__level {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     top: 0;
     -webkit-transition: left 300ms, right 300ms;
     transition: left 300ms, right 300ms;
