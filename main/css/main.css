@@ -5696,6 +5696,11 @@ video,
 
 .nav-mobile--simple .nav-mobile__level__header {
     position: relative;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .nav-mobile--simple .nav-mobile__overlay {
@@ -5712,10 +5717,6 @@ video,
     background: #ffffff;
     z-index: 1;
     overflow-y: auto;
-}
-
-.nav-mobile--simple .nav-mobile__level {
-    display: none;
 }
 
 .nav-mobile--simple .nav-mobile__level ul:not([class]) {
@@ -5742,16 +5743,14 @@ video,
     left: 100%;
 }
 
-.nav-mobile--simple .nav-mobile__level.open {
-    display: block;
-}
-
-.nav-mobile--simple .nav-mobile__level.last > ul > .nav-mobile__level {
-    display: block;
-}
-
-.nav-mobile--simple .nav-mobile__level.last > ul > .nav-mobile__level .nav-mobile__level__header {
+.nav-mobile--simple .nav-mobile__level.open > .nav-mobile__level__header,
+.nav-mobile--simple .nav-mobile__level.last > ul > .nav-mobile__level > .nav-mobile__level__header {
+    opacity: 1;
+    height: 45px;
     border-bottom: 1px solid #dddddd;
+}
+
+.nav-mobile--simple .nav-mobile__level.last > ul > .nav-mobile__level > .nav-mobile__level__header {
     padding-left: 15px;
 }
 
