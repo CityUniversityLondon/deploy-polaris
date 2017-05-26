@@ -5263,8 +5263,27 @@ video,
     color: inherit;
 }
 
+.nav-mobile--horizontal .nav-mobile__close-link span,
+.nav-mobile--horizontal .nav-mobile__goto-link span {
+    color: #bbbbbb;
+}
+
 .nav-mobile--horizontal .nav-mobile__page-link {
     margin-right: 50px;
+}
+
+.nav-mobile--horizontal .nav-mobile__page-link--t0 span {
+    color: #bbbbbb;
+}
+
+.nav-mobile--horizontal .nav-mobile__page-link--t1 span,
+.nav-mobile--horizontal .nav-mobile__page-link--t2 span {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.nav-mobile--horizontal .nav-mobile__page-link--t2 span {
+    font-weight: 600;
 }
 
 .nav-mobile--horizontal .nav-mobile__close-link,
@@ -5290,9 +5309,14 @@ video,
     left: 0;
 }
 
+.nav-mobile--horizontal .nav-mobile__level__header .nav-mobile__goto-link span {
+    color: white;
+}
+
 .nav-mobile--horizontal .nav-mobile__level__header {
     position: relative;
-    background: #ebebeb;
+    background: #000000;
+    border-bottom: 2px solid #555555;
 }
 
 .nav-mobile--horizontal .nav-mobile__overlay {
@@ -5306,7 +5330,7 @@ video,
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ffffff;
+    background: #000000;
     z-index: 1;
 }
 
@@ -5322,8 +5346,27 @@ video,
 }
 
 .nav-mobile--horizontal .nav-mobile__level li {
-    border-bottom: 1px solid #ebebeb;
     position: relative;
+}
+
+.nav-mobile--horizontal .nav-mobile__level li:after {
+    content: " ";
+    display: block;
+    height: 1px;
+    margin: 0 15px;
+    background-color: #2d2d2d;
+}
+
+.nav-mobile--horizontal .nav-mobile__level li .nav-mobile__goto-link {
+    background: #333333;
+    bottom: 5px;
+    top: 5px;
+    height: auto;
+}
+
+.nav-mobile--horizontal .nav-mobile__level li .nav-mobile__goto-link span {
+    margin-top: -5px;
+    display: block;
 }
 
 .nav-mobile--horizontal .nav-mobile__level.nav-mobile__level--left {
@@ -5368,7 +5411,11 @@ video,
 
 .nav-mobile--vertical .nav-mobile__page-link {
     margin-right: 50px;
+}
+
+.nav-mobile--vertical .nav-mobile__level--l0 > .nav-mobile__level__header > .nav-mobile__page-link {
     margin-left: 50px;
+    text-align: center;
 }
 
 .nav-mobile--vertical .nav-mobile__close-link,
@@ -5391,32 +5438,44 @@ video,
     right: 0;
 }
 
-.nav-mobile--vertical .nav-mobile__level--l0 .nav-mobile__level__header {
-    background: white;
+.nav-mobile--vertical .nav-mobile__level--l0 {
+    background-color: black;
+    color: white;
 }
 
-.nav-mobile--vertical .nav-mobile__level--l1 .nav-mobile__level__header {
-    background: #f6f6f6;
+.nav-mobile--vertical .nav-mobile__level--l1 {
+    background-color: black;
+    color: white;
 }
 
-.nav-mobile--vertical .nav-mobile__level--l2 .nav-mobile__level__header {
-    background: #ededed;
+.nav-mobile--vertical .nav-mobile__level--l2 {
+    margin-left: 15px;
+    background-color: white;
+    color: black;
 }
 
-.nav-mobile--vertical .nav-mobile__level--l3 .nav-mobile__level__header {
-    background: #e4e4e4;
+.nav-mobile--vertical .nav-mobile__level--l3 {
+    margin-left: 15px;
+    background-color: blue;
+    color: white;
 }
 
-.nav-mobile--vertical .nav-mobile__level--l4 .nav-mobile__level__header {
-    background: #dadada;
+.nav-mobile--vertical .nav-mobile__level--l4 {
+    margin-left: 15px;
+    background-color: deeppink;
+    color: white;
 }
 
-.nav-mobile--vertical .nav-mobile__level--l5 .nav-mobile__level__header {
-    background: #d1d1d1;
+.nav-mobile--vertical .nav-mobile__level--l5 {
+    margin-left: 15px;
+    background-color: yellow;
+    color: black;
 }
 
-.nav-mobile--vertical .nav-mobile__level--l6 .nav-mobile__level__header {
-    background: #c8c8c8;
+.nav-mobile--vertical .nav-mobile__level--l6 {
+    margin-left: 15px;
+    background-color: green;
+    color: white;
 }
 
 .nav-mobile--vertical .nav-mobile__level__header {
