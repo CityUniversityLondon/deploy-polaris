@@ -5659,6 +5659,41 @@ video,
     color: black;
 }
 
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l0 {
+    background-color: #222222;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l1 {
+    background-color: #ffffff;
+    color: black;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l2 {
+    background-color: #00a2c2;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l3 {
+    background-color: #c9007d;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l4 {
+    background-color: #ff6500;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l5 {
+    background-color: #87ca00;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l6 {
+    background-color: #cccccc;
+    color: black;
+}
+
 .nav-mobile--simple .nav-mobile__level__header {
     position: relative;
 }
@@ -5716,10 +5751,13 @@ video,
 }
 
 .nav-mobile--simple .nav-mobile__level.last > ul > .nav-mobile__level .nav-mobile__level__header {
-    background-color: #ffffff;
-    color: #000000;
     border-bottom: 1px solid #dddddd;
     padding-left: 15px;
+}
+
+.nav-mobile--simple:not(.nav-mobile--simple--colors) .nav-mobile__level.last > ul > .nav-mobile__level .nav-mobile__level__header {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .anchor-demo-list li {
