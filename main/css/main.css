@@ -5478,6 +5478,46 @@ video,
     color: black;
 }
 
+.nav-mobile--vertical.nav-mobile--vertical--colors .nav-mobile__level--l0 {
+    background-color: #222222;
+    color: white;
+}
+
+.nav-mobile--vertical.nav-mobile--vertical--colors .nav-mobile__level--l1 {
+    background-color: #ffffff;
+    color: black;
+}
+
+.nav-mobile--vertical.nav-mobile--vertical--colors .nav-mobile__level--l2 {
+    margin-left: 15px;
+    background-color: #00a2c2;
+    color: white;
+}
+
+.nav-mobile--vertical.nav-mobile--vertical--colors .nav-mobile__level--l3 {
+    margin-left: 15px;
+    background-color: #c9007d;
+    color: white;
+}
+
+.nav-mobile--vertical.nav-mobile--vertical--colors .nav-mobile__level--l4 {
+    margin-left: 15px;
+    background-color: #ff6500;
+    color: white;
+}
+
+.nav-mobile--vertical.nav-mobile--vertical--colors .nav-mobile__level--l5 {
+    margin-left: 15px;
+    background-color: #87ca00;
+    color: white;
+}
+
+.nav-mobile--vertical.nav-mobile--vertical--colors .nav-mobile__level--l6 {
+    margin-left: 15px;
+    background-color: #cccccc;
+    color: black;
+}
+
 .nav-mobile--vertical .nav-mobile__level__header {
     position: relative;
 }
