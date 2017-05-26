@@ -5724,6 +5724,10 @@ video,
     overflow-y: auto;
 }
 
+.nav-mobile--simple .nav-mobile__level {
+    display: none;
+}
+
 .nav-mobile--simple .nav-mobile__level ul:not([class]) {
     margin: 0;
 }
@@ -5748,12 +5752,17 @@ video,
     left: 100%;
 }
 
-.nav-mobile--simple .nav-mobile__level ul {
-    display: none;
+.nav-mobile--simple .nav-mobile__level.open {
+    display: block;
 }
 
-.nav-mobile--simple .nav-mobile__level.open > ul {
+.nav-mobile--simple .nav-mobile__level.last > ul > .nav-mobile__level {
     display: block;
+}
+
+.nav-mobile--simple .nav-mobile__level.last > ul > .nav-mobile__level .nav-mobile__level__header {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .anchor-demo-list li {
