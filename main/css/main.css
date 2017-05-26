@@ -5570,6 +5570,192 @@ video,
     display: block;
 }
 
+.nav-mobile--simple .nav-mobile__page-link,
+.nav-mobile--simple .nav-mobile__close-link,
+.nav-mobile--simple .nav-mobile__toggle-link {
+    line-height: 1.5em;
+    padding: 10px 15px;
+    border-bottom-width: 0;
+    display: block;
+    border: none;
+    vertical-align: baseline;
+}
+
+.nav-mobile--simple .nav-mobile__page-link:link, .nav-mobile--simple .nav-mobile__page-link:visited, .nav-mobile--simple .nav-mobile__page-link:hover, .nav-mobile--simple .nav-mobile__page-link:focus, .nav-mobile--simple .nav-mobile__page-link:active,
+.nav-mobile--simple .nav-mobile__close-link:link,
+.nav-mobile--simple .nav-mobile__close-link:visited,
+.nav-mobile--simple .nav-mobile__close-link:hover,
+.nav-mobile--simple .nav-mobile__close-link:focus,
+.nav-mobile--simple .nav-mobile__close-link:active,
+.nav-mobile--simple .nav-mobile__toggle-link:link,
+.nav-mobile--simple .nav-mobile__toggle-link:visited,
+.nav-mobile--simple .nav-mobile__toggle-link:hover,
+.nav-mobile--simple .nav-mobile__toggle-link:focus,
+.nav-mobile--simple .nav-mobile__toggle-link:active {
+    color: inherit;
+}
+
+.nav-mobile--simple .nav-mobile__page-link {
+    margin-right: 50px;
+}
+
+.nav-mobile--simple .nav-mobile__level--l0 > .nav-mobile__level__header > .nav-mobile__page-link {
+    margin-left: 50px;
+    text-align: center;
+}
+
+.nav-mobile--simple .nav-mobile__close-link,
+.nav-mobile--simple .nav-mobile__toggle-link {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.nav-mobile--simple .nav-mobile__close-link span,
+.nav-mobile--simple .nav-mobile__toggle-link span {
+    font-size: 1.5em;
+}
+
+.nav-mobile--simple .nav-mobile__close-link {
+    left: 0;
+}
+
+.nav-mobile--simple .nav-mobile__toggle-link {
+    right: 0;
+}
+
+.nav-mobile--simple .nav-mobile__level--l0 {
+    background-color: #0c0c0c;
+    color: white;
+}
+
+.nav-mobile--simple .nav-mobile__level--l1 {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.nav-mobile--simple .nav-mobile__level--l2 {
+    margin-left: 15px;
+    background-color: #4c4c4c;
+    color: white;
+}
+
+.nav-mobile--simple .nav-mobile__level--l3 {
+    margin-left: 15px;
+    background-color: #6c6c6c;
+    color: white;
+}
+
+.nav-mobile--simple .nav-mobile__level--l4 {
+    margin-left: 15px;
+    background-color: #8c8c8c;
+    color: white;
+}
+
+.nav-mobile--simple .nav-mobile__level--l5 {
+    margin-left: 15px;
+    background-color: #acacac;
+    color: black;
+}
+
+.nav-mobile--simple .nav-mobile__level--l6 {
+    margin-left: 15px;
+    background-color: #cccccc;
+    color: black;
+}
+
+.nav-mobile--simple.nav-mobile--vertical--colors .nav-mobile__level--l0 {
+    background-color: #222222;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--vertical--colors .nav-mobile__level--l1 {
+    background-color: #ffffff;
+    color: black;
+}
+
+.nav-mobile--simple.nav-mobile--vertical--colors .nav-mobile__level--l2 {
+    margin-left: 15px;
+    background-color: #00a2c2;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--vertical--colors .nav-mobile__level--l3 {
+    margin-left: 15px;
+    background-color: #c9007d;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--vertical--colors .nav-mobile__level--l4 {
+    margin-left: 15px;
+    background-color: #ff6500;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--vertical--colors .nav-mobile__level--l5 {
+    margin-left: 15px;
+    background-color: #87ca00;
+    color: white;
+}
+
+.nav-mobile--simple.nav-mobile--vertical--colors .nav-mobile__level--l6 {
+    margin-left: 15px;
+    background-color: #cccccc;
+    color: black;
+}
+
+.nav-mobile--simple .nav-mobile__level__header {
+    position: relative;
+}
+
+.nav-mobile--simple .nav-mobile__overlay {
+    display: none;
+}
+
+.nav-mobile--simple.open > .nav-mobile__overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.nav-mobile--simple .nav-mobile__level ul:not([class]) {
+    margin: 0;
+}
+
+.nav-mobile--simple .nav-mobile__level li {
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+
+.nav-mobile--simple .nav-mobile__level.nav-mobile__level--left {
+    right: 100%;
+    left: -100%;
+}
+
+.nav-mobile--simple .nav-mobile__level.nav-mobile__level--center {
+    right: 0;
+    left: 0;
+}
+
+.nav-mobile--simple .nav-mobile__level.nav-mobile__level--right {
+    right: -100%;
+    left: 100%;
+}
+
+.nav-mobile--simple .nav-mobile__level ul {
+    display: none;
+}
+
+.nav-mobile--simple .nav-mobile__level.open > ul {
+    display: block;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
