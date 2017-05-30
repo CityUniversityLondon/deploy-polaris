@@ -5272,18 +5272,14 @@ video,
     margin-right: 50px;
 }
 
-.nav-mobile--horizontal .nav-mobile__page-link--t0 span {
+.nav-mobile--horizontal .nav-mobile__page-link--t0 span,
+.nav-mobile--horizontal .nav-mobile__page-link--t1 span {
     color: #bbbbbb;
 }
 
-.nav-mobile--horizontal .nav-mobile__page-link--t1 span,
 .nav-mobile--horizontal .nav-mobile__page-link--t2 span {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
     color: #ffffff;
-}
-
-.nav-mobile--horizontal .nav-mobile__page-link--t2 span {
-    font-weight: 600;
 }
 
 .nav-mobile--horizontal .nav-mobile__close-link,
@@ -5478,6 +5474,11 @@ video,
     color: black;
 }
 
+.nav-mobile--vertical .nav-mobile__page-link--t2 span {
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+
 .nav-mobile--vertical.nav-mobile--vertical--colors .nav-mobile__level--l0 {
     background-color: #222222;
     color: white;
@@ -5664,9 +5665,17 @@ video,
     color: white;
 }
 
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l0 > .nav-mobile__level__header > .nav-mobile__page-link--t2 {
+    border-bottom-color: white;
+}
+
 .nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l1 {
     background-color: #ffffff;
     color: black;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l1 > .nav-mobile__level__header > .nav-mobile__page-link--t2 {
+    border-bottom-color: black;
 }
 
 .nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l2 {
@@ -5674,9 +5683,17 @@ video,
     color: white;
 }
 
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l2 > .nav-mobile__level__header > .nav-mobile__page-link--t2 {
+    border-bottom-color: white;
+}
+
 .nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l3 {
     background-color: #c9007d;
     color: white;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l3 > .nav-mobile__level__header > .nav-mobile__page-link--t2 {
+    border-bottom-color: white;
 }
 
 .nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l4 {
@@ -5684,14 +5701,30 @@ video,
     color: white;
 }
 
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l4 > .nav-mobile__level__header > .nav-mobile__page-link--t2 {
+    border-bottom-color: white;
+}
+
 .nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l5 {
     background-color: #87ca00;
     color: white;
 }
 
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l5 > .nav-mobile__level__header > .nav-mobile__page-link--t2 {
+    border-bottom-color: white;
+}
+
 .nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l6 {
     background-color: #cccccc;
     color: black;
+}
+
+.nav-mobile--simple.nav-mobile--simple--colors .nav-mobile__level--l6 > .nav-mobile__level__header > .nav-mobile__page-link--t2 {
+    border-bottom-color: black;
+}
+
+.nav-mobile--simple .nav-mobile__page-link--t2 span {
+    border-bottom: 2px solid;
 }
 
 .nav-mobile--simple .nav-mobile__level__header {
@@ -5763,6 +5796,10 @@ video,
 .nav-mobile--simple:not(.nav-mobile--simple--colors) .nav-mobile__level.last > ul > .nav-mobile__level .nav-mobile__level__header {
     background-color: #ffffff;
     color: #000000;
+}
+
+.nav-mobile--simple:not(.nav-mobile--simple--colors) .nav-mobile__level.last > ul > .nav-mobile__level .nav-mobile__level__header > .nav-mobile__page-link--t2 {
+    border-bottom-color: #000000;
 }
 
 .anchor-demo-list li {
