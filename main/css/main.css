@@ -5287,7 +5287,6 @@ video,
     position: absolute;
     top: 0;
     height: 100%;
-    right: 2px;
 }
 
 .nav-mobile--horizontal .nav-mobile__close-link span,
@@ -5295,14 +5294,18 @@ video,
     font-size: 1.5em;
 }
 
+.nav-mobile--horizontal .nav-mobile__close-link {
+    color: white;
+    left: 0;
+}
+
+.nav-mobile--horizontal .nav-mobile__goto-link {
+    right: 2px;
+}
+
 .nav-mobile--horizontal .nav-mobile__level__header .nav-mobile__page-link {
     margin-left: 50px;
     text-align: center;
-}
-
-.nav-mobile--horizontal .nav-mobile__level__header .nav-mobile__goto-link {
-    right: auto;
-    left: 0;
 }
 
 .nav-mobile--horizontal .nav-mobile__level__header .nav-mobile__goto-link span {
@@ -5800,6 +5803,23 @@ video,
 
 .nav-mobile--simple:not(.nav-mobile--simple--colors) .nav-mobile__level.last > ul > .nav-mobile__level .nav-mobile__level__header > .nav-mobile__page-link--t2 {
     border-bottom-color: #000000;
+}
+
+.nav-mobile__toggle {
+    border-bottom-width: 0;
+    display: block;
+    border: none;
+    padding: 10px 15px;
+    background: #000000;
+}
+
+.nav-mobile__toggle:link, .nav-mobile__toggle:visited, .nav-mobile__toggle:hover, .nav-mobile__toggle:focus, .nav-mobile__toggle:active {
+    color: inherit;
+}
+
+.nav-mobile__toggle span {
+    font-size: 23px;
+    color: #ffffff;
 }
 
 .anchor-demo-list li {
