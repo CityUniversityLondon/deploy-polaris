@@ -4958,8 +4958,8 @@ video,
     position: absolute;
     left: 50%;
     top: 100%;
-    -webkit-transform: translateX(-50%) rotateY(90deg);
-            transform: translateX(-50%) rotateY(90deg);
+    -webkit-transform: translateX(-50%) scaleX(0);
+            transform: translateX(-50%) scaleX(0);
 }
 
 .tabs__header a:hover, .tabs__header a:focus {
@@ -4967,8 +4967,8 @@ video,
 }
 
 .tabs__header a:hover::after, .tabs__header a:focus::after {
-    -webkit-transform: translateX(-50%) rotateY(0);
-            transform: translateX(-50%) rotateY(0);
+    -webkit-transform: translateX(-50%) scaleX(1);
+            transform: translateX(-50%) scaleX(1);
 }
 
 .tabs__header a:focus {
