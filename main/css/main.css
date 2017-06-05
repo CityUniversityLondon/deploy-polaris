@@ -4047,12 +4047,12 @@ iframe {
     }
 }
 
-.container--full {
-    max-width: 100%;
+.container + .container, .fallout + .container, .banner + .container, .container + .fallout, .fallout + .fallout, .banner + .fallout, .container + .banner, .fallout + .banner, .banner + .banner {
+    margin-top: 2rem;
 }
 
-[class*="container"] + [class*="container"] {
-    margin-top: 2rem;
+.container--full {
+    max-width: 100%;
 }
 
 /**
