@@ -6176,11 +6176,11 @@ USED IN:
 .nav-mobile--simple .nav-mobile__page-link,
 .nav-mobile--simple .nav-mobile__close-link,
 .nav-mobile--simple .nav-mobile__toggle-link {
-    line-height: 1.5em;
-    padding: 10px 15px;
     border-bottom-width: 0;
     display: block;
     border: none;
+    line-height: 1.5em;
+    padding: 10px 15px;
     vertical-align: baseline;
 }
 
@@ -6333,7 +6333,8 @@ USED IN:
     position: relative;
 }
 
-.nav-mobile--simple .nav-mobile__level__header--tx, .nav-mobile--simple .nav-mobile__level__header--tx a {
+.nav-mobile--simple .nav-mobile__level__header--tx,
+.nav-mobile--simple .nav-mobile__level__header--tx a {
     -webkit-transition: color 0.2s, background-color 0.5s;
     transition: color 0.2s, background-color 0.5s;
     -webkit-transition-delay: 0s;
