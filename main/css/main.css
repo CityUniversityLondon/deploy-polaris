@@ -5525,6 +5525,10 @@ video,
     color: inherit;
 }
 
+.linked-content__menu__item.active {
+    background: #eeeeee;
+}
+
 .linked-content__menu-wrapper,
 .linked-content__menu {
     position: relative;
