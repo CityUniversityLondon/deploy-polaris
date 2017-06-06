@@ -1055,11 +1055,11 @@
     content: "";
 }
 
-.fa-plus:before, .accordion__content__heading.inactive > a > .accordion__content__heading__icon:before {
+.fa-plus:before, .accordion__content__heading.inactive > a > .accordion__content__heading__icon:before, .nav-mobile--vertical .nav-mobile__toggle-link span:before {
     content: "";
 }
 
-.fa-minus:before, .accordion__content__heading.active > a > .accordion__content__heading__icon:before {
+.fa-minus:before, .accordion__content__heading.active > a > .accordion__content__heading__icon:before, .nav-mobile--vertical .nav-mobile__level.open > .nav-mobile__level__header .nav-mobile__toggle-link span:before {
     content: "";
 }
 
@@ -5864,7 +5864,7 @@ USED IN:
 
 .nav-mobile--horizontal .nav-mobile__close-link span,
 .nav-mobile--horizontal .nav-mobile__goto-link span {
-    color: #bbbbbb;
+    color: #ffffff;
 }
 
 .nav-mobile--horizontal .nav-mobile__page-link {
@@ -5873,7 +5873,7 @@ USED IN:
 
 .nav-mobile--horizontal .nav-mobile__page-link--t0 span,
 .nav-mobile--horizontal .nav-mobile__page-link--t1 span {
-    color: #bbbbbb;
+    color: #ffffff;
 }
 
 .nav-mobile--horizontal .nav-mobile__page-link--t2 span {
