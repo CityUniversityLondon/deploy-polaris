@@ -3619,30 +3619,30 @@ h6 {
 
 .alpha,
 h1 {
-    font-size: 50.5679px;
-    font-size: 3.16049rem;
-    line-height: 1.306;
+    font-size: 39.0625px;
+    font-size: 2.44141rem;
+    line-height: 1.127;
 }
 
 .beta,
 h2 {
-    font-size: 37.92593px;
-    font-size: 2.37037rem;
-    line-height: 1.161;
+    font-size: 31.25px;
+    font-size: 1.95312rem;
+    line-height: 1.408;
 }
 
 .gamma,
 h3 {
-    font-size: 28.44444px;
-    font-size: 1.77778rem;
-    line-height: 1.547;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 1.76;
 }
 
 .delta,
 h4 {
-    font-size: 21.33333px;
-    font-size: 1.33333rem;
-    line-height: 1.032;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.1;
 }
 
 .epsilon,
@@ -5801,7 +5801,7 @@ video,
 
 @media (min-width: 801px) {
     .linked-content--top-level-layout .linked-content__menu-wrapper {
-        width: 50%;
+        width: 25%;
     }
 }
 
@@ -5831,7 +5831,7 @@ video,
 
 .banner__text p {
     color: #555555;
-    font-size: 1.33333rem;
+    font-size: 1.25rem;
     font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
