@@ -3972,12 +3972,12 @@ figure > a:link, figure > a:visited, figure > a:hover, figure > a:focus, figure 
 
 .cta:link, .cta:visited {
     color: #ffffff;
-    background-color: #497226;
+    background-color: #ececec;
 }
 
 .cta:hover, .ctaactive, .cta:focus {
     color: #ffffff;
-    background-color: #294015;
+    background-color: #d0cfcb;
 }
 
 a.button {
@@ -4072,7 +4072,6 @@ iframe {
 .grid--thirds--small,
 .grid--halves,
 .banner--text-ctas > div,
-.usp-strip--n2,
 .grid--halves--alternate,
 .grid--halves--small,
 .fallout,
@@ -4106,7 +4105,6 @@ iframe {
     .grid--thirds--small,
     .grid--halves,
     .banner--text-ctas > div,
-    .usp-strip--n2,
     .grid--halves--alternate,
     .grid--halves--small,
     .fallout,
@@ -4141,7 +4139,6 @@ iframe {
     .grid--thirds--small,
     .grid--halves,
     .banner--text-ctas > div,
-    .usp-strip--n2,
     .grid--halves--alternate,
     .grid--halves--small,
     .fallout,
@@ -5176,7 +5173,7 @@ iframe {
 }
 
 .grid--halves > div,
-.grid--halves > li, .banner--text-ctas > div > div, .usp-strip--n2 > div, .banner--text-ctas > div > li, .usp-strip--n2 > li {
+.grid--halves > li, .banner--text-ctas > div > div, .banner--text-ctas > div > li {
     min-height: 1px;
     float: left;
     padding-left: 0.5rem;
@@ -5186,7 +5183,7 @@ iframe {
 
 @supports ((display: -webkit-box) or (display: flex)) {
     .grid--halves > div,
-    .grid--halves > li, .banner--text-ctas > div > div, .usp-strip--n2 > div, .banner--text-ctas > div > li, .usp-strip--n2 > li {
+    .grid--halves > li, .banner--text-ctas > div > div, .banner--text-ctas > div > li {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -5196,14 +5193,14 @@ iframe {
 
 @media (max-width: 800px) {
     .grid--halves > div,
-    .grid--halves > li, .banner--text-ctas > div > div, .usp-strip--n2 > div, .banner--text-ctas > div > li, .usp-strip--n2 > li {
+    .grid--halves > li, .banner--text-ctas > div > div, .banner--text-ctas > div > li {
         width: 100%;
     }
 }
 
 @media (min-width: 801px) {
     .grid--halves > div,
-    .grid--halves > li, .banner--text-ctas > div > div, .usp-strip--n2 > div, .banner--text-ctas > div > li, .usp-strip--n2 > li {
+    .grid--halves > li, .banner--text-ctas > div > div, .banner--text-ctas > div > li {
         width: 50%;
     }
 }
@@ -5838,6 +5835,12 @@ video,
     position: absolute !important;
     overflow: hidden !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+/** Layout code: manages content width for tab-menu and tab-content */
+.tabs__menu {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .tabs--inline .tabs__menu__item {
@@ -6989,8 +6992,73 @@ USED IN:
     color: #ffffff;
 }
 
+.usp-strip {
+    margin-top: 4rem;
+}
+
+.usp-strip--n2 > div {
+    min-height: 1px;
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .usp-strip--n2 > div {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .usp-strip--n2 > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .usp-strip--n2 > div {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 500px) {
+    .usp-strip--n2 > div {
+        left: 0;
+    }
+}
+
+@media (min-width: 501px) {
+    .usp-strip--n2 > div {
+        left: 25%;
+    }
+}
+
+@media (max-width: 500px) {
+    .usp-strip--n2 > div:first-child {
+        left: 0;
+    }
+}
+
+@media (min-width: 501px) {
+    .usp-strip--n2 > div:first-child {
+        left: 8.333%;
+    }
+}
+
 .usp-strip__item {
     text-align: center;
+    margin-bottom: 4rem;
+    font-family: "Meta Sans", Arial, Helvetica, sans-serif;
+    font-display: swap;
+}
+
+.usp-strip__item__value {
+    font-size: 2em;
+    font-weight: 300;
 }
 
 .anchor-demo-list li {
@@ -7118,12 +7186,12 @@ USED IN:
 
 .cbl--3 .cbl__ctas a:link, .cbl--3 .cbl__ctas a:visited {
     color: #ffffff;
-    background-color: #497226;
+    background-color: #ececec;
 }
 
 .cbl--3 .cbl__ctas a:hover, .cbl--3 .cbl__ctas aactive, .cbl--3 .cbl__ctas a:focus {
     color: #ffffff;
-    background-color: #294015;
+    background-color: #d0cfcb;
 }
 
 .cbl--3 .cbl__ctas a:link, .cbl--3 .cbl__ctas a:visited, .cbl--3 .cbl__ctas a:hover, .cbl--3 .cbl__ctas a:focus, .cbl--3 .cbl__ctas a:active {
@@ -7207,12 +7275,12 @@ USED IN:
 
 .cbl--2 .cbl__ctas a:link, .cbl--2 .cbl__ctas a:visited {
     color: #ffffff;
-    background-color: #497226;
+    background-color: #ececec;
 }
 
 .cbl--2 .cbl__ctas a:hover, .cbl--2 .cbl__ctas aactive, .cbl--2 .cbl__ctas a:focus {
     color: #ffffff;
-    background-color: #294015;
+    background-color: #d0cfcb;
 }
 
 .cbl--2 .cbl__ctas a:link, .cbl--2 .cbl__ctas a:visited, .cbl--2 .cbl__ctas a:hover, .cbl--2 .cbl__ctas a:focus, .cbl--2 .cbl__ctas a:active {
@@ -7283,12 +7351,12 @@ USED IN:
 
 .cbl--1 .cbl__ctas a:link, .cbl--1 .cbl__ctas a:visited {
     color: #ffffff;
-    background-color: #497226;
+    background-color: #ececec;
 }
 
 .cbl--1 .cbl__ctas a:hover, .cbl--1 .cbl__ctas aactive, .cbl--1 .cbl__ctas a:focus {
     color: #ffffff;
-    background-color: #294015;
+    background-color: #d0cfcb;
 }
 
 .cbl--1 .cbl__ctas a:link, .cbl--1 .cbl__ctas a:visited, .cbl--1 .cbl__ctas a:hover, .cbl--1 .cbl__ctas a:focus, .cbl--1 .cbl__ctas a:active {
@@ -7341,15 +7409,39 @@ USED IN:
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .cbl--1 .cbl__keyinfo .key-info > div {
         width: 100%;
     }
 }
 
+@media (min-width: 501px) {
+    .cbl--1 .cbl__keyinfo .key-info > div {
+        width: 33.333%;
+    }
+}
+
 @media (min-width: 801px) {
     .cbl--1 .cbl__keyinfo .key-info > div {
-        width: 8.333%;
+        width: 16.667%;
+    }
+}
+
+@media (max-width: 500px) {
+    .cbl--1 .cbl__keyinfo .key-info > div {
+        left: 0;
+    }
+}
+
+@media (min-width: 501px) {
+    .cbl--1 .cbl__keyinfo .key-info > div {
+        left: 0%;
+    }
+}
+
+@media (min-width: 801px) {
+    .cbl--1 .cbl__keyinfo .key-info > div {
+        left: 8.333%;
     }
 }
 
