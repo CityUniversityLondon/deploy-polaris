@@ -5663,6 +5663,16 @@ iframe {
     height: auto;
 }
 
+.no-js .url-dropdown select {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
 .media,
 .video-preview-wrapper {
     width: 100%;
@@ -5830,7 +5840,7 @@ video,
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
-.tabs__menu__item {
+.tabs--inline .tabs__menu__item {
     border-bottom-width: 0;
     display: inline-block;
     -webkit-transition: all 0.2s ease;
@@ -5844,23 +5854,23 @@ video,
     text-decoration: none;
 }
 
-.tabs__menu__item:link, .tabs__menu__item:visited, .tabs__menu__item:hover, .tabs__menu__item:focus, .tabs__menu__item:active {
+.tabs--inline .tabs__menu__item:link, .tabs--inline .tabs__menu__item:visited, .tabs--inline .tabs__menu__item:hover, .tabs--inline .tabs__menu__item:focus, .tabs--inline .tabs__menu__item:active {
     color: inherit;
 }
 
 @media (max-width: 800px) {
-    .tabs__menu__item {
+    .tabs--inline .tabs__menu__item {
         padding: 0.5rem 1rem calc(0.5rem + 4px);
     }
 }
 
 @media (min-width: 801px) {
-    .tabs__menu__item {
+    .tabs--inline .tabs__menu__item {
         padding: 0.5rem 1rem calc(1rem + 4px);
     }
 }
 
-.tabs__menu__item::before {
+.tabs--inline .tabs__menu__item::before {
     -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.4s ease 0s;
     transition: opacity 0.2s ease 0s, -webkit-transform 0.4s ease 0s;
     transition: transform 0.4s ease 0s, opacity 0.2s ease 0s;
@@ -5877,25 +5887,96 @@ video,
             transform: translateX(-50%) scaleX(0);
 }
 
-.tabs__menu__item:hover, .tabs__menu__item:focus {
+.tabs--inline .tabs__menu__item:hover, .tabs--inline .tabs__menu__item:focus {
     color: #1e1e1e;
 }
 
-.tabs__menu__item:focus {
+.tabs--inline .tabs__menu__item:focus {
     outline: 1px dotted #1e1e1e;
 }
 
-.tabs__menu__item:active {
+.tabs--inline .tabs__menu__item:active {
     background-color: #d0cfcb;
     color: #1e1e1e;
 }
 
-.tabs__menu__item[aria-selected="true"] {
+.tabs--inline .tabs__menu__item[aria-selected="true"] {
     background-color: #ececec;
     color: #1e1e1e;
 }
 
-.tabs__menu__item[aria-selected="true"]::before {
+.tabs--inline .tabs__menu__item[aria-selected="true"]::before {
+    opacity: 1;
+    -webkit-transform: translateX(-50%) scaleX(1);
+            transform: translateX(-50%) scaleX(1);
+}
+
+.tabs--block .tabs__menu__item {
+    border-bottom-width: 0;
+    display: block;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-image: linear-gradient(to top, #d0cfcb 0%, #d0cfcb 4px, transparent 4px, transparent 100%);
+    color: #555555;
+    border-bottom-width: 0;
+    position: relative;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.tabs--block .tabs__menu__item:link, .tabs--block .tabs__menu__item:visited, .tabs--block .tabs__menu__item:hover, .tabs--block .tabs__menu__item:focus, .tabs--block .tabs__menu__item:active {
+    color: inherit;
+}
+
+@media (max-width: 800px) {
+    .tabs--block .tabs__menu__item {
+        padding: 0.5rem 1rem calc(0.5rem + 4px);
+    }
+}
+
+@media (min-width: 801px) {
+    .tabs--block .tabs__menu__item {
+        padding: 0.5rem 1rem calc(1rem + 4px);
+    }
+}
+
+.tabs--block .tabs__menu__item::before {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.4s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.4s ease 0s;
+    transition: transform 0.4s ease 0s, opacity 0.2s ease 0s;
+    transition: transform 0.4s ease 0s, opacity 0.2s ease 0s, -webkit-transform 0.4s ease 0s;
+    content: "";
+    opacity: 0.1;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%) scaleX(0);
+            transform: translateX(-50%) scaleX(0);
+}
+
+.tabs--block .tabs__menu__item:hover, .tabs--block .tabs__menu__item:focus {
+    color: #1e1e1e;
+}
+
+.tabs--block .tabs__menu__item:focus {
+    outline: 1px dotted #1e1e1e;
+}
+
+.tabs--block .tabs__menu__item:active {
+    background-color: #d0cfcb;
+    color: #1e1e1e;
+}
+
+.tabs--block .tabs__menu__item[aria-selected="true"] {
+    background-color: #ececec;
+    color: #1e1e1e;
+}
+
+.tabs--block .tabs__menu__item[aria-selected="true"]::before {
     opacity: 1;
     -webkit-transform: translateX(-50%) scaleX(1);
             transform: translateX(-50%) scaleX(1);
