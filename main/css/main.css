@@ -5660,6 +5660,10 @@ iframe {
     height: auto;
 }
 
+.url-dropdown select {
+    padding: 10px 15px;
+}
+
 .no-js .url-dropdown select {
     width: 1px !important;
     height: 1px !important;
