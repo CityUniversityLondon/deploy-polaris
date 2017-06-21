@@ -1,0 +1,34 @@
+input.header-toggle-input {
+    display: none;
+}
+
+.header-toggle {
+    display: inline-block;
+    -webkit-transition: color 200ms, background-color 200ms;
+    transition: color 200ms, background-color 200ms;
+}
+
+.header-toggle > label {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.header-toggle__content {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .header-toggle {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
+    display: block;
+}
