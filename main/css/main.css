@@ -5246,6 +5246,10 @@ iframe {
     }
 }
 
+header {
+    display: none;
+}
+
 .content, .content--fixed {
     min-height: 1px;
     float: left;
