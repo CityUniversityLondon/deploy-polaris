@@ -6653,6 +6653,14 @@ USED IN:
     }
 }
 
+/** no js **/
+.no-js .nav-mobile__content:not(.nav-mobile__content--nojs) {
+    display: none;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+}
+
 .usp-strip {
     margin-top: 4rem;
 }
