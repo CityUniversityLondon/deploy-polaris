@@ -5716,38 +5716,18 @@ object, .media
 video,
 .video-preview-wrapper .video-preview {
     height: 100%;
+    margin-bottom: 0;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    margin-bottom: 0;
 }
 
-.img--16-10 {
-    height: 62.5%;
-}
-
-.media--16-10 {
-    padding-top: 62.5%;
-}
-
-.img--16-9 {
-    height: 56.25%;
-}
-
-.media--16-9, .media:not([class*="media--"]),
+.media:not([class*="media--"]),
 .video-preview-wrapper:not([class*="media--"]), .media--vimeo,
 .media--youtube {
     padding-top: 56.25%;
-}
-
-.img--4-3 {
-    height: 75%;
-}
-
-.media--4-3 {
-    padding-top: 75%;
 }
 
 .js .accordion__content__heading.inactive + div {
@@ -6659,6 +6639,293 @@ USED IN:
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
+}
+
+header {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    background-image: url("https://via.placeholder.com/200x120");
+    width: 200px;
+    height: 120px;
+    display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.primary-navigation,
+.secondary-navigation,
+.breadcrumbs {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.primary-navigation a,
+.secondary-navigation a,
+.breadcrumbs a {
+    border-bottom-width: 0;
+}
+
+.primary-navigation__list,
+.secondary-navigation__list {
+    max-width: 1200px;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    list-style: none;
+}
+
+.primary-navigation__list li,
+.secondary-navigation__list li {
+    display: inline-block;
+}
+
+.primary-navigation__list a,
+.secondary-navigation__list a {
+    color: #1e1e1e;
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.primary-navigation__list a,
+.secondary-navigation__list a {
+    padding: 2rem 1rem 0.5rem;
+    position: relative;
+}
+
+.primary-navigation__list a::before,
+.secondary-navigation__list a::before {
+    -webkit-transition: -webkit-transform 0.2s ease 0s;
+    transition: -webkit-transform 0.2s ease 0s;
+    transition: transform 0.2s ease 0s;
+    transition: transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    content: "";
+    background-color: #d92231;
+    height: 4px;
+    display: block;
+    width: calc(100% - 1rem);
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+.primary-navigation__list a:hover::before,
+.primary-navigation__list a:focus::before,
+.primary-navigation__list a:active::before,
+.primary-navigation__list .selected > a::before,
+.secondary-navigation__list a:hover::before,
+.secondary-navigation__list a:focus::before,
+.secondary-navigation__list a:active::before,
+.secondary-navigation__list .selected > a::before {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.secondary-navigation {
+    background-image: scrim-gradient(to bottom, #d0cfcb, transparent);
+    width: 100%;
+}
+
+.secondary-navigation__list a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.breadcrumbs {
+    background-color: #ececec;
+    border-top: 1px solid #d0cfcb;
+    border-bottom: 1px solid #d0cfcb;
+    position: relative;
+    text-align: left;
+}
+
+.breadcrumbs > input {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.breadcrumbs__list {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    list-style: none;
+    font-size: 0;
+}
+
+.breadcrumbs__list > li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.breadcrumbs__list > li > a,
+.breadcrumbs__list > li > label,
+.breadcrumbs__list > li > span {
+    color: inherit;
+    display: block;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.breadcrumbs__list > li > a span,
+.breadcrumbs__list > li > label span {
+    border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs__list > li > a:hover span, .breadcrumbs__list > li > a:focus span, .breadcrumbs__list > li > a:active span,
+.breadcrumbs__list > li > label:hover span,
+.breadcrumbs__list > li > label:focus span,
+.breadcrumbs__list > li > label:active span {
+    border-bottom-color: currentColor;
+}
+
+.breadcrumbs__list li + li > a,
+.breadcrumbs__list li + li > label,
+.breadcrumbs__list li + li > span {
+    position: relative;
+}
+
+.breadcrumbs__list li + li > a::before,
+.breadcrumbs__list li + li > label::before,
+.breadcrumbs__list li + li > span::before {
+    content: ">";
+    color: #555555;
+    position: absolute;
+    left: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.breadcrumbs__list div {
+    background-color: #ececec;
+    max-width: 100%;
+    padding: 1rem;
+    padding-right: 2rem;
+    border-width: 1px;
+    border-top-width: 0;
+    border-style: solid;
+    border-color: #d0cfcb;
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    z-index: 1;
+}
+
+#breadcrumbs-1:checked ~ .breadcrumbs__list label[for="breadcrumbs-1"] {
+    pointer-events: none;
+}
+
+#breadcrumbs-1:checked ~ .breadcrumbs__list label[for="breadcrumbs-1"] span {
+    border-bottom-color: currentColor;
+}
+
+#breadcrumbs-1:checked ~ .breadcrumbs__list label[for="breadcrumbs-1"] + .breadcrumbs__list__content {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    z-index: 2;
+}
+
+#breadcrumbs-2:checked ~ .breadcrumbs__list label[for="breadcrumbs-2"] {
+    pointer-events: none;
+}
+
+#breadcrumbs-2:checked ~ .breadcrumbs__list label[for="breadcrumbs-2"] span {
+    border-bottom-color: currentColor;
+}
+
+#breadcrumbs-2:checked ~ .breadcrumbs__list label[for="breadcrumbs-2"] + .breadcrumbs__list__content {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    z-index: 2;
+}
+
+#breadcrumbs-3:checked ~ .breadcrumbs__list label[for="breadcrumbs-3"] {
+    pointer-events: none;
+}
+
+#breadcrumbs-3:checked ~ .breadcrumbs__list label[for="breadcrumbs-3"] span {
+    border-bottom-color: currentColor;
+}
+
+#breadcrumbs-3:checked ~ .breadcrumbs__list label[for="breadcrumbs-3"] + .breadcrumbs__list__content {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    z-index: 2;
+}
+
+#breadcrumbs-4:checked ~ .breadcrumbs__list label[for="breadcrumbs-4"] {
+    pointer-events: none;
+}
+
+#breadcrumbs-4:checked ~ .breadcrumbs__list label[for="breadcrumbs-4"] span {
+    border-bottom-color: currentColor;
+}
+
+#breadcrumbs-4:checked ~ .breadcrumbs__list label[for="breadcrumbs-4"] + .breadcrumbs__list__content {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    z-index: 2;
+}
+
+#breadcrumbs-5:checked ~ .breadcrumbs__list label[for="breadcrumbs-5"] {
+    pointer-events: none;
+}
+
+#breadcrumbs-5:checked ~ .breadcrumbs__list label[for="breadcrumbs-5"] span {
+    border-bottom-color: currentColor;
+}
+
+#breadcrumbs-5:checked ~ .breadcrumbs__list label[for="breadcrumbs-5"] + .breadcrumbs__list__content {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    z-index: 2;
+}
+
+.breadcrumbs__navigation__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    cursor: default;
+    z-index: 1;
+}
+
+header.desktop [class*="header__"] {
+    display: none;
+}
+
+header:not(.desktop) .primary-navigation,
+header:not(.desktop) .breadcrumbs,
+header:not(.desktop) .secondary-navigation {
+    display: none;
 }
 
 .usp-strip {
