@@ -7416,6 +7416,7 @@ USED IN:
     padding: 0.5rem;
     border-bottom-width: 0;
     font-weight: 700;
+    z-index: 2;
 }
 
 .header--2 ~ main .side-menu a span {
