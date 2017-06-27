@@ -7107,6 +7107,10 @@ USED IN:
     display: none;
 }
 
+.page--test-home .breadcrumbs {
+    display: none;
+}
+
 .header--2 .header__notice,
 .header--2 .header__toggles,
 .header--2 .breadcrumbs,
@@ -7330,6 +7334,10 @@ USED IN:
 
 .header--2 ~ main .side-menu a:hover span, .header--2 ~ main .side-menu a:focus span, .header--2 ~ main .side-menu a:active span {
     border-bottom-color: currentColor;
+}
+
+.page--test-home .secondary-navigation {
+    display: none;
 }
 
 .header--3 .primary-navigation,
