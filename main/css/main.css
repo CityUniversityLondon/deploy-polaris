@@ -6846,7 +6846,7 @@ USED IN:
 .header--1 .header__notice,
 .header--1 .header__toggles,
 .header--1 .secondary-navigation,
-.header--1 .side-menu {
+.header--1 ~ main .side-menu {
     display: none;
 }
 
@@ -7336,7 +7336,7 @@ USED IN:
 .header--3 .secondary-navigation,
 .header--3 .breadcrumbs,
 .header--3 .breadcrumbs-dropdown,
-.header--3 .side-menu {
+.header--3 ~ main .side-menu {
     display: none;
 }
 
@@ -7370,7 +7370,7 @@ USED IN:
 }
 
 .header--3 .header__toggles label {
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
     text-transform: capitalize;
 }
 
@@ -7396,7 +7396,7 @@ USED IN:
 .header--3 .tertiary-navigation a {
     color: inherit;
     border-bottom-width: 0;
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
 }
 
 .header--3 .tertiary-navigation__search {
