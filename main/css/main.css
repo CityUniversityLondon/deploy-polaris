@@ -7755,7 +7755,7 @@ USED IN:
 
 .key-info:before {
     position: absolute;
-    content: ' ';
+    content: " ";
     top: -1rem;
     left: 0;
     width: 0.5rem;
