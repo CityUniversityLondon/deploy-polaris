@@ -6729,7 +6729,8 @@ USED IN:
 
 .header--1 .header__notice,
 .header--1 .header__toggles,
-.header--1 .secondary-navigation {
+.header--1 .secondary-navigation,
+.header--1 .side-menu {
     display: none;
 }
 
@@ -7178,10 +7179,48 @@ USED IN:
     margin-left: 2rem;
 }
 
+.header--2 ~ main aside {
+    min-width: 250px;
+    float: left;
+    margin-right: 2rem;
+}
+
+.header--2 ~ main .side-menu {
+    border: 2px solid #555555;
+    max-width: 250px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.header--2 ~ main .side-menu li {
+    display: block;
+}
+
+.header--2 ~ main .side-menu li + li {
+    border-top: 2px solid #555555;
+}
+
+.header--2 ~ main .side-menu a {
+    color: inherit;
+    display: block;
+    padding: 0.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.header--2 ~ main .side-menu a span {
+    border-bottom: 1px solid transparent;
+}
+
+.header--2 ~ main .side-menu a:hover span, .header--2 ~ main .side-menu a:focus span, .header--2 ~ main .side-menu a:active span {
+    border-bottom-color: currentColor;
+}
+
 .header--3 .primary-navigation,
 .header--3 .secondary-navigation,
 .header--3 .breadcrumbs,
-.header--3 .breadcrumbs-dropdown {
+.header--3 .breadcrumbs-dropdown,
+.header--3 .side-menu {
     display: none;
 }
 
