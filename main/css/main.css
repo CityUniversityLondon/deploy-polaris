@@ -7034,6 +7034,12 @@ USED IN:
     text-decoration: none;
 }
 
+.header--1 .breadcrumbs__list > li > a.has-children::after,
+.header--1 .breadcrumbs__list > li > span.has-children::after {
+    content: " +";
+    font-weight: 700;
+}
+
 .header--1 .breadcrumbs__list > li > a span {
     border-bottom: 1px solid transparent;
 }
@@ -7055,12 +7061,6 @@ USED IN:
     left: 0;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-}
-
-.header--1 .breadcrumbs__list > li[data-id]:nth-last-child(1) > a::after,
-.header--1 .breadcrumbs__list > li[data-id]:nth-last-child(2) > a::after {
-    content: " +";
-    font-weight: 700;
 }
 
 .header--1 .breadcrumbs__list div {
