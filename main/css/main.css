@@ -7244,6 +7244,7 @@ USED IN:
 .header--2 ~ main .side-menu {
     border: 2px solid #555555;
     max-width: 250px;
+    display: none;
     margin-left: 1rem;
     margin-bottom: 2rem;
 }
@@ -7271,6 +7272,10 @@ USED IN:
 
 .header--2 ~ main .side-menu a:hover span, .header--2 ~ main .side-menu a:focus span, .header--2 ~ main .side-menu a:active span {
     border-bottom-color: currentColor;
+}
+
+.header--2 ~ main [class*="side-menu-toggle--check-check-check"] + .side-menu {
+    display: block;
 }
 
 .page--test-home .secondary-navigation {
