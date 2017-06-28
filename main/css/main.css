@@ -7075,8 +7075,16 @@ USED IN:
     border-bottom-width: 0;
 }
 
-.header--2 .primary-navigation {
-    margin-left: 3.5rem;
+@media (max-width: 1440px) {
+    .header--2 .primary-navigation {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .header--2 .primary-navigation {
+        margin-left: 3.5rem;
+    }
 }
 
 .header--2 .primary-navigation__list {
@@ -7090,9 +7098,20 @@ USED IN:
 
 .header--2 .primary-navigation__list a {
     display: block;
-    padding: 3.5rem 1rem 0.5rem;
     position: relative;
     font-weight: 700;
+}
+
+@media (max-width: 1440px) {
+    .header--2 .primary-navigation__list a {
+        padding: 3.5rem 0.5rem 0.5rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .header--2 .primary-navigation__list a {
+        padding: 3.5rem 1rem 0.5rem;
+    }
 }
 
 .header--2 .primary-navigation__list a:link, .header--2 .primary-navigation__list a:visited {
@@ -7196,6 +7215,16 @@ USED IN:
 .header--2 .tertiary-navigation__search:hover span,
 .header--2 .tertiary-navigation__search:focus span {
     border-bottom-color: currentColor;
+}
+
+@media (max-width: 1440px) {
+    .header--2 .tertiary-navigation__list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 1rem;
+        white-space: nowrap;
+    }
 }
 
 .header--2 .tertiary-navigation__list,
