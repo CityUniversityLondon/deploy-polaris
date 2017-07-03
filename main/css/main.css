@@ -4522,7 +4522,8 @@ iframe {
 
 .grid__12,
 .grid__full,
-.grid__whole {
+.grid__whole,
+.external-img-link-strip {
     min-height: 1px;
     float: left;
     padding-left: 0.5rem;
@@ -4533,7 +4534,8 @@ iframe {
 @supports ((display: -webkit-box) or (display: flex)) {
     .grid__12,
     .grid__full,
-    .grid__whole {
+    .grid__whole,
+    .external-img-link-strip {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -4544,7 +4546,8 @@ iframe {
 @media (max-width: 800px) {
     .grid__12,
     .grid__full,
-    .grid__whole {
+    .grid__whole,
+    .external-img-link-strip {
         width: 100%;
     }
 }
@@ -4552,7 +4555,8 @@ iframe {
 @media (min-width: 801px) {
     .grid__12,
     .grid__full,
-    .grid__whole {
+    .grid__whole,
+    .external-img-link-strip {
         width: 100%;
     }
 }
@@ -7860,6 +7864,71 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: absolute;
     min-width: 100%;
     min-height: 100%;
+}
+
+.external-img-link-strip {
+    text-align: center;
+}
+
+.external-img-link-strip a {
+    border-bottom-width: 0;
+    display: block;
+    position: relative;
+}
+
+.external-img-link-strip a:link, .external-img-link-strip a:visited, .external-img-link-strip a:hover, .external-img-link-strip a:focus, .external-img-link-strip a:active {
+    color: inherit;
+}
+
+.external-img-link-strip a:after {
+    position: absolute;
+    text-align: center;
+    overflow: visible;
+    content: attr(data-dn);
+    font-family: "Meta Sans", Arial, Helvetica, sans-serif;
+    font-display: swap;
+    font-size: 1.5625rem;
+    opacity: 0;
+    color: #005ea5;
+    border-bottom-color: currentColor;
+    background: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.external-img-link-strip a img, .external-img-link-strip a:after {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.external-img-link-strip a img {
+    opacity: 1;
+}
+
+.external-img-link-strip a:hover img {
+    opacity: 0.1;
+}
+
+.external-img-link-strip a:hover:after {
+    opacity: 1;
+}
+
+.external-img-link-strip img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    height: 80px;
+}
+
+.external-img-link-strip img, .external-img-link-strip a {
+    display: inline-block;
+}
+
+.external-img-link-strip > img, .external-img-link-strip > a {
+    margin: 0 0.5rem;
 }
 
 @-webkit-keyframes fade {
