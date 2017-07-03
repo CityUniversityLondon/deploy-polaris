@@ -7626,6 +7626,15 @@ USED IN:
     background-color: #ececec;
 }
 
+.section--padded {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section--centerheading h2 {
+    text-align: center;
+}
+
 .intro > .container, .accordion-tabs--top-level-layout .intro > .accordion-tabs__menu-wrapper,
 .accordion-tabs--top-level-layout .intro > .accordion-tabs__content-container, .intro > .banner {
     border-bottom: 1px solid #fbae3b;
@@ -7920,7 +7929,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .external-img-link-strip img {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
-    height: 80px;
+    height: 70px;
 }
 
 .external-img-link-strip img, .external-img-link-strip a {
@@ -7928,7 +7937,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .external-img-link-strip > img, .external-img-link-strip > a {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 }
 
 @-webkit-keyframes fade {
