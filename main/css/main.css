@@ -7909,11 +7909,11 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     opacity: 1;
 }
 
-.external-img-link-strip a:hover img {
+.external-img-link-strip a:hover img, .external-img-link-strip a:focus img {
     opacity: 0.1;
 }
 
-.external-img-link-strip a:hover:after {
+.external-img-link-strip a:hover:after, .external-img-link-strip a:focus:after {
     opacity: 1;
 }
 
