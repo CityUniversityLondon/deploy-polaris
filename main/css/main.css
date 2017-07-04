@@ -7632,7 +7632,7 @@ USED IN:
     background-color: #fafafa;
 }
 
-.section--gallery, .intro {
+.section--gallery {
     background-color: #ececec;
 }
 
@@ -7645,26 +7645,46 @@ USED IN:
     text-align: center;
 }
 
-.intro > .container, .accordion-tabs--top-level-layout .intro > .accordion-tabs__menu-wrapper,
-.accordion-tabs--top-level-layout .intro > .accordion-tabs__content-container, .intro > .banner {
-    border-bottom: 1px solid #fbae3b;
+.intro {
+    position: relative;
 }
 
-.intro--left-video {
-    margin-top: 2rem;
+@media (max-width: 800px) {
+    .intro {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.intro:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #1e1e1e;
+}
+
+@media (min-width: 801px) {
+    .intro:before {
+        left: 4rem;
+        height: 80%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .intro:before {
+        left: calc((100% - 1200px) / 2 + 2 * 2rem);
+    }
 }
 
 @media (min-width: 801px) {
     .intro--left-video .intro__oversize-media {
-        margin-top: -2rem;
-    }
-}
-
-@media (min-width: 1441px) {
-    .intro--left-video .intro__oversize-media {
-        margin-left: -120px;
-        width: calc(100% + 120px);
-        max-width: calc(100% + 120px);
+        margin-top: 4rem;
     }
 }
 
@@ -7779,21 +7799,30 @@ USED IN:
         align-self: flex-start;
 }
 
-@media (min-width: 801px) {
-    .intro--left-video .caption {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-@media (min-width: 1441px) {
-    .intro--left-video .caption {
-        padding-left: calc(120px + 1rem);
-    }
-}
-
 .intro--left-video .caption .caption__type {
     text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .intro--left-video figcaption {
+        color: #ffffff;
+    }
+    .intro--left-video > .container > .grid > :nth-child(1), .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__menu-wrapper > .grid > :nth-child(1),
+    .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__content-container > .grid > :nth-child(1), .intro--left-video > .banner > .grid > :nth-child(1), .intro--left-video > .container > .banner--text-ctas > :nth-child(1), .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__menu-wrapper > .banner--text-ctas > :nth-child(1),
+    .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__content-container > .banner--text-ctas > :nth-child(1), .intro--left-video > .banner > .banner--text-ctas > :nth-child(1), .intro--left-video > .container > .stats-block__grid > :nth-child(1), .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__menu-wrapper > .stats-block__grid > :nth-child(1),
+    .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__content-container > .stats-block__grid > :nth-child(1), .intro--left-video > .banner > .stats-block__grid > :nth-child(1) {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+    .intro--left-video > .container > .grid > :nth-child(2), .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__menu-wrapper > .grid > :nth-child(2),
+    .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__content-container > .grid > :nth-child(2), .intro--left-video > .banner > .grid > :nth-child(2), .intro--left-video > .container > .banner--text-ctas > :nth-child(2), .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__menu-wrapper > .banner--text-ctas > :nth-child(2),
+    .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__content-container > .banner--text-ctas > :nth-child(2), .intro--left-video > .banner > .banner--text-ctas > :nth-child(2), .intro--left-video > .container > .stats-block__grid > :nth-child(2), .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__menu-wrapper > .stats-block__grid > :nth-child(2),
+    .accordion-tabs--top-level-layout .intro--left-video > .accordion-tabs__content-container > .stats-block__grid > :nth-child(2), .intro--left-video > .banner > .stats-block__grid > :nth-child(2) {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
 }
 
 .key-info {
@@ -7811,8 +7840,12 @@ USED IN:
     width: 0.5rem;
     height: 0.5rem;
     border-style: solid;
-    border-color: #f15f22;
+    border-color: currentColor;
     border-width: 2px 0 0 2px;
+}
+
+.key-info--darkbg {
+    color: white;
 }
 
 .key-info-center-wrapper {
