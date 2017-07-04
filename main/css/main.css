@@ -5354,6 +5354,28 @@ iframe {
     text-align: right;
 }
 
+.section--bw-background {
+    position: relative;
+}
+
+.section--bw-background:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #1e1e1e;
+}
+
+.footer {
+    padding: 20px 20px 40px;
+}
+
+.footer__headline {
+    font-size: 2em;
+}
+
 .content, .content--fixed {
     min-height: 1px;
     float: left;
