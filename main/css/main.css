@@ -7542,18 +7542,18 @@ USED IN:
 }
 
 .section--padded {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 
 .section--margin {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
 }
 
 .section--tmbp {
-    margin-top: 8rem;
-    padding-bottom: 8rem;
+    margin-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 
 .section--centerheading h2 {
