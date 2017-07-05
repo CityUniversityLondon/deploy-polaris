@@ -5947,6 +5947,10 @@ video,
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
+    /**
+        This element can become sticky with stickybits. For IE support, width: 100% seems required
+         */
+    width: 100%;
     background-color: #ffffff;
     z-index: 2;
 }
