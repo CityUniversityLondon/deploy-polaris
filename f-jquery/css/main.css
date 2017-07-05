@@ -5947,9 +5947,6 @@ video,
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     background-color: #ffffff;
     z-index: 2;
 }
