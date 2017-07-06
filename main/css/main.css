@@ -8270,7 +8270,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .bracket-block, .profile-bracket-block {
     position: relative;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     width: 100%;
 }
 
@@ -8278,7 +8278,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: absolute;
     content: " ";
     width: 1rem;
-    height: 1rem;
+    height: 100%;
     z-index: -1;
     border: #d92231 solid;
 }
@@ -8286,13 +8286,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .bracket-block:before, .profile-bracket-block:before {
     top: 0;
     left: 0;
-    border-width: 2px 0 0 2px;
+    border-width: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .bracket-block:after, .profile-bracket-block:after {
     bottom: 0;
     right: 0;
-    border-width: 0 2px 2px 0;
+    border-width: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .profile-bracket-block .profile-bracket-block__img {
