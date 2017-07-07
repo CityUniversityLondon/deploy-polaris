@@ -6582,8 +6582,8 @@ USED IN:
 
 /** open state **/
 .nav-mobile__toggle:checked + .nav-mobile__overlay .nav-mobile__content {
-    background-color: #1e1e1e;
-    color: #ffffff;
+    color: #1e1e1e;
+    background-color: #ffffff;
     display: block;
     position: fixed;
     top: 0;
