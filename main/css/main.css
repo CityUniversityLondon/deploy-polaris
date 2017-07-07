@@ -5370,6 +5370,8 @@ iframe {
 }
 
 .section--bw-background {
+    padding-top: 50px;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -5383,12 +5385,59 @@ iframe {
     background-color: #1e1e1e;
 }
 
-.footer {
-    padding: 20px 20px 40px;
+.footer__left-side {
+    color: #ffffff;
 }
 
 .footer__headline {
     font-size: 2em;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.footer__sub-headline {
+    text-transform: uppercase;
+}
+
+.footer__address {
+    display: block;
+    font-style: normal;
+    line-height: 1.3;
+    margin: 0;
+    padding-bottom: 5px;
+    background: none;
+}
+
+.footer__address-part {
+    display: block;
+}
+
+.footer__address-part--org {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer__address-part--enquiry {
+    margin-top: 10px;
+}
+
+.footer__misc-links a {
+    margin-right: 10px;
+}
+
+.footer__accreditation {
+    margin-top: 20px;
+}
+
+.footer__accreditation a {
+    margin-right: 20px;
+    border-bottom: none;
+}
+
+.footer__accreditation img {
+    display: inline-block;
+    height: 40px;
 }
 
 .content, .content--fixed {
