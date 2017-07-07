@@ -459,7 +459,10 @@
     font-style: normal;
 }
 
-.fa, .accordion__content__heading__icon, .js .accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li:not(:first-child), .nav-mobile__toggle-label__icon, .header-toggle--menu .header-toggle__icon, .header-toggle--search .header-toggle__icon, .dialog__box__heading__close__icon {
+.fa, .accordion__content__heading__icon, .js .accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li:not(:first-child), .nav-mobile__toggle-label__icon, .header--2 .tertiary-navigation__search::before,
+.header--2 .nav-mobile__toggle-label::before,
+.header:not([class*="header--"]) .tertiary-navigation__search::before,
+.header:not([class*="header--"]) .nav-mobile__toggle-label::before, .header-toggle--menu .header-toggle__icon, .header-toggle--search .header-toggle__icon, .dialog__box__heading__close__icon {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -532,11 +535,17 @@
     float: right;
 }
 
-.fa.fa-pull-left, .fa-pull-left.accordion__content__heading__icon, .js .fa-pull-left.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.fa-pull-left:not(:first-child), .fa-pull-left.nav-mobile__toggle-label__icon, .header-toggle--menu .fa-pull-left.header-toggle__icon, .header-toggle--search .fa-pull-left.header-toggle__icon, .fa-pull-left.dialog__box__heading__close__icon {
+.fa.fa-pull-left, .fa-pull-left.accordion__content__heading__icon, .js .fa-pull-left.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.fa-pull-left:not(:first-child), .fa-pull-left.nav-mobile__toggle-label__icon, .header--2 .fa-pull-left.tertiary-navigation__search::before,
+.header--2 .fa-pull-left.nav-mobile__toggle-label::before,
+.header:not([class*="header--"]) .fa-pull-left.tertiary-navigation__search::before,
+.header:not([class*="header--"]) .fa-pull-left.nav-mobile__toggle-label::before, .header-toggle--menu .fa-pull-left.header-toggle__icon, .header-toggle--search .fa-pull-left.header-toggle__icon, .fa-pull-left.dialog__box__heading__close__icon {
     margin-right: .3em;
 }
 
-.fa.fa-pull-right, .fa-pull-right.accordion__content__heading__icon, .js .fa-pull-right.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.fa-pull-right:not(:first-child), .fa-pull-right.nav-mobile__toggle-label__icon, .header-toggle--menu .fa-pull-right.header-toggle__icon, .header-toggle--search .fa-pull-right.header-toggle__icon, .fa-pull-right.dialog__box__heading__close__icon {
+.fa.fa-pull-right, .fa-pull-right.accordion__content__heading__icon, .js .fa-pull-right.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.fa-pull-right:not(:first-child), .fa-pull-right.nav-mobile__toggle-label__icon, .header--2 .fa-pull-right.tertiary-navigation__search::before,
+.header--2 .fa-pull-right.nav-mobile__toggle-label::before,
+.header:not([class*="header--"]) .fa-pull-right.tertiary-navigation__search::before,
+.header:not([class*="header--"]) .fa-pull-right.nav-mobile__toggle-label::before, .header-toggle--menu .fa-pull-right.header-toggle__icon, .header-toggle--search .fa-pull-right.header-toggle__icon, .fa-pull-right.dialog__box__heading__close__icon {
     margin-left: .3em;
 }
 
@@ -549,11 +558,17 @@
     float: left;
 }
 
-.fa.pull-left, .pull-left.accordion__content__heading__icon, .js .pull-left.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.pull-left:not(:first-child), .pull-left.nav-mobile__toggle-label__icon, .header-toggle--menu .pull-left.header-toggle__icon, .header-toggle--search .pull-left.header-toggle__icon, .pull-left.dialog__box__heading__close__icon {
+.fa.pull-left, .pull-left.accordion__content__heading__icon, .js .pull-left.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.pull-left:not(:first-child), .pull-left.nav-mobile__toggle-label__icon, .header--2 .pull-left.tertiary-navigation__search::before,
+.header--2 .pull-left.nav-mobile__toggle-label::before,
+.header:not([class*="header--"]) .pull-left.tertiary-navigation__search::before,
+.header:not([class*="header--"]) .pull-left.nav-mobile__toggle-label::before, .header-toggle--menu .pull-left.header-toggle__icon, .header-toggle--search .pull-left.header-toggle__icon, .pull-left.dialog__box__heading__close__icon {
     margin-right: .3em;
 }
 
-.fa.pull-right, .pull-right.accordion__content__heading__icon, .js .pull-right.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.pull-right:not(:first-child), .pull-right.nav-mobile__toggle-label__icon, .header-toggle--menu .pull-right.header-toggle__icon, .header-toggle--search .pull-right.header-toggle__icon, .pull-right.dialog__box__heading__close__icon {
+.fa.pull-right, .pull-right.accordion__content__heading__icon, .js .pull-right.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.pull-right:not(:first-child), .pull-right.nav-mobile__toggle-label__icon, .header--2 .pull-right.tertiary-navigation__search::before,
+.header--2 .pull-right.nav-mobile__toggle-label::before,
+.header:not([class*="header--"]) .pull-right.tertiary-navigation__search::before,
+.header:not([class*="header--"]) .pull-right.nav-mobile__toggle-label::before, .header-toggle--menu .pull-right.header-toggle__icon, .header-toggle--search .pull-right.header-toggle__icon, .pull-right.dialog__box__heading__close__icon {
     margin-left: .3em;
 }
 
@@ -7093,24 +7108,44 @@ USED IN:
 .header--2 .nav-mobile__toggle-label::before,
 .header:not([class*="header--"]) .tertiary-navigation__search::before,
 .header:not([class*="header--"]) .nav-mobile__toggle-label::before {
-    font-family: "FontAwesome";
-    font-display: swap;
     font-size: 1.44rem;
     font-weight: 400;
 }
 
 .header--2 .tertiary-navigation__search::before,
 .header:not([class*="header--"]) .tertiary-navigation__search::before {
-    content: "\f002";
+    content: "";
+}
+
+.header--2 .nav-mobile__toggle-label,
+.header:not([class*="header--"]) .nav-mobile__toggle-label {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .header--2 .nav-mobile__toggle-label::before,
 .header:not([class*="header--"]) .nav-mobile__toggle-label::before {
-    content: "\f0c9";
+    content: "";
 }
 
-.header--2 .nav-mobile__toggle-label span,
-.header:not([class*="header--"]) .nav-mobile__toggle-label span {
+.header--2 .nav-mobile__toggle-label.open::before,
+.header:not([class*="header--"]) .nav-mobile__toggle-label.open::before {
+    content: "";
+}
+
+.header--2 .nav-mobile__toggle-label .fa, .header--2 .nav-mobile__toggle-label .accordion__content__heading__icon, .header--2 .nav-mobile__toggle-label .js .accordion-tabs__content__heading-anchor__icon, .js .header--2 .nav-mobile__toggle-label .accordion-tabs__content__heading-anchor__icon, .header--2 .nav-mobile__toggle-label .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs .header--2 .nav-mobile__toggle-label li:not(:first-child), .header--2 .nav-mobile__toggle-label .nav-mobile__toggle-label__icon, .header--2 .nav-mobile__toggle-label .tertiary-navigation__search::before, .header--2 .nav-mobile__toggle-label .nav-mobile__toggle-label::before, .header--2 .nav-mobile__toggle-label .header-toggle--menu .header-toggle__icon, .header-toggle--menu .header--2 .nav-mobile__toggle-label .header-toggle__icon, .header--2 .nav-mobile__toggle-label .header-toggle--search .header-toggle__icon, .header-toggle--search .header--2 .nav-mobile__toggle-label .header-toggle__icon, .header--2 .nav-mobile__toggle-label .dialog__box__heading__close__icon,
+.header:not([class*="header--"]) .nav-mobile__toggle-label .fa,
+.header:not([class*="header--"]) .nav-mobile__toggle-label .accordion__content__heading__icon,
+.header:not([class*="header--"]) .nav-mobile__toggle-label .js .accordion-tabs__content__heading-anchor__icon, .js
+.header:not([class*="header--"]) .nav-mobile__toggle-label .accordion-tabs__content__heading-anchor__icon,
+.header:not([class*="header--"]) .nav-mobile__toggle-label .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs
+.header:not([class*="header--"]) .nav-mobile__toggle-label li:not(:first-child),
+.header:not([class*="header--"]) .nav-mobile__toggle-label .nav-mobile__toggle-label__icon, .header:not([class*="header--"]) .nav-mobile__toggle-label .tertiary-navigation__search::before, .header:not([class*="header--"]) .nav-mobile__toggle-label .nav-mobile__toggle-label::before,
+.header:not([class*="header--"]) .nav-mobile__toggle-label .header-toggle--menu .header-toggle__icon, .header-toggle--menu
+.header:not([class*="header--"]) .nav-mobile__toggle-label .header-toggle__icon,
+.header:not([class*="header--"]) .nav-mobile__toggle-label .header-toggle--search .header-toggle__icon, .header-toggle--search
+.header:not([class*="header--"]) .nav-mobile__toggle-label .header-toggle__icon,
+.header:not([class*="header--"]) .nav-mobile__toggle-label .dialog__box__heading__close__icon {
     display: none;
 }
 
@@ -7129,9 +7164,7 @@ USED IN:
 .header--2 ~ main .side-menu,
 .header:not([class*="header--"]) ~ main .side-menu {
     border: 2px solid #555555;
-    max-width: 250px;
-    display: none;
-    margin-left: 1rem;
+    max-width: 100%;
     margin-bottom: 2rem;
 }
 
@@ -7165,11 +7198,6 @@ USED IN:
 .header:not([class*="header--"]) ~ main .side-menu a:focus span,
 .header:not([class*="header--"]) ~ main .side-menu a:active span {
     border-bottom-color: currentColor;
-}
-
-.header--2 ~ main [class*="side-menu-toggle--check-check-check"] + .side-menu,
-.header:not([class*="header--"]) ~ main [class*="side-menu-toggle--check-check-check"] + .side-menu {
-    display: block;
 }
 
 .page--test-home .secondary-navigation {
