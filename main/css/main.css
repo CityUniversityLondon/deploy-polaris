@@ -6009,6 +6009,7 @@ video,
 .accordion-tabs__content__heading {
     text-align: center;
     position: relative;
+    padding-top: 2rem;
 }
 
 .accordion-tabs__content__heading:after {
@@ -6040,7 +6041,6 @@ video,
     border-color: #555555;
     border-style: solid;
     border-width: 1px 0;
-    margin-bottom: 2rem;
     font-size: 1.2rem;
 }
 
