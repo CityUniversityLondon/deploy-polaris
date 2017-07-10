@@ -5892,6 +5892,11 @@ iframe {
     overflow: hidden;
 }
 
+.media figcaption,
+.video-preview-wrapper figcaption {
+    z-index: 2;
+}
+
 .video-preview-wrapper--loading audio, .video-preview-wrapper--loading
 embed, .video-preview-wrapper--loading
 iframe, .video-preview-wrapper--loading
@@ -5916,12 +5921,10 @@ iframe, .media
 object, .media
 video,
 .video-preview-wrapper .video-preview {
-    height: 100%;
     margin-bottom: 0;
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
 }
 
