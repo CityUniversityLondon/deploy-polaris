@@ -5385,24 +5385,14 @@ iframe {
     text-align: right;
 }
 
-.section--bw-background {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    position: relative;
-}
-
-.section--bw-background:before {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    background-color: #1e1e1e;
-}
-
 .footer__left-side {
+    background-color: #1e1e1e;
     color: #ffffff;
+}
+
+.footer__right-side {
+    background-color: #ffffff;
+    color: #1e1e1e;
 }
 
 .footer__headline {
