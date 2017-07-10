@@ -7762,6 +7762,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
+.popup-def-list-group li > h5 {
+    display: inline;
+}
+
 .external-img-link-strip {
     text-align: center;
 }
