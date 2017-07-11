@@ -7195,6 +7195,7 @@ USED IN:
 }
 
 .page--test-home .secondary-navigation,
+.page--2017 .secondary-navigation,
 .page--2018 .secondary-navigation {
     display: none !important;
 }
