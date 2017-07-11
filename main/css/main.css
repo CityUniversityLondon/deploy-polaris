@@ -727,6 +727,7 @@
 
 .fa-remove:before,
 .fa-close:before,
+.nav-mobile .nav-mobile__close-link span:before,
 .nav-mobile__toggle:checked + .nav-mobile__overlay .nav-mobile__toggle-label:before,
 .nav-mobile__toggle:checked + .nav-mobile__overlay .nav-mobile__toggle-label__icon:before,
 input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
@@ -5391,21 +5392,48 @@ iframe {
 .footer__left-side {
     background-color: #1e1e1e;
     color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footer__left-side a {
+    border-bottom-color: transparent;
+}
+
+.footer__left-side a:link, .footer__left-side a:visited {
+    color: #ffffff;
+}
+
+.footer__left-side a:hover, .footer__left-side a:focus, .footer__left-side a:active {
+    border-bottom-color: currentColor;
+}
+
+.footer__left-side a::after {
+    content: "\0020\003E";
+    border-bottom-color: transparent !important;
 }
 
 .footer__right-side {
     background-color: #ffffff;
     color: #1e1e1e;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .footer__headline {
     font-size: 2em;
-    line-height: 1.3;
+    line-height: 1.2;
     margin-bottom: 10px;
 }
 
 .footer__sub-headline {
     text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 40px;
+}
+
+.footer__cta-headline {
+    font-size: 0.9em;
 }
 
 .footer__address {
@@ -5431,12 +5459,26 @@ iframe {
     margin-top: 10px;
 }
 
+.footer__misc-links {
+    margin-top: 10px;
+}
+
 .footer__misc-links a {
+    display: inline-block;
     margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.footer__copyright span {
+    display: block;
 }
 
 .footer__accreditation {
     margin-top: 20px;
+}
+
+.footer__accreditation p {
+    margin-bottom: 15px;
 }
 
 .footer__accreditation a {
@@ -5447,6 +5489,7 @@ iframe {
 .footer__accreditation img {
     display: inline-block;
     height: 40px;
+    margin-bottom: 10px;
 }
 
 .content, .content--fixed {
@@ -6508,20 +6551,13 @@ USED IN:
 .nav-mobile .nav-mobile__toggle-link {
     position: absolute;
     top: 0;
+    right: 0;
     height: 100%;
 }
 
 .nav-mobile .nav-mobile__close-link span,
 .nav-mobile .nav-mobile__toggle-link span {
     font-size: 1.5em;
-}
-
-.nav-mobile .nav-mobile__close-link {
-    left: 0;
-}
-
-.nav-mobile .nav-mobile__toggle-link {
-    right: 0;
 }
 
 .nav-mobile .nav-mobile__level--l0 {
