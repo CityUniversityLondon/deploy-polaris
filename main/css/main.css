@@ -7478,9 +7478,11 @@ USED IN:
         width: 100%;
         min-height: calc(100% + 1em);
     }
-    .cta-group--overhang-bottom .cta-group--overhang-bottom__icon {
-        position: absolute;
-        bottom: 1em;
+    @supports ((display: -webkit-box) or (display: flex)) {
+        .cta-group--overhang-bottom .cta-group--overhang-bottom__icon {
+            position: absolute;
+            bottom: 1em;
+        }
     }
 }
 
