@@ -3907,7 +3907,7 @@ sub {
  *   3. Push your changes and celebrate!
  */
 a {
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-bottom-style: solid;
     position: relative;
     text-decoration: none;
@@ -3922,18 +3922,17 @@ a:visited {
     color: #4c2c92;
 }
 
-a:hover, a:focus {
-    color: #035898;
+a:hover {
+    background-color: #005ea5;
+    color: #ffffff;
 }
 
 a:focus {
-    outline: 1px dotted #035898;
+    outline: 2px solid #1e1e1e;
 }
 
 a:active {
-    background-color: #035898;
-    color: #ffffff;
-    border-bottom-color: #035898;
+    outline: 1px dotted #1e1e1e;
 }
 
 a > span:not([class]):not([itemprop]) {
@@ -3961,6 +3960,7 @@ figure > a {
 }
 
 figure > a:link, figure > a:visited, figure > a:hover, figure > a:focus, figure > a:active {
+    background-color: inherit;
     color: inherit;
 }
 
@@ -3973,6 +3973,7 @@ figure > a:link, figure > a:visited, figure > a:hover, figure > a:focus, figure 
 }
 
 .card:link, .card:visited, .card:hover, .card:focus, .card:active {
+    background-color: inherit;
     color: inherit;
 }
 
@@ -3998,6 +3999,7 @@ figure > a:link, figure > a:visited, figure > a:hover, figure > a:focus, figure 
 }
 
 .cta:link, .cta:visited, .cta:hover, .cta:focus, .cta:active {
+    background-color: inherit;
     color: inherit;
 }
 
@@ -4037,6 +4039,7 @@ a.button {
 }
 
 a.button:link, a.button:visited, a.button:hover, a.button:focus, a.button:active {
+    background-color: inherit;
     color: inherit;
 }
 
@@ -5394,16 +5397,18 @@ iframe {
     color: #ffffff;
 }
 
-.footer__left-side a {
-    border-bottom-color: transparent;
+.footer__left-side a:link, .footer__left-side a:visited {
+    color: #888888;
+    border-bottom-color: #d92231;
 }
 
-.footer__left-side a:link, .footer__left-side a:visited {
+.footer__left-side a:hover {
+    background-color: #d92231;
     color: #ffffff;
 }
 
-.footer__left-side a:hover, .footer__left-side a:focus, .footer__left-side a:active {
-    border-bottom-color: currentColor;
+.footer__left-side a:focus, .footer__left-side a:active {
+    outline-color: #ececec;
 }
 
 .footer__left-side a::after {
@@ -6140,6 +6145,7 @@ video,
 }
 
 .accordion-tabs__menu__item:link, .accordion-tabs__menu__item:visited, .accordion-tabs__menu__item:hover, .accordion-tabs__menu__item:focus, .accordion-tabs__menu__item:active {
+    background-color: inherit;
     color: inherit;
 }
 
@@ -6210,6 +6216,7 @@ video,
 }
 
 .accordion-tabs__content__heading-anchor:link, .accordion-tabs__content__heading-anchor:visited, .accordion-tabs__content__heading-anchor:hover, .accordion-tabs__content__heading-anchor:focus, .accordion-tabs__content__heading-anchor:active {
+    background-color: inherit;
     color: inherit;
 }
 
@@ -6565,6 +6572,7 @@ USED IN:
 .nav-mobile .nav-mobile__toggle-link:hover,
 .nav-mobile .nav-mobile__toggle-link:focus,
 .nav-mobile .nav-mobile__toggle-link:active {
+    background-color: inherit;
     color: inherit;
 }
 
@@ -7855,6 +7863,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .external-img-link-strip a:link, .external-img-link-strip a:visited, .external-img-link-strip a:hover, .external-img-link-strip a:focus, .external-img-link-strip a:active {
+    background-color: inherit;
     color: inherit;
 }
 
@@ -8405,6 +8414,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .dialog__box__heading__close:link, .dialog__box__heading__close:visited, .dialog__box__heading__close:hover, .dialog__box__heading__close:focus, .dialog__box__heading__close:active {
+    background-color: inherit;
     color: inherit;
 }
 
