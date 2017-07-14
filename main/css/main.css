@@ -5408,8 +5408,11 @@ iframe {
     text-align: right;
 }
 
-.footer__left-side {
+.footer {
     background-color: #1e1e1e;
+}
+
+.footer__left-side {
     color: #ffffff;
 }
 
@@ -5451,6 +5454,7 @@ iframe {
 
 .footer__details {
     padding: 50px 8px;
+    font-size: 0.9em;
 }
 
 @media (min-width: 801px) {
@@ -5490,7 +5494,7 @@ iframe {
 }
 
 .footer__address-part--org {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -5505,7 +5509,7 @@ iframe {
 
 .footer__misc-links a {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 5px;
 }
 
