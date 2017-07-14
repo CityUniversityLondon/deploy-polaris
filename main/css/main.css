@@ -5392,11 +5392,8 @@ iframe {
     text-align: right;
 }
 
-.footer {
-    background-color: #1e1e1e;
-}
-
 .footer__left-side {
+    background-color: #1e1e1e;
     color: #ffffff;
 }
 
