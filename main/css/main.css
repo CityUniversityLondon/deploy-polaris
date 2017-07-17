@@ -5416,25 +5416,6 @@ iframe {
     color: #ffffff;
 }
 
-.footer__left-side a:link, .footer__left-side a:visited {
-    color: #888888;
-    border-bottom-color: #d92231;
-}
-
-.footer__left-side a:hover {
-    background-color: #d92231;
-    color: #ffffff;
-}
-
-.footer__left-side a:focus, .footer__left-side a:active {
-    outline-color: #ececec;
-}
-
-.footer__left-side a::after {
-    content: "\0020\003E";
-    border-bottom-color: transparent !important;
-}
-
 .footer__right-side {
     background-color: #ffffff;
     color: #1e1e1e;
@@ -5455,12 +5436,14 @@ iframe {
 .footer__details {
     padding: 50px 8px;
     font-size: 0.9em;
+    text-align: center;
 }
 
 @media (min-width: 801px) {
     .footer__details {
         float: left;
         padding: 50px 0 30px 60px;
+        text-align: left;
     }
 }
 
@@ -5473,11 +5456,26 @@ iframe {
 .footer__sub-headline {
     text-transform: uppercase;
     font-size: 0.8em;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-.footer__cta-headline {
-    font-size: 0.9em;
+.footer__cta-headline a:link, .footer__cta-headline a:visited {
+    color: #888888;
+    border-bottom-color: #d92231;
+}
+
+.footer__cta-headline a:hover {
+    background-color: #d92231;
+    color: #ffffff;
+}
+
+.footer__cta-headline a:focus, .footer__cta-headline a:active {
+    outline-color: #ececec;
+}
+
+.footer__cta-headline a::after {
+    content: "\0020\003E";
+    border-bottom-color: transparent !important;
 }
 
 .footer__address {
@@ -5494,7 +5492,7 @@ iframe {
 }
 
 .footer__address-part--org {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -5503,8 +5501,31 @@ iframe {
     margin-top: 10px;
 }
 
+.footer__social {
+    margin-top: 30px;
+}
+
+.footer__social a {
+    margin: 0 10px 5px;
+    border-bottom: none;
+    color: #666666;
+    font-size: 1.5em;
+}
+
+.footer__social-intro {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+@media (min-width: 801px) {
+    .footer__social-intro {
+        display: inline-block;
+    }
+}
+
 .footer__misc-links {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .footer__misc-links a {
@@ -5515,10 +5536,11 @@ iframe {
 
 .footer__copyright span {
     display: block;
+    margin-top: 5px;
 }
 
 .footer__accreditation {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .footer__accreditation p {
