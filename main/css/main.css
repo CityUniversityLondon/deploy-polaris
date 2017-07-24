@@ -80,369 +80,295 @@
  * If a link should *not* appear visually-similar to the default anchor styles,
  * there are a number of properties/values that need to be reset/unset which
  * cascade and need to be anticipated.
- *   1. Set the `border-border-width` to `0` (supercedes `border-bottom-color`
- *      and `border-bottom-style`)
- *   2. Set the `background-color` to `transparent` for `:focus` and `:active`
- *      states
+ *   1. Set the `border-border-width` to `0`
+ *   2. Set the `background-color` to `transparent` for `:hover` state
  */
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: normal;
     font-weight: 300;
     src: local("Meta Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Light.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: normal;
     font-weight: 400;
     src: local("Meta Sans Normal"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Normal.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: normal;
     font-weight: 500;
     src: local("Meta Sans Book"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Book.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: normal;
     font-weight: 600;
     src: local("Meta Sans Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Medium.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: normal;
     font-weight: 700;
     src: local("Meta Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-Bold.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: italic;
     font-weight: 300;
     src: local("Meta Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-LightIta.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: italic;
     font-weight: 400;
     src: local("Meta Sans Normal Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-NormalIta.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: italic;
     font-weight: 500;
     src: local("Meta Sans Book Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-BookIta.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: italic;
     font-weight: 600;
     src: local("Meta Sans Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-MediumIta.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Meta Sans";
     font-style: italic;
     font-weight: 700;
     src: local("Meta Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/meta-sans/MetaWeb-BoldIta.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: normal;
     font-weight: 100;
-    src: local("Roboto Thin"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff) format("woff");
+    src: local("Roboto Thin"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff) format("woff");
+    src: local("Roboto Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff) format("woff");
+    src: local("Roboto Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
-    src: local("Roboto Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff) format("woff");
+    src: local("Roboto Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff) format("woff");
+    src: local("Roboto Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
-    src: local("Roboto Black"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff) format("woff");
+    src: local("Roboto Black"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: italic;
     font-weight: 100;
-    src: local("Roboto Thin Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff) format("woff");
+    src: local("Roboto Thin Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
-    src: local("Roboto Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff) format("woff");
+    src: local("Roboto Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: italic;
     font-weight: 400;
-    src: local("Roboto Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff) format("woff");
+    src: local("Roboto Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: italic;
     font-weight: 600;
-    src: local("Roboto Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff) format("woff");
+    src: local("Roboto Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: italic;
     font-weight: 700;
-    src: local("Roboto Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff) format("woff");
+    src: local("Roboto Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Roboto";
     font-style: italic;
     font-weight: 900;
-    src: local("Roboto Black Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff) format("woff");
+    src: local("Roboto Black Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: local("PT Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff) format("woff");
+    src: local("PT Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: local("PT Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff) format("woff");
+    src: local("PT Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "PT Sans";
     font-style: italic;
     font-weight: 400;
-    src: local("PT Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff) format("woff");
+    src: local("PT Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "PT Sans";
     font-style: italic;
     font-weight: 700;
-    src: local("PT Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff) format("woff");
+    src: local("PT Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff) format("woff");
+    src: local("Open Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff) format("woff");
+    src: local("Open Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff) format("woff");
+    src: local("Open Sans Semibold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff) format("woff");
+    src: local("Open Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 800;
-    src: local("Open Sans Extrabold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff) format("woff");
+    src: local("Open Sans Extrabold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 300;
-    src: local("Open Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff) format("woff");
+    src: local("Open Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 300;
-    src: local("Open Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff) format("woff");
+    src: local("Open Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 600;
-    src: local("Open Sans Semibold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff) format("woff");
+    src: local("Open Sans Semibold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 700;
-    src: local("Open Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff) format("woff");
+    src: local("Open Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 @font-face {
-    /* stylelint-disable */
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 800;
-    src: local("Open Sans Extrabold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff) format("woff");
+    src: local("Open Sans Extrabold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    /* stylelint-enable */
 }
 
 /*!
@@ -459,10 +385,10 @@
     font-style: normal;
 }
 
-.fa, .accordion__content__heading__icon, .js .accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li:not(:first-child), .nav-mobile__toggle-label__icon, .header--2 .tertiary-navigation__search::before,
-.header--2 .nav-mobile__toggle-label::before,
-.header:not([class*="header--"]) .tertiary-navigation__search::before,
-.header:not([class*="header--"]) .nav-mobile__toggle-label::before, .header-toggle--menu .header-toggle__icon, .header-toggle--search .header-toggle__icon, .dialog__box__heading__close__icon {
+.fa, .accordion__content__heading__icon, .js .accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li:not(:first-child), .nav-mobile__toggle-label__icon, .header--2 .tertiary-navigation__search:before,
+.header--2 .nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .tertiary-navigation__search:before,
+.header:not([class*="header--"]) .nav-mobile__toggle-label:before, .header-toggle--menu .header-toggle__icon, .header-toggle--search .header-toggle__icon, .dialog__box__heading__close__icon {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -535,17 +461,17 @@
     float: right;
 }
 
-.fa.fa-pull-left, .fa-pull-left.accordion__content__heading__icon, .js .fa-pull-left.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.fa-pull-left:not(:first-child), .fa-pull-left.nav-mobile__toggle-label__icon, .header--2 .fa-pull-left.tertiary-navigation__search::before,
-.header--2 .fa-pull-left.nav-mobile__toggle-label::before,
-.header:not([class*="header--"]) .fa-pull-left.tertiary-navigation__search::before,
-.header:not([class*="header--"]) .fa-pull-left.nav-mobile__toggle-label::before, .header-toggle--menu .fa-pull-left.header-toggle__icon, .header-toggle--search .fa-pull-left.header-toggle__icon, .fa-pull-left.dialog__box__heading__close__icon {
+.fa.fa-pull-left, .fa-pull-left.accordion__content__heading__icon, .js .fa-pull-left.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.fa-pull-left:not(:first-child), .fa-pull-left.nav-mobile__toggle-label__icon, .header--2 .fa-pull-left.tertiary-navigation__search:before,
+.header--2 .fa-pull-left.nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .fa-pull-left.tertiary-navigation__search:before,
+.header:not([class*="header--"]) .fa-pull-left.nav-mobile__toggle-label:before, .header-toggle--menu .fa-pull-left.header-toggle__icon, .header-toggle--search .fa-pull-left.header-toggle__icon, .fa-pull-left.dialog__box__heading__close__icon {
     margin-right: .3em;
 }
 
-.fa.fa-pull-right, .fa-pull-right.accordion__content__heading__icon, .js .fa-pull-right.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.fa-pull-right:not(:first-child), .fa-pull-right.nav-mobile__toggle-label__icon, .header--2 .fa-pull-right.tertiary-navigation__search::before,
-.header--2 .fa-pull-right.nav-mobile__toggle-label::before,
-.header:not([class*="header--"]) .fa-pull-right.tertiary-navigation__search::before,
-.header:not([class*="header--"]) .fa-pull-right.nav-mobile__toggle-label::before, .header-toggle--menu .fa-pull-right.header-toggle__icon, .header-toggle--search .fa-pull-right.header-toggle__icon, .fa-pull-right.dialog__box__heading__close__icon {
+.fa.fa-pull-right, .fa-pull-right.accordion__content__heading__icon, .js .fa-pull-right.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.fa-pull-right:not(:first-child), .fa-pull-right.nav-mobile__toggle-label__icon, .header--2 .fa-pull-right.tertiary-navigation__search:before,
+.header--2 .fa-pull-right.nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .fa-pull-right.tertiary-navigation__search:before,
+.header:not([class*="header--"]) .fa-pull-right.nav-mobile__toggle-label:before, .header-toggle--menu .fa-pull-right.header-toggle__icon, .header-toggle--search .fa-pull-right.header-toggle__icon, .fa-pull-right.dialog__box__heading__close__icon {
     margin-left: .3em;
 }
 
@@ -558,17 +484,17 @@
     float: left;
 }
 
-.fa.pull-left, .pull-left.accordion__content__heading__icon, .js .pull-left.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.pull-left:not(:first-child), .pull-left.nav-mobile__toggle-label__icon, .header--2 .pull-left.tertiary-navigation__search::before,
-.header--2 .pull-left.nav-mobile__toggle-label::before,
-.header:not([class*="header--"]) .pull-left.tertiary-navigation__search::before,
-.header:not([class*="header--"]) .pull-left.nav-mobile__toggle-label::before, .header-toggle--menu .pull-left.header-toggle__icon, .header-toggle--search .pull-left.header-toggle__icon, .pull-left.dialog__box__heading__close__icon {
+.fa.pull-left, .pull-left.accordion__content__heading__icon, .js .pull-left.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.pull-left:not(:first-child), .pull-left.nav-mobile__toggle-label__icon, .header--2 .pull-left.tertiary-navigation__search:before,
+.header--2 .pull-left.nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .pull-left.tertiary-navigation__search:before,
+.header:not([class*="header--"]) .pull-left.nav-mobile__toggle-label:before, .header-toggle--menu .pull-left.header-toggle__icon, .header-toggle--search .pull-left.header-toggle__icon, .pull-left.dialog__box__heading__close__icon {
     margin-right: .3em;
 }
 
-.fa.pull-right, .pull-right.accordion__content__heading__icon, .js .pull-right.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.pull-right:not(:first-child), .pull-right.nav-mobile__toggle-label__icon, .header--2 .pull-right.tertiary-navigation__search::before,
-.header--2 .pull-right.nav-mobile__toggle-label::before,
-.header:not([class*="header--"]) .pull-right.tertiary-navigation__search::before,
-.header:not([class*="header--"]) .pull-right.nav-mobile__toggle-label::before, .header-toggle--menu .pull-right.header-toggle__icon, .header-toggle--search .pull-right.header-toggle__icon, .pull-right.dialog__box__heading__close__icon {
+.fa.pull-right, .pull-right.accordion__content__heading__icon, .js .pull-right.accordion-tabs__content__heading-anchor__icon, .banner__text__breadcrumbs li.pull-right:not(:first-child), .pull-right.nav-mobile__toggle-label__icon, .header--2 .pull-right.tertiary-navigation__search:before,
+.header--2 .pull-right.nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .pull-right.tertiary-navigation__search:before,
+.header:not([class*="header--"]) .pull-right.nav-mobile__toggle-label:before, .header-toggle--menu .pull-right.header-toggle__icon, .header-toggle--search .pull-right.header-toggle__icon, .pull-right.dialog__box__heading__close__icon {
     margin-left: .3em;
 }
 
@@ -3566,12 +3492,12 @@ a {
 }
 
 button {
-    overflow: visible;
-    border: 0;
-    font: inherit;
-    -webkit-font-smoothing: inherit;
-    letter-spacing: inherit;
     background: none;
+    border: 0;
+    overflow: visible;
+    font: inherit;
+    letter-spacing: inherit;
+    -webkit-font-smoothing: inherit;
     cursor: pointer;
 }
 
@@ -3587,16 +3513,18 @@ img {
 }
 
 html {
-    min-height: 100%;
-    position: relative;
-    overflow-y: scroll;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    background-color: #fafafa;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
 }
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
 }
@@ -3756,51 +3684,6 @@ ol[reversed].anchor-demo-list {
             flex-direction: column-reverse;
 }
 
-/**
- * Images and Figures
- */
-img,
-svg,
-picture {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-img,
-svg,
-picture,
-a img,
-a
-svg,
-a
-picture {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-}
-
-img {
-    border-style: none;
-}
-
-img::before {
-    content: "";
-    background-color: #ececec;
-    background-image: linear-gradient(to bottom right, transparent 0%, transparent calc(50% - 2px), #d0cfcb calc(50% - 2px), #d0cfcb calc(50% + 2px), transparent calc(50% + 2px), transparent 100%), linear-gradient(to bottom left, transparent 0%, transparent calc(50% - 2px), #d0cfcb calc(50% - 2px), #d0cfcb calc(50% + 2px), transparent calc(50% + 2px), transparent 100%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-box-shadow: inset 0 0 0 4px #d0cfcb;
-            box-shadow: inset 0 0 0 4px #d0cfcb;
-}
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
 figure {
     max-width: 100%;
     display: -webkit-box;
@@ -3837,6 +3720,10 @@ figure figcaption {
     line-height: 1.2;
 }
 
+figure > a {
+    display: block;
+}
+
 /**
  * Quotes
  */
@@ -3858,21 +3745,21 @@ blockquote,
     quotes: "« " " »" "‹ " " ›";
 }
 
-blockquote p::before {
+blockquote p:before {
     content: open-quote;
 }
 
-blockquote p::after {
+blockquote p:after {
     content: close-quote;
 }
 
-blockquote p:not(:last-of-type)::after {
+blockquote p:not(:last-of-type):after {
     width: 1px !important;
     height: 1px !important;
     padding: 0 !important;
     border: 0 !important;
-    position: absolute !important;
     overflow: hidden !important;
+    position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
@@ -3895,18 +3782,9 @@ sub {
     bottom: -0.25em;
 }
 
-/**
- * If you need to add a new link style, modify an existing link style, or
- * extend an existing style, please do so at the bottom of this file. This is
- * where all of our anchor and button styles live.
- * Adding, modifying, or extending styles requires you follow process:
- *   1. Establish full set of styles
- *   2. Present to the Web Team at the appropriate time during the weekly Code
- *      Review. A decision will be made on how the new styles will be
- *      implemented.
- *   3. Push your changes and celebrate!
- */
 a {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     color: #005ea5;
     border-bottom-color: #005ea5;
     border-bottom-width: 2px;
@@ -3921,11 +3799,11 @@ a:hover {
 }
 
 a:focus {
-    outline: 2px solid #1e1e1e;
+    outline: 3px solid #1e1e1e;
 }
 
 a:active {
-    outline: 1px dotted #1e1e1e;
+    outline: 2px dotted #1e1e1e;
 }
 
 a > span:not([class]):not([itemprop]) {
@@ -3933,8 +3811,8 @@ a > span:not([class]):not([itemprop]) {
     height: 1px !important;
     padding: 0 !important;
     border: 0 !important;
-    position: absolute !important;
     overflow: hidden !important;
+    position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
@@ -3947,89 +3825,22 @@ h6 > a {
     border-bottom-width: 2px;
 }
 
-figure > a {
-    border-bottom-width: 0;
-    display: block;
+.dark-background a {
+    color: #888888;
+    border-bottom-color: #d92231;
 }
 
-figure > a, figure > a:hover, figure > a:focus, figure > a:active {
-    background-color: inherit;
-    color: inherit;
-}
-
-.card {
-    border-bottom-width: 0;
-    display: inline-block;
-    -webkit-box-shadow: 0 1px 2px 0 transparent;
-            box-shadow: 0 1px 2px 0 transparent;
-    background-color: #ffffff;
-    color: #1e1e1e;
-    border-bottom-width: 0;
-}
-
-.card, .card:hover, .card:focus, .card:active {
-    background-color: inherit;
-    color: inherit;
-}
-
-.card:hover, .card:focus, .card:active {
-    -webkit-box-shadow: 0 1px 2px 0 rgba(30, 30, 30, 0.75);
-            box-shadow: 0 1px 2px 0 rgba(30, 30, 30, 0.75);
-    z-index: 2;
-}
-
-.card:focus {
-    outline: 1px dotted #1e1e1e;
-}
-
-.cta {
-    border-bottom-width: 0;
-    display: block;
-    background-color: #ececec;
-    color: #ffffff;
-    padding: 1.5rem 1rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.cta, .cta:hover, .cta:focus, .cta:active {
-    background-color: inherit;
-    color: inherit;
-}
-
-.cta:hover, .cta:focus, .cta:active {
-    background-color: #d0cfcb;
+.dark-background a:hover {
+    background-color: #d92231;
     color: #ffffff;
 }
 
-.cta--orange {
-    background-color: #f15f22;
-    color: #ffffff;
-}
-
-.cta--orange:hover, .cta--orangeactive, .cta--orange:focus {
-    background-color: #d3470d;
-    color: #ffffff;
-}
-
-.cta--yellow {
-    background-color: #fbae3b;
-    color: #ffffff;
-}
-
-.cta--yellow:hover, .cta--yellow:focus, .cta--yellow:active {
-    background-color: #f15f22;
-    color: #ffffff;
+.dark-background a:focus, .dark-background a:active {
+    outline-color: #ececec;
 }
 
 a.button {
-    border-bottom-width: 0;
     display: inline-block;
-}
-
-a.button, a.button:hover, a.button:focus, a.button:active {
-    background-color: inherit;
-    color: inherit;
 }
 
 button,
@@ -4055,6 +3866,38 @@ video {
 
 iframe {
     contain: strict;
+}
+
+/**
+ * Images and Figures
+ */
+img,
+svg,
+picture {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+img,
+svg,
+picture,
+a img,
+a
+svg,
+a
+picture {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    border-width: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
 }
 
 /**
@@ -4101,15 +3944,15 @@ iframe {
     }
 }
 
-.container::before, .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper::before,
-.accordion-tabs--top-level-layout .accordion-tabs__content-container::before, .banner::before, .container::after, .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper::after,
-.accordion-tabs--top-level-layout .accordion-tabs__content-container::after, .banner::after {
+.container:before, .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper:before,
+.accordion-tabs--top-level-layout .accordion-tabs__content-container:before, .banner:before, .container:after, .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper:after,
+.accordion-tabs--top-level-layout .accordion-tabs__content-container:after, .banner:after {
     content: "";
     display: table;
 }
 
-.container::after, .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper::after,
-.accordion-tabs--top-level-layout .accordion-tabs__content-container::after, .banner::after {
+.container:after, .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper:after,
+.accordion-tabs--top-level-layout .accordion-tabs__content-container:after, .banner:after {
     clear: both;
 }
 
@@ -4876,7 +4719,6 @@ iframe {
     }
 }
 
-/* stylelint-disable */
 @media (min-width: 501px) and (max-width: 800px) {
     .float-left--small-medium {
         float: left !important;
@@ -4913,7 +4755,6 @@ iframe {
     }
 }
 
-/* stylelint-enable */
 .float-right {
     float: right !important;
 }
@@ -4966,7 +4807,6 @@ iframe {
     }
 }
 
-/* stylelint-disable */
 @media (min-width: 501px) and (max-width: 800px) {
     .float-right--small-medium {
         float: right !important;
@@ -5003,7 +4843,6 @@ iframe {
     }
 }
 
-/* stylelint-enable */
 .float-none {
     float: none !important;
 }
@@ -5056,7 +4895,6 @@ iframe {
     }
 }
 
-/* stylelint-disable */
 @media (min-width: 501px) and (max-width: 800px) {
     .float-none--small-medium {
         float: none !important;
@@ -5093,7 +4931,6 @@ iframe {
     }
 }
 
-/* stylelint-enable */
 .grid--sixths > div,
 .grid--sixths > li {
     min-height: 1px;
@@ -5395,11 +5232,16 @@ iframe {
     text-align: right;
 }
 
-.footer {
-    background-color: #1e1e1e;
+@media (min-width: 801px) {
+    .footer {
+        background-color: #1e1e1e;
+        background-image: -webkit-gradient(linear, left top, right top, from(#1e1e1e), color-stop(50%, #1e1e1e), color-stop(50%, #fafafa), to(#fafafa));
+        background-image: linear-gradient(to right, #1e1e1e 0%, #1e1e1e 50%, #fafafa 50%, #fafafa 100%);
+    }
 }
 
 .footer__left-side {
+    background-color: #1e1e1e;
     color: #ffffff;
 }
 
@@ -5409,41 +5251,20 @@ iframe {
 }
 
 .footer__headlines {
-    padding: 50px 8px;
-}
-
-@media (min-width: 801px) {
-    .footer__headlines {
-        max-width: 450px;
-        float: right;
-        padding: 50px 50px 30px;
-    }
-}
-
-.footer__details {
-    padding: 50px 8px;
-    font-size: 0.9em;
-    text-align: center;
-}
-
-@media (min-width: 801px) {
-    .footer__details {
-        float: left;
-        padding: 50px 0 30px 60px;
-        text-align: left;
-    }
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
 }
 
 .footer__main-headline {
     font-size: 2em;
     line-height: 1.2;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .footer__sub-headline {
     text-transform: uppercase;
     font-size: 0.8em;
-    margin-bottom: 50px;
+    margin-bottom: 3.5rem;
 }
 
 .footer__cta-headline a {
@@ -5460,89 +5281,111 @@ iframe {
     outline-color: #ececec;
 }
 
-.footer__cta-headline a::after {
-    content: "\0020\003E";
+.footer__cta-headline a:after {
+    font-family: "FontAwesome";
+    font-display: swap;
+    content: "\f054";
+    padding-left: 0.5em;
     border-bottom-color: transparent !important;
+}
+
+.footer__details {
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+@media (min-width: 801px) {
+    .footer__details {
+        text-align: left;
+    }
 }
 
 .footer__address {
     display: block;
+    margin-bottom: 2rem;
     font-style: normal;
-    line-height: 1.3;
-    margin: 0;
-    padding-bottom: 5px;
-    background: none;
 }
 
 .footer__address-part {
     display: block;
+    margin-bottom: 0.5rem;
 }
 
 .footer__address-part--org {
-    font-size: 1.4em;
+    margin-bottom: 0.5rem;
+    font-size: 1.5em;
     font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.footer__address-part--enquiry {
-    margin-top: 10px;
 }
 
 .footer__social {
-    margin-top: 30px;
+    margin-bottom: 2rem;
 }
 
 .footer__social a {
-    margin: 0 10px 5px;
-    border-bottom: none;
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
     color: #666666;
     font-size: 1.5em;
 }
 
-.footer__social-intro {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+.footer__social a:hover, .footer__social a:focus, .footer__social a:active {
+    background-color: inherit;
+    color: inherit;
 }
 
-@media (min-width: 801px) {
-    .footer__social-intro {
-        display: inline-block;
-    }
+.footer__social-title {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .footer__misc-links {
-    margin-top: 20px;
+    margin-bottom: 2rem;
 }
 
 .footer__misc-links a {
     display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer__copyright {
+    margin-bottom: 2rem;
 }
 
 .footer__copyright span {
     display: block;
-    margin-top: 5px;
-}
-
-.footer__accreditation {
-    margin-top: 30px;
-}
-
-.footer__accreditation p {
-    margin-bottom: 15px;
 }
 
 .footer__accreditation a {
-    margin-right: 20px;
-    border-bottom: none;
+    margin-right: 1rem;
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+}
+
+.footer__accreditation a:hover, .footer__accreditation a:focus, .footer__accreditation a:active {
+    background-color: inherit;
+    color: inherit;
 }
 
 .footer__accreditation img {
     display: inline-block;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.footer__accreditation-title {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .content, .content--fixed {
@@ -5960,7 +5803,7 @@ iframe {
 }
 
 .url-dropdown select {
-    padding: 10px 15px;
+    padding: 0.5rem 1rem;
 }
 
 .no-js .url-dropdown select {
@@ -5968,8 +5811,8 @@ iframe {
     height: 1px !important;
     padding: 0 !important;
     border: 0 !important;
-    position: absolute !important;
     overflow: hidden !important;
+    position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
@@ -5978,8 +5821,8 @@ iframe {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .media figcaption,
@@ -5996,8 +5839,8 @@ video {
     height: 1px !important;
     padding: 0 !important;
     border: 0 !important;
-    position: absolute !important;
     overflow: hidden !important;
+    position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
@@ -6011,11 +5854,12 @@ iframe, .media
 object, .media
 video,
 .video-preview-wrapper .video-preview {
-    margin-bottom: 0;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
+    height: 100%;
+    margin-bottom: 0;
 }
 
 .media:not([class*="media--"]),
@@ -6029,8 +5873,8 @@ video,
     height: 1px !important;
     padding: 0 !important;
     border: 0 !important;
-    position: absolute !important;
     overflow: hidden !important;
+    position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
@@ -6039,8 +5883,8 @@ video,
     height: 1px !important;
     padding: 0 !important;
     border: 0 !important;
-    position: absolute !important;
     overflow: hidden !important;
+    position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
@@ -6067,8 +5911,8 @@ video,
     height: 1px !important;
     padding: 0 !important;
     border: 0 !important;
-    position: absolute !important;
     overflow: hidden !important;
+    position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
@@ -6080,10 +5924,13 @@ video,
         height: 1px !important;
         padding: 0 !important;
         border: 0 !important;
-        position: absolute !important;
         overflow: hidden !important;
+        position: absolute !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
     }
+}
+
+@media (max-width: 500px) {
     .js .accordion-tabs__content__group > div {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -6096,8 +5943,8 @@ video,
         height: 1px !important;
         padding: 0 !important;
         border: 0 !important;
-        position: absolute !important;
         overflow: hidden !important;
+        position: absolute !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
     }
 }
@@ -6107,20 +5954,21 @@ video,
 }
 
 .accordion-tabs__content__heading {
-    text-align: center;
-    position: relative;
     padding-top: 2rem;
+    position: relative;
+    text-align: center;
 }
 
 .accordion-tabs__content__heading:after {
-    content: ' ';
     position: absolute;
     bottom: 0;
     left: 50%;
-    margin-left: -2rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: " ";
+    background-color: #f15f22;
     width: 4rem;
     height: 2px;
-    background: #f15f22;
 }
 
 /** Layout code: manages content width for tab-menu and tab-content */
@@ -6129,18 +5977,15 @@ video,
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
-    /**
-        This element can become sticky with stickybits. For IE support, width: 100% seems required
-         */
-    width: 100%;
     background-color: #ffffff;
+    width: 100%;
     z-index: 2;
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
-    border-color: #555555;
-    border-style: solid;
     border-width: 1px 0;
+    border-style: solid;
+    border-color: #555555;
     font-size: 1.2rem;
 }
 
@@ -6155,10 +6000,10 @@ video,
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
     font-size: 1.2rem;
 }
 
@@ -6167,20 +6012,14 @@ video,
 }
 
 .accordion-tabs__menu__item {
-    border-bottom-width: 0;
-    display: inline-block;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     color: #555555;
+    display: inline-block;
     border-bottom-width: 0;
     position: relative;
     line-height: 1;
     text-decoration: none;
-}
-
-.accordion-tabs__menu__item, .accordion-tabs__menu__item:hover, .accordion-tabs__menu__item:focus, .accordion-tabs__menu__item:active {
-    background-color: inherit;
-    color: inherit;
 }
 
 @media (max-width: 800px) {
@@ -6195,17 +6034,21 @@ video,
     }
 }
 
-.accordion-tabs__menu__item::before {
-    -webkit-transition: width 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
-    transition: width 0.4s ease 0s, left 0.4s ease 0s, opacity 0.2s ease 0s;
+.accordion-tabs__menu__item:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     content: "";
     opacity: 0.1;
     background-color: #1e1e1e;
-    width: 0;
+    width: 100%;
     height: 4px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
 }
 
 .accordion-tabs__menu__item:hover {
@@ -6225,25 +6068,19 @@ video,
     color: #1e1e1e;
 }
 
-.accordion-tabs__menu__item:hover::before, .accordion-tabs__menu__item[aria-selected="true"]::before {
+.accordion-tabs__menu__item:hover:before, .accordion-tabs__menu__item[aria-selected="true"]:before {
     opacity: 1;
-    left: 0;
-    width: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
 }
 
 .accordion-tabs__content__heading-anchor {
-    border-bottom-width: 0;
     display: block;
     border-style: solid;
     border-color: #555555;
     border-width: 1px 0 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-.accordion-tabs__content__heading-anchor, .accordion-tabs__content__heading-anchor:hover, .accordion-tabs__content__heading-anchor:focus, .accordion-tabs__content__heading-anchor:active {
-    background-color: inherit;
-    color: inherit;
 }
 
 .accordion-tabs__content__heading-anchor:hover, .accordion-tabs__content__heading-anchor[aria-selected="true"] {
@@ -6257,16 +6094,17 @@ video,
 .banner__text .banner__text__subtitle {
     font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-display: swap;
-    font-weight: 300;
+    color: #555555;
     margin-top: -1rem;
     margin-bottom: 2rem;
-    color: #555555;
+    font-weight: 300;
 }
 
 .banner__text p {
+    font-family: "Meta Sans", Arial, Helvetica, sans-serif;
+    font-display: swap;
     color: #555555;
     font-size: 1.2rem;
-    font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
 
@@ -6299,11 +6137,11 @@ video,
     content: "";
     background: #ffffff;
     width: 90%;
+    height: 4rem;
+    padding: 1rem;
     position: absolute;
     bottom: 100%;
     right: 0;
-    padding: 1rem;
-    height: 4rem;
 }
 
 .banner--fw .banner__text > div {
@@ -6385,11 +6223,11 @@ video,
         overflow-x: hidden;
     }
     .banner--fw .banner__media img {
-        position: absolute;
-        display: block;
-        height: 100%;
         width: auto;
-        max-width: none;
+        max-width: auto;
+        height: 100%;
+        display: block;
+        position: absolute;
     }
 }
 
@@ -6549,26 +6387,26 @@ USED IN:
 }
 
 [data-tooltip] {
-    position: relative;
     border-bottom: 1px dotted currentColor;
+    position: relative;
 }
 
-[data-tooltip]::after {
+[data-tooltip]:after {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
     -webkit-transition: opacity 0.2s ease 0s;
     transition: opacity 0.2s ease 0s;
     content: attr(data-tooltip);
     opacity: 0;
     background-color: #ffffff;
     color: #1e1e1e;
-    padding: 0.5rem;
     display: block;
-    border: 1px solid #1e1e1e;
-    position: absolute;
-    left: 100%;
-    bottom: 100%;
+    padding: 0.5rem;
+    border: 1px solid currentColor;
 }
 
-[data-tooltip]:hover::after {
+[data-tooltip]:hover:after {
     opacity: 1;
 }
 
@@ -6579,25 +6417,11 @@ USED IN:
 .nav-mobile .nav-mobile__page-link,
 .nav-mobile .nav-mobile__close-link,
 .nav-mobile .nav-mobile__toggle-link {
-    border-bottom-width: 0;
     display: block;
-    border: none;
-    line-height: 1.5em;
+    border-width: 0;
     padding: 10px 15px;
     vertical-align: baseline;
-}
-
-.nav-mobile .nav-mobile__page-link, .nav-mobile .nav-mobile__page-link:hover, .nav-mobile .nav-mobile__page-link:focus, .nav-mobile .nav-mobile__page-link:active,
-.nav-mobile .nav-mobile__close-link,
-.nav-mobile .nav-mobile__close-link:hover,
-.nav-mobile .nav-mobile__close-link:focus,
-.nav-mobile .nav-mobile__close-link:active,
-.nav-mobile .nav-mobile__toggle-link,
-.nav-mobile .nav-mobile__toggle-link:hover,
-.nav-mobile .nav-mobile__toggle-link:focus,
-.nav-mobile .nav-mobile__toggle-link:active {
-    background-color: inherit;
-    color: inherit;
+    line-height: 1.5em;
 }
 
 .nav-mobile .nav-mobile__toggle-link {
@@ -6742,17 +6566,19 @@ USED IN:
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    -webkit-touch-callout: default;
+    -webkit-touch-callout: none;
     display: block;
 }
 
 /** open state **/
 .nav-mobile__toggle:checked + .nav-mobile__overlay .nav-mobile__toggle-label {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     position: fixed;
     top: 0;
     right: 1rem;
     z-index: 5;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 }
 
 .nav-mobile__toggle:checked + .nav-mobile__overlay .nav-mobile__content {
@@ -6762,12 +6588,12 @@ USED IN:
             animation: slide-right-in 0.2s ease 0s both normal;
     color: #1e1e1e;
     background-color: #ffffff;
+    min-width: 17.5rem;
+    height: 100%;
     display: block;
     position: fixed;
     top: 0;
     right: 0;
-    min-width: 17.5rem;
-    height: 100%;
     z-index: 4;
 }
 
@@ -6844,7 +6670,7 @@ USED IN:
     border-bottom: 1px solid transparent;
 }
 
-.header__notice span::after {
+.header__notice span:after {
     content: " →";
 }
 
@@ -6986,8 +6812,8 @@ USED IN:
     background-color: transparent;
 }
 
-.header--2 .primary-navigation__list a::before,
-.header:not([class*="header--"]) .primary-navigation__list a::before {
+.header--2 .primary-navigation__list a:before,
+.header:not([class*="header--"]) .primary-navigation__list a:before {
     -webkit-transition: -webkit-transform 0.2s ease 0s;
     transition: -webkit-transform 0.2s ease 0s;
     transition: transform 0.2s ease 0s;
@@ -7006,14 +6832,14 @@ USED IN:
             transform-origin: top center;
 }
 
-.header--2 .primary-navigation__list a:hover::before,
-.header--2 .primary-navigation__list a:focus::before,
-.header--2 .primary-navigation__list a:active::before,
-.header--2 .primary-navigation__list .selected > a::before,
-.header:not([class*="header--"]) .primary-navigation__list a:hover::before,
-.header:not([class*="header--"]) .primary-navigation__list a:focus::before,
-.header:not([class*="header--"]) .primary-navigation__list a:active::before,
-.header:not([class*="header--"]) .primary-navigation__list .selected > a::before {
+.header--2 .primary-navigation__list a:hover:before,
+.header--2 .primary-navigation__list a:focus:before,
+.header--2 .primary-navigation__list a:active:before,
+.header--2 .primary-navigation__list .selected > a:before,
+.header:not([class*="header--"]) .primary-navigation__list a:hover:before,
+.header:not([class*="header--"]) .primary-navigation__list a:focus:before,
+.header:not([class*="header--"]) .primary-navigation__list a:active:before,
+.header:not([class*="header--"]) .primary-navigation__list .selected > a:before {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
 }
@@ -7050,8 +6876,8 @@ USED IN:
     background-color: transparent;
 }
 
-.header--2 .secondary-navigation__list a::before,
-.header:not([class*="header--"]) .secondary-navigation__list a::before {
+.header--2 .secondary-navigation__list a:before,
+.header:not([class*="header--"]) .secondary-navigation__list a:before {
     -webkit-transition: -webkit-transform 0.2s ease 0s;
     transition: -webkit-transform 0.2s ease 0s;
     transition: transform 0.2s ease 0s;
@@ -7069,14 +6895,14 @@ USED IN:
             transform: scaleY(0);
 }
 
-.header--2 .secondary-navigation__list a:hover::before,
-.header--2 .secondary-navigation__list a:focus::before,
-.header--2 .secondary-navigation__list a:active::before,
-.header--2 .secondary-navigation__list .selected a::before,
-.header:not([class*="header--"]) .secondary-navigation__list a:hover::before,
-.header:not([class*="header--"]) .secondary-navigation__list a:focus::before,
-.header:not([class*="header--"]) .secondary-navigation__list a:active::before,
-.header:not([class*="header--"]) .secondary-navigation__list .selected a::before {
+.header--2 .secondary-navigation__list a:hover:before,
+.header--2 .secondary-navigation__list a:focus:before,
+.header--2 .secondary-navigation__list a:active:before,
+.header--2 .secondary-navigation__list .selected a:before,
+.header:not([class*="header--"]) .secondary-navigation__list a:hover:before,
+.header:not([class*="header--"]) .secondary-navigation__list a:focus:before,
+.header:not([class*="header--"]) .secondary-navigation__list a:active:before,
+.header:not([class*="header--"]) .secondary-navigation__list .selected a:before {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
 }
@@ -7085,13 +6911,7 @@ USED IN:
 .header:not([class*="header--"]) .tertiary-navigation {
     position: absolute;
     top: 0;
-}
-
-@media (max-width: 500px) {
-    .header--2 .tertiary-navigation,
-    .header:not([class*="header--"]) .tertiary-navigation {
-        right: 0;
-    }
+    right: 0;
 }
 
 @media (min-width: 501px) {
@@ -7107,10 +6927,10 @@ USED IN:
 .header:not([class*="header--"]) .tertiary-navigation__list a,
 .header:not([class*="header--"]) .tertiary-navigation__search,
 .header:not([class*="header--"]) .nav-mobile__toggle-label {
-    font-weight: 700;
-    text-transform: uppercase;
     padding-top: 3.5rem;
     padding-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .header--2 .tertiary-navigation__list a span,
@@ -7164,10 +6984,10 @@ USED IN:
 @media (max-width: 1440px) {
     .header--2 .tertiary-navigation__list,
     .header:not([class*="header--"]) .tertiary-navigation__list {
+        margin-top: 1rem;
         position: absolute;
         top: 100%;
         right: 0;
-        margin-top: 1rem;
         white-space: nowrap;
     }
 }
@@ -7221,16 +7041,16 @@ USED IN:
     }
 }
 
-.header--2 .tertiary-navigation__search::before,
-.header--2 .nav-mobile__toggle-label::before,
-.header:not([class*="header--"]) .tertiary-navigation__search::before,
-.header:not([class*="header--"]) .nav-mobile__toggle-label::before {
+.header--2 .tertiary-navigation__search:before,
+.header--2 .nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .tertiary-navigation__search:before,
+.header:not([class*="header--"]) .nav-mobile__toggle-label:before {
     font-size: 1.44rem;
     font-weight: 400;
 }
 
-.header--2 .tertiary-navigation__search::before,
-.header:not([class*="header--"]) .tertiary-navigation__search::before {
+.header--2 .tertiary-navigation__search:before,
+.header:not([class*="header--"]) .tertiary-navigation__search:before {
     content: "";
 }
 
@@ -7240,24 +7060,24 @@ USED IN:
     transition: all 0.2s ease;
 }
 
-.header--2 .nav-mobile__toggle-label::before,
-.header:not([class*="header--"]) .nav-mobile__toggle-label::before {
+.header--2 .nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .nav-mobile__toggle-label:before {
     content: "";
 }
 
-.header--2 .nav-mobile__toggle-label.open::before,
-.header:not([class*="header--"]) .nav-mobile__toggle-label.open::before {
+.header--2 .nav-mobile__toggle-label.open:before,
+.header:not([class*="header--"]) .nav-mobile__toggle-label.open:before {
     content: "";
 }
 
-.header--2 .nav-mobile__toggle-label .fa, .header--2 .nav-mobile__toggle-label .accordion__content__heading__icon, .header--2 .nav-mobile__toggle-label .js .accordion-tabs__content__heading-anchor__icon, .js .header--2 .nav-mobile__toggle-label .accordion-tabs__content__heading-anchor__icon, .header--2 .nav-mobile__toggle-label .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs .header--2 .nav-mobile__toggle-label li:not(:first-child), .header--2 .nav-mobile__toggle-label .nav-mobile__toggle-label__icon, .header--2 .nav-mobile__toggle-label .tertiary-navigation__search::before, .header--2 .nav-mobile__toggle-label .nav-mobile__toggle-label::before, .header--2 .nav-mobile__toggle-label .header-toggle--menu .header-toggle__icon, .header-toggle--menu .header--2 .nav-mobile__toggle-label .header-toggle__icon, .header--2 .nav-mobile__toggle-label .header-toggle--search .header-toggle__icon, .header-toggle--search .header--2 .nav-mobile__toggle-label .header-toggle__icon, .header--2 .nav-mobile__toggle-label .dialog__box__heading__close__icon,
+.header--2 .nav-mobile__toggle-label .fa, .header--2 .nav-mobile__toggle-label .accordion__content__heading__icon, .header--2 .nav-mobile__toggle-label .js .accordion-tabs__content__heading-anchor__icon, .js .header--2 .nav-mobile__toggle-label .accordion-tabs__content__heading-anchor__icon, .header--2 .nav-mobile__toggle-label .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs .header--2 .nav-mobile__toggle-label li:not(:first-child), .header--2 .nav-mobile__toggle-label .nav-mobile__toggle-label__icon, .header--2 .nav-mobile__toggle-label .tertiary-navigation__search:before, .header--2 .nav-mobile__toggle-label .nav-mobile__toggle-label:before, .header--2 .nav-mobile__toggle-label .header-toggle--menu .header-toggle__icon, .header-toggle--menu .header--2 .nav-mobile__toggle-label .header-toggle__icon, .header--2 .nav-mobile__toggle-label .header-toggle--search .header-toggle__icon, .header-toggle--search .header--2 .nav-mobile__toggle-label .header-toggle__icon, .header--2 .nav-mobile__toggle-label .dialog__box__heading__close__icon,
 .header:not([class*="header--"]) .nav-mobile__toggle-label .fa,
 .header:not([class*="header--"]) .nav-mobile__toggle-label .accordion__content__heading__icon,
 .header:not([class*="header--"]) .nav-mobile__toggle-label .js .accordion-tabs__content__heading-anchor__icon, .js
 .header:not([class*="header--"]) .nav-mobile__toggle-label .accordion-tabs__content__heading-anchor__icon,
 .header:not([class*="header--"]) .nav-mobile__toggle-label .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs
 .header:not([class*="header--"]) .nav-mobile__toggle-label li:not(:first-child),
-.header:not([class*="header--"]) .nav-mobile__toggle-label .nav-mobile__toggle-label__icon, .header:not([class*="header--"]) .nav-mobile__toggle-label .tertiary-navigation__search::before, .header:not([class*="header--"]) .nav-mobile__toggle-label .nav-mobile__toggle-label::before,
+.header:not([class*="header--"]) .nav-mobile__toggle-label .nav-mobile__toggle-label__icon, .header:not([class*="header--"]) .nav-mobile__toggle-label .tertiary-navigation__search:before, .header:not([class*="header--"]) .nav-mobile__toggle-label .nav-mobile__toggle-label:before,
 .header:not([class*="header--"]) .nav-mobile__toggle-label .header-toggle--menu .header-toggle__icon, .header-toggle--menu
 .header:not([class*="header--"]) .nav-mobile__toggle-label .header-toggle__icon,
 .header:not([class*="header--"]) .nav-mobile__toggle-label .header-toggle--search .header-toggle__icon, .header-toggle--search
@@ -7330,10 +7150,10 @@ USED IN:
 }
 
 .stats-block h2 {
-    font-size: 1rem;
-    border-bottom: 1px solid #f15f22;
     padding: 1rem 0;
     margin-bottom: 0;
+    border-bottom: 1px solid #f15f22;
+    font-size: 1rem;
 }
 
 .stats-block__grid {
@@ -7470,9 +7290,9 @@ USED IN:
 }
 
 .stats-block__item {
-    text-align: center;
     font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-display: swap;
+    text-align: center;
 }
 
 .stats-block__item:not(:last-child) {
@@ -7490,13 +7310,13 @@ USED IN:
 
 .stats-block__piechart {
     width: 100%;
-    margin-bottom: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .stats-block__piechart .stats-block__piechart__base {
@@ -7505,19 +7325,19 @@ USED IN:
 }
 
 .stats-block__piechart .stats-block__piechart__value {
+    -webkit-transition: stroke-dashoffset 1.5s ease 0s;
+    transition: stroke-dashoffset 1.5s ease 0s;
     fill: none;
-    stroke: #cccccc;
-    -webkit-transition: stroke-dashoffset 1.5s;
-    transition: stroke-dashoffset 1.5s;
+    stroke: #d0cfcb;
 }
 
 .stats-block__piechart .stats-block__piechart__text {
     font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-display: swap;
-    font-size: 2.0736rem;
-    position: absolute;
     -ms-flex-item-align: center;
         align-self: center;
+    position: absolute;
+    font-size: 2.0736rem;
 }
 
 .js .stats-block__piechart__value {
@@ -7526,6 +7346,41 @@ USED IN:
 
 .js .stats-block__piechart__value.stats-block__piechart__value--jsrun {
     display: block;
+}
+
+.cta {
+    background-color: #ececec;
+    color: #1e1e1e;
+    display: block;
+    padding: 1.5rem 1rem;
+    border-bottom-width: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cta:hover, .cta:focus, .cta:active {
+    background-color: #d0cfcb;
+    color: #1e1e1e;
+}
+
+.cta--orange {
+    background-color: #f15f22;
+    color: #1e1e1e;
+}
+
+.cta--orange:hover, .cta--orangeactive, .cta--orange:focus {
+    background-color: #d3470d;
+    color: #ffffff;
+}
+
+.cta--yellow {
+    background-color: #fbae3b;
+    color: #1e1e1e;
+}
+
+.cta--yellow:hover, .cta--yellow:focus, .cta--yellow:active {
+    background-color: #f15f22;
+    color: #1e1e1e;
 }
 
 @media (max-width: 800px) {
@@ -7563,9 +7418,8 @@ USED IN:
     @media (min-width: 801px) {
         .cta-group--overhang-bottom .cta-group--overhang-bottom__icon {
             position: absolute;
-            bottom: 1rem;
-            left: 1rem;
             bottom: 1.5rem;
+            left: 1rem;
         }
     }
 }
@@ -7603,34 +7457,34 @@ USED IN:
 
 @media (max-width: 800px) {
     .intro {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
-.intro::before {
-    display: block;
-    content: " ";
+.intro:before {
     position: absolute;
-    z-index: -1;
-    height: 100%;
     top: 0;
     right: 0;
     left: 0;
+    content: " ";
     background-color: #1e1e1e;
+    height: 100%;
+    display: block;
+    z-index: -1;
 }
 
 @media (min-width: 801px) {
-    .intro::before {
-        left: 4rem;
+    .intro:before {
         height: 80%;
+        left: 4rem;
     }
 }
 
 @media (min-width: 1201px) {
-    .intro::before {
+    .intro:before {
         left: calc((100% - 1200px) / 2 + 2 * 2rem);
     }
 }
@@ -7754,12 +7608,12 @@ USED IN:
 .intro--left-video .caption {
     font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-display: swap;
-    font-style: normal;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    font-style: normal;
 }
 
 .intro--left-video .caption .caption__type {
@@ -7798,18 +7652,19 @@ USED IN:
 
 .key-info:before {
     position: absolute;
-    content: " ";
-    top: -1rem;
+    top: 0;
     left: 0;
+    content: " ";
     width: 0.5rem;
     height: 0.5rem;
+    border-width: 2px 0 0 2px;
     border-style: solid;
     border-color: currentColor;
-    border-width: 2px 0 0 2px;
+    top: -1rem;
 }
 
 .key-info--darkbg {
-    color: white;
+    color: #ffffff;
 }
 
 .key-info-center-wrapper {
@@ -7841,9 +7696,9 @@ input.header-toggle-input {
 }
 
 .header-toggle {
+    -webkit-transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
     display: inline-block;
-    -webkit-transition: color 200ms, background-color 200ms;
-    transition: color 200ms, background-color 200ms;
 }
 
 .header-toggle > label {
@@ -7851,20 +7706,22 @@ input.header-toggle-input {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    -webkit-touch-callout: default;
+    -webkit-touch-callout: none;
+}
+
+input[type="checkbox"]:checked + .header-toggle {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .header-toggle__content {
     display: none;
-}
-
-input[type="checkbox"]:checked + .header-toggle {
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
 }
 
 input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
@@ -7872,14 +7729,14 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .img-bg-section {
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .img-bg-section__img {
-    position: absolute;
     min-width: 100%;
     min-height: 100%;
+    position: absolute;
 }
 
 .js .popup-def-list-group .popup-def-list-group__content {
@@ -7887,9 +7744,33 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     height: 1px !important;
     padding: 0 !important;
     border: 0 !important;
-    position: absolute !important;
     overflow: hidden !important;
+    position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.js .popup-def-list-group .popup-def-list-group__anchor {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: #005ea5;
+    border-bottom-color: #005ea5;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    position: relative;
+    text-decoration: none;
+}
+
+.js .popup-def-list-group .popup-def-list-group__anchor:hover {
+    background-color: #005ea5;
+    color: #ffffff;
+}
+
+.js .popup-def-list-group .popup-def-list-group__anchor:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.js .popup-def-list-group .popup-def-list-group__anchor:active {
+    outline: 2px dotted #1e1e1e;
 }
 
 .popup-def-list-group li > h5 {
@@ -7901,39 +7782,33 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .external-img-link-strip a {
-    border-bottom-width: 0;
     display: block;
     position: relative;
 }
 
-.external-img-link-strip a, .external-img-link-strip a:hover, .external-img-link-strip a:focus, .external-img-link-strip a:active {
-    background-color: inherit;
-    color: inherit;
-}
-
 .external-img-link-strip a:after {
-    position: absolute;
-    text-align: center;
-    overflow: visible;
-    content: attr(data-dn);
     font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-display: swap;
-    font-size: 1.44rem;
+    content: attr(data-dn);
     opacity: 0;
+    background: rgba(255, 255, 255, 0.5);
     color: #005ea5;
     border-bottom-color: currentColor;
-    background: rgba(255, 255, 255, 0.5);
+    overflow: visible;
+    position: absolute;
     top: 0;
     left: 50%;
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
+    font-size: 1.44rem;
+    text-align: center;
     white-space: nowrap;
     z-index: 2;
 }
 
 .external-img-link-strip a img, .external-img-link-strip a:after {
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s;
 }
 
 .external-img-link-strip a img {
@@ -8351,29 +8226,31 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .bracket-block, .profile-bracket-block {
-    position: relative;
-    padding: 1rem 0.5rem;
     width: 100%;
+    padding: 1rem 0.5rem;
+    position: relative;
 }
 
 .bracket-block:after, .profile-bracket-block:after, .bracket-block:before, .profile-bracket-block:before {
-    position: absolute;
     content: " ";
     width: 1rem;
     height: 100%;
+    border-style: solid;
+    border-color: #d92231;
     z-index: -1;
-    border: #d92231 solid;
 }
 
 .bracket-block:before, .profile-bracket-block:before {
+    position: absolute;
     top: 0;
     left: 0;
     border-width: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .bracket-block:after, .profile-bracket-block:after {
-    bottom: 0;
+    position: absolute;
     right: 0;
+    bottom: 0;
     border-width: 0.5rem 0.5rem 0.5rem 0;
 }
 
@@ -8399,30 +8276,30 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .dialog {
-    position: fixed;
-    z-index: 4;
+    background: rgba(30, 30, 30, 0.7);
+    width: 100%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    z-index: 4;
 }
 
 .dialog__box {
-    display: inline-block;
-    max-width: calc(100% - 1rem);
-    max-height: calc(100% - 1rem);
-    height: auto;
     width: auto;
+    max-width: calc(100% - 1rem);
+    height: auto;
+    max-height: calc(100% - 1rem);
+    display: inline-block;
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
@@ -8437,29 +8314,22 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .dialog__box__heading {
-    text-align: center;
     font-family: "Meta Sans", Arial, Helvetica, sans-serif;
     font-display: swap;
-    font-size: 1.728rem;
     background-color: #ffffff;
     padding: 1rem;
+    font-size: 1.728rem;
     font-weight: 300;
+    text-align: center;
 }
 
 .dialog__box__content {
-    padding: 1rem;
     background-color: #ececec;
+    padding: 1rem;
 }
 
 .dialog__box__heading__close {
-    border-bottom-width: 0;
-    display: block;
     float: right;
-}
-
-.dialog__box__heading__close, .dialog__box__heading__close:hover, .dialog__box__heading__close:focus, .dialog__box__heading__close:active {
-    background-color: inherit;
-    color: inherit;
 }
 
 .card {
@@ -8540,12 +8410,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .anchor-demo-list li:nth-child(5) {
     background-color: #a5a5a5;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .anchor-demo-list li:nth-child(6) {
     background-color: #8f8f8f;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .anchor-demo-list li:nth-child(7) {
