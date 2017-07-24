@@ -5252,7 +5252,13 @@ svg:not(:root) {
 
 .footer__headlines {
     padding-top: 3.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3.5rem;
+}
+
+@media (min-width: 801px) {
+    .footer__headlines {
+        padding-bottom: 1rem;
+    }
 }
 
 .footer__main-headline {
