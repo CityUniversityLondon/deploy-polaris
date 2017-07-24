@@ -5320,7 +5320,6 @@ svg:not(:root) {
 }
 
 .footer__address-part--org {
-    margin-bottom: 0.5rem;
     font-size: 1.5em;
     font-weight: 600;
 }
@@ -5370,10 +5369,12 @@ svg:not(:root) {
 }
 
 .footer__accreditation a {
-    margin-right: 1rem;
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer__accreditation a:hover, .footer__accreditation a:focus, .footer__accreditation a:active {
@@ -5382,9 +5383,7 @@ svg:not(:root) {
 }
 
 .footer__accreditation img {
-    display: inline-block;
     height: 40px;
-    margin-bottom: 0.5rem;
 }
 
 .footer__accreditation-title {
