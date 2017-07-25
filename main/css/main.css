@@ -167,7 +167,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 100;
-    src: local("Roboto Thin"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff2) format("woff2");
+    src: local("Roboto Thin"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -175,7 +175,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff2) format("woff2");
+    src: local("Roboto Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -183,7 +183,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff2) format("woff2");
+    src: local("Roboto Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -191,7 +191,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
-    src: local("Roboto Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff2) format("woff2");
+    src: local("Roboto Medium"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -199,7 +199,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff2) format("woff2");
+    src: local("Roboto Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -207,7 +207,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
-    src: local("Roboto Black"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff2) format("woff2");
+    src: local("Roboto Black"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -215,7 +215,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 100;
-    src: local("Roboto Thin Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff2) format("woff2");
+    src: local("Roboto Thin Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-100italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -223,7 +223,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
-    src: local("Roboto Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff2) format("woff2");
+    src: local("Roboto Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-300italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -231,7 +231,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 400;
-    src: local("Roboto Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff2) format("woff2");
+    src: local("Roboto Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -239,7 +239,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 600;
-    src: local("Roboto Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff2) format("woff2");
+    src: local("Roboto Medium Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-600italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -247,7 +247,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 700;
-    src: local("Roboto Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff2) format("woff2");
+    src: local("Roboto Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-700italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -255,7 +255,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 900;
-    src: local("Roboto Black Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff2) format("woff2");
+    src: local("Roboto Black Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/roboto/Roboto-900italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -263,7 +263,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: local("PT Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff2) format("woff2");
+    src: local("PT Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -271,7 +271,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: local("PT Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff2) format("woff2");
+    src: local("PT Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -279,7 +279,7 @@
     font-family: "PT Sans";
     font-style: italic;
     font-weight: 400;
-    src: local("PT Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff2) format("woff2");
+    src: local("PT Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -287,7 +287,7 @@
     font-family: "PT Sans";
     font-style: italic;
     font-weight: 700;
-    src: local("PT Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff2) format("woff2");
+    src: local("PT Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/pt-sans/PT-Sans-700italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -295,7 +295,7 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff2) format("woff2");
+    src: local("Open Sans Light"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -303,7 +303,7 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff2) format("woff2");
+    src: local("Open Sans Regular"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-regular.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -311,7 +311,7 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff2) format("woff2");
+    src: local("Open Sans Semibold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -319,7 +319,7 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff2) format("woff2");
+    src: local("Open Sans Bold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -327,7 +327,7 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 800;
-    src: local("Open Sans Extrabold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff2) format("woff2");
+    src: local("Open Sans Extrabold"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -335,7 +335,7 @@
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 300;
-    src: local("Open Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff2) format("woff2");
+    src: local("Open Sans Light Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-300italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -343,7 +343,7 @@
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 300;
-    src: local("Open Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff2) format("woff2");
+    src: local("Open Sans Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -351,7 +351,7 @@
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 600;
-    src: local("Open Sans Semibold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff2) format("woff2");
+    src: local("Open Sans Semibold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-600italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -359,7 +359,7 @@
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 700;
-    src: local("Open Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff2) format("woff2");
+    src: local("Open Sans Bold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-700italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -367,7 +367,7 @@
     font-family: "Open Sans";
     font-style: italic;
     font-weight: 800;
-    src: local("Open Sans Extrabold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.eot) format("eot"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.svg) format("svg"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.ttf) format("ttf"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff2) format("woff2");
+    src: local("Open Sans Extrabold Italic"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff) format("woff"), url(/__data/assets/git_bridge/0015/344112/main/fonts/open-sans/Open-Sans-800italic.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
