@@ -7162,8 +7162,8 @@ USED IN:
 }
 
 .stats-block__grid {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .stats-block__grid > div {
@@ -7321,7 +7321,7 @@ USED IN:
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .stats-block__piechart .stats-block__piechart__base {
@@ -7343,6 +7343,11 @@ USED IN:
         align-self: center;
     position: absolute;
     font-size: 2.0736rem;
+}
+
+.stats-block__piechart svg {
+    width: 100%;
+    max-width: 150px;
 }
 
 .js .stats-block__piechart__value {
@@ -7741,6 +7746,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .img-bg-section__img {
     min-width: 100%;
     min-height: 100%;
+    max-width: none;
     position: absolute;
 }
 
