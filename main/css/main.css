@@ -7656,49 +7656,42 @@ USED IN:
 
 .key-info {
     margin-top: 2rem;
-    margin-bottom: 2rem;
     position: relative;
-}
-
-.key-info:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: " ";
-    width: 0.5rem;
-    height: 0.5rem;
-    border-width: 2px 0 0 2px;
-    border-style: solid;
-    border-color: currentColor;
-    top: -1rem;
-}
-
-.key-info--darkbg {
-    color: #ffffff;
-}
-
-.key-info-center-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .key-info__item {
-    margin-bottom: 1rem;
+    margin: 0 2rem 2rem;
 }
 
 .key-info__item__prop {
-    display: inline-block;
-    font-weight: 600;
-    text-transform: uppercase;
+    color: #555555;
 }
 
 .key-info__item__value {
+    color: #f15f22;
+}
+
+.key-info__item--feature .key-info__item__prop,
+.key-info__item--feature .key-info__item__value {
     display: inline-block;
-    margin-left: 0.5rem;
+}
+
+.key-info__item--feature .key-info__item__prop {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    color: #7b7b7b;
 }
 
 input.header-toggle-input {
