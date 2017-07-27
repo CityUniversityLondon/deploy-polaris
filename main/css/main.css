@@ -6045,12 +6045,13 @@ video,
 /** Layout code: manages content width for tab-menu and tab-content */
 .accordion-tabs--top-level-layout {
     margin-top: 2rem;
+    border-bottom: 3px solid #f8af91;
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
     background-color: #ffffff;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
