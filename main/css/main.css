@@ -6238,12 +6238,10 @@ svg:not(:root) {
 }
 
 .url-slide a .url-slide__next {
-    position: absolute;
-    top: 0;
-    left: 0;
     -webkit-transition: opacity 0.2s ease 0s;
     transition: opacity 0.2s ease 0s;
     opacity: 0.2;
+    position: absolute;
     white-space: nowrap;
 }
 
