@@ -6903,6 +6903,12 @@ USED IN:
     width: 16.667%;
 }
 
+@media (min-width: 801px) {
+    .nav-mobile {
+        display: none;
+    }
+}
+
 .nav-mobile .nav-mobile__page-link,
 .nav-mobile .nav-mobile__close-link,
 .nav-mobile .nav-mobile__toggle-link {
