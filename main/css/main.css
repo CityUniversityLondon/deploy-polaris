@@ -8689,3 +8689,23 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #1e1e1e;
     color: #ffffff;
 }
+
+.primary-navigation,
+.secondary-navigation,
+.tertiary-navigation,
+.header__search {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .nav-mobile {
+        width: 50%;
+    }
+}
+
+@media (min-width: 801px) {
+    .nav-mobile {
+        width: 75%;
+        display: block;
+    }
+}
