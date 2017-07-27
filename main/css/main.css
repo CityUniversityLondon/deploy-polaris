@@ -5311,6 +5311,7 @@ svg:not(:root) {
 .header__logo a:hover, .header__logo a:focus, .header__logo a:active {
     background-color: inherit;
     color: inherit;
+    outline-width: 0;
 }
 
 .header__search {
@@ -5470,6 +5471,17 @@ svg:not(:root) {
 .footer__social a:hover, .footer__social a:focus, .footer__social a:active {
     background-color: inherit;
     color: inherit;
+    outline-width: 0;
+}
+
+.footer__social a span {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 .footer__social-title {
@@ -5509,6 +5521,7 @@ svg:not(:root) {
 .footer__accreditation a:hover, .footer__accreditation a:focus, .footer__accreditation a:active {
     background-color: inherit;
     color: inherit;
+    outline-width: 0;
 }
 
 .footer__accreditation img {
@@ -5999,6 +6012,7 @@ svg:not(:root) {
 .primary-navigation__list a:hover, .primary-navigation__list a:focus, .primary-navigation__list a:active {
     background-color: inherit;
     color: inherit;
+    outline-width: 0;
 }
 
 @media (max-width: 1200px) {
@@ -6082,6 +6096,7 @@ svg:not(:root) {
 .secondary-navigation__list a:hover, .secondary-navigation__list a:focus, .secondary-navigation__list a:active {
     background-color: inherit;
     color: inherit;
+    outline-width: 0;
 }
 
 .secondary-navigation__list a:before {
@@ -6165,6 +6180,7 @@ svg:not(:root) {
 .tertiary-navigation__list a:hover, .tertiary-navigation__list a:focus, .tertiary-navigation__list a:active {
     background-color: inherit;
     color: inherit;
+    outline-width: 0;
 }
 
 @media (min-width: 801px) {
