@@ -5474,7 +5474,7 @@ svg:not(:root) {
     outline-width: 0;
 }
 
-.footer__social a span {
+.footer__social a span:not([class]) {
     width: 1px !important;
     height: 1px !important;
     padding: 0 !important;
