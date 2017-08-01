@@ -6288,7 +6288,7 @@ svg:not(:root) {
 }
 
 .media,
-.video-preview-wrapper {
+.video-preview {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
@@ -6297,26 +6297,8 @@ svg:not(:root) {
 }
 
 .media figcaption,
-.video-preview-wrapper figcaption {
+.video-preview figcaption {
     z-index: 2;
-}
-
-.video-preview-wrapper--loading audio, .video-preview-wrapper--loading
-embed, .video-preview-wrapper--loading
-iframe, .video-preview-wrapper--loading
-object, .video-preview-wrapper--loading
-video {
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    border: 0 !important;
-    overflow: hidden !important;
-    position: absolute !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-}
-
-.video-preview {
-    margin-bottom: 1rem;
 }
 
 .media audio, .media
@@ -6324,7 +6306,26 @@ embed, .media
 iframe, .media
 object, .media
 video,
-.video-preview-wrapper .video-preview {
+.media img,
+.media
+svg,
+.media
+picture,
+.video-preview audio,
+.video-preview
+embed,
+.video-preview
+iframe,
+.video-preview
+object,
+.video-preview
+video,
+.video-preview img,
+.video-preview
+svg,
+.video-preview
+picture,
+.video-preview a {
     position: absolute;
     top: 0;
     right: 0;
@@ -6334,9 +6335,55 @@ video,
 }
 
 .media:not([class*="media--"]),
-.video-preview-wrapper:not([class*="media--"]), .media--vimeo,
+.video-preview:not([class*="media--"]), .media--vimeo,
 .media--youtube {
     padding-top: 56.25%;
+}
+
+.video-preview audio, .video-preview
+embed, .video-preview
+iframe, .video-preview
+object, .video-preview
+video,
+.video-preview img,
+.video-preview
+svg,
+.video-preview
+picture {
+    z-index: 1;
+}
+
+.video-preview a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    z-index: 2;
+}
+
+.video-preview a:hover, .video-preview a:focus, .video-preview a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.video-preview--loading audio, .video-preview--loading
+embed, .video-preview--loading
+iframe, .video-preview--loading
+object, .video-preview--loading
+video,
+.video-preview--loading img,
+.video-preview--loading
+svg,
+.video-preview--loading
+picture,
+.video-preview--loading a {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 .js .accordion__content__heading-anchor.inactive + div {
