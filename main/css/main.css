@@ -5540,6 +5540,7 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
+    color: #666666;
 }
 
 .footer2 a:hover, .footer2 a:focus, .footer2 a:active {
@@ -5605,20 +5606,20 @@ svg:not(:root) {
 
 @media (min-width: 801px) {
     .footer2__misc-links a {
-        display: block;
+        display: table;
     }
 }
 
 .footer2__social a {
+    display: inline-block;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
-    color: #666666;
     font-size: 1.2rem;
 }
 
 @media (min-width: 801px) {
     .footer2__social a {
-        display: block;
+        display: table;
     }
 }
 
