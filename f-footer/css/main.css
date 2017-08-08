@@ -5586,6 +5586,7 @@ svg:not(:root) {
     border-bottom-width: 0;
     color: #666666;
     display: inline-block;
+    overflow-x: hidden;
 }
 
 .footer2__address-details a:hover, .footer2__address-details a:focus, .footer2__address-details a:active {
@@ -5595,18 +5596,24 @@ svg:not(:root) {
 }
 
 .footer2__address-details a:after {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
     content: "";
-    display: block;
+    opacity: 0;
+    background-color: #1e1e1e;
+    width: 100%;
     height: 2px;
-    width: 0;
-    background: transparent;
-    -webkit-transition: width 0.5s ease, background-color 0.5s ease;
-    transition: width 0.5s ease, background-color 0.5s ease;
+    display: block;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
 }
 
 .footer2__address-details a:hover:after {
-    width: 100%;
-    background: #1e1e1e;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .footer2__address-details a:focus {
@@ -5627,6 +5634,7 @@ svg:not(:root) {
     border-bottom-width: 0;
     color: #666666;
     display: inline-block;
+    overflow-x: hidden;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
     font-size: 14px;
@@ -5639,18 +5647,24 @@ svg:not(:root) {
 }
 
 .footer2__misc-links a:after {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
     content: "";
-    display: block;
+    opacity: 0;
+    background-color: #1e1e1e;
+    width: 100%;
     height: 2px;
-    width: 0;
-    background: transparent;
-    -webkit-transition: width 0.5s ease, background-color 0.5s ease;
-    transition: width 0.5s ease, background-color 0.5s ease;
+    display: block;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
 }
 
 .footer2__misc-links a:hover:after {
-    width: 100%;
-    background: #1e1e1e;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .footer2__misc-links a:focus {
@@ -5685,42 +5699,55 @@ svg:not(:root) {
 
 @media (min-width: 801px) {
     .footer2__social a {
-        background-color: inherit;
-        color: inherit;
-        border-bottom-width: 0;
-        color: #666666;
-        display: inline-block;
         display: table;
-    }
-    .footer2__social a:hover, .footer2__social a:focus, .footer2__social a:active {
-        background-color: inherit;
-        color: inherit;
-        outline-width: 0;
-    }
-    .footer2__social a:after {
-        content: "";
-        display: block;
-        height: 2px;
-        width: 0;
-        background: transparent;
-        -webkit-transition: width 0.5s ease, background-color 0.5s ease;
-        transition: width 0.5s ease, background-color 0.5s ease;
-    }
-    .footer2__social a:hover:after {
-        width: 100%;
-        background: #1e1e1e;
-    }
-    .footer2__social a:focus {
-        outline: 3px solid #1e1e1e;
-    }
-    .footer2__social a:active {
-        outline: 2px dotted #1e1e1e;
     }
 }
 
 .footer2__social a span:not([class]) {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    display: inline-block;
+    overflow-x: hidden;
     font-size: 14px;
     margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.footer2__social a span:not([class]):hover, .footer2__social a span:not([class]):focus, .footer2__social a span:not([class]):active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.footer2__social a span:not([class]):after {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    content: "";
+    opacity: 0;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 2px;
+    display: block;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.footer2__social a span:not([class]):hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.footer2__social a span:not([class]):focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.footer2__social a span:not([class]):active {
+    outline: 2px dotted #1e1e1e;
 }
 
 @media (max-width: 800px) {
@@ -5810,6 +5837,7 @@ svg:not(:root) {
     border-bottom-width: 0;
     color: #666666;
     display: inline-block;
+    overflow-x: hidden;
 }
 
 .footer2__copyright a:hover, .footer2__copyright a:focus, .footer2__copyright a:active {
@@ -5819,18 +5847,24 @@ svg:not(:root) {
 }
 
 .footer2__copyright a:after {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
     content: "";
-    display: block;
+    opacity: 0;
+    background-color: #1e1e1e;
+    width: 100%;
     height: 2px;
-    width: 0;
-    background: transparent;
-    -webkit-transition: width 0.5s ease, background-color 0.5s ease;
-    transition: width 0.5s ease, background-color 0.5s ease;
+    display: block;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
 }
 
 .footer2__copyright a:hover:after {
-    width: 100%;
-    background: #1e1e1e;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .footer2__copyright a:focus {
