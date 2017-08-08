@@ -5626,6 +5626,19 @@ svg:not(:root) {
 
 .footer2__misc-links {
     margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.footer2__misc-links li {
+    display: inline;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 801px) {
+    .footer2__misc-links li {
+        display: block;
+    }
 }
 
 .footer2__misc-links a {
@@ -5635,9 +5648,6 @@ svg:not(:root) {
     color: #666666;
     display: inline-block;
     overflow-x: hidden;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 14px;
 }
 
 .footer2__misc-links a:hover, .footer2__misc-links a:focus, .footer2__misc-links a:active {
@@ -5675,9 +5685,19 @@ svg:not(:root) {
     outline: 2px dotted #1e1e1e;
 }
 
+.footer2__social {
+    font-size: 1.2rem;
+}
+
+.footer2__social li {
+    display: inline;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 @media (min-width: 801px) {
-    .footer2__misc-links a {
-        display: table;
+    .footer2__social li {
+        display: block;
     }
 }
 
@@ -5686,21 +5706,12 @@ svg:not(:root) {
     color: inherit;
     border-bottom-width: 0;
     color: #666666;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
 }
 
 .footer2__social a:hover, .footer2__social a:focus, .footer2__social a:active {
     background-color: inherit;
     color: inherit;
     outline-width: 0;
-}
-
-@media (min-width: 801px) {
-    .footer2__social a {
-        display: table;
-    }
 }
 
 .footer2__social a span:not([class]) {
@@ -5838,6 +5849,7 @@ svg:not(:root) {
     color: #666666;
     display: inline-block;
     overflow-x: hidden;
+    vertical-align: middle;
 }
 
 .footer2__copyright a:hover, .footer2__copyright a:focus, .footer2__copyright a:active {
