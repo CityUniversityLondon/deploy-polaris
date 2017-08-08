@@ -6578,6 +6578,10 @@ picture,
             animation: slide-top-in 0.2s ease 0s both normal;
 }
 
+.js .tabs {
+    margin-bottom: 2rem;
+}
+
 .js .tabs__content__heading-anchor.inactive + div {
     width: 1px !important;
     height: 1px !important;
@@ -8952,6 +8956,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .white-box {
     background: #ffffff;
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .anchor-demo-list li {
