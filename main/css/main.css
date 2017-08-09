@@ -3829,6 +3829,23 @@ h6 > a {
     outline-color: #ececec;
 }
 
+.skip {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: block;
+}
+
+.skip:not(:hover):not(:focus):not(:active) {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
 a.button {
     display: inline-block;
 }
