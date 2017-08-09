@@ -5702,12 +5702,8 @@ svg:not(:root) {
     outline: 2px dotted #1e1e1e;
 }
 
-.footer2__social {
-    font-size: 1.2rem;
-}
-
 .footer2__social li {
-    display: inline;
+    display: inline-block;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -5723,9 +5719,6 @@ svg:not(:root) {
     color: inherit;
     border-bottom-width: 0;
     color: #666666;
-    display: inline-block;
-    overflow-x: hidden;
-    color: #666666;
 }
 
 .footer2__social a:hover, .footer2__social a:focus, .footer2__social a:active {
@@ -5734,25 +5727,8 @@ svg:not(:root) {
     outline-width: 0;
 }
 
-.footer2__social a:after {
-    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
-    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
-    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
-    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
-    content: "";
-    opacity: 0;
-    background-color: #1e1e1e;
-    width: 100%;
-    height: 2px;
-    display: block;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-}
-
-.footer2__social a:hover:after {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+.footer2__social a:hover {
+    opacity: 0.85;
 }
 
 .footer2__social a:focus {
@@ -5763,14 +5739,66 @@ svg:not(:root) {
     outline: 2px dotted #1e1e1e;
 }
 
-.footer2__social a span:not([class]) {
+@media (min-width: 801px) {
+    .footer2__social a {
+        background-color: inherit;
+        color: inherit;
+        border-bottom-width: 0;
+        color: #666666;
+        display: inline-block;
+        overflow-x: hidden;
+    }
+    .footer2__social a:hover, .footer2__social a:focus, .footer2__social a:active {
+        background-color: inherit;
+        color: inherit;
+        outline-width: 0;
+    }
+    .footer2__social a:after {
+        -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+        transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+        transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+        transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+        content: "";
+        opacity: 0;
+        background-color: #1e1e1e;
+        width: 100%;
+        height: 2px;
+        display: block;
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+    .footer2__social a:hover:after {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    .footer2__social a:focus {
+        outline: 3px solid #1e1e1e;
+    }
+    .footer2__social a:active {
+        outline: 2px dotted #1e1e1e;
+    }
+}
+
+.footer2__social .fa, .footer2__social .url-slide--right .url-slide__icon, .url-slide--right .footer2__social .url-slide__icon, .footer2__social .accordion__content__heading__icon, .footer2__social .js .tabs__content__heading-anchor__icon, .js .footer2__social .tabs__content__heading-anchor__icon, .footer2__social .js .accordion-tabs__content__heading-anchor__icon, .js .footer2__social .accordion-tabs__content__heading-anchor__icon, .footer2__social .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs .footer2__social li:not(:first-child), .footer2__social .nav-mobile__toggle-label__icon, .footer2__social .header--2 .tertiary-navigation__search:before, .header--2 .footer2__social .tertiary-navigation__search:before, .footer2__social
+.header--2 .nav-mobile__toggle-label:before,
+.header--2 .footer2__social .nav-mobile__toggle-label:before, .footer2__social
+.header:not([class*="header--"]) .tertiary-navigation__search:before,
+.header:not([class*="header--"]) .footer2__social .tertiary-navigation__search:before, .footer2__social
+.header:not([class*="header--"]) .nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .footer2__social .nav-mobile__toggle-label:before, .footer2__social .header-toggle--menu .header-toggle__icon, .header-toggle--menu .footer2__social .header-toggle__icon, .footer2__social .header-toggle--search .header-toggle__icon, .header-toggle--search .footer2__social .header-toggle__icon, .footer2__social .dialog__box__heading__close__icon {
+    font-size: 1.44rem;
+    vertical-align: top;
+}
+
+.footer2__social span:not([class]) {
     font-size: 14px;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     vertical-align: middle;
 }
 
 @media (max-width: 800px) {
-    .footer2__social a span:not([class]) {
+    .footer2__social span:not([class]) {
         width: 1px !important;
         height: 1px !important;
         padding: 0 !important;
