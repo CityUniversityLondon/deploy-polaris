@@ -9272,6 +9272,69 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin-bottom: 2rem;
 }
 
+.related-course {
+    width: 100%;
+    border-bottom: 2px solid #ececec;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.related-course:first-child {
+    border-top: 2px solid #ececec;
+}
+
+.related-course .fa, .related-course .url-slide--right .url-slide__icon, .url-slide--right .related-course .url-slide__icon, .related-course .accordion__content__heading__icon, .related-course .js .tabs__content__heading-anchor__icon, .js .related-course .tabs__content__heading-anchor__icon, .related-course .js .accordion-tabs__content__heading-anchor__icon, .js .related-course .accordion-tabs__content__heading-anchor__icon, .related-course .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs .related-course li:not(:first-child), .related-course .nav-mobile__toggle-label__icon, .related-course .header--2 .tertiary-navigation__search:before, .header--2 .related-course .tertiary-navigation__search:before, .related-course
+.header--2 .nav-mobile__toggle-label:before,
+.header--2 .related-course .nav-mobile__toggle-label:before, .related-course
+.header:not([class*="header--"]) .tertiary-navigation__search:before,
+.header:not([class*="header--"]) .related-course .tertiary-navigation__search:before, .related-course
+.header:not([class*="header--"]) .nav-mobile__toggle-label:before,
+.header:not([class*="header--"]) .related-course .nav-mobile__toggle-label:before, .related-course .header-toggle--menu .header-toggle__icon, .header-toggle--menu .related-course .header-toggle__icon, .related-course .header-toggle--search .header-toggle__icon, .header-toggle--search .related-course .header-toggle__icon, .related-course .dialog__box__heading__close__icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.related-course a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+}
+
+.related-course a:hover, .related-course a:focus, .related-course a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.related-course a .anchor-part__change-on-hover {
+    color: #005ea5;
+}
+
+.related-course a:hover .anchor-part__change-on-hover {
+    background-color: #005ea5;
+    color: #ffffff;
+}
+
+.related-course a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.related-course a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.related-course__title {
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.related-course__qualification {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
