@@ -7062,6 +7062,7 @@ picture,
 @media (min-width: 501px) {
     .js .accordion-tabs__content__group > div {
         padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -7093,24 +7094,7 @@ picture,
     text-align: center;
 }
 
-.accordion-tabs__content__heading:after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    content: " ";
-    background-color: #f15f22;
-    width: 4rem;
-    height: 2px;
-}
-
 /** Layout code: manages content width for tab-menu and tab-content */
-.accordion-tabs--top-level-layout {
-    margin-top: 2rem;
-    border-bottom: 3px solid #f8af91;
-}
-
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
     background-color: #ffffff;
     width: 100%;
@@ -7118,7 +7102,7 @@ picture,
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
-    background-color: #fcd7c8;
+    background-color: rgba(251, 174, 59, 0.4);
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu {
