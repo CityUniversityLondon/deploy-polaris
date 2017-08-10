@@ -7102,7 +7102,7 @@ picture,
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-fullwidth {
-    background-color: rgba(251, 174, 59, 0.4);
+    background-color: #fddfb0;
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu {
@@ -9105,7 +9105,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     height: 100%;
     border-style: solid;
     border-color: #d92231;
-    z-index: -1;
 }
 
 .bracket-block:before, .profile-bracket-block:before {
@@ -9120,6 +9119,18 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     right: 0;
     bottom: 0;
     border-width: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.bracket-block--angle:after, .profile-bracket-block:after, .bracket-block--angle:before, .profile-bracket-block:before {
+    height: 1rem;
+}
+
+.bracket-block--angle:before, .profile-bracket-block:before {
+    border-width: 0.5rem 0 0 0.5rem;
+}
+
+.bracket-block--angle:after, .profile-bracket-block:after {
+    border-width: 0 0.5rem 0.5rem 0;
 }
 
 .profile-bracket-block .profile-bracket-block__img {
