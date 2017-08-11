@@ -8607,6 +8607,11 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .img-bg-section__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     min-width: 100%;
     max-width: none;
     min-height: 100%;
