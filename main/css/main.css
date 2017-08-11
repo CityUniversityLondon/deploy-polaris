@@ -8642,8 +8642,9 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     outline: 2px dotted #1e1e1e;
 }
 
-.popup-def-list-group li > h5 {
+.js .popup-def-list-group li > h5, .js .popup-def-list-group li > h4, .js .popup-def-list-group li > h3, .js .popup-def-list-group li > h2 {
     display: inline;
+    font-size: 1rem;
 }
 
 .external-img-link-strip {
