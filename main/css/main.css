@@ -3983,9 +3983,7 @@ svg:not(:root) {
 .grid--halves,
 .stats-block__grid--halves,
 .grid--halves--alternate,
-.grid--halves--small,
-.fallout,
-.external-img-link-strip {
+.grid--halves--small {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -4009,9 +4007,7 @@ svg:not(:root) {
     .grid--halves,
     .stats-block__grid--halves,
     .grid--halves--alternate,
-    .grid--halves--small,
-    .fallout,
-    .external-img-link-strip {
+    .grid--halves--small {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4036,9 +4032,7 @@ svg:not(:root) {
     .grid--halves,
     .stats-block__grid--halves,
     .grid--halves--alternate,
-    .grid--halves--small,
-    .fallout,
-    .external-img-link-strip {
+    .grid--halves--small {
         float: none;
     }
 }
@@ -4063,23 +4057,6 @@ svg:not(:root) {
     }
 }
 
-.grid__1 {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__1 {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
 @media (max-width: 800px) {
     .grid__1 {
         width: 100%;
@@ -4092,65 +4069,17 @@ svg:not(:root) {
     }
 }
 
-.grid__2, .profile-bracket-block__img,
-.grid__sixth,
-.external-img-link-strip a,
-.external-img-link-strip div {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__2, .profile-bracket-block__img,
-    .grid__sixth,
-    .external-img-link-strip a,
-    .external-img-link-strip div {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
 @media (max-width: 800px) {
     .grid__2, .profile-bracket-block__img,
-    .grid__sixth,
-    .external-img-link-strip a,
-    .external-img-link-strip div {
+    .grid__sixth {
         width: 100%;
     }
 }
 
 @media (min-width: 801px) {
     .grid__2, .profile-bracket-block__img,
-    .grid__sixth,
-    .external-img-link-strip a,
-    .external-img-link-strip div {
+    .grid__sixth {
         width: 16.667%;
-    }
-}
-
-.grid__3,
-.grid__quarter,
-.grid__fourth {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__3,
-    .grid__quarter,
-    .grid__fourth {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
     }
 }
 
@@ -4170,25 +4099,6 @@ svg:not(:root) {
     }
 }
 
-.grid__4, .banner--text-ctas .banner__ctas,
-.grid__third {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__4, .banner--text-ctas .banner__ctas,
-    .grid__third {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
 @media (max-width: 800px) {
     .grid__4, .banner--text-ctas .banner__ctas,
     .grid__third {
@@ -4203,23 +4113,6 @@ svg:not(:root) {
     }
 }
 
-.grid__5 {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__5 {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
 @media (max-width: 800px) {
     .grid__5 {
         width: 100%;
@@ -4229,25 +4122,6 @@ svg:not(:root) {
 @media (min-width: 801px) {
     .grid__5 {
         width: 41.667%;
-    }
-}
-
-.grid__6,
-.grid__half {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__6,
-    .grid__half {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
     }
 }
 
@@ -4265,23 +4139,6 @@ svg:not(:root) {
     }
 }
 
-.grid__7, .banner--text-ctas .banner__text {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__7, .banner--text-ctas .banner__text {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
 @media (max-width: 800px) {
     .grid__7, .banner--text-ctas .banner__text {
         width: 100%;
@@ -4291,23 +4148,6 @@ svg:not(:root) {
 @media (min-width: 801px) {
     .grid__7, .banner--text-ctas .banner__text {
         width: 58.333%;
-    }
-}
-
-.grid__8 {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__8 {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
     }
 }
 
@@ -4323,23 +4163,6 @@ svg:not(:root) {
     }
 }
 
-.grid__9 {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__9 {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
 @media (max-width: 800px) {
     .grid__9 {
         width: 100%;
@@ -4349,23 +4172,6 @@ svg:not(:root) {
 @media (min-width: 801px) {
     .grid__9 {
         width: 75%;
-    }
-}
-
-.grid__10, .profile-bracket-block__text {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__10, .profile-bracket-block__text {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
     }
 }
 
@@ -4381,23 +4187,6 @@ svg:not(:root) {
     }
 }
 
-.grid__11 {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__11 {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
 @media (max-width: 800px) {
     .grid__11 {
         width: 100%;
@@ -4407,27 +4196,6 @@ svg:not(:root) {
 @media (min-width: 801px) {
     .grid__11 {
         width: 91.667%;
-    }
-}
-
-.grid__12,
-.grid__full,
-.grid__whole {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .grid__12,
-    .grid__full,
-    .grid__whole {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
     }
 }
 
@@ -6041,6 +5809,36 @@ svg:not(:root) {
         float: left;
         padding-right: 2rem;
         margin-left: -17.5rem;
+    }
+}
+
+.fallout {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: calc(100% + 1rem);
+    float: left;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .fallout {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .fallout {
+        float: none;
     }
 }
 
@@ -8516,23 +8314,110 @@ USED IN:
 }
 
 .key-info {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: calc(100% + 1rem);
+    float: left;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
     margin-top: 2rem;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .key-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .key-info {
+        float: none;
+    }
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .key-info {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
 }
 
 .key-info__item {
-    margin: 0 2rem 2rem;
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .key-info__item {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .key-info__item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .key-info__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 801px) {
+    .key-info__item {
+        width: 33.333%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .key-info__item {
+        width: 16.667%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .key-info__item {
+        width: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .key-info__item:nth-child(1n+4) {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .key-info__item:nth-child(3) {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .key-info__item:nth-child(1n+2) {
+        margin-top: 1rem;
+    }
 }
 
 .key-info__item__prop {
@@ -8656,9 +8541,74 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .external-img-link-strip {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: calc(100% + 1rem);
+    float: left;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .external-img-link-strip {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .external-img-link-strip {
+        float: none;
+    }
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .external-img-link-strip {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+
+.external-img-link-strip a,
+.external-img-link-strip div {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .external-img-link-strip a,
+    .external-img-link-strip div {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .external-img-link-strip a,
+    .external-img-link-strip div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 801px) {
+    .external-img-link-strip a,
+    .external-img-link-strip div {
+        width: 16.667%;
+    }
 }
 
 .external-img-link-strip a img,
