@@ -7112,11 +7112,6 @@ picture,
     background-color: #fddfb0;
 }
 
-.accordion-tabs--top-level-layout .accordion-tabs__menu {
-    text-align: center;
-    font-size: 0;
-}
-
 .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -7139,6 +7134,12 @@ picture,
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
+}
+
+.accordion-tabs__menu {
+    text-align: center;
+    font-size: 0;
+    padding-top: 2rem;
 }
 
 .accordion-tabs__menu__item {
@@ -7183,7 +7184,7 @@ picture,
 
 @media (min-width: 801px) {
     .accordion-tabs__menu__item {
-        padding: 3.5rem 1rem 2rem;
+        padding: 2rem 1rem;
     }
 }
 
