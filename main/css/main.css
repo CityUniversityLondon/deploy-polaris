@@ -5325,9 +5325,10 @@ svg:not(:root) {
 *    Footer - version 2     *
 ****************************/
 .footer2 {
-    background-color: #fafafa;
+    background-color: #ffffff;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+    border-top: solid #ececec 3px;
 }
 
 .footer2__section {
@@ -5343,7 +5344,7 @@ svg:not(:root) {
 }
 
 .footer2__section--second {
-    border-top: solid #ececec 3px;
+    border-top: solid #fafafa 3px;
     padding-top: 2rem;
 }
 
