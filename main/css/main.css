@@ -9320,6 +9320,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     width: 60%;
     display: inline-block;
     vertical-align: middle;
+    padding-right: 1rem;
 }
 
 .related-course__qualification {
