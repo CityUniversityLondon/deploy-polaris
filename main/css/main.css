@@ -5434,9 +5434,27 @@ svg:not(:root) {
 ****************************/
 .footer {
     background-color: #ffffff;
-    padding-top: 3.5rem;
     padding-bottom: 3.5rem;
     border-top: solid #ececec 3px;
+}
+
+.footer__back-to-top {
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.footer__back-to-top a {
+    float: right;
+}
+
+.footer__back-to-top span:not([class]) {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 .footer__section {
