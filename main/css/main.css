@@ -4070,14 +4070,14 @@ svg:not(:root) {
 }
 
 @media (max-width: 800px) {
-    .grid__2, .profile-bracket-block__img,
+    .grid__2,
     .grid__sixth {
         width: 100%;
     }
 }
 
 @media (min-width: 801px) {
-    .grid__2, .profile-bracket-block__img,
+    .grid__2,
     .grid__sixth {
         width: 16.667%;
     }
@@ -4176,13 +4176,13 @@ svg:not(:root) {
 }
 
 @media (max-width: 800px) {
-    .grid__10, .profile-bracket-block__text {
+    .grid__10 {
         width: 100%;
     }
 }
 
 @media (min-width: 801px) {
-    .grid__10, .profile-bracket-block__text {
+    .grid__10 {
         width: 83.333%;
     }
 }
@@ -4441,6 +4441,18 @@ svg:not(:root) {
     float: left !important;
 }
 
+@media (max-width: 320px) {
+    .float-left--below-min {
+        float: left !important;
+    }
+}
+
+@media (min-width: 321px) {
+    .float-left--above-min {
+        float: left !important;
+    }
+}
+
 @media (max-width: 500px) {
     .float-left--below-small {
         float: left !important;
@@ -4489,6 +4501,30 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 321px) and (max-width: 500px) {
+    .float-left--min-small {
+        float: left !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 800px) {
+    .float-left--min-medium {
+        float: left !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1200px) {
+    .float-left--min-large {
+        float: left !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1440px) {
+    .float-left--min-extralarge {
+        float: left !important;
+    }
+}
+
 @media (min-width: 501px) and (max-width: 800px) {
     .float-left--small-medium {
         float: left !important;
@@ -4527,6 +4563,18 @@ svg:not(:root) {
 
 .float-right {
     float: right !important;
+}
+
+@media (max-width: 320px) {
+    .float-right--below-min {
+        float: right !important;
+    }
+}
+
+@media (min-width: 321px) {
+    .float-right--above-min {
+        float: right !important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -4577,6 +4625,30 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 321px) and (max-width: 500px) {
+    .float-right--min-small {
+        float: right !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 800px) {
+    .float-right--min-medium {
+        float: right !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1200px) {
+    .float-right--min-large {
+        float: right !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1440px) {
+    .float-right--min-extralarge {
+        float: right !important;
+    }
+}
+
 @media (min-width: 501px) and (max-width: 800px) {
     .float-right--small-medium {
         float: right !important;
@@ -4615,6 +4687,18 @@ svg:not(:root) {
 
 .float-none {
     float: none !important;
+}
+
+@media (max-width: 320px) {
+    .float-none--below-min {
+        float: none !important;
+    }
+}
+
+@media (min-width: 321px) {
+    .float-none--above-min {
+        float: none !important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -4661,6 +4745,30 @@ svg:not(:root) {
 
 @media (min-width: 1441px) {
     .float-none--above-extralarge {
+        float: none !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 500px) {
+    .float-none--min-small {
+        float: none !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 800px) {
+    .float-none--min-medium {
+        float: none !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1200px) {
+    .float-none--min-large {
+        float: none !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 1440px) {
+    .float-none--min-extralarge {
         float: none !important;
     }
 }
@@ -9077,7 +9185,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .bracket-block, .profile-bracket-block {
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     position: relative;
 }
 
@@ -9115,18 +9223,66 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     border-width: 0 0.5rem 0.5rem 0;
 }
 
-.profile-bracket-block .profile-bracket-block__img {
-    float: left;
-}
-
 .profile-bracket-block__img {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
     -ms-flex-item-align: center;
         align-self: center;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .profile-bracket-block__img {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .profile-bracket-block__img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 321px) {
+    .profile-bracket-block__img {
+        width: 33.333%;
+    }
 }
 
 .profile-bracket-block__text {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
     -ms-flex-item-align: center;
         align-self: center;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .profile-bracket-block__text {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .profile-bracket-block__text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 321px) {
+    .profile-bracket-block__text {
+        width: 66.667%;
+    }
 }
 
 .profile-bracket-block__text__name {
