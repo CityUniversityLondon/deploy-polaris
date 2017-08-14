@@ -9299,20 +9299,20 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     outline-width: 0;
 }
 
-.related-course a .anchor-part__change-on-hover {
+.related-course a .anchor-part__mutable {
     color: #005ea5;
 }
 
-.related-course a:hover .anchor-part__change-on-hover {
+.related-course a:hover .anchor-part__mutable {
     background-color: #005ea5;
     color: #ffffff;
 }
 
-.related-course a:focus {
+.related-course a:focus .anchor-part__mutable {
     outline: 3px solid #1e1e1e;
 }
 
-.related-course a:active {
+.related-course a:active .anchor-part__mutable {
     outline: 2px dotted #1e1e1e;
 }
 
