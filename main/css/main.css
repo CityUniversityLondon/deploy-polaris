@@ -8453,8 +8453,8 @@ USED IN:
     display: block;
     padding: 1.5rem 1rem;
     border-bottom-width: 0;
-    font-size: 1.2rem;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .cta:hover, .cta:focus, .cta:active {
