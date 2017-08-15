@@ -6815,6 +6815,60 @@ picture,
             animation: slide-top-in 0.2s ease 0s both normal;
 }
 
+.js .tabs__content__heading-anchor.inactive + div {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+@media (max-width: 500px) {
+    .js .tabs__content__heading,
+    .js .tabs__menu-fullwidth,
+    .js .tabs__menu {
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        overflow: hidden !important;
+        position: absolute !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+    }
+}
+
+@media (min-width: 501px) {
+    .js .tabs__content__group > div {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .js .tabs__content__group > div {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .js .tabs__content__heading-anchor {
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        overflow: hidden !important;
+        position: absolute !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+    }
+}
+
+.js .tabs__content__heading-anchor__icon {
+    float: right;
+}
+
 .js .tabs {
     margin-bottom: 2rem;
 }
@@ -6831,16 +6885,6 @@ picture,
 
 .js .tabs__content__group > div {
     padding-top: 2rem;
-}
-
-.js .tabs__content__heading-anchor {
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    border: 0 !important;
-    overflow: hidden !important;
-    position: absolute !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 .js .tabs__content__heading-anchor__icon {
@@ -6879,8 +6923,8 @@ picture,
     line-height: 1;
     text-decoration: none;
     color: #1e1e1e;
-    padding: 1rem 2rem;
     background: #f2f2f2;
+    padding: 1rem 2rem;
     font-size: 1rem;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -6944,16 +6988,67 @@ picture,
 }
 
 .tabs__content__heading-anchor {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+    font-display: swap;
+    display: inline-block;
+    border-bottom-width: 0;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    color: #1e1e1e;
+    background: #f2f2f2;
+    padding: 1rem 2rem;
     display: block;
-    border-style: solid;
-    border-color: #555555;
-    border-width: 1px 0 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+}
+
+.tabs__content__heading-anchor:hover {
+    background-color: transparent;
+    color: #1e1e1e;
+}
+
+.tabs__content__heading-anchor:focus {
+    color: #1e1e1e;
+    outline: 1px dotted #1e1e1e;
+}
+
+.tabs__content__heading-anchor:active {
+    color: #1e1e1e;
+}
+
+.tabs__content__heading-anchor span {
+    position: relative;
+}
+
+.tabs__content__heading-anchor:before {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    opacity: 0;
+    background-color: #fbae3b;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    bottom: 0;
+    height: 4px;
 }
 
 .tabs__content__heading-anchor:hover, .tabs__content__heading-anchor[aria-selected="true"] {
-    background: #ececec;
+    color: #1e1e1e;
+    background: #ffffff;
+}
+
+.tabs__content__heading-anchor:hover:before, .tabs__content__heading-anchor[aria-selected="true"]:before {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
 }
 
 .accordion-tabs__content__group {
