@@ -9744,6 +9744,23 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     vertical-align: middle;
 }
 
+.highlight-info {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.highlight-info__lead {
+    display: block;
+    font-size: 1.728rem;
+    color: #f15f22;
+}
+
+.highlight-info__support {
+    display: block;
+    font-weight: 600;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
