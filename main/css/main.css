@@ -8059,6 +8059,7 @@ USED IN:
             animation: slide-right-in 0.2s ease 0s both normal;
     color: #1e1e1e;
     background-color: #ffffff;
+    width: 50%;
     min-width: 17.5rem;
     height: 100%;
     display: block;
@@ -9087,6 +9088,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .popup-def-list-group__prevnext__next {
     text-align: right;
     border-left: 2px solid transparent;
+    padding-right: 26px;
 }
 
 .popup-def-list-group__prevnext__next:before {
