@@ -6531,14 +6531,14 @@ svg:not(:root) {
     opacity: 0;
 }
 
-.tertiary-navigation {
+.tertiary-navigation--desktop {
     position: absolute;
     bottom: 100%;
     right: 1rem;
 }
 
 @media (max-width: 800px) {
-    .tertiary-navigation {
+    .tertiary-navigation--desktop {
         display: none;
     }
 }
@@ -7670,6 +7670,11 @@ USED IN:
     display: block;
 }
 
+.nav-mobile__tertiary {
+    text-align: center;
+    margin: 1rem 0;
+}
+
 /** open state **/
 .nav-mobile__toggle:checked + .nav-mobile__overlay .nav-mobile__toggle-label {
     padding-top: 0.5rem;
@@ -7721,14 +7726,6 @@ USED IN:
                 flex: 1 1 auto;
         overflow-y: auto;
     }
-}
-
-/** no js **/
-.no-js .nav-mobile__content:not(.nav-mobile__content--nojs) {
-    display: none;
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
 }
 
 .header:not([class*="header--"]) .breadcrumbs,
