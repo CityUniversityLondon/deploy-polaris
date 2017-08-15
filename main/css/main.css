@@ -8828,7 +8828,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__prev {
     text-align: left;
-    border-right: 1px solid #f15f22;
+    border-right: 2px solid #fbae3b;
     padding-left: 26px;
 }
 
@@ -8848,7 +8848,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__next {
     text-align: right;
-    border-left: 1px solid transparent;
+    border-left: 2px solid transparent;
 }
 
 .popup-def-list-group__prevnext__next::before {
