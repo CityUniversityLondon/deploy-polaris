@@ -7184,7 +7184,6 @@ picture,
     line-height: 1;
     text-decoration: none;
     color: #666666;
-    text-transform: uppercase;
     font-size: 1rem;
 }
 
@@ -7626,48 +7625,24 @@ USED IN:
 
 @media (min-width: 801px) {
     .banner--text-ctas .banner__text {
-        width: 58.333%;
+        width: 50%;
     }
 }
 
 .banner--text-ctas .banner__ctas {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
     padding-right: 0.5rem;
-    position: relative;
 }
 
-@supports ((display: -webkit-box) or (display: flex)) {
+@media (min-width: 801px) {
     .banner--text-ctas .banner__ctas {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
+        margin-left: auto;
     }
 }
 
 @media (max-width: 800px) {
     .banner--text-ctas .banner__ctas {
         width: 100%;
-    }
-}
-
-@media (min-width: 801px) {
-    .banner--text-ctas .banner__ctas {
-        width: 33.333%;
-    }
-}
-
-@media (max-width: 800px) {
-    .banner--text-ctas .banner__ctas {
-        left: 0;
-    }
-}
-
-@media (min-width: 801px) {
-    .banner--text-ctas .banner__ctas {
-        left: 8.333%;
+        padding-left: 0.5rem;
     }
 }
 
@@ -8390,7 +8365,7 @@ USED IN:
     background-color: #ececec;
     color: #1e1e1e;
     display: block;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     border-bottom-width: 0;
     font-weight: 700;
 }
@@ -8424,68 +8399,27 @@ USED IN:
     position: relative;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 801px) {
+    .cta-group {
+        min-width: 12rem;
+    }
+}
+
+@media (min-width: 801px) {
+    .cta-group + .cta-group {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
     .cta-group + .cta-group {
         margin-top: 1rem;
     }
 }
 
-.cta-group__grid--halves {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    width: calc(100% + 1rem);
-    float: left;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .cta-group__grid--halves {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-    }
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .cta-group__grid--halves {
-        float: none;
-    }
-}
-
-.cta-group__grid--halves > div {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .cta-group__grid--halves > div {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
-@media (max-width: 500px) {
-    .cta-group__grid--halves > div {
-        width: 100%;
-    }
-}
-
-@media (min-width: 501px) {
-    .cta-group__grid--halves > div {
-        width: 50%;
+@media (min-width: 801px) {
+    .cta-group__grid--halves .cta-group {
+        float: left;
     }
 }
 
@@ -8504,43 +8438,38 @@ USED IN:
     margin-top: 1rem;
 }
 
-.cta-group--overhang-bottom {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0.5rem;
-    right: 0.5rem;
-    bottom: 0;
+@media (min-width: 801px) {
+    .cta-group--overhang-bottom {
+        height: 0;
+        padding-bottom: 100%;
+    }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 801px) {
     .cta-group--overhang-bottom .cta {
-        width: 100%;
-        min-height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 }
 
-@media (max-width: 500px) {
-    .cta-group--overhang-bottom .cta div {
-        padding-right: 2rem;
-    }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .cta-group--overhang-bottom .cta-group--overhang-bottom__icon {
         position: absolute;
-        right: 1rem;
+        right: 1.5rem;
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
     }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 801px) {
     .cta-group--overhang-bottom .cta-group--overhang-bottom__icon {
         position: absolute;
-        bottom: 1rem;
-        left: 1rem;
+        right: 1.5rem;
+        bottom: 1.5rem;
         bottom: 1.5rem;
     }
 }
