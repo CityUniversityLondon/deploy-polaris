@@ -8531,6 +8531,11 @@ USED IN:
 
 .cta-group--overhang-bottom {
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0;
 }
 
 @media (min-width: 501px) {
