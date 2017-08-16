@@ -9134,8 +9134,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     transition: opacity 0.2s ease 0s, -webkit-filter 0.2s ease 0s;
     transition: opacity 0.2s ease 0s, filter 0.2s ease 0s;
     transition: opacity 0.2s ease 0s, filter 0.2s ease 0s, -webkit-filter 0.2s ease 0s;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     opacity: 1;
     width: auto;
     max-height: 80px;
@@ -9186,6 +9184,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     z-index: 2;
 }
 
+.external-img-link-strip > a[data-url] img,
+.external-img-link-strip > img[data-url] img,
+.external-img-link-strip > div[data-url] img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
 .external-img-link-strip > a[data-url]:hover:after, .external-img-link-strip > a[data-url]:focus:after, .external-img-link-strip > a[data-url]:active:after,
 .external-img-link-strip > img[data-url]:hover:after,
 .external-img-link-strip > img[data-url]:focus:after,
@@ -9204,15 +9209,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .external-img-link-strip > div[data-url]:focus img,
 .external-img-link-strip > div[data-url]:active img {
     opacity: 0.1;
-}
-
-.external-img-link-strip > a:hover img, .external-img-link-strip > a:focus img, .external-img-link-strip > a:active img,
-.external-img-link-strip > img:hover img,
-.external-img-link-strip > img:focus img,
-.external-img-link-strip > img:active img,
-.external-img-link-strip > div:hover img,
-.external-img-link-strip > div:focus img,
-.external-img-link-strip > div:active img {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
 }
