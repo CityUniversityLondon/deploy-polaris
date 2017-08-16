@@ -9968,6 +9968,52 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin-left: -95px;
 }
 
+.overlap-stat__overlay {
+    background-color: #f15f22;
+    padding: 1rem 1rem;
+    font-weight: 500;
+}
+
+@media (min-width: 801px) {
+    .overlap-stat__overlay {
+        display: inline-block;
+        max-width: 45%;
+        position: relative;
+        top: -7rem;
+        left: 0;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 1201px) {
+    .overlap-stat__overlay {
+        display: inline-block;
+        max-width: 40%;
+        position: relative;
+        top: -6rem;
+        left: 0;
+        z-index: 2;
+    }
+}
+
+.overlap-stat__lead {
+    display: block;
+    font-size: 1.728rem;
+    font-weight: 600;
+}
+
+.overlap-stat__underlay {
+    display: none;
+}
+
+@media (min-width: 801px) {
+    .overlap-stat__underlay {
+        display: inline-block;
+        width: 85%;
+        padding-left: 15%;
+    }
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
