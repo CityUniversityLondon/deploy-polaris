@@ -10076,8 +10076,3 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 [data-id="369098"] {
     display: none !important;
 }
-
-.breadcrumbs__list li:nth-last-child(3),
-.breadcrumbs__list li:last-child {
-    display: none !important;
-}
