@@ -8428,7 +8428,7 @@ USED IN:
         align-self: flex-end;
 }
 
-@media (min-width: 501px) {
+@media (min-width: 801px) {
     .cta-group--vertical {
         text-align: center;
     }
