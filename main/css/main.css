@@ -5187,40 +5187,14 @@ svg:not(:root) {
 }
 
 .header__search {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-    width: 8.333%;
+    margin-left: auto;
     text-align: right;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .header__search {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
     .header__search {
         -ms-flex-item-align: center;
             align-self: center;
-    }
-}
-
-@media (min-width: 651px) {
-    .header__search {
-        width: 8.333%;
-    }
-}
-
-@media (max-width: 650px) {
-    .header__search {
-        width: 16.667%;
     }
 }
 
