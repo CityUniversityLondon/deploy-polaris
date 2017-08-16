@@ -8933,6 +8933,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     min-height: 100%;
 }
 
+.popup-def-list-group {
+    margin-bottom: 2rem;
+}
+
 .js .popup-def-list-group .popup-def-list-group__content {
     width: 1px !important;
     height: 1px !important;
