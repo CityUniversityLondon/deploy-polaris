@@ -9654,6 +9654,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     float: left;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
