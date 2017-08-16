@@ -9995,6 +9995,27 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     font-weight: 600;
 }
 
+.kis-widget {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: centre;
+        -ms-flex-pack: centre;
+            justify-content: centre;
+}
+
+.kis-widget iframe {
+    position: relative;
+    left: 50%;
+    margin-left: -307.5px;
+    display: block;
+}
+
+.kis-widget.kis-widget--vertical iframe {
+    margin-left: -95px;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
