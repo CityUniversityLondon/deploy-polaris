@@ -7309,6 +7309,7 @@ picture,
 
 .accordion-tabs__content__heading-anchor:hover, .accordion-tabs__content__heading-anchor[aria-selected="true"] {
     background: #ececec;
+    color: #1e1e1e;
 }
 
 .banner__text {
@@ -10121,4 +10122,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .anchor-demo-list li:nth-child(11) {
     background-color: #1e1e1e;
     color: #ffffff;
+}
+
+[data-id="369098"] {
+    display: none !important;
+}
+
+.breadcrumbs__list li:nth-last-child(3),
+.breadcrumbs__list li:last-child {
+    display: none !important;
 }
