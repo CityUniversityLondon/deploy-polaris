@@ -9794,29 +9794,24 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .overlap-stat__overlay {
     background-color: #f15f22;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     font-weight: 500;
 }
 
 @media (min-width: 801px) {
     .overlap-stat__overlay {
-        display: inline-block;
-        max-width: 45%;
-        position: relative;
-        top: -7rem;
-        left: 0;
         z-index: 2;
+        padding: 1rem;
+        position: relative;
+        width: 45%;
+        top: -7rem;
     }
 }
 
 @media (min-width: 1201px) {
     .overlap-stat__overlay {
-        display: inline-block;
-        max-width: 40%;
-        position: relative;
+        width: 40%;
         top: -6rem;
-        left: 0;
-        z-index: 2;
     }
 }
 
@@ -9833,7 +9828,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (min-width: 801px) {
     .overlap-stat__underlay {
         display: inline-block;
-        width: 85%;
+        width: 100%;
         padding-left: 15%;
     }
 }
