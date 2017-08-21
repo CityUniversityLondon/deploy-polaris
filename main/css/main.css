@@ -9805,6 +9805,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
         position: relative;
         width: 45%;
         top: -7rem;
+        margin-bottom: -6rem;
     }
 }
 
@@ -9812,6 +9813,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     .overlap-stat__overlay {
         width: 40%;
         top: -6rem;
+        margin-bottom: -5rem;
     }
 }
 
