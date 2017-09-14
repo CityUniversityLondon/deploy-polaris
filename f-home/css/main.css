@@ -10571,6 +10571,68 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.connect-social {
+    text-align: center;
+    margin-top: 1rem;
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .connect-social {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .connect-social {
+        width: 100%;
+    }
+}
+
+@media (min-width: 801px) {
+    .connect-social {
+        width: 33.333%;
+    }
+}
+
+.connect-social > div {
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(50, 50, 50, 0.1);
+            box-shadow: 0px 0px 8px 3px rgba(50, 50, 50, 0.1);
+    padding: 1rem;
+}
+
+.connect-social > div > span {
+    margin: 1rem;
+}
+
+.connect-social--twitter {
+    background-color: #dce9f1;
+}
+
+.connect-social--twitter span {
+    color: #11a4ee;
+    font-size: 1.2rem;
+}
+
+.connect-social--insta {
+    background-color: transparent;
+}
+
+.connect-social--fb {
+    background-color: #ffffff;
+}
+
+.connect-social--fb span {
+    color: #3b5998;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
