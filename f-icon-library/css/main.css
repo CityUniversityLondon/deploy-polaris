@@ -3249,7 +3249,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     src: url("../fonts/iconfont/iconfont.eot?#iefix") format("eot"), url("../fonts/iconfont/iconfont.woff2") format("woff2"), url("../fonts/iconfont/iconfont.woff") format("woff"), url("../fonts/iconfont/iconfont.ttf") format("truetype"), url("../fonts/iconfont/iconfont.svg#iconfont") format("svg");
 }
 
-.icon-arrow-left:before, .icon-arrow-right:before, .icon-back-to-top:before, .icon-close:before, .icon-download:before, .icon-facebook:before, .icon-instagram:before, .icon-linkedin:before, .icon-menu:before, .icon-minus:before, .icon-plus:before, .icon-search:before, .icon-share:before, .icon-trail:before, .icon-twitter:before, .icon-weibo:before, .icon-youku:before, .icon-youtube:before {
+.icon-angle-right:before, .icon-back-to-top:before, .icon-close:before, .icon-download:before, .icon-facebook:before, .icon-instagram:before, .icon-linkedin:before, .icon-menu:before, .icon-minus:before, .icon-plus:before, .icon-search:before, .icon-share:before, .icon-trail:before, .icon-twitter:before, .icon-weibo:before, .icon-youku:before, .icon-youtube:before {
     font-family: "iconfont";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -3260,83 +3260,77 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     text-transform: none;
 }
 
-.icon-arrow-left:before {
+.icon-angle-right:before {
     content: "";
 }
 
-.icon-arrow-right:before {
+.icon-back-to-top:before {
     content: "";
 }
 
-.icon-back-to-top:before {
+.icon-close:before {
     content: "";
 }
 
-.icon-close:before {
+.icon-download:before {
     content: "";
 }
 
-.icon-download:before {
+.icon-facebook:before {
     content: "";
 }
 
-.icon-facebook:before {
+.icon-instagram:before {
     content: "";
 }
 
-.icon-instagram:before {
+.icon-linkedin:before {
     content: "";
 }
 
-.icon-linkedin:before {
+.icon-menu:before {
     content: "";
 }
 
-.icon-menu:before {
+.icon-minus:before {
     content: "";
 }
 
-.icon-minus:before {
+.icon-plus:before {
     content: "";
 }
 
-.icon-plus:before {
+.icon-search:before {
     content: "";
 }
 
-.icon-search:before {
+.icon-share:before {
     content: "";
 }
 
-.icon-share:before {
+.icon-trail:before {
     content: "";
 }
 
-.icon-trail:before {
+.icon-twitter:before {
     content: "";
 }
 
-.icon-twitter:before {
+.icon-weibo:before {
     content: "";
 }
 
-.icon-weibo:before {
+.icon-youku:before {
     content: "";
 }
 
-.icon-youku:before {
-    content: "";
-}
-
 .icon-youtube:before {
-    content: "";
+    content: "";
 }
 
 /*
 
-    <p style="font-size: 48px">arrow-left: <span class="icon-arrow-left"></span></p>
-
-    <p style="font-size: 48px">arrow-right: <span class="icon-arrow-right"></span></p>
+    <p style="font-size: 48px">angle-right: <span class="icon-angle-right"></span></p>
 
     <p style="font-size: 48px">back-to-top: <span class="icon-back-to-top"></span></p>
 
