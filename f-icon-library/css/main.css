@@ -3249,11 +3249,11 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     src: url("../fonts/iconfont/iconfont.eot?#iefix") format("eot"), url("../fonts/iconfont/iconfont.woff2") format("woff2"), url("../fonts/iconfont/iconfont.woff") format("woff"), url("../fonts/iconfont/iconfont.ttf") format("truetype"), url("../fonts/iconfont/iconfont.svg#iconfont") format("svg");
 }
 
-.icon-angle-right-lowercase, .icon-arrow-right, .icon-menu, .icon-search {
+.icon-angle-right-lowercase, .icon-arrow-right, .icon-calendar-check, .icon-menu, .icon-search {
     vertical-align: baseline;
 }
 
-.icon-angle-right-lowercase:before, .icon-arrow-right:before, .icon-menu:before, .icon-search:before {
+.icon-angle-right-lowercase:before, .icon-arrow-right:before, .icon-calendar-check:before, .icon-menu:before, .icon-search:before {
     font-family: "iconfont";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -3273,23 +3273,29 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     content: "";
 }
 
-.icon-menu:before {
+.icon-calendar-check:before {
     content: "";
 }
 
-.icon-search:before {
+.icon-menu:before {
     content: "";
+}
+
+.icon-search:before {
+    content: "";
 }
 
 /*
 
-    <p style="font-size: 32px">angle-right-lowercase: <span class="icon-angle-right-lowercase"></span></p>
+    <p>angle-right-lowercase: <span class="icon-angle-right-lowercase"></span></p>
 
-    <p style="font-size: 32px">arrow-right: <span class="icon-arrow-right"></span></p>
+    <p>arrow-right: <span class="icon-arrow-right"></span></p>
 
-    <p style="font-size: 32px">menu: <span class="icon-menu"></span></p>
+    <p>calendar-check: <span class="icon-calendar-check"></span></p>
 
-    <p style="font-size: 32px">search: <span class="icon-search"></span></p>
+    <p>menu: <span class="icon-menu"></span></p>
+
+    <p>search: <span class="icon-search"></span></p>
 
 */
 html {
