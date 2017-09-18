@@ -3249,7 +3249,11 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     src: url("../fonts/iconfont/iconfont.eot?#iefix") format("eot"), url("../fonts/iconfont/iconfont.woff2") format("woff2"), url("../fonts/iconfont/iconfont.woff") format("woff"), url("../fonts/iconfont/iconfont.ttf") format("truetype"), url("../fonts/iconfont/iconfont.svg#iconfont") format("svg");
 }
 
-.icon-angle-right:before, .icon-back-to-top:before, .icon-close:before, .icon-download:before, .icon-facebook:before, .icon-instagram:before, .icon-linkedin:before, .icon-menu:before, .icon-minus:before, .icon-plus:before, .icon-search:before, .icon-share:before, .icon-trail:before, .icon-twitter:before, .icon-weibo:before, .icon-youku:before, .icon-youtube:before {
+.icon-angle-right-lowercase, .icon-arrow-right, .icon-menu, .icon-search {
+    vertical-align: baseline;
+}
+
+.icon-angle-right-lowercase:before, .icon-arrow-right:before, .icon-menu:before, .icon-search:before {
     font-family: "iconfont";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -3258,111 +3262,34 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     font-weight: normal;
     text-decoration: none;
     text-transform: none;
+    vertical-align: baseline;
 }
 
-.icon-angle-right:before {
+.icon-angle-right-lowercase:before {
     content: "";
 }
 
-.icon-back-to-top:before {
+.icon-arrow-right:before {
     content: "";
 }
 
-.icon-close:before {
+.icon-menu:before {
     content: "";
 }
 
-.icon-download:before {
-    content: "";
-}
-
-.icon-facebook:before {
-    content: "";
-}
-
-.icon-instagram:before {
-    content: "";
-}
-
-.icon-linkedin:before {
-    content: "";
-}
-
-.icon-menu:before {
-    content: "";
-}
-
-.icon-minus:before {
-    content: "";
-}
-
-.icon-plus:before {
-    content: "";
-}
-
 .icon-search:before {
-    content: "";
-}
-
-.icon-share:before {
-    content: "";
-}
-
-.icon-trail:before {
-    content: "";
-}
-
-.icon-twitter:before {
-    content: "";
-}
-
-.icon-weibo:before {
-    content: "";
-}
-
-.icon-youku:before {
-    content: "";
-}
-
-.icon-youtube:before {
-    content: "";
+    content: "";
 }
 
 /*
 
-    <p style="font-size: 48px">angle-right: <span class="icon-angle-right"></span></p>
+    <p style="font-size: 32px">angle-right-lowercase: <span class="icon-angle-right-lowercase"></span></p>
 
-    <p style="font-size: 48px">back-to-top: <span class="icon-back-to-top"></span></p>
+    <p style="font-size: 32px">arrow-right: <span class="icon-arrow-right"></span></p>
 
-    <p style="font-size: 48px">close: <span class="icon-close"></span></p>
+    <p style="font-size: 32px">menu: <span class="icon-menu"></span></p>
 
-    <p style="font-size: 48px">download: <span class="icon-download"></span></p>
-
-    <p style="font-size: 48px">facebook: <span class="icon-facebook"></span></p>
-
-    <p style="font-size: 48px">instagram: <span class="icon-instagram"></span></p>
-
-    <p style="font-size: 48px">linkedin: <span class="icon-linkedin"></span></p>
-
-    <p style="font-size: 48px">menu: <span class="icon-menu"></span></p>
-
-    <p style="font-size: 48px">minus: <span class="icon-minus"></span></p>
-
-    <p style="font-size: 48px">plus: <span class="icon-plus"></span></p>
-
-    <p style="font-size: 48px">search: <span class="icon-search"></span></p>
-
-    <p style="font-size: 48px">share: <span class="icon-share"></span></p>
-
-    <p style="font-size: 48px">trail: <span class="icon-trail"></span></p>
-
-    <p style="font-size: 48px">twitter: <span class="icon-twitter"></span></p>
-
-    <p style="font-size: 48px">weibo: <span class="icon-weibo"></span></p>
-
-    <p style="font-size: 48px">youku: <span class="icon-youku"></span></p>
-
-    <p style="font-size: 48px">youtube: <span class="icon-youtube"></span></p>
+    <p style="font-size: 32px">search: <span class="icon-search"></span></p>
 
 */
 html {
