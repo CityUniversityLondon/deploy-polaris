@@ -10668,6 +10668,23 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     color: #3b5998;
 }
 
+.ksp__item {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.ksp__item__figure {
+    font-size: 2.98598rem;
+    color: #d92231;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+}
+
+.ksp__item__border {
+    border-right: 2px  #f2f2f2 solid;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
