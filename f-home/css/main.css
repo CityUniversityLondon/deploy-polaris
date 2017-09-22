@@ -10770,6 +10770,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     color: #3b5998;
 }
 
+.promo-cta__white {
+    background-color: white;
+}
+
 .ksp__item {
     text-align: center;
     padding: 1rem 0;
