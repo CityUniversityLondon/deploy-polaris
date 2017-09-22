@@ -8768,6 +8768,16 @@ USED IN:
     display: inline-block;
 }
 
+.cta--blue {
+    background-color: #00284d;
+    color: #ffffff;
+}
+
+.cta--blue:hover, .cta--blue:focus, .cta--blue:active {
+    background-color: #000e1a;
+    color: #ffffff;
+}
+
 .cta-group {
     position: relative;
 }
