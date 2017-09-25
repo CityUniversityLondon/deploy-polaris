@@ -7767,6 +7767,109 @@ picture,
     background-color: #f7fbfc;
 }
 
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+    display: inline-block;
+    border-bottom-width: 0;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    color: #666666;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item:hover {
+    background-color: transparent;
+    color: #1e1e1e;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item:focus {
+    color: #1e1e1e;
+    outline: 1px dotted #1e1e1e;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item:active {
+    color: #1e1e1e;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item span {
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item {
+        padding: 0.5rem 1rem 1rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item {
+        padding: 2rem 1rem;
+    }
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item:before,
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item span:before {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    content: "";
+    opacity: 0;
+    background-color: #00284d;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item:before {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    bottom: 0;
+    height: 12px;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item span:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+}
+
+.lt-ie10 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item span:before {
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item:hover span:before {
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item[aria-selected="true"] {
+    color: #1e1e1e;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item[aria-selected="true"]:before {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item[aria-selected="true"] span:before {
+    -webkit-transition: none 0.2s ease 0s;
+    transition: none 0.2s ease 0s;
+    opacity: 0;
+}
+
 .accordion-tabs__menu {
     font-size: 0;
     text-align: center;
@@ -8404,9 +8507,15 @@ USED IN:
     font-size: 1rem;
 }
 
-.stats-block--prussian {
+.stats-block.stats-block--prussian {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#00284d), to(#0077a0));
     background-image: linear-gradient(to bottom, #00284d, #0077a0);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.stats-block.stats-block--prussian h2 {
+    border-bottom: 1px solid #0077a0;
 }
 
 .stats-block__grid {
