@@ -8016,12 +8016,10 @@ picture,
     font-weight: 300;
 }
 
-.banner__text.banner__text--dark-background {
+.banner__text.banner__text--dark-background .banner__text__subtitle {
     color: #ffffff;
-    display: inline-block;
 }
 
-.banner__text.banner__text--dark-background .banner__text__subtitle,
 .banner__text.banner__text--dark-background p {
     color: #ffffff;
 }
@@ -8905,12 +8903,13 @@ USED IN:
 .cta--prussian {
     background-color: #00284d;
     color: #ffffff;
-    border: 2px solid #ffffff;
+    border: 2px solid #ececec;
 }
 
 .cta--prussian:hover, .cta--prussian:focus, .cta--prussian:active {
     background-color: #ececec;
     color: #1e1e1e;
+    border: 2px solid #00284d;
 }
 
 .cta--inline {
@@ -9027,6 +9026,42 @@ USED IN:
         right: 1.5rem;
         bottom: 1.5rem;
         bottom: 1.5rem;
+    }
+}
+
+.cta-group--margin {
+    margin-top: 2rem;
+}
+
+.cta-group--margin .cta-group--margin__icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.lt-ie10 .cta-group--margin .cta-group--margin__icon {
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+}
+
+@media (min-width: 501px) {
+    .cta-group--margin {
+        width: 21rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .cta-group--margin {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .cta-group--margin {
+        width: 50%;
     }
 }
 
