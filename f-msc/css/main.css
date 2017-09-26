@@ -8892,6 +8892,27 @@ USED IN:
     color: #1e1e1e;
 }
 
+.cta--allports {
+    background-color: #0077a0;
+    color: #ffffff;
+}
+
+.cta--allports:hover, .cta--allports:focus, .cta--allports:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+}
+
+.cta--prussian {
+    background-color: #00284d;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.cta--prussian:hover, .cta--prussian:focus, .cta--prussian:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+}
+
 .cta--inline {
     display: inline-block;
 }
@@ -9018,8 +9039,8 @@ USED IN:
 }
 
 .section--prussian {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#00284d), to(#0077a0));
-    background-image: linear-gradient(to bottom, #00284d, #0077a0);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#00284d), to(#0077a0));
+    background-image: linear-gradient(to right bottom, #00284d, #0077a0);
     color: #ffffff;
 }
 
