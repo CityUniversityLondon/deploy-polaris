@@ -9147,13 +9147,7 @@ USED IN:
 
 @media (min-width: 901px) {
     .cta-group--margin {
-        width: 100%;
-    }
-}
-
-@media (min-width: 1201px) {
-    .cta-group--margin {
-        width: 50%;
+        width: 17.5rem;
     }
 }
 
