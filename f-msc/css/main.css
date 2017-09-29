@@ -10785,6 +10785,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     font-weight: 600;
 }
 
+.highlight-info.highlight-info--prussian .highlight-info__lead {
+    color: #00284d;
+}
+
 .kis-widget {
     position: relative;
 }
@@ -10953,6 +10957,109 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .vertical-split {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #f2f2f2), color-stop(50%, #ffffff));
     background-image: linear-gradient(to top, #f2f2f2 50%, #ffffff 50%);
+}
+
+.link-strip {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    clear: both;
+    zoom: 1;
+    float: left;
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .link-strip {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+}
+
+.link-strip:before, .link-strip:after {
+    content: "";
+    display: block;
+}
+
+.link-strip:after {
+    clear: both;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .link-strip {
+        float: none;
+    }
+}
+
+.link-strip > div {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.link-strip a {
+    border-bottom: none;
+}
+
+.link-strip a:before {
+    font-family: "FontAwesome";
+    content: "\f061";
+    margin-right: 1rem;
+    border: 1px solid;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .link-strip {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .link-strip > div {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    @supports ((display: -webkit-box) or (display: flex)) {
+        .link-strip > div {
+            float: none;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
+    }
+    @media (min-width: 1201px) {
+        .link-strip > div {
+            width: 16.667%;
+        }
+    }
+    @media (max-width: 1200px) and (min-width: 901px) {
+        .link-strip > div {
+            width: 25%;
+        }
+    }
+    @media (max-width: 900px) and (min-width: 501px) {
+        .link-strip > div {
+            width: 33.333%;
+        }
+    }
+    @media (max-width: 500px) {
+        .link-strip > div {
+            width: 100%;
+            text-align: left;
+        }
+    }
 }
 
 .anchor-demo-list li {
