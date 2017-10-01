@@ -7864,6 +7864,68 @@ picture,
             transform: translateY(0);
 }
 
+.tabs.tabs--allports .tabs__menu__item {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+    display: inline-block;
+    border-bottom-width: 0;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    color: #1e1e1e;
+    background: #f2f2f2;
+    padding: 1rem 2rem;
+}
+
+.tabs.tabs--allports .tabs__menu__item:hover {
+    background-color: transparent;
+    color: #1e1e1e;
+}
+
+.tabs.tabs--allports .tabs__menu__item:focus {
+    color: #1e1e1e;
+    outline: 1px dotted #1e1e1e;
+}
+
+.tabs.tabs--allports .tabs__menu__item:active {
+    color: #1e1e1e;
+}
+
+.tabs.tabs--allports .tabs__menu__item span {
+    position: relative;
+}
+
+.tabs.tabs--allports .tabs__menu__item:before {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    opacity: 0;
+    background-color: #0077a0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    bottom: 0;
+    height: 4px;
+}
+
+.tabs.tabs--allports .tabs__menu__item:hover, .tabs.tabs--allports .tabs__menu__item[aria-selected="true"] {
+    color: #1e1e1e;
+    background: #ffffff;
+}
+
+.tabs.tabs--allports .tabs__menu__item:hover:before, .tabs.tabs--allports .tabs__menu__item[aria-selected="true"]:before {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
 @media (max-width: 500px) {
     .accordion-tabs {
         padding-left: 1rem;
@@ -8840,6 +8902,12 @@ USED IN:
     background-image: linear-gradient(to bottom, #00284d, #0077a0);
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+@media (max-width: 500px) {
+    .stats-block.stats-block--prussian {
+        margin-top: 2rem;
+    }
 }
 
 .stats-block.stats-block--prussian h2 {
