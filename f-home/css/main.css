@@ -11549,10 +11549,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     color: #3b5998;
 }
 
-.promo-cta {
-    margin-top: 20px;
-}
-
 .promo-card {
     text-align: center;
     padding: 10px 30px;
