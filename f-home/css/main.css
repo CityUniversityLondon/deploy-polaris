@@ -11641,6 +11641,50 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     border-right: 2px #f2f2f2 solid;
 }
 
+.loader__header {
+    position: relative;
+    left: -200px;
+}
+
+.loader__header h2 {
+    display: inline;
+    margin-left: 200px;
+}
+
+.loader--horizontal {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+    height: 5px;
+    background-color: #d92231;
+    position: absolute;
+    right: 0;
+    width: 300%;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 0%;
+    }
+    to {
+        margin-left: 0%;
+        width: 300%;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 0%;
+    }
+    to {
+        margin-left: 0%;
+        width: 300%;
+    }
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
