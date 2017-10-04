@@ -11495,6 +11495,98 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.cookie-notice {
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    font-size: 15px;
+}
+
+.home .cookie-notice {
+    background: rgba(30, 30, 30, 0.9);
+}
+
+.cookie-notice a:link, .cookie-notice a:visited {
+    color: #eee;
+    border-bottom: 2px dotted #ccc;
+}
+
+.cookie-notice a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.cookie-notice a:focus, .cookie-notice a:active {
+    background-color: white;
+    color: #555;
+    border-bottom: 2px solid white;
+}
+
+.cookie-notice__text {
+    margin: 0 30px;
+}
+
+@media (min-width: 501px) {
+    .cookie-notice__text {
+        margin-right: 150px;
+    }
+}
+
+.cookie-notice__inner {
+    position: relative;
+}
+
+.cookie-notice__dismiss {
+    display: none;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cookie-notice__dismiss button {
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    background: #b91b1b;
+    -webkit-transition: color 100ms, background 100ms;
+    transition: color 100ms, background 100ms;
+}
+
+.cookie-notice__dismiss button:hover {
+    background: #eee;
+    color: #333;
+}
+
+.cookie-notice__dismiss button:active, .cookie-notice__dismiss button:focus {
+    background: #eee;
+    color: #b91b1b;
+}
+
+@media (min-width: 501px) {
+    .cookie-notice__dismiss {
+        position: absolute;
+        top: 0;
+        margin-top: 0;
+        right: 30px;
+    }
+}
+
+.js .cookie-notice {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.js .cookie-notice__dismiss {
+    display: block;
+}
+
 .cass-hp--news--card__feature {
     -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.25);
             box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.25);
