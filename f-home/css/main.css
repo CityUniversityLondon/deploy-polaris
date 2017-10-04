@@ -11503,6 +11503,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .connect-social {
     text-align: center;
     margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
@@ -11534,7 +11540,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .connect-social > div {
     -webkit-box-shadow: 0 0 8px 3px rgba(50, 50, 50, 0.1);
             box-shadow: 0 0 8px 3px rgba(50, 50, 50, 0.1);
-    padding: 1rem;
 }
 
 .connect-social > div > span {
@@ -11543,6 +11548,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .connect-social--twitter {
     background-color: #dce9f1;
+    padding: 1rem;
+    width: 100%;
 }
 
 .connect-social--twitter span {
@@ -11550,16 +11557,24 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     font-size: 1.2rem;
 }
 
-.connect-social--insta {
-    background-color: transparent;
-}
-
 .connect-social--fb {
     background-color: #ffffff;
+    padding: 1rem;
+    width: 100%;
 }
 
 .connect-social--fb span {
     color: #3b5998;
+}
+
+.connect-social--insta {
+    background-color: transparent;
+    width: 100%;
+}
+
+.connect-social--insta img {
+    width: 100%;
+    height: auto;
 }
 
 .promo-card {
@@ -11638,17 +11653,37 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin: 20px auto;
 }
 
+.ksp-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
 .ksp__item {
     text-align: center;
     padding: 1rem 0;
 }
 
 .ksp__item__figure {
-    font-size: 2.98598rem;
+    font-size: 70px;
     color: #d92231;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    line-height: 1;
+}
+
+.ksp__item__pre-figure {
+    color: #d92231;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 600;
+}
+
+.ksp__item__text {
+    padding-top: 10px;
 }
 
 .ksp__item__border {
