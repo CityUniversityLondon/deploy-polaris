@@ -9377,6 +9377,19 @@ USED IN:
     color: #ffffff;
 }
 
+.cta--shadow {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid transparent;
+}
+
+.cta--shadow:hover, .cta--shadow:focus, .cta--shadow:active {
+    background-color: transparent;
+    border: 2px solid transparent;
+    -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
+}
+
 .cta-group {
     position: relative;
 }
@@ -11584,8 +11597,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (min-width: 901px) {
     .promo-cta__white {
         width: 320px;
-        -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.25);
-                box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
         position: relative;
         float: right;
         top: -50%;
