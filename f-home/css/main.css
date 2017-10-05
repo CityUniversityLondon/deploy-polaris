@@ -9973,6 +9973,10 @@ USED IN:
     color: #ffffff;
 }
 
+.no-js .key-info--dynamic {
+    display: none;
+}
+
 input.header-toggle-input {
     display: none;
 }
@@ -11892,6 +11896,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
         margin-left: 0%;
         width: 300%;
     }
+}
+
+.primary-dropdown select {
+    padding: 0.5rem;
 }
 
 .anchor-demo-list li {
