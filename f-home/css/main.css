@@ -11771,6 +11771,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .promo-cta__white {
     background-color: white;
+    z-index: 2;
 }
 
 @media (min-width: 901px) {
