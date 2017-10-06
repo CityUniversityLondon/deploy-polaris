@@ -10779,7 +10779,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .animation-reveal::after {
-    background-color: #d92231;
+    background-color: white;
     -webkit-animation-delay: 0.33333s;
             animation-delay: 0.33333s;
 }
@@ -10788,26 +10788,54 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     opacity: 0;
 }
 
-.animation-reveal:hover .animation-reveal__content, .animation-reveal:focus .animation-reveal__content, .animation-reveal:active .animation-reveal__content {
-    opacity: 1;
-    -webkit-transition: opacity 0s linear 0.83333s;
-    transition: opacity 0s linear 0.83333s;
-}
-
-.animation-reveal__load--right-to-left {
+.animation-reveal__load--right-to-left,
+.animation-reveal__load--left-to-right {
     overflow: hidden;
 }
 
-.animation-reveal__load--right-to-left::before, .animation-reveal__load--right-to-left::after {
+.animation-reveal__load--right-to-left::before, .animation-reveal__load--right-to-left::after,
+.animation-reveal__load--left-to-right::before,
+.animation-reveal__load--left-to-right::after {
     left: 0;
     right: 0;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
 }
 
-.animation-reveal__load--right-to-left:hover::before, .animation-reveal__load--right-to-left:hover::after, .animation-reveal__load--right-to-left:focus::before, .animation-reveal__load--right-to-left:focus::after, .animation-reveal__load--right-to-left:active::before, .animation-reveal__load--right-to-left:active::after {
+.animation-reveal__load--right-to-left .animation-reveal__content,
+.animation-reveal__load--left-to-right .animation-reveal__content {
+    -webkit-animation: content-reveal 0s linear 0.83333s forwards;
+            animation: content-reveal 0s linear 0.83333s forwards;
+}
+
+.animation-reveal__load--right-to-left::before, .animation-reveal__load--right-to-left::after,
+.animation-reveal__load--left-to-right::before,
+.animation-reveal__load--left-to-right::after {
     -webkit-animation-name: video-slide--left-to-right;
             animation-name: video-slide--left-to-right;
+}
+
+.animation-reveal__load--left-to-right::before, .animation-reveal__load--left-to-right::after {
+    -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+}
+
+@-webkit-keyframes content-reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes content-reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes video-slide--left-to-right {
@@ -11828,13 +11856,25 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .promo-card {
+    z-index: 2;
     text-align: center;
-    padding: 10px 30px;
 }
 
 .promo-card h2 {
     font-weight: 600;
     margin-top: 16px;
+}
+
+@media (min-width: 901px) {
+    .promo-card--left {
+        width: 320px;
+        -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
+        position: relative;
+        float: right;
+        top: -50%;
+        right: 20%;
+    }
 }
 
 .promo-card--right {
@@ -11863,19 +11903,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .promo-cta__white {
     background-color: white;
-    z-index: 2;
-}
-
-@media (min-width: 901px) {
-    .promo-cta__white {
-        width: 320px;
-        -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
-                box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
-        position: relative;
-        float: right;
-        top: -50%;
-        right: 20%;
-    }
+    padding: 10px 30px;
 }
 
 .promo-cta__white h2:after {
