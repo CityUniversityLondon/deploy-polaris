@@ -11375,6 +11375,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .link-strip a {
     border-bottom: none;
+    padding: 0.5rem;
 }
 
 .link-strip a:before {
