@@ -11879,8 +11879,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .promo-card--right {
     position: relative;
-    top: 60px;
-    right: 10%;
+}
+
+@media (min-width: 901px) {
+    .promo-card--right {
+        top: 60px;
+        right: 10%;
+    }
 }
 
 .promo-cta--button {
