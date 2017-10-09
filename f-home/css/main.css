@@ -11705,6 +11705,17 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     display: block;
 }
 
+.feature-news {
+    margin-top: 160px;
+    position: relative;
+}
+
+@media (min-width: 901px) {
+    .feature-news__cards {
+        margin: 60px 0 120px;
+    }
+}
+
 .feature-news__card--main {
     color: white;
     position: relative;
@@ -11776,6 +11787,26 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     height: 3px;
     background-color: #d92231;
     margin: 20px auto;
+}
+
+.cass-hp__events__header {
+    padding-left: 2.5rem;
+    margin-top: 40px;
+}
+
+.cass-hp__events__card time {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 901px) {
+    .cass-hp__events {
+        margin-bottom: 100px;
+    }
+}
+
+.cass-hp__events .loader__header {
+    padding-left: 2.5rem;
 }
 
 .connect-social {
@@ -11992,7 +12023,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .ksp__item {
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .ksp__item__figure {
@@ -12086,12 +12117,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .loader__header {
     position: relative;
-    left: -200px;
 }
 
 .loader__header h2 {
     display: inline;
-    margin-left: 200px;
+    font-weight: 600;
+    font-size: 2.0736rem;
 }
 
 .loader--horizontal {
@@ -12099,11 +12130,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
             animation-duration: 2s;
     -webkit-animation-name: slidein;
             animation-name: slidein;
-    height: 5px;
+    height: 4px;
     background-color: #d92231;
     position: absolute;
     right: 0;
-    width: 300%;
+    width: 200%;
+    margin-top: 10px;
 }
 
 @-webkit-keyframes slidein {
@@ -12113,7 +12145,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
     to {
         margin-left: 0%;
-        width: 300%;
+        width: 200%;
     }
 }
 
@@ -12124,7 +12156,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
     to {
         margin-left: 0%;
-        width: 300%;
+        width: 200%;
     }
 }
 
