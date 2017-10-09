@@ -12064,6 +12064,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.connect-social__timestamp {
+    color: #666666;
+}
+
 .promo-card {
     z-index: 2;
     text-align: center;
@@ -12240,6 +12244,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .programmes-cta__links a {
+    color: #1e1e1e;
+    font-weight: 600;
     display: block;
     border-style: solid;
     border-color: #555555;
@@ -12251,6 +12257,15 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .programmes-cta__links a:hover, .programmes-cta__links a[aria-selected="true"] {
     background: #ececec;
     color: #1e1e1e;
+}
+
+.programmes-cta__links a:after {
+    font-family: "FontAwesome";
+    content: "\f054";
+    padding-left: 0.5em;
+    border-bottom-color: transparent !important;
+    float: right;
+    margin-right: 10px;
 }
 
 .loader__header {
