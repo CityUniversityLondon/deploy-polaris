@@ -11816,8 +11816,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .connect-social > div {
-    -webkit-box-shadow: 0 0 8px 3px rgba(50, 50, 50, 0.1);
-            box-shadow: 0 0 8px 3px rgba(50, 50, 50, 0.1);
+    -webkit-box-shadow: 0 0 10px 4px rgba(50, 50, 50, 0.1);
+            box-shadow: 0 0 10px 4px rgba(50, 50, 50, 0.1);
 }
 
 .connect-social > div > span {
@@ -11853,6 +11853,46 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .connect-social--insta img {
     width: 100%;
     height: auto;
+}
+
+.connect-social__source {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.connect-social__source > div:first-child {
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.connect-social__source > div:first-child .connect-social__source--twitter-icon,
+.connect-social__source > div:first-child .connect-social__source--fb-icon {
+    display: inline-block;
+    margin: 0 5px 0 10px;
+}
+
+.connect-social__source > div:first-child .connect-social__source--twitter-icon {
+    color: #11a4ee;
+}
+
+.connect-social__source > div:first-child .connect-social__source--fb-icon {
+    color: #3b5998;
+}
+
+@media (min-width: 901px) {
+    .connect-social__source {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 
 .promo-card {
