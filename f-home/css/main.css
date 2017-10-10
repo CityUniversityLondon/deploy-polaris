@@ -12214,11 +12214,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
-.programmes-cta__media img {
-    width: 100%;
-    height: 100%;
-}
-
 .programmes-cta__media:before {
     content: "";
     position: absolute;
@@ -12230,17 +12225,11 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 901px) {
-    .programmes-cta__wrapper {
-        position: absolute;
-        top: 20%;
-        width: 100%;
-        z-index: 2;
-    }
-}
-
 .programmes-cta__links {
     background-color: rgba(255, 255, 255, 0.8);
+    margin: 60px 0;
+    z-index: 2;
+    position: relative;
 }
 
 .programmes-cta__links a {
