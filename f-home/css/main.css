@@ -12154,7 +12154,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin: 20px auto;
 }
 
-.ksp-items {
+.ksp__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
