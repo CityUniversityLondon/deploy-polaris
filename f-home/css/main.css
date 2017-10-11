@@ -12011,7 +12011,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.feature-news__card__body__title:after {
+.feature-news__card--main .feature-news__card__body__title:after,
+.feature-news__card--follow .feature-news__card__body__title:after {
     content: "";
     display: block;
     width: 40px;
