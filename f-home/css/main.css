@@ -12226,7 +12226,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .programmes-cta__links {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
     margin: 60px 0;
     z-index: 2;
     position: relative;
