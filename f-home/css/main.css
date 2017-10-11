@@ -11722,7 +11722,113 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.feature-news__card:hover {
+.feature-news__card {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .feature-news__card {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .feature-news__card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .feature-news__card {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .feature-news__card {
+        width: 50%;
+    }
+}
+
+.feature-news__card:nth-child(2) {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .feature-news__card:nth-child(2) {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .feature-news__card:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .feature-news__card:nth-child(2) {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .feature-news__card:nth-child(2) {
+        width: 25%;
+    }
+}
+
+.feature-news__card:nth-child(3) {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .feature-news__card:nth-child(3) {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .feature-news__card:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .feature-news__card:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .feature-news__card:nth-child(3) {
+        width: 25%;
+    }
+}
+
+.feature-news__card--main:hover,
+.feature-news__card--follow:hover {
     -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
             box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
 }
@@ -11809,7 +11915,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: white;
     position: relative;
     top: -40px;
-    width: 75%;
+    width: 90%;
     padding: 1rem;
 }
 
