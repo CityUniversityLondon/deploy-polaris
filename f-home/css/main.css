@@ -12166,6 +12166,55 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .ksp__item {
     text-align: center;
     padding: 1rem;
+    border-bottom: 2px #f2f2f2 solid;
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .ksp__item {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .ksp__item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .ksp__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) {
+    .ksp__item {
+        width: 25%;
+    }
+}
+
+@media (min-width: 501px) {
+    .ksp__item {
+        border-bottom: none;
+        border-right: 2px #f2f2f2 solid;
+    }
+    .ksp__item:last-child {
+        border: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .ksp__item:nth-child(2) {
+        border-right: none;
+    }
 }
 
 .ksp__item__figure {
@@ -12188,10 +12237,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     color: #666666;
 }
 
-.ksp__item__border {
-    border-right: 2px #f2f2f2 solid;
-}
-
 .ksp__source {
     text-align: center;
     width: 100%;
@@ -12205,7 +12250,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 901px) {
     .ksp__source {
-        margin-top: 60px;
+        margin-top: 40px;
         margin-bottom: 60px;
     }
 }
