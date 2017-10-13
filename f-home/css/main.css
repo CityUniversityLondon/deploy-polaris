@@ -12147,10 +12147,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     padding-left: 20px;
 }
 
+.feature-news__card--latest .feature-news__card__body {
+    border-top: 1px solid #666666;
+}
+
 @media (min-width: 901px) {
     .feature-news__card--latest .feature-news__card__body {
         padding: 20px 0 60px;
-        border-top: 1px solid #666666;
         border-bottom: 1px solid #666666;
     }
 }
