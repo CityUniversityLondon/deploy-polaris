@@ -8262,6 +8262,7 @@ picture,
     font-weight: 700;
     line-height: 1;
     text-decoration: none;
+    display: inline-block;
     color: #666666;
 }
 
@@ -8374,6 +8375,7 @@ picture,
     font-weight: 700;
     line-height: 1;
     text-decoration: none;
+    display: inline-block;
     color: #666666;
 }
 
@@ -12817,13 +12819,16 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     padding: 0.5rem;
 }
 
-.js .animate--svg-piechart .animate--svg-piechart__value {
-    display: none;
+.stats-block__piechart .stats-block__piechart__value {
     -webkit-transition: stroke-dashoffset 1.5s ease 0s;
     transition: stroke-dashoffset 1.5s ease 0s;
 }
 
-.js .animate--svg-piechart.animate--svg-piechart--jsrun .animate--svg-piechart__value {
+.stats-block__piechart .animate--svg-path--jsinit.stats-block__piechart__value {
+    display: none;
+}
+
+.stats-block__piechart .animate--svg-path--jsrun.stats-block__piechart__value {
     display: block;
 }
 
