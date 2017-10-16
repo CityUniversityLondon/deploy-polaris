@@ -9075,6 +9075,7 @@ USED IN:
     background-image: linear-gradient(to bottom, #00284d, #0077a0);
     padding-left: 1rem;
     padding-right: 1rem;
+    overflow: auto;
 }
 
 @media (max-width: 500px) {
