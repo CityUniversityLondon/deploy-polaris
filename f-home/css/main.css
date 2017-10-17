@@ -8087,6 +8087,18 @@ picture,
             transform: translateY(0);
 }
 
+.tabs.tabs--reduceable .tabs__menu .tabs__menu__item:only-of-type {
+    pointer-events: none;
+}
+
+.tabs.tabs--reduceable .tabs__content .tabs__content__heading-anchor:only-of-type {
+    pointer-events: none;
+}
+
+.tabs.tabs--reduceable .tabs__content .tabs__content__heading-anchor:only-of-type .tabs__content__heading-anchor__icon {
+    display: none;
+}
+
 @media (max-width: 500px) {
     .accordion-tabs {
         padding-left: 1rem;
@@ -9063,6 +9075,7 @@ USED IN:
     background-image: linear-gradient(to bottom, #00284d, #0077a0);
     padding-left: 1rem;
     padding-right: 1rem;
+    overflow: auto;
 }
 
 @media (max-width: 500px) {
