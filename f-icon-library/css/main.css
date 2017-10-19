@@ -5990,7 +5990,7 @@ USED IN:
 
 .breadcrumbs__list li + li:before {
     font-family: "iconfont";
-    content: "";
+    content: "";
     color: #666666;
     font-size: 1rem;
     padding-right: 1rem;
