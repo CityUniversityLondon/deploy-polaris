@@ -319,6 +319,22 @@
     vertical-align: baseline !important;
 }
 
+.programmes-cta__links a {
+    vertical-align: baseline;
+}
+
+.programmes-cta__links a:after {
+    font-family: "iconfont" !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    vertical-align: baseline !important;
+}
+
 .icon-angle-right:before, .url-slide--right .url-slide__icon:before, .banner__text__breadcrumbs li:not(:first-child):before, .fa.fa-angle-right:before {
     content: "" !important;
 }
@@ -9725,8 +9741,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .programmes-cta__links a:after {
-    font-family: "iconfont";
-    content: "\f054";
+    content: "" !important;
+}
+
+.programmes-cta__links a:after {
     padding-left: 0.5em;
     border-bottom-color: transparent !important;
     float: right;
