@@ -1,4 +1,106 @@
 @charset "UTF-8";
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+    content: "";
+    display: table;
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
 /**
  * Managing anchors is a difficult process on a website as vast as ours, and
  * given the great variety in styles our anchors take, it is of the utmost
@@ -4668,7 +4770,6 @@ picture,
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
-    display: inline-block;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 700;
@@ -4743,7 +4844,6 @@ picture,
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
-    display: inline-block;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 700;
@@ -4806,7 +4906,6 @@ picture,
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
-    display: inline-block;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 700;
@@ -4869,7 +4968,6 @@ picture,
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
-    display: inline-block;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 700;
@@ -4925,6 +5023,18 @@ picture,
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+}
+
+.tabs.tabs--reduceable .tabs__menu .tabs__menu__item:only-of-type {
+    pointer-events: none;
+}
+
+.tabs.tabs--reduceable .tabs__content .tabs__content__heading-anchor:only-of-type {
+    pointer-events: none;
+}
+
+.tabs.tabs--reduceable .tabs__content .tabs__content__heading-anchor:only-of-type .tabs__content__heading-anchor__icon {
+    display: none;
 }
 
 @media (max-width: 500px) {
@@ -5097,12 +5207,12 @@ picture,
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
-    display: inline-block;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 700;
     line-height: 1;
     text-decoration: none;
+    display: inline-block;
     color: #666666;
 }
 
@@ -5210,12 +5320,12 @@ picture,
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
-    display: inline-block;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 700;
     line-height: 1;
     text-decoration: none;
+    display: inline-block;
     color: #666666;
 }
 
@@ -5903,6 +6013,7 @@ USED IN:
     background-image: linear-gradient(to bottom, #00284d, #0077a0);
     padding-left: 1rem;
     padding-right: 1rem;
+    overflow: auto;
 }
 
 @media (max-width: 500px) {
@@ -6204,8 +6315,6 @@ USED IN:
 }
 
 .stats-block__piechart .stats-block__piechart__value {
-    -webkit-transition: stroke-dashoffset 1.5s ease 0s;
-    transition: stroke-dashoffset 1.5s ease 0s;
     fill: none;
     stroke: #d0cfcb;
 }
@@ -6235,14 +6344,6 @@ USED IN:
     width: 100%;
     max-width: 150px;
     display: inline-block;
-}
-
-.js .stats-block__piechart__value {
-    display: none;
-}
-
-.js .stats-block__piechart__value.stats-block__piechart__value--jsrun {
-    display: block;
 }
 
 .cta {
@@ -8463,6 +8564,19 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .primary-dropdown select {
     padding: 0.5rem;
+}
+
+.stats-block__piechart .stats-block__piechart__value {
+    -webkit-transition: stroke-dashoffset 1.5s ease 0s;
+    transition: stroke-dashoffset 1.5s ease 0s;
+}
+
+.stats-block__piechart .animate--svg-path--jsinit.stats-block__piechart__value {
+    display: none;
+}
+
+.stats-block__piechart .animate--svg-path--jsrun.stats-block__piechart__value {
+    display: block;
 }
 
 .anchor-demo-list li {
