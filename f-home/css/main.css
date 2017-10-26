@@ -9684,6 +9684,12 @@ USED IN:
     margin-top: 2rem;
 }
 
+@media (min-width: 501px) {
+    .cta-group--margin {
+        margin-top: 0.5rem;
+    }
+}
+
 .cta-group--margin .cta-group--margin__icon {
     position: absolute;
     right: 1.5rem;
@@ -10103,79 +10109,52 @@ USED IN:
     color: #7b7b7b;
 }
 
-.key-info.key-info--2-col {
-    margin-top: 0;
-}
-
-.key-info.key-info--2-col .key-info__item {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    .key-info.key-info--2-col .key-info__item {
-        float: none;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-    }
-}
-
-@media (max-width: 500px) {
-    .key-info.key-info--2-col .key-info__item {
-        width: 100%;
-    }
-}
-
-@media (min-width: 501px) {
-    .key-info.key-info--2-col .key-info__item {
-        width: 50%;
-    }
-}
-
-@media (max-width: 900px) {
-    .key-info.key-info--2-col .key-info__item {
-        margin-top: 2rem;
-    }
-}
-
-@media (min-width: 501px) {
-    .key-info.key-info--2-col .key-info__item:nth-child(1n+3) {
-        margin-top: 2rem;
-    }
+.key-info--2-col {
+    margin-top: 2rem;
 }
 
 @media (min-width: 901px) {
-    .key-info.key-info--2-col .key-info__item:nth-child(1n+3) {
-        margin-top: 3.5rem;
+    .key-info--2-col {
+        margin-top: 0;
     }
 }
 
-.key-info.key-info--iconed .fa, .key-info.key-info--iconed .url-slide--right .url-slide__icon, .url-slide--right .key-info.key-info--iconed .url-slide__icon, .key-info.key-info--iconed .accordion__content__heading-anchor__icon, .key-info.key-info--iconed .js .tabs__content__heading-anchor__icon, .js .key-info.key-info--iconed .tabs__content__heading-anchor__icon, .key-info.key-info--iconed .js .accordion-tabs__content__heading-anchor__icon, .js .key-info.key-info--iconed .accordion-tabs__content__heading-anchor__icon, .key-info.key-info--iconed .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs .key-info.key-info--iconed li:not(:first-child), .key-info.key-info--iconed .header-toggle--menu .header-toggle__icon, .header-toggle--menu .key-info.key-info--iconed .header-toggle__icon, .key-info.key-info--iconed .header-toggle--search .header-toggle__icon, .header-toggle--search .key-info.key-info--iconed .header-toggle__icon, .key-info.key-info--iconed .popup-def-list-group__prevnext__prev .popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .key-info.key-info--iconed .popup-def-list-group__prevnext__prev__icon, .key-info.key-info--iconed .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .key-info.key-info--iconed .popup-def-list-group__prevnext__next__icon, .key-info.key-info--iconed .dialog__box__heading__close__icon {
-    display: inline-block;
-    min-width: 2rem;
-    font-size: 1.2rem;
+.key-info--2-col .key-info__item--iconed {
+    display: block;
+    margin-bottom: 2rem;
 }
 
-.key-info.key-info--iconed .key-info__item__prop span:not([class]) {
-    vertical-align: top;
-    line-height: 1.2;
+@media (min-width: 501px) {
+    .key-info--2-col .key-info__item--iconed {
+        vertical-align: text-top;
+        display: inline-block;
+        width: 45%;
+        margin-right: 1rem;
+    }
 }
 
-.key-info.key-info--iconed .key-info__item__value {
-    padding-left: 2rem;
-}
-
-.key-info.key-info--dark-background .key-info__item__prop,
-.key-info.key-info--dark-background .key-info__item__value {
+.key-info--dark-background .key-info__item__prop,
+.key-info--dark-background .key-info__item__value {
     color: #ffffff;
 }
 
 .no-js .key-info--dynamic {
     display: none;
+}
+
+.key-info__item--iconed .fa, .key-info__item--iconed .url-slide--right .url-slide__icon, .url-slide--right .key-info__item--iconed .url-slide__icon, .key-info__item--iconed .accordion__content__heading-anchor__icon, .key-info__item--iconed .js .tabs__content__heading-anchor__icon, .js .key-info__item--iconed .tabs__content__heading-anchor__icon, .key-info__item--iconed .js .accordion-tabs__content__heading-anchor__icon, .js .key-info__item--iconed .accordion-tabs__content__heading-anchor__icon, .key-info__item--iconed .banner__text__breadcrumbs li:not(:first-child), .banner__text__breadcrumbs .key-info__item--iconed li:not(:first-child), .key-info__item--iconed .header-toggle--menu .header-toggle__icon, .header-toggle--menu .key-info__item--iconed .header-toggle__icon, .key-info__item--iconed .header-toggle--search .header-toggle__icon, .header-toggle--search .key-info__item--iconed .header-toggle__icon, .key-info__item--iconed .popup-def-list-group__prevnext__prev .popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .key-info__item--iconed .popup-def-list-group__prevnext__prev__icon, .key-info__item--iconed .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .key-info__item--iconed .popup-def-list-group__prevnext__next__icon, .key-info__item--iconed .dialog__box__heading__close__icon {
+    display: inline-block;
+    min-width: 2rem;
+    font-size: 1.2rem;
+}
+
+.key-info__item--iconed .key-info__item__prop span:not([class]) {
+    vertical-align: top;
+    line-height: 1.2;
+}
+
+.key-info__item--iconed .key-info__item__value {
+    padding-left: 2rem;
 }
 
 input.header-toggle-input {
