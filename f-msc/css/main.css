@@ -7715,6 +7715,10 @@ picture,
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
+.accordion {
+    margin-bottom: 2rem;
+}
+
 .accordion__content__heading-anchor__icon {
     float: right;
 }
@@ -7732,6 +7736,8 @@ picture,
     background: #f2f2f2;
     padding: 1rem 2rem;
     display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .accordion__content__heading-anchor:hover {
@@ -7763,7 +7769,7 @@ picture,
     left: 0;
     content: "";
     opacity: 0;
-    background-color: #fbae3b;
+    background-color: transparent;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
     bottom: 0;
@@ -7786,7 +7792,7 @@ picture,
 }
 
 .accordion__content__group {
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .accordion.accordion--simple {
