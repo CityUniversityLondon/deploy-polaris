@@ -6745,37 +6745,67 @@ svg:not(:root) {
 }
 
 .nav-mobile__content {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-animation: slide-right-out 0.2s ease 0s both normal;
-            animation: slide-right-out 0.2s ease 0s both normal;
     background-color: #ffffff;
     color: #1e1e1e;
     width: 50%;
     min-width: 17.5rem;
     height: 100%;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    display: none;
     -webkit-box-shadow: 0 12px 24px 0;
             box-shadow: 0 12px 24px 0;
     z-index: 3;
 }
 
-@supports ((display: -webkit-box) or (display: flex)) {
-    .nav-mobile__content {
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 auto;
-                flex: 1 1 auto;
-    }
+.nav-mobile__toggle:not(:checked) + .nav-mobile__overlay .nav-mobile__content {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 .nav-mobile__toggle:checked + .nav-mobile__overlay .nav-mobile__content {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-animation: slide-right-in 0.2s ease 0s both normal;
-            animation: slide-right-in 0.2s ease 0s both normal;
-    display: block;
+    -webkit-animation: nav-mobile-in 0.2s ease 0s both normal;
+            animation: nav-mobile-in 0.2s ease 0s both normal;
+}
+
+@-webkit-keyframes nav-mobile-in {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    0.001% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@keyframes nav-mobile-in {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    0.001% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
 }
 
 .nav-mobile__toggle-label {
@@ -6873,6 +6903,9 @@ svg:not(:root) {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
     }
 }
 
@@ -10289,7 +10322,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__prev {
     text-align: left;
-    border-right: 2px solid #fbae3b;
+    border-right: 2px solid #666666;
     padding-left: 26px;
     padding-right: 0.5rem;
 }
@@ -10326,6 +10359,14 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin-left: 1rem;
     position: absolute;
     bottom: 10px;
+}
+
+.popup-def-list-group__dlg.popup-def-list-group__dlg--yellow .popup-def-list-group__prevnext__prev {
+    border-right: 2px solid #fbae3b;
+}
+
+.popup-def-list-group__dlg.popup-def-list-group__dlg--allports .popup-def-list-group__prevnext__prev {
+    border-right: 2px solid #0077a0;
 }
 
 .external-img-link-strip {
@@ -11772,8 +11813,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .cookie-notice a:link, .cookie-notice a:visited {
-    color: #eee;
-    border-bottom: 2px dotted #ccc;
+    color: #eeeeee;
+    border-bottom: 2px dotted #cccccc;
 }
 
 .cookie-notice a:hover {
@@ -11783,7 +11824,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .cookie-notice a:focus, .cookie-notice a:active {
     background-color: white;
-    color: #555;
+    color: #555555;
     border-bottom: 2px solid white;
 }
 
@@ -11821,12 +11862,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .cookie-notice__dismiss button:hover {
-    background: #eee;
-    color: #333;
+    background: #eeeeee;
+    color: #333333;
 }
 
 .cookie-notice__dismiss button:active, .cookie-notice__dismiss button:focus {
-    background: #eee;
+    background: #eeeeee;
     color: #b91b1b;
 }
 
@@ -11865,7 +11906,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1201px) {
     .feature-news {
-        margin: 120px 0 120px;
+        margin: 120px 0x;
     }
 }
 
