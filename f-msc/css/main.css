@@ -10356,7 +10356,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__prev {
     text-align: left;
-    border-right: 2px solid #fbae3b;
+    border-right: 2px solid #666666;
     padding-left: 26px;
     padding-right: 0.5rem;
 }
@@ -10393,6 +10393,14 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin-left: 1rem;
     position: absolute;
     bottom: 10px;
+}
+
+.popup-def-list-group__dlg.popup-def-list-group__dlg--yellow .popup-def-list-group__prevnext__prev {
+    border-right: 2px solid #fbae3b;
+}
+
+.popup-def-list-group__dlg.popup-def-list-group__dlg--allports .popup-def-list-group__prevnext__prev {
+    border-right: 2px solid #0077a0;
 }
 
 .external-img-link-strip {
