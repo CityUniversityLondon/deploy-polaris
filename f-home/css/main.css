@@ -12619,11 +12619,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     text-align: center;
 }
 
-.promo-card h2 {
-    font-weight: 600;
-    margin-top: 16px;
-}
-
 @media (min-width: 901px) {
     .promo-card--left {
         width: 320px;
@@ -12638,6 +12633,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .promo-card--right {
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 @media (min-width: 901px) {
@@ -12647,57 +12644,65 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.promo-cta--button {
+@media (min-width: 901px) {
+    .promo-card--right {
+        width: 500px;
+    }
+}
+
+.promo-cta {
+    padding: 10px 30px;
+}
+
+.promo-cta h2 {
+    font-weight: 600;
+    margin-top: 16px;
+    display: inline-block;
+    padding: 0 15%;
+}
+
+.promo-cta h2:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 20px auto;
+    max-height: 240px;
+}
+
+.promo-cta__button {
     padding: 0.5rem 1rem;
     width: 160px;
     text-align: left;
     position: relative;
 }
 
-.promo-cta--button .promo-cta--button--text {
+.promo-cta__button .promo-cta__button__text {
     display: inline-block;
 }
 
-.promo-cta--button .promo-cta--button--icon {
+.promo-cta__button .promo-cta__button__icon {
     display: inline-block;
     position: absolute;
     right: 1rem;
     top: 12px;
 }
 
-.promo-cta__white {
+.promo-cta--white {
     background-color: white;
-    padding: 10px 30px;
 }
 
-.promo-cta__white h2:after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
+.promo-cta--white h2:after {
     background-color: #d92231;
-    margin: 20px auto;
-    max-height: 240px;
 }
 
-.promo-cta__blue {
-    padding-left: 0;
-    padding-right: 0;
+.promo-cta--blue {
+    background-color: #00284d;
+    color: white;
 }
 
-@media (min-width: 901px) {
-    .promo-cta__blue {
-        width: 500px;
-    }
-}
-
-.promo-cta__blue h2:after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
+.promo-cta--blue h2:after {
     background-color: #49c7ed;
-    margin: 20px auto;
 }
 
 .ksp__items {
