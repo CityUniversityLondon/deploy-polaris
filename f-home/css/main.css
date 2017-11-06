@@ -6494,6 +6494,21 @@ svg:not(:root) {
     display: block;
 }
 
+.promo-card__wrapper {
+    padding-bottom: 80px;
+}
+
+.ksp__wrapper {
+    margin: 80px 0;
+    text-align: center;
+}
+
+@media (min-width: 901px) {
+    .ksp__banner {
+        padding: 60px 0;
+    }
+}
+
 .nav-mobile {
     /** TODO: Is min height necessary? **/
     float: left;
@@ -12786,24 +12801,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .ksp__item__text {
     padding-top: 10px;
     color: #666666;
-}
-
-.ksp__source {
-    text-align: center;
-    width: 100%;
-}
-
-.ksp__source p {
-    margin: 0;
-    font-style: italic;
-    letter-spacing: 0.2px;
-}
-
-@media (min-width: 901px) {
-    .ksp__source {
-        margin-top: 40px;
-        margin-bottom: 60px;
-    }
 }
 
 .programmes-cta__media {
