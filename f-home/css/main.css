@@ -12748,6 +12748,15 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #49c7ed;
 }
 
+.promo-cta--black {
+    background-color: #1e1e1e;
+    color: #fafafa;
+}
+
+.promo-cta--black h2:after {
+    background-color: #666666;
+}
+
 .ksp__items {
     display: -webkit-box;
     display: -ms-flexbox;
