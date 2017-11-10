@@ -12862,31 +12862,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
-.programmes-cta__links a {
-    color: #1e1e1e;
-    font-weight: 600;
-    display: block;
-    border-style: solid;
-    border-color: #555555;
-    border-width: 0 0 1px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.programmes-cta__links a:hover, .programmes-cta__links a[aria-selected="true"] {
-    background: #ececec;
-    color: #1e1e1e;
-}
-
-.programmes-cta__links a:after {
-    font-family: "FontAwesome";
-    content: "\f054";
-    padding-left: 0.5em;
-    border-bottom-color: transparent !important;
-    float: right;
-    margin-right: 10px;
-}
-
 .primary-dropdown select {
     padding: 0.5rem;
 }
