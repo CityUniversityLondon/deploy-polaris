@@ -9651,6 +9651,30 @@ USED IN:
             box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
 }
 
+.cta--white {
+    background-color: white;
+    color: #1e1e1e;
+    border: 2px solid #ececec;
+}
+
+.cta--white:hover, .cta--white:focus, .cta--white:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+    border: 2px solid white;
+}
+
+.cta--clear-light {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ececec;
+}
+
+.cta--clear-light:hover, .cta--clear-light:focus, .cta--clear-light:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+    border: 2px solid transparent;
+}
+
 .cta-group {
     position: relative;
 }
@@ -12701,6 +12725,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: absolute;
     right: 1rem;
     top: 12px;
+}
+
+.promo-cta__button--center {
+    text-align: center;
 }
 
 .promo-cta--white {
