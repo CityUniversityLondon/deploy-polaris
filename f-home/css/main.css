@@ -12826,6 +12826,11 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     line-height: 1;
 }
 
+.ksp__item__figure .animate--number__unit {
+    font-size: 0.5em;
+    margin-top: -0.25em;
+}
+
 .ksp__item__pre-figure {
     color: #d92231;
     text-transform: uppercase;
@@ -12866,6 +12871,16 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .primary-dropdown select {
     padding: 0.5rem;
+}
+
+.animate--number--init .animate--number__unit {
+    opacity: 0;
+}
+
+.animate--number--init.animate--number--complete .animate--number__unit {
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+    opacity: 1;
 }
 
 .stats-block__piechart .stats-block__piechart__value {
