@@ -6503,10 +6503,15 @@ svg:not(:root) {
 }
 
 @media (min-width: 901px) {
-    .promo-card__wrapper .promo-card--left {
-        width: 320px;
+    .promo-card__wrapper .promo-card {
         -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
                 box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media (min-width: 901px) {
+    .promo-card__wrapper .promo-card--left {
+        width: 320px;
         position: relative;
         float: right;
         top: -50%;
@@ -6516,6 +6521,7 @@ svg:not(:root) {
 
 .promo-card__wrapper .promo-card--right {
     position: relative;
+    margin-top: 10px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -6524,6 +6530,7 @@ svg:not(:root) {
     .promo-card__wrapper .promo-card--right {
         top: 60px;
         right: 10%;
+        margin-top: 0;
     }
 }
 
