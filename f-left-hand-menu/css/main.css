@@ -12966,7 +12966,38 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .left-hand-navigation {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
     font-size: 14px;
+}
+
+.left-hand-navigation.left-hand-navigation--top {
+    top: 0;
+}
+
+.left-hand-navigation.left-hand-navigation--bottom {
+    bottom: 0;
+}
+
+.left-hand-navigation.left-hand-navigation--absolute {
+    width: calc(100% - 1rem);
+    position: absolute;
+}
+
+.left-hand-navigation.left-hand-navigation--fixed {
+    position: fixed;
+}
+
+@media (max-width: 1440px) {
+    .left-hand-navigation.left-hand-navigation--fixed {
+        width: calc(25% - 1rem - 0.25rem);
+    }
+}
+
+@media (min-width: 1441px) {
+    .left-hand-navigation.left-hand-navigation--fixed {
+        width: calc(360px - 1rem - 0.25rem);
+    }
 }
 
 .left-hand-navigation a {
