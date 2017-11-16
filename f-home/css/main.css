@@ -12874,7 +12874,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .block-links__items {
     color: #ffffff;
-    margin: 60px 0;
+    margin: 100px 0;
+    padding: 10px;
     z-index: 2;
     position: relative;
     display: -webkit-box;
@@ -12885,7 +12886,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 5px;
+}
+
+@media (min-width: 1201px) {
+    .block-links__items {
+        padding: 10px 100px;
+    }
 }
 
 .block-links__items--blue {
@@ -12896,6 +12902,51 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     display: block;
     width: 300px;
     padding: 10px;
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: white;
+    display: inline-block;
+    overflow-x: hidden;
+    margin-bottom: 2px;
+}
+
+.block-links__items__anchor:hover, .block-links__items__anchor:focus, .block-links__items__anchor:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.block-links__items__anchor h2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 0;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+.block-links__items__anchor:hover h2:after {
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 0%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.block-links__items__anchor:focus {
+    outline: 3px solid #ffffff;
+}
+
+.block-links__items__anchor:active {
+    outline: 2px dotted #ffffff;
+}
+
+.block-links__items__anchor__header {
+    font-size: 1.44rem;
 }
 
 .block-links__items__anchor__text {
@@ -12906,6 +12957,14 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     .block-links__items__anchor__text {
         display: block;
     }
+}
+
+.block-links__items__anchor__header__icon {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-weight: 300;
 }
 
 .primary-dropdown select {
