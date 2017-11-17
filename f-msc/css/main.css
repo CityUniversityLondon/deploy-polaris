@@ -7736,10 +7736,27 @@ picture,
 }
 
 .media-block figcaption {
+    display: inline-block;
+    width: 100%;
+    padding-top: 0.5rem;
     color: #1e1e1e;
-    position: absolute;
-    bottom: 0;
-    padding: 0 0.5rem;
+    font-style: normal;
+    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.media-block figcaption .figcaption__bulleted-item:not(:first-of-type):before {
+    content: "\2022";
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.media-block figcaption span {
+    white-space: nowrap;
+}
+
+.media-block figcaption p {
+    margin-top: 0.5rem;
 }
 
 .media-block .video-preview__button:before {
@@ -7750,12 +7767,16 @@ picture,
     -webkit-transform: translate(-50%, -50%);
     font-size: 100px;
     color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.5;
     z-index: 2;
 }
 
 .media-block .video-preview__button:hover:before {
-    opacity: 0.9;
+    opacity: 0.85;
+}
+
+.media-block .media-block__wrapper {
+    width: 100%;
 }
 
 .js .accordion__content__heading-anchor.inactive + div {
