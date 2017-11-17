@@ -6551,6 +6551,51 @@ svg:not(:root) {
     }
 }
 
+.ksp__wrapper__anchor--more {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    display: inline-block;
+    overflow-x: hidden;
+    margin-top: 40px;
+}
+
+.ksp__wrapper__anchor--more:hover, .ksp__wrapper__anchor--more:focus, .ksp__wrapper__anchor--more:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.ksp__wrapper__anchor--more:after {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    content: "";
+    opacity: 0;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 2px;
+    display: block;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.ksp__wrapper__anchor--more:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.ksp__wrapper__anchor--more:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.ksp__wrapper__anchor--more:active {
+    outline: 2px dotted #1e1e1e;
+}
+
 .nav-mobile {
     /** TODO: Is min height necessary? **/
     float: left;
