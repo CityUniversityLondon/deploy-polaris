@@ -12247,6 +12247,30 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.feature-news__card__body__topic--all {
+    color: #666666;
+}
+
+.feature-news__card__body__topic--actuarial-science {
+    color: #3F175C;
+}
+
+.feature-news__card__body__topic--finance {
+    color: #11365C;
+}
+
+.feature-news__card__body__topic--management {
+    color: #AD2B1A;
+}
+
+.feature-news__card__body__topic--entrepreneurship {
+    color: #5A8054;
+}
+
+.feature-news__card__body__topic--cass-community {
+    color: #5d5d5d;
+}
+
 .feature-news__card--latest > .feature-news__card__body:not(.feature-news__card__body--slider-dots) .feature-news__card__slider__item:not(:first-child) {
     display: none;
 }
