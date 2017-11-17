@@ -12029,18 +12029,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 901px) {
     .feature-news {
-        margin: 60px 0 120px;
+        margin: 10px 0 120px;
     }
-}
-
-@media (min-width: 1201px) {
-    .feature-news {
-        margin: 120px 0x;
-    }
-}
-
-.feature-news__cards {
-    margin-top: 60px;
 }
 
 .feature-news__card {
