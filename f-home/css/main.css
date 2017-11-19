@@ -12727,6 +12727,29 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     font-size: 1.728rem;
 }
 
+.video-banner__text__wrapper .video-banner__text__anglesA:after, .video-banner__text__wrapper .video-banner__text__anglesA:before,
+.video-banner__text__wrapper .video-banner__text__anglesB:after,
+.video-banner__text__wrapper .video-banner__text__anglesB:before {
+    content: " ";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-style: solid;
+    border-color: #d92231;
+}
+
+.video-banner__text__wrapper .video-banner__text__anglesA:before {
+    top: 0;
+    left: 0;
+    border-width: 0.5rem 0 0 0.5rem;
+}
+
+.video-banner__text__wrapper .video-banner__text__anglesA:after {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 0.5rem 0.5rem;
+}
+
 .ksp__items {
     display: -webkit-box;
     display: -ms-flexbox;
