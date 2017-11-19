@@ -11186,23 +11186,31 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.bracket-block, .profile-bracket-block {
+.bracket-block, .banner-bracket-block,
+.profile-bracket-block {
     width: 100%;
     position: relative;
     clear: both;
     zoom: 1;
 }
 
-.bracket-block:before, .profile-bracket-block:before, .bracket-block:after, .profile-bracket-block:after {
+.bracket-block:before, .banner-bracket-block:before,
+.profile-bracket-block:before, .bracket-block:after, .banner-bracket-block:after,
+.profile-bracket-block:after {
     content: "";
     display: block;
 }
 
-.bracket-block:after, .profile-bracket-block:after {
+.bracket-block:after, .banner-bracket-block:after,
+.profile-bracket-block:after {
     clear: both;
 }
 
-.profile-bracket-block__anglesA:after, .profile-bracket-block__anglesA:before,
+.banner-bracket-block__anglesA:after, .banner-bracket-block__anglesA:before,
+.banner-bracket-block__anglesB:after,
+.banner-bracket-block__anglesB:before,
+.profile-bracket-block__anglesA:after,
+.profile-bracket-block__anglesA:before,
 .profile-bracket-block__anglesB:after,
 .profile-bracket-block__anglesB:before {
     content: " ";
@@ -11213,30 +11221,49 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     border-color: #d92231;
 }
 
+.banner-bracket-block__anglesA:after, .banner-bracket-block__anglesA:before,
+.banner-bracket-block__anglesB:after,
+.banner-bracket-block__anglesB:before {
+    height: 100%;
+}
+
+.banner-bracket-block__anglesA:before,
 .profile-bracket-block__anglesA:before {
     top: 0;
     left: 0;
     border-width: 0.5rem 0 0 0.5rem;
 }
 
+.banner-bracket-block__anglesA:after,
 .profile-bracket-block__anglesA:after {
     bottom: 0;
     left: 0;
     border-width: 0 0 0.5rem 0.5rem;
 }
 
+.banner-bracket-block__anglesB:before,
 .profile-bracket-block__anglesB:before {
     top: 0;
     right: 0;
     border-width: 0.5rem 0.5rem 0 0;
 }
 
+.banner-bracket-block__anglesB:after,
 .profile-bracket-block__anglesB:after {
     bottom: 0;
     right: 0;
     border-width: 0 0.5rem 0.5rem 0;
 }
 
+.banner-bracket-block__anglesA:before, .banner-bracket-block__anglesA:after {
+    left: -1rem;
+}
+
+.banner-bracket-block__anglesB:before, .banner-bracket-block__anglesB:after {
+    right: -1rem;
+}
+
+.banner-bracket-block,
 .profile-bracket-block {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -12725,29 +12752,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
     font-size: 1.728rem;
-}
-
-.video-banner__text__wrapper .video-banner__text__anglesA:after, .video-banner__text__wrapper .video-banner__text__anglesA:before,
-.video-banner__text__wrapper .video-banner__text__anglesB:after,
-.video-banner__text__wrapper .video-banner__text__anglesB:before {
-    content: " ";
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    border-style: solid;
-    border-color: #d92231;
-}
-
-.video-banner__text__wrapper .video-banner__text__anglesA:before {
-    top: 0;
-    left: 0;
-    border-width: 0.5rem 0 0 0.5rem;
-}
-
-.video-banner__text__wrapper .video-banner__text__anglesA:after {
-    bottom: 0;
-    left: 0;
-    border-width: 0 0 0.5rem 0.5rem;
 }
 
 .ksp__items {
