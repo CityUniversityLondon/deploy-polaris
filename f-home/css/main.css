@@ -12792,6 +12792,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     text-shadow: 0 0 1px #1e1e1e;
 }
 
+.video-banner__text__wrapper .video-banner__text .video-banner__text__title {
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 1201px) {
     .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
         margin-top: 12%;
@@ -12807,7 +12811,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (max-width: 900px) {
     .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
         margin-top: 5%;
-        margin-bottom: 1rem;
         font-size: 1.728rem;
     }
 }
