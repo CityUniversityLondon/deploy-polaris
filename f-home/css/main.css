@@ -12763,7 +12763,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .video-banner {
+    display: none;
     position: relative;
+}
+
+.video-banner.playing {
+    display: block;
 }
 
 .video-banner__text__wrapper {
