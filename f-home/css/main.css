@@ -12801,7 +12801,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
     .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
         font-size: 1rem;
     }
