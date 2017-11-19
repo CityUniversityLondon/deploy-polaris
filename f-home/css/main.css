@@ -6564,13 +6564,18 @@ svg:not(:root) {
     width: 100%;
 }
 
-.right-box:after {
+.right-box:before {
     background: #f2f2f2;
     content: " ";
     height: 100%;
     right: -50%;
     position: absolute;
     width: 100%;
+}
+
+.section--padded.left-box,
+.section--padded.right-box {
+    margin-top: -3.5rem;
 }
 
 .ksp__wrapper {
