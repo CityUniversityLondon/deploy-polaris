@@ -12754,7 +12754,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     color: #fafafa;
     font-size: 2.0736rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.375;
     margin-bottom: 2rem;
     margin-top: -1rem;
     text-shadow: 0 0 1px #1e1e1e;
@@ -12775,6 +12775,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (max-width: 900px) {
     .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
         margin-top: 5%;
+        margin-bottom: 1rem;
         font-size: 1.728rem;
     }
 }
@@ -12798,6 +12799,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (max-width: 900px) {
     .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
         font-size: 1.44rem;
+        line-height: 1.2;
     }
 }
 
