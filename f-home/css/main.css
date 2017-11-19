@@ -3674,8 +3674,8 @@ h6 {
 .alpha,
 h1,
 .banner__text .banner__text__subtitle,
-.video-banner__text .video-banner__text__title,
-.video-banner__text .video-banner__text__subtitle {
+.video-banner__text__wrapper .video-banner__text .video-banner__text__title,
+.video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
     font-size: 33.1776px;
     font-size: 2.0736rem;
     line-height: 1.327;
@@ -12693,34 +12693,37 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
-.video-banner__text {
+.video-banner__text__wrapper {
     position: absolute;
     text-align: center;
     top: 0;
     width: 100%;
 }
 
-.video-banner__text .video-banner__text__title,
-.video-banner__text .video-banner__text__subtitle {
+.video-banner__text__wrapper .video-banner__text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.video-banner__text__wrapper .video-banner__text .video-banner__text__title,
+.video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
     color: #fafafa;
-    display: block;
     font-size: 2.0736rem;
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: -1rem;
     text-shadow: 0 0 1px #1e1e1e;
-    width: 60%;
 }
 
-.video-banner__text .video-banner__text__title {
+.video-banner__text__wrapper .video-banner__text .video-banner__text__title {
     margin-top: 12%;
 }
 
-.video-banner__text .video-banner__text__subtitle {
+.video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
     font-size: 1.728rem;
 }
 
