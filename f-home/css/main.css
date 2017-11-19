@@ -12779,8 +12779,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .video-banner__text__wrapper .video-banner__text {
-    -webkit-transition: opacity 0.2s ease 0s;
-    transition: opacity 0.2s ease 0s;
+    -webkit-transition: opacity 0.2s ease 0s, 0.5s 0.2s ease 0s, ease 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, 0.5s 0.2s ease 0s, ease 0.2s ease 0s;
     display: block;
     margin-left: auto;
     margin-right: auto;
