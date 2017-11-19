@@ -11255,6 +11255,16 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     border-width: 0 0.5rem 0.5rem 0;
 }
 
+.banner-bracket-block__anglesA:before,
+.banner-bracket-block__anglesB:before {
+    top: -1rem;
+}
+
+.banner-bracket-block__anglesA:after,
+.banner-bracket-block__anglesB:after {
+    top: 1rem;
+}
+
 .banner-bracket-block__anglesA:before, .banner-bracket-block__anglesA:after {
     left: -1rem;
 }
