@@ -12760,12 +12760,52 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     text-shadow: 0 0 1px #1e1e1e;
 }
 
-.video-banner__text__wrapper .video-banner__text .video-banner__text__title {
-    margin-top: 12%;
+@media (min-width: 1201px) {
+    .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
+        margin-top: 12%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
+        margin-top: 12%;
+    }
+}
+
+@media (max-width: 500px) {
+    .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
+        margin-top: 5%;
+        font-size: 1.728rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
+        margin-top: 5%;
+        font-size: 1.2rem;
+    }
 }
 
 .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
     font-size: 1.728rem;
+}
+
+@media (max-width: 500px) {
+    .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
+        font-size: 1.44rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
+        font-size: 1rem;
+    }
 }
 
 .ksp__items {
