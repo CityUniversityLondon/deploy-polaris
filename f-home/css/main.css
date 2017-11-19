@@ -6496,6 +6496,10 @@ svg:not(:root) {
     display: block;
 }
 
+.home__header {
+    display: none;
+}
+
 .promo-card__wrapper {
     padding-bottom: 80px;
 }
