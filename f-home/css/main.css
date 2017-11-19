@@ -12712,6 +12712,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin-left: auto;
     margin-right: auto;
     margin-top: -1rem;
+    text-shadow: 0 0 1px #1e1e1e;
     width: 60%;
 }
 
