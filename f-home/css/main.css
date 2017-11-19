@@ -6556,7 +6556,7 @@ svg:not(:root) {
 }
 
 .left-box:before {
-    background: #fafafa;
+    background: #f2f2f2;
     content: " ";
     height: 100%;
     left: -50%;
@@ -6565,7 +6565,7 @@ svg:not(:root) {
 }
 
 .right-box:after {
-    background: #fafafa;
+    background: #f2f2f2;
     content: " ";
     height: 100%;
     right: -50%;
