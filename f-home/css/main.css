@@ -8072,9 +8072,9 @@ picture,
 }
 
 @media (max-width: 500px) {
-    .js .tabs__content__heading,
-    .js .tabs__menu-fullwidth,
-    .js .tabs__menu {
+    .js .tabs:not(.tabs--nac) .tabs__content__heading,
+    .js .tabs:not(.tabs--nac) .tabs__menu-fullwidth,
+    .js .tabs:not(.tabs--nac) .tabs__menu {
         width: 1px !important;
         height: 1px !important;
         padding: 0 !important;
@@ -8083,6 +8083,35 @@ picture,
         position: absolute !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
     }
+}
+
+@media (min-width: 501px) {
+    .js .tabs:not(.tabs--nac) .tabs__content__heading-anchor {
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        overflow: hidden !important;
+        position: absolute !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+    }
+    .js .tabs:not(.tabs--nac) .tabs__content__heading-anchor:not([aria-selected="true"]) {
+        display: none;
+    }
+}
+
+.js .tabs.tabs--nac .tabs__content__heading-anchor {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.js .tabs.tabs--nac .tabs__content__heading-anchor:not([aria-selected="true"]) {
+    display: none;
 }
 
 @media (min-width: 501px) {
@@ -8096,21 +8125,6 @@ picture,
     .js .tabs__content__group > div {
         margin-top: 1rem;
         margin-bottom: 1rem;
-    }
-}
-
-@media (min-width: 501px) {
-    .js .tabs__content__heading-anchor {
-        width: 1px !important;
-        height: 1px !important;
-        padding: 0 !important;
-        border: 0 !important;
-        overflow: hidden !important;
-        position: absolute !important;
-        clip: rect(1px, 1px, 1px, 1px) !important;
-    }
-    .js .tabs__content__heading-anchor:not([aria-selected="true"]) {
-        display: none;
     }
 }
 
@@ -8429,6 +8443,10 @@ picture,
 
 .tabs.tabs--reduceable .tabs__content .tabs__content__heading-anchor:only-of-type .tabs__content__heading-anchor__icon {
     display: none;
+}
+
+.tabs--air .tabs__menu__item {
+    background: none;
 }
 
 @media (max-width: 500px) {
