@@ -12756,18 +12756,18 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #666666;
 }
 
-.video-banner__wrapper {
+.video-banner {
     list-style-type: none;
     margin-left: 0;
     margin-top: 0;
 }
 
-.video-banner {
+.video-banner__banner {
     display: none;
     position: relative;
 }
 
-.video-banner.playing {
+.video-banner__banner.playing {
     display: block;
 }
 
