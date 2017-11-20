@@ -12506,14 +12506,141 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.feature-news__card__body__topic--finance {
-    color: #11365C;
-    padding: 0 0.5em;
+.feature-news__card__body__topic--actuarial-science {
+    color: #3F175C;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
     position: relative;
     display: inline-block;
     margin: 0 15px;
+    font-weight: 700;
+}
+
+.feature-news__card__body__topic--actuarial-science a {
+    color: #3F175C;
+}
+
+.feature-news__card__body__topic--actuarial-science a:after {
+    background-color: transparent;
+}
+
+.feature-news__card__body__topic--actuarial-science:hover {
+    color: #3F175C;
+}
+
+.feature-news__card__body__topic--actuarial-science:hover:before, .feature-news__card__body__topic--actuarial-science:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.feature-news__card__body__topic--actuarial-science:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.feature-news__card__body__topic--actuarial-science:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.feature-news__card__body__topic--actuarial-science:before, .feature-news__card__body__topic--actuarial-science:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.feature-news__card__body__topic--all {
+    color: #666666;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+.feature-news__card__body__topic--all a {
+    color: #666666;
+}
+
+.feature-news__card__body__topic--all a:after {
+    background-color: transparent;
+}
+
+.feature-news__card__body__topic--all:hover {
+    color: #666666;
+}
+
+.feature-news__card__body__topic--all:hover:before, .feature-news__card__body__topic--all:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.feature-news__card__body__topic--all:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.feature-news__card__body__topic--all:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.feature-news__card__body__topic--all:before, .feature-news__card__body__topic--all:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.feature-news__card__body__topic--finance {
+    color: #11365C;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+.feature-news__card__body__topic--finance a {
+    color: #11365C;
+}
+
+.feature-news__card__body__topic--finance a:after {
+    background-color: transparent;
 }
 
 .feature-news__card__body__topic--finance:hover {
@@ -12542,7 +12669,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .feature-news__card__body__topic--finance:before, .feature-news__card__body__topic--finance:after {
     position: absolute;
-    top: 0;
+    top: -3px;
     font-weight: 100;
     font-size: 130%;
     line-height: 1;
@@ -12555,12 +12682,23 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .feature-news__card__body__topic--management {
     color: #AD2B1A;
-    padding: 0 0.5em;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
     position: relative;
     display: inline-block;
     margin: 0 15px;
+    font-weight: 700;
+}
+
+.feature-news__card__body__topic--management a {
+    color: #AD2B1A;
+}
+
+.feature-news__card__body__topic--management a:after {
+    background-color: transparent;
 }
 
 .feature-news__card__body__topic--management:hover {
@@ -12589,7 +12727,123 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .feature-news__card__body__topic--management:before, .feature-news__card__body__topic--management:after {
     position: absolute;
-    top: 0;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.feature-news__card__body__topic--entrepreneurship {
+    color: #5A8054;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+.feature-news__card__body__topic--entrepreneurship a {
+    color: #5A8054;
+}
+
+.feature-news__card__body__topic--entrepreneurship a:after {
+    background-color: transparent;
+}
+
+.feature-news__card__body__topic--entrepreneurship:hover {
+    color: #5A8054;
+}
+
+.feature-news__card__body__topic--entrepreneurship:hover:before, .feature-news__card__body__topic--entrepreneurship:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.feature-news__card__body__topic--entrepreneurship:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.feature-news__card__body__topic--entrepreneurship:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.feature-news__card__body__topic--entrepreneurship:before, .feature-news__card__body__topic--entrepreneurship:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.feature-news__card__body__topic--cass-community {
+    color: #5d5d5d;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+.feature-news__card__body__topic--cass-community a {
+    color: #5d5d5d;
+}
+
+.feature-news__card__body__topic--cass-community a:after {
+    background-color: transparent;
+}
+
+.feature-news__card__body__topic--cass-community:hover {
+    color: #5d5d5d;
+}
+
+.feature-news__card__body__topic--cass-community:hover:before, .feature-news__card__body__topic--cass-community:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.feature-news__card__body__topic--cass-community:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.feature-news__card__body__topic--cass-community:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.feature-news__card__body__topic--cass-community:before, .feature-news__card__body__topic--cass-community:after {
+    position: absolute;
+    top: -3px;
     font-weight: 100;
     font-size: 130%;
     line-height: 1;
