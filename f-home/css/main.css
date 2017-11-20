@@ -13545,6 +13545,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .block-links__items__anchor__header {
+    padding-bottom: 1rem;
+    overflow-x: hidden;
     font-size: 1.44rem;
 }
 
