@@ -3949,13 +3949,9 @@ h6 > a {
     background-color: transparent;
     color: #ffffff;
     display: inline-block;
-    padding: 0.5rem 1rem;
     border-width: 0;
     border-radius: 0;
     overflow-x: hidden;
-    position: relative;
-    font-size: 1.2rem;
-    line-height: 1.5;
     cursor: pointer;
 }
 
@@ -3965,7 +3961,12 @@ h6 > a {
     outline-width: 0;
 }
 
-.ghost:before {
+.ghost h1:before, .ghost
+h2:before, .ghost
+h3:before, .ghost
+h4:before, .ghost
+h5:before, .ghost
+h6:before {
     -webkit-transform: translateX(101%);
             transform: translateX(101%);
     -webkit-animation: slide-right-out 0.2s ease 0s both normal;
@@ -3981,11 +3982,21 @@ h6 > a {
     z-index: 0;
 }
 
-.ghost.ghost--active:before {
+.ghost.ghost--active h1:before, .ghost.ghost--active
+h2:before, .ghost.ghost--active
+h3:before, .ghost.ghost--active
+h4:before, .ghost.ghost--active
+h5:before, .ghost.ghost--active
+h6:before {
     opacity: 1;
 }
 
-.ghost:hover:before {
+.ghost:hover h1:before, .ghost:hover
+h2:before, .ghost:hover
+h3:before, .ghost:hover
+h4:before, .ghost:hover
+h5:before, .ghost:hover
+h6:before {
     -webkit-transform: translateX(-101%);
             transform: translateX(-101%);
     -webkit-animation: slide-left-in 0.2s ease 0s both normal;
