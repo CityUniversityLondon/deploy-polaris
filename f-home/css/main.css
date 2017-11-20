@@ -8454,6 +8454,7 @@ picture,
     font-weight: 700;
     line-height: 1;
     text-decoration: none;
+    font-size: 1.2rem;
     background-color: white;
     color: #1e1e1e;
     padding: 1rem 2rem;
@@ -8482,12 +8483,18 @@ picture,
     transition: opacity 0.2s ease 0s, width 0.2s ease 0s;
     position: absolute;
     bottom: 0;
-    left: 25%;
     width: 0;
     content: "";
     opacity: 0;
     background-color: #ae1421;
     height: 4px;
+    left: 30%;
+}
+
+@media (min-width: 501px) {
+    .tabs--air .tabs__menu__item:before {
+        left: 35%;
+    }
 }
 
 .tabs--air .tabs__menu__item:hover, .tabs--air .tabs__menu__item[aria-selected="true"] {
@@ -8497,7 +8504,13 @@ picture,
 
 .tabs--air .tabs__menu__item:hover:before, .tabs--air .tabs__menu__item[aria-selected="true"]:before {
     opacity: 1;
-    width: 50%;
+    width: 40%;
+}
+
+@media (min-width: 501px) {
+    .tabs--air .tabs__menu__item:hover:before, .tabs--air .tabs__menu__item[aria-selected="true"]:before {
+        width: 30%;
+    }
 }
 
 @media (max-width: 500px) {
