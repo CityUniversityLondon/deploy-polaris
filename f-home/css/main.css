@@ -7057,7 +7057,7 @@ svg:not(:root) {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header ~ main aside {
