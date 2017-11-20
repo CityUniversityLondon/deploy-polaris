@@ -13507,47 +13507,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     display: block;
     width: 300px;
     padding: 10px;
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-    color: white;
-    display: inline-block;
-    overflow-x: hidden;
-    margin-bottom: 2px;
-}
-
-.block-links__items__anchor:hover, .block-links__items__anchor:focus, .block-links__items__anchor:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.block-links__items__anchor h2:after {
-    content: "";
-    display: block;
-    height: 3px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    width: 0;
-    -webkit-transition: width 1s;
-    transition: width 1s;
-}
-
-.block-links__items__anchor:hover h2:after {
-    width: 100%;
-    margin-right: 0%;
-    margin-left: 0%;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-
-.block-links__items__anchor:focus {
-    outline: 3px solid #ffffff;
-}
-
-.block-links__items__anchor:active {
-    outline: 2px dotted #ffffff;
 }
 
 .block-links__items__anchor__header {
