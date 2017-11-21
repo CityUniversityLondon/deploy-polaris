@@ -4005,11 +4005,11 @@ h6:before {
 }
 
 .ghost:focus {
-    outline: 3px solid #1e1e1e;
+    outline: 3px solid #ffffff;
 }
 
 .ghost:active {
-    outline: 2px dotted #1e1e1e;
+    outline: 2px dotted #ffffff;
 }
 
 .skip {
