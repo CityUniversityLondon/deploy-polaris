@@ -4004,6 +4004,14 @@ h6:before {
     opacity: 1;
 }
 
+.ghost:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.ghost:active {
+    outline: 2px dotted #1e1e1e;
+}
+
 .skip {
     position: absolute;
     top: 2px;
