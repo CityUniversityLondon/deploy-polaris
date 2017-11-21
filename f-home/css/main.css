@@ -12506,7 +12506,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .feature-news__card--more {
     position: absolute;
     bottom: -60px;
-    left: 30px;
+    right: 30px;
 }
 
 .feature-news__card--more a {
@@ -12515,8 +12515,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1201px) {
     .feature-news__card--more {
-        left: 60px;
         bottom: 0;
+        right: 0;
     }
 }
 
@@ -13013,6 +13013,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     color: #666666;
     display: inline-block;
     overflow-x: hidden;
+    margin-bottom: 10px;
 }
 
 .feature-events__cards__link a:hover, .feature-events__cards__link a:focus, .feature-events__cards__link a:active {
