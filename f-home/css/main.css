@@ -13156,6 +13156,24 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (max-width: 900px) {
+    .connect-social__wrapper {
+        margin: 0 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .connect-social__wrapper {
+        margin: 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .connect-social__wrapper {
+        margin: 0;
+    }
+}
+
 .connect-social__card {
     text-align: center;
     margin-top: 1rem;
