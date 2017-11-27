@@ -13092,6 +13092,199 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     font-weight: 700;
 }
 
+.left-hand-navigation-grid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    clear: both;
+    zoom: 1;
+    float: left;
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .left-hand-navigation-grid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+}
+
+.left-hand-navigation-grid:before, .left-hand-navigation-grid:after {
+    content: "";
+    display: block;
+}
+
+.left-hand-navigation-grid:after {
+    clear: both;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .left-hand-navigation-grid {
+        float: none;
+    }
+}
+
+.left-hand-navigation-grid > div {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .left-hand-navigation-grid > div {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .left-hand-navigation-grid > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .left-hand-navigation-grid > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .left-hand-navigation-grid > div {
+        width: 83.333%;
+    }
+}
+
+@media (max-width: 500px) {
+    .left-hand-navigation-grid > div {
+        left: 0;
+    }
+}
+
+@media (min-width: 501px) {
+    .left-hand-navigation-grid > div {
+        left: 0%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .left-hand-navigation-grid > div {
+        left: 8.333%;
+    }
+}
+
+.left-hand-navigation-grid > div > div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    clear: both;
+    zoom: 1;
+    float: left;
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .left-hand-navigation-grid > div > div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+}
+
+.left-hand-navigation-grid > div > div:before, .left-hand-navigation-grid > div > div:after {
+    content: "";
+    display: block;
+}
+
+.left-hand-navigation-grid > div > div:after {
+    clear: both;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .left-hand-navigation-grid > div > div {
+        float: none;
+    }
+}
+
+.left-hand-navigation-grid__nav {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .left-hand-navigation-grid__nav {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .left-hand-navigation-grid__nav {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .left-hand-navigation-grid__nav {
+        width: 25%;
+    }
+}
+
+.left-hand-navigation-grid__body {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .left-hand-navigation-grid__body {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .left-hand-navigation-grid__body {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .left-hand-navigation-grid__body {
+        width: 66.667%;
+    }
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
