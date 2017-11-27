@@ -14544,15 +14544,21 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: fixed;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
     .left-hand-navigation.left-hand-navigation--fixed {
         width: calc(25% - 1rem - 0.25rem);
     }
 }
 
+@media (min-width: 1201px) and (max-width: 1440px) {
+    .left-hand-navigation.left-hand-navigation--fixed {
+        width: calc(2083.325% - 1rem - 0.25rem);
+    }
+}
+
 @media (min-width: 1441px) {
     .left-hand-navigation.left-hand-navigation--fixed {
-        width: calc(360px - 1rem - 0.25rem);
+        width: calc(2083.325% - 3rem - 0.25rem);
     }
 }
 
@@ -14606,6 +14612,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .left-hand-navigation a:active {
     outline: 2px dotted #1e1e1e;
+}
+
+.left-hand-navigation__list {
+    margin-right: 1rem;
 }
 
 .left-hand-navigation__list--level-0 {
