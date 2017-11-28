@@ -4029,6 +4029,72 @@ h6:before {
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
+.draw-outline {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.draw-outline:hover, .draw-outline:focus, .draw-outline:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.draw-outline:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.draw-outline:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.draw-outline .text {
+    background-color: transparent;
+    color: currentColor;
+    display: block;
+    padding: 1rem 2rem;
+    border: 4px solid currentColor;
+    border-radius: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.draw-outline .text:before, .draw-outline .text:after {
+    content: "";
+    background-color: currentColor;
+    display: block;
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    -webkit-clip-path: polygon(0% 0%);
+            clip-path: polygon(0% 0%);
+}
+
+.draw-outline .text:hover, .draw-outline .text:focus, .draw-outline .text:active {
+    -webkit-animation: placehold-line 0.5s linear forwards;
+            animation: placehold-line 0.5s linear forwards;
+}
+
+.draw-outline .text:hover:before, .draw-outline .text:focus:before, .draw-outline .text:active:before {
+    -webkit-animation: draw-line 0.5s linear forwards;
+            animation: draw-line 0.5s linear forwards;
+}
+
+.draw-outline .text:hover:after, .draw-outline .text:focus:after, .draw-outline .text:active:after {
+    -webkit-animation: maintain-line 0.5s linear forwards;
+            animation: maintain-line 0.5s linear forwards;
+}
+
 a.button {
     display: inline-block;
 }
@@ -9098,12 +9164,12 @@ picture,
 }
 
 .banner--theme--demba .banner__content h1 {
-    background-color: #86C5B3;
+    background-color: #39655D;
     color: #ffffff;
 }
 
 .banner--theme--demba .banner__content .banner__content__text__subtitle {
-    background-color: #88d1CE;
+    background-color: #86C5B3;
     color: #1e1e1e;
 }
 
@@ -11318,6 +11384,186 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     100% {
         -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
                 box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@-webkit-keyframes placehold-line {
+    0%,
+    99.999% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: currentColor;
+    }
+}
+
+@keyframes placehold-line {
+    0%,
+    99.999% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: currentColor;
+    }
+}
+
+@-webkit-keyframes draw-line {
+    0% {
+        -webkit-clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+                clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+    25% {
+        -webkit-clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+                clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    25.001% {
+        -webkit-clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+                clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    50% {
+        -webkit-clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+                clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50.001% {
+        -webkit-clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+                clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    75% {
+        -webkit-clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+                clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    75.001% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+                clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    99.999% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+                clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes draw-line {
+    0% {
+        -webkit-clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+                clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+    25% {
+        -webkit-clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+                clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    25.001% {
+        -webkit-clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+                clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    50% {
+        -webkit-clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+                clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50.001% {
+        -webkit-clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+                clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    75% {
+        -webkit-clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+                clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    75.001% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+                clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    99.999% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+                clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+        display: none;
+    }
+}
+
+@-webkit-keyframes maintain-line {
+    0%,
+    25% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 4px 0%, 4px 4px, 0% 4px);
+    }
+    25.001%,
+    50% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 4px, 0% 4px);
+    }
+    50.001%,
+    75% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%, calc(100% - 4px) 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%, calc(100% - 4px) 4px, 0% 4px);
+    }
+    75.001%,
+    99.999% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 4px, 0% 4px);
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes maintain-line {
+    0%,
+    25% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 4px 0%, 4px 4px, 0% 4px);
+    }
+    25.001%,
+    50% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 4px, 0% 4px);
+    }
+    50.001%,
+    75% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%, calc(100% - 4px) 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%, calc(100% - 4px) 4px, 0% 4px);
+    }
+    75.001%,
+    99.999% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 4px, 0% 4px);
+    }
+    100% {
+        display: none;
     }
 }
 
@@ -14398,13 +14644,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1201px) and (max-width: 1440px) {
     .left-hand-navigation.left-hand-navigation--fixed {
-        width: calc(2083.325% - 1rem - 0.25rem);
+        width: calc(20.83325% - 1rem - 0.25rem);
     }
 }
 
 @media (min-width: 1441px) {
     .left-hand-navigation.left-hand-navigation--fixed {
-        width: calc(2083.325% - 3rem - 0.25rem);
+        width: calc((1440px - 1rem) * 0.83333 * 0.25 - 1rem);
     }
 }
 
