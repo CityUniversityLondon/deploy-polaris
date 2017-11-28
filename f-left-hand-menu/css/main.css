@@ -14552,13 +14552,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1201px) and (max-width: 1440px) {
     .left-hand-navigation.left-hand-navigation--fixed {
-        width: calc(2083.325% - 1rem - 0.25rem);
+        width: calc(20.83325% - 1rem - 0.25rem);
     }
 }
 
 @media (min-width: 1441px) {
     .left-hand-navigation.left-hand-navigation--fixed {
-        width: calc(2083.325% - 3rem - 0.25rem);
+        width: calc((1440px - 1rem) * 0.83333 * 0.25 - 1rem);
     }
 }
 
