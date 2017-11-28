@@ -4111,7 +4111,7 @@ svg:not(:root) {
 /**
  * Top-Level Grid
  */
-.container {
+.container, .banner__content {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -4122,7 +4122,7 @@ svg:not(:root) {
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .container {
+    .container, .banner__content {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4134,30 +4134,30 @@ svg:not(:root) {
     }
 }
 
-.container:before, .container:after {
+.container:before, .banner__content:before, .container:after, .banner__content:after {
     content: "";
     display: block;
 }
 
-.container:after {
+.container:after, .banner__content:after {
     clear: both;
 }
 
 @media (max-width: 500px) {
-    .container {
+    .container, .banner__content {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 }
 
 @media (min-width: 501px) {
-    .container {
+    .container, .banner__content {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 }
 
-.container + .container {
+.container + .container, .banner__content + .container, .container + .banner__content, .banner__content + .banner__content {
     margin-top: 2rem;
 }
 
@@ -8697,7 +8697,7 @@ picture,
     line-height: 1.65rem;
 }
 
-.accordion-tabs--top-level-layout .container {
+.accordion-tabs--top-level-layout .container, .accordion-tabs--top-level-layout .banner__content {
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
@@ -8934,6 +8934,176 @@ picture,
 
 .accordion-tabs__content__heading-anchor:hover, .accordion-tabs__content__heading-anchor[aria-selected="true"] {
     background: #ececec;
+    color: #1e1e1e;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner__img, .banner__img img {
+    width: 100%;
+}
+
+.banner--full-overlay .banner__img,
+.banner--partial-overlay .banner__img {
+    position: relative;
+}
+
+.banner--full-overlay .banner__img:after,
+.banner--partial-overlay .banner__img:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+}
+
+.banner--partial-overlay .banner__img:after {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(70%), to(transparent)) no-repeat bottom;
+    background: linear-gradient(0deg, black, 70%, transparent) no-repeat bottom;
+    background-size: 100% 70%;
+}
+
+.banner--cutout--left::after,
+.banner--cutout--right::after {
+    content: "";
+    background-color: white;
+    width: calc(100% - 4rem);
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.banner--cutout--left::after {
+    left: 0;
+}
+
+.banner--cutout--right::after {
+    right: 0;
+}
+
+.banner__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner__content .banner__content__promo {
+    position: absolute;
+    z-index: 3;
+    bottom: 2rem;
+    width: 20%;
+    left: 0;
+}
+
+.banner--cutout--left .banner__content .banner__content__promo {
+    right: 0;
+    left: auto;
+}
+
+.banner__content .banner__content__text {
+    padding-top: 3.5rem;
+    max-width: 50%;
+}
+
+.banner__content .banner__content__text__item {
+    margin-bottom: 0.5rem;
+}
+
+.banner__content h1,
+.banner__content .banner__content__text__subtitle {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.728rem;
+    padding: 0.5rem 1rem;
+    width: auto;
+    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+}
+
+.banner__content .banner__content__text__standfirst {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.banner__content h1 {
+    font-weight: 500;
+}
+
+.banner--theme--corporate .banner__content h1 {
+    background-color: #D92231;
+    color: #ffffff;
+}
+
+.banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #D0CFCB;
+    color: #1e1e1e;
+}
+
+.banner--theme--undergraduate .banner__content h1 {
+    background-color: #F15F22;
+    color: #1e1e1e;
+}
+
+.banner--theme--undergraduate .banner__content .banner__content__text__subtitle {
+    background-color: #FBAE3B;
+    color: #1e1e1e;
+}
+
+.banner--theme--postgraduate .banner__content h1 {
+    background-color: #00284D;
+    color: #ffffff;
+}
+
+.banner--theme--postgraduate .banner__content .banner__content__text__subtitle {
+    background-color: #0077a0;
+    color: #ffffff;
+}
+
+.banner--theme--phd .banner__content h1 {
+    background-color: #0077a0;
+    color: #ffffff;
+}
+
+.banner--theme--phd .banner__content .banner__content__text__subtitle {
+    background-color: #49C7ED;
+    color: #1e1e1e;
+}
+
+.banner--theme--mba .banner__content h1 {
+    background-color: #00444D;
+    color: #ffffff;
+}
+
+.banner--theme--mba .banner__content .banner__content__text__subtitle {
+    background-color: #88d1CE;
+    color: #1e1e1e;
+}
+
+.banner--theme--emba .banner__content h1 {
+    background-color: #39655D;
+    color: #ffffff;
+}
+
+.banner--theme--emba .banner__content .banner__content__text__subtitle {
+    background-color: #88d1CE;
+    color: #1e1e1e;
+}
+
+.banner--theme--demba .banner__content h1 {
+    background-color: #86C5B3;
+    color: #ffffff;
+}
+
+.banner--theme--demba .banner__content .banner__content__text__subtitle {
+    background-color: #88d1CE;
     color: #1e1e1e;
 }
 
@@ -9930,7 +10100,7 @@ USED IN:
     }
 }
 
-.intro--left-video > .container > .grid > :nth-child(1) {
+.intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__content > .grid > :nth-child(1) {
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
@@ -9939,7 +10109,7 @@ USED IN:
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .intro--left-video > .container > .grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__content > .grid > :nth-child(1) {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -9948,18 +10118,18 @@ USED IN:
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__content > .grid > :nth-child(1) {
         width: 100%;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__content > .grid > :nth-child(1) {
         width: 58.333%;
     }
 }
 
-.intro--left-video > .container > .grid > :nth-child(2) {
+.intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__content > .grid > :nth-child(2) {
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
@@ -9968,7 +10138,7 @@ USED IN:
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .intro--left-video > .container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__content > .grid > :nth-child(2) {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -9977,25 +10147,25 @@ USED IN:
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__content > .grid > :nth-child(2) {
         width: 100%;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__content > .grid > :nth-child(2) {
         width: 33.333%;
     }
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__content > .grid > :nth-child(2) {
         left: 0;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__content > .grid > :nth-child(2) {
         left: 8.333%;
     }
 }
@@ -10018,12 +10188,12 @@ USED IN:
     .intro--left-video figcaption {
         color: #ffffff;
     }
-    .intro--left-video > .container > .grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__content > .grid > :nth-child(1) {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
     }
-    .intro--left-video > .container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__content > .grid > :nth-child(2) {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1;
