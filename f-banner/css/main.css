@@ -9011,34 +9011,6 @@ picture,
     position: relative;
 }
 
-.banner__img, .banner__img img {
-    width: 100%;
-}
-
-.banner--full-overlay .banner__img,
-.banner--partial-overlay .banner__img {
-    position: relative;
-}
-
-.banner--full-overlay .banner__img:after,
-.banner--partial-overlay .banner__img:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 0.8;
-}
-
-.banner--partial-overlay .banner__img:after {
-    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(70%), to(transparent)) no-repeat bottom;
-    background: linear-gradient(0deg, black, 70%, transparent) no-repeat bottom;
-    background-size: 100% 70%;
-}
-
 .banner--cutout--left::after,
 .banner--cutout--right::after {
     content: "";
@@ -9058,21 +9030,12 @@ picture,
     right: 0;
 }
 
-.banner__container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .banner__content {
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position: relative;
-    height: 100%;
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
@@ -9140,7 +9103,32 @@ picture,
 
 .banner__content .banner__content__text {
     padding-top: 3.5rem;
-    max-width: 50%;
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .banner__content .banner__content__text {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner__content .banner__content__text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner__content .banner__content__text {
+        width: 50%;
+    }
 }
 
 .banner__content .banner__content__text__item {
@@ -9159,7 +9147,6 @@ picture,
 
 .banner__content .banner__content__text__standfirst {
     font-size: 1.2rem;
-    color: #ffffff;
 }
 
 .banner__content h1 {
@@ -9236,19 +9223,30 @@ picture,
     color: #1e1e1e;
 }
 
-.banner__content .banner__content__ctas {
+.banner--image .banner__container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner--image .banner__content {
+    height: 100%;
+}
+
+.banner--image .banner__content__text__standfirst {
+    color: #ffffff;
+}
+
+.banner--image .banner__content__ctas {
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 1rem;
+    bottom: 0;
 }
 
-.banner--cutout--left .banner__content .banner__content__ctas,
-.banner--cutout--right .banner__content .banner__content__ctas {
-    bottom: 5rem;
-}
-
-.banner__content .banner__content__ctas a {
+.banner--image .banner__content__ctas a {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
@@ -9261,26 +9259,26 @@ picture,
     margin: 0 1rem 2rem;
 }
 
-.banner__content .banner__content__ctas a:hover, .banner__content .banner__content__ctas a:focus, .banner__content .banner__content__ctas a:active {
+.banner--image .banner__content__ctas a:hover, .banner--image .banner__content__ctas a:focus, .banner--image .banner__content__ctas a:active {
     background-color: inherit;
     color: inherit;
     outline-width: 0;
 }
 
-.banner__content .banner__content__ctas a, .banner__content .banner__content__ctas a:hover, .banner__content .banner__content__ctas a:focus, .banner__content .banner__content__ctas a:active {
+.banner--image .banner__content__ctas a, .banner--image .banner__content__ctas a:hover, .banner--image .banner__content__ctas a:focus, .banner--image .banner__content__ctas a:active {
     background-color: transparent;
     color: #ffffff;
 }
 
-.banner__content .banner__content__ctas a:focus {
+.banner--image .banner__content__ctas a:focus {
     outline: 3px solid #1e1e1e;
 }
 
-.banner__content .banner__content__ctas a:active {
+.banner--image .banner__content__ctas a:active {
     outline: 2px dotted #1e1e1e;
 }
 
-.banner__content .banner__content__ctas a .text {
+.banner--image .banner__content__ctas a .text {
     background-color: transparent;
     color: currentColor;
     display: block;
@@ -9291,7 +9289,7 @@ picture,
     cursor: pointer;
 }
 
-.banner__content .banner__content__ctas a .text:before, .banner__content .banner__content__ctas a .text:after {
+.banner--image .banner__content__ctas a .text:before, .banner--image .banner__content__ctas a .text:after {
     content: "";
     background-color: currentColor;
     display: block;
@@ -9304,19 +9302,192 @@ picture,
             clip-path: polygon(0% 0%);
 }
 
-.banner__content .banner__content__ctas a .text:hover, .banner__content .banner__content__ctas a .text:focus, .banner__content .banner__content__ctas a .text:active {
+.banner--image .banner__content__ctas a .text:hover, .banner--image .banner__content__ctas a .text:focus, .banner--image .banner__content__ctas a .text:active {
     -webkit-animation: placehold-line 0.5s linear forwards;
             animation: placehold-line 0.5s linear forwards;
 }
 
-.banner__content .banner__content__ctas a .text:hover:before, .banner__content .banner__content__ctas a .text:focus:before, .banner__content .banner__content__ctas a .text:active:before {
+.banner--image .banner__content__ctas a .text:hover:before, .banner--image .banner__content__ctas a .text:focus:before, .banner--image .banner__content__ctas a .text:active:before {
     -webkit-animation: draw-line 0.5s linear forwards;
             animation: draw-line 0.5s linear forwards;
 }
 
-.banner__content .banner__content__ctas a .text:hover:after, .banner__content .banner__content__ctas a .text:focus:after, .banner__content .banner__content__ctas a .text:active:after {
+.banner--image .banner__content__ctas a .text:hover:after, .banner--image .banner__content__ctas a .text:focus:after, .banner--image .banner__content__ctas a .text:active:after {
     -webkit-animation: maintain-line 0.5s linear forwards;
             animation: maintain-line 0.5s linear forwards;
+}
+
+.banner--image.banner--cutout--left .banner__content__ctas, .banner--image.banner--cutout--right .banner__content__ctas {
+    bottom: 3rem;
+}
+
+.banner__img, .banner__img img {
+    width: 100%;
+}
+
+.banner--full-overlay .banner__img,
+.banner--partial-overlay .banner__img {
+    position: relative;
+}
+
+.banner--full-overlay .banner__img:after,
+.banner--partial-overlay .banner__img:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+}
+
+.banner--partial-overlay .banner__img:after {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(70%), to(transparent)) no-repeat bottom;
+    background: linear-gradient(0deg, black, 70%, transparent) no-repeat bottom;
+    background-size: 100% 70%;
+}
+
+.banner__content__video__grid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    clear: both;
+    zoom: 1;
+    float: left;
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .banner__content__video__grid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+}
+
+.banner__content__video__grid:before, .banner__content__video__grid:after {
+    content: "";
+    display: block;
+}
+
+.banner__content__video__grid:after {
+    clear: both;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .banner__content__video__grid {
+        float: none;
+    }
+}
+
+.banner--video {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), color-stop(25%), to(white)) no-repeat;
+    background: linear-gradient(180deg, #eeeeee, 25%, white) no-repeat;
+    background-size: calc(100% - 2rem) 100%;
+}
+
+@media (min-width: 901px) {
+    .banner--video {
+        background-size: calc(900px - 2rem) 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .banner--video {
+        background-size: calc(1200px - 2rem) 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner--video .banner__content__text {
+        left: 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner--video .banner__content__text {
+        left: -50%;
+    }
+}
+
+.banner--video .banner__content__ctas {
+    margin-top: 3.5rem;
+}
+
+.banner--video .banner__content__ctas a {
+    background-color: #ececec;
+    color: #1e1e1e;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+    display: inline-block;
+    background-color: #0077a0;
+    color: #ffffff;
+    margin: 0 2rem 2rem 0;
+}
+
+.banner--video .banner__content__ctas a:hover, .banner--video .banner__content__ctas a:focus, .banner--video .banner__content__ctas a:active {
+    background-color: #d0cfcb;
+    color: #1e1e1e;
+}
+
+.banner--video .banner__content__ctas a:hover, .banner--video .banner__content__ctas a:focus, .banner--video .banner__content__ctas a:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+}
+
+.banner__content__video {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .banner__content__video {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner__content__video {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner__content__video {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner__content__video {
+        left: 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner__content__video {
+        left: 50%;
+    }
 }
 
 /**
