@@ -15241,7 +15241,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.pathway-card:before {
+.pathway-card:link,
+.pathway-card a {
+    border-bottom-width: 0;
+}
+
+.pathway-card:link:before,
+.pathway-card a:before {
     -webkit-transition: border-color 0.2s ease 0s;
     transition: border-color 0.2s ease 0s;
     content: "";
@@ -15251,12 +15257,74 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     right: 1rem;
     bottom: 1rem;
     left: 1rem;
-    z-index: 0;
+    z-index: 2;
+    pointer-events: none;
 }
 
-.pathway-card:hover, .pathway-card:focus, .pathway-card:active {
-    background-color: transparent;
-    color: #00284d;
+.pathway-card:link:hover, .pathway-card:link:focus, .pathway-card:link:active,
+.pathway-card a:hover,
+.pathway-card a:focus,
+.pathway-card a:active {
+    color: #1e1e1e;
+}
+
+.pathway-card:link:hover:before, .pathway-card:link:focus:before, .pathway-card:link:active:before,
+.pathway-card a:hover:before,
+.pathway-card a:focus:before,
+.pathway-card a:active:before {
+    z-index: 3;
+}
+
+.pathway-card:link:hover h1, .pathway-card:link:hover
+h2, .pathway-card:link:hover
+h3, .pathway-card:link:hover
+h4, .pathway-card:link:hover
+h5, .pathway-card:link:hover
+h6, .pathway-card:link:focus h1, .pathway-card:link:focus
+h2, .pathway-card:link:focus
+h3, .pathway-card:link:focus
+h4, .pathway-card:link:focus
+h5, .pathway-card:link:focus
+h6, .pathway-card:link:active h1, .pathway-card:link:active
+h2, .pathway-card:link:active
+h3, .pathway-card:link:active
+h4, .pathway-card:link:active
+h5, .pathway-card:link:active
+h6,
+.pathway-card a:hover h1,
+.pathway-card a:hover
+h2,
+.pathway-card a:hover
+h3,
+.pathway-card a:hover
+h4,
+.pathway-card a:hover
+h5,
+.pathway-card a:hover
+h6,
+.pathway-card a:focus h1,
+.pathway-card a:focus
+h2,
+.pathway-card a:focus
+h3,
+.pathway-card a:focus
+h4,
+.pathway-card a:focus
+h5,
+.pathway-card a:focus
+h6,
+.pathway-card a:active h1,
+.pathway-card a:active
+h2,
+.pathway-card a:active
+h3,
+.pathway-card a:active
+h4,
+.pathway-card a:active
+h5,
+.pathway-card a:active
+h6 {
+    text-decoration: underline;
 }
 
 .pathway-card .pathway-card__left,
@@ -15407,40 +15475,6 @@ h6,
     padding: 1rem 1rem 1rem 0;
 }
 
-.pathway-card a + a,
-.pathway-card a + div,
-.pathway-card div + a,
-.pathway-card div + div {
-    position: relative;
-}
-
-.pathway-card a + a:before,
-.pathway-card a + div:before,
-.pathway-card div + a:before,
-.pathway-card div + div:before {
-    content: "";
-    background-color: currentColor;
-    width: 1px;
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    bottom: 1rem;
-}
-
-@media (max-width: 900px) {
-    .pathway-card a + a:before,
-    .pathway-card a + div:before,
-    .pathway-card div + a:before,
-    .pathway-card div + div:before {
-        width: auto;
-        height: 1px;
-        top: 0;
-        right: 1rem;
-        bottom: auto;
-        left: 1rem;
-    }
-}
-
 .pathway-card .pathway-card__full {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;
@@ -15456,6 +15490,14 @@ h5, .pathway-card .pathway-card__full + .pathway-card__full
 h6,
 .pathway-card .pathway-card__full + .pathway-card__full p {
     color: #ffffff;
+}
+
+.pathway-card a.pathway-card__left:before {
+    right: 0;
+}
+
+.pathway-card a.pathway-card__right:before {
+    left: -1px;
 }
 
 .pathway-card img {
@@ -15491,66 +15533,15 @@ h6,
     }
 }
 
-.pathway-card:link:hover h1, .pathway-card:link:hover
-h2, .pathway-card:link:hover
-h3, .pathway-card:link:hover
-h4, .pathway-card:link:hover
-h5, .pathway-card:link:hover
-h6, .pathway-card:link:focus h1, .pathway-card:link:focus
-h2, .pathway-card:link:focus
-h3, .pathway-card:link:focus
-h4, .pathway-card:link:focus
-h5, .pathway-card:link:focus
-h6, .pathway-card:link:active h1, .pathway-card:link:active
-h2, .pathway-card:link:active
-h3, .pathway-card:link:active
-h4, .pathway-card:link:active
-h5, .pathway-card:link:active
-h6,
-.pathway-card a:hover h1,
-.pathway-card a:hover
-h2,
-.pathway-card a:hover
-h3,
-.pathway-card a:hover
-h4,
-.pathway-card a:hover
-h5,
-.pathway-card a:hover
-h6,
-.pathway-card a:focus h1,
-.pathway-card a:focus
-h2,
-.pathway-card a:focus
-h3,
-.pathway-card a:focus
-h4,
-.pathway-card a:focus
-h5,
-.pathway-card a:focus
-h6,
-.pathway-card a:active h1,
-.pathway-card a:active
-h2,
-.pathway-card a:active
-h3,
-.pathway-card a:active
-h4,
-.pathway-card a:active
-h5,
-.pathway-card a:active
-h6 {
-    text-decoration: underline;
-}
-
 .pathway-card--undergraduate {
     color: rgba(241, 95, 34, 0.5);
 }
 
-.pathway-card--undergraduate:hover, .pathway-card--undergraduate:focus, .pathway-card--undergraduate:active {
+.pathway-card--undergraduate:link:hover, .pathway-card--undergraduate:link:focus, .pathway-card--undergraduate:link:active {
     color: #f15f22;
 }
 
+.pathway-card--undergraduate.pathway-card__left, .pathway-card--undergraduate.pathway-card__right, .pathway-card--undergraduate.pathway-card__full,
 .pathway-card--undergraduate .pathway-card__left,
 .pathway-card--undergraduate .pathway-card__right,
 .pathway-card--undergraduate .pathway-card__full {
@@ -15561,10 +15552,11 @@ h6 {
     color: rgba(0, 40, 77, 0.5);
 }
 
-.pathway-card--masters:hover, .pathway-card--masters:focus, .pathway-card--masters:active {
+.pathway-card--masters:link:hover, .pathway-card--masters:link:focus, .pathway-card--masters:link:active {
     color: #00284d;
 }
 
+.pathway-card--masters.pathway-card__left, .pathway-card--masters.pathway-card__right, .pathway-card--masters.pathway-card__full,
 .pathway-card--masters .pathway-card__left,
 .pathway-card--masters .pathway-card__right,
 .pathway-card--masters .pathway-card__full {
@@ -15575,10 +15567,11 @@ h6 {
     color: rgba(0, 68, 77, 0.5);
 }
 
-.pathway-card--mba:hover, .pathway-card--mba:focus, .pathway-card--mba:active {
+.pathway-card--mba:link:hover, .pathway-card--mba:link:focus, .pathway-card--mba:link:active {
     color: #00444d;
 }
 
+.pathway-card--mba.pathway-card__left, .pathway-card--mba.pathway-card__right, .pathway-card--mba.pathway-card__full,
 .pathway-card--mba .pathway-card__left,
 .pathway-card--mba .pathway-card__right,
 .pathway-card--mba .pathway-card__full {
