@@ -15027,7 +15027,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     outline: 2px dotted #1e1e1e;
 }
 
-.left-hand-navigation__list {
+.left-hand-navigation > .left-hand-navigation__list {
     margin-right: 1rem;
 }
 
