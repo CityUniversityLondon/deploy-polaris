@@ -4029,6 +4029,76 @@ h6:before {
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
+.draw-outline {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.draw-outline:hover, .draw-outline:focus, .draw-outline:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.draw-outline, .draw-outline:hover, .draw-outline:focus, .draw-outline:active {
+    background-color: transparent;
+    color: white;
+}
+
+.draw-outline:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.draw-outline:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.draw-outline .text {
+    background-color: transparent;
+    color: currentColor;
+    display: block;
+    padding: 1rem 2rem;
+    border: 4px solid currentColor;
+    border-radius: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.draw-outline .text:before, .draw-outline .text:after {
+    content: "";
+    background-color: currentColor;
+    display: block;
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    -webkit-clip-path: polygon(0% 0%);
+            clip-path: polygon(0% 0%);
+}
+
+.draw-outline .text:hover, .draw-outline .text:focus, .draw-outline .text:active {
+    -webkit-animation: placehold-line 0.5s linear forwards;
+            animation: placehold-line 0.5s linear forwards;
+}
+
+.draw-outline .text:hover:before, .draw-outline .text:focus:before, .draw-outline .text:active:before {
+    -webkit-animation: draw-line 0.5s linear forwards;
+            animation: draw-line 0.5s linear forwards;
+}
+
+.draw-outline .text:hover:after, .draw-outline .text:focus:after, .draw-outline .text:active:after {
+    -webkit-animation: maintain-line 0.5s linear forwards;
+            animation: maintain-line 0.5s linear forwards;
+}
+
 a.button {
     display: inline-block;
 }
@@ -11475,6 +11545,186 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@-webkit-keyframes placehold-line {
+    0%,
+    99.999% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: currentColor;
+    }
+}
+
+@keyframes placehold-line {
+    0%,
+    99.999% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: currentColor;
+    }
+}
+
+@-webkit-keyframes draw-line {
+    0% {
+        -webkit-clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+                clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+    25% {
+        -webkit-clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+                clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    25.001% {
+        -webkit-clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+                clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    50% {
+        -webkit-clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+                clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50.001% {
+        -webkit-clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+                clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    75% {
+        -webkit-clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+                clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    75.001% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+                clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    99.999% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+                clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes draw-line {
+    0% {
+        -webkit-clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+                clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+    25% {
+        -webkit-clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+                clip-path: polygon(4px 0%, calc(100% - 4px) 0%, calc(100% - 4px) 4px, 4px 4px);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    25.001% {
+        -webkit-clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+                clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    50% {
+        -webkit-clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+                clip-path: polygon(calc(100% - 4px) 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50.001% {
+        -webkit-clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+                clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    75% {
+        -webkit-clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+                clip-path: polygon(0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    75.001% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+                clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    99.999% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+                clip-path: polygon(0% 0%, 4px 0%, 4px calc(100% - 4px), 0% calc(100% - 4px));
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+        display: none;
+    }
+}
+
+@-webkit-keyframes maintain-line {
+    0%,
+    25% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 4px 0%, 4px 4px, 0% 4px);
+    }
+    25.001%,
+    50% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 4px, 0% 4px);
+    }
+    50.001%,
+    75% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%, calc(100% - 4px) 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%, calc(100% - 4px) 4px, 0% 4px);
+    }
+    75.001%,
+    99.999% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 4px, 0% 4px);
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes maintain-line {
+    0%,
+    25% {
+        -webkit-clip-path: polygon(0% 0%, 4px 0%, 4px 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 4px 0%, 4px 4px, 0% 4px);
+    }
+    25.001%,
+    50% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 4px, 0% 4px);
+    }
+    50.001%,
+    75% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%, calc(100% - 4px) 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, calc(100% - 4px) 100%, calc(100% - 4px) 4px, 0% 4px);
+    }
+    75.001%,
+    99.999% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 4px, 0% 4px);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 4px, 0% 4px);
+    }
+    100% {
+        display: none;
+    }
+}
+
 .bracket-block, .banner-bracket-block,
 .profile-bracket-block {
     width: 100%;
@@ -14434,6 +14684,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #d92231;
 }
 
+.block-links__items--purple {
+    background-color: #842b91;
+}
+
 .block-links__items__anchor {
     display: block;
     width: 300px;
@@ -14843,6 +15097,124 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     .left-hand-navigation-grid__body {
         width: 66.667%;
     }
+}
+
+.course-search {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.course-search__select {
+    position: relative;
+}
+
+.course-search__select:before {
+    content: "\f0d7";
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-family: "FontAwesome";
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.course-search__select label {
+    color: #00284d;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    line-height: 2.5;
+}
+
+.course-search__select select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: #00284d;
+    color: #ffffff;
+    padding: 0 2.5rem 0 1rem;
+    border-width: 0;
+    border-radius: 0;
+    position: relative;
+    font-size: 1rem;
+    line-height: 3;
+}
+
+.course-search__select select:hover, .course-search__select select:focus, .course-search__select select:active {
+    outline: none;
+}
+
+.course-search__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    padding: 0.5625rem 0.5rem 0.5625rem 1rem;
+    border-width: 0;
+    font-size: 1.2rem;
+    line-height: 1.375;
+}
+
+.course-search__text:focus {
+    outline: none;
+}
+
+.course-search__submit {
+    color: #1e1e1e;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    padding: 0 0.5rem;
+    border: 0;
+    font-family: "FontAwesome";
+    font-size: 1.44rem;
+}
+
+.course-search__submit:before {
+    content: "\f002";
+}
+
+.course-search__decoration {
+    background-color: #00284d;
+    width: 100%;
+    height: 4px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.course-search__decoration::before {
+    -webkit-transition: -webkit-transform 0.2s ease 0s;
+    transition: -webkit-transform 0.2s ease 0s;
+    transition: transform 0.2s ease 0s;
+    transition: transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    content: "";
+    background-color: #d92231;
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+:hover > .course-search__decoration::before,
+[class*="course-search__"]:hover ~ .course-search__decoration::before,
+[class*="course-search__"]:focus ~ .course-search__decoration::before,
+[class*="course-search__"]:active ~ .course-search__decoration::before {
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .anchor-demo-list li {
