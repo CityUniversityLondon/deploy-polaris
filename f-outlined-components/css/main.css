@@ -14684,6 +14684,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #d92231;
 }
 
+.block-links__items--purple {
+    background-color: #842b91;
+}
+
 .block-links__items__anchor {
     display: block;
     width: 300px;
@@ -14864,7 +14868,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     outline: 2px dotted #1e1e1e;
 }
 
-.left-hand-navigation__list {
+.left-hand-navigation > .left-hand-navigation__list {
     margin-right: 1rem;
 }
 
