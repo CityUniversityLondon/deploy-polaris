@@ -15229,6 +15229,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
         -ms-flex-direction: row;
             flex-direction: row;
     border-bottom: 0;
+    margin-bottom: 2rem;
     overflow: hidden;
     position: relative;
     text-align: center;
