@@ -9132,6 +9132,13 @@ picture,
     font-size: 1.2rem;
 }
 
+@media (max-width: 900px) {
+    .banner__content .banner__content__text__subtitle,
+    .banner__content .banner__content__text__standfirst {
+        display: none;
+    }
+}
+
 .banner__content h1 {
     font-weight: 500;
 }
@@ -9269,7 +9276,7 @@ picture,
 }
 
 .banner--image .banner__content__text {
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 .banner--image .banner__content__text__standfirst {
