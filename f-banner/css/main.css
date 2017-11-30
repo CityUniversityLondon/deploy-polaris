@@ -3673,6 +3673,7 @@ h6 {
 
 .alpha,
 h1,
+.banner__standfirst__content,
 .banner--text-ctas .banner__text .banner__text__subtitle,
 .video-banner__text__wrapper .video-banner__text .video-banner__text__title,
 .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
@@ -4181,7 +4182,7 @@ svg:not(:root) {
 /**
  * Top-Level Grid
  */
-.container, .banner__container {
+.container, .banner__container, .banner__standfirst {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -4192,7 +4193,7 @@ svg:not(:root) {
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .container, .banner__container {
+    .container, .banner__container, .banner__standfirst {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4204,30 +4205,30 @@ svg:not(:root) {
     }
 }
 
-.container:before, .banner__container:before, .container:after, .banner__container:after {
+.container:before, .banner__container:before, .banner__standfirst:before, .container:after, .banner__container:after, .banner__standfirst:after {
     content: "";
     display: block;
 }
 
-.container:after, .banner__container:after {
+.container:after, .banner__container:after, .banner__standfirst:after {
     clear: both;
 }
 
 @media (max-width: 500px) {
-    .container, .banner__container {
+    .container, .banner__container, .banner__standfirst {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 }
 
 @media (min-width: 501px) {
-    .container, .banner__container {
+    .container, .banner__container, .banner__standfirst {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 }
 
-.container + .container, .banner__container + .container, .container + .banner__container, .banner__container + .banner__container {
+.container + .container, .banner__container + .container, .banner__standfirst + .container, .container + .banner__container, .banner__container + .banner__container, .banner__standfirst + .banner__container, .container + .banner__standfirst, .banner__container + .banner__standfirst, .banner__standfirst + .banner__standfirst {
     margin-top: 2rem;
 }
 
@@ -4240,7 +4241,7 @@ svg:not(:root) {
 /**
  * Grid Container
  */
-.grid,
+.grid, .banner__standfirst__grid,
 .grid--sixths,
 .grid--quarters,
 .grid--fourths,
@@ -4266,7 +4267,7 @@ svg:not(:root) {
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .grid,
+    .grid, .banner__standfirst__grid,
     .grid--sixths,
     .grid--quarters,
     .grid--fourths,
@@ -4290,7 +4291,7 @@ svg:not(:root) {
     }
 }
 
-.grid:before, .grid:after,
+.grid:before, .banner__standfirst__grid:before, .grid:after, .banner__standfirst__grid:after,
 .grid--sixths:before,
 .grid--quarters:before,
 .grid--fourths:before,
@@ -4319,7 +4320,7 @@ svg:not(:root) {
     display: block;
 }
 
-.grid:after,
+.grid:after, .banner__standfirst__grid:after,
 .grid--sixths:after,
 .grid--quarters:after,
 .grid--fourths:after,
@@ -4336,7 +4337,7 @@ svg:not(:root) {
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .grid,
+    .grid, .banner__standfirst__grid,
     .grid--sixths,
     .grid--quarters,
     .grid--fourths,
@@ -8767,7 +8768,7 @@ picture,
     line-height: 1.65rem;
 }
 
-.accordion-tabs--top-level-layout .container, .accordion-tabs--top-level-layout .banner__container {
+.accordion-tabs--top-level-layout .container, .accordion-tabs--top-level-layout .banner__container, .accordion-tabs--top-level-layout .banner__standfirst {
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
@@ -9011,25 +9012,6 @@ picture,
     position: relative;
 }
 
-.banner--cutout--left::after,
-.banner--cutout--right::after {
-    content: "";
-    background-color: white;
-    width: calc(100% - 4rem);
-    height: 4rem;
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-}
-
-.banner--cutout--left::after {
-    left: 0;
-}
-
-.banner--cutout--right::after {
-    right: 0;
-}
-
 .banner__content {
     /** TODO: Is min height necessary? **/
     float: left;
@@ -9223,7 +9205,64 @@ picture,
     color: #1e1e1e;
 }
 
-.banner--image .banner__container {
+.banner__standfirst__content {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+    color: #555555;
+    font-weight: 300;
+    text-align: center;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .banner__standfirst__content {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner__standfirst__content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .banner__standfirst__content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .banner__standfirst__content {
+        width: 83.333%;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner__standfirst__content {
+        left: 0;
+    }
+}
+
+@media (min-width: 501px) {
+    .banner__standfirst__content {
+        left: 0%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .banner__standfirst__content {
+        left: 8.333%;
+    }
+}
+
+.banner--image .banner__over-image {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -9319,6 +9358,35 @@ picture,
 
 .banner--image.banner--cutout--left .banner__content__ctas, .banner--image.banner--cutout--right .banner__content__ctas {
     bottom: 3rem;
+}
+
+.banner--image.banner--cutout--left .banner__standfirst, .banner--image.banner--cutout--right .banner__standfirst {
+    margin-top: -2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.banner__image__group {
+    position: relative;
+}
+
+.banner--cutout--left .banner__image__group::after,
+.banner--cutout--right .banner__image__group::after {
+    content: "";
+    background-color: white;
+    width: calc(100% - 4rem);
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.banner--cutout--left .banner__image__group::after {
+    left: 0;
+}
+
+.banner--cutout--right .banner__image__group::after {
+    right: 0;
 }
 
 .banner__img, .banner__img img {
@@ -10483,7 +10551,7 @@ USED IN:
     }
 }
 
-.intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1) {
+.intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
@@ -10492,7 +10560,7 @@ USED IN:
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -10501,18 +10569,18 @@ USED IN:
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
         width: 100%;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
         width: 58.333%;
     }
 }
 
-.intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2) {
+.intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
@@ -10521,7 +10589,7 @@ USED IN:
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -10530,25 +10598,25 @@ USED IN:
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
         width: 100%;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
         width: 33.333%;
     }
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
         left: 0;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
         left: 8.333%;
     }
 }
@@ -10571,12 +10639,12 @@ USED IN:
     .intro--left-video figcaption {
         color: #ffffff;
     }
-    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
     }
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1;
