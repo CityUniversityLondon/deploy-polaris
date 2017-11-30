@@ -14706,9 +14706,9 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .ksp__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .ksp__item {
@@ -14796,6 +14796,21 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .ksp__item__text {
     padding-top: 10px;
     color: #666666;
+}
+
+.ksp__item--undergraduate .ksp__item__figure,
+.ksp__item--undergraduate .ksp__item__pre-figure {
+    color: #f15f22;
+}
+
+.ksp__item--masters .ksp__item__figure,
+.ksp__item--masters .ksp__item__pre-figure {
+    color: #005ea5;
+}
+
+.ksp__item--mba .ksp__item__figure,
+.ksp__item--mba .ksp__item__pre-figure {
+    color: #39655d;
 }
 
 .block-links__bg {
