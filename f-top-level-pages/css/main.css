@@ -15863,6 +15863,12 @@ h6,
     background-color: #ccdadb !important;
 }
 
+.standfirst {
+    font-size: 1.44rem;
+    font-weight: 300;
+    text-align: center;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
