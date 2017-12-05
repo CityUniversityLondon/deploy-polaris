@@ -15093,6 +15093,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     padding-top: 0.5rem;
     padding-bottom: 1rem;
     font-size: 14px;
+    z-index: 2;
 }
 
 @media (max-width: 900px) {
