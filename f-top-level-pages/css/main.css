@@ -15427,7 +15427,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     display: flex;
     padding-bottom: 1rem;
     border-bottom: 4px solid #d92231;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     position: relative;
 }
 
