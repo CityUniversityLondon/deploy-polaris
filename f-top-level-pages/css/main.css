@@ -15836,16 +15836,16 @@ h6,
 }
 
 .pathway-card--undergraduate:before {
-    border-color: rgba(241, 95, 34, 0.5) !important;
+    border-color: rgba(251, 174, 59, 0.5) !important;
 }
 
 .pathway-card--undergraduate:link:hover:before, .pathway-card--undergraduate:link:focus:before, .pathway-card--undergraduate:link:active:before {
-    border-color: #f15f22 !important;
+    border-color: #fbae3b !important;
 }
 
 .pathway-card--undergraduate[class*="pathway-card__"],
 .pathway-card--undergraduate [class*="pathway-card__"] {
-    background-color: #fcdfd3 !important;
+    background-color: #feefe9 !important;
 }
 
 .pathway-card--masters:before {
@@ -15858,7 +15858,7 @@ h6,
 
 .pathway-card--masters[class*="pathway-card__"],
 .pathway-card--masters [class*="pathway-card__"] {
-    background-color: #ccd4db !important;
+    background-color: #e6eaed !important;
 }
 
 .pathway-card--mba:before {
@@ -15871,7 +15871,7 @@ h6,
 
 .pathway-card--mba[class*="pathway-card__"],
 .pathway-card--mba [class*="pathway-card__"] {
-    background-color: #ccdadb !important;
+    background-color: #e6eced !important;
 }
 
 .standfirst {
