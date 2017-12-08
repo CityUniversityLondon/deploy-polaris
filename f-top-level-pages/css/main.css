@@ -15432,6 +15432,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__select {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
 }
 
@@ -15467,9 +15473,11 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    max-width: 8rem;
     background-color: #d92231;
     color: #ffffff;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
     padding: 0 2.5rem 0 1rem;
     border-width: 0;
     border-radius: 0;
@@ -15503,8 +15511,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .course-search__submit {
     color: #1e1e1e;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+        -ms-flex: 0 1 3rem;
+            flex: 0 1 3rem;
     padding: 0 0.5rem;
     border: 0;
     font-family: "FontAwesome";
