@@ -15438,6 +15438,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.course-search {
+    margin: 2rem 0;
+}
+
 .course-search__title {
     font-weight: 300;
     text-align: center;
