@@ -3673,7 +3673,6 @@ h6 {
 
 .alpha,
 h1,
-.banner__standfirst__content,
 .banner--text-ctas .banner__text .banner__text__subtitle,
 .video-banner__text__wrapper .video-banner__text .video-banner__text__title,
 .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
@@ -9123,14 +9122,19 @@ picture,
 .banner__content .banner__content__text__subtitle {
     display: inline-block;
     margin: 0;
-    font-size: 1.728rem;
     padding: 0.5rem 1rem;
     width: auto;
+    font-size: 1.728rem;
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
 }
 
+.banner__content .banner__content__text__subtitle,
 .banner__content .banner__content__text__standfirst {
-    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.banner__content .banner__content__text__standfirst {
+    font-size: 1.44rem;
 }
 
 @media (max-width: 900px) {
@@ -9221,6 +9225,7 @@ picture,
     padding-right: 0.5rem;
     position: relative;
     font-family: "FF Meta", Arial, Helvetica, sans-serif;
+    font-size: 1.44rem;
     color: #555555;
     font-weight: 300;
     text-align: center;
@@ -9247,9 +9252,15 @@ picture,
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 901px) {
     .banner__standfirst__content {
         width: 83.333%;
+    }
+}
+
+@media (min-width: 1441px) {
+    .banner__standfirst__content {
+        width: 66.667%;
     }
 }
 
@@ -9265,9 +9276,15 @@ picture,
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 901px) {
     .banner__standfirst__content {
         left: 8.333%;
+    }
+}
+
+@media (min-width: 1441px) {
+    .banner__standfirst__content {
+        left: 16.667%;
     }
 }
 
