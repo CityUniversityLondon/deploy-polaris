@@ -15466,11 +15466,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .course-search__form__select {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow: hidden;
     position: relative;
 }
 
@@ -15542,6 +15543,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form__submit {
+    min-width: 3rem;
     color: #1e1e1e;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 3rem;
