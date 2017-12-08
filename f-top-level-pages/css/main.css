@@ -5558,7 +5558,7 @@ svg:not(:root) {
     zoom: 1;
     max-width: 1440px;
     padding-top: calc(2rem + 10px);
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     position: relative;
 }
 
@@ -9733,7 +9733,7 @@ USED IN:
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     font-size: 14px;
-    margin-top: 3.5rem;
+    margin-top: 1rem;
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
