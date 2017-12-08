@@ -15011,6 +15011,16 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     .block-links__items__anchor {
         width: 100%;
     }
+    .block-links__items__anchor:after {
+        content: "";
+        background-color: #a1a1a1;
+        height: 2px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        right: 1rem;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 900px) {
@@ -15023,17 +15033,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     .block-links__items__anchor {
         width: 33.333%;
     }
-}
-
-.block-links__items__anchor:after {
-    content: "";
-    background-color: #a1a1a1;
-    height: 2px;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
-    right: 1rem;
 }
 
 .block-links__items__anchor__header {
