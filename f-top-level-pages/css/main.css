@@ -15157,6 +15157,14 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     z-index: 2;
 }
 
+.left-hand-navigation h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background: #fafafa;
+}
+
 @media (max-width: 900px) {
     .left-hand-navigation {
         display: none;
@@ -15393,6 +15401,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     .left-hand-navigation-grid__body {
         width: 66.667%;
     }
+}
+
+.left-hand-navigation__menu > div > ul {
+    margin: 0;
 }
 
 .course-search {
