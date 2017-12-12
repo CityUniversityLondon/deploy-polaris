@@ -10461,6 +10461,13 @@ USED IN:
     }
 }
 
+.cta-group--horizontal .cta {
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
 .section--lightgray, .course-finder__main {
     background-color: #f2f2f2;
 }
