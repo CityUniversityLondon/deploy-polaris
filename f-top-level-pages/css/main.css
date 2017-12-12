@@ -15558,6 +15558,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form__select select {
+    display: block;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -15575,8 +15576,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     line-height: 3;
 }
 
-.course-search__form__select select:hover, .course-search__form__select select:focus, .course-search__form__select select:active {
-    outline: none;
+.course-search__form__select select:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.course-search__form__select select:active {
+    outline: 2px dotted #1e1e1e;
 }
 
 .course-search__form__text {
