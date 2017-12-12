@@ -15073,6 +15073,18 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (max-width: 500px) {
+    .left-hand-navigation-grid__body .block-links__items__anchor {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .left-hand-navigation-grid__body .block-links__items__anchor {
+        width: 50%;
+    }
+}
+
 .block-links__items__anchor__header {
     padding-bottom: 1rem;
     overflow-x: hidden;
