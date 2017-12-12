@@ -16275,7 +16275,7 @@ h6,
     }
 }
 
-.course-finder__main__left {
+.course-finder__main:not(.course-finder__main--nofilters) .course-finder__main__left {
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
@@ -16284,7 +16284,7 @@ h6,
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .course-finder__main__left {
+    .course-finder__main:not(.course-finder__main--nofilters) .course-finder__main__left {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -16293,20 +16293,55 @@ h6,
 }
 
 @media (max-width: 500px) {
-    .course-finder__main__left {
+    .course-finder__main:not(.course-finder__main--nofilters) .course-finder__main__left {
         width: 100%;
     }
 }
 
 @media (min-width: 501px) {
-    .course-finder__main__left {
+    .course-finder__main:not(.course-finder__main--nofilters) .course-finder__main__left {
         width: 100%;
     }
 }
 
 @media (min-width: 651px) {
-    .course-finder__main__left {
+    .course-finder__main:not(.course-finder__main--nofilters) .course-finder__main__left {
         width: 33.333%;
+    }
+}
+
+.course-finder__main.course-finder__main--nofilters .course-finder__main__left {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .course-finder__main.course-finder__main--nofilters .course-finder__main__left {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .course-finder__main.course-finder__main--nofilters .course-finder__main__left {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .course-finder__main.course-finder__main--nofilters .course-finder__main__left {
+        width: 100%;
+    }
+}
+
+@media (min-width: 651px) {
+    .course-finder__main.course-finder__main--nofilters .course-finder__main__left {
+        width: 16.667%;
     }
 }
 
