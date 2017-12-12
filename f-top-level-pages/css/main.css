@@ -9116,7 +9116,7 @@ picture,
 
 @media (min-width: 651px) and (max-width: 900px) {
     .banner__content .banner__content__promo {
-        width: 35%;
+        width: 33.333%;
     }
 }
 
@@ -9224,27 +9224,27 @@ picture,
 }
 
 .banner--theme--corporate .banner__content h1 {
-    background-color: #D92231;
+    background-color: #d92231;
     color: #ffffff;
 }
 
 .banner--theme--corporate .banner__content .banner__content__text__subtitle {
-    background-color: #D0CFCB;
+    background-color: #d0cfcb;
     color: #1e1e1e;
 }
 
 .banner--theme--undergraduate .banner__content h1 {
-    background-color: #F15F22;
+    background-color: #f15f22;
     color: #1e1e1e;
 }
 
 .banner--theme--undergraduate .banner__content .banner__content__text__subtitle {
-    background-color: #FBAE3B;
+    background-color: #fbae3b;
     color: #1e1e1e;
 }
 
 .banner--theme--postgraduate .banner__content h1 {
-    background-color: #00284D;
+    background-color: #00284d;
     color: #ffffff;
 }
 
@@ -9259,37 +9259,37 @@ picture,
 }
 
 .banner--theme--phd .banner__content .banner__content__text__subtitle {
-    background-color: #49C7ED;
+    background-color: #49c7ed;
     color: #1e1e1e;
 }
 
 .banner--theme--mba .banner__content h1 {
-    background-color: #00444D;
+    background-color: #00444d;
     color: #ffffff;
 }
 
 .banner--theme--mba .banner__content .banner__content__text__subtitle {
-    background-color: #88d1CE;
+    background-color: #88d1ce;
     color: #1e1e1e;
 }
 
 .banner--theme--emba .banner__content h1 {
-    background-color: #39655D;
+    background-color: #39655d;
     color: #ffffff;
 }
 
 .banner--theme--emba .banner__content .banner__content__text__subtitle {
-    background-color: #88d1CE;
+    background-color: #88d1ce;
     color: #1e1e1e;
 }
 
 .banner--theme--demba .banner__content h1 {
-    background-color: #39655D;
+    background-color: #39655d;
     color: #ffffff;
 }
 
 .banner--theme--demba .banner__content .banner__content__text__subtitle {
-    background-color: #86C5B3;
+    background-color: #86c5b3;
     color: #1e1e1e;
 }
 
