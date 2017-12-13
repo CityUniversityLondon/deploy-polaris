@@ -14952,6 +14952,42 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (min-width: 901px) {
+    .ksp__items--3 .ksp__item {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    @supports ((display: -webkit-box) or (display: flex)) {
+        .ksp__items--3 .ksp__item {
+            float: none;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
+    }
+}
+
+@media (min-width: 901px) and (max-width: 500px) {
+    .ksp__items--3 .ksp__item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 501px) {
+    .ksp__items--3 .ksp__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .ksp__items--3 .ksp__item {
+        width: 33.333%;
+    }
+}
+
 @media (min-width: 501px) {
     .ksp__item {
         border-bottom: none;
@@ -15007,7 +15043,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--masters .ksp__item__figure,
 .ksp__item--masters .ksp__item__pre-figure {
-    color: #00284d;
+    color: #005ea5;
 }
 
 .ksp__item--mba .ksp__item__figure,
