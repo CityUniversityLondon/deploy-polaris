@@ -15484,7 +15484,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 901px) {
     .left-hand-navigation-grid__body {
-        width: 66.667%;
+        width: 58.333%;
     }
 }
 
