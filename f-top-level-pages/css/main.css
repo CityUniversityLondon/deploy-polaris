@@ -15666,7 +15666,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .pathway-card {
-    background-color: #fafafa;
     color: #1e1e1e;
     width: 100%;
     display: block;
