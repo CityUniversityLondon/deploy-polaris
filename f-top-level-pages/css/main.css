@@ -15713,6 +15713,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .pathway-card .pathway-card__image img {
     height: auto;
+    min-width: 100%;
     max-width: 200vw;
     position: absolute;
     top: 50%;
