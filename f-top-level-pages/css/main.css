@@ -16055,6 +16055,56 @@ h6,
     }
 }
 
+.footer-meta {
+    color: #ffffff;
+    position: relative;
+}
+
+.footer-meta:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: default;
+    -webkit-touch-callout: none;
+    content: "";
+    width: 200vw;
+    height: 100%;
+    pointer-events: none;
+}
+
+.lt-ie10 .footer-meta:before {
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+}
+
+.footer-meta.section--undergraduate:before {
+    background-color: #f15f22;
+}
+
+.footer-meta.section--masters:before {
+    background-color: #00284d;
+}
+
+.footer-meta.section--mba:before {
+    background-color: #39655d;
+}
+
+.footer-meta__card {
+    width: 50%;
+}
+
+.footer-meta__card h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 /******* mobile floating filters ***********/
 .filter-box {
     position: relative;
