@@ -15048,7 +15048,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--mba .ksp__item__figure,
 .ksp__item--mba .ksp__item__pre-figure {
-    color: #39655d;
+    color: #00444d;
 }
 
 .block-links__bg {
@@ -15126,7 +15126,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .block-links__items--mba {
-    background-color: #39655d;
+    background-color: #00444d;
 }
 
 @media (max-width: 500px) {
@@ -15657,11 +15657,11 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--mba {
-    border-bottom-color: #0077a0;
+    border-bottom-color: #00444d;
 }
 
 .course-search__form--mba .course-search__form__select select {
-    background-color: #0077a0;
+    background-color: #00444d;
     color: #ffffff;
 }
 
