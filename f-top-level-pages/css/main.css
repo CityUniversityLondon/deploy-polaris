@@ -15971,6 +15971,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     border-color: rgba(251, 174, 59, 0.5) !important;
 }
 
+.pathway-card--undergraduate:link:hover, .pathway-card--undergraduate:link:focus, .pathway-card--undergraduate:link:active {
+    z-index: 2;
+}
+
 .pathway-card--undergraduate:link:hover:before, .pathway-card--undergraduate:link:focus:before, .pathway-card--undergraduate:link:active:before {
     border-color: #fbae3b !important;
 }
@@ -15984,6 +15988,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     border-color: rgba(0, 40, 77, 0.5) !important;
 }
 
+.pathway-card--masters:link:hover, .pathway-card--masters:link:focus, .pathway-card--masters:link:active {
+    z-index: 2;
+}
+
 .pathway-card--masters:link:hover:before, .pathway-card--masters:link:focus:before, .pathway-card--masters:link:active:before {
     border-color: #00284d !important;
 }
@@ -15995,6 +16003,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .pathway-card--mba:before {
     border-color: rgba(0, 68, 77, 0.5) !important;
+}
+
+.pathway-card--mba:link:hover, .pathway-card--mba:link:focus, .pathway-card--mba:link:active {
+    z-index: 2;
 }
 
 .pathway-card--mba:link:hover:before, .pathway-card--mba:link:focus:before, .pathway-card--mba:link:active:before {
