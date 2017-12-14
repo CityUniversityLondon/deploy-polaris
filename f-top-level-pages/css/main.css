@@ -15171,7 +15171,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .block-links__items__anchor__header {
     padding-bottom: 1rem;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 @media (max-width: 900px) {
