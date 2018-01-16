@@ -10568,6 +10568,128 @@ USED IN:
     border: 2px solid transparent;
 }
 
+.scp--masters .cta--theme--primary {
+    background-color: #0077a0;
+    color: #ffffff;
+}
+
+.scp--masters .cta--theme--primary:hover, .scp--masters .cta--theme--primary:focus, .scp--masters .cta--theme--primary:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+}
+
+.scp--masters .cta--theme--secondary {
+    background-color: #00284d;
+    color: #ffffff;
+    border: 2px solid #ececec;
+}
+
+.scp--masters .cta--theme--secondary:hover, .scp--masters .cta--theme--secondary:focus, .scp--masters .cta--theme--secondary:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+    border: 2px solid #00284d;
+}
+
+.scp--undergraduate .cta--theme--primary {
+    background-color: #fbae3b;
+    color: #1e1e1e;
+}
+
+.scp--undergraduate .cta--theme--primary:hover, .scp--undergraduate .cta--theme--primary:focus, .scp--undergraduate .cta--theme--primary:active {
+    background-color: #faa21d;
+    color: #1e1e1e;
+}
+
+.scp--undergraduate .cta--theme--secondary {
+    background-color: #f15f22;
+    color: #000;
+}
+
+.scp--undergraduate .cta--theme--secondary:hover, .scp--undergraduate .cta--theme--secondary:focus, .scp--undergraduate .cta--theme--secondary:active {
+    background-color: #e64e0f;
+    color: #000;
+}
+
+.scp--corporate .cta--theme--primary {
+    background-color: #d92231;
+    color: #ffffff;
+}
+
+.scp--corporate .cta--theme--primary:hover, .scp--corporate .cta--theme--primary:focus, .scp--corporate .cta--theme--primary:active {
+    background-color: #bf1e2b;
+    color: #ffffff;
+}
+
+.scp--corporate .cta--theme--secondary {
+    background-color: #d92231;
+    color: #ffffff;
+}
+
+.scp--corporate .cta--theme--secondary:hover, .scp--corporate .cta--theme--secondary:focus, .scp--corporate .cta--theme--secondary:active {
+    background-color: #bf1e2b;
+    color: #ffffff;
+}
+
+.scp--mba .cta--theme--primary {
+    background-color: #86c5b3;
+    color: #1e1e1e;
+}
+
+.scp--mba .cta--theme--primary:hover, .scp--mba .cta--theme--primary:focus, .scp--mba .cta--theme--primary:active {
+    background-color: #71bba6;
+    color: #1e1e1e;
+}
+
+.scp--mba .cta--theme--secondary {
+    background-color: #86c5b3;
+    color: #1e1e1e;
+}
+
+.scp--mba .cta--theme--secondary:hover, .scp--mba .cta--theme--secondary:focus, .scp--mba .cta--theme--secondary:active {
+    background-color: #71bba6;
+    color: #1e1e1e;
+}
+
+.scp--executive-edu .cta--theme--primary {
+    background-color: #842b91;
+    color: #ffffff;
+}
+
+.scp--executive-edu .cta--theme--primary:hover, .scp--executive-edu .cta--theme--primary:focus, .scp--executive-edu .cta--theme--primary:active {
+    background-color: #6f2479;
+    color: #ffffff;
+}
+
+.scp--executive-edu .cta--theme--secondary {
+    background-color: #ee3780;
+    color: #000;
+}
+
+.scp--executive-edu .cta--theme--secondary:hover, .scp--executive-edu .cta--theme--secondary:focus, .scp--executive-edu .cta--theme--secondary:active {
+    background-color: #ec1b6e;
+    color: #000;
+}
+
+.scp--phd .cta--theme--primary {
+    background-color: #00444d;
+    color: #ffffff;
+}
+
+.scp--phd .cta--theme--primary:hover, .scp--phd .cta--theme--primary:focus, .scp--phd .cta--theme--primary:active {
+    background-color: #00292e;
+    color: #ffffff;
+}
+
+.scp--phd .cta--theme--secondary {
+    background-color: #49c7ed;
+    color: #1e1e1e;
+}
+
+.scp--phd .cta--theme--secondary:hover, .scp--phd .cta--theme--secondary:focus, .scp--phd .cta--theme--secondary:active {
+    background-color: #2dbeea;
+    color: #1e1e1e;
+}
+
 .cta-group {
     position: relative;
 }
