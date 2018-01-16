@@ -4256,7 +4256,9 @@ svg:not(:root) {
 .grid--halves,
 .stats-block__grid--halves,
 .grid--halves--alternate,
-.grid--halves--small {
+.grid--halves--small,
+.chart-row__items,
+.chart-row__items__chart__row {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -4282,7 +4284,9 @@ svg:not(:root) {
     .grid--halves,
     .stats-block__grid--halves,
     .grid--halves--alternate,
-    .grid--halves--small {
+    .grid--halves--small,
+    .chart-row__items,
+    .chart-row__items__chart__row {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4307,6 +4311,8 @@ svg:not(:root) {
 .stats-block__grid--halves:before,
 .grid--halves--alternate:before,
 .grid--halves--small:before,
+.chart-row__items:before,
+.chart-row__items__chart__row:before,
 .grid--sixths:after,
 .grid--quarters:after,
 .grid--fourths:after,
@@ -4318,7 +4324,9 @@ svg:not(:root) {
 .grid--halves:after,
 .stats-block__grid--halves:after,
 .grid--halves--alternate:after,
-.grid--halves--small:after {
+.grid--halves--small:after,
+.chart-row__items:after,
+.chart-row__items__chart__row:after {
     content: "";
     display: block;
 }
@@ -4335,7 +4343,9 @@ svg:not(:root) {
 .grid--halves:after,
 .stats-block__grid--halves:after,
 .grid--halves--alternate:after,
-.grid--halves--small:after {
+.grid--halves--small:after,
+.chart-row__items:after,
+.chart-row__items__chart__row:after {
     clear: both;
 }
 
@@ -4352,7 +4362,9 @@ svg:not(:root) {
     .grid--halves,
     .stats-block__grid--halves,
     .grid--halves--alternate,
-    .grid--halves--small {
+    .grid--halves--small,
+    .chart-row__items,
+    .chart-row__items__chart__row {
         float: none;
     }
 }
@@ -17902,6 +17914,227 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     overflow: hidden !important;
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.chart-row {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 1px dashed #d0cfcb;
+    border-bottom: 1px dashed #d0cfcb;
+}
+
+.chart-row h2 {
+    text-align: center;
+}
+
+.chart-row__items__chart {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .chart-row__items__chart {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .chart-row__items__chart {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .chart-row__items__chart {
+        width: 50%;
+    }
+}
+
+.chart-row__items__chart__row__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #555555;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.chart-row__items__chart__row__title,
+.chart-row__items__chart__row__graph {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .chart-row__items__chart__row__title,
+    .chart-row__items__chart__row__graph {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .chart-row__items__chart__row__title,
+    .chart-row__items__chart__row__graph {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .chart-row__items__chart__row__title,
+    .chart-row__items__chart__row__graph {
+        width: 50%;
+    }
+}
+
+.chart-row__items__chart__row__legend {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .chart-row__items__chart__row__legend {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .chart-row__items__chart__row__legend {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .chart-row__items__chart__row__legend {
+        width: 50%;
+    }
+}
+
+.chart-row__items__chart path:nth-child(1) {
+    stroke: #a4cacc;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.dialog__box__heading__close__icon {
+    color: #a4cacc;
+}
+
+.chart-row__items__chart path:nth-child(2) {
+    stroke: #724289;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.dialog__box__heading__close__icon {
+    color: #724289;
+}
+
+.chart-row__items__chart path:nth-child(3) {
+    stroke: #c7637d;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon {
+    color: #c7637d;
+}
+
+.chart-row__items__chart path:nth-child(4) {
+    stroke: #63c781;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.dialog__box__heading__close__icon {
+    color: #63c781;
+}
+
+.chart-row__items__chart path:nth-child(5) {
+    stroke: #c7b763;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.dialog__box__heading__close__icon {
+    color: #c7b763;
+}
+
+.chart-row__items__chart path:nth-child(1) {
+    stroke: #a4cacc;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.dialog__box__heading__close__icon {
+    color: #a4cacc;
+}
+
+.chart-row__items__chart path:nth-child(2) {
+    stroke: #724289;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.dialog__box__heading__close__icon {
+    color: #724289;
+}
+
+.chart-row__items__chart path:nth-child(3) {
+    stroke: #c7637d;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon {
+    color: #c7637d;
+}
+
+.chart-row__items__chart path:nth-child(4) {
+    stroke: #63c781;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.dialog__box__heading__close__icon {
+    color: #63c781;
+}
+
+.chart-row__items__chart path:nth-child(5) {
+    stroke: #c7b763;
+}
+
+.chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa.fa-circle, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.url-slide__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .media-block .fa-circle.video-preview__button:before, .media-block .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.video-preview__button:before, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.accordion__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .js .fa-circle.tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.accordion-tabs__content__heading-anchor__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.header-toggle__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.popup-def-list-group__prevnext__prev__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.popup-def-list-group__prevnext__next__icon, .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.dialog__box__heading__close__icon {
+    color: #c7b763;
+}
+
+.chart-row__items__chart__row__legend__item {
+    margin-bottom: 0.5rem;
+    font-family: "FF Meta", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.chart-row__items__chart__row__legend__item:not(:last-child) {
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.chart-row__items__chart__row__legend__item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    background: #d0cfcb;
+    height: 1px;
+    width: 50%;
+}
+
+.chart-row__items__chart__row__legend__item__label {
+    margin-left: 1rem;
+    color: #555555;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .anchor-demo-list li {
