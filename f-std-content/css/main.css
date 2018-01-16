@@ -3971,8 +3971,8 @@ h3:before, .ghost
 h4:before, .ghost
 h5:before, .ghost
 h6:before {
-    -webkit-transform: translateX(101%);
-            transform: translateX(101%);
+    -webkit-transform: translateX(105%);
+            transform: translateX(105%);
     -webkit-animation: slide-right-out 0.2s ease 0s both normal;
             animation: slide-right-out 0.2s ease 0s both normal;
     position: absolute;
@@ -3983,16 +3983,9 @@ h6:before {
     background-color: #ffffff;
     width: 100%;
     height: 2px;
+    -webkit-transition: opacity 0.2s ease 0.2s;
+    transition: opacity 0.2s ease 0.2s;
     z-index: 0;
-}
-
-.ghost.ghost--active h1:before, .ghost.ghost--active
-h2:before, .ghost.ghost--active
-h3:before, .ghost.ghost--active
-h4:before, .ghost.ghost--active
-h5:before, .ghost.ghost--active
-h6:before {
-    opacity: 1;
 }
 
 .ghost:hover h1:before, .ghost:hover
@@ -4001,11 +3994,13 @@ h3:before, .ghost:hover
 h4:before, .ghost:hover
 h5:before, .ghost:hover
 h6:before {
-    -webkit-transform: translateX(-101%);
-            transform: translateX(-101%);
+    -webkit-transform: translateX(-105%);
+            transform: translateX(-105%);
     -webkit-animation: slide-left-in 0.2s ease 0s both normal;
             animation: slide-left-in 0.2s ease 0s both normal;
     opacity: 1;
+    -webkit-transition: none;
+    transition: none;
 }
 
 .ghost:focus {
@@ -8198,8 +8193,8 @@ picture,
 }
 
 .tabs__content__heading-anchor.active + .tabs__content__group__shame {
-    -webkit-transform: translateY(-101%);
-            transform: translateY(-101%);
+    -webkit-transform: translateY(-105%);
+            transform: translateY(-105%);
     -webkit-animation: slide-top-in 0.2s ease 0s both normal;
             animation: slide-top-in 0.2s ease 0s both normal;
 }
@@ -8670,8 +8665,8 @@ picture,
 }
 
 .accordion-tabs__content__heading-anchor.active + .accordion-tabs__content__group__shame {
-    -webkit-transform: translateY(-101%);
-            transform: translateY(-101%);
+    -webkit-transform: translateY(-105%);
+            transform: translateY(-105%);
     -webkit-animation: slide-top-in 0.2s ease 0s both normal;
             animation: slide-top-in 0.2s ease 0s both normal;
 }
@@ -9618,8 +9613,8 @@ picture,
 }
 
 @media (min-width: 901px) {
-    .banner--cutout--left .banner__image__group::after,
-    .banner--cutout--right .banner__image__group::after {
+    .banner--cutout--left .banner__image__group:after,
+    .banner--cutout--right .banner__image__group:after {
         content: "";
         background-color: white;
         width: calc(100% - 4rem);
@@ -9628,10 +9623,10 @@ picture,
         bottom: 0;
         z-index: 2;
     }
-    .banner--cutout--left .banner__image__group::after {
+    .banner--cutout--left .banner__image__group:after {
         left: 0;
     }
-    .banner--cutout--right .banner__image__group::after {
+    .banner--cutout--right .banner__image__group:after {
         right: 0;
     }
 }
@@ -10041,7 +10036,7 @@ USED IN:
     display: inline-block;
     padding-top: 1px;
     padding-bottom: 1px;
-    padding-right: 1rem;
+    padding-right: 0.75rem;
 }
 
 .breadcrumbs__list li + li {
@@ -10053,15 +10048,15 @@ USED IN:
     content: "\f105";
     color: #666666;
     font-size: 1rem;
-    padding-right: 1rem;
+    padding-right: 0.75rem;
 }
 
 @media (max-width: 500px) {
     .breadcrumbs__list li {
-        padding-right: 0.75rem;
+        padding-right: 0.5rem;
     }
     .breadcrumbs__list li + li:before {
-        padding-right: 0.75rem;
+        padding-right: 0.5rem;
     }
 }
 
@@ -11966,7 +11961,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
-.animation-reveal::after {
+.animation-reveal:after {
     content: "";
     position: absolute;
     top: 0;
@@ -11979,7 +11974,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
             animation-direction: both;
 }
 
-.animation-reveal::after {
+.animation-reveal:after {
     background-color: white;
     -webkit-animation-delay: 0.33333s;
             animation-delay: 0.33333s;
@@ -12003,8 +11998,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
             box-shadow: 0 0 66px 3px transparent;
 }
 
-.animation-reveal__load--right-to-left::after,
-.animation-reveal__load--left-to-right::after {
+.animation-reveal__load--right-to-left:after,
+.animation-reveal__load--left-to-right:after {
     left: 0;
     right: 0;
     -webkit-transform: translateX(100%);
@@ -12017,13 +12012,13 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
             animation: content-reveal 0s linear 0.83333s forwards;
 }
 
-.animation-reveal__load--right-to-left::after,
-.animation-reveal__load--left-to-right::after {
+.animation-reveal__load--right-to-left:after,
+.animation-reveal__load--left-to-right:after {
     -webkit-animation-name: video-slide--left-to-right;
             animation-name: video-slide--left-to-right;
 }
 
-.animation-reveal__load--left-to-right::after {
+.animation-reveal__load--left-to-right:after {
     -webkit-animation-direction: reverse;
             animation-direction: reverse;
 }
@@ -15387,13 +15382,17 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .block-links__items__anchor__header {
+    padding-top: 1rem;
     padding-bottom: 1rem;
     overflow: hidden;
+    word-break: break-word;
 }
 
 @media (max-width: 900px) {
     .block-links__items__anchor__header {
+        padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        padding-right: 1.5rem;
         margin-bottom: 0;
         font-size: 1.2rem;
     }
@@ -15401,6 +15400,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 901px) {
     .block-links__items__anchor__header {
+        padding-right: 2rem;
         font-size: 1.44rem;
     }
 }
@@ -15412,11 +15412,22 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .block-links__items__anchor__header__icon {
-    display: inline-block;
+    display: block;
     position: absolute;
-    top: 10px;
     right: 0;
     font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .block-links__items__anchor__header__icon {
+        top: 0.75rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .block-links__items__anchor__header__icon {
+        top: 1.25rem;
+    }
 }
 
 .primary-dropdown select {
@@ -17982,7 +17993,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
-.cass-experts .academic-details__content #favourites li::after {
+.cass-experts .academic-details__content #favourites li:after {
     bottom: 0.5rem;
     color: #666666;
     content: "Featured publication";
