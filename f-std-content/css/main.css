@@ -9370,6 +9370,16 @@ picture,
     color: #ffffff;
 }
 
+.banner--theme--masters .banner__content h1 {
+    background-color: #00284d;
+    color: #ffffff;
+}
+
+.banner--theme--masters .banner__content .banner__content__text__subtitle {
+    background-color: #0077a0;
+    color: #ffffff;
+}
+
 .banner--theme--phd .banner__content h1 {
     background-color: #0077a0;
     color: #ffffff;
@@ -9416,6 +9426,116 @@ picture,
 }
 
 .banner--theme--execed .banner__content .banner__content__text__subtitle {
+    background-color: #ee3780;
+    color: #1e1e1e;
+}
+
+.banner--theme--executive-education .banner__content h1 {
+    background-color: #842b91;
+    color: #ffffff;
+}
+
+.banner--theme--executive-education .banner__content .banner__content__text__subtitle {
+    background-color: #ee3780;
+    color: #1e1e1e;
+}
+
+.scp--corporate .banner--theme--corporate .banner__content h1 {
+    background-color: #d92231;
+    color: #ffffff;
+}
+
+.scp--corporate .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #d0cfcb;
+    color: #1e1e1e;
+}
+
+.scp--undergraduate .banner--theme--corporate .banner__content h1 {
+    background-color: #f15f22;
+    color: #1e1e1e;
+}
+
+.scp--undergraduate .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #fbae3b;
+    color: #1e1e1e;
+}
+
+.scp--postgraduate .banner--theme--corporate .banner__content h1 {
+    background-color: #00284d;
+    color: #ffffff;
+}
+
+.scp--postgraduate .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #0077a0;
+    color: #ffffff;
+}
+
+.scp--masters .banner--theme--corporate .banner__content h1 {
+    background-color: #00284d;
+    color: #ffffff;
+}
+
+.scp--masters .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #0077a0;
+    color: #ffffff;
+}
+
+.scp--phd .banner--theme--corporate .banner__content h1 {
+    background-color: #0077a0;
+    color: #ffffff;
+}
+
+.scp--phd .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #49c7ed;
+    color: #1e1e1e;
+}
+
+.scp--mba .banner--theme--corporate .banner__content h1 {
+    background-color: #00444d;
+    color: #ffffff;
+}
+
+.scp--mba .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #88d1ce;
+    color: #1e1e1e;
+}
+
+.scp--emba .banner--theme--corporate .banner__content h1 {
+    background-color: #39655d;
+    color: #ffffff;
+}
+
+.scp--emba .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #88d1ce;
+    color: #1e1e1e;
+}
+
+.scp--demba .banner--theme--corporate .banner__content h1 {
+    background-color: #39655d;
+    color: #ffffff;
+}
+
+.scp--demba .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #86c5b3;
+    color: #1e1e1e;
+}
+
+.scp--execed .banner--theme--corporate .banner__content h1 {
+    background-color: #842b91;
+    color: #ffffff;
+}
+
+.scp--execed .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #ee3780;
+    color: #1e1e1e;
+}
+
+.scp--executive-education .banner--theme--corporate .banner__content h1 {
+    background-color: #842b91;
+    color: #ffffff;
+}
+
+.scp--executive-education .banner--theme--corporate .banner__content .banner__content__text__subtitle {
     background-color: #ee3780;
     color: #1e1e1e;
 }
