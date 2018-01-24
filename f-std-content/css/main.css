@@ -4239,7 +4239,7 @@ svg:not(:root) {
 /**
  * Grid Container
  */
-.grid, .banner__standfirst__grid,
+.grid, .banner__standfirst__grid, .cass-knowledge-listing__grid,
 .grid--sixths,
 .grid--quarters,
 .grid--fourths,
@@ -4267,7 +4267,7 @@ svg:not(:root) {
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .grid, .banner__standfirst__grid,
+    .grid, .banner__standfirst__grid, .cass-knowledge-listing__grid,
     .grid--sixths,
     .grid--quarters,
     .grid--fourths,
@@ -4293,7 +4293,7 @@ svg:not(:root) {
     }
 }
 
-.grid:before, .banner__standfirst__grid:before, .grid:after, .banner__standfirst__grid:after,
+.grid:before, .banner__standfirst__grid:before, .cass-knowledge-listing__grid:before, .grid:after, .banner__standfirst__grid:after, .cass-knowledge-listing__grid:after,
 .grid--sixths:before,
 .grid--quarters:before,
 .grid--fourths:before,
@@ -4326,7 +4326,7 @@ svg:not(:root) {
     display: block;
 }
 
-.grid:after, .banner__standfirst__grid:after,
+.grid:after, .banner__standfirst__grid:after, .cass-knowledge-listing__grid:after,
 .grid--sixths:after,
 .grid--quarters:after,
 .grid--fourths:after,
@@ -4345,7 +4345,7 @@ svg:not(:root) {
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .grid, .banner__standfirst__grid,
+    .grid, .banner__standfirst__grid, .cass-knowledge-listing__grid,
     .grid--sixths,
     .grid--quarters,
     .grid--fourths,
@@ -11004,7 +11004,7 @@ USED IN:
     }
 }
 
-.intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
+.intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(1) {
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
@@ -11013,7 +11013,7 @@ USED IN:
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(1) {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -11022,18 +11022,18 @@ USED IN:
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(1) {
         width: 100%;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(1) {
         width: 58.333%;
     }
 }
 
-.intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
+.intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(2) {
     /** TODO: Is min height necessary? **/
     float: left;
     padding-left: 0.5rem;
@@ -11042,7 +11042,7 @@ USED IN:
 }
 
 @supports ((display: -webkit-box) or (display: flex)) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(2) {
         float: none;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -11051,25 +11051,25 @@ USED IN:
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(2) {
         width: 100%;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(2) {
         width: 33.333%;
     }
 }
 
 @media (max-width: 900px) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(2) {
         left: 0;
     }
 }
 
 @media (min-width: 901px) {
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(2) {
         left: 8.333%;
     }
 }
@@ -11092,12 +11092,12 @@ USED IN:
     .intro--left-video figcaption {
         color: #ffffff;
     }
-    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1) {
+    .intro--left-video > .container > .grid > :nth-child(1), .intro--left-video > .banner__container > .grid > :nth-child(1), .intro--left-video > .banner__standfirst > .grid > :nth-child(1), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(1), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(1), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(1) {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
     }
-    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2) {
+    .intro--left-video > .container > .grid > :nth-child(2), .intro--left-video > .banner__container > .grid > :nth-child(2), .intro--left-video > .banner__standfirst > .grid > :nth-child(2), .intro--left-video > .container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__container > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .banner__standfirst__grid > :nth-child(2), .intro--left-video > .container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__container > .cass-knowledge-listing__grid > :nth-child(2), .intro--left-video > .banner__standfirst > .cass-knowledge-listing__grid > :nth-child(2) {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1;
@@ -16733,6 +16733,650 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     .hallway__item__text {
         margin-bottom: 2rem;
     }
+}
+
+.cass-knowledge-listing__grid > div {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .cass-knowledge-listing__grid > div {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .cass-knowledge-listing__grid > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .cass-knowledge-listing__grid > div {
+        width: 33.333%;
+    }
+}
+
+.cass-knowledge-listing__grid.cass-knowledge-listing__grid--1 > div {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .cass-knowledge-listing__grid.cass-knowledge-listing__grid--1 > div {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .cass-knowledge-listing__grid.cass-knowledge-listing__grid--1 > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .cass-knowledge-listing__grid.cass-knowledge-listing__grid--1 > div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .cass-knowledge-listing__grid.cass-knowledge-listing__grid--1 > div {
+        left: 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .cass-knowledge-listing__grid.cass-knowledge-listing__grid--1 > div {
+        left: 25%;
+    }
+}
+
+.cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+        width: 50%;
+    }
+}
+
+.cass-knowledge-listing__link {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cass-knowledge-listing__link a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.cass-knowledge-listing__link a:hover, .cass-knowledge-listing__link a:focus, .cass-knowledge-listing__link a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-listing__link a:after {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    content: "";
+    opacity: 0;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 2px;
+    display: block;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.cass-knowledge-listing__link a:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.cass-knowledge-listing__link a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-knowledge-listing__link a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-knowledge-listing__link .fa, .cass-knowledge-listing__link .url-slide--right .url-slide__icon, .url-slide--right .cass-knowledge-listing__link .url-slide__icon, .cass-knowledge-listing__link .media-block .video-preview__button:before, .media-block .cass-knowledge-listing__link .video-preview__button:before, .cass-knowledge-listing__link .accordion__content__heading-anchor__icon, .cass-knowledge-listing__link .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon, .accordion.accordion--simple .accordion__content__heading-anchor .cass-knowledge-listing__link .accordion__content__heading-anchor__icon, .cass-knowledge-listing__link .js .tabs__content__heading-anchor__icon, .js .cass-knowledge-listing__link .tabs__content__heading-anchor__icon, .cass-knowledge-listing__link .js .accordion-tabs__content__heading-anchor__icon, .js .cass-knowledge-listing__link .accordion-tabs__content__heading-anchor__icon, .cass-knowledge-listing__link .header-toggle--menu .header-toggle__icon, .header-toggle--menu .cass-knowledge-listing__link .header-toggle__icon, .cass-knowledge-listing__link .header-toggle--search .header-toggle__icon, .header-toggle--search .cass-knowledge-listing__link .header-toggle__icon, .cass-knowledge-listing__link .popup-def-list-group__prevnext__prev .popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .cass-knowledge-listing__link .popup-def-list-group__prevnext__prev__icon, .cass-knowledge-listing__link .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .cass-knowledge-listing__link .popup-def-list-group__prevnext__next__icon, .cass-knowledge-listing__link .dialog__box__heading__close__icon {
+    margin-left: 2rem;
+}
+
+.cass-knowledge-listing__item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.cass-knowledge-listing__item img {
+    display: inline-block;
+    width: 75%;
+}
+
+.cass-knowledge-listing__item__text {
+    position: absolute;
+    display: inline-block;
+    width: 45%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem 2rem 2rem;
+    -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.3);
+}
+
+.cass-knowledge-listing__item__text a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+.cass-knowledge-listing__item__text a:hover, .cass-knowledge-listing__item__text a:focus, .cass-knowledge-listing__item__text a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-listing__item__text a:after {
+    -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    content: "";
+    opacity: 0;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 2px;
+    display: block;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.cass-knowledge-listing__item__text a:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.cass-knowledge-listing__item__text a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-knowledge-listing__item__text a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-knowledge-listing__item__text > a {
+    margin-bottom: 2rem;
+}
+
+.cass-knowledge-listing__item__topic {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: 700;
+}
+
+.cass-knowledge-listing__item__topic:hover, .cass-knowledge-listing__item__topic:focus, .cass-knowledge-listing__item__topic:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-listing__item__topic a {
+    color: #666666;
+}
+
+.cass-knowledge-listing__item__topic a:after {
+    background-color: transparent;
+}
+
+.cass-knowledge-listing__item__topic:hover {
+    color: #666666;
+}
+
+.cass-knowledge-listing__item__topic:hover:before, .cass-knowledge-listing__item__topic:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.cass-knowledge-listing__item__topic:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.cass-knowledge-listing__item__topic:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.cass-knowledge-listing__item__topic:before, .cass-knowledge-listing__item__topic:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #3F175C;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: 700;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science a {
+    color: #3F175C;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science a:after {
+    background-color: transparent;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover {
+    color: #3F175C;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: 700;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all a {
+    color: #666666;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all a:after {
+    background-color: transparent;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover {
+    color: #666666;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #11365C;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: 700;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance a {
+    color: #11365C;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance a:after {
+    background-color: transparent;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover {
+    color: #11365C;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #AD2B1A;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: 700;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management a {
+    color: #AD2B1A;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management a:after {
+    background-color: transparent;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover {
+    color: #AD2B1A;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #5A8054;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 0 0.7em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: 700;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship a {
+    color: #5A8054;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship a:after {
+    background-color: transparent;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover {
+    color: #5A8054;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:after {
+    position: absolute;
+    top: -3px;
+    font-weight: 100;
+    font-size: 130%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.cass-knowledge-listing__item__research {
+    position: relative;
+    color: #555555;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cass-knowledge-listing__item__research:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -2rem;
+    width: 5px;
+    height: 100%;
+    background: black;
 }
 
 /******* mobile floating filters ***********/
