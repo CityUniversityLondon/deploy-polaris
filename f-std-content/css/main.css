@@ -10621,16 +10621,6 @@ USED IN:
     color: #ffffff;
 }
 
-.scp--corporate .cta--theme--secondary {
-    background-color: #d92231;
-    color: #ffffff;
-}
-
-.scp--corporate .cta--theme--secondary:hover, .scp--corporate .cta--theme--secondary:focus, .scp--corporate .cta--theme--secondary:active {
-    background-color: #bf1e2b;
-    color: #ffffff;
-}
-
 .scp--mba .cta--theme--primary {
     background-color: #86c5b3;
     color: #1e1e1e;
@@ -10642,31 +10632,31 @@ USED IN:
 }
 
 .scp--mba .cta--theme--secondary {
-    background-color: #86c5b3;
-    color: #1e1e1e;
+    background-color: #00444d;
+    color: #ffffff;
 }
 
 .scp--mba .cta--theme--secondary:hover, .scp--mba .cta--theme--secondary:focus, .scp--mba .cta--theme--secondary:active {
-    background-color: #71bba6;
-    color: #1e1e1e;
+    background-color: #00292e;
+    color: #ffffff;
 }
 
-.scp--execed .cta--theme--primary {
+.scp--executive-education .cta--theme--primary {
     background-color: #842b91;
     color: #ffffff;
 }
 
-.scp--execed .cta--theme--primary:hover, .scp--execed .cta--theme--primary:focus, .scp--execed .cta--theme--primary:active {
+.scp--executive-education .cta--theme--primary:hover, .scp--executive-education .cta--theme--primary:focus, .scp--executive-education .cta--theme--primary:active {
     background-color: #6f2479;
     color: #ffffff;
 }
 
-.scp--execed .cta--theme--secondary {
+.scp--executive-education .cta--theme--secondary {
     background-color: #ee3780;
     color: #000;
 }
 
-.scp--execed .cta--theme--secondary:hover, .scp--execed .cta--theme--secondary:focus, .scp--execed .cta--theme--secondary:active {
+.scp--executive-education .cta--theme--secondary:hover, .scp--executive-education .cta--theme--secondary:focus, .scp--executive-education .cta--theme--secondary:active {
     background-color: #ec1b6e;
     color: #000;
 }
@@ -16481,6 +16471,125 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .pathway-card--corporate[class*="pathway-card__"],
 .pathway-card--corporate [class*="pathway-card__"] {
+    background-color: #fbe9ea !important;
+}
+
+.scp--undergraduate .pathway-card:before {
+    border-color: rgba(251, 174, 59, 0.5) !important;
+}
+
+.scp--undergraduate .pathway-card:link:hover, .scp--undergraduate .pathway-card:link:focus, .scp--undergraduate .pathway-card:link:active {
+    z-index: 2;
+}
+
+.scp--undergraduate .pathway-card:link:hover:before, .scp--undergraduate .pathway-card:link:focus:before, .scp--undergraduate .pathway-card:link:active:before {
+    border-color: #fbae3b !important;
+}
+
+.scp--undergraduate .pathway-card[class*="pathway-card__"],
+.scp--undergraduate .pathway-card [class*="pathway-card__"] {
+    background-color: #feefe9 !important;
+}
+
+.scp--masters .pathway-card:before {
+    border-color: rgba(0, 40, 77, 0.5) !important;
+}
+
+.scp--masters .pathway-card:link:hover, .scp--masters .pathway-card:link:focus, .scp--masters .pathway-card:link:active {
+    z-index: 2;
+}
+
+.scp--masters .pathway-card:link:hover:before, .scp--masters .pathway-card:link:focus:before, .scp--masters .pathway-card:link:active:before {
+    border-color: #00284d !important;
+}
+
+.scp--masters .pathway-card[class*="pathway-card__"],
+.scp--masters .pathway-card [class*="pathway-card__"] {
+    background-color: #e6eaed !important;
+}
+
+.scp--mba .pathway-card:before {
+    border-color: rgba(0, 68, 77, 0.5) !important;
+}
+
+.scp--mba .pathway-card:link:hover, .scp--mba .pathway-card:link:focus, .scp--mba .pathway-card:link:active {
+    z-index: 2;
+}
+
+.scp--mba .pathway-card:link:hover:before, .scp--mba .pathway-card:link:focus:before, .scp--mba .pathway-card:link:active:before {
+    border-color: #00444d !important;
+}
+
+.scp--mba .pathway-card[class*="pathway-card__"],
+.scp--mba .pathway-card [class*="pathway-card__"] {
+    background-color: #e6eced !important;
+}
+
+.scp--executive-education .pathway-card:before {
+    border-color: rgba(132, 43, 145, 0.5) !important;
+}
+
+.scp--executive-education .pathway-card:link:hover, .scp--executive-education .pathway-card:link:focus, .scp--executive-education .pathway-card:link:active {
+    z-index: 2;
+}
+
+.scp--executive-education .pathway-card:link:hover:before, .scp--executive-education .pathway-card:link:focus:before, .scp--executive-education .pathway-card:link:active:before {
+    border-color: #842b91 !important;
+}
+
+.scp--executive-education .pathway-card[class*="pathway-card__"],
+.scp--executive-education .pathway-card [class*="pathway-card__"] {
+    background-color: #f3eaf4 !important;
+}
+
+.scp--phd .pathway-card:before {
+    border-color: rgba(73, 199, 237, 0.5) !important;
+}
+
+.scp--phd .pathway-card:link:hover, .scp--phd .pathway-card:link:focus, .scp--phd .pathway-card:link:active {
+    z-index: 2;
+}
+
+.scp--phd .pathway-card:link:hover:before, .scp--phd .pathway-card:link:focus:before, .scp--phd .pathway-card:link:active:before {
+    border-color: #49c7ed !important;
+}
+
+.scp--phd .pathway-card[class*="pathway-card__"],
+.scp--phd .pathway-card [class*="pathway-card__"] {
+    background-color: #edf9fd !important;
+}
+
+.scp--executive-phd .pathway-card:before {
+    border-color: rgba(73, 199, 237, 0.5) !important;
+}
+
+.scp--executive-phd .pathway-card:link:hover, .scp--executive-phd .pathway-card:link:focus, .scp--executive-phd .pathway-card:link:active {
+    z-index: 2;
+}
+
+.scp--executive-phd .pathway-card:link:hover:before, .scp--executive-phd .pathway-card:link:focus:before, .scp--executive-phd .pathway-card:link:active:before {
+    border-color: #49c7ed !important;
+}
+
+.scp--executive-phd .pathway-card[class*="pathway-card__"],
+.scp--executive-phd .pathway-card [class*="pathway-card__"] {
+    background-color: #edf9fd !important;
+}
+
+.scp--corporate .pathway-card:before {
+    border-color: rgba(217, 34, 49, 0.5) !important;
+}
+
+.scp--corporate .pathway-card:link:hover, .scp--corporate .pathway-card:link:focus, .scp--corporate .pathway-card:link:active {
+    z-index: 2;
+}
+
+.scp--corporate .pathway-card:link:hover:before, .scp--corporate .pathway-card:link:focus:before, .scp--corporate .pathway-card:link:active:before {
+    border-color: #d92231 !important;
+}
+
+.scp--corporate .pathway-card[class*="pathway-card__"],
+.scp--corporate .pathway-card [class*="pathway-card__"] {
     background-color: #fbe9ea !important;
 }
 
