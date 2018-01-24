@@ -9772,6 +9772,7 @@ picture,
     border-bottom-width: 0;
     font-weight: 700;
     display: inline-block;
+    margin-bottom: 0.5rem;
     background-color: #0077a0;
     color: #ffffff;
     margin: 0 2rem 2rem 0;
@@ -10471,6 +10472,7 @@ USED IN:
 
 .cta--inline {
     display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
 .cta--red {
