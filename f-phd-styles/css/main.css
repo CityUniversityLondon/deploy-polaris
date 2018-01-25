@@ -11142,6 +11142,10 @@ USED IN:
     font-weight: 700;
 }
 
+.key-info--phd .key-info__item__value {
+    color: #0077a0;
+}
+
 .key-info__item--feature {
     -webkit-box-align: center;
         -ms-flex-align: center;
