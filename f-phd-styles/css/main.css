@@ -19007,3 +19007,34 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .promo-card__wrapper {
     margin-top: -4px;
 }
+
+.inline-accreditation a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.inline-accreditation a:hover, .inline-accreditation a:focus, .inline-accreditation a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.inline-accreditation a:hover {
+    opacity: 0.85;
+}
+
+.inline-accreditation a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.inline-accreditation a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.inline-accreditation img {
+    max-height: 2rem;
+}
