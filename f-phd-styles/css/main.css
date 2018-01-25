@@ -16432,7 +16432,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #00444d;
 }
 
-.footer-meta.section--phd:before {
+.footer-meta.section--phd:before, .footer-meta.section--executive-phd:before {
     background-color: #0077a0;
 }
 
