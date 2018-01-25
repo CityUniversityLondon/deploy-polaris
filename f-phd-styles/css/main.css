@@ -16428,6 +16428,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #00444d;
 }
 
+.footer-meta.section--phd:before {
+    background-color: #0077a0;
+}
+
 @media (max-width: 500px) {
     .footer-meta__card {
         width: 100%;
