@@ -17006,6 +17006,30 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #0077a0;
 }
 
+.scp--corporate .footer-meta.section--scp-theme:before {
+    background-color: #d92231;
+}
+
+.scp--undergraduate .footer-meta.section--scp-theme:before {
+    background-color: #f15f22;
+}
+
+.scp--masters .footer-meta.section--scp-theme:before {
+    background-color: #00284d;
+}
+
+.scp--phd .footer-meta.section--scp-theme:before {
+    background-color: #0077a0;
+}
+
+.scp--mba .footer-meta.section--scp-theme:before {
+    background-color: #00444d;
+}
+
+.scp--executive-education .footer-meta.section--scp-theme:before {
+    background-color: #842b91;
+}
+
 @media (max-width: 500px) {
     .footer-meta__card {
         width: 100%;
