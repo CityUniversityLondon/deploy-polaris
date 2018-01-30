@@ -15962,7 +15962,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .left-hand-navigation__menu > div > ul {
-    max-height: calc(100vh - 2.5rem);
+    max-height: calc(100vh - 4rem);
     margin: 0;
     overflow-y: auto;
 }
