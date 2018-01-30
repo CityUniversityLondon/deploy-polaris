@@ -9918,6 +9918,10 @@ picture,
     min-height: 100%;
 }
 
+.banner__over-image--no-img-bg .banner__content__text {
+    margin-bottom: 1rem !important;
+}
+
 .banner--cutout--none {
     margin-bottom: 2rem;
 }
