@@ -10747,6 +10747,53 @@ USED IN:
     }
 }
 
+.cta-group--centered {
+    text-align: center;
+}
+
+.cta-group--stretched {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 0;
+}
+
+.cta-group--stretched .cta {
+    font-size: 1rem;
+}
+
+@media (max-width: 650px) {
+    .cta-group--stretched .cta {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
+    }
+}
+
+@media (min-width: 651px) {
+    .cta-group--stretched .cta {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
+    }
+}
+
+@media (min-width: 651px) {
+    .cta-group--stretched .cta + .cta {
+        margin-left: 0.5rem;
+    }
+}
+
+.cta-group--stretched .fa, .cta-group--stretched .url-slide--right .url-slide__icon, .url-slide--right .cta-group--stretched .url-slide__icon, .cta-group--stretched .media-block .video-preview__button:before, .media-block .cta-group--stretched .video-preview__button:before, .cta-group--stretched .accordion__content__heading-anchor__icon, .cta-group--stretched .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon, .accordion.accordion--simple .accordion__content__heading-anchor .cta-group--stretched .accordion__content__heading-anchor__icon, .cta-group--stretched .js .tabs__content__heading-anchor__icon, .js .cta-group--stretched .tabs__content__heading-anchor__icon, .cta-group--stretched .js .accordion-tabs__content__heading-anchor__icon, .js .cta-group--stretched .accordion-tabs__content__heading-anchor__icon, .cta-group--stretched .header-toggle--menu .header-toggle__icon, .header-toggle--menu .cta-group--stretched .header-toggle__icon, .cta-group--stretched .header-toggle--search .header-toggle__icon, .header-toggle--search .cta-group--stretched .header-toggle__icon, .cta-group--stretched .popup-def-list-group__prevnext__prev .popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .cta-group--stretched .popup-def-list-group__prevnext__prev__icon, .cta-group--stretched .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .cta-group--stretched .popup-def-list-group__prevnext__next__icon, .cta-group--stretched .dialog__box__heading__close__icon {
+    float: right;
+}
+
 @media (min-width: 501px) {
     @supports ((display: -webkit-box) or (display: flex)) {
         .cta-group__grid--halves {
@@ -13674,6 +13721,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
 }
 
+.feature-news__card__body__topic a {
+    overflow: hidden;
+}
+
 .feature-news__card__body__topic--actuarial-science {
     background-color: inherit;
     color: inherit;
@@ -16594,6 +16645,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .footer-meta.section--mba:before {
     background-color: #00444d;
+}
+
+.footer-meta.section--phd, .footer-meta.section--executive-phd {
+    margin-top: 3.5rem;
 }
 
 .footer-meta.section--phd:before, .footer-meta.section--executive-phd:before {
