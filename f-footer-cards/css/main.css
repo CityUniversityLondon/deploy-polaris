@@ -17043,12 +17043,16 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (min-width: 501px) {
     .footer-meta__card {
         width: 50%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: stretch;
-            -ms-flex-align: stretch;
-                align-items: stretch;
+    }
+    @supports ((display: -webkit-box) or (display: flex)) {
+        .footer-meta__card {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: stretch;
+                -ms-flex-align: stretch;
+                    align-items: stretch;
+        }
     }
 }
 
