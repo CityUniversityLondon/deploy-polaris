@@ -17076,6 +17076,27 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.footer-meta__card__social {
+    margin-top: 1rem;
+}
+
+.footer-meta__card__social a {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.footer-meta__card__social a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.footer-meta__card__social a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.footer-meta__card__social span {
+    font-size: 1.2rem;
+}
+
 .scp--corporate .footer-meta {
     color: #1e1e1e !important;
 }
