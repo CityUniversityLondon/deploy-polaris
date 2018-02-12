@@ -17052,6 +17052,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
             -webkit-box-align: stretch;
                 -ms-flex-align: stretch;
                     align-items: stretch;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
         }
     }
 }
