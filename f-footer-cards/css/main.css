@@ -17312,6 +17312,29 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #842b91;
 }
 
+.footer-meta__card {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    .footer-meta__card {
+        margin-bottom: 1rem;
+    }
+}
+
+@supports ((display: -webkit-box) or (display: flex)) {
+    .footer-meta__card {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
 @media (max-width: 500px) {
     .footer-meta__card {
         width: 100%;
@@ -17321,26 +17344,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (min-width: 501px) {
     .footer-meta__card {
         width: 50%;
-        float: left;
-        margin-right: 5px;
-        max-width: 250px;
-    }
-    @supports ((display: -webkit-box) or (display: flex)) {
-        .footer-meta__card {
-            clear: both;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: stretch;
-                -ms-flex-align: stretch;
-                    align-items: stretch;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row;
-            max-width: 100%;
-            margin-right: 0;
-        }
     }
 }
 
@@ -17359,7 +17362,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     -webkit-box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
             box-shadow: 0 0 66px 3px rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
-    margin: 1rem;
+    height: 100%;
 }
 
 @media (max-width: 500px) {
@@ -17371,14 +17374,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (min-width: 501px) {
     .footer-meta__card__wrapper {
         width: 100%;
-    }
-}
-
-@supports ((display: -webkit-box) or (display: flex)) {
-    @media (min-width: 901px) {
-        .footer-meta__card__wrapper:nth-child(1) {
-            margin: 1rem 2rem 1rem 0;
-        }
     }
 }
 
