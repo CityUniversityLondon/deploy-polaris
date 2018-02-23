@@ -11813,7 +11813,6 @@ USED IN:
 
 @media (min-width: 1201px) {
     .key-info__item {
-        width: auto;
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -11825,10 +11824,8 @@ USED IN:
     }
 }
 
-@media (max-width: 900px) {
-    .key-info__item:nth-child(3) {
-        margin-top: 2rem;
-    }
+.key-info__item:nth-child(3) {
+    margin-top: 2rem;
 }
 
 @media (min-width: 1201px) {
