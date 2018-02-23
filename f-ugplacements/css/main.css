@@ -11813,14 +11813,9 @@ USED IN:
 
 @media (min-width: 1201px) {
     .key-info__item {
+        width: auto;
         padding-left: 2rem;
         padding-right: 2rem;
-    }
-}
-
-@media (min-width: 1201px) {
-    .key-info__item:nth-child(1n+5) {
-        margin-top: 2rem;
     }
 }
 
@@ -11836,15 +11831,27 @@ USED IN:
     }
 }
 
+@media (max-width: 500px) {
+    .key-info__item:nth-child(1n+2) {
+        margin-top: 1rem;
+    }
+}
+
 @media (min-width: 1201px) {
-    .key-info__item:nth-child(5) {
+    .key-info--with-placement .key-info__item {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .key-info--with-placement .key-info__item:nth-child(5) {
         margin-left: 25%;
     }
 }
 
-@media (max-width: 500px) {
-    .key-info__item:nth-child(1n+2) {
-        margin-top: 1rem;
+@media (min-width: 1201px) {
+    .key-info--with-placement .key-info__item:nth-child(1n+5) {
+        margin-top: 2rem;
     }
 }
 
