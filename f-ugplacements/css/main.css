@@ -11818,10 +11818,8 @@ USED IN:
     }
 }
 
-@media (max-width: 1200px) {
-    .key-info__item:nth-child(1n+4) {
-        margin-top: 2rem;
-    }
+.key-info__item:nth-child(1n+4) {
+    margin-top: 2rem;
 }
 
 @media (max-width: 900px) {
