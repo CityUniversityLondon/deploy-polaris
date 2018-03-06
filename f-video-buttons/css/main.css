@@ -15913,22 +15913,23 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .video-banner__play {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
-    border: 1px solid white;
-    width: 1.5rem;
+    background-color: #ececec;
+    color: #1e1e1e;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+    border: 0;
+    background: white;
+    padding: 0.25rem 0;
+    width: 2rem;
     text-align: center;
     display: inline-block;
 }
 
-.video-banner__play:hover {
-    border-color: #D8D8D8;
-    color: #D8D8D8;
-    background-color: transparent;
-}
-
-.video-banner__play:focus, .video-banner__play:active {
-    outline-color: #ffffff;
+.video-banner__play:hover, .video-banner__play:focus, .video-banner__play:active {
+    background-color: #d0cfcb;
+    color: #1e1e1e;
 }
 
 .video-banner__play--center {
