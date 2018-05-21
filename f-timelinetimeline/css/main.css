@@ -20365,7 +20365,7 @@ table tbody > tr > td:hover {
 
 .timeline .timeline__collection .timeline__collection__icon {
     position: absolute;
-    background-color: #d92231;
+    background-color: #d0cfcb;
     width: 60px;
     height: 60px;
     left: 50%;
@@ -20379,6 +20379,22 @@ table tbody > tr > td:hover {
         height: 40px;
         left: 10%;
         margin-left: -18px;
+    }
+}
+
+.timeline .timeline__collection .timeline__collection__icon span {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    left: 16px;
+    top: 15px;
+}
+
+@media (max-width: 500px) {
+    .timeline .timeline__collection .timeline__collection__icon span {
+        font-size: 20px;
+        left: 10px;
+        top: 10px;
     }
 }
 
@@ -20420,6 +20436,26 @@ table tbody > tr > td:hover {
 
 .timeline .timeline__collection--hide {
     visibility: hidden;
+}
+
+.scp--masters .timeline__collection .timeline__collection__icon {
+    background-color: #0077a0;
+}
+
+.scp--undergraduate .timeline__collection .timeline__collection__icon {
+    background-color: #fbae3b;
+}
+
+.scp--mba .timeline__collection .timeline__collection__icon {
+    background-color: #88d1ce;
+}
+
+.scp--phd .timeline__collection .timeline__collection__icon {
+    background-color: #49c7ed;
+}
+
+.scp--executive-education .timeline__collection .timeline__collection__icon {
+    background-color: #ee3780;
 }
 
 @-webkit-keyframes timeline-bounce-inverse {
