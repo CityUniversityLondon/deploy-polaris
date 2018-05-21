@@ -20327,6 +20327,7 @@ table tbody > tr > td:hover {
 
 .timeline {
     position: relative;
+    margin-bottom: 3rem;
 }
 
 .timeline:before {
