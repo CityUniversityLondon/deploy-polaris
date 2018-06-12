@@ -20643,7 +20643,7 @@ table tbody > tr > td:hover {
 
 .mba-popup__form__close {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
     background-color: #d92231;
     color: #ffffff;
