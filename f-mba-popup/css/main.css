@@ -20602,6 +20602,10 @@ table tbody > tr > td:hover {
     z-index: 4;
 }
 
+.mba-popup h2 {
+    max-width: 70%;
+}
+
 .mba-popup.open {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
