@@ -20696,6 +20696,7 @@ table tbody > tr > td:hover {
 .student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box {
     width: 30%;
     margin: 0 0.5rem;
+    position: relative;
 }
 
 @media (max-width: 500px) {
@@ -20707,12 +20708,40 @@ table tbody > tr > td:hover {
 
 .student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box select {
     width: 100%;
-    text-transform: capitalize;
-    width: 100%;
-    text-transform: capitalize;
     padding: 3px 20px 3px 6px;
     height: 42px;
-    border-color: #cacacc;
+    border: 1px solid #ededee;
+    color: #3a343a;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 0;
+    background-image: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+}
+
+.student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box select::-ms-expand {
+    display: none;
+}
+
+.student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box:after {
+    pointer-events: none;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 12px;
+    margin: -5px 0 0 -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 4px 0 4px;
+    border-color: #3a343a transparent transparent transparent;
+}
+
+.student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box select::-ms-expand {
+    display: none;
 }
 
 .student-profiles-search .student-profiles-search__top .student-profiles-search__loadingSpinner {
