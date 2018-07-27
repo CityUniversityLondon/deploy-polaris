@@ -8972,6 +8972,12 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 500px) {
+    .accordion-tabs__content {
+        background: red;
+    }
+}
+
 .accordion-tabs__content__group {
     overflow: hidden;
 }
