@@ -16830,7 +16830,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     line-height: 1.5;
 }
 
-/** :focus styles **/
+/** :active/:focus styles **/
 .vertical-menu__page-link {
     left: 0.2rem;
 }
@@ -16847,8 +16847,17 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin-bottom: 0.2rem;
 }
 
+.vertical-menu.vertical-menu--l3.open ul {
+    background: #e5e5e5;
+}
+
 .vertical-menu__page-link:focus, .vertical-menu__toggle-link:focus {
     outline: 0.2rem solid #1e1e1e;
+}
+
+.vertical-menu__page-link:active, .vertical-menu__toggle-link:active,
+.vertical-menu__page-link:active:focus, .vertical-menu__toggle-link:active:focus {
+    outline: 2px dotted #1e1e1e;
 }
 
 .vertical-menu__toggle-link {
@@ -16859,7 +16868,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     right: 0.2rem;
 }
 
-/** End :focus styles **/
+/** End :active/:focus styles **/
 .course-search {
     margin: 2rem 0;
 }
