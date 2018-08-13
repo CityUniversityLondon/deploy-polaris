@@ -7997,6 +7997,10 @@ svg:not(:root) {
     outline: 2px dotted #1e1e1e;
 }
 
+.secondary-navigation__list a:focus {
+    padding: 0.9rem 0.5rem 0.9rem;
+}
+
 .tertiary-navigation--desktop {
     position: absolute;
     bottom: 100%;
