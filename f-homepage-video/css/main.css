@@ -16059,6 +16059,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     width: 60%;
 }
 
+@media (min-width: 901px) and (max-width: 1200px) {
+    .video-banner__text__wrapper .video-banner__text {
+        bottom: 25px;
+    }
+}
+
 .video-banner__text__wrapper .video-banner__text .video-banner__text__title,
 .video-banner__text__wrapper .video-banner__text .video-banner__text__subtitle {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -16089,7 +16095,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (max-width: 900px) {
     .video-banner__text__wrapper .video-banner__text .video-banner__text__title {
-        margin: auto;
         font-size: 1.728rem;
     }
 }
