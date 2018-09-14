@@ -15983,6 +15983,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     background-color: #666666;
 }
 
+.youtube-embed-container {
+    display: none;
+}
+
 .image-banner {
     color: white;
 }
@@ -16024,6 +16028,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin: 5px auto;
     padding: 5px;
     text-align: center;
+}
+
+.image-banner .image-banner__text__wrapper .video-cta:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 500px) {
