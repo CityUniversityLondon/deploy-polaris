@@ -15985,6 +15985,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .youtube-embed-container {
     display: none;
+    width: 90%;
+    margin: auto;
 }
 
 .image-banner {
