@@ -15989,6 +15989,12 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     margin: auto;
 }
 
+@media (min-width: 501px) {
+    .youtube-embed-container {
+        max-width: 84%;
+    }
+}
+
 .image-banner {
     color: white;
 }
@@ -15996,8 +16002,18 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (max-width: 500px) {
     .image-banner {
         display: block;
-        background-image: url("https://www.cass.city.ac.uk/_media/images/Mobile-cass.jpg");
         height: 400px;
+    }
+    .image-banner:after {
+        content: "";
+        background: url(https://www.cass.city.ac.uk/_media/images/Mobile-cass.jpg);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
     }
 }
 
@@ -16014,6 +16030,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .image-banner .image-banner__text__wrapper {
     top: 15%;
     position: relative;
+    z-index: 2;
 }
 
 .image-banner .image-banner__text__wrapper h2 {
@@ -16024,22 +16041,38 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 }
 
 .image-banner .image-banner__text__wrapper .video-cta {
-    position: relative;
-    border: 1px solid white;
+    display: block;
+    border-bottom-width: 0;
+    background-color: white;
+    color: #1e1e1e;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
     width: 60%;
-    margin: 5px auto;
-    padding: 5px;
     text-align: center;
 }
 
 .image-banner .image-banner__text__wrapper .video-cta:hover {
+    background-color: #ececec;
+    color: #1e1e1e;
     cursor: pointer;
+}
+
+.image-banner .image-banner__text__wrapper .video-cta:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.image-banner .image-banner__text__wrapper .video-cta:focus {
+    outline: 3px solid #1e1e1e;
 }
 
 @media (max-width: 500px) {
     .section--lightgray.promo-card__wrapper.left-box, .promo-card__wrapper.left-box.course-finder__main, .promo-card__wrapper.left-box.expert-finder__main {
         width: 90%;
         margin: -110px auto 0;
+        z-index: 2;
+        padding-top: 0.5rem;
     }
 }
 
@@ -16142,7 +16175,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: #fafafa;
     font-size: 2.0736rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.375;
     margin: auto;
     text-shadow: 0 0 1px #1e1e1e;
