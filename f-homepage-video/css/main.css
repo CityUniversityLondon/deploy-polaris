@@ -16069,10 +16069,18 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 @media (max-width: 500px) {
     .section--lightgray.promo-card__wrapper.left-box, .promo-card__wrapper.left-box.course-finder__main, .promo-card__wrapper.left-box.expert-finder__main {
-        width: 90%;
-        margin: -110px auto 0;
+        width: 100%;
+        margin: 0 auto 0;
         z-index: 2;
         padding-top: 0.5rem;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0)), color-stop(0, #f2f2f2));
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, #f2f2f2 0);
+    }
+    .section--lightgray.promo-card__wrapper.left-box .grid__6:first-of-type, .promo-card__wrapper.left-box.course-finder__main .grid__6:first-of-type, .promo-card__wrapper.left-box.expert-finder__main .grid__6:first-of-type {
+        margin-top: -110px;
+    }
+    .section--lightgray.promo-card__wrapper.left-box .promo-cta, .promo-card__wrapper.left-box.course-finder__main .promo-cta, .promo-card__wrapper.left-box.expert-finder__main .promo-cta {
+        padding: 10px 15px;
     }
 }
 
