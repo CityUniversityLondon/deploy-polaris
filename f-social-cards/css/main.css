@@ -15799,13 +15799,16 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     top: 0;
     color: #fff;
     padding: 10px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#1e1e1e00));
-    background: linear-gradient(#1e1e1e, #1e1e1e00);
+    background: transparent;
     padding: 40px 64px 64px 64px;
 }
 
 .connect-social__card--insta .connect-social__card__ribbon .connect-social__card__ribbon__icon {
     color: #fff;
+}
+
+.connect-social__card--insta .connect-social__card__ribbon .fa.fa-instagram, .connect-social__card--insta .connect-social__card__ribbon .url-slide--right .fa-instagram.url-slide__icon, .url-slide--right .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.url-slide__icon, .connect-social__card--insta .connect-social__card__ribbon .media-block .fa-instagram.video-preview__button:before, .media-block .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.video-preview__button:before, .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.accordion__content__heading-anchor__icon, .connect-social__card--insta .connect-social__card__ribbon .js .fa-instagram.tabs__content__heading-anchor__icon, .js .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.tabs__content__heading-anchor__icon, .connect-social__card--insta .connect-social__card__ribbon .js .fa-instagram.accordion-tabs__content__heading-anchor__icon, .js .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.accordion-tabs__content__heading-anchor__icon, .connect-social__card--insta .connect-social__card__ribbon .header-toggle--menu .fa-instagram.header-toggle__icon, .header-toggle--menu .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.header-toggle__icon, .connect-social__card--insta .connect-social__card__ribbon .header-toggle--search .fa-instagram.header-toggle__icon, .header-toggle--search .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.header-toggle__icon, .connect-social__card--insta .connect-social__card__ribbon .popup-def-list-group__prevnext__prev .fa-instagram.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.popup-def-list-group__prevnext__prev__icon, .connect-social__card--insta .connect-social__card__ribbon .popup-def-list-group__prevnext__next .fa-instagram.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.popup-def-list-group__prevnext__next__icon, .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.dialog__box__heading__close__icon, .connect-social__card--insta .connect-social__card__ribbon .video-banner__play span.fa-instagram, .video-banner__play .connect-social__card--insta .connect-social__card__ribbon span.fa-instagram, .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.mba-popup__form__close__icon {
+    text-shadow: 0 0 10px #000;
 }
 
 .connect-social__card--insta a {
