@@ -16177,7 +16177,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100%;
+    height: auto;
+    margin-top: 16%;
 }
 
 .video-banner__text__wrapper .video-banner__text {
