@@ -16062,6 +16062,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     outline: 3px solid #1e1e1e;
 }
 
+.promo-cta h2 {
+    padding: 0;
+}
+
 .section--lightgray.promo-card__wrapper, .promo-card__wrapper.course-finder__main, .promo-card__wrapper.expert-finder__main {
     padding-bottom: 40px;
 }
