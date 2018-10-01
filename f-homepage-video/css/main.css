@@ -16002,7 +16002,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
     .image-banner:after {
         content: "";
-        background: url(https://www.cass.city.ac.uk/_media/images/mobile-cass.jpg);
+        background: url("https://www.cass.city.ac.uk/_media/images/mobile-cass.jpg");
         top: 0;
         left: 0;
         bottom: 0;
@@ -16082,7 +16082,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 @media (max-width: 650px) {
     .section--lightgray.promo-card__wrapper .left-box, .promo-card__wrapper.course-finder__main .left-box, .promo-card__wrapper.expert-finder__main .left-box {
         width: 100%;
-        margin: 0 auto 0;
+        margin: 0 auto;
         z-index: 2;
         padding-top: 0.5rem;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(0, 0, 0, 0)), color-stop(0, #f2f2f2));
