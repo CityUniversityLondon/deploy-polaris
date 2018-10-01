@@ -16009,7 +16009,6 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
         right: 0;
         position: absolute;
         z-index: 1;
-        opacity: 0.5;
     }
 }
 
