@@ -21106,6 +21106,12 @@ table tbody > tr > td:hover {
     top: 0;
 }
 
+.video-popup__button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .dialog {
     background: rgba(30, 30, 30, 0.7);
     width: 100%;
