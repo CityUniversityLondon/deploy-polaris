@@ -10253,9 +10253,13 @@ svg:not(:root) {
 }
 
 .banner--video {
-    position: relative;
-    padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+    .banner--video {
+        padding-top: 3.5rem;
+    }
 }
 
 .banner--video:not(.banner--video--imgbg) {
@@ -10322,7 +10326,6 @@ svg:not(:root) {
 
 @media (max-width: 900px) {
     .banner--video .banner__content .banner__content__text {
-        margin-top: 1rem;
         margin-bottom: 1rem;
         padding-top: 0;
     }
@@ -10334,6 +10337,7 @@ svg:not(:root) {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position: relative;
+    padding-top: 0;
 }
 
 @supports (display: flex) {
@@ -10354,6 +10358,12 @@ svg:not(:root) {
 @media (min-width: 901px) {
     .banner__content__video {
         width: 50%;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner__content__video {
+        padding-top: 1rem;
     }
 }
 
