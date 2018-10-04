@@ -7877,9 +7877,8 @@ svg:not(:root) {
     position: relative;
     background-color: #fafafa;
     display: inline-block;
-    border-width: 1px 0;
-    border-style: solid;
-    border-color: #d0cfcb;
+    -webkit-box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 @supports (display: flex) {
@@ -10253,32 +10252,19 @@ svg:not(:root) {
 }
 
 .banner--video {
-    position: relative;
-    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.banner--video:not(.banner--video--imgbg) {
-    background: -webkit-gradient(linear, left bottom, left top, from(#2f2f2f), to(#2f2f2f)) no-repeat;
-    background: linear-gradient(0deg, #2f2f2f, #2f2f2f) no-repeat;
-}
-
 @media (max-width: 900px) {
-    .banner--video:not(.banner--video--imgbg) {
-        background-size: 100% 60%;
+    .banner--video {
+        padding-top: 3.5rem;
     }
 }
 
-@media (min-width: 901px) {
-    .banner--video:not(.banner--video--imgbg) {
-        background-size: calc(100% - 2 * 2rem) 60%;
-    }
-}
-
-@media (min-width: 1441px) {
-    .banner--video:not(.banner--video--imgbg) {
-        background-size: calc(50% + 1200px / 2 - 2 * 2rem) 60%;
-    }
+.banner--video:not(.banner--video--imgbg) {
+    background: -webkit-gradient(linear, left bottom, left top, from(#1e1e1e), to(#1e1e1e)) no-repeat;
+    background: linear-gradient(0deg, #1e1e1e, #1e1e1e) no-repeat;
+    background-size: 100% 60%;
 }
 
 .banner--video .banner__imgbg {
@@ -10289,12 +10275,6 @@ svg:not(:root) {
     width: auto;
     height: 60%;
     overflow: hidden;
-}
-
-@media (max-width: 900px) {
-    .banner--video .banner__imgbg {
-        display: none;
-    }
 }
 
 .banner--video .banner__imgbg img {
@@ -10345,7 +10325,6 @@ svg:not(:root) {
 
 @media (max-width: 900px) {
     .banner--video .banner__content .banner__content__text {
-        margin-top: 1rem;
         margin-bottom: 1rem;
         padding-top: 0;
     }
@@ -10357,6 +10336,7 @@ svg:not(:root) {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position: relative;
+    padding-top: 0;
 }
 
 @supports (display: flex) {
@@ -10377,6 +10357,12 @@ svg:not(:root) {
 @media (min-width: 901px) {
     .banner__content__video {
         width: 50%;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner__content__video {
+        padding-top: 2rem;
     }
 }
 
@@ -10628,8 +10614,11 @@ USED IN:
     width: calc(100% + 1rem);
     margin-left: -0.5rem;
     margin-right: -0.5rem;
+    background-color: #fafafa;
+    -webkit-box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.15);
     font-size: 14px;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0;
 }
 
 @supports (display: flex) {
@@ -11399,6 +11388,7 @@ USED IN:
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-size: 0;
+    margin-bottom: 1.5rem;
 }
 
 .cta-group--stretched .cta {
@@ -12030,19 +12020,27 @@ USED IN:
 @media (min-width: 1201px) {
     .key-info__item {
         width: auto;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .key-info__item {
+        width: 33.33%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .key-info__item {
+        width: 100%;
     }
 }
 
 @media (max-width: 1200px) {
     .key-info__item:nth-child(1n+4) {
-        margin-top: 2rem;
-    }
-}
-
-@media (max-width: 900px) {
-    .key-info__item:nth-child(3) {
         margin-top: 2rem;
     }
 }
@@ -15816,18 +15814,17 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .connect-social__card--insta .connect-social__card__ribbon {
     position: absolute;
     top: 0;
-    color: #fff;
-    padding: 10px;
+    color: #ffffff;
     background: transparent;
-    padding: 40px 64px 64px 64px;
+    padding: 40px 64px 64px;
 }
 
 .connect-social__card--insta .connect-social__card__ribbon .connect-social__card__ribbon__icon {
-    color: #fff;
+    color: #ffffff;
 }
 
 .connect-social__card--insta .connect-social__card__ribbon .fa.fa-instagram, .connect-social__card--insta .connect-social__card__ribbon .url-slide--right .fa-instagram.url-slide__icon, .url-slide--right .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.url-slide__icon, .connect-social__card--insta .connect-social__card__ribbon .media-block .fa-instagram.video-preview__button:before, .media-block .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.video-preview__button:before, .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.accordion__content__heading-anchor__icon, .connect-social__card--insta .connect-social__card__ribbon .js .fa-instagram.tabs__content__heading-anchor__icon, .js .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.tabs__content__heading-anchor__icon, .connect-social__card--insta .connect-social__card__ribbon .js .fa-instagram.accordion-tabs__content__heading-anchor__icon, .js .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.accordion-tabs__content__heading-anchor__icon, .connect-social__card--insta .connect-social__card__ribbon .header-toggle--menu .fa-instagram.header-toggle__icon, .header-toggle--menu .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.header-toggle__icon, .connect-social__card--insta .connect-social__card__ribbon .header-toggle--search .fa-instagram.header-toggle__icon, .header-toggle--search .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.header-toggle__icon, .connect-social__card--insta .connect-social__card__ribbon .popup-def-list-group__prevnext__prev .fa-instagram.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.popup-def-list-group__prevnext__prev__icon, .connect-social__card--insta .connect-social__card__ribbon .popup-def-list-group__prevnext__next .fa-instagram.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.popup-def-list-group__prevnext__next__icon, .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.dialog__box__heading__close__icon, .connect-social__card--insta .connect-social__card__ribbon .video-banner__play span.fa-instagram, .video-banner__play .connect-social__card--insta .connect-social__card__ribbon span.fa-instagram, .connect-social__card--insta .connect-social__card__ribbon .fa-instagram.mba-popup__form__close__icon {
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 10px #000000;
 }
 
 .connect-social__card--insta a {
@@ -16017,6 +16014,14 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .promo-cta--black h2:after {
     background-color: #666666;
+}
+
+.promo-cta--white-purple {
+    background-color: white;
+}
+
+.promo-cta--white-purple h2:after {
+    background-color: #842b91;
 }
 
 .video-banner {
@@ -20501,7 +20506,7 @@ table tbody > tr > td:hover {
 }
 
 .timeline .timeline__collection .timeline__collection__icon span {
-    color: #fff;
+    color: #ffffff;
     font-size: 30px;
     position: relative;
     left: 16px;
@@ -20806,7 +20811,7 @@ table tbody > tr > td:hover {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 0;
     background-image: none;
     text-indent: 0.01px;
@@ -20827,8 +20832,8 @@ table tbody > tr > td:hover {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7px 4px 0 4px;
-    border-color: #3a343a transparent transparent transparent;
+    border-width: 7px 4px 0;
+    border-color: #3a343a transparent transparent;
 }
 
 .student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box select::-ms-expand {
@@ -20858,7 +20863,7 @@ table tbody > tr > td:hover {
     display: inline-block;
     padding: 0.5rem;
     margin-left: 0.3rem;
-    border: 2px solid #000;
+    border: 2px solid #000000;
     margin-top: 6px;
 }
 
@@ -21046,7 +21051,6 @@ table tbody > tr > td:hover {
 }
 
 .student-profiles-search .student-profiles-search__bottom .student-profiles-search__profileInfo #student-profiles-search__profileInfo__wrap-progress-bar {
-    width: 200px;
     height: 3px;
     background-color: #fafafa;
     margin: auto;
