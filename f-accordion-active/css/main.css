@@ -8398,6 +8398,7 @@ svg:not(:root) {
 .accordion {
     margin-bottom: 2rem;
     margin-top: 2rem;
+    border: 1px solid #a1a1a1;
 }
 
 .accordion__content__heading-anchor__icon {
@@ -8408,6 +8409,9 @@ svg:not(:root) {
     border: 2px dotted #1e1e1e;
     border-bottom: 0;
     margin: 0 0 2px;
+    color: #1e1e1e;
+    text-decoration: underline;
+    border-bottom: 1px dotted #a1a1a1;
 }
 
 .accordion__content__heading-anchor {
@@ -8425,6 +8429,9 @@ svg:not(:root) {
     display: block;
     padding-left: 1rem;
     padding-right: 1rem;
+    color: #005EA5;
+    border-bottom: 1px dotted #A1A1A1;
+    background: white;
 }
 
 .accordion__content__heading-anchor:hover {
@@ -8478,6 +8485,16 @@ svg:not(:root) {
 
 .accordion__content__heading-anchor h2, .accordion__content__heading-anchor h3, .accordion__content__heading-anchor h4 {
     margin: 0;
+}
+
+.accordion__content__heading-anchor:last-of-type {
+    border-bottom: 0;
+}
+
+.accordion__content__heading-anchor:hover, .accordion__content__heading-anchor:active {
+    color: #1E1E1E;
+    border-bottom: 1px dotted #a1a1a1;
+    text-decoration: underline;
 }
 
 .accordion__content__group {
