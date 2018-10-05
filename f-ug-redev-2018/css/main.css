@@ -10743,6 +10743,27 @@ USED IN:
     border-bottom: 1px solid #0077a0;
 }
 
+.stats-block.stats-block--orange {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fbae3b), to(#f15f22));
+    background-image: linear-gradient(to bottom, #fbae3b, #f15f22);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: auto;
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .stats-block.stats-block--orange {
+        margin-top: 2rem;
+    }
+}
+
+.stats-block.stats-block--orange h2 {
+    margin: 0 5%;
+    width: auto;
+    border-bottom: 1px solid #f15f22;
+}
+
 .stats-block__grid {
     width: 100%;
     margin-left: auto;
@@ -11000,6 +11021,69 @@ USED IN:
     text-align: center;
     padding-bottom: 2rem;
     padding-top: 2rem;
+}
+
+.stats-block.stats-block--orange .stats-block__item {
+    margin: 2rem 0;
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports (display: flex) {
+    .stats-block.stats-block--orange .stats-block__item {
+        float: none;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .stats-block.stats-block--orange .stats-block__item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .stats-block.stats-block--orange .stats-block__item {
+        width: 33.333%;
+    }
+}
+
+@media (min-width: 501px) {
+    .stats-block.stats-block--orange .stats-block__item {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    .stats-block.stats-block--orange .stats-block__item:nth-child(1), .stats-block.stats-block--orange .stats-block__item:nth-child(2) {
+        border-right: 1px solid #f15f22;
+    }
+    @supports (display: flex) {
+        .stats-block.stats-block--orange .stats-block__item {
+            float: none;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    .stats-block.stats-block--orange .stats-block__item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) and (min-width: 901px) {
+    .stats-block.stats-block--orange .stats-block__item {
+        width: 33.333%;
+    }
 }
 
 .stats-block__item__value {
@@ -13377,6 +13461,66 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (min-width: 901px) and (max-width: 1200px) {
+    .profile-bracket-block__img {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    @supports (display: flex) {
+        .profile-bracket-block__img {
+            float: none;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) and (max-width: 320px) {
+    .profile-bracket-block__img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) and (min-width: 321px) {
+    .profile-bracket-block__img {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .profile-bracket-block__img {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    @supports (display: flex) {
+        .profile-bracket-block__img {
+            float: none;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 320px) {
+    .profile-bracket-block__img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) and (min-width: 321px) {
+    .profile-bracket-block__img {
+        width: 16.667%;
+    }
+}
+
 .profile-bracket-block__text {
     /** TODO: Is min height necessary? **/
     float: left;
@@ -13408,10 +13552,76 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (min-width: 901px) and (max-width: 1200px) {
+    .profile-bracket-block__text {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    @supports (display: flex) {
+        .profile-bracket-block__text {
+            float: none;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) and (max-width: 320px) {
+    .profile-bracket-block__text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) and (min-width: 321px) {
+    .profile-bracket-block__text {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .profile-bracket-block__text {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    @supports (display: flex) {
+        .profile-bracket-block__text {
+            float: none;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 320px) {
+    .profile-bracket-block__text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) and (min-width: 321px) {
+    .profile-bracket-block__text {
+        width: 83.333%;
+    }
+}
+
 .profile-bracket-block__text__name {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.44rem;
+    font-size: 1.2rem;
     font-weight: 300;
+}
+
+@media (min-width: 901px) {
+    .profile-bracket-block__text__name {
+        font-size: 1.44rem;
+    }
 }
 
 .profile-bracket-block__item {
@@ -21333,6 +21543,46 @@ table tbody > tr > td:hover {
 .cta-test-yellow {
     display: inline-block;
     width: 140px;
+}
+
+@media (max-width: 900px) {
+    .cta-test-yellow {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    @supports (display: flex) {
+        .cta-test-yellow {
+            float: none;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+        }
+    }
+}
+
+@media (max-width: 900px) and (max-width: 900px) {
+    .cta-test-yellow {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 901px) {
+    .cta-test-yellow {
+        width: 100%;
+    }
+}
+
+.cta-test-yellow.cta-test-yellow--second {
+    margin-top: 10px;
+}
+
+@media (min-width: 901px) {
+    .cta-test-yellow.cta-test-yellow--second {
+        margin-top: 0;
+    }
 }
 
 .cta-block {
