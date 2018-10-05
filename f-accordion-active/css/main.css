@@ -8525,7 +8525,7 @@ svg:not(:root) {
 
 .accordion__content__heading-anchor__label {
     display: inline-block;
-    width: 95%;
+    width: 90%;
     line-height: 1.7rem;
 }
 
