@@ -8511,7 +8511,7 @@ svg:not(:root) {
 }
 
 .accordion__content__heading-anchor:last-of-type {
-    border-bottom: 1px dotted #f2f2f2;
+    border-bottom: 1px dotted #a1a1a1;
 }
 
 .accordion__content__heading-anchor:active {
