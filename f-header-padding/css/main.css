@@ -5808,6 +5808,7 @@ svg:not(:root) {
     .header__logo {
         width: 50%;
         padding: 1rem 0.5rem;
+        margin-bottom: -40px;
     }
 }
 
