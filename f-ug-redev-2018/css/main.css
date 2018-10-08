@@ -21443,6 +21443,7 @@ table tbody > tr > td:hover {
     height: 300px;
     overflow: hidden;
     margin: -20px -10px  0 -10px;
+    position: relative;
 }
 
 .video-banner--popup img.video-popup__img {
@@ -21460,76 +21461,52 @@ table tbody > tr > td:hover {
     margin-bottom: 0;
 }
 
-.video-popup__button {
-    position: absolute;
-    background-color: transparent;
-    z-index: 2;
-    border-bottom: none;
-    left: 0;
-    top: 0;
+.video-banner--popup.video--playing {
+    -webkit-transition: margin 2s ease;
+    transition: margin 2s ease;
+    -webkit-transition: padding 2s ease;
+    transition: padding 2s ease;
+    -webkit-transition: height 2s ease;
+    transition: height 2s ease;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #1e1e1e;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
 }
 
-.video-popup__button span {
-    position: absolute;
-    left: 0;
-    top: 0;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /*16:9*/
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 
-.dialog {
-    background: rgba(30, 30, 30, 0.7);
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
-.dialog .dialog__close--video-popup {
-    -webkit-transition: -webkit-transform 200ms;
-    transition: -webkit-transform 200ms;
-    transition: transform 200ms;
-    transition: transform 200ms, -webkit-transform 200ms;
-    background-image: none;
-    text-indent: 0;
-    font-size: 50px;
-    width: 50px;
-    height: 50px;
-    color: #ffffff;
+.dialog__close--video-popup {
     position: absolute;
-    top: 10px;
     right: 10px;
-    background-color: transparent;
-    border: none;
+    top: 0;
+    font-size: 1.6rem;
+    color: white;
 }
 
-.dialog .dialog__close--video-popup:hoverc {
-    cursor: pointer;
-    color: #aaaaaa;
-}
-
-.dialog .dialog__box {
-    width: 500px;
-    display: inline-block;
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-    overflow-y: auto;
-}
-
-.dialog .dialog__box iframe {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+@media (min-width: 901px) {
+    .dialog__close--video-popup {
+        right: 50px;
+    }
 }
 
 .anchor-demo-list li {
