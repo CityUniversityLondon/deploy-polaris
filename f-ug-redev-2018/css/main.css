@@ -21715,3 +21715,42 @@ table tbody > tr > td:hover {
     display: block;
     margin-top: 10px;
 }
+
+.url-dropdown {
+    position: relative;
+}
+
+select[title='Select entry year'] {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #555555;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    border: none;
+    border-radius: 0px;
+    outline: 2px solid #979797;
+    padding: 5px 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    min-width: 120px;
+    display: inline-block;
+}
+
+select[title='Select entry year']::-ms-expand {
+    display: none;
+}
+
+.select__arrow__entry-year {
+    position: absolute;
+    color: #555555;
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 6px 0 6px;
+    border-color: #2c2c2c transparent transparent transparent;
+}
