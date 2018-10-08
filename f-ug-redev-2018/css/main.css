@@ -5808,7 +5808,6 @@ svg:not(:root) {
     .header__logo {
         width: 50%;
         padding: 1rem 0.5rem;
-        margin-bottom: -40px;
     }
 }
 
@@ -16244,6 +16243,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 
 .image-banner {
     color: white;
+    margin-top: -40px;
 }
 
 @media (max-width: 650px) {
@@ -16261,6 +16261,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
         right: 0;
         position: absolute;
         z-index: 1;
+        max-height: 500px;
     }
 }
 
