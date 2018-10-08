@@ -21754,3 +21754,13 @@ select[title='Select entry year']::-ms-expand {
     border-width: 8px 6px 0 6px;
     border-color: #2c2c2c transparent transparent transparent;
 }
+
+.stats-block__piechart .stats-block__piechart__value {
+    stroke: #1e1e1e;
+}
+
+.stats-block__piechart .stats-block__piechart__base {
+    fill: none;
+    stroke: black;
+    stroke-opacity: 0.5;
+}
