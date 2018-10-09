@@ -7879,6 +7879,7 @@ svg:not(:root) {
     display: inline-block;
     -webkit-box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.15);
+    z-index: 1;
 }
 
 @supports (display: flex) {
