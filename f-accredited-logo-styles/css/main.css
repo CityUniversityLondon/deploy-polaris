@@ -12429,14 +12429,15 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transition: opacity 1s ease-in-out 0s, -webkit-filter 1s ease-in-out 0s;
-    transition: opacity 1s ease-in-out 0s, -webkit-filter 1s ease-in-out 0s;
+    -webkit-transition: opacity 0.5s ease-in-out 0s, -webkit-filter 0.5s ease-in-out 0s;
+    transition: opacity 0.5s ease-in-out 0s, -webkit-filter 0.5s ease-in-out 0s;
 }
 
 .external-img-link-strip > a[data-url] {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
+    display: block;
 }
 
 .external-img-link-strip > a[data-url]:hover, .external-img-link-strip > a[data-url]:focus, .external-img-link-strip > a[data-url]:active {
@@ -12465,8 +12466,8 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     text-shadow: 0 0 1px #ffffff;
     pointer-events: none;
     z-index: 2;
-    -webkit-transition: opacity 1s ease-in-out 0s;
-    transition: opacity 1s ease-in-out 0s;
+    -webkit-transition: opacity 0.5s ease-in-out 0s;
+    transition: opacity 0.5s ease-in-out 0s;
 }
 
 .lt-ie10 .external-img-link-strip > a[data-url]:after {
@@ -12479,16 +12480,25 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
 .external-img-link-strip > a[data-url] img {
     transition: opacity 0.2s ease 0s;
     /* autoprefixer: off */
-    transition: opacity 1s ease-in-out 0s;
+    transition: opacity 0.5s ease-in-out 0s;
 }
 
-.external-img-link-strip > a[data-url]:hover:after, .external-img-link-strip > a[data-url]:focus:after, .external-img-link-strip > a[data-url]:active:after {
-    opacity: 1;
+@media (min-width: 901px) {
+    .external-img-link-strip > a[data-url]:hover:after {
+        opacity: 1;
+    }
+    .external-img-link-strip > a[data-url]:hover img {
+        opacity: 0;
+        /* autoprefixer: off */
+    }
 }
 
-.external-img-link-strip > a[data-url]:hover img, .external-img-link-strip > a[data-url]:focus img, .external-img-link-strip > a[data-url]:active img {
-    opacity: 0;
-    /* autoprefixer: off */
+.external-img-link-strip > a[data-url]:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.external-img-link-strip > a[data-url]:active {
+    outline: 2px dotted #1e1e1e;
 }
 
 @supports (display: flex) {
