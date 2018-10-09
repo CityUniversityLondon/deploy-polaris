@@ -8435,7 +8435,7 @@ svg:not(:root) {
     margin: 0 0 2px;
     color: #1e1e1e;
     text-decoration: underline;
-    border-bottom: 1px dotted #ececec;
+    border-bottom: 1px solid #ececec;
 }
 
 .accordion__content__heading-anchor.active .accordion__content__heading-anchor__label {
@@ -9239,18 +9239,41 @@ svg:not(:root) {
             justify-content: center;
 }
 
+.accordion-tabs--top-level-layout .tabs .tabs__content__heading-anchor {
+    border: 3px solid transparent;
+}
+
+.accordion-tabs--top-level-layout .tabs .tabs__content__heading-anchor.inactive:hover {
+    background: #ececec;
+}
+
+.accordion-tabs--top-level-layout .tabs .tabs__content__heading-anchor.inactive:focus {
+    /* border: 3px solid #1e1e1e;
+                bottom: 3px;
+                outline: 0;
+                margin: 0; */
+    border: 3px solid #1e1e1e;
+    outline: 0;
+    margin: 0;
+}
+
+.accordion-tabs--top-level-layout .tabs .tabs__content__heading-anchor.active {
+    border: 0;
+}
+
+.accordion-tabs--top-level-layout .tabs .tabs__content__heading-anchor.active:focus {
+    outline: 3px solid #1e1e1e;
+    margin: 0;
+}
+
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor {
     margin: 0;
     font-size: 1.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
     color: #005EA5;
-    border-bottom: 1px dotted #ececec;
+    border-bottom: 1px solid #ececec;
     background: #ffffff;
-}
-
-.accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor:last-of-type {
-    border-bottom: 1px dotted #a1a1a1;
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor:hover {
