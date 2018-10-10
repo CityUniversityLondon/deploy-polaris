@@ -8402,7 +8402,6 @@ svg:not(:root) {
 
 .accordion__content__heading-anchor.active:focus {
     outline: 3px solid transparent;
-    margin: 100px;
 }
 
 .accordion__content__heading-anchor[aria-expanded='true']:focus {
@@ -8545,7 +8544,6 @@ svg:not(:root) {
 }
 
 .accordion.accordion--simple {
-    border-bottom: 2px dotted #d0cfcb;
     margin-bottom: 2rem;
 }
 
@@ -8554,19 +8552,39 @@ svg:not(:root) {
     background: rgba(0, 0, 0, 0);
     padding: 1rem 2rem;
     padding-left: 0;
+    outline: 3px solid transparent;
+    padding: 1rem;
 }
 
 .accordion.accordion--simple .accordion__content__heading-anchor:before {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.accordion.accordion--simple .accordion__content__heading-anchor.active {
+    outline: 0;
+}
+
+.accordion.accordion--simple .accordion__content__heading-anchor.active:focus {
+    outline: 0;
+}
+
+.accordion.accordion--simple .accordion__content__heading-anchor:focus {
+    outline: 3px solid black;
+    top: 0;
+}
+
 .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon {
     float: left;
     margin-right: 1rem;
+    line-height: 1.7rem;
+}
+
+.accordion.accordion--simple .accordion__content__heading-anchor.active {
+    border-bottom: 1px solid #ececec;
 }
 
 .accordion.accordion--simple .accordion__content__group {
-    border-top: 2px dotted #d0cfcb;
+    border-top: 0;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
@@ -9289,6 +9307,7 @@ svg:not(:root) {
 
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor .accordion-tabs__content__heading-anchor__icon {
     line-height: 1.65rem;
+    font-size: 1rem;
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor__label {
