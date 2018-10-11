@@ -21713,7 +21713,7 @@ table tbody > tr > td:hover {
 
 @media (min-width: 901px) {
     .cta-test-yellow--first {
-        margin-right: 10px;
+        margin-right: 0.5em;
     }
 }
 
@@ -21742,6 +21742,7 @@ select[title='Select entry year'] {
             appearance: none;
     min-width: 120px;
     display: inline-block;
+    background-color: white;
 }
 
 select[title='Select entry year']::-ms-expand {
