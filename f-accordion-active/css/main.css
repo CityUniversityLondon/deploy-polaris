@@ -9486,10 +9486,6 @@ svg:not(:root) {
     color: #ffffff;
 }
 
-.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__heading-anchor:hover {
-    background: red;
-}
-
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor {
     background: #f2f2f2;
 }
