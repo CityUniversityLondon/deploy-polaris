@@ -568,8 +568,7 @@
 input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
 .dialog__box__heading__close__icon:before,
 .mba-popup__form__close__icon:before,
-.fa-times:before,
-.accordion.accordion--simple .accordion__content__heading-anchor.active .accordion__content__heading-anchor__icon:before {
+.fa-times:before {
     content: "";
 }
 
@@ -839,7 +838,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     content: "";
 }
 
-.fa-chevron-right:before {
+.fa-chevron-right:before, .accordion.accordion--simple .accordion__content__heading-anchor.inactive .accordion__content__heading-anchor__icon:before {
     content: "";
 }
 
@@ -912,7 +911,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     content: "";
 }
 
-.fa-plus:before, .vertical-menu__toggle-link span:before, .accordion__content__heading-anchor.inactive .accordion__content__heading-anchor__icon:before, .accordion.accordion--simple .accordion__content__heading-anchor.inactive .accordion__content__heading-anchor__icon:before, .js .tabs__content__heading-anchor__icon:before, .js .accordion-tabs__content__heading-anchor__icon:before {
+.fa-plus:before, .vertical-menu__toggle-link span:before, .accordion__content__heading-anchor.inactive .accordion__content__heading-anchor__icon:before, .js .tabs__content__heading-anchor__icon:before, .js .accordion-tabs__content__heading-anchor__icon:before {
     content: "";
 }
 
@@ -977,7 +976,7 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__icon:before,
     content: "";
 }
 
-.fa-chevron-down:before {
+.fa-chevron-down:before, .accordion.accordion--simple .accordion__content__heading-anchor.active .accordion__content__heading-anchor__icon:before {
     content: "";
 }
 
@@ -8581,11 +8580,13 @@ svg:not(:root) {
 
 .accordion.accordion--simple .accordion__content__heading-anchor.active {
     border-bottom: 1px solid #ececec;
+    background: #ffffff;
 }
 
 .accordion.accordion--simple .accordion__content__group {
     border-top: 0;
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem;
+    background: #ffffff;
 }
 
 .tabs {
@@ -9092,6 +9093,21 @@ svg:not(:root) {
     }
 }
 
+.accordion-tabs__content__group .accordion {
+    margin-top: 0;
+}
+
+.accordion-tabs__content__group .accordion .accordion__content__heading-anchor__label {
+    width: 85%;
+    color: #1e1e1e;
+}
+
+.accordion-tabs__content__group .accordion .accordion__content__heading-anchor__icon {
+    position: relative;
+    left: 1rem;
+    color: #1e1e1e;
+}
+
 .accordion-tabs__content__heading-anchor.active + .accordion-tabs__content__group__shame {
     -webkit-transform: translateY(-105%);
             transform: translateY(-105%);
@@ -9159,6 +9175,8 @@ svg:not(:root) {
 
 .js .accordion-tabs__content__heading-anchor__icon {
     float: right;
+    left: 1rem;
+    position: relative;
 }
 
 .accordion-tabs__content__heading-anchor.active {
@@ -9199,6 +9217,14 @@ svg:not(:root) {
     background-color: #ffffff;
     width: 100%;
     z-index: 3;
+}
+
+.accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor.active {
+    background: #f15f22;
+}
+
+.accordion-tabs--top-level-layout .tabs .tabs__content__heading-anchor.active {
+    background-color: #f7a482;
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper {
@@ -9285,11 +9311,11 @@ svg:not(:root) {
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor {
+    color: #1e1e1e;
     margin: 0;
     font-size: 1.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: #005EA5;
     border-bottom: 1px solid #ececec;
     background: #ffffff;
 }
@@ -9308,10 +9334,10 @@ svg:not(:root) {
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor .accordion-tabs__content__heading-anchor__icon {
     line-height: 1.65rem;
     font-size: 1rem;
+    left: 0;
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor__label {
-    display: inline-block;
     width: 90%;
     line-height: 1.7rem;
     font-weight: 600;
@@ -9436,6 +9462,19 @@ svg:not(:root) {
     opacity: 0;
 }
 
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__heading-anchor.active {
+    background-color: #d92231;
+    color: #ffffff;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor.active {
+    background: #ea7781;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor.active .accordion__content__heading-anchor__label, .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor.active .accordion__content__heading-anchor__icon {
+    color: #1e1e1e;
+}
+
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu-fullwidth {
     background-color: #f7fbfc;
 }
@@ -9543,6 +9582,24 @@ svg:not(:root) {
     -webkit-transition: none 0.2s ease 0s;
     transition: none 0.2s ease 0s;
     opacity: 0;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__content__heading-anchor.active {
+    background: #00284d;
+    color: #ffffff;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion__content__heading-anchor__icon {
+    position: relative;
+    left: 0;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .tabs .tabs__content__heading-anchor.active {
+    background: #005db3;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .tabs .tabs__content__heading-anchor.active .tabs__content__heading-anchor__label, .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .tabs .tabs__content__heading-anchor.active .tabs__content__heading-anchor__icon {
+    color: #ffffff;
 }
 
 .accordion-tabs__menu {
