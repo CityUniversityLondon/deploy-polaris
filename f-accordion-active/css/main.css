@@ -9339,7 +9339,7 @@ svg:not(:root) {
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor:hover {
-    background: #f2f2f2;
+    background: #e5e5e5;
     text-decoration: underline;
 }
 
@@ -9486,8 +9486,20 @@ svg:not(:root) {
     color: #ffffff;
 }
 
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__heading-anchor:hover {
+    background: red;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor {
+    background: #f2f2f2;
+}
+
+.accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor:hover {
+    background: #e5e5e5;
+}
+
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor.active {
-    background: #ea7781;
+    background: #d0cfcb;
 }
 
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor.active .accordion__content__heading-anchor__label, .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__content__group .accordion .accordion__content__heading-anchor.active .accordion__content__heading-anchor__icon {
@@ -9614,7 +9626,7 @@ svg:not(:root) {
 }
 
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .tabs .tabs__content__heading-anchor.active {
-    background: #005db3;
+    background: #0077a0;
 }
 
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .tabs .tabs__content__heading-anchor.active .tabs__content__heading-anchor__label, .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .tabs .tabs__content__heading-anchor.active .tabs__content__heading-anchor__icon {
