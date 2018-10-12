@@ -12493,6 +12493,14 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (max-width: 900px) {
+    .external-img-link-strip > a[data-url] img {
+        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='brightness'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#brightness");
+        filter: brightness(85%);
+        -webkit-filter: brightness(85%);
+    }
+}
+
 .external-img-link-strip > a[data-url]:focus {
     outline: 3px solid #1e1e1e;
 }
