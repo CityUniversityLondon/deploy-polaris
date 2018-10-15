@@ -21482,7 +21482,7 @@ table tbody > tr > td:hover {
 }
 
 .video-banner--popup {
-    height: 300px;
+    height: 320px;
     overflow: hidden;
     position: relative;
 }
@@ -21494,7 +21494,7 @@ table tbody > tr > td:hover {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: 300px;
+    height: 320px;
 }
 
 .video-banner--popup .video-preview {
