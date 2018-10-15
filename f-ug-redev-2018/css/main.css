@@ -21824,7 +21824,7 @@ table tbody > tr > td:hover {
 
 .cta-test-yellow {
     display: inline-block;
-    width: 140px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 900px) {
@@ -21857,10 +21857,6 @@ table tbody > tr > td:hover {
     }
 }
 
-.cta-test-yellow.cta-test-yellow--second {
-    margin-top: 10px;
-}
-
 @media (min-width: 901px) {
     .cta-test-yellow.cta-test-yellow--second {
         margin-top: 0;
@@ -21875,7 +21871,6 @@ table tbody > tr > td:hover {
 
 .cta-block {
     display: block;
-    margin-top: 10px;
 }
 
 .url-dropdown {
