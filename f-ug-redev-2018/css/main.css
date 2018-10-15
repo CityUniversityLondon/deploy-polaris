@@ -21572,10 +21572,6 @@ table tbody > tr > td:hover {
     position: absolute;
     z-index: 2;
     background: rgba(251, 174, 59, 0.5);
-    -webkit-transition: background .3s linear;
-    transition: background .3s linear;
-    -webkit-transition: 2s ease;
-    transition: 2s ease;
 }
 
 .video-preview:hover:before {
