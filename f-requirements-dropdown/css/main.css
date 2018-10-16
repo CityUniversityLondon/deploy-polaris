@@ -21076,7 +21076,7 @@ table tbody > tr > td:hover {
     max-width: 150px;
 }
 
-.country-specific {
+.data-specific {
     display: none;
 }
 
@@ -21114,11 +21114,11 @@ select {
     border-color: #3a343a transparent transparent transparent;
 }
 
-.country-data {
+.data-group {
     margin: 20px 0 40px;
 }
 
-.country-data .country-specific {
+.data-group .data-specific {
     -webkit-box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
             box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     padding: 20px 20px 15px;
