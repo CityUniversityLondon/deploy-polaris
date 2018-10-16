@@ -21076,11 +21076,11 @@ table tbody > tr > td:hover {
     max-width: 150px;
 }
 
-.data-specific {
+.dropdown-filter .data-specific {
     display: none;
 }
 
-select {
+.dropdown-filter select {
     width: 100%;
     padding: 3px 20px 3px 6px;
     height: 42px;
@@ -21096,11 +21096,11 @@ select {
     text-overflow: "";
 }
 
-.filter--box {
+.dropdown-filter .filter--box {
     position: relative;
 }
 
-.filter--box:after {
+.dropdown-filter .filter--box:after {
     pointer-events: none;
     position: absolute;
     content: "";
@@ -21114,11 +21114,11 @@ select {
     border-color: #3a343a transparent transparent transparent;
 }
 
-.data-group {
+.dropdown-filter .data-group {
     margin: 20px 0 40px;
 }
 
-.data-group .data-specific {
+.dropdown-filter .data-group .data-specific {
     -webkit-box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
             box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     padding: 20px 20px 15px;
