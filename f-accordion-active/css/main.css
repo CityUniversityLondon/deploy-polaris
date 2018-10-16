@@ -8559,6 +8559,10 @@ svg:not(:root) {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__label {
+    display: inline;
+}
+
 .accordion.accordion--simple .accordion__content__heading-anchor.active {
     outline: 0;
 }
@@ -8573,7 +8577,7 @@ svg:not(:root) {
 }
 
 .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon {
-    float: left;
+    float: right;
     margin-right: 1rem;
     line-height: 1.7rem;
 }
