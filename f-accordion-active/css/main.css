@@ -8400,12 +8400,12 @@ svg:not(:root) {
 }
 
 .accordion__content__heading-anchor.active:focus {
-    outline: 3px solid transparent;
+    outline: 3px solid rgba(0, 0, 0, 0);
 }
 
 .accordion__content__heading-anchor[aria-expanded='true']:focus {
     margin: 0;
-    outline: 3px solid transparent;
+    outline: 3px solid rgba(0, 0, 0, 0);
 }
 
 .accordion {
@@ -8455,8 +8455,8 @@ svg:not(:root) {
     display: block;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: #005EA5;
-    border-bottom: 1px dotted #A1A1A1;
+    color: #005ea5;
+    border-bottom: 1px dotted #a1a1a1;
     background: #ffffff;
 }
 
@@ -8551,7 +8551,7 @@ svg:not(:root) {
     background: rgba(0, 0, 0, 0);
     padding: 1rem 2rem;
     padding-left: 0;
-    outline: 3px solid transparent;
+    outline: 3px solid rgba(0, 0, 0, 0);
     padding: 1rem;
 }
 
@@ -8572,7 +8572,7 @@ svg:not(:root) {
 }
 
 .accordion.accordion--simple .accordion__content__heading-anchor:focus {
-    outline: 3px solid black;
+    outline: 3px solid #1e1e1e;
     top: 0;
 }
 
