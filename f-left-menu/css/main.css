@@ -17082,6 +17082,10 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     border: 2px dotted #1e1e1e;
 }
 
+.left-hand-navigation__menu .vertical-menu__header .vertical-menu__page-link:focus {
+    outline: 0;
+}
+
 .left-hand-navigation--jsinit h2 {
     display: none;
 }
