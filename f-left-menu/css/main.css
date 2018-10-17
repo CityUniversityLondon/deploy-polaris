@@ -17086,6 +17086,14 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     outline: 0;
 }
 
+.left-hand-navigation__menu .vertical-menu__header .vertical-menu__toggle-link:focus {
+    outline: 0;
+}
+
+.left-hand-navigation__menu .vertical-menu__header .vertical-menu__toggle-link:active {
+    outline: 0;
+}
+
 .left-hand-navigation--jsinit h2 {
     display: none;
 }
