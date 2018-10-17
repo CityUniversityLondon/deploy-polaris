@@ -7068,6 +7068,15 @@ svg:not(:root) {
 
 .vertical-menu__page-link {
     margin-right: 3rem;
+    left: 1px;
+}
+
+.vertical-menu__page-link:focus {
+    outline: 2px solid #1e1e1e;
+}
+
+.vertical-menu__page-link:active {
+    outline: 2px dotted #1e1e1e;
 }
 
 .vertical-menu--l1 > .vertical-menu__header > .vertical-menu__page-link {
@@ -7088,6 +7097,15 @@ svg:not(:root) {
     right: 0;
     font-size: 14px;
     height: 100%;
+    right: 2px;
+}
+
+.vertical-menu__toggle-link:focus {
+    outline: 2px solid #1e1e1e;
+}
+
+.vertical-menu__toggle-link:active {
+    outline: 2px dotted #1e1e1e;
 }
 
 .vertical-menu--l0 > .vertical-menu__header {
@@ -7172,6 +7190,11 @@ svg:not(:root) {
 .vertical-menu--l0 > .vertical-menu__header,
 .vertical-menu--l1 > .vertical-menu__header {
     font-weight: 600;
+}
+
+.vertical-menu--l0 .vertical-menu__toggle-link,
+.vertical-menu--l1 .vertical-menu__toggle-link {
+    top: 2px;
 }
 
 .vertical-menu--l1.open > .vertical-menu__header,
@@ -17045,6 +17068,18 @@ input[type="checkbox"]:checked + .header-toggle .header-toggle__content {
     max-height: calc(100vh - 4rem);
     margin: 0;
     overflow-y: auto;
+}
+
+.left-hand-navigation__menu .vertical-menu__header a {
+    border: 2px solid transparent;
+}
+
+.left-hand-navigation__menu .vertical-menu__header a:focus {
+    border: 2px solid #1e1e1e;
+}
+
+.left-hand-navigation__menu .vertical-menu__header a:active {
+    border: 2px dotted #1e1e1e;
 }
 
 .left-hand-navigation--jsinit h2 {
