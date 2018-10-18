@@ -18,6 +18,10 @@
     text-overflow: "";
 }
 
+.dropdown-filter select::-ms-expand {
+    display: none;
+}
+
 .dropdown-filter .filter--box {
     position: relative;
 }
@@ -38,6 +42,10 @@
 
 .dropdown-filter .data-group {
     margin: 20px 0 40px;
+}
+
+.dropdown-filter .data-group #Selectacountry {
+    display: none;
 }
 
 .dropdown-filter .data-group .data-specific {
