@@ -10733,12 +10733,9 @@ USED IN:
     font-weight: 600;
 }
 
-.banner--text-ctas .banner__text p {
+.banner--text-ctas .banner__text p.standfirst {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    color: #555555;
-    font-size: 1.44rem;
-    font-weight: 300;
-    line-height: 1.5;
+    text-align: left;
 }
 
 .banner--text-ctas .banner__ctas {
@@ -11870,6 +11867,11 @@ USED IN:
     background-image: -webkit-gradient(linear, left top, right bottom, from(#00284d), to(#0077a0));
     background-image: linear-gradient(to right bottom, #00284d, #0077a0);
     color: #ffffff;
+}
+
+.section--prussian p.standfirst {
+    color: #ffffff;
+    text-align: left;
 }
 
 .section--padded, .hallway {
