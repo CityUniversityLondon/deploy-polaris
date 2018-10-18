@@ -10733,6 +10733,19 @@ USED IN:
     font-weight: 600;
 }
 
+.banner--text-ctas .banner__text h1, .banner--text-ctas .banner__text .banner__text__subtitle {
+    display: block;
+    margin: 0;
+    padding: 0.5rem 0;
+    width: auto;
+    font-size: 1.728rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.banner--text-ctas .banner__text .banner__text__subtitle {
+    font-weight: 300;
+}
+
 .banner--text-ctas .banner__text p.standfirst {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: left;
@@ -11872,6 +11885,15 @@ USED IN:
 .section--prussian p.standfirst {
     color: #ffffff;
     text-align: left;
+}
+
+.section--prussian .banner__text.banner__text--dark-background h1, .section--prussian .banner__text.banner__text--dark-background .banner__text__subtitle {
+    display: block;
+    margin: 0;
+    padding: 0.5rem 0;
+    width: auto;
+    font-size: 1.728rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .section--padded, .hallway {
