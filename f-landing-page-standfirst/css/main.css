@@ -10736,8 +10736,9 @@ USED IN:
 .banner--text-ctas .banner__text p {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: #555555;
-    font-size: 1.2rem;
+    font-size: 1.44rem;
     font-weight: 300;
+    line-height: 1.5;
 }
 
 .banner--text-ctas .banner__ctas {
