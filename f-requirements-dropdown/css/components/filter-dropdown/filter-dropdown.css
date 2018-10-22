@@ -2,26 +2,6 @@
     display: none;
 }
 
-.dropdown-filter select {
-    width: 100%;
-    padding: 3px 20px 3px 6px;
-    height: 42px;
-    border: 1px solid #ededee;
-    color: #3a343a;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    border-radius: 0;
-    background-image: none;
-    text-indent: 0.01px;
-    text-overflow: "";
-}
-
-.dropdown-filter select::-ms-expand {
-    display: none;
-}
-
 .dropdown-filter .filter--box {
     position: relative;
 }
