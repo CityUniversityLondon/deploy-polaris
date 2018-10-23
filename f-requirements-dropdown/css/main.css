@@ -21603,18 +21603,42 @@ table tbody > tr > td:hover {
     position: relative;
 }
 
+.dropdown-filter .filter--box select {
+    width: 100%;
+    padding: 3px 20px 3px 6px;
+    height: 42px;
+    border: 1px solid #ededee;
+    color: #3a343a;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    border-radius: 0;
+    background-image: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+}
+
+.dropdown-filter .filter--box select::-ms-expand {
+    display: none;
+}
+
 .dropdown-filter .filter--box:after {
     pointer-events: none;
     position: absolute;
     content: "";
-    top: 22px;
-    right: 3%;
+    top: 50%;
+    right: 12px;
     margin: -5px 0 0 -5px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7px 4px 0 4px;
-    border-color: #3a343a transparent transparent transparent;
+    border-width: 7px 4px 0;
+    border-color: #3a343a transparent transparent;
+}
+
+.dropdown-filter .filter--box select::-ms-expand {
+    display: none;
 }
 
 .dropdown-filter .data-group {
