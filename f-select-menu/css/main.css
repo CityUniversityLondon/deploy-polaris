@@ -21599,6 +21599,10 @@ table tbody > tr > td:hover {
     display: none;
 }
 
+.dropdown-filter .filter--box {
+    position: relative;
+}
+
 .dropdown-filter .filter--box select {
     width: 100%;
     padding: 3px 20px 3px 6px;
