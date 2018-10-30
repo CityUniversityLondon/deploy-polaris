@@ -21935,9 +21935,71 @@ table tbody > tr > td:hover {
     padding: 20px 20px 15px;
 }
 
+.carousel {
+    position: relative;
+}
+
+.carousel__control {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    width: 30px;
+    z-index: 2;
+}
+
+.carousel__control__button a {
+    display: block;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 24px;
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    background-color: #a1a1a1;
+}
+
+.carousel__control__button a:before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    bottom: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.carousel__control__button a:hover, .carousel__control__button a:focus, .carousel__control__button a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.carousel__control__button a:hover {
+    background-color: #ececec;
+}
+
+.carousel__control__button a:active, .carousel__control__button a.active {
+    background-color: #ffffff;
+}
+
+.carousel__control__button a:active:before, .carousel__control__button a.active:before {
+    border: 2px dotted #ffffff;
+}
+
+.carousel__control__button a:focus {
+    background-color: #a1a1a1;
+}
+
+.carousel__control__button a:focus:before {
+    border: 3px solid #ececec;
+}
+
 .carousel__item {
     position: relative;
-    border: 1px solid purple;
     display: none;
 }
 
@@ -21946,21 +22008,35 @@ table tbody > tr > td:hover {
 }
 
 .carousel__item__info {
-    border: 1px solid purple;
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 350px;
+    max-width: 300px;
 }
 
 .carousel__item__info__overline {
-    border: 1px solid purple;
     text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.carousel__item__info__overline:after {
+    content: '';
+    height: 5px;
+    width: 80px;
+    display: inline-block;
+    background-color: #a1a1a1;
+    position: relative;
+    bottom: 3px;
+    margin-left: 0.5rem;
 }
 
 .carousel__item__info__body {
-    border: 1px solid purple;
     color: white;
+    font-size: 2.0736rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
 }
 
 .carousel__item__info__cta {
@@ -21974,6 +22050,8 @@ table tbody > tr > td:hover {
     color: #ffffff;
     border: 1px solid #ffffff;
     text-align: left;
+    padding: 0.5rem;
+    margin-top: 2rem;
 }
 
 .carousel__item__info__cta:hover, .carousel__item__info__cta:focus, .carousel__item__info__cta:active {
@@ -21998,7 +22076,17 @@ table tbody > tr > td:hover {
 
 .carousel__item__info__cta span {
     position: absolute;
-    right: 1rem;
+    right: 0.5rem;
+}
+
+.explore-theme .carousel__item__info {
+    margin-top: 2rem;
+}
+
+@media (min-width: 501px) {
+    .explore-theme .carousel__item__info {
+        margin-top: 3.5rem;
+    }
 }
 
 .anchor-demo-list li {
