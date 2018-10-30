@@ -8445,10 +8445,12 @@ svg:not(:root) {
 }
 
 .explore-theme .tertiary-navigation--desktop .tertiary-navigation__list a:focus {
+    color: #ffffff;
     outline: 3px solid #ffffff;
 }
 
 .explore-theme .tertiary-navigation--desktop .tertiary-navigation__list a:active {
+    color: #ffffff;
     outline: 2px dotted #ffffff;
 }
 
