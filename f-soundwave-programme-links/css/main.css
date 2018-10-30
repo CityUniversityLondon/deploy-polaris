@@ -21696,6 +21696,11 @@ table tbody > tr > td:hover {
     }
 }
 
+.block-links__items__anchor:after {
+    background-color: none;
+    height: 0;
+}
+
 .block-links__items__anchor__header {
     padding-bottom: 0;
 }
@@ -21715,7 +21720,6 @@ table tbody > tr > td:hover {
     overflow-y: visible;
     cursor: pointer;
     border-bottom-width: 1px;
-    margin-bottom: 1.8rem;
 }
 
 .ghost:hover, .ghost:focus, .ghost:active {
@@ -21769,6 +21773,21 @@ table tbody > tr > td:hover {
 
 .ghost:active {
     outline: none;
+}
+
+@media (max-width: 500px) {
+    .ghost {
+        margin-bottom: 1.8rem;
+    }
+    .ghost:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .ghost:nth-child(-n+3) {
+        margin-bottom: 1.8rem;
+    }
 }
 
 .anchor-demo-list li {
