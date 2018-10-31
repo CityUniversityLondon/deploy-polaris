@@ -21656,60 +21656,39 @@ table tbody > tr > td:hover {
 }
 
 .wavecontainer {
-    background: #00444D;
+    background: #00444d;
     -webkit-animation: colour 30s linear infinite;
     -moz-animation: colour 30s linear infinite;
 }
 
-@-webkit-keyframes colour {
-    0% {
-        background: #00444D;
-    }
-    40% {
-        background: #002A4C;
-    }
-    80% {
-        background: #842B91;
-    }
-    100% {
-        background: #00444D;
-    }
-}
-
-#waves {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.block-links__items--red {
+.wavecontainer .block-links__items--red {
     background-color: transparent;
 }
 
-.block-links__items__anchor {
-    border: 1px solid #fff;
+.wavecontainer .block-links__items__anchor {
+    border: 1px solid #ffffff;
 }
 
 @media (min-width: 901px) {
-    .block-links__items__anchor {
+    .wavecontainer .block-links__items__anchor {
         width: 30.333%;
     }
 }
 
-.block-links__items__anchor:after {
+.wavecontainer .block-links__items__anchor:after {
     background-color: none;
     height: 0;
 }
 
-.block-links__items__anchor__header {
+.wavecontainer .block-links__items__anchor__header {
     padding-bottom: 0;
 }
 
-.block-links__items__anchor__text {
+.wavecontainer .block-links__items__anchor__text {
     margin: 0;
 }
 
-.ghost {
+.wavecontainer .ghost {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
@@ -21722,18 +21701,18 @@ table tbody > tr > td:hover {
     border-bottom-width: 1px;
 }
 
-.ghost:hover, .ghost:focus, .ghost:active {
+.wavecontainer .ghost:hover, .wavecontainer .ghost:focus, .wavecontainer .ghost:active {
     background-color: inherit;
     color: inherit;
     outline-width: 0;
 }
 
-.ghost h1:before,
-.ghost h2:before,
-.ghost h3:before,
-.ghost h4:before,
-.ghost h5:before,
-.ghost h6:before {
+.wavecontainer .ghost h1:before,
+.wavecontainer .ghost h2:before,
+.wavecontainer .ghost h3:before,
+.wavecontainer .ghost h4:before,
+.wavecontainer .ghost h5:before,
+.wavecontainer .ghost h6:before {
     -webkit-transform: none;
             transform: none;
     -webkit-animation: none 0.2s ease 0s both normal;
@@ -21743,19 +21722,19 @@ table tbody > tr > td:hover {
             animation: none;
 }
 
-.ghost:hover {
+.wavecontainer .ghost:hover {
     background-color: #ffffff;
     color: #1e1e1e;
     -webkit-transition: background-color 1s ease;
     transition: background-color 1s ease;
 }
 
-.ghost:hover h1:before,
-.ghost:hover h2:before,
-.ghost:hover h3:before,
-.ghost:hover h4:before,
-.ghost:hover h5:before,
-.ghost:hover h6:before {
+.wavecontainer .ghost:hover h1:before,
+.wavecontainer .ghost:hover h2:before,
+.wavecontainer .ghost:hover h3:before,
+.wavecontainer .ghost:hover h4:before,
+.wavecontainer .ghost:hover h5:before,
+.wavecontainer .ghost:hover h6:before {
     -webkit-transform: none;
             transform: none;
     -webkit-animation: none 0.2s ease 0s both normal;
@@ -21767,26 +21746,47 @@ table tbody > tr > td:hover {
     opacity: 0;
 }
 
-.ghost:focus {
+.wavecontainer .ghost:focus {
     outline: none;
 }
 
-.ghost:active {
+.wavecontainer .ghost:active {
     outline: none;
 }
 
 @media (max-width: 500px) {
-    .ghost {
+    .wavecontainer .ghost {
         margin-bottom: 1.8rem;
     }
-    .ghost:last-child {
+    .wavecontainer .ghost:last-child {
         margin-bottom: 0;
     }
 }
 
 @media (min-width: 901px) {
-    .ghost:nth-child(-n+3) {
+    .wavecontainer .ghost:nth-child(-n+3) {
         margin-bottom: 1.8rem;
+    }
+}
+
+#waves {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+@-webkit-keyframes colour {
+    0% {
+        background: #00444d;
+    }
+    40% {
+        background: #002A4C;
+    }
+    80% {
+        background: #842b91;
+    }
+    100% {
+        background: #00444d;
     }
 }
 
