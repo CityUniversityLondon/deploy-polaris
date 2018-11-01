@@ -4055,7 +4055,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 }
 
 .ghost:active {
-    outline: 2px dotted #ffffff;
+    outline: 3px dotted #ffffff;
 }
 
 .skip {
@@ -21682,6 +21682,8 @@ table tbody > tr > td:hover {
 
 .wavecontainer .block-links__items__anchor__header {
     padding-bottom: 0;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .wavecontainer .block-links__items__anchor__text {
@@ -21752,6 +21754,19 @@ table tbody > tr > td:hover {
 
 .wavecontainer .ghost:active {
     outline: none;
+}
+
+.wavecontainer .ghost:focus {
+    outline: 3px solid #ffffff;
+}
+
+.wavecontainer .ghost:active {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    -webkit-transition: background-color 1s ease;
+    transition: background-color 1s ease;
+    outline: 2px dotted #ffffff;
+    outline-offset: 2px;
 }
 
 @media (max-width: 500px) {
