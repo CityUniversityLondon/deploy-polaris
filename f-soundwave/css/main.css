@@ -21937,7 +21937,7 @@ table tbody > tr > td:hover {
     padding: 20px 20px 15px;
 }
 
-@-webkit-keyframes move {
+@-webkit-keyframes fade-up {
     from {
         opacity: 0;
         -webkit-transform: translateY(0);
@@ -21950,7 +21950,7 @@ table tbody > tr > td:hover {
     }
 }
 
-@keyframes move {
+@keyframes fade-up {
     from {
         opacity: 0;
         -webkit-transform: translateY(0);
@@ -21975,7 +21975,7 @@ table tbody > tr > td:hover {
     z-index: 2;
 }
 
-.carousel__control__button a {
+.carousel__control__button a.carousel__control__button__link {
     display: block;
     border-radius: 50%;
     width: 16px;
@@ -21987,7 +21987,7 @@ table tbody > tr > td:hover {
     background-color: #a1a1a1;
 }
 
-.carousel__control__button a:before {
+.carousel__control__button a.carousel__control__button__link:before {
     content: '';
     position: absolute;
     left: -6px;
@@ -22000,29 +22000,29 @@ table tbody > tr > td:hover {
     height: 28px;
 }
 
-.carousel__control__button a:hover, .carousel__control__button a:focus, .carousel__control__button a:active {
+.carousel__control__button a.carousel__control__button__link:hover, .carousel__control__button a.carousel__control__button__link:focus, .carousel__control__button a.carousel__control__button__link:active {
     background-color: inherit;
     color: inherit;
     outline-width: 0;
 }
 
-.carousel__control__button a:hover {
+.carousel__control__button a.carousel__control__button__link:hover {
     background-color: #ececec;
 }
 
-.carousel__control__button a:active, .carousel__control__button a.active {
+.carousel__control__button a.carousel__control__button__link:active, .carousel__control__button a.carousel__control__button__link.active {
     background-color: #ffffff;
 }
 
-.carousel__control__button a:active:before, .carousel__control__button a.active:before {
+.carousel__control__button a.carousel__control__button__link:active:before, .carousel__control__button a.carousel__control__button__link.active:before {
     border: 2px dotted #ffffff;
 }
 
-.carousel__control__button a:focus {
+.carousel__control__button a.carousel__control__button__link:focus {
     background-color: #a1a1a1;
 }
 
-.carousel__control__button a:focus:before {
+.carousel__control__button a.carousel__control__button__link:focus:before {
     border: 3px solid #ececec;
 }
 
@@ -22031,8 +22031,10 @@ table tbody > tr > td:hover {
     display: none;
 }
 
-.carousel__item:first-of-type {
+.carousel__item.active {
     display: block;
+    -webkit-animation: fade-up 1s ease-in forwards;
+            animation: fade-up 1s ease-in forwards;
 }
 
 .carousel__item__info {
@@ -22046,8 +22048,8 @@ table tbody > tr > td:hover {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-    -webkit-animation: move 0.5s ease-in forwards;
-            animation: move 0.5s ease-in forwards;
+    -webkit-animation: fade-up 0.5s ease-in forwards;
+            animation: fade-up 0.5s ease-in forwards;
 }
 
 .carousel__item__info__overline:after {
@@ -22067,8 +22069,8 @@ table tbody > tr > td:hover {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-top: 1rem;
-    -webkit-animation: move 1s ease-in forwards;
-            animation: move 1s ease-in forwards;
+    -webkit-animation: fade-up 1s ease-in forwards;
+            animation: fade-up 1s ease-in forwards;
 }
 
 .carousel__item__info__cta {
@@ -22084,8 +22086,8 @@ table tbody > tr > td:hover {
     text-align: left;
     padding: 0.5rem;
     margin-top: 2rem;
-    -webkit-animation: move 1.5s ease-in forwards;
-            animation: move 1.5s ease-in forwards;
+    -webkit-animation: fade-up 1.5s ease-in forwards;
+            animation: fade-up 1.5s ease-in forwards;
 }
 
 .carousel__item__info__cta:hover, .carousel__item__info__cta:focus, .carousel__item__info__cta:active {
@@ -22118,10 +22120,21 @@ table tbody > tr > td:hover {
     padding-top: 2rem;
 }
 
-@media (min-width: 501px) {
+@media (min-width: 1201px) {
     .explore-theme .carousel__item__info {
-        top: 3.5rem;
-        padding-top: 3.5rem;
+        top: 5rem;
+        padding-top: 5rem;
+    }
+}
+
+.explore-theme .carousel__item {
+    top: 22px;
+    min-height: 320px;
+}
+
+@media (min-width: 901px) {
+    .explore-theme .carousel__item {
+        top: 0;
     }
 }
 
