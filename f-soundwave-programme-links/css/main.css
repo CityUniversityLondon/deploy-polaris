@@ -21758,6 +21758,7 @@ table tbody > tr > td:hover {
 
 .wavecontainer .ghost:focus {
     outline: 3px solid #ffffff;
+    outline-offset: 2px;
 }
 
 .wavecontainer .ghost:active {
