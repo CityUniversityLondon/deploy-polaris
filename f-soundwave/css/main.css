@@ -22309,6 +22309,11 @@ table tbody > tr > td:hover {
     }
 }
 
+.explore-theme .carousel {
+    max-height: 800px;
+    overflow: hidden;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
