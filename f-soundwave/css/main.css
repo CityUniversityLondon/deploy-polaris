@@ -5870,9 +5870,10 @@ svg:not(:root) {
     background-color: #1e1e1e;
     display: block;
     height: 300px;
-    width: 200vw;
+    width: 100vw;
     position: absolute;
     top: 0;
+    overflow: hidden;
 }
 
 .content, .content--fixed {
