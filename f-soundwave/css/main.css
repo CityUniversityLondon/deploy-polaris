@@ -21986,6 +21986,7 @@ table tbody > tr > td:hover {
 }
 
 .wavecontainer {
+    width: 100%;
     background: #00444d;
     -webkit-animation: colour 30s linear infinite;
     -moz-animation: colour 30s linear infinite;
