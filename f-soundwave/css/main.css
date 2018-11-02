@@ -5861,6 +5861,10 @@ svg:not(:root) {
     display: none;
 }
 
+.explore-theme .header__logo {
+    z-index: 2;
+}
+
 .explore-theme:before {
     content: '';
     background-color: #1e1e1e;
