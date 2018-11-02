@@ -5865,6 +5865,49 @@ svg:not(:root) {
     z-index: 2;
 }
 
+.explore-theme .header__logo a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #666666;
+    display: block;
+    padding: 0 0.5rem;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.explore-theme .header__logo a:hover, .explore-theme .header__logo a:focus, .explore-theme .header__logo a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.explore-theme .header__logo a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.explore-theme .header__logo a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.explore-theme .header__logo a:hover {
+    color: #ffffff;
+}
+
+.explore-theme .header__logo a:focus {
+    color: #ffffff;
+    outline: 3px solid #ffffff;
+}
+
+.explore-theme .header__logo a:active {
+    color: #ffffff;
+    outline: 2px dotted #ffffff;
+}
+
 .explore-theme:before {
     content: '';
     background-color: #1e1e1e;
@@ -22263,6 +22306,7 @@ table tbody > tr > td:hover {
     text-align: left;
     padding: 1rem;
     margin-top: 2rem;
+    margin-left: 0.5rem;
     -webkit-animation: fade-up 1.5s ease-in forwards;
             animation: fade-up 1.5s ease-in forwards;
 }
