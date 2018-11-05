@@ -21989,7 +21989,7 @@ table tbody > tr > td:hover {
     width: 100%;
     background: #00444d;
     -webkit-animation: colour 30s linear infinite;
-    -moz-animation: colour 30s linear infinite;
+            animation: colour 30s linear infinite;
 }
 
 .wavecontainer .block-links__items--red {
@@ -22111,7 +22111,7 @@ table tbody > tr > td:hover {
 }
 
 @media (min-width: 901px) {
-    .wavecontainer .ghost:nth-child(-n+3) {
+    .wavecontainer .ghost:nth-child(-n + 3) {
         margin-bottom: 1.8rem;
     }
 }
@@ -22127,7 +22127,7 @@ table tbody > tr > td:hover {
         background: #00444d;
     }
     40% {
-        background: #002A4C;
+        background: #002a4c;
     }
     80% {
         background: #842b91;
@@ -22142,7 +22142,7 @@ table tbody > tr > td:hover {
         background: #00444d;
     }
     40% {
-        background: #002A4C;
+        background: #002a4c;
     }
     80% {
         background: #842b91;
@@ -22196,6 +22196,7 @@ table tbody > tr > td:hover {
     width: 16px;
     height: 16px;
     margin-bottom: 24px;
+    cursor: pointer;
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
