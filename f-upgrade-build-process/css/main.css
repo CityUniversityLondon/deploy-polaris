@@ -3335,7 +3335,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__icon:before,
 }
 
 @font-face {
-    font-family: 'iconfont';
+    font-family: "iconfont";
     src: url("../fonts/iconfont/iconfont.eot");
     src: url("../fonts/iconfont/iconfont.eot?#iefix") format("eot"), url("../fonts/iconfont/iconfont.woff2") format("woff2"), url("../fonts/iconfont/iconfont.woff") format("woff"), url("../fonts/iconfont/iconfont.ttf") format("truetype"), url("../fonts/iconfont/iconfont.svg#iconfont") format("svg");
 }
@@ -3345,7 +3345,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__icon:before,
 }
 
 .icon-angle-right:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-back-to-top:before, .icon-calendar-check:before, .icon-close:before, .icon-facebook:before, .icon-instagram:before, .icon-linkedin:before, .icon-menu:before, .icon-minus:before, .icon-plus:before, .icon-search:before, .icon-share:before, .icon-twitter:before, .icon-weibo:before, .icon-youtube:before {
-    font-family: 'iconfont';
+    font-family: "iconfont";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
