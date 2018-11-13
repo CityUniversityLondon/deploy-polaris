@@ -6573,7 +6573,6 @@ svg:not(:root) {
 
 .footer__misc-links li {
     display: inline;
-    margin-bottom: 0.5rem;
 }
 
 @media (min-width: 901px) {
@@ -10914,7 +10913,7 @@ USED IN:
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     background-color: #fafafa;
-    box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.15);
     font-size: 14px;
     padding: 0.5rem 0;
 }
@@ -10955,7 +10954,7 @@ USED IN:
     height: 100%;
     position: absolute;
     transform: translate(-50%, -20%);
-    box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 .breadcrumbs__list {
