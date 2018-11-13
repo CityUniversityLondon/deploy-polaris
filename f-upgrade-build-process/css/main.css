@@ -9278,10 +9278,8 @@ svg:not(:root) {
 }
 
 .accordion-tabs__content__heading-anchor.active {
-    color: #1e1e1e;
     background: #ffffff;
     border: 2px dotted #1e1e1e;
-    border-bottom: 0;
     margin: 0 0 2px;
     color: #1e1e1e;
     text-decoration: underline;
