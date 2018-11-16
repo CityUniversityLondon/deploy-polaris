@@ -22439,7 +22439,7 @@ function prepareLinks(widget, headings) {
   } // Turn off all click events when touch device users scroll through accordion anchors
 
 
-  allAnchors.on('touchmove', function (e) {
+  allAnchors.on('touchmove', function (evt) {
     evt.preventDefault();
     jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).off('click');
   });
