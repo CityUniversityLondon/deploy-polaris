@@ -22453,11 +22453,13 @@ function prepareLinks(widget, headings) {
 
   if (activateInitial !== null) {
     activateItem(activateInitial, null);
-  } // Turn off all click events when touch device users scroll through accordion anchors
+  } // Touch device scroll through anchors
 
 
   allAnchors.on('touchmove', function (evt) {
-    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).off('click');
+    // Turn off all click events
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).off('click'); // Re-enable click events
+
     jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).on('click', function (evt) {
       evt.preventDefault();
       var anchor = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this);
