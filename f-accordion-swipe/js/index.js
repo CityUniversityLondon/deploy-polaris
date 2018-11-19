@@ -22417,23 +22417,6 @@ function prepareLinks(widget, headings) {
     });
   }
 
-  function anchorEngage(evt) {
-    evt.preventDefault();
-    var anchor = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this);
-    var isAccordionAnchor = anchor.attr('data-accordion-anchor');
-
-    if (anchor.hasClass('inactive')) {
-      var id = anchor.attr('data-id');
-      activateItem(id, isAccordionAnchor ? 'accordion' : 'tab');
-
-      if (!isAccordionAnchor) {
-        headingAnchors.filter("[data-id=\"".concat(id, "\"]")).focus();
-      }
-    } else if (isAccordionAnchor) {
-      deactivateAll(allAnchors);
-    }
-  }
-
   allAnchors.on('click', function (evt) {
     evt.preventDefault();
     var anchor = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this);
