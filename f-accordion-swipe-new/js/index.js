@@ -22417,7 +22417,7 @@ function prepareLinks(widget, headings) {
     });
   }
 
-  allAnchors.onClick(function (evt) {
+  allAnchors.on('click', function (evt) {
     evt.preventDefault();
     var anchor = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this);
     var isAccordionAnchor = anchor.attr('data-accordion-anchor');
