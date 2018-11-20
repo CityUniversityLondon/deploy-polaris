@@ -22787,7 +22787,7 @@ __webpack_require__.r(__webpack_exports__);
 function launch(el) {
   var link = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.carousel__control__button__link');
   var widget = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
-  var firstCard = widget.find(jquery__WEBPACK_IMPORTED_MODULE_1___default()('div[data-card = "1"'));
+  var firstCard = widget.find(jquery__WEBPACK_IMPORTED_MODULE_1___default()('div[data-card="1"]'));
   firstCard.addClass('active');
   link.each(function () {
     jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).click(function (e) {
