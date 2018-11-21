@@ -23745,6 +23745,7 @@ __webpack_require__.r(__webpack_exports__);
 function prepareContent(className, widget) {
   var contentClassName = Object(_element_classnames__WEBPACK_IMPORTED_MODULE_1__["contentCn"])(className);
   var contentElement = widget.children(".".concat(contentClassName));
+  console.log(contentElement.length);
 
   if (contentElement.length === 0) {
     contentElement = jquery__WEBPACK_IMPORTED_MODULE_0___default()('<div></div>').addClass(contentClassName).append(widget.children()).appendTo(widget);
@@ -23857,8 +23858,7 @@ function prepareLinks(widget, headings) {
     var targetLink = document.querySelectorAll("a");
     console.log(targetLink.length);
 
-    for (var i = 0; i < targetLink.length; i++) {
-      console.log(targetLink[i]);
+    for (var i = 0; i < targetLink.length; i++) {// console.log(targetLink[i]);
     }
   } // Updated tab/accordion anchor href
 
@@ -23883,9 +23883,20 @@ function prepareLinks(widget, headings) {
         parent.href = "#".concat(formattedTextVal);
 
         if (parent.href == 'https://www.cass.city.ac.uk/study/undergraduate/courses/accounting-and-finance#application') {
-          console.log('app'); // parent.className = parent.className.replace("accordion-tabs__menu__item.inaactive", "car");
-
-          parent.className = 'accordion-tabs__menu__item b';
+          // console.log('app');
+          // parent.className = parent.className.replace("accordion-tabs__menu__item.inaactive", "car");
+          // parent.className = 'accordion-tabs__menu__item active';
+          parent.attr('aria-selected', 'true');
+          parent.attr('aria-expanded', 'true');
+          /* var inactiveLinks = document.getElementsByClassName('accordion-tabs__menu__item inactive');
+          for (let inactiveLink of inactiveLinks) {
+              inactiveLink.className = 'a';
+              console.log(inactiveLink);
+          } */
+        } else {
+          // parent.className = 'accordion-tabs__menu__item b';
+          parent.attr('aria-selected', 'false');
+          parent.attr('aria-expanded', 'false');
         } // parent.classList.add('test');
 
       }
@@ -23939,40 +23950,7 @@ function prepareLinks(widget, headings) {
 
   var rootURL = window.location.href.replace(window.location.hash, '') || window.location.href;
   console.log("Root URL: ".concat(rootURL));
-  var updatedURL = "".concat(rootURL, "#fees"); // document.location.href = updatedURL;
-  // console.log(`Target link: ${targetLink.length}`);
-  // Modify accordion tab headings
-  // var accTabHeadings = document.getElementsByClassName('accordion-tabs__menu__item');
-  // accTabHeadings.className('open');
-  // console.log(accTabHeadings);
-  // const accTabHeading = accTabHeadings.find(accTabHeading => {
-  //     if(accTabHeading.href === "#fees") {
-  //       return true;
-  //     } else {
-  //       return false;
-  //     }
-  //   });
-  // console.log(accTabHeading);
-
-  /* for (let accTabHeading of accTabHeadings) {
-      let hashString = accTabHeading.href.split('#')[1];
-       console.log(accTabHeading.href);
-       if (accTabHeading.href == `${rootURL}#fees`) {
-          console.log('fees match');
-          console.log($(this));
-      }
-       // console.log(hashString);
-      // console.log(accTabHeading.href);
-      if (hashString == 'fees') {
-          // console.log('selected');
-          // console.log(this);
-          // this.className = 'selected';
-      } else {
-          // this.className = 'accordion-tabs__menu__item inactive';
-          // console.log('not selected');
-      }
-  } */
-
+  var updatedURL = "".concat(rootURL, "#fees");
   allAnchors.on('click', function (evt) {
     evt.preventDefault(); // Find tabpanel content with matching name
 
@@ -23990,9 +23968,7 @@ function prepareLinks(widget, headings) {
         var formattedTextVal = targetTabHeadingText.replace(/\s+/g, '-').toLowerCase(); // console.log(formattedTextVal);
 
         targetTabHeading.id = formattedTextVal;
-      } // let targetTabHeading = targetTabPanel.textContent;
-      // console.log(targetTabHeading);
-
+      }
     } catch (err) {
       _didIteratorError2 = true;
       _iteratorError2 = err;
