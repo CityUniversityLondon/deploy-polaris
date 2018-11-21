@@ -24630,7 +24630,8 @@ function launch(el) {
     } else {
       label.attr('aria-expanded', 'false');
     }
-  };
+  }; // Close search form when mobile navigation active
+
 
   var navMobile = document.getElementsByClassName('nav-mobile');
   Array.from(navMobile).forEach(function (element) {
