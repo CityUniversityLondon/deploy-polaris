@@ -23808,8 +23808,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function genActivateItem(widget, headingAnchors, allAnchors) {
   return function (id, scroll) {
-    allAnchors.filter("[data-id=\"".concat(id, "\"].inactive")).removeClass('inactive').addClass('active').attr('aria-selected', 'true').attr('aria-expanded', 'true');
-    allAnchors.filter(".active").not("[data-id=\"".concat(id, "\"]")).removeClass('active').addClass('inactive').attr('aria-selected', 'false').attr('aria-expanded', 'false');
+    allAnchors.filter("[data-id=\"".concat(id, "\"].inactive")).removeClass('inactive').addClass('active'); // .attr('aria-selected', 'true')
+    // .attr('aria-expanded', 'true');
+
+    allAnchors.filter(".active").not("[data-id=\"".concat(id, "\"]")).removeClass('active').addClass('inactive'); // .attr('aria-selected', 'false')
+    // .attr('aria-expanded', 'false');
+
     var heading = headingAnchors.filter("[data-id=\"".concat(id, "\"]"));
 
     if (scroll === 'accordion' && Object(_js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_10__["default"])(heading)) {
@@ -23855,15 +23859,16 @@ function prepareLinks(widget, headings) {
 
 
   function listLinks() {
-    var targetLink = document.querySelectorAll("a");
-    console.log(targetLink.length);
+    var targetLink = document.querySelectorAll("a"); // console.log(targetLink.length);
 
     for (var i = 0; i < targetLink.length; i++) {// console.log(targetLink[i]);
     }
-  } // Updated tab/accordion anchor href
+  }
 
+  var selectedHashString = ''; // Updated tab/accordion anchor href
 
   function updateLinks() {
+    console.log('a');
     var elements = document.getElementsByClassName('accordion-tabs__menu__item__label');
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
@@ -23882,12 +23887,12 @@ function prepareLinks(widget, headings) {
         var parent = element.parentElement;
         parent.href = "#".concat(formattedTextVal);
 
-        if (parent.href == 'https://www.cass.city.ac.uk/study/undergraduate/courses/accounting-and-finance#application') {
-          // console.log('app');
-          // parent.className = parent.className.replace("accordion-tabs__menu__item.inaactive", "car");
+        if (parent.href == "https://www.cass.city.ac.uk/study/undergraduate/courses/accounting-and-finance#".concat(selectedHashString)) {
+          console.log('app'); // parent.className = parent.className.replace("accordion-tabs__menu__item.inaactive", "car");
           // parent.className = 'accordion-tabs__menu__item active';
-          parent.attr('aria-selected', 'true');
-          parent.attr('aria-expanded', 'true');
+
+          parent.setAttribute('aria-selected', 'true');
+          parent.setAttribute('aria-expanded', 'true');
           /* var inactiveLinks = document.getElementsByClassName('accordion-tabs__menu__item inactive');
           for (let inactiveLink of inactiveLinks) {
               inactiveLink.className = 'a';
@@ -23895,8 +23900,8 @@ function prepareLinks(widget, headings) {
           } */
         } else {
           // parent.className = 'accordion-tabs__menu__item b';
-          parent.attr('aria-selected', 'false');
-          parent.attr('aria-expanded', 'false');
+          parent.setAttribute('aria-selected', 'false');
+          parent.setAttribute('aria-expanded', 'false');
         } // parent.classList.add('test');
 
       }
@@ -23929,13 +23934,9 @@ function prepareLinks(widget, headings) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return updateLinks();
-
-            case 2:
-              _context.next = 4;
               return listLinks();
 
-            case 4:
+            case 2:
             case "end":
               return _context.stop();
           }
@@ -23948,8 +23949,8 @@ function prepareLinks(widget, headings) {
   carpet(); // elements.then(console.log('then'));
   // URL root
 
-  var rootURL = window.location.href.replace(window.location.hash, '') || window.location.href;
-  console.log("Root URL: ".concat(rootURL));
+  var rootURL = window.location.href.replace(window.location.hash, '') || window.location.href; // console.log(`Root URL: ${rootURL}`);
+
   var updatedURL = "".concat(rootURL, "#fees");
   allAnchors.on('click', function (evt) {
     evt.preventDefault(); // Find tabpanel content with matching name
@@ -23984,6 +23985,12 @@ function prepareLinks(widget, headings) {
       }
     }
 
+    selectedHashString = this.hash.substr(1);
+    console.log(selectedHashString);
+    updateLinks(); // var fullURL = `${rootURL}#${hashString}`;
+
+    console.log(fullURL);
+    history.pushState(null, null, '#' + selectedHashString);
     var anchor = jquery__WEBPACK_IMPORTED_MODULE_8___default()(this);
     var isAccordionAnchor = anchor.attr('data-accordion-anchor');
 
