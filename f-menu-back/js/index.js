@@ -23561,7 +23561,7 @@ function () {
     this.menuContainer = nav.find('.nav-mobile__content');
     this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true); // Remove open class on page load
 
-    this.toggleLabel.removeClass('open');
+    this.closeNav();
     var label = this.nav.prev();
 
     if (label.length > 0 && label.attr('for')) {
