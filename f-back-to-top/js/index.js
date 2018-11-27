@@ -23498,26 +23498,56 @@ var className = 'mba-popup';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
+var scrollToTopBut = document.getElementById('footer__back-to-top__button');
+scrollToTopBut.classList.add('back-to-top-stick');
+scrollToTopBut.style.opacity = 0;
+var lastScrollTop = 0; // for calculating scrolling direction
+// to apply class stick
 
-/*
-console.log('hi');
+document.addEventListener('scroll', function (event) {
+  // event.preventDefault();
+  var screenPos = window.pageYOffset; // calculates scroll position
 
-// var scrollToTopBut;
+  var viewPortHeight = window.outerHeight; // calculates viewport height
 
-var scrollToTopBut = document.getElementsByClassName('footer__back-to-top');
+  var docHeight = document.documentElement.scrollHeight; // calculates height of page
+  // test if scrolling up or down
 
-scrollToTopBut.addEventListener('click', function(event){
-    event.preventDefault();
-    console.log('Function has loaded');  
+  var st = screenPos || document.documentElement.scrollTop;
 
-}, false);  
+  if (st > lastScrollTop) {// downscroll code
+  } else {
+    // upscroll code
+    if (docHeight > viewPortHeight * 2 && screenPos > viewPortHeight && scrollToTopBut.style.opacity <= 0) {
+      var butFadein = function butFadein() {
+        console.log('fade in animation');
 
-*/
+        if (butOpacity >= 1) {
+          clearInterval(aniSpeed);
+        } else {
+          if (butOpacity < 1) {
+            butOpacity += 0.1;
+            scrollToTopBut.style.opacity = butOpacity;
+          }
+        }
+      };
 
+      var aniSpeed = setInterval(butFadein, 10);
+      var butOpacity = 0;
+    } else if (screenPos < 200) {
+      scrollToTopBut.style.opacity = 0;
+    }
+  }
+
+  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false); // end of scroll
+
+scrollToTopBut.addEventListener('click', function (event) {
+  //event.preventDefault();
+  scrollToTopBut.style.opacity = 0;
+});
 var className = 'backToTopScroll';
 /* harmony default export */ __webpack_exports__["default"] = ({
   // scrollToTop,
