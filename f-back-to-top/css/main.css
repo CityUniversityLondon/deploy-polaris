@@ -21445,6 +21445,8 @@ table tbody > tr > td:hover {
     float: right;
     padding: 10px;
     border-bottom: none;
+    color: #666666;
+    font-size: 14px;
 }
 
 .footer__back-to-top a:active {
@@ -21454,15 +21456,27 @@ table tbody > tr > td:hover {
 
 .footer__back-to-top a:focus {
     outline: 3px solid #1e1e1e;
+    color: #666666;
 }
 
-.footer__back-to-top a:hover .footer__back-to-top__arrow {
+.footer__back-to-top a:focus .footer__back-to-top__button__arrow {
+    border-top-color: #666666;
+}
+
+.footer__back-to-top a:hover {
+    color: #1e1e1e;
+    background: none;
+}
+
+.footer__back-to-top a:hover .footer__back-to-top__button__arrow {
     padding-top: 0px;
     padding-bottom: 5px;
+    border-top-color: #1e1e1e;
+    transition: padding 1s ease;
 }
 
-.footer__back-to-top__arrow {
-    border-top: solid thick black;
+.footer__back-to-top__button__arrow {
+    border-top: solid thick #666666;
     padding-top: 5px;
     margin-left: auto;
     margin-right: auto;

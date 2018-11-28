@@ -23501,56 +23501,78 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var scrollToTopBut = document.getElementById('footer__back-to-top__button');
-scrollToTopBut.classList.add('back-to-top-stick');
-scrollToTopBut.style.opacity = 0;
+var footerPos = document.getElementsByTagName('footer')[0].offsetTop;
 var lastScrollTop = 0; // for calculating scrolling direction
-// to apply class stick
+// removes & hide back to top button from footer and makes sticky
 
+scrollToTopBut.style.opacity = 0;
+scrollToTopBut.classList.add('back-to-top-stick');
 document.addEventListener('scroll', function (event) {
-  // event.preventDefault();
   var screenPos = window.pageYOffset; // calculates scroll position
 
   var viewPortHeight = window.outerHeight; // calculates viewport height
 
   var docHeight = document.documentElement.scrollHeight; // calculates height of page
-  // test if scrolling up or down
+  // when scrolling near footer back to top button gets reinstated in footer
 
-  var st = screenPos || document.documentElement.scrollTop;
+  if (screenPos >= footerPos - (viewPortHeight - 150)) {
+    scrollToTopBut.style.opacity = 1;
+    scrollToTopBut.classList.remove('back-to-top-stick');
+  } // test if scrolling up or down - button only to apear when scrolling up
+  else {
+      var st = screenPos || document.documentElement.scrollTop;
 
-  if (st > lastScrollTop) {// downscroll code
-  } else {
-    // upscroll code
-    if (docHeight > viewPortHeight * 2 && screenPos > viewPortHeight && scrollToTopBut.style.opacity <= 0) {
-      var butFadein = function butFadein() {
-        console.log('fade in animation');
+      if (st > lastScrollTop) {
+        // downscroll code
+        scrollToTopBut.style.opacity = 0; // hide back to top button when scrolling down
+      } else {
+        // upscroll code
+        if (docHeight > viewPortHeight * 1.5 && screenPos > viewPortHeight * 0.5 && screenPos <= footerPos - (viewPortHeight - 150)) {
+          // test 3 condition before showing back to top but. Ensures page is long enough, only fades in when scrolling down far enough
+          if (scrollToTopBut.style.opacity <= 0) {
+            var butFadein = function butFadein() {
+              if (butOpacity >= 1) {
+                clearInterval(aniSpeed);
+              } else {
+                if (butOpacity < 1) {
+                  butOpacity += 0.1;
+                  scrollToTopBut.style.opacity = butOpacity;
+                }
+              }
+            };
 
-        if (butOpacity >= 1) {
-          clearInterval(aniSpeed);
-        } else {
-          if (butOpacity < 1) {
-            butOpacity += 0.1;
-            scrollToTopBut.style.opacity = butOpacity;
-          }
+            var aniSpeed = setInterval(butFadein, 10); // fade in speed is currently 10
+
+            var butOpacity = 0;
+            scrollToTopBut.classList.add('back-to-top-stick');
+          } // keeps
+          else {
+              scrollToTopBut.classList.add('back-to-top-stick');
+            }
+        } else if (screenPos < 200) {
+          // removes back to top button when getting close to top of page
+          scrollToTopBut.style.opacity = 0;
+        } else if (screenPos >= footerPos - (viewPortHeight - 150)) {
+          // re-instates back to top button to footer when scrolling all the way down  
+          scrollToTopBut.style.opacity = 1;
+          scrollToTopBut.classList.remove('back-to-top-stick');
         }
-      };
+      }
 
-      var aniSpeed = setInterval(butFadein, 10);
-      var butOpacity = 0;
-    } else if (screenPos < 200) {
-      scrollToTopBut.style.opacity = 0;
+      lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
     }
-  }
-
-  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-}, false); // end of scroll
+}, false); // end of scroll func
 
 scrollToTopBut.addEventListener('click', function (event) {
-  //event.preventDefault();
+  event.preventDefault();
   scrollToTopBut.style.opacity = 0;
+  var screenPos = window.pageYOffset; // calculates scroll position
+
+  window.scrollBy(0, -screenPos); // scrolls page to top
 });
 var className = 'backToTopScroll';
 /* harmony default export */ __webpack_exports__["default"] = ({
-  // scrollToTop,
+  scrollToTop: scrollToTop,
   className: className
 });
 
