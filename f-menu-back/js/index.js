@@ -23561,7 +23561,10 @@ function () {
     this.menuContainer = nav.find('.nav-mobile__content');
     this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true); // Remove open class on page load
 
-    this.closeNav();
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').hasClass('open')) {
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).closeNav();
+    }
+
     var label = this.nav.prev();
 
     if (label.length > 0 && label.attr('for')) {
@@ -23612,6 +23615,7 @@ function () {
   }, {
     key: "openNav",
     value: function openNav() {
+      // alert('open menu');
       this.verticalMenu.launch();
       this.toggleLabel.attr('aria-expanded', 'true');
       this.toggleLabel.addClass('open');
@@ -23620,7 +23624,7 @@ function () {
   }, {
     key: "closeNav",
     value: function closeNav() {
-      alert('close menu');
+      // alert('close menu');
       this.toggle.prop('checked', false);
       this.verticalMenu.closeAll();
       this.toggleLabel.attr('aria-expanded', 'false');
