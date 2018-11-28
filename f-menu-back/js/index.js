@@ -23562,9 +23562,13 @@ function () {
     this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true); // Remove open class on page load
 
     if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').hasClass('open')) {
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).closeNav();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).removeClass('open');
     }
 
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).load(function () {
+      alert('loadl');
+    });
+    alert('test');
     var label = this.nav.prev();
 
     if (label.length > 0 && label.attr('for')) {
