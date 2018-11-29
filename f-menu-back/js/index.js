@@ -23568,6 +23568,7 @@ function () {
     if (this.toggleLabel.hasClass('open')) {
       console.log('menu is open on load');
       this.toggleNav();
+      alert('menu was open');
     } else {
       console.log('menu is closed on load');
     } //this.toggleNav();
