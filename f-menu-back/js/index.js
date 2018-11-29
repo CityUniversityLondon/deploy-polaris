@@ -23561,14 +23561,22 @@ function () {
     this.menuContainer = nav.find('.nav-mobile__content');
     this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true); // Remove open class on page load
 
-    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').hasClass('open')) {
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).removeClass('open');
-    }
+    /* if ($('.nav-mobile__toggle-label').hasClass('open')) {
+        $(this).removeClass('open');
+    } */
 
-    jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).load(function () {
-      alert('loadl');
-    });
-    alert('test');
+    if (this.toggleLabel.hasClass('open')) {
+      console.log('menu is open on load');
+      this.toggleNav();
+    } else {
+      console.log('menu is closed on load');
+    } //this.toggleNav();
+    //$( window ).load(function() {
+    //  alert('loadll');
+    //});
+
+
+    console.log('function main');
     var label = this.nav.prev();
 
     if (label.length > 0 && label.attr('for')) {
@@ -23604,6 +23612,8 @@ function () {
       } else {
         this.closeNav();
       }
+
+      console.log('launch');
     }
   }, {
     key: "toggleNav",
