@@ -9237,6 +9237,11 @@ svg:not(:root) {
     }
 }
 
+.js .accordion-tabs--box-shadow .accordion-tabs__menu-fullwidth {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    background-color: #f2f2f2;
+}
+
 @media (min-width: 501px) {
     .js .accordion-tabs__content__group > div {
         padding-top: 2rem;
@@ -10758,6 +10763,7 @@ USED IN:
 
 .banner--text-ctas .banner__ctas {
     padding-right: 0.5rem;
+    margin-top: 2rem;
 }
 
 @media (min-width: 501px) {
@@ -10777,6 +10783,14 @@ USED IN:
         width: 100%;
         padding-left: 0.5rem;
     }
+}
+
+.banner--text-ctas .banner__ctas .cta-group + .cta-group {
+    margin-left: 0;
+}
+
+.banner--text-ctas .banner__ctas .cta-group--stretched {
+    margin-bottom: 0.8rem;
 }
 
 .banner-stats .banner-stats__items {
@@ -12302,6 +12316,10 @@ USED IN:
     .key-info {
         justify-content: center;
     }
+}
+
+.key-info--padding-bottom {
+    padding-bottom: 3.5rem;
 }
 
 .key-info--lined {
