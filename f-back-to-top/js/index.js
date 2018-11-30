@@ -23514,7 +23514,10 @@ function backToTopScroll() {
   var docHeight = document.documentElement.scrollHeight; // calculates height of page
 
   console.log(screenPos);
-  console.log('window inner height is' + window.innerHeight); // when scrolling near footer back to top button gets reinstated in footer
+  console.log('window inner height is' + window.innerHeight);
+  console.log('window outer height is' + window.outerHeight);
+  console.log('docHeight' + docHeight);
+  console.log('=================='); // when scrolling near footer back to top button gets reinstated in footer
 
   if (screenPos >= footerPos - (viewPortHeight - 150)) {
     scrollToTopBut.style.opacity = 1;
@@ -23574,19 +23577,7 @@ function backToTopScroll() {
   });
 }
 
-; // for IOS to detect scrolling on ipad
-
-window.ontouchmove = function () {
-  console.log(window.innerWidth);
-  backToTopScroll();
-
-  if (window.outerWidth > 500) {
-    backToTopScroll();
-  }
-
-  ;
-}; // only trigger sticky back to top button on viewports wider than 500px
-
+; // only trigger sticky back to top button on viewports wider than 500px
 
 window.onscroll = function () {
   if (window.matchMedia("(min-width: 500px)").matches) {
