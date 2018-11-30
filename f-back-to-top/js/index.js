@@ -23512,7 +23512,8 @@ function backToTopScroll() {
   var viewPortHeight = window.outerHeight; // calculates viewport height
 
   var docHeight = document.documentElement.scrollHeight; // calculates height of page
-  // when scrolling near footer back to top button gets reinstated in footer
+
+  console.log(screenPos); // when scrolling near footer back to top button gets reinstated in footer
 
   if (screenPos >= footerPos - (viewPortHeight - 150)) {
     scrollToTopBut.style.opacity = 1;
