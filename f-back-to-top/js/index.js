@@ -23574,7 +23574,7 @@ function backToTopScroll() {
 ; // only trigger sticky back to top button on viewports wider than 500px
 
 window.onscroll = function () {
-  if (window.matchMedia("(min-width: 500px)").matches) {
+  if (window.innerWidth > 500) {
     backToTopScroll();
   }
 
