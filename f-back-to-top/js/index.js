@@ -23503,6 +23503,7 @@ __webpack_require__.r(__webpack_exports__);
 var lastScrollTop = 0; // for calculating scrolling direction
 
 function backToTopScroll() {
+  console.log('back to scroll funct triggered');
   var scrollToTopBut = document.getElementsByClassName('footer__back-to-top__button')[0];
   var footerPos = document.getElementsByTagName('footer')[0].offsetTop; // position of footer measured from top of page
 
@@ -23574,8 +23575,6 @@ function backToTopScroll() {
 ; // for IOS to detect scrolling on ipad
 
 window.ontouchmove = function () {
-  console.log('on touch move event triggered');
-
   if (window.outerWidth > 500) {
     backToTopScroll();
   }
@@ -23585,8 +23584,6 @@ window.ontouchmove = function () {
 
 
 window.onscroll = function () {
-  console.log('normal window scroll event triggered');
-
   if (window.outerWidth > 500) {
     backToTopScroll();
   }
