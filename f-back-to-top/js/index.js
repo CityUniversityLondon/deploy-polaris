@@ -23500,14 +23500,12 @@ var className = 'mba-popup';
 __webpack_require__.r(__webpack_exports__);
 
 
-var scrollToTopBut = document.getElementById('footer__back-to-top__button');
-var footerPos = document.getElementsByTagName('footer')[0].offsetTop;
 var lastScrollTop = 0; // for calculating scrolling direction
-// removes & hide back to top button from footer and makes sticky
 
-scrollToTopBut.style.opacity = 0;
-scrollToTopBut.classList.add('back-to-top-stick');
-document.addEventListener('scroll', function (event) {
+function backToTopScroll() {
+  var scrollToTopBut = document.getElementsByClassName('footer__back-to-top__button')[0];
+  var footerPos = document.getElementsByTagName('footer')[0].offsetTop; // position of footer measured from top of page
+
   var screenPos = window.pageYOffset; // calculates scroll position
 
   var viewPortHeight = window.outerHeight; // calculates viewport height
@@ -23524,7 +23522,8 @@ document.addEventListener('scroll', function (event) {
 
       if (st > lastScrollTop) {
         // downscroll code
-        scrollToTopBut.style.opacity = 0; // hide back to top button when scrolling down
+        // hide back to top button from footer
+        scrollToTopBut.style.opacity = 0;
       } else {
         // upscroll code
         if (docHeight > viewPortHeight * 1.5 && screenPos > viewPortHeight * 0.5 && screenPos <= footerPos - (viewPortHeight - 150)) {
@@ -23545,7 +23544,7 @@ document.addEventListener('scroll', function (event) {
 
             var butOpacity = 0;
             scrollToTopBut.classList.add('back-to-top-stick');
-          } // keeps
+          } // Makes button stick when scrolling up from footer area
           else {
               scrollToTopBut.classList.add('back-to-top-stick');
             }
@@ -23561,18 +23560,30 @@ document.addEventListener('scroll', function (event) {
 
       lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
     }
-}, false); // end of scroll func
 
-scrollToTopBut.addEventListener('click', function (event) {
-  event.preventDefault();
-  scrollToTopBut.style.opacity = 0;
-  var screenPos = window.pageYOffset; // calculates scroll position
+  scrollToTopBut.addEventListener('click', function (event) {
+    event.preventDefault();
+    scrollToTopBut.style.opacity = 0;
+    scrollToTopBut.blur();
+    var screenPos = window.pageYOffset; // calculates scroll position
 
-  window.scrollBy(0, -screenPos); // scrolls page to top
-});
-var className = 'backToTopScroll';
+    window.scrollBy(0, -screenPos); // scrolls page to top
+  });
+}
+
+; // only trigger sticky back to top button on viewports wider than 500px
+
+window.onscroll = function () {
+  if (window.outerWidth > 500) {
+    backToTopScroll();
+  }
+
+  ;
+};
+
+var className = 'back-to-top-Scroll';
 /* harmony default export */ __webpack_exports__["default"] = ({
-  scrollToTop: scrollToTop,
+  backToTopScroll: backToTopScroll,
   className: className
 });
 
