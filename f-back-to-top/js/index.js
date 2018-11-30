@@ -23575,6 +23575,9 @@ function backToTopScroll() {
 ; // for IOS to detect scrolling on ipad
 
 window.ontouchmove = function () {
+  console.log(window.outerWidth);
+  backToTopScroll();
+
   if (window.outerWidth > 500) {
     backToTopScroll();
   }
