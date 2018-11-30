@@ -23571,7 +23571,16 @@ function backToTopScroll() {
   });
 }
 
-; // only trigger sticky back to top button on viewports wider than 500px
+; // for IOS to detect scrolling on ipad
+
+window.ontouchmove = function () {
+  if (window.outerWidth > 500) {
+    backToTopScroll();
+  }
+
+  ;
+}; // only trigger sticky back to top button on viewports wider than 500px
+
 
 window.onscroll = function () {
   if (window.outerWidth > 500) {
