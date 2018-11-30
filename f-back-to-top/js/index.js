@@ -23503,21 +23503,15 @@ __webpack_require__.r(__webpack_exports__);
 var lastScrollTop = 0; // for calculating scrolling direction
 
 function backToTopScroll() {
-  console.log('back to scroll funct triggered');
   var scrollToTopBut = document.getElementsByClassName('footer__back-to-top__button')[0];
   var footerPos = document.getElementsByTagName('footer')[0].offsetTop; // position of footer measured from top of page
 
   var screenPos = window.pageYOffset; // calculates scroll position
 
-  var viewPortHeight = window.outerHeight; // calculates viewport height
+  var viewPortHeight = window.innerHeight; // calculates viewport height
 
   var docHeight = document.documentElement.scrollHeight; // calculates height of page
-
-  console.log(screenPos);
-  console.log('window inner height is' + window.innerHeight);
-  console.log('window outer height is' + window.outerHeight);
-  console.log('docHeight' + docHeight);
-  console.log('=================='); // when scrolling near footer back to top button gets reinstated in footer
+  // when scrolling near footer back to top button gets reinstated in footer
 
   if (screenPos >= footerPos - (viewPortHeight - 150)) {
     scrollToTopBut.style.opacity = 1;
@@ -23582,7 +23576,6 @@ function backToTopScroll() {
 window.onscroll = function () {
   if (window.matchMedia("(min-width: 500px)").matches) {
     backToTopScroll();
-    console.log('window match media works');
   }
 
   ;
