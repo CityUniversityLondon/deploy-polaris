@@ -23513,7 +23513,8 @@ function backToTopScroll() {
 
   var docHeight = document.documentElement.scrollHeight; // calculates height of page
 
-  console.log(screenPos); // when scrolling near footer back to top button gets reinstated in footer
+  console.log(screenPos);
+  console.log('window inner height is' + window.innerHeight); // when scrolling near footer back to top button gets reinstated in footer
 
   if (screenPos >= footerPos - (viewPortHeight - 150)) {
     scrollToTopBut.style.opacity = 1;
@@ -23576,7 +23577,7 @@ function backToTopScroll() {
 ; // for IOS to detect scrolling on ipad
 
 window.ontouchmove = function () {
-  console.log(window.outerWidth);
+  console.log(window.innerWidth);
   backToTopScroll();
 
   if (window.outerWidth > 500) {
@@ -23588,8 +23589,9 @@ window.ontouchmove = function () {
 
 
 window.onscroll = function () {
-  if (window.outerWidth > 500) {
+  if (window.matchMedia("(min-width: 500px)").matches) {
     backToTopScroll();
+    console.log('window match media works');
   }
 
   ;
