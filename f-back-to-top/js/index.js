@@ -23526,8 +23526,13 @@ function backToTopScroll() {
         scrollToTopBut.style.opacity = 0;
       } else {
         // upscroll code
-        if (docHeight > viewPortHeight * 1.5 && screenPos > viewPortHeight * 0.5 && screenPos <= footerPos - (viewPortHeight - 150)) {
-          // test 3 condition before showing back to top but. Ensures page is long enough, only fades in when scrolling down far enough
+        // parameters: the button only appear on long pages and when you scroll down far enough. Set values below. Values measured in viewport heights.
+        var pageHeight = 1.5; // set page length
+
+        var scrollPos = 0.5; // set how far to scroll down
+
+        if (docHeight > viewPortHeight * pageHeight && screenPos > viewPortHeight * scrollPos && screenPos <= footerPos - (viewPortHeight - 150)) {
+          // last condition ensures button don't stick when close to footer but rather remains static inside footer area
           if (scrollToTopBut.style.opacity <= 0) {
             var butFadein = function butFadein() {
               if (butOpacity >= 1) {
