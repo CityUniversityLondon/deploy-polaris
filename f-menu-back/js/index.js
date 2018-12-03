@@ -23565,10 +23565,11 @@ function () {
         $(this).removeClass('open');
     } */
 
-    if (this.toggleLabel.hasClass('open')) {
+    console.log(this.toggleLabel.attr('class'));
+
+    if (this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
       console.log('menu is open on load');
-      this.toggleNav();
-      alert('menu was open');
+      this.toggleLabel.removeClass('open');
     } else {
       console.log('menu is closed on load');
     } //this.toggleNav();
@@ -23592,8 +23593,12 @@ function () {
     this.toggle.on('change', function () {
       if (_this.toggle.prop('checked')) {
         _this.openNav();
+
+        console.log(_this.toggleLabel.attr('class'));
       } else {
         _this.closeNav();
+
+        console.log(_this.toggleLabel.attr('class'));
       }
     });
     this.toggleLabel.on('keypress', function (evt) {
