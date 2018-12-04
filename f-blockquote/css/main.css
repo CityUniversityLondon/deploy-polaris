@@ -21515,7 +21515,7 @@ blockquote p:last-child {
     font-weight: normal;
 }
 
-blockquote p:nth-last-child(2)::after {
+blockquote p:nth-last-of-type(2)::after {
     font-family: FontAwesome;
     content: "\f10E";
     position: relative !important;
