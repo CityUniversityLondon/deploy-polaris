@@ -23559,12 +23559,19 @@ function () {
     this.toggle = nav.find('.nav-mobile__toggle');
     this.toggleLabel = nav.find('.nav-mobile__toggle-label');
     this.menuContainer = nav.find('.nav-mobile__content');
-    this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true); // Remove open class on page load
+    this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true);
 
-    /* if ($('.nav-mobile__toggle-label').hasClass('open')) {
-        $(this).removeClass('open');
-    } */
+    window.onpopstate = function () {
+      if (this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
+        console.log('menu is open on load');
+        this.toggleLabel.removeClass('open');
+      } else {
+        console.log('menu is closed on load');
+      }
+    };
 
+    history.pushState({}, '');
+    this.openNav();
     console.log(this.toggleLabel.attr('class'));
 
     if (this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
@@ -23578,7 +23585,6 @@ function () {
     //});
 
 
-    console.log('function main');
     var label = this.nav.prev();
 
     if (label.length > 0 && label.attr('for')) {
@@ -23633,23 +23639,26 @@ function () {
       }
     }
   }, {
-    key: "openNav",
-    value: function openNav() {
-      // alert('open menu');
-      this.verticalMenu.launch();
-      this.toggleLabel.attr('aria-expanded', 'true');
-      this.toggleLabel.addClass('open');
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').addClass('no-scroll--below-medium');
-    }
-  }, {
     key: "closeNav",
     value: function closeNav() {
-      // alert('close menu');
+      console.log('close menu');
       this.toggle.prop('checked', false);
       this.verticalMenu.closeAll();
       this.toggleLabel.attr('aria-expanded', 'false');
       this.toggleLabel.removeClass('open');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').removeClass('no-scroll--below-medium');
+    }
+  }, {
+    key: "openNav",
+    value: function openNav() {
+      console.log('open menu');
+      this.verticalMenu.launch();
+      this.toggleLabel.attr('aria-expanded', 'true');
+      this.toggleLabel.addClass('open');
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').addClass('no-scroll--below-medium');
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.vertical-menu__page-link').click(function () {
+        jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label.open').removeClass('open');
+      });
     }
   }]);
 
