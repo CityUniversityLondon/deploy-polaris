@@ -23559,17 +23559,18 @@ function () {
     this.toggle = nav.find('.nav-mobile__toggle');
     this.toggleLabel = nav.find('.nav-mobile__toggle-label');
     this.menuContainer = nav.find('.nav-mobile__content');
-    this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true); // window.scrollTop;
-    // window.onpopstate = function() {
-    //     if(this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
-    //         console.log('menu is open on load');
-    //         this.toggleLabel.removeClass('open');
-    //     } else {
-    //         console.log('menu is closed on load')
-    //     }
-    // }; 
-    // history.pushState({}, '');
-    // console.log(this.toggleLabel.attr('class'));
+    this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true);
+
+    window.onpopstate = function () {
+      if (this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
+        console.log('menu is open on load');
+        this.toggleLabel.removeClass('open');
+      } else {
+        console.log('menu is closed on load');
+      }
+    };
+
+    history.pushState({}, ''); // console.log(this.toggleLabel.attr('class'));
     // if(this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
     //     console.log('menu is open on load');
     //     this.toggleLabel.removeClass('open');
@@ -23577,9 +23578,6 @@ function () {
     //     console.log('menu is closed on load')
     // }
     //this.toggleNav();
-    //$( window ).load(function() {
-    //  alert('loadll');
-    //});
 
     var label = this.nav.prev();
 
