@@ -23560,6 +23560,7 @@ function () {
     this.toggleLabel = nav.find('.nav-mobile__toggle-label');
     this.menuContainer = nav.find('.nav-mobile__content');
     this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true);
+    window.scrollTop;
 
     window.onpopstate = function () {
       if (this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
@@ -23571,7 +23572,6 @@ function () {
     };
 
     history.pushState({}, '');
-    this.openNav();
     console.log(this.toggleLabel.attr('class'));
 
     if (this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
