@@ -7148,7 +7148,7 @@ svg:not(:root) {
 
 .vertical-menu__page-link .vertical-menu__page-link__label,
 .vertical-menu__toggle-link .vertical-menu__page-link__label {
-    background-color: red;
+    background-color: blue;
 }
 
 .nav-mobile {
