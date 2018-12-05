@@ -7146,11 +7146,6 @@ svg:not(:root) {
     display: none;
 }
 
-.vertical-menu__page-link .vertical-menu__page-link__label,
-.vertical-menu__toggle-link .vertical-menu__page-link__label {
-    background-color: blue;
-}
-
 .nav-mobile {
     /** TODO: Is min height necessary? **/
     float: left;
