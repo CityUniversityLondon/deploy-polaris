@@ -21452,78 +21452,49 @@ table tbody > tr > td:hover {
 }
 
 blockquote {
-    padding: 50px 50px 28px 50px;
-    margin-bottom: 22px;
+    padding: 2rem 2rem 2rem 2rem;
     position: relative;
-}
-
-blockquote p:first-child::before {
-    font-family: FontAwesome;
-    content: "\f10D";
-    position: relative;
-    padding: 10px;
-    top: -5px;
-    font-size: xx-small;
 }
 
 blockquote::before {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: solid #d92231;
-    border-top-width: medium;
-    border-right-width: medium;
-    border-bottom-width: medium;
-    border-left-width: medium;
+    font-family: FontAwesome;
+    content: url("../img/qoute.svg");
+    font-size: xx-large;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    border-width: 13px 13px 0 0;
-    top: 0;
-    right: 0;
+    margin-bottom: 2rem;
+    width: 50%;
 }
 
-blockquote::after {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: solid #d92231;
-    border-top-width: medium;
-    border-right-width: medium;
-    border-bottom-width: medium;
-    border-left-width: medium;
-    display: block;
-    border-width: 0 0 13px 13px;
-    bottom: 0;
-    left: 0;
+blockquote + blockquote::before {
+    /* width: 300px;
+        border-top: solid thin $color-nobel;
+        padding-top: $measure-large;
+        */
+}
+
+blockquote:nth-last-of-type(1)::after {
+    /* display: none; */
 }
 
 blockquote p {
-    font-weight: bold;
-}
-
-blockquote p:first-child {
-    text-indent: -30px;
+    font-size: 1.44rem;
 }
 
 blockquote p::before {
     content: "";
 }
 
-blockquote p:last-child {
-    color: #646464;
-    font-weight: normal;
+blockquote p:only-child {
+    /* font-weight: bold;
+        color: black; */
 }
 
-blockquote p:nth-last-of-type(2)::after {
-    font-family: FontAwesome;
-    content: "\f10E";
-    position: relative !important;
-    /* overrides over styles */
-    padding: 10px;
-    right: -10px;
-    top: -5px;
-    font-size: xx-small;
+blockquote .reference {
+    color: #a1a1a1;
+    font-size: 1rem;
 }
 
 .anchor-demo-list li {
