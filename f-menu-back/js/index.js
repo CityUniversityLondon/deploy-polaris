@@ -23561,7 +23561,8 @@ function () {
     this.menuContainer = nav.find('.nav-mobile__content');
     this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true); // Menu label visible on page load
 
-    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').show(); // window.onpopstate = function() {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').show();
+    console.log('abc'); // window.onpopstate = function() {
     //     if(this.toggleLabel.hasClass('nav-mobile__toggle-label open')) {
     //         console.log('menu is open on load');
     //         this.toggleLabel.removeClass('open');
@@ -23641,6 +23642,7 @@ function () {
       this.toggleLabel.attr('aria-expanded', 'false');
       this.toggleLabel.removeClass('open');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').removeClass('no-scroll--below-medium');
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').show();
     }
   }, {
     key: "openNav",
