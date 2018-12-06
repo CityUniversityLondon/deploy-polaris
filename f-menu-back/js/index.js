@@ -23620,7 +23620,8 @@ function () {
         this.closeNav();
       }
 
-      console.log('launch');
+      console.log(this.toggle.prop('checked'));
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').show();
     }
   }, {
     key: "toggleNav",
@@ -23642,7 +23643,6 @@ function () {
       this.toggleLabel.attr('aria-expanded', 'false');
       this.toggleLabel.removeClass('open');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').removeClass('no-scroll--below-medium');
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').show();
     }
   }, {
     key: "openNav",
