@@ -21451,13 +21451,39 @@ table tbody > tr > td:hover {
     display: none;
 }
 
+/* ------------------------*/
+.scp--corporate blockquote::before {
+    background-color: #f2f2f2;
+}
+
+.scp--undergraduate blockquote::before {
+    background-color: #f15f22;
+}
+
+.scp--masters blockquote::before {
+    background-color: #00284d;
+}
+
+.scp--phd blockquote::before {
+    background-color: #0077a0;
+}
+
+.scp--mba blockquote::before {
+    background-color: #00444d;
+}
+
+.scp--executive-education blockquote::before {
+    background-color: #842b91;
+}
+
+/* ------------------------*/
 blockquote {
     padding: 2rem 2rem 2rem 2rem;
     position: relative;
 }
 
 blockquote::before {
-    font-family: FontAwesome;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     content: url("../img/qoute.svg");
     font-size: xx-large;
     text-align: center;
@@ -21465,7 +21491,14 @@ blockquote::before {
     margin-right: auto;
     display: block;
     margin-bottom: 2rem;
-    width: 50%;
+    width: 30%;
+    -webkit-mask: url("../img/qoute.svg") no-repeat 50%;
+            mask: url("../img/qoute.svg") no-repeat 50%;
+    -webkit-mask-size: auto auto;
+            mask-size: auto auto;
+    -webkit-mask-size: cover;
+            mask-size: cover;
+    height: 40px;
 }
 
 blockquote + blockquote::before {
@@ -21480,6 +21513,7 @@ blockquote:nth-last-of-type(1)::after {
 }
 
 blockquote p {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 1.44rem;
 }
 
