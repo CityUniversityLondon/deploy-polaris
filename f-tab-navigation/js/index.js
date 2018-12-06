@@ -23885,25 +23885,12 @@ function prepareLinks(widget, headings) {
         element.id = formattedTextVal; // Pass formatted value to parent element (anchor)'s href
 
         var parent = element.parentElement;
-        parent.href = "#".concat(formattedTextVal);
-
-        if (parent.href == "https://www.cass.city.ac.uk/study/undergraduate/courses/accounting-and-finance#".concat(selectedHashString)) {
-          console.log('app'); // parent.className = parent.className.replace("accordion-tabs__menu__item.inaactive", "car");
-          // parent.className = 'accordion-tabs__menu__item active';
-
-          parent.setAttribute('aria-selected', 'true');
-          parent.setAttribute('aria-expanded', 'true');
-          /* var inactiveLinks = document.getElementsByClassName('accordion-tabs__menu__item inactive');
-          for (let inactiveLink of inactiveLinks) {
-              inactiveLink.className = 'a';
-              console.log(inactiveLink);
-          } */
-        } else {
-          // parent.className = 'accordion-tabs__menu__item b';
-          parent.setAttribute('aria-selected', 'false');
-          parent.setAttribute('aria-expanded', 'false');
-        } // parent.classList.add('test');
-
+        parent.href = "#".concat(formattedTextVal); // if (parent.href == 'https://www.cass.city.ac.uk/study/undergraduate/courses/accounting-and-finance#application') {
+        //     console.log('app');
+        //     // parent.className = parent.className.replace("accordion-tabs__menu__item.inaactive", "car");
+        //     parent.className = 'accordion-tabs__menu__item b';
+        // }
+        // parent.classList.add('test');
       }
     } catch (err) {
       _didIteratorError = true;
@@ -23923,7 +23910,10 @@ function prepareLinks(widget, headings) {
 
   function carpet() {
     return _carpet.apply(this, arguments);
-  }
+  } // carpet();
+  // elements.then(console.log('then'));
+  // URL root
+
 
   function _carpet() {
     _carpet = _asyncToGenerator(
@@ -23946,12 +23936,105 @@ function prepareLinks(widget, headings) {
     return _carpet.apply(this, arguments);
   }
 
-  carpet(); // elements.then(console.log('then'));
-  // URL root
-
   var rootURL = window.location.href.replace(window.location.hash, '') || window.location.href; // console.log(`Root URL: ${rootURL}`);
 
-  var updatedURL = "".concat(rootURL, "#fees");
+  var updatedURL = "".concat(rootURL, "#fees"); // document.location.href = updatedURL;
+  // console.log(`Target link: ${targetLink.length}`);
+  // Modify accordion tab headings
+  // var accTabHeadings = document.getElementsByClassName('accordion-tabs__menu__item');
+  // accTabHeadings.className('open');
+  // console.log(accTabHeadings);
+  // const accTabHeading = accTabHeadings.find(accTabHeading => {
+  //     if(accTabHeading.href === "#fees") {
+  //       return true;
+  //     } else {
+  //       return false;
+  //     }
+  //   });
+  // console.log(accTabHeading);
+
+  /* for (let accTabHeading of accTabHeadings) {
+      let hashString = accTabHeading.href.split('#')[1];
+       console.log(accTabHeading.href);
+       if (accTabHeading.href == `${rootURL}#fees`) {
+          console.log('fees match');
+          console.log($(this));
+      }
+       // console.log(hashString);
+      // console.log(accTabHeading.href);
+      if (hashString == 'fees') {
+          // console.log('selected');
+          // console.log(this);
+          // this.className = 'selected';
+      } else {
+          // this.className = 'accordion-tabs__menu__item inactive';
+          // console.log('not selected');
+      }
+  } */
+
+  /* Dec changes */
+
+  var selectedTabId = sessionStorage.getItem('key');
+  console.log("Selected Tab heading ID: ".concat(selectedTabId)); // Find all elements on page with matching 'data-id' value
+
+  var matchingIds = document.querySelectorAll("[data-id='".concat(selectedTabId, "']"));
+  console.log(matchingIds); // If there is a previously selected tab in the session
+
+  if (selectedTabId) {
+    // Loop through elements with matching 'data-id' values
+    [].forEach.call(matchingIds, function (elem) {
+      if (elem.className.indexOf( true && elem.nodeName == "a")) {
+        var parent = elem.parentElement.className; // Limit behaviour to accordion-tabs
+
+        if (parent == 'accordion-tabs__content') {
+          elem.className = 'accordion-tabs__menu__item active';
+          elem.setAttribute("aria-selected", "true");
+          elem.setAttribute("aria-expanded", "true"); // If previously selected tab was the first tab
+
+          if (selectedTabId == 0) {
+            jquery__WEBPACK_IMPORTED_MODULE_8___default()('.container.accordion-tabs__content__group:first').show();
+          } else {
+            jquery__WEBPACK_IMPORTED_MODULE_8___default()('.container.accordion-tabs__content__group:first').hide();
+          } // If user clicks on other accordion-tabs headings which are different to previous value in session
+
+
+          jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:not(:eq(".concat(selectedTabId, "))")).click(function () {
+            // Hide previously selected content in state 
+            jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(selectedTabId, ")")).css('display', 'none');
+          }); // User selects already active tab heading: show this content
+
+          jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:eq(".concat(selectedTabId, ")")).click(function () {
+            jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(selectedTabId, ")")).css('display', 'block');
+          }); // User selects first item in accordion-tab: show this content
+
+          jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:eq(0)").click(function () {
+            jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(0)").css('display', 'block');
+          });
+        }
+      }
+    });
+    /* Convert node list to array
+    var selectedTabHeadingArray = [].slice.call(matchingIds);
+    console.log(selectedTabHeadingArray);
+     const targetMenu = selectedTabHeadingArray.find(targetMenu => {
+        if(targetMenu == "a.accordion-tabs__menu__item.inactive") {
+            console.log('true');
+        } else {
+            console.log('false');
+        }
+    });
+    console.log(targetMenu); */
+    // Remove default active tab heading class (always first tab on page load)
+
+    var activeDefaultTabHeading = document.getElementsByClassName("accordion-tabs__menu__item active"); // activeDefaultTabHeading[0].classList.remove("active");
+    // Find matching tab content
+    // [].forEach.call(selectedTabHeading, function(elem){
+    //     if(elem.className.indexOf("accordion-tabs__content__heading-anchor.inactive" && elem.nodeName == "a")) {
+    //         elem.className = 'accordion-tabs__content__heading-anchor active';  
+    //     }
+    // }); 
+  }
+
   allAnchors.on('click', function (evt) {
     evt.preventDefault(); // Find tabpanel content with matching name
 
@@ -23990,7 +24073,15 @@ function prepareLinks(widget, headings) {
     updateLinks(); // var fullURL = `${rootURL}#${hashString}`;
 
     console.log(fullURL);
-    history.pushState(null, null, '#' + selectedHashString);
+    history.pushState(null, null, '#' + selectedHashString); // ID of selected tab
+
+    var selectedTab = jquery__WEBPACK_IMPORTED_MODULE_8___default()(this).attr('data-id'); // selectedTabs.push(selectedTab);
+    // Session storage
+
+    sessionStorage.setItem('key', selectedTab);
+    var data = sessionStorage.getItem('key'); // console.log(data);
+    // console.log(selectedTabs);
+
     var anchor = jquery__WEBPACK_IMPORTED_MODULE_8___default()(this);
     var isAccordionAnchor = anchor.attr('data-accordion-anchor');
 
@@ -24011,7 +24102,7 @@ function prepareLinks(widget, headings) {
   }
 
   return activateItem;
-}
+} // aria-selected="true" aria-expanded="true"
 
 /***/ }),
 
@@ -24143,7 +24234,7 @@ function findHeadings(className, widget, contentWrapper) {
       for (var _iterator = elems[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
         var elem = _step.value;
         elem = elem.textContent.replace(/\s+/g, '-').toLowerCase();
-        console.log(elem);
+        console.log('elem');
       }
     } catch (err) {
       _didIteratorError = true;
