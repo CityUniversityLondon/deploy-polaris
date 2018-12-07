@@ -23934,8 +23934,8 @@ function prepareLinks(widget, headings) {
     return _carpet.apply(this, arguments);
   }
 
-  var rootURL = window.location.href.replace(window.location.hash, '') || window.location.href;
-  console.log("Root URL: ".concat(rootURL));
+  var rootURL = window.location.href.replace(window.location.hash, '') || window.location.href; // console.log(`Root URL: ${rootURL}`);
+
   var updatedURL = "".concat(rootURL, "#fees"); // document.location.href = updatedURL;
   // console.log(`Target link: ${targetLink.length}`);
   // Modify accordion tab headings
@@ -23975,14 +23975,14 @@ function prepareLinks(widget, headings) {
   var selectedTabId = sessionStorage.getItem('key');
   console.log("Selected Tab heading ID: ".concat(selectedTabId)); // Find all elements on page with matching 'data-id' value
 
-  var matchingIds = document.querySelectorAll("[data-id='".concat(selectedTabId, "']"));
-  console.log(matchingIds); // If there is a previously selected tab in the session
+  var matchingIds = document.querySelectorAll("[data-id='".concat(selectedTabId, "']")); // console.log(matchingIds);
+  // If there is a previously selected tab in the session
 
   if (selectedTabId) {
     var accTabs = document.getElementsByClassName('accordion-tabs__menu__item');
     [].forEach.call(accTabs, function (e) {
       if (e.getAttribute('data-id') == selectedTabId) {
-        e.className = 'accordion-tabs__menu__item a';
+        // e.className = 'accordion-tabs__menu__item a';
         e.setAttribute("aria-selected", "true");
         e.setAttribute("aria-expanded", "true");
       } else if (e.getAttribute('data-id') == '0') {
@@ -24007,8 +24007,8 @@ function prepareLinks(widget, headings) {
 
     [].forEach.call(matchingIds, function (elem) {
       if (elem.className.indexOf( true && elem.nodeName == "a")) {
-        var parent = elem.parentElement.className;
-        console.log("Parent: ".concat(parent)); // if (parent == 'accordion-tabs__menu') {
+        var parent = elem.parentElement.className; // console.log(`Parent: ${parent}`);
+        // if (parent == 'accordion-tabs__menu') {
         //     elem.className = 'accordion-tabs__menu__item a';  
         //     elem.setAttribute("aria-selected", "true");
         //     elem.setAttribute("aria-expanded", "true");
@@ -24024,7 +24024,7 @@ function prepareLinks(widget, headings) {
         if (parent == 'accordion-tabs__content') {
           elem.className = 'accordion-tabs__menu__item active';
           elem.setAttribute("aria-selected", "true");
-          elem.setAttribute("aria-expanded", "true"); // If previously selected tab was the first tab
+          elem.setAttribute("aria-expanded", "true"); // // If previously selected tab was the first tab
 
           if (selectedTabId == 0) {
             jquery__WEBPACK_IMPORTED_MODULE_8___default()('.container.accordion-tabs__content__group:first').show();
@@ -24036,6 +24036,7 @@ function prepareLinks(widget, headings) {
           jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:not(:eq(".concat(selectedTabId, "))")).click(function () {
             // Hide previously selected content in state 
             jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(selectedTabId, ")")).css('display', 'none');
+            jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:eq(".concat(selectedTabId, ")")).attr("aria-selected", "false");
           }); // User selects already active tab heading: show this content
 
           jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:eq(".concat(selectedTabId, ")")).click(function () {
@@ -24044,6 +24045,8 @@ function prepareLinks(widget, headings) {
 
           jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:eq(0)").click(function () {
             jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(0)").css('display', 'block');
+            jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:eq(0)").attr("aria-selected", "true");
+            jquery__WEBPACK_IMPORTED_MODULE_8___default()(".accordion-tabs__menu__item:eq(0)").addClass('active');
           });
         }
       }
