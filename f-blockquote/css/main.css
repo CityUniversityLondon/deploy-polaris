@@ -21453,27 +21453,27 @@ table tbody > tr > td:hover {
 
 /* ------------------------*/
 .scp--corporate blockquote::before {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 !important;
 }
 
 .scp--undergraduate blockquote::before {
-    background-color: #f15f22;
+    background-color: #f15f22 !important;
 }
 
 .scp--masters blockquote::before {
-    background-color: #00284d;
+    background-color: #00284d !important;
 }
 
 .scp--phd blockquote::before {
-    background-color: #0077a0;
+    background-color: #0077a0 !important;
 }
 
 .scp--mba blockquote::before {
-    background-color: #00444d;
+    background-color: #00444d !important;
 }
 
 .scp--executive-education blockquote::before {
-    background-color: #842b91;
+    background-color: #842b91 !important;
 }
 
 /* ------------------------*/
@@ -21484,21 +21484,20 @@ blockquote {
 
 blockquote::before {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    content: url("../img/qoute.svg");
+    content: "";
     font-size: xx-large;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-bottom: 2rem;
-    width: 30%;
-    -webkit-mask: url("../img/qoute.svg") no-repeat 50%;
-            mask: url("../img/qoute.svg") no-repeat 50%;
-    -webkit-mask-size: auto auto;
-            mask-size: auto auto;
-    -webkit-mask-size: cover;
-            mask-size: cover;
+    width: 180px;
+    -webkit-mask: url("../img/qoute.svg") no-repeat;
+            mask: url("../img/qoute.svg") no-repeat;
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
     height: 40px;
+    background-color: black;
 }
 
 blockquote + blockquote::before {
@@ -21519,11 +21518,6 @@ blockquote p {
 
 blockquote p::before {
     content: "";
-}
-
-blockquote p:only-child {
-    /* font-weight: bold;
-        color: black; */
 }
 
 blockquote .reference {
