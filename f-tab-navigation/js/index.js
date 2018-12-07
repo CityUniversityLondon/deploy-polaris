@@ -23808,12 +23808,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function genActivateItem(widget, headingAnchors, allAnchors) {
   return function (id, scroll) {
-    allAnchors.filter("[data-id=\"".concat(id, "\"].inactive")).removeClass('inactive').addClass('active'); // .attr('aria-selected', 'true')
-    // .attr('aria-expanded', 'true');
-
-    allAnchors.filter(".active").not("[data-id=\"".concat(id, "\"]")).removeClass('active').addClass('inactive'); // .attr('aria-selected', 'false')
-    // .attr('aria-expanded', 'false');
-
+    allAnchors.filter("[data-id=\"".concat(id, "\"].inactive")).removeClass('inactive').addClass('active').attr('aria-selected', 'true').attr('aria-expanded', 'true');
+    allAnchors.filter(".active").not("[data-id=\"".concat(id, "\"]")).removeClass('active').addClass('inactive').attr('aria-selected', 'false').attr('aria-expanded', 'false');
     var heading = headingAnchors.filter("[data-id=\"".concat(id, "\"]"));
 
     if (scroll === 'accordion' && Object(_js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_10__["default"])(heading)) {
@@ -23859,16 +23855,14 @@ function prepareLinks(widget, headings) {
 
 
   function listLinks() {
-    var targetLink = document.querySelectorAll("a"); // console.log(targetLink.length);
+    var targetLink = document.querySelectorAll("a"); // .log(targetLink.length);
 
     for (var i = 0; i < targetLink.length; i++) {// console.log(targetLink[i]);
     }
-  }
+  } // Updated tab/accordion anchor href
 
-  var selectedHashString = ''; // Updated tab/accordion anchor href
 
   function updateLinks() {
-    console.log('a');
     var elements = document.getElementsByClassName('accordion-tabs__menu__item__label');
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
@@ -23924,9 +23918,13 @@ function prepareLinks(widget, headings) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return listLinks();
+              return updateLinks();
 
             case 2:
+              _context.next = 4;
+              return listLinks();
+
+            case 4:
             case "end":
               return _context.stop();
           }
@@ -23936,8 +23934,8 @@ function prepareLinks(widget, headings) {
     return _carpet.apply(this, arguments);
   }
 
-  var rootURL = window.location.href.replace(window.location.hash, '') || window.location.href; // console.log(`Root URL: ${rootURL}`);
-
+  var rootURL = window.location.href.replace(window.location.hash, '') || window.location.href;
+  console.log("Root URL: ".concat(rootURL));
   var updatedURL = "".concat(rootURL, "#fees"); // document.location.href = updatedURL;
   // console.log(`Target link: ${targetLink.length}`);
   // Modify accordion tab headings
@@ -23981,10 +23979,47 @@ function prepareLinks(widget, headings) {
   console.log(matchingIds); // If there is a previously selected tab in the session
 
   if (selectedTabId) {
-    // Loop through elements with matching 'data-id' values
+    var accTabs = document.getElementsByClassName('accordion-tabs__menu__item');
+    [].forEach.call(accTabs, function (e) {
+      if (e.getAttribute('data-id') == selectedTabId) {
+        e.className = 'accordion-tabs__menu__item a';
+        e.setAttribute("aria-selected", "true");
+        e.setAttribute("aria-expanded", "true");
+      } else if (e.getAttribute('data-id') == '0') {
+        e.className = 'accordion-tabs__menu__item';
+      } else {
+        e.className = 'accordion-tabs__menu__item inactive';
+        e.setAttribute("aria-selected", "false");
+        e.setAttribute("aria-expanded", "false");
+      } // if(!(e.getAttribute('data-id') == '1')) {
+      //     // e.classList.remove("active");
+      //     // e.classList.add("inactive");
+      //     e.className = 'accordion-tabs__menu__item inactive';  
+      //     e.setAttribute("aria-selected", "false");
+      //     e.setAttribute("aria-expanded", "false");
+      // } else {
+      //     e.className = 'accordion-tabs__menu__item a';  
+      //     e.setAttribute("aria-selected", "true");
+      //     e.setAttribute("aria-expanded", "true");
+      // }
+
+    }); // Loop through elements with matching 'data-id' values
+
     [].forEach.call(matchingIds, function (elem) {
       if (elem.className.indexOf( true && elem.nodeName == "a")) {
-        var parent = elem.parentElement.className; // Limit behaviour to accordion-tabs
+        var parent = elem.parentElement.className;
+        console.log("Parent: ".concat(parent)); // if (parent == 'accordion-tabs__menu') {
+        //     elem.className = 'accordion-tabs__menu__item a';  
+        //     elem.setAttribute("aria-selected", "true");
+        //     elem.setAttribute("aria-expanded", "true");
+        // }
+
+        var menuLinks = document.querySelectorAll("".concat(parent, " a"));
+        [].forEach.call(menuLinks, function (e) {
+          // console.log(e);
+          if (e.className == 'tabs__menu__item active') {// console.log('c');
+          }
+        }); // Limit behaviour to accordion-tabs
 
         if (parent == 'accordion-tabs__content') {
           elem.className = 'accordion-tabs__menu__item active';
@@ -24052,7 +24087,10 @@ function prepareLinks(widget, headings) {
         var formattedTextVal = targetTabHeadingText.replace(/\s+/g, '-').toLowerCase(); // console.log(formattedTextVal);
 
         targetTabHeading.id = formattedTextVal;
-      }
+      } // let targetTabHeading = targetTabPanel.textContent;
+      // console.log(targetTabHeading);
+      // ID of selected tab
+
     } catch (err) {
       _didIteratorError2 = true;
       _iteratorError2 = err;
@@ -24067,13 +24105,6 @@ function prepareLinks(widget, headings) {
         }
       }
     }
-
-    selectedHashString = this.hash.substr(1);
-    console.log(selectedHashString);
-    updateLinks(); // var fullURL = `${rootURL}#${hashString}`;
-
-    console.log(fullURL);
-    history.pushState(null, null, '#' + selectedHashString); // ID of selected tab
 
     var selectedTab = jquery__WEBPACK_IMPORTED_MODULE_8___default()(this).attr('data-id'); // selectedTabs.push(selectedTab);
     // Session storage
