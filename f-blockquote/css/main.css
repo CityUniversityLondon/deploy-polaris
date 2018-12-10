@@ -21453,27 +21453,27 @@ table tbody > tr > td:hover {
 
 /* ------------------------*/
 .scp--corporate blockquote::before {
-    background-color: #f2f2f2 !important;
+    background-color: #f2f2f2;
 }
 
 .scp--undergraduate blockquote::before {
-    background-color: #f15f22 !important;
+    background-color: #f15f22;
 }
 
 .scp--masters blockquote::before {
-    background-color: #00284d !important;
+    background-color: #00284d;
 }
 
 .scp--phd blockquote::before {
-    background-color: #0077a0 !important;
+    background-color: #0077a0;
 }
 
 .scp--mba blockquote::before {
-    background-color: #00444d !important;
+    background-color: #00444d;
 }
 
 .scp--executive-education blockquote::before {
-    background-color: #842b91 !important;
+    background-color: #842b91;
 }
 
 /* ------------------------*/
@@ -21494,13 +21494,10 @@ blockquote::before {
     width: 180px;
     height: 40px;
     background-color: black;
-    /*  */
     -webkit-mask: url("../img/quote.svg") no-repeat;
             mask: url("../img/quote.svg") no-repeat;
-    /* */
     -webkit-mask-size: 100%;
             mask-size: 100%;
-    /* */
 }
 
 blockquote + blockquote::before {
@@ -21542,6 +21539,11 @@ blockquote .reference {
         content: url("../img/quote.svg") !important;
         background-color: transparent !important;
     }
+}
+
+_:-ms-fullscreen blockquote::before, :root .ie11up blockquote::before {
+    content: url("../img/quote.svg") !important;
+    background-color: transparent !important;
 }
 
 .anchor-demo-list li {
