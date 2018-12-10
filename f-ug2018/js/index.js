@@ -25085,78 +25085,6 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(youtube_cta).click(function () {
 
 /***/ }),
 
-/***/ "./src/components/video-banner/video-gradient/video-gradient-youtube.js":
-/*!******************************************************************************!*\
-  !*** ./src/components/video-banner/video-gradient/video-gradient-youtube.js ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return loadYoutubeVideo; });
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var extend__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! extend */ "./node_modules/extend/index.js");
-/* harmony import */ var extend__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(extend__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _js_utils_youtube_player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../js-utils/youtube-player */ "./src/js-utils/youtube-player.js");
-/* harmony import */ var _js_utils_scrolled_into_view__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../js-utils/scrolled-into-view */ "./src/js-utils/scrolled-into-view.js");
-
-
-
-
-
-
-var DEFAULT_PARAMS = {
-  frameBorder: '0',
-  playerVars: {
-    rel: 0
-  }
-};
-function loadYoutubeVideo(wrapper, _ref) {
-  var id = _ref.id,
-      params = _ref.params;
-  var iframeId = "ytev-".concat(id);
-  var link = null;
-  link = wrapper.children('a');
-  var fallbackParams = {
-    width: link.width(),
-    height: link.height()
-  };
-  var playerParams = extend__WEBPACK_IMPORTED_MODULE_1___default()({}, DEFAULT_PARAMS, fallbackParams, params, {
-    videoId: id,
-    events: {
-      onInit: function onInit() {
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()('<div/>').attr('id', iframeId).attr(fallbackParams).insertBefore(link);
-        wrapper.addClass('video-preview--loading');
-      },
-      onReady: function onReady(event) {
-        var player = event.target;
-        var iframe = link.siblings('iframe');
-        wrapper.removeClass('video-preview--loading');
-        wrapper.addClass('media--youtube');
-        wrapper.children(":not(#".concat(iframeId, ")")).css('display', 'none');
-        player.playVideo();
-        var yttitle = player.getVideoData().title;
-        var ytURL = player.getVideoUrl();
-        dataLayer.push({
-          'event': 'play-Youtube-video',
-          'gtm.videoTitle': yttitle,
-          'gtm.videoUrl': ytURL
-        });
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on('scroll', function () {
-          if (Object(_js_utils_scrolled_into_view__WEBPACK_IMPORTED_MODULE_3__["default"])(iframe) < 0.5) {
-            player.pauseVideo();
-          }
-        });
-      }
-    }
-  });
-  Object(_js_utils_youtube_player__WEBPACK_IMPORTED_MODULE_2__["default"])(iframeId, playerParams);
-}
-
-/***/ }),
-
 /***/ "./src/components/video-banner/video-gradient/video-gradient.js":
 /*!**********************************************************************!*\
   !*** ./src/components/video-banner/video-gradient/video-gradient.js ***!
@@ -25171,7 +25099,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _js_utils_get_data_attrs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../js-utils/get-data-attrs */ "./src/js-utils/get-data-attrs.js");
-/* harmony import */ var _video_gradient_youtube__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./video-gradient-youtube */ "./src/components/video-banner/video-gradient/video-gradient-youtube.js");
+/* harmony import */ var _video_preview_video_preview_youtube__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../video-preview/video-preview-youtube */ "./src/components/video-preview/video-preview-youtube.js");
 
 
 
@@ -25242,7 +25170,7 @@ function launch(el) {
 function loadVideo(wrapper, service) {
   switch (service.type) {
     case 'youtube':
-      return Object(_video_gradient_youtube__WEBPACK_IMPORTED_MODULE_3__["default"])(wrapper, service);
+      return Object(_video_preview_video_preview_youtube__WEBPACK_IMPORTED_MODULE_3__["default"])(wrapper, service);
 
     default:
       return false;
@@ -25306,7 +25234,7 @@ function loadYoutubeVideo(wrapper, _ref) {
         var iframe = link.siblings('iframe');
         wrapper.removeClass('video-preview--loading');
         wrapper.addClass('media--youtube');
-        wrapper.children(":not(#".concat(iframeId, ")")).remove();
+        wrapper.children(":not(#".concat(iframeId, ")")).css('display', 'none');
         player.playVideo();
         var yttitle = player.getVideoData().title;
         var ytURL = player.getVideoUrl();
