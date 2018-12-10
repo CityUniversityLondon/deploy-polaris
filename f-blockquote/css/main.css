@@ -21494,8 +21494,8 @@ blockquote::before {
     width: 180px;
     height: 40px;
     /* background-color: black; */
-    /* content: url("../img/qoute.svg");   */
-    /* mask: url("../img/qoute.svg")no-repeat;  */
+    content: url("../img/quote.svg");
+    /* mask: url("../img/quote.svg")no-repeat;  */
     /* mask-size: 100%; */
     /* content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='white'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
         fill: !important;
