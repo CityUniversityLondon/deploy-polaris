@@ -21453,39 +21453,27 @@ table tbody > tr > td:hover {
 
 /* ------------------------*/
 .scp--corporate blockquote::before {
-    -moz-background-color: #f2f2f2 !important;
-    -webkit-background-color: #f2f2f2 !important;
-    -o-background-color: #f2f2f2 !important;
+    background-color: #f2f2f2 !important;
 }
 
 .scp--undergraduate blockquote::before {
-    -moz-background-color: #f15f22 !important;
-    -webkit-background-color: #f15f22 !important;
-    -o-background-color: #f15f22 !important;
+    background-color: #f15f22 !important;
 }
 
 .scp--masters blockquote::before {
-    -moz-background-color: #00284d !important;
-    -webkit-background-color: #00284d !important;
-    -o-background-color: #00284d !important;
+    background-color: #00284d !important;
 }
 
 .scp--phd blockquote::before {
-    -moz-background-color: #0077a0 !important;
-    -webkit-background-color: #0077a0 !important;
-    -o-background-color: #0077a0 !important;
+    background-color: #0077a0 !important;
 }
 
 .scp--mba blockquote::before {
-    -moz-background-color: #00444d !important;
-    -webkit-background-color: #00444d !important;
-    -o-background-color: #00444d !important;
+    background-color: #00444d !important;
 }
 
 .scp--executive-education blockquote::before {
-    -moz-background-color: #842b91 !important;
-    -webkit-background-color: #842b91 !important;
-    -o-background-color: #842b91 !important;
+    background-color: #842b91 !important;
 }
 
 /* ------------------------*/
@@ -21543,16 +21531,16 @@ blockquote .reference {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
     blockquote::before {
-        content: url("../img/quote.svg");
-        background-color: transparent;
+        content: url("../img/quote.svg") !important;
+        background-color: transparent !important;
     }
 }
 
 @supports (-ms-accelerator: true) {
     /* IE Edge 12+ CSS styles go here */
     blockquote::before {
-        content: url("../img/quote.svg");
-        background-color: transparent;
+        content: url("../img/quote.svg") !important;
+        background-color: transparent !important;
     }
 }
 
