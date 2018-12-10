@@ -21493,14 +21493,18 @@ blockquote::before {
     margin-bottom: 2rem;
     width: 180px;
     height: 40px;
-    background-color: black;
-    /* mask: url("../img/qoute.svg")no-repeat;
-        mask-size: 100%; */
-    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='white'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
-}
-
-blockquote + blockquote::before {
-    /* width: 300px;
+    /* background-color: black; */
+    /* content: url("../img/qoute.svg");   */
+    /* mask: url("../img/qoute.svg")no-repeat;  */
+    /* mask-size: 100%; */
+    /* content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='white'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
+        fill: !important;
+        stroke: !important;
+        color: !important;
+    }
+    
+    &+ blockquote::before{
+        /* width: 300px;
         border-top: solid thin $color-nobel;
         padding-top: $measure-large;
         */
