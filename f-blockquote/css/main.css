@@ -21453,27 +21453,39 @@ table tbody > tr > td:hover {
 
 /* ------------------------*/
 .scp--corporate blockquote::before {
-    background-color: #f2f2f2 !important;
+    -moz-background-color: #f2f2f2 !important;
+    -webkit-background-color: #f2f2f2 !important;
+    -o-background-color: #f2f2f2 !important;
 }
 
 .scp--undergraduate blockquote::before {
-    background-color: #f15f22 !important;
+    -moz-background-color: #f15f22 !important;
+    -webkit-background-color: #f15f22 !important;
+    -o-background-color: #f15f22 !important;
 }
 
 .scp--masters blockquote::before {
-    background-color: #00284d !important;
+    -moz-background-color: #00284d !important;
+    -webkit-background-color: #00284d !important;
+    -o-background-color: #00284d !important;
 }
 
 .scp--phd blockquote::before {
-    background-color: #0077a0 !important;
+    -moz-background-color: #0077a0 !important;
+    -webkit-background-color: #0077a0 !important;
+    -o-background-color: #0077a0 !important;
 }
 
 .scp--mba blockquote::before {
-    background-color: #00444d !important;
+    -moz-background-color: #00444d !important;
+    -webkit-background-color: #00444d !important;
+    -o-background-color: #00444d !important;
 }
 
 .scp--executive-education blockquote::before {
-    background-color: #842b91 !important;
+    -moz-background-color: #842b91 !important;
+    -webkit-background-color: #842b91 !important;
+    -o-background-color: #842b91 !important;
 }
 
 /* ------------------------*/
@@ -21493,10 +21505,15 @@ blockquote::before {
     margin-bottom: 2rem;
     width: 180px;
     height: 40px;
-    /* background-color: black; */
-    content: url("../img/quote.svg");
-    /* mask: url("../img/quote.svg")no-repeat;  */
-    /* mask-size: 100%; */
+    background-color: black;
+    /*  */
+    -ms-content: url("../img/quote.svg");
+    -webkit-mask: url("../img/quote.svg") no-repeat;
+            mask: url("../img/quote.svg") no-repeat;
+    /* */
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
+    /* */
     /* content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='white'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
         fill: !important;
         stroke: !important;
