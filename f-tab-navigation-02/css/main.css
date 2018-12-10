@@ -9809,6 +9809,10 @@ svg:not(:root) {
     color: #1e1e1e;
 }
 
+.accordion-tabs__content .accordion-tabs__menu__item {
+    display: none;
+}
+
 .banner {
     position: relative;
 }
