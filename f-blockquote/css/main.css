@@ -21512,7 +21512,7 @@ blockquote:nth-last-of-type(1)::after {
 
 blockquote p {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.44rem;
+    font-size: 1.2rem;
 }
 
 blockquote p::before {
