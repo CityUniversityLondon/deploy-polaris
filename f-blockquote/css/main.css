@@ -21537,13 +21537,22 @@ blockquote .reference {
     /* IE Edge 12+ CSS styles go here */
     blockquote::before {
         content: url("../img/quote.svg") !important;
-        background-color: transparent !important;
+        background-color: green !important;
     }
 }
 
+/* IE Edge 12+ CSS styles go here */
+@supports (-ms-ime-align: auto) {
+    blockquote::before {
+        content: url("../img/quote.svg") !important;
+        background-color: red !important;
+    }
+}
+
+/* IE Edge 12+ CSS styles go here */
 _:-ms-fullscreen blockquote::before, :root .ie11up blockquote::before {
     content: url("../img/quote.svg") !important;
-    background-color: transparent !important;
+    background-color: yellow !important;
 }
 
 .anchor-demo-list li {
