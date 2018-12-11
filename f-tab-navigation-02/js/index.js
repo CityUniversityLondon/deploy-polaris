@@ -22418,9 +22418,7 @@ function prepareLinks(widget, headings) {
         evt.preventDefault();
       }
     });
-  }
-  /****** DEC 2018 CHANGES ******/
-  // Get selected tab data ID from session storage
+  } // Get selected tab data ID from session storage
 
 
   var selectedTabId = sessionStorage.getItem('key'); // Find all elements on page with matching 'data-id' value
@@ -22460,32 +22458,41 @@ function prepareLinks(widget, headings) {
           } // Capture subsequent tab clicks
 
 
-          var newClickId;
+          var newTabDataId;
           jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item").click(function () {
-            newClickId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+            newTabDataId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+            var firstTabContentHeader = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)');
+            var firstTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
+            var notFirstTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))');
+            var firstTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:eq(0)');
+            var notFirstTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:not(:eq(0))'); // New tab click content variables
 
-            if (newClickId == '0') {
+            var newTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")"));
+            var notNewTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(".concat(newTabDataId, "))"));
+            var newTabContentHeadingAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__heading-anchor:eq(".concat(newTabDataId, ")"));
+            var newTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(".concat(newTabDataId, ")"));
+            var notNewTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newTabDataId, "))"));
+
+            if (newTabDataId == '0') {
               // Content
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__heading-anchor:eq(0)").attr('class', 'accordion-tabs__content__heading-anchor active');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(0)").css('display', 'block');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))").css('display', 'none');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(0)").attr('aria-selected', 'true');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(0)").attr('aria-expanded', 'true'); // Menu heading
+              firstTabContentHeader.attr('class', 'accordion-tabs__content__heading-anchor active');
+              firstTabContentGroup.css('display', 'block');
+              notFirstTabContentGroup.css('display', 'none'); // Menu heading
 
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(0)").attr('aria-selected', 'true');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(0)").attr('aria-expanded', 'true');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(0))").attr('aria-selected', 'false');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(0))").attr('aria-expanded', 'false');
+              firstTabMenuItem.attr('aria-selected', 'true');
+              firstTabMenuItem.attr('aria-expanded', 'true');
+              notFirstTabMenuItem.attr('aria-selected', 'false');
+              notFirstTabMenuItem.attr('aria-expanded', 'false');
             } else {
               // Content
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newClickId, ")")).css('display', 'block');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(".concat(newClickId, "))")).css('display', 'none');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__heading-anchor:eq(".concat(newClickId, ")")).attr('class', 'accordion-tabs__content__heading-anchor active'); // Menu heading
+              newTabContentGroup.css('display', 'block');
+              notNewTabContentGroup.css('display', 'none');
+              newTabContentHeadingAnchor.attr('class', 'accordion-tabs__content__heading-anchor active'); // Menu heading
 
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(".concat(newClickId, ")")).attr('aria-selected', 'true');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(".concat(newClickId, ")")).attr('aria-expanded', 'true');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newClickId, "))")).attr('aria-selected', 'false');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newClickId, "))")).attr('aria-expanded', 'false');
+              newTabMenuItem.attr('aria-selected', 'true');
+              newTabMenuItem.attr('aria-expanded', 'true');
+              notNewTabMenuItem.attr('aria-selected', 'false');
+              notNewTabMenuItem.attr('aria-expanded', 'false');
             }
           }); // End new tab click
         } // End if parent is accordion-tab 
@@ -22494,8 +22501,6 @@ function prepareLinks(widget, headings) {
 
     }); // End matching data-id values loop
   } // End if selectedTabId, i.e. tab click in session data
-
-  /****** END DEC 2018 CHANGES ******/
 
 
   allAnchors.on('click', function (evt) {
