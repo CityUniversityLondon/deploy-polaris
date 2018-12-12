@@ -3857,14 +3857,6 @@ blockquote,
     quotes: '« ' ' »' '‹ ' ' ›';
 }
 
-blockquote p:before {
-    content: open-quote;
-}
-
-blockquote p:after {
-    content: close-quote;
-}
-
 blockquote p:not(:last-of-type):after {
     width: 1px !important;
     height: 1px !important;
@@ -21475,7 +21467,6 @@ table tbody > tr > td:hover {
     background-color: #842b91;
 }
 
-/* ------------------------*/
 blockquote {
     padding: 2rem 2rem 2rem 2rem;
     position: relative;
@@ -21484,7 +21475,6 @@ blockquote {
 blockquote::before {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     content: "";
-    font-size: xx-large;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -21499,28 +21489,9 @@ blockquote::before {
             mask-size: 100%;
 }
 
-blockquote + blockquote::before {
-    /* width: 300px;
-        border-top: solid thin $color-nobel;
-        padding-top: $measure-large;
-        */
-}
-
-blockquote:nth-last-of-type(1)::after {
-    /* display: none; */
-}
-
 blockquote p {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-}
-
-blockquote p::before {
-    content: "" !important;
-}
-
-blockquote p::after {
-    content: "" !important;
 }
 
 blockquote .reference {
