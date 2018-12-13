@@ -25094,12 +25094,15 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()(youtube_cta).click(function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es6_regexp_match__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.match */ "./node_modules/core-js/modules/es6.regexp.match.js");
-/* harmony import */ var core_js_modules_es6_regexp_match__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_match__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _js_utils_get_data_attrs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../js-utils/get-data-attrs */ "./src/js-utils/get-data-attrs.js");
-/* harmony import */ var _video_preview_video_preview_youtube__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../video-preview/video-preview-youtube */ "./src/components/video-preview/video-preview-youtube.js");
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_regexp_match__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.regexp.match */ "./node_modules/core-js/modules/es6.regexp.match.js");
+/* harmony import */ var core_js_modules_es6_regexp_match__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_match__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _js_utils_get_data_attrs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../js-utils/get-data-attrs */ "./src/js-utils/get-data-attrs.js");
+/* harmony import */ var _video_preview_video_preview_youtube__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../video-preview/video-preview-youtube */ "./src/components/video-preview/video-preview-youtube.js");
+
 
 
 
@@ -25109,7 +25112,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function getService(link) {
   var href = link.attr('href') || '';
-  var params = Object(_js_utils_get_data_attrs__WEBPACK_IMPORTED_MODULE_2__["default"])(link);
+  var params = Object(_js_utils_get_data_attrs__WEBPACK_IMPORTED_MODULE_3__["default"])(link);
   var ytMatch = href.match(/(?:https?:\/\/)?(?:www\.)?youtu\.?be(?:\.com)?\/?.*(?:watch|embed)?(?:.*v=|v\/|\/)([\w\-_]+)\&?/);
 
   if (ytMatch) {
@@ -25124,8 +25127,10 @@ function getService(link) {
 }
 
 function launch(el) {
-  var link = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
+  var link = jquery__WEBPACK_IMPORTED_MODULE_2___default()(el);
   var service = getService(link); // object with youtube id
+
+  var figcaption = link.find('.video-preview--caption');
 
   if (service) {
     var parent = link.parent();
@@ -25134,7 +25139,7 @@ function launch(el) {
     if (parent.hasClass('video-preview')) {
       wrapper = parent;
     } else {
-      wrapper = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<div/>').addClass('video-preview').insertBefore(link);
+      wrapper = jquery__WEBPACK_IMPORTED_MODULE_2___default()('<div/>').addClass('video-preview').insertBefore(link);
       wrapper.append(link);
     }
 
@@ -25142,25 +25147,31 @@ function launch(el) {
       loadVideo(wrapper, service);
       event.preventDefault();
       wrapper.addClass('video-container');
-      var dlg = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.video-banner--popup').addClass('video--playing').addClass('fallout').addClass('fallout--both');
-      var closeButton = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<button class="dialog__close--video-popup"> <span class="fa fa-times" aria-hidden="true"></span></button>').attr('type', 'button').appendTo(dlg);
+      var dlg = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.video-banner--popup').addClass('video--playing').addClass('fallout').addClass('fallout--both');
+      var closeButton = jquery__WEBPACK_IMPORTED_MODULE_2___default()('<button class="dialog__close--video-popup"> <span class="fa fa-times" aria-hidden="true"></span></button>').attr('type', 'button').appendTo(dlg);
+      var caption = jquery__WEBPACK_IMPORTED_MODULE_2___default()('<figcaption><span class="fa fa-fw fa-clock-o" aria-hidden="true"> </span> <span> 1.16</span>' + '<span class="figcaption__bulleted-item"> &bull; YOUTUBE VIDEO</span>' + '<p>' + figcaption.html() + '</p> </figcaption>').appendTo(dlg);
+      figcaption.remove();
       closeButton.on('click touchstart', function () {
-        jquery__WEBPACK_IMPORTED_MODULE_1___default()('iframe').remove();
+        jquery__WEBPACK_IMPORTED_MODULE_2___default()('iframe').remove();
         dlg.removeClass('video--playing').removeClass('fallout').removeClass('fallout--both');
-        jquery__WEBPACK_IMPORTED_MODULE_1___default()('.video-popup__img').css('display', 'block');
-        jquery__WEBPACK_IMPORTED_MODULE_1___default()('.video-popup__button').css('display', 'block');
+        jquery__WEBPACK_IMPORTED_MODULE_2___default()('.video-popup__img').css('display', 'block');
+        jquery__WEBPACK_IMPORTED_MODULE_2___default()('.video-popup__button').css('display', 'block');
+        figcaption.html();
         wrapper.removeClass('video-container');
         closeButton.remove();
+        caption.remove();
+        jquery__WEBPACK_IMPORTED_MODULE_2___default()('.video-popup__button').append(figcaption);
       });
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('keydown', function (e) {
+      jquery__WEBPACK_IMPORTED_MODULE_2___default()(document).on('keydown', function (e) {
         if (e.keyCode === 27) {
           // ESC
-          jquery__WEBPACK_IMPORTED_MODULE_1___default()('iframe').remove();
+          jquery__WEBPACK_IMPORTED_MODULE_2___default()('iframe').remove();
           dlg.removeClass('video--playing').removeClass('fallout').removeClass('fallout--both');
-          jquery__WEBPACK_IMPORTED_MODULE_1___default()('.video-popup__img').css('display', 'block');
-          jquery__WEBPACK_IMPORTED_MODULE_1___default()('.video-popup__button').css('display', 'block');
+          jquery__WEBPACK_IMPORTED_MODULE_2___default()('.video-popup__img').css('display', 'block');
+          jquery__WEBPACK_IMPORTED_MODULE_2___default()('.video-popup__button').css('display', 'block');
           wrapper.removeClass('video-container');
           closeButton.remove();
+          caption.remove();
         }
       });
     });
@@ -25170,7 +25181,7 @@ function launch(el) {
 function loadVideo(wrapper, service) {
   switch (service.type) {
     case 'youtube':
-      return Object(_video_preview_video_preview_youtube__WEBPACK_IMPORTED_MODULE_3__["default"])(wrapper, service);
+      return Object(_video_preview_video_preview_youtube__WEBPACK_IMPORTED_MODULE_4__["default"])(wrapper, service);
 
     default:
       return false;

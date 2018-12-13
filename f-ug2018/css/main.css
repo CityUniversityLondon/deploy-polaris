@@ -16679,6 +16679,33 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     fill-opacity: 0;
 }
 
+.video-preview--caption {
+    display: none;
+}
+
+.video-banner--popup figcaption {
+    display: none;
+}
+
+.video-banner--popup.video--playing figcaption {
+    display: block;
+    color: white;
+    margin: 1rem 0 0;
+    padding: 0 10px;
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    .video-banner--popup.video--playing figcaption {
+        margin: 1rem 16.667% 0;
+    }
+}
+
+@media (min-width: 901px) {
+    .video-banner--popup.video--playing figcaption {
+        margin: 1rem 25% 0;
+    }
+}
+
 .ksp__items {
     justify-content: center;
 }
