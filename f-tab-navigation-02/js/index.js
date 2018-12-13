@@ -22541,12 +22541,13 @@ function prepareLinks(widget, headings) {
             }*/
 
             console.log("Selected tab id: ".concat(selectedTabId));
+            /***** MOBILE *****/
 
             if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'true') {
               jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'false');
               jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'false');
               jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor active');
-              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")")).css('dislay', 'none'); // $(this).attr('class', 'accordion-tabs__content__heading-anchor active');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")")).css('dislay', 'none');
             } else if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'false') {
               jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'true');
               jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'true');
@@ -22554,9 +22555,20 @@ function prepareLinks(widget, headings) {
               jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
             }
 
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-expanded', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-selected', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+            if (newTabDataId == selectedTabId && jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded') == 'true') {
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+              ;
+              console.log('match');
+            }
+
+            if (newTabDataId != selectedTabId) {
+              console.log('different');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-expanded', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-selected', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+            }
 
             if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id') == '0') {
               firstTabContentGroup.show();
@@ -22567,11 +22579,10 @@ function prepareLinks(widget, headings) {
               jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-selected', 'false');
               jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('class', 'accordion-tabs__content__heading-anchor inactive');
             } else {
-              // notFirstTabContentHeader.attr('aria-selected', 'true');
-              // notFirstTabContentHeader.attr('aria-expanded', 'true');
-              firstTabContentGroup.hide();
               notFirstTabContentGroup.show();
-            } // if ($(this).attr('class', '.accordion-tabs__content__heading-anchor a')) {
+            }
+            /***** END MOBILE *****/
+            // if ($(this).attr('class', '.accordion-tabs__content__heading-anchor a')) {
             //     console.log('clickl');
             // }
 
