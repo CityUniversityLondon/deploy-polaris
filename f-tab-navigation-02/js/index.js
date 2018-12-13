@@ -22427,6 +22427,7 @@ function prepareLinks(widget, headings) {
 
   if (selectedTabId) {
     // Set active menu items to correct class based on most recent session activity
+    // Desktop
     var accTabs = document.getElementsByClassName('accordion-tabs__menu__item');
     [].forEach.call(accTabs, function (e) {
       if (e.getAttribute('data-id') == selectedTabId) {
@@ -22440,6 +22441,21 @@ function prepareLinks(widget, headings) {
         e.setAttribute("aria-selected", "false");
         e.setAttribute("aria-expanded", "false");
       }
+    }); // Mobile
+
+    var mobAccTabs = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
+    [].forEach.call(mobAccTabs, function (e) {
+      if (e.getAttribute('data-id') == selectedTabId) {
+        e.className = 'accordion-tabs__content__heading-anchor';
+        e.setAttribute("aria-selected", "true");
+        e.setAttribute("aria-expanded", "true");
+      } else if (e.getAttribute('data-id') == '0') {
+        e.className = 'accordion-tabs__content__heading-anchor';
+      } else {
+        e.className = 'accordion-tabs__content__heading-anchor inactive';
+        e.setAttribute("aria-selected", "false");
+        e.setAttribute("aria-expanded", "false");
+      }
     }); // Loop through elements with matching 'data-id' values
 
     [].forEach.call(matchingIds, function (elem) {
@@ -22447,21 +22463,28 @@ function prepareLinks(widget, headings) {
         var parent = elem.parentElement.className; // Limit behaviour to accordion-tabs
 
         if (parent == 'accordion-tabs__content') {
-          elem.className = 'accordion-tabs__menu__item active';
+          elem.className = 'accordion-tabs__content__heading-anchor';
           elem.setAttribute("aria-selected", "true");
           elem.setAttribute("aria-expanded", "true"); // If previously selected tab was the first tab, show its content
 
           if (selectedTabId == 0) {
             jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').show();
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)').attr('aria-selected', 'true');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)').attr('aria-expanded', 'true');
           } else {
             jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').hide();
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').hide();
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)').attr('aria-selected', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)').attr('aria-expanded', 'false');
           } // Capture subsequent tab clicks
 
 
           var newTabDataId;
-          jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item").click(function () {
+          jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item, .accordion-tabs__content__heading-anchor').click(function () {
             newTabDataId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+            console.log(newTabDataId);
             var firstTabContentHeader = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)');
+            var notFirstTabContentHeader = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:not(:eq(0))');
             var firstTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
             var notFirstTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))');
             var firstTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:eq(0)');
@@ -22470,30 +22493,121 @@ function prepareLinks(widget, headings) {
             var newTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")"));
             var notNewTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(".concat(newTabDataId, "))"));
             var newTabContentHeadingAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__heading-anchor:eq(".concat(newTabDataId, ")"));
+            var notNewTabContentHeadingAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__heading-anchor:not(:eq(".concat(newTabDataId, "))"));
             var newTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(".concat(newTabDataId, ")"));
-            var notNewTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newTabDataId, "))"));
+            var notNewTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newTabDataId, "))")); // Session tab: not first. New tab click: first
 
-            if (newTabDataId == '0') {
-              // Content
-              firstTabContentHeader.attr('class', 'accordion-tabs__content__heading-anchor active');
-              firstTabContentGroup.css('display', 'block');
-              notFirstTabContentGroup.css('display', 'none'); // Menu heading
+            /* if (newTabDataId == '0' && selectedTabId != '0') {
+                // Content
+                firstTabContentGroup.css('display','block');
+                notFirstTabContentGroup.css('display','none');
+                 // Mobile anchors
+                firstTabContentHeader.attr('class', 'accordion-tabs__content__heading-anchor a');
+                firstTabContentHeader.attr('aria-selected','true');
+                firstTabContentHeader.attr('aria-expanded','true');
+                notFirstTabContentHeader.attr('class', 'accordion-tabs__content__heading-anchor inactive');
+                notFirstTabContentHeader.attr('aria-expanded', 'false');
+                notFirstTabContentHeader.attr('aria-selected', 'false');
+                 // Desktop anchors
+                firstTabMenuItem.attr('aria-selected','true');
+                firstTabMenuItem.attr('aria-expanded','true');
+                notFirstTabMenuItem.attr('aria-selected','false');
+                notFirstTabMenuItem.attr('aria-expanded','false');
+             // New tab click: not first. Session tab: not first.    
+            }*/
 
-              firstTabMenuItem.attr('aria-selected', 'true');
-              firstTabMenuItem.attr('aria-expanded', 'true');
-              notFirstTabMenuItem.attr('aria-selected', 'false');
-              notFirstTabMenuItem.attr('aria-expanded', 'false');
+            /* if (newTabDataId == '0') {
+                // Content
+                firstTabContentGroup.css('display','block');
+                notFirstTabContentGroup.css('display','none');
+                 // Mobile anchors
+                firstTabContentHeader.attr('class', 'accordion-tabs__content__heading-anchor a');
+                firstTabContentHeader.attr('aria-selected','true');
+                firstTabContentHeader.attr('aria-expanded','true');
+                notFirstTabContentHeader.attr('class', 'accordion-tabs__content__heading-anchor inactive');
+                notFirstTabContentHeader.attr('aria-expanded', 'false');
+                notFirstTabContentHeader.attr('aria-selected', 'false');
             } else {
-              // Content
-              newTabContentGroup.css('display', 'block');
-              notNewTabContentGroup.css('display', 'none');
-              newTabContentHeadingAnchor.attr('class', 'accordion-tabs__content__heading-anchor active'); // Menu heading
+                notFirstTabContentGroup.css('display','block');
+                newTabContentHeadingAnchor.attr('class', 'accordion-tabs__content__heading-anchor');
+                newTabContentHeadingAnchor.attr('aria-selected','true');
+                newTabContentHeadingAnchor.attr('aria-expanded','true');
+                notNewTabContentHeadingAnchor.attr('class', 'accordion-tabs__content__heading-anchor inactive');
+                // notNewTabContentHeadingAnchor.attr('aria-selected','false');
+                // notNewTabContentHeadingAnchor.attr('aria-expanded','false');
+                 firstTabContentHeader.attr('class', 'accordion-tabs__content__heading-anchor inactive');
+                firstTabContentHeader.attr('aria-selected','false');
+                firstTabContentHeader.attr('aria-expanded','false');
+            }*/
 
-              newTabMenuItem.attr('aria-selected', 'true');
-              newTabMenuItem.attr('aria-expanded', 'true');
-              notNewTabMenuItem.attr('aria-selected', 'false');
-              notNewTabMenuItem.attr('aria-expanded', 'false');
+            console.log("Selected tab id: ".concat(selectedTabId));
+
+            if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'true') {
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor active');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")")).css('dislay', 'none'); // $(this).attr('class', 'accordion-tabs__content__heading-anchor active');
+            } else if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'false') {
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'true');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'true');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")")).css('dislay', 'block');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
             }
+
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-expanded', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-selected', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+
+            if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id') == '0') {
+              firstTabContentGroup.show();
+              notFirstTabContentGroup.hide();
+              notFirstTabContentHeader.attr('aria-selected', 'false');
+              notFirstTabContentHeader.attr('aria-expanded', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-expanded', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('aria-selected', 'false');
+              jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+            } else {
+              // notFirstTabContentHeader.attr('aria-selected', 'true');
+              // notFirstTabContentHeader.attr('aria-expanded', 'true');
+              firstTabContentGroup.hide();
+              notFirstTabContentGroup.show();
+            } // if ($(this).attr('class', '.accordion-tabs__content__heading-anchor a')) {
+            //     console.log('clickl');
+            // }
+
+            /* else {
+                // Content
+                newTabContentGroup.css('display','block');
+                notNewTabContentGroup.css('display','none');
+                newTabContentHeadingAnchor.attr('class', 'accordion-tabs__content__heading-anchor active');
+                 // Menu heading
+                newTabMenuItem.attr('aria-selected','true');
+                newTabMenuItem.attr('aria-expanded','true');
+                notNewTabMenuItem.attr('aria-selected','false');
+                notNewTabMenuItem.attr('aria-expanded','false');
+            } */
+            // if (newTabDataId == '0') {
+            //     // Content
+            //     firstTabContentHeader.attr('class', 'accordion-tabs__content__heading-anchor active');
+            //     firstTabContentGroup.css('display','block');
+            //     notFirstTabContentGroup.css('display','none');
+            //     // Menu heading
+            //     firstTabMenuItem.attr('aria-selected','true');
+            //     firstTabMenuItem.attr('aria-expanded','true');
+            //     notFirstTabMenuItem.attr('aria-selected','false');
+            //     notFirstTabMenuItem.attr('aria-expanded','false');
+            // } else {
+            //     // Content
+            //     newTabContentGroup.css('display','block');
+            //     notNewTabContentGroup.css('display','none');
+            //     newTabContentHeadingAnchor.attr('class', 'accordion-tabs__content__heading-anchor active');
+            //     // Menu heading
+            //     newTabMenuItem.attr('aria-selected','true');
+            //     newTabMenuItem.attr('aria-expanded','true');
+            //     notNewTabMenuItem.attr('aria-selected','false');
+            //     notNewTabMenuItem.attr('aria-expanded','false');
+            // } */
+
           }); // End new tab click
         } // End if parent is accordion-tab 
 
