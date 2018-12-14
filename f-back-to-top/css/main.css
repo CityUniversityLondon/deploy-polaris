@@ -21490,6 +21490,7 @@ table tbody > tr > td:hover {
     right: 20px;
     bottom: 20px;
     z-index: 100;
+    background-color: #ffffff;
 }
 
 .anchor-demo-list li {
