@@ -22418,91 +22418,92 @@ function prepareLinks(widget, headings) {
         evt.preventDefault();
       }
     });
-  } // Get selected tab data ID from session storage
+  } // Get selected anchor 'data-id' from session storage
 
 
-  var selectedTabId = sessionStorage.getItem('key'); // Find all elements on page with matching 'data-id' value
+  var sessionAnchorId = sessionStorage.getItem('key'); // Find all elements on page with 'data-id' value matching sessionAnchorId
 
-  var matchingIds = document.querySelectorAll("[data-id='".concat(selectedTabId, "']")); // If there is a previously selected tab in the session
+  var matchingIds = document.querySelectorAll("[data-id='".concat(sessionAnchorId, "']")); // If there is a previously selected anchor in the session
 
-  if (selectedTabId) {
-    // Variables
-    var firstTabContentHeader = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)');
-    var notFirstTabContentHeader = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:not(:eq(0))');
-    var firstTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
-    var notFirstTabContentGroup = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))');
-    var firstTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:eq(0)');
-    var notFirstTabMenuItem = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:not(:eq(0))'); // New tab click content variables
-    // let newTabContentGroup              = $(`.accordion-tabs__content .accordion-tabs__content__group:eq(${newTabDataId})`);
-    // let notNewTabContentGroup           = $(`.accordion-tabs__content .accordion-tabs__content__group:not(:eq(${newTabDataId}))`);
-    // let newTabContentHeadingAnchor      = $(`.accordion-tabs__content__heading-anchor:eq(${newTabDataId})`);
-    // let notNewTabContentHeadingAnchor   = $(`.accordion-tabs__content__heading-anchor:not(:eq(${newTabDataId}))`);
-    // let newTabMenuItem                  = $(`.accordion-tabs__menu__item:eq(${newTabDataId})`);
-    // let notNewTabMenuItem               = $(`.accordion-tabs__menu__item:not(:eq(${newTabDataId}))`);
-    // Capture subsequent tab clicks
+  if (sessionAnchorId) {
+    /***** SELECTOR VARIABLES *****/
+    // Tab anchors
+    var tabFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:eq(0)');
+    var tabNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:not(:eq(0))'); // Accordion anchors
 
-    var newTabDataId; // DESKTOP: Set active menu items to correct class based on most recent session activity
+    var accordionFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)');
+    var accordionNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:not(:eq(0))'); // Accordion and tab anchors
 
-    var accTabs = document.getElementsByClassName('accordion-tabs__menu__item');
-    [].forEach.call(accTabs, function (e) {
-      if (e.getAttribute('data-id') == selectedTabId) {
+    var firstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
+    var notfirstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))'); // New anchor clicks
+
+    var newAnchorDataId;
+    /***** END SELECTOR VARIABLES *****/
+    // DESKTOP: Set active tab anchor menu items to correct class based on most recent session activity
+
+    var tabAnchors = document.getElementsByClassName('accordion-tabs__menu__item');
+    [].forEach.call(tabAnchors, function (e) {
+      if (e.getAttribute('data-id') == sessionAnchorId) {
         e.className = 'accordion-tabs__menu__item';
-        e.setAttribute("aria-selected", "true");
-        e.setAttribute("aria-expanded", "true");
+        e.setAttribute('aria-selected', 'true');
+        e.setAttribute('aria-expanded', 'true');
       } else if (e.getAttribute('data-id') == '0') {
         e.className = 'accordion-tabs__menu__item';
       } else {
         e.className = 'accordion-tabs__menu__item inactive';
-        e.setAttribute("aria-selected", "false");
-        e.setAttribute("aria-expanded", "false");
+        e.setAttribute('aria-selected', 'false');
+        e.setAttribute('aria-expanded', 'false');
       }
-    }); // DESKTOP: Tab interaction
+    }); // DESKTOP: Tab anchor menu interaction
 
     jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item').click(function () {
-      // If session selected tab value is 0, show its content
-      if (selectedTabId == 0) {
+      // If sessionAnchorId value is 0, show this content
+      if (sessionAnchorId == 0) {
         jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').show();
       } else {
         jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').hide();
       } // Capture data-id attribute of clicked menu item
 
 
-      newTabDataId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+      newAnchorDataId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
 
-      if (newTabDataId == '0') {
+      if (newAnchorDataId == '0') {
         // Content behaviour
-        firstTabContentGroup.css('display', 'block');
-        notFirstTabContentGroup.css('display', 'none'); // Menu heading behaviour
+        firstAnchorContent.css('display', 'block');
+        notfirstAnchorContent.css('display', 'none'); // Menu heading behaviour
 
-        firstTabMenuItem.attr('aria-selected', 'true');
-        firstTabMenuItem.attr('aria-expanded', 'true');
-        notFirstTabMenuItem.attr('aria-selected', 'false');
-        notFirstTabMenuItem.attr('aria-expanded', 'false');
+        tabFirstAnchor.attr('aria-selected', 'true');
+        tabFirstAnchor.attr('aria-expanded', 'true');
+        tabNotFirstAnchor.attr('aria-selected', 'false');
+        tabNotFirstAnchor.attr('aria-expanded', 'false');
       } else {
         // Content behaviour
-        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")")).css('display', 'block');
-        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(".concat(newTabDataId, "))")).css('display', 'none'); // Menu heading behaviour
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('display', 'block');
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(".concat(newAnchorDataId, "))")).css('display', 'none'); // Menu heading behaviour
 
-        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(".concat(newTabDataId, ")")).attr('aria-selected', 'true');
-        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(".concat(newTabDataId, ")")).attr('aria-expanded', 'true');
-        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newTabDataId, "))")).attr('aria-selected', 'false');
-        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newTabDataId, "))")).attr('aria-expanded', 'false');
-        firstTabContentGroup.css('display', 'none');
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(".concat(newAnchorDataId, ")")).attr({
+          'aria-selected': 'true',
+          'aria-expanded': 'true'
+        });
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newAnchorDataId, "))")).attr({
+          'aria-selected': 'false',
+          'aria-expanded': 'false'
+        });
+        firstAnchorContent.css('display', 'none');
       }
-    }); // MOBILE: Set active menu items to correct class based on most recent session activity
-
-    var mobAccTabs = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
-    [].forEach.call(mobAccTabs, function (e) {
-      if (e.getAttribute('data-id') == selectedTabId) {
+    });
+    var accordionAnchors = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
+    [].forEach.call(accordionAnchors, function (e) {
+      if (e.getAttribute('data-id') == sessionAnchorId) {
         e.className = 'accordion-tabs__content__heading-anchor';
-        e.setAttribute("aria-selected", "true");
-        e.setAttribute("aria-expanded", "true");
+        e.setAttribute('aria-selected', 'true');
+        e.setAttribute('aria-expanded', 'true');
       } else if (e.getAttribute('data-id') == '0') {
         e.className = 'accordion-tabs__content__heading-anchor';
       } else {
         e.className = 'accordion-tabs__content__heading-anchor inactive';
-        e.setAttribute("aria-selected", "false");
-        e.setAttribute("aria-expanded", "false");
+        e.setAttribute('aria-selected', 'false');
+        e.setAttribute('aria-expanded', 'false');
       }
     }); // Loop through elements with matching 'data-id' values
 
@@ -22511,45 +22512,45 @@ function prepareLinks(widget, headings) {
 
       if (parent == 'accordion-tabs__content') {
         elem.className = 'accordion-tabs__content__heading-anchor';
-        elem.setAttribute("aria-selected", "true");
-        elem.setAttribute("aria-expanded", "true"); // If previously selected tab was the first tab, show its content
+        elem.setAttribute('aria-selected', 'true');
+        elem.setAttribute('aria-expanded', 'true'); // If previously selected tab was the first tab, show its content
 
-        if (selectedTabId == 0) {
-          firstTabContentGroup.show();
-          firstTabContentHeader.attr('aria-selected', 'true');
-          firstTabContentHeader.attr('aria-expanded', 'true');
+        if (sessionAnchorId == 0) {
+          firstAnchorContent.show();
+          accordionFirstAnchor.attr('aria-selected', 'true');
+          accordionFirstAnchor.attr('aria-expanded', 'true');
         } else {
-          firstTabContentGroup.hide();
-          firstTabContentHeader.attr('aria-selected', 'false');
-          firstTabContentHeader.attr('aria-expanded', 'false');
+          firstAnchorContent.hide();
+          accordionFirstAnchor.attr('aria-selected', 'false');
+          accordionFirstAnchor.attr('aria-expanded', 'false');
         } // MOBILE: tab clicks
 
 
         jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor').click(function () {
-          newTabDataId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+          newAnchorDataId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
           /***** MOBILE *****/
 
           if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'true') {
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'false');
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'false');
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor active');
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")")).css('dislay', 'none');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('dislay', 'none');
           } else if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'false') {
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'true');
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'true');
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newTabDataId, ")")).css('dislay', 'block');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('dislay', 'block');
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
           }
 
-          if (newTabDataId == selectedTabId && jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded') == 'true') {
+          if (newAnchorDataId == sessionAnchorId && jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded') == 'true') {
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'false');
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'false');
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
             ;
           }
 
-          if (newTabDataId != selectedTabId) {
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr({
+          if (newAnchorDataId != sessionAnchorId) {
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionAnchorId, ")")).attr({
               'aria-expanded': 'false',
               'aria-selected': 'false',
               'class': 'accordion-tabs__content__heading-anchor inactive'
@@ -22557,23 +22558,23 @@ function prepareLinks(widget, headings) {
           }
 
           if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id') == '0' && jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'true') {
-            firstTabContentGroup.show();
-            notFirstTabContentGroup.hide();
-            notFirstTabContentHeader.attr('aria-selected', 'false');
-            notFirstTabContentHeader.attr('aria-expanded', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(selectedTabId, ")")).attr({
+            firstAnchorContent.show();
+            notfirstAnchorContent.hide();
+            accordionNotFirstAnchor.attr('aria-selected', 'false');
+            accordionNotFirstAnchor.attr('aria-expanded', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionAnchorId, ")")).attr({
               'aria-expanded': 'false',
               'aria-selected': 'false',
               'class': 'accordion-tabs__content__heading-anchor inactive'
             });
           } else {
-            notFirstTabContentGroup.show();
+            notfirstAnchorContent.show();
           }
         }); // End mobile tab click
       } // End if parent is accordion-tab
 
     }); // End matching data-id values loop
-  } // End if selectedTabId, i.e. tab click in session data
+  } // End if sessionAnchorId, i.e. tab click in session data
 
 
   allAnchors.on('click', function (evt) {
