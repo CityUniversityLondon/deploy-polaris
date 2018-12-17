@@ -22482,7 +22482,10 @@ function prepareLinks(widget, headings) {
     }); // DESKTOP: Tab anchor menu interaction
 
     jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item').click(function () {
-      // If sessionAnchorId value is 0, show this content
+      // Remove stored nested anchor items so these values are only retained with the final parent anchor selection
+      sessionStorage.removeItem('nested-data-id');
+      sessionStorage.removeItem('nested-tab-data-id'); // If sessionAnchorId value is 0, show this content
+
       if (sessionAnchorId == 0) {
         jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').show();
       } else {
@@ -22553,8 +22556,22 @@ function prepareLinks(widget, headings) {
           e.setAttribute('aria-expanded', 'false');
         }
       });
-    } // Loop through elements with matching 'data-id' values
+    }
 
+    var accordionAnchors = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
+    [].forEach.call(accordionAnchors, function (e) {
+      if (e.getAttribute('data-id') == sessionAnchorId) {
+        e.className = 'accordion-tabs__content__heading-anchor';
+        e.setAttribute('aria-selected', 'true');
+        e.setAttribute('aria-expanded', 'true');
+      } else if (e.getAttribute('data-id') == '0') {
+        e.className = 'accordion-tabs__content__heading-anchor';
+      } else {
+        e.className = 'accordion-tabs__content__heading-anchor inactive';
+        e.setAttribute('aria-selected', 'false');
+        e.setAttribute('aria-expanded', 'false');
+      }
+    }); // Loop through elements with matching 'data-id' values
 
     [].forEach.call(matchingIds, function (elem) {
       var parent = elem.parentElement.className; // Limit behaviour to accordion-tabs
