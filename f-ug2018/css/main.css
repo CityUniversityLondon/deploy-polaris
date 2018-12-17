@@ -16581,7 +16581,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.video-preview:hover:before {
+.video-preview__hover:hover:before {
     opacity: 0.9;
     background: none;
     transition: .4s ease-out;
