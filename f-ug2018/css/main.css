@@ -16529,7 +16529,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     transition: padding 2s ease;
     transition: height 2s ease;
     margin: 0 auto;
-    padding: 40px;
+    padding: 3rem;
     background-color: #1e1e1e;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -16540,7 +16540,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     position: relative;
     padding-bottom: 56.25%;
     /*16:9*/
-    padding-top: 30px;
     height: 0;
     overflow: hidden;
 }
@@ -16561,7 +16560,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     right: 10px;
     top: 0;
     font-size: 1.6rem;
-    color: white;
+    color: #ffffff;
 }
 
 @media (min-width: 901px) {
@@ -16585,6 +16584,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .video-preview:hover:before {
     opacity: 0.9;
     background: none;
+    transition: .4s ease-out;
 }
 
 .video-preview--overlay:before {
@@ -16594,6 +16594,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     position: absolute;
     z-index: 2;
     background: rgba(156, 156, 154, 0.5);
+    transition: .4s ease-out;
 }
 
 .video-preview--overlay-orange:before {
@@ -16603,6 +16604,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     position: absolute;
     z-index: 2;
     background: rgba(251, 174, 59, 0.5);
+    transition: .4s ease-out;
 }
 
 .video-popup__button {
@@ -16615,15 +16617,13 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .video-popup__button svg {
     width: 100px;
     height: 100px;
-    left: 50%;
     top: 35%;
     fill: none;
+    margin: 0 auto;
 }
 
 @media (max-width: 499px) {
     .video-popup__button svg {
-        left: 43%;
-        top: 35%;
         width: 80px;
         height: 80px;
     }
@@ -16631,32 +16631,32 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .video-popup__button svg .stroke-dotted {
     opacity: 0;
-    stroke-dasharray: 1,8;
+    stroke-dasharray: 1, 8;
     stroke-width: 4px;
     stroke-linecap: round;
     transform-origin: 50% 50%;
     -webkit-animation: spin 20s infinite linear;
             animation: spin 20s infinite linear;
-    transition: opacity 1s ease,  stroke-width 1s ease;
-    stroke: #fff;
+    transition: opacity 1s ease, stroke-width 1s ease;
+    stroke: #ffffff;
 }
 
 .video-popup__button svg .stroke-solid {
     stroke-dashoffset: 0;
-    stroke-dashArray: 300;
+    stroke-dasharray: 300;
     stroke-width: 4px;
     transition: stroke-dashoffset 1s ease, opacity 1s ease;
-    stroke: #fff;
+    stroke: #ffffff;
 }
 
 .video-popup__button svg .icon {
     transform-origin: 50% 50%;
     transition: transform 200ms ease-out;
-    fill: #fff;
+    fill: #ffffff;
 }
 
 .video-popup__button svg .circle {
-    fill: #fff;
+    fill: #ffffff;
     fill-opacity: 0.2;
 }
 
@@ -16675,7 +16675,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .video-popup__button svg:hover .circle {
-    fill: #fff;
+    fill: #ffffff;
     fill-opacity: 0;
 }
 
@@ -16689,7 +16689,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .video-banner--popup.video--playing figcaption {
     display: block;
-    color: white;
+    color: #ffffff;
     margin: 1rem 0 0;
     padding: 0 10px;
 }
@@ -16703,6 +16703,39 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 @media (min-width: 901px) {
     .video-banner--popup.video--playing figcaption {
         margin: 1rem 25% 0;
+    }
+}
+
+.video-preview__title {
+    color: #ffffff;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 3rem auto 2rem;
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports (display: flex) {
+    .video-preview__title {
+        float: none;
+        flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .video-preview__title {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .video-preview__title {
+        width: 50%;
     }
 }
 
