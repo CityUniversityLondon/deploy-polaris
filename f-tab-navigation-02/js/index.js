@@ -22433,12 +22433,20 @@ function prepareLinks(widget, headings) {
   nestedAccordion.on('click', function () {
     var selectedNestedAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
     sessionStorage.setItem('nested-data-id', selectedNestedAnchor);
+  }); // Capture selected nested tab data-id
+
+  var nestedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .tabs__menu__item');
+  nestedTab.on('click', function () {
+    var selectedNestedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+    sessionStorage.setItem('nested-tab-data-id', selectedNestedTab);
   }); // Get selected anchor 'data-id' from session storage
 
   var sessionAnchorId = sessionStorage.getItem('key');
   var sessionNestedAnchorId = sessionStorage.getItem('nested-data-id');
-  console.log("Parent Anchor ID: ".concat(sessionAnchorId));
-  console.log("Nested Anchor ID: ".concat(sessionNestedAnchorId)); // Find all elements on page with 'data-id' value matching sessionAnchorId
+  var sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id');
+  console.log("Parent Accordion/tab Anchor ID: ".concat(sessionAnchorId));
+  console.log("Nested Accordion Anchor ID: ".concat(sessionNestedAnchorId));
+  console.log("Nested Tab Anchor ID: ".concat(sessionNestedTabId)); // Find all elements on page with 'data-id' value matching sessionAnchorId
 
   var matchingIds = document.querySelectorAll("[data-id='".concat(sessionAnchorId, "']")); // If there is a previously selected anchor in the session
 
@@ -22525,22 +22533,28 @@ function prepareLinks(widget, headings) {
           e.setAttribute('aria-expanded', 'false');
         }
       });
-    }
+    } // Nested tabs behaviour
 
-    var accordionAnchors = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
-    [].forEach.call(accordionAnchors, function (e) {
-      if (e.getAttribute('data-id') == sessionAnchorId) {
-        e.className = 'accordion-tabs__content__heading-anchor';
-        e.setAttribute('aria-selected', 'true');
-        e.setAttribute('aria-expanded', 'true');
-      } else if (e.getAttribute('data-id') == '0') {
-        e.className = 'accordion-tabs__content__heading-anchor';
-      } else {
-        e.className = 'accordion-tabs__content__heading-anchor inactive';
-        e.setAttribute('aria-selected', 'false');
-        e.setAttribute('aria-expanded', 'false');
-      }
-    }); // Loop through elements with matching 'data-id' values
+
+    if (sessionNestedTabId) {
+      var nestedTabAnchors = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__group:eq(".concat(sessionAnchorId, ") a.tabs__menu__item"));
+      [].forEach.call(nestedTabAnchors, function (e) {
+        if (e.getAttribute('data-id') == sessionNestedTabId) {
+          e.className = 'tabs__menu__item active';
+          e.setAttribute('aria-selected', 'true');
+          e.setAttribute('aria-expanded', 'true');
+        } else if (e.getAttribute('data-id') == '0') {
+          e.className = 'tabs__menu__item inactive';
+          e.setAttribute('aria-selected', 'false');
+          e.setAttribute('aria-expanded', 'false');
+        } else {
+          e.className = 'tabs__menu__item inactive';
+          e.setAttribute('aria-selected', 'false');
+          e.setAttribute('aria-expanded', 'false');
+        }
+      });
+    } // Loop through elements with matching 'data-id' values
+
 
     [].forEach.call(matchingIds, function (elem) {
       var parent = elem.parentElement.className; // Limit behaviour to accordion-tabs
