@@ -16706,8 +16706,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.video-banner--popup figcaption__text {
-    display: text;
+.video-banner--popup .figcaption__text {
+    display: block;
+    margin-top: 0.5rem;
 }
 
 .video-preview__title {
