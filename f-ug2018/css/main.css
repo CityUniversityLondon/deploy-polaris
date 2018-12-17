@@ -16706,6 +16706,10 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.video-banner--popup figcaption__text {
+    display: text;
+}
+
 .video-preview__title {
     color: #ffffff;
     display: block;

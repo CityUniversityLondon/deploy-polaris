@@ -25149,7 +25149,7 @@ function launch(el) {
       wrapper.addClass('video-container');
       var dlg = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.video-banner--popup').addClass('video--playing').addClass('fallout').addClass('fallout--both');
       var closeButton = jquery__WEBPACK_IMPORTED_MODULE_2___default()('<button class="dialog__close--video-popup"> <span class="fa fa-times" aria-hidden="true"></span></button>').attr('type', 'button').appendTo(dlg);
-      var caption = jquery__WEBPACK_IMPORTED_MODULE_2___default()('<figcaption><span class="fa fa-fw fa-clock-o" aria-hidden="true"> </span> <span> 1.16</span>' + '<span class="figcaption__bulleted-item"> &bull; YOUTUBE VIDEO</span>' + '<p>' + figcaption.html() + '</p> </figcaption>').appendTo(dlg);
+      var caption = jquery__WEBPACK_IMPORTED_MODULE_2___default()('<figcaption>' + figcaption.html() + '</figcaption>').appendTo(dlg);
       figcaption.remove();
       closeButton.on('click touchstart', function () {
         jquery__WEBPACK_IMPORTED_MODULE_2___default()('iframe').remove();
