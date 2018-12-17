@@ -22418,10 +22418,27 @@ function prepareLinks(widget, headings) {
         evt.preventDefault();
       }
     });
-  } // Get selected anchor 'data-id' from session storage
+  } // Capture top-level tab anchor click ID
 
 
-  var sessionAnchorId = sessionStorage.getItem('key'); // Find all elements on page with 'data-id' value matching sessionAnchorId
+  var parentAccordionTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu-fullwidth .accordion-tabs__menu-wrapper .accordion-tabs__menu a');
+  parentAccordionTab.on('click', function () {
+    // ID of selected tab
+    var selectedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id'); // Store selected tab data ID in session storage
+
+    sessionStorage.setItem('key', selectedTab);
+  }); // Capture selected nested accordion data-id
+
+  var nestedAccordion = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion__content__heading-anchor');
+  nestedAccordion.on('click', function () {
+    var selectedNestedAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+    sessionStorage.setItem('nested-data-id', selectedNestedAnchor);
+  }); // Get selected anchor 'data-id' from session storage
+
+  var sessionAnchorId = sessionStorage.getItem('key');
+  var sessionNestedAnchorId = sessionStorage.getItem('nested-data-id');
+  console.log("Parent Anchor ID: ".concat(sessionAnchorId));
+  console.log("Nested Anchor ID: ".concat(sessionNestedAnchorId)); // Find all elements on page with 'data-id' value matching sessionAnchorId
 
   var matchingIds = document.querySelectorAll("[data-id='".concat(sessionAnchorId, "']")); // If there is a previously selected anchor in the session
 
@@ -22491,7 +22508,25 @@ function prepareLinks(widget, headings) {
         });
         firstAnchorContent.css('display', 'none');
       }
-    });
+    }); // Nested accordion behaviour
+
+    if (sessionNestedAnchorId) {
+      var nestedAnchors = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__group:eq(".concat(sessionAnchorId, ") a.accordion__content__heading-anchor"));
+      [].forEach.call(nestedAnchors, function (e) {
+        if (e.getAttribute('data-id') == sessionNestedAnchorId) {
+          e.className = 'accordion__content__heading-anchor active';
+          e.setAttribute('aria-selected', 'true');
+          e.setAttribute('aria-expanded', 'true');
+        } else if (e.getAttribute('data-id') == '0') {
+          e.className = 'accordion__content__heading-anchor inactive';
+        } else {
+          e.className = 'accordion__content__heading-anchor inactive';
+          e.setAttribute('aria-selected', 'false');
+          e.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
     var accordionAnchors = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
     [].forEach.call(accordionAnchors, function (e) {
       if (e.getAttribute('data-id') == sessionAnchorId) {
@@ -22578,11 +22613,7 @@ function prepareLinks(widget, headings) {
 
 
   allAnchors.on('click', function (evt) {
-    evt.preventDefault(); // ID of selected tab
-
-    var selectedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id'); // Store selected tab data ID in session storage
-
-    sessionStorage.setItem('key', selectedTab);
+    evt.preventDefault();
     var anchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this);
     var isAccordionAnchor = anchor.attr('data-accordion-anchor');
 
