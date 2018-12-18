@@ -22418,7 +22418,9 @@ function prepareLinks(widget, headings) {
         evt.preventDefault();
       }
     });
-  } // Capture top-level tab anchor click ID
+  }
+  /***** SESSION ANCHOR VALUES *****/
+  // Capture top-level tab anchor click ID
 
 
   var parentAccordionTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs--top-level-layout .accordion-tabs__content .accordion-tabs__content__heading-anchor, .accordion-tabs__menu-fullwidth .accordion-tabs__menu-wrapper .accordion-tabs__menu a');
@@ -22426,13 +22428,13 @@ function prepareLinks(widget, headings) {
     // ID of selected tab
     var selectedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id'); // Store selected tab data ID in session storage
 
-    sessionStorage.setItem('key', selectedTab);
+    sessionStorage.setItem('parent-anchor-data-id', selectedTab);
   }); // Capture selected nested accordion data-id
 
   var nestedAccordion = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion__content__heading-anchor');
   nestedAccordion.on('click', function () {
     var selectedNestedAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
-    sessionStorage.setItem('nested-data-id', selectedNestedAnchor);
+    sessionStorage.setItem('nested-accordion-data-id', selectedNestedAnchor);
   }); // Capture selected nested tab data-id
 
   var nestedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .tabs__menu__item');
@@ -22441,13 +22443,15 @@ function prepareLinks(widget, headings) {
     sessionStorage.setItem('nested-tab-data-id', selectedNestedTab);
   }); // Get selected anchor 'data-id' from session storage
 
-  var sessionAnchorId = sessionStorage.getItem('key');
-  var sessionNestedAnchorId = sessionStorage.getItem('nested-data-id');
-  var sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id'); // Find all elements on page with 'data-id' value matching sessionAnchorId
+  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
+  var sessionNestedAccordionId = sessionStorage.getItem('nested-accordion-data-id');
+  var sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id');
+  /***** END SESSION ANCHOR VALUES *****/
+  // Find all elements on page with 'data-id' value matching sessionParentAnchorId
 
-  var matchingIds = document.querySelectorAll("[data-id='".concat(sessionAnchorId, "']")); // If there is a previously selected anchor in the session
+  var matchingIds = document.querySelectorAll("[data-id='".concat(sessionParentAnchorId, "']")); // If there is a previously selected anchor in the session
 
-  if (sessionAnchorId) {
+  if (sessionParentAnchorId) {
     /***** SELECTOR VARIABLES *****/
     // Tab anchors
     var tabFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:eq(0)');
@@ -22465,7 +22469,7 @@ function prepareLinks(widget, headings) {
 
     var tabAnchors = document.getElementsByClassName('accordion-tabs__menu__item');
     [].forEach.call(tabAnchors, function (e) {
-      if (e.getAttribute('data-id') == sessionAnchorId) {
+      if (e.getAttribute('data-id') == sessionParentAnchorId) {
         e.className = 'accordion-tabs__menu__item';
         e.setAttribute('aria-selected', 'true');
         e.setAttribute('aria-expanded', 'true');
@@ -22481,9 +22485,9 @@ function prepareLinks(widget, headings) {
     jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item').click(function () {
       // Remove stored nested anchor items so these values are only retained with the final parent anchor selection
       sessionStorage.removeItem('nested-data-id');
-      sessionStorage.removeItem('nested-tab-data-id'); // If sessionAnchorId value is 0, show this content
+      sessionStorage.removeItem('nested-tab-data-id'); // If sessionParentAnchorId value is 0, show this content
 
-      if (sessionAnchorId == 0) {
+      if (sessionParentAnchorId == 0) {
         jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').show();
       } else {
         jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').hide();
@@ -22518,10 +22522,10 @@ function prepareLinks(widget, headings) {
       }
     }); // Nested accordion behaviour
 
-    if (sessionNestedAnchorId) {
-      var nestedAnchors = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__group:eq(".concat(sessionAnchorId, ") a.accordion__content__heading-anchor"));
+    if (sessionNestedAccordionId) {
+      var nestedAnchors = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__group:eq(".concat(sessionParentAnchorId, ") a.accordion__content__heading-anchor"));
       [].forEach.call(nestedAnchors, function (e) {
-        if (e.getAttribute('data-id') == sessionNestedAnchorId) {
+        if (e.getAttribute('data-id') == sessionNestedAccordionId) {
           e.className = 'accordion__content__heading-anchor active';
           e.setAttribute('aria-selected', 'true');
           e.setAttribute('aria-expanded', 'true');
@@ -22537,7 +22541,7 @@ function prepareLinks(widget, headings) {
 
 
     if (sessionNestedTabId) {
-      var nestedTabAnchors = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__group:eq(".concat(sessionAnchorId, ") a.tabs__menu__item"));
+      var nestedTabAnchors = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__group:eq(".concat(sessionParentAnchorId, ") a.tabs__menu__item"));
       [].forEach.call(nestedTabAnchors, function (e) {
         if (e.getAttribute('data-id') == sessionNestedTabId) {
           e.className = 'tabs__menu__item active';
@@ -22557,7 +22561,7 @@ function prepareLinks(widget, headings) {
 
     var accordionAnchors = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
     [].forEach.call(accordionAnchors, function (e) {
-      if (e.getAttribute('data-id') == sessionAnchorId) {
+      if (e.getAttribute('data-id') == sessionParentAnchorId) {
         e.className = 'accordion-tabs__content__heading-anchor';
         e.setAttribute('aria-selected', 'true');
         e.setAttribute('aria-expanded', 'true');
@@ -22578,7 +22582,7 @@ function prepareLinks(widget, headings) {
         elem.setAttribute('aria-selected', 'true');
         elem.setAttribute('aria-expanded', 'true'); // If previously selected tab was the first tab, show its content
 
-        if (sessionAnchorId == 0) {
+        if (sessionParentAnchorId == 0) {
           firstAnchorContent.show();
           accordionFirstAnchor.attr('aria-selected', 'true');
           accordionFirstAnchor.attr('aria-expanded', 'true');
@@ -22605,15 +22609,15 @@ function prepareLinks(widget, headings) {
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
           }
 
-          if (newAnchorDataId == sessionAnchorId && jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded') == 'true') {
+          if (newAnchorDataId == sessionParentAnchorId && jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded') == 'true') {
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'false');
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'false');
             jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
             ;
           }
 
-          if (newAnchorDataId != sessionAnchorId) {
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionAnchorId, ")")).attr({
+          if (newAnchorDataId != sessionParentAnchorId) {
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionParentAnchorId, ")")).attr({
               'aria-expanded': 'false',
               'aria-selected': 'false',
               'class': 'accordion-tabs__content__heading-anchor inactive'
@@ -22625,7 +22629,7 @@ function prepareLinks(widget, headings) {
             notfirstAnchorContent.hide();
             accordionNotFirstAnchor.attr('aria-selected', 'false');
             accordionNotFirstAnchor.attr('aria-expanded', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionAnchorId, ")")).attr({
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionParentAnchorId, ")")).attr({
               'aria-expanded': 'false',
               'aria-selected': 'false',
               'class': 'accordion-tabs__content__heading-anchor inactive'
@@ -22637,7 +22641,7 @@ function prepareLinks(widget, headings) {
       } // End if parent is accordion-tab
 
     }); // End matching data-id values loop
-  } // End if sessionAnchorId, i.e. tab click in session data
+  } // End if sessionParentAnchorId, i.e. parent accordion/tab click in session data
 
 
   allAnchors.on('click', function (evt) {
