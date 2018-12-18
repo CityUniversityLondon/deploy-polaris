@@ -22421,7 +22421,7 @@ function prepareLinks(widget, headings) {
   } // Capture top-level tab anchor click ID
 
 
-  var parentAccordionTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu-fullwidth .accordion-tabs__menu-wrapper .accordion-tabs__menu a');
+  var parentAccordionTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs--top-level-layout .accordion-tabs__content .accordion-tabs__content__heading-anchor, .accordion-tabs__menu-fullwidth .accordion-tabs__menu-wrapper .accordion-tabs__menu a');
   parentAccordionTab.on('click', function () {
     // ID of selected tab
     var selectedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id'); // Store selected tab data ID in session storage
@@ -22443,10 +22443,7 @@ function prepareLinks(widget, headings) {
 
   var sessionAnchorId = sessionStorage.getItem('key');
   var sessionNestedAnchorId = sessionStorage.getItem('nested-data-id');
-  var sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id');
-  console.log("Parent Accordion/tab Anchor ID: ".concat(sessionAnchorId));
-  console.log("Nested Accordion Anchor ID: ".concat(sessionNestedAnchorId));
-  console.log("Nested Tab Anchor ID: ".concat(sessionNestedTabId)); // Find all elements on page with 'data-id' value matching sessionAnchorId
+  var sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id'); // Find all elements on page with 'data-id' value matching sessionAnchorId
 
   var matchingIds = document.querySelectorAll("[data-id='".concat(sessionAnchorId, "']")); // If there is a previously selected anchor in the session
 
