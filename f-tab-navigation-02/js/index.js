@@ -22484,7 +22484,7 @@ function prepareLinks(widget, headings) {
 
     jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item').click(function () {
       // Remove stored nested anchor items so these values are only retained with the final parent anchor selection
-      sessionStorage.removeItem('nested-data-id');
+      sessionStorage.removeItem('nested-accordion-data-id');
       sessionStorage.removeItem('nested-tab-data-id'); // If sessionParentAnchorId value is 0, show this content
 
       if (sessionParentAnchorId == 0) {
