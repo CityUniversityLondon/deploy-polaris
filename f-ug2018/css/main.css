@@ -10785,7 +10785,7 @@ USED IN:
     }
 }
 
-.banner--text-ctas .banner__ctas .cta-group + .cta-group {
+.banner--text-ctas .banner__ctas .cta-group--margin-left {
     margin-left: 0;
 }
 
