@@ -8287,6 +8287,7 @@ svg:not(:root) {
     overflow: hidden !important;
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
+    border: thick solid red;
 }
 
 .url-dropdown {
@@ -8329,6 +8330,10 @@ svg:not(:root) {
 
 .url-dropdown select::-ms-expand {
     display: none;
+}
+
+.url-dropdown a {
+    display: block;
 }
 
 .url-dropdown select {
