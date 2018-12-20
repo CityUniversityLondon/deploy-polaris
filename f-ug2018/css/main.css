@@ -8287,6 +8287,80 @@ svg:not(:root) {
     overflow: hidden !important;
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
+    border: thick solid red;
+}
+
+.url-dropdown {
+    position: relative;
+}
+
+.url-dropdown select {
+    width: 100%;
+    padding: 3px 20px 3px 6px;
+    height: 42px;
+    border: 1px solid #ededee;
+    color: #3a343a;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    border-radius: 0;
+    background-image: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+.url-dropdown select::-ms-expand {
+    display: none;
+}
+
+.url-dropdown:after {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 12px;
+    margin: -5px 0 0 -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 4px 0;
+    border-color: #3a343a transparent transparent;
+}
+
+.url-dropdown select::-ms-expand {
+    display: none;
+}
+
+.url-dropdown a {
+    display: block;
+}
+
+.url-dropdown select {
+    background: #ffffff;
+    border: 2px solid #a1a1a1;
+    padding-right: 2rem;
+}
+
+.url-dropdown select:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+.url-dropdown select:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+    outline-offset: 3px;
+}
+
+.url-dropdown select:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+    outline-offset: 3px;
+}
+
+.url-dropdown select:-moz-focusring {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 #1e1e1e;
 }
 
 .url-slide a {
