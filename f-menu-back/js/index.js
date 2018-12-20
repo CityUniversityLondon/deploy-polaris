@@ -23567,16 +23567,16 @@ function () {
     }); // Back button click
 
     if (performance.navigation.type == 2) {
-      console.log('back');
-      sessionStorage.setItem('mobile-menu-link', 'Browser back button click');
+      // console.log('back');
+      // sessionStorage.setItem('mobile-menu-link', 'Browser back button click');
+      // this.toggleLabel.attr('class', 'nav-mobile__toggle-label');
+      this.closeNav();
     } // Check if mobile menu click exists in session storage
 
 
-    var mobileMenuItemSelected = sessionStorage.getItem('mobile-menu-link');
-
-    if (mobileMenuItemSelected && this.toggleLabel.hasClass('open')) {
-      this.toggleLabel.attr('class', 'nav-mobile__toggle-label');
-    }
+    var mobileMenuItemSelected = sessionStorage.getItem('mobile-menu-link'); // if (mobileMenuItemSelected && this.toggleLabel.hasClass('open')) {
+    // this.toggleLabel.attr('class', 'nav-mobile__toggle-label');
+    // }
 
     var label = this.nav.prev();
 
