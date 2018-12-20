@@ -3857,14 +3857,6 @@ blockquote,
     quotes: '« ' ' »' '‹ ' ' ›';
 }
 
-blockquote p:before {
-    content: open-quote;
-}
-
-blockquote p:after {
-    content: close-quote;
-}
-
 blockquote p:not(:last-of-type):after {
     width: 1px !important;
     height: 1px !important;
@@ -18483,6 +18475,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .cass-knowledge-listing__link {
     text-align: right;
+    margin-top: 2rem;
     font-size: 14px;
     font-weight: 600;
 }
@@ -18541,6 +18534,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
     .cass-knowledge-listing__item__text {
         width: 100%;
+    }
+    .cass-knowledge-listing__item img {
+        position: relative;
+        display: block;
+    }
+    .cass-knowledge-listing__item__text {
         position: relative;
         display: block;
     }
@@ -18552,6 +18551,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
     .cass-knowledge-listing__item__text {
         width: 60%;
+    }
+    .cass-knowledge-listing__item img {
+        position: relative;
+        display: block;
+    }
+    .cass-knowledge-listing__item__text {
         position: absolute;
         display: inline-block;
     }
@@ -18563,6 +18568,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
     .cass-knowledge-listing__item__text {
         width: 50%;
+    }
+    .cass-knowledge-listing__item img {
+        position: relative;
+        display: block;
+    }
+    .cass-knowledge-listing__item__text {
         position: absolute;
         display: inline-block;
     }
@@ -18574,6 +18585,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
     .cass-knowledge-listing__item__text {
         width: 100%;
+    }
+    .cass-knowledge-listing__item img {
+        position: relative;
+        display: block;
+    }
+    .cass-knowledge-listing__item__text {
         position: relative;
         display: block;
     }
@@ -18585,8 +18602,15 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
     .cass-knowledge-listing__item__text {
         width: 55%;
+    }
+    .cass-knowledge-listing__item img {
         position: absolute;
         display: inline-block;
+    }
+    .cass-knowledge-listing__item__text {
+        position: relative;
+        display: inline-block;
+        float: right;
     }
 }
 
@@ -18596,8 +18620,15 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
     .cass-knowledge-listing__item__text {
         width: 45%;
+    }
+    .cass-knowledge-listing__item img {
         position: absolute;
         display: inline-block;
+    }
+    .cass-knowledge-listing__item__text {
+        position: relative;
+        display: inline-block;
+        float: right;
     }
 }
 
@@ -21926,6 +21957,78 @@ table tbody > tr > td:hover {
 
 .no-js .carousel__control {
     display: none;
+}
+
+.scp--corporate blockquote::before {
+    background-color: #d92231;
+}
+
+.scp--undergraduate blockquote::before {
+    background-color: #f15f22;
+}
+
+.scp--masters blockquote::before {
+    background-color: #00284d;
+}
+
+.scp--phd blockquote::before {
+    background-color: #0077a0;
+}
+
+.scp--mba blockquote::before {
+    background-color: #00444d;
+}
+
+.scp--executive-education blockquote::before {
+    background-color: #842b91;
+}
+
+blockquote {
+    padding: 2rem 2rem 2rem 2rem;
+    position: relative;
+}
+
+blockquote::before {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    content: "";
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 2rem;
+    width: 180px;
+    height: 40px;
+    background-color: black;
+    -webkit-mask: url("../img/quote.svg") no-repeat;
+            mask: url("../img/quote.svg") no-repeat;
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
+}
+
+blockquote p {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+blockquote .reference {
+    color: #a1a1a1;
+    font-size: 1rem;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    blockquote::before {
+        content: url("../img/quote.svg") !important;
+        background-color: transparent !important;
+    }
+}
+
+/* IE Edge 12+ CSS styles go here */
+@supports (-ms-ime-align: auto) {
+    blockquote::before {
+        content: url("../img/quote.svg") !important;
+        background-color: transparent !important;
+    }
 }
 
 .anchor-demo-list li {
