@@ -22376,7 +22376,7 @@ __webpack_require__.r(__webpack_exports__);
 function genActivateItem(widget, headingAnchors, allAnchors) {
   return function (id, scroll) {
     allAnchors.filter("[data-id=\"".concat(id, "\"].inactive")).removeClass('inactive').addClass('active').attr('aria-selected', 'true').attr('aria-expanded', 'true');
-    allAnchors.filter(".active").not("[data-id=\"".concat(id, "\"]")).removeClass('active').addClass('inactive').attr('aria-selected', 'false').attr('aria-expanded', 'false');
+    allAnchors.filter('.active').not("[data-id=\"".concat(id, "\"]")).removeClass('active').addClass('inactive').attr('aria-selected', 'false').attr('aria-expanded', 'false');
     var heading = headingAnchors.filter("[data-id=\"".concat(id, "\"]"));
 
     if (scroll === 'accordion' && Object(_js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_5__["default"])(heading)) {
