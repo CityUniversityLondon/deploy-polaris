@@ -23567,6 +23567,7 @@ function () {
     }); // Back button click
 
     if (performance.navigation.type == 2) {
+      console.log('back');
       sessionStorage.setItem('mobile-menu-link', 'Browser back button click');
     } // Check if mobile menu click exists in session storage
 
@@ -23640,12 +23641,7 @@ function () {
       this.verticalMenu.launch();
       this.toggleLabel.attr('aria-expanded', 'true');
       this.toggleLabel.addClass('open');
-      this.toggleLabel.removeClass('open');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').addClass('no-scroll--below-medium');
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.vertical-menu__page-link').click(function () {
-        jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label.open').hide();
-        jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label.open').removeClass('open');
-      });
     }
   }]);
 
