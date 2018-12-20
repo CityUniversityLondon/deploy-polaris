@@ -23564,8 +23564,7 @@ function () {
     jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').show();
     jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__content .vertical-menu').on('click', function (e) {
       sessionStorage.removeItem('mobile-menu-link');
-    });
-    this.toggleLabel.attr('class', 'nav-mobile__toggle-label bbbbb'); // Back button click
+    }); // Back button click
 
     if (performance.navigation.type == 2) {
       sessionStorage.setItem('mobile-menu-link', 'Browser back button click');
