@@ -23590,6 +23590,7 @@ function () {
   _createClass(NavMobile, [{
     key: "launch",
     value: function launch() {
+      // If menu label checked and page not loaded by browser back button select
       if (this.toggle.prop('checked') && performance.navigation.type !== 2) {
         this.openNav();
       } else {
