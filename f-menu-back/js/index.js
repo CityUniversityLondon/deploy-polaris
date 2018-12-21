@@ -23590,10 +23590,14 @@ function () {
   _createClass(NavMobile, [{
     key: "launch",
     value: function launch() {
-      // If menu label checked and page not loaded by browser back button select
-      if (this.toggle.prop('checked') && performance.navigation.type !== 2) {
+      if (this.toggle.prop('checked')) {
         this.openNav();
       } else {
+        this.closeNav();
+      } // Browser back button select
+
+
+      if (performance.navigation.type == 2) {
         this.closeNav();
       }
     }
