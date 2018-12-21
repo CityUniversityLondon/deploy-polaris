@@ -23559,25 +23559,7 @@ function () {
     this.toggle = nav.find('.nav-mobile__toggle');
     this.toggleLabel = nav.find('.nav-mobile__toggle-label');
     this.menuContainer = nav.find('.nav-mobile__content');
-    this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true); // Menu label visible on page load
-
-    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').show();
-    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__content .vertical-menu').on('click', function (e) {
-      sessionStorage.removeItem('mobile-menu-link');
-    }); // Back button click
-
-    if (performance.navigation.type == 2) {
-      // console.log('back');
-      // sessionStorage.setItem('mobile-menu-link', 'Browser back button click');
-      // this.toggleLabel.attr('class', 'nav-mobile__toggle-label');
-      this.closeNav();
-    } // Check if mobile menu click exists in session storage
-
-
-    var mobileMenuItemSelected = sessionStorage.getItem('mobile-menu-link'); // if (mobileMenuItemSelected && this.toggleLabel.hasClass('open')) {
-    // this.toggleLabel.attr('class', 'nav-mobile__toggle-label');
-    // }
-
+    this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true);
     var label = this.nav.prev();
 
     if (label.length > 0 && label.attr('for')) {
@@ -23608,13 +23590,11 @@ function () {
   _createClass(NavMobile, [{
     key: "launch",
     value: function launch() {
-      if (this.toggle.prop('checked')) {
+      if (this.toggle.prop('checked') && performance.navigation.type !== 2) {
         this.openNav();
       } else {
         this.closeNav();
       }
-
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav-mobile__toggle-label').show();
     }
   }, {
     key: "toggleNav",
@@ -23628,20 +23608,21 @@ function () {
       }
     }
   }, {
-    key: "closeNav",
-    value: function closeNav() {
-      this.toggle.prop('checked', false);
-      this.verticalMenu.closeAll();
-      this.toggleLabel.attr('aria-expanded', 'false');
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').removeClass('no-scroll--below-medium');
-    }
-  }, {
     key: "openNav",
     value: function openNav() {
       this.verticalMenu.launch();
       this.toggleLabel.attr('aria-expanded', 'true');
       this.toggleLabel.addClass('open');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').addClass('no-scroll--below-medium');
+    }
+  }, {
+    key: "closeNav",
+    value: function closeNav() {
+      this.toggle.prop('checked', false);
+      this.verticalMenu.closeAll();
+      this.toggleLabel.attr('aria-expanded', 'false');
+      this.toggleLabel.removeClass('open');
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('html').removeClass('no-scroll--below-medium');
     }
   }]);
 
