@@ -23502,8 +23502,18 @@ __webpack_require__.r(__webpack_exports__);
 
 var lastScrollTop = 0; // for calculating scrolling direction
 
+var scrollToTopBut = document.getElementsByClassName('footer__back-to-top__button')[0];
+var screenPos = window.pageYOffset; // calculates scroll position
+
+var viewPortHeight = window.innerHeight; // calculates viewport height
+
+var docHeight = document.documentElement.scrollHeight; // calculates height of page
+
+var prevScreenPos;
+/***** START BACK TO TOP BUTTON BEHAVIOUR *****/
+// section on when button appears and and how it fades in
+
 function backToTopScroll() {
-  var scrollToTopBut = document.getElementsByClassName('footer__back-to-top__button')[0];
   var footerPos = document.getElementsByTagName('footer')[0].offsetTop; // position of footer measured from top of page
 
   var screenPos = window.pageYOffset; // calculates scroll position
@@ -23511,12 +23521,14 @@ function backToTopScroll() {
   var viewPortHeight = window.innerHeight; // calculates viewport height
 
   var docHeight = document.documentElement.scrollHeight; // calculates height of page
-  // when scrolling near footer back to top button gets reinstated in footer
+
+  /* when scrolling near footer back to top button gets reinstated in footer */
 
   if (screenPos >= footerPos - (viewPortHeight - 150)) {
     scrollToTopBut.style.opacity = 1;
     scrollToTopBut.classList.remove('back-to-top-stick');
-  } // test if scrolling up or down - button only to apear when scrolling up
+  }
+  /* test if scrolling up or down - button only to apear when scrolling up */
   else {
       var st = screenPos || document.documentElement.scrollTop;
 
@@ -23525,11 +23537,11 @@ function backToTopScroll() {
         // hide back to top button from footer
         scrollToTopBut.style.opacity = 0;
       } else {
-        // upscroll code
+        /* upscroll code */
         // parameters: the button only appear on long pages and when you scroll down far enough. Set values below. Values measured in viewport heights.
         var pageHeight = 1.5; // set page length
 
-        var scrollPos = 0.5; // set how far to scroll down
+        var scrollPos = 0.5; // set how far to scroll down for button to appear
 
         if (docHeight > viewPortHeight * pageHeight && screenPos > viewPortHeight * scrollPos && screenPos <= footerPos - (viewPortHeight - 150)) {
           // last condition ensures button don't stick when close to footer but rather remains static inside footer area
@@ -23565,18 +23577,51 @@ function backToTopScroll() {
 
       lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
     }
-
-  scrollToTopBut.addEventListener('click', function (event) {
-    event.preventDefault();
-    scrollToTopBut.style.opacity = 0;
-    scrollToTopBut.blur();
-    var screenPos = window.pageYOffset; // calculates scroll position
-
-    window.scrollBy(0, -screenPos); // scrolls page to top
-  });
 }
 
-; // only trigger sticky back to top button on viewports wider than 500px
+;
+/***** END  BACK TO TOP BUTTON FADE IN *****/
+// start Scroll to top effect
+
+function scrollEffect() {
+  var timer;
+  prevScreenPos = 0;
+  var timer = setInterval(scrollToptop, 10);
+
+  function scrollToptop() {
+    // checks how far page is from the top
+    if (screenPos > 0 && screenPos != prevScreenPos) {
+      // if in top third of page then slow down scroll speed
+      if (screenPos <= docHeight / 3) {
+        console.log('reached 1 / 3');
+        prevScreenPos = screenPos;
+        window.scrollBy(0, -10);
+        screenPos = window.pageYOffset; // updates scroll position  
+      }
+
+      ; // if in bottom 2 thirds of page then slow down scroll speed
+
+      if (screenPos > docHeight / 3) {
+        console.log('reached 2 / 3');
+        prevScreenPos = screenPos;
+        window.scrollBy(0, -30);
+        screenPos = window.pageYOffset; // updates scroll position  
+      }
+
+      ;
+    } // window.scrollBy(0, -screenPos); // scrolls page to top
+    else {
+        clearInterval(timer);
+      }
+
+    ;
+  }
+
+  ;
+}
+
+; // end Scroll to top effect
+// only trigger sticky back to top button on viewports wider than 500px
 
 window.onscroll = function () {
   if (window.innerWidth > 500) {
@@ -23584,11 +23629,29 @@ window.onscroll = function () {
   }
 
   ;
-};
+}; // click function
+
+
+scrollToTopBut.onclick = function (event) {
+  console.log('Clicked');
+  event.preventDefault();
+  event.stopPropagation();
+  scrollToTopBut.style.opacity = 0;
+  scrollToTopBut.blur(); // removes active class state
+
+  screenPos = window.pageYOffset; // updated varaible with latest scroll position
+
+  docHeight = document.documentElement.scrollHeight; // updates variable with latest height of page in case you on tablet and tuned orientation
+
+  scrollEffect();
+}; // TO ADD SCROLL FUNCTION
+// TO MAKE IT SCROLL FAST 2/3 OF PAGE AND SLOW DOWN LAST 1/3
+
 
 var className = 'back-to-top-Scroll';
 /* harmony default export */ __webpack_exports__["default"] = ({
   backToTopScroll: backToTopScroll,
+  scrollEffect: scrollEffect,
   className: className
 });
 
