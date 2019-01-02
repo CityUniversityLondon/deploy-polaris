@@ -23598,7 +23598,9 @@ function () {
 
 
       if (performance.navigation.type == 2) {
-        this.closeNav();
+        // this.closeNav();
+        this.toggleLabel.removeClass('open');
+        alert('Back click');
       }
     }
   }, {
