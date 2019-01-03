@@ -23596,11 +23596,17 @@ function () {
         this.closeNav();
       } // Browser back button select
 
+      /* if (performance.navigation.type == 2) {
+          // this.closeNav();
+          this.toggleLabel.removeClass('open');
+          alert('Back click');
+      } */
 
-      if (performance.navigation.type == 2) {
+
+      if (PerformanceNavigation.type == 2) {
         // this.closeNav();
         this.toggleLabel.removeClass('open');
-        alert('Back click');
+        alert('Back click using PerformanceNavigation');
       }
     }
   }, {
