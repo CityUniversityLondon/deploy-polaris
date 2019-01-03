@@ -23502,12 +23502,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var lastScrollTop = 0; // for calculating scrolling direction
 
-var scrollToTopBut = document.getElementsByClassName('footer__back-to-top__button')[0];
-var screenPos = window.pageYOffset; // calculates scroll position
-
-var viewPortHeight = window.innerHeight; // calculates viewport height
-
-var docHeight = document.documentElement.scrollHeight; // calculates height of page
+var scrollToTopBut = document.getElementsByClassName('footer__back-to-top__button')[0]; //var screenPos = window.pageYOffset; // calculates scroll position
+//var viewPortHeight = window.innerHeight; // calculates viewport height
+//var docHeight = document.documentElement.scrollHeight; // calculates height of page
 
 /***** START BACK TO TOP BUTTON BEHAVIOUR *****/
 // section on when button appears and and how it fades in
@@ -23585,6 +23582,8 @@ function scrollEffect() {
   var timer;
   var prevScreenPos = 0; // previous scroll position
 
+  var screenPos = window.pageYOffset; // updates varaible with current scroll position
+
   var timer = setInterval(scrollUp, 10);
 
   function scrollUp() {
@@ -23629,10 +23628,15 @@ window.onscroll = function () {
 scrollToTopBut.onclick = function (event) {
   event.preventDefault();
   event.stopPropagation();
-  scrollToTopBut.style.opacity = 0;
-  scrollToTopBut.blur(); // removes active class state
 
-  screenPos = window.pageYOffset; // updates varaible with current scroll position
+  if (window.innerWidth > 500) {
+    // only hides sticky back to top button on screens lager than 500px
+    scrollToTopBut.style.opacity = 0;
+  }
+
+  ;
+  scrollToTopBut.blur(); // removes active class state
+  //screenPos = window.pageYOffset; // updates varaible with current scroll position
 
   scrollEffect(); // calls scroll effect funcion which controls how quickly the page scrolls to the top
 };
