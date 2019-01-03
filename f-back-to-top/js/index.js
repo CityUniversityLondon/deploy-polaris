@@ -23509,11 +23509,10 @@ var viewPortHeight = window.innerHeight; // calculates viewport height
 
 var docHeight = document.documentElement.scrollHeight; // calculates height of page
 
-var prevScreenPos;
 /***** START BACK TO TOP BUTTON BEHAVIOUR *****/
 // section on when button appears and and how it fades in
 
-function backToTopScroll() {
+function scrollButBehav() {
   var footerPos = document.getElementsByTagName('footer')[0].offsetTop; // position of footer measured from top of page
 
   var screenPos = window.pageYOffset; // calculates scroll position
@@ -23566,7 +23565,7 @@ function backToTopScroll() {
               scrollToTopBut.classList.add('back-to-top-stick');
             }
         } else if (screenPos < 200) {
-          // removes back to top button when getting close to top of page
+          // hides back to top button when getting close to top of page
           scrollToTopBut.style.opacity = 0;
         } else if (screenPos >= footerPos - (viewPortHeight - 150)) {
           // re-instates back to top button to footer when scrolling all the way down  
@@ -23580,39 +23579,34 @@ function backToTopScroll() {
 }
 
 ;
-/***** END  BACK TO TOP BUTTON FADE IN *****/
-// start Scroll to top effect
+/***** SCROLL EFFECT ******/
 
 function scrollEffect() {
   var timer;
-  prevScreenPos = 0;
-  var timer = setInterval(scrollToptop, 10);
+  var prevScreenPos = 0; // previous scroll position
 
-  function scrollToptop() {
+  var timer = setInterval(scrollUp, 10);
+
+  function scrollUp() {
     // checks how far page is from the top
     if (screenPos > 0 && screenPos != prevScreenPos) {
-      // if in top third of page then slow down scroll speed
-      if (screenPos <= docHeight / 3) {
-        console.log('reached 1 / 3');
+      // automatic scroll speed slows down when 330px from the top
+      if (screenPos <= 330) {
         prevScreenPos = screenPos;
-        window.scrollBy(0, -10);
+        window.scrollBy(0, -5);
         screenPos = window.pageYOffset; // updates scroll position  
-      }
+      } // set the normal up scroll speed for page
+      else {
+          prevScreenPos = screenPos;
+          window.scrollBy(0, -30); // current speed on 30
 
-      ; // if in bottom 2 thirds of page then slow down scroll speed
-
-      if (screenPos > docHeight / 3) {
-        console.log('reached 2 / 3');
-        prevScreenPos = screenPos;
-        window.scrollBy(0, -30);
-        screenPos = window.pageYOffset; // updates scroll position  
-      }
+          screenPos = window.pageYOffset; // updates scroll position  
+        }
 
       ;
-    } // window.scrollBy(0, -screenPos); // scrolls page to top
-    else {
-        clearInterval(timer);
-      }
+    } else {
+      clearInterval(timer);
+    }
 
     ;
   }
@@ -23620,38 +23614,34 @@ function scrollEffect() {
   ;
 }
 
-; // end Scroll to top effect
-// only trigger sticky back to top button on viewports wider than 500px
+;
+/***** EVENT LISTENERS ******/
 
 window.onscroll = function () {
   if (window.innerWidth > 500) {
-    backToTopScroll();
+    // only trigger sticky back to top button on viewports wider than 500px
+    scrollButBehav();
   }
 
   ;
-}; // click function
-
+};
 
 scrollToTopBut.onclick = function (event) {
-  console.log('Clicked');
   event.preventDefault();
   event.stopPropagation();
   scrollToTopBut.style.opacity = 0;
   scrollToTopBut.blur(); // removes active class state
 
-  screenPos = window.pageYOffset; // updated varaible with latest scroll position
+  screenPos = window.pageYOffset; // updates varaible with current scroll position
 
-  docHeight = document.documentElement.scrollHeight; // updates variable with latest height of page in case you on tablet and tuned orientation
-
-  scrollEffect();
-}; // TO ADD SCROLL FUNCTION
-// TO MAKE IT SCROLL FAST 2/3 OF PAGE AND SLOW DOWN LAST 1/3
+  scrollEffect(); // calls scroll effect funcion which controls how quickly the page scrolls to the top
+};
+/***** EXPORTS FUNCTIONS ******/
 
 
 var className = 'back-to-top-Scroll';
 /* harmony default export */ __webpack_exports__["default"] = ({
-  backToTopScroll: backToTopScroll,
-  scrollEffect: scrollEffect,
+  scrollButBehav: scrollButBehav,
   className: className
 });
 
