@@ -22313,208 +22313,6 @@ var menuItemLabelCn = function menuItemLabelCn(className) {
 
 /***/ }),
 
-/***/ "./src/components/accordion-tabs/common/nested-accordions.js":
-/*!*******************************************************************!*\
-  !*** ./src/components/accordion-tabs/common/nested-accordions.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-
-
-var nestedAccordions = function nestedAccordions() {
-  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
-  var sessionNestedAccordionId = sessionStorage.getItem('nested-accordion-data-id');
-
-  if (sessionNestedAccordionId) {
-    var nestedAnchors = jquery__WEBPACK_IMPORTED_MODULE_1___default()(".accordion-tabs__content__group:eq(".concat(sessionParentAnchorId, ") a.accordion__content__heading-anchor"));
-    [].forEach.call(nestedAnchors, function (e) {
-      if (e.getAttribute('data-id') == sessionNestedAccordionId) {
-        e.className = 'accordion__content__heading-anchor active';
-        e.setAttribute('aria-selected', 'true');
-        e.setAttribute('aria-expanded', 'true');
-      } else if (e.getAttribute('data-id') == '0') {
-        e.className = 'accordion__content__heading-anchor inactive';
-      } else {
-        e.className = 'accordion__content__heading-anchor inactive';
-        e.setAttribute('aria-selected', 'false');
-        e.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (nestedAccordions);
-
-/***/ }),
-
-/***/ "./src/components/accordion-tabs/common/nested-tabs.js":
-/*!*************************************************************!*\
-  !*** ./src/components/accordion-tabs/common/nested-tabs.js ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-
-
-var nestedTabs = function nestedTabs() {
-  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
-  var sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id');
-
-  if (sessionNestedTabId) {
-    var nestedTabAnchors = jquery__WEBPACK_IMPORTED_MODULE_1___default()(".accordion-tabs__content__group:eq(".concat(sessionParentAnchorId, ") a.tabs__menu__item"));
-    [].forEach.call(nestedTabAnchors, function (e) {
-      if (e.getAttribute('data-id') == sessionNestedTabId) {
-        e.className = 'tabs__menu__item active';
-        e.setAttribute('aria-selected', 'true');
-        e.setAttribute('aria-expanded', 'true');
-      } else if (e.getAttribute('data-id') == '0') {
-        e.className = 'tabs__menu__item inactive';
-        e.setAttribute('aria-selected', 'false');
-        e.setAttribute('aria-expanded', 'false');
-      } else {
-        e.className = 'tabs__menu__item inactive';
-        e.setAttribute('aria-selected', 'false');
-        e.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (nestedTabs);
-
-/***/ }),
-
-/***/ "./src/components/accordion-tabs/common/parent-anchor-class.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/accordion-tabs/common/parent-anchor-class.js ***!
-  \*********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__);
-
-
-
-
-// DESKTOP: Set active tab anchor menu items to correct class based on most recent session activity
-var setParentAnchorClass = function setParentAnchorClass() {
-  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
-  var tabAnchors = document.getElementsByClassName('accordion-tabs__menu__item');
-  [].forEach.call(tabAnchors, function (e) {
-    if (e.getAttribute('data-id') == sessionParentAnchorId) {
-      e.className = 'accordion-tabs__menu__item';
-      e.setAttribute('aria-selected', 'true');
-      e.setAttribute('aria-expanded', 'true');
-    } else if (e.getAttribute('data-id') == '0') {
-      e.className = 'accordion-tabs__menu__item';
-    } else {
-      e.className = 'accordion-tabs__menu__item inactive';
-      e.setAttribute('aria-selected', 'false');
-      e.setAttribute('aria-expanded', 'false');
-    }
-  });
-  var accordionAnchors = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
-  [].forEach.call(accordionAnchors, function (e) {
-    if (e.getAttribute('data-id') == sessionParentAnchorId) {
-      e.className = 'accordion-tabs__content__heading-anchor';
-      e.setAttribute('aria-selected', 'true');
-      e.setAttribute('aria-expanded', 'true');
-    } else if (e.getAttribute('data-id') == '0') {
-      e.className = 'accordion-tabs__content__heading-anchor';
-    } else {
-      e.className = 'accordion-tabs__content__heading-anchor inactive';
-      e.setAttribute('aria-selected', 'false');
-      e.setAttribute('aria-expanded', 'false');
-    }
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (setParentAnchorClass);
-
-/***/ }),
-
-/***/ "./src/components/accordion-tabs/common/parent-tab-clicks.js":
-/*!*******************************************************************!*\
-  !*** ./src/components/accordion-tabs/common/parent-tab-clicks.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
-
- // DESKTOP: Tab anchor menu interaction
-
-var parentTabClick = function parentTabClick(newAnchorDataId) {
-  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
-  var tabFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__menu__item:eq(0)');
-  var tabNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__menu__item:not(:eq(0))');
-  var firstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
-  var notfirstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))'); // If sessionParentAnchorId value is 0, show this content
-
-  if (sessionParentAnchorId == 0) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.container.accordion-tabs__content__group:first').show();
-  } else {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.container.accordion-tabs__content__group:first').hide();
-  } // Capture data-id attribute of clicked menu item
-  // let newAnchorDataId = $(this).attr('data-id');
-
-
-  if (newAnchorDataId == '0') {
-    // Content behaviour
-    firstAnchorContent.css('display', 'block');
-    notfirstAnchorContent.css('display', 'none'); // Menu heading behaviour
-
-    tabFirstAnchor.attr('aria-selected', 'true');
-    tabFirstAnchor.attr('aria-expanded', 'true');
-    tabNotFirstAnchor.attr('aria-selected', 'false');
-    tabNotFirstAnchor.attr('aria-expanded', 'false');
-  } else {
-    // Content behaviour
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('display', 'block');
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(".concat(newAnchorDataId, "))")).css('display', 'none'); // Menu heading behaviour
-
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__menu__item:eq(".concat(newAnchorDataId, ")")).attr({
-      'aria-selected': 'true',
-      'aria-expanded': 'true'
-    });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__menu__item:not(:eq(".concat(newAnchorDataId, "))")).attr({
-      'aria-selected': 'false',
-      'aria-expanded': 'false'
-    });
-    firstAnchorContent.css('display', 'none');
-  }
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (parentTabClick);
-
-/***/ }),
-
 /***/ "./src/components/accordion-tabs/common/prepare-content.js":
 /*!*****************************************************************!*\
   !*** ./src/components/accordion-tabs/common/prepare-content.js ***!
@@ -22564,7 +22362,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _js_utils_scroll_to__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../js-utils/scroll-to */ "./src/js-utils/scroll-to.js");
 /* harmony import */ var _js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../js-utils/scrolled-above-view */ "./src/js-utils/scrolled-above-view.js");
-/* harmony import */ var _prepare_tab_links__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./prepare-tab-links */ "./src/components/accordion-tabs/common/prepare-tab-links.js");
+/* harmony import */ var _session_behaviour__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./session-behaviour */ "./src/components/accordion-tabs/common/session-behaviour.js");
 
 
 
@@ -22619,9 +22417,10 @@ function prepareLinks(widget, headings) {
         evt.preventDefault();
       }
     });
-  }
+  } // Navigation and content display based on session activity
 
-  Object(_prepare_tab_links__WEBPACK_IMPORTED_MODULE_5__["default"])();
+
+  Object(_session_behaviour__WEBPACK_IMPORTED_MODULE_5__["default"])();
   allAnchors.on('click', function (evt) {
     evt.preventDefault();
     var anchor = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this);
@@ -22758,9 +22557,9 @@ function findHeadings(className, widget, contentWrapper) {
 
 /***/ }),
 
-/***/ "./src/components/accordion-tabs/common/prepare-tab-links.js":
+/***/ "./src/components/accordion-tabs/common/session-behaviour.js":
 /*!*******************************************************************!*\
-  !*** ./src/components/accordion-tabs/common/prepare-tab-links.js ***!
+  !*** ./src/components/accordion-tabs/common/session-behaviour.js ***!
   \*******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -22771,11 +22570,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _session_variables__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./session-variables */ "./src/components/accordion-tabs/common/session-variables.js");
-/* harmony import */ var _parent_anchor_class__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parent-anchor-class */ "./src/components/accordion-tabs/common/parent-anchor-class.js");
-/* harmony import */ var _parent_tab_clicks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./parent-tab-clicks */ "./src/components/accordion-tabs/common/parent-tab-clicks.js");
-/* harmony import */ var _nested_accordions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nested-accordions */ "./src/components/accordion-tabs/common/nested-accordions.js");
-/* harmony import */ var _nested_tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./nested-tabs */ "./src/components/accordion-tabs/common/nested-tabs.js");
+/* harmony import */ var _session_parent_anchor_class__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./session-parent-anchor-class */ "./src/components/accordion-tabs/common/session-parent-anchor-class.js");
+/* harmony import */ var _session_parent_tab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./session-parent-tab */ "./src/components/accordion-tabs/common/session-parent-tab.js");
+/* harmony import */ var _session_parent_accordion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./session-parent-accordion */ "./src/components/accordion-tabs/common/session-parent-accordion.js");
+/* harmony import */ var _session_nested_tabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./session-nested-tabs */ "./src/components/accordion-tabs/common/session-nested-tabs.js");
+/* harmony import */ var _session_nested_accordions__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./session-nested-accordions */ "./src/components/accordion-tabs/common/session-nested-accordions.js");
 
 
 
@@ -22786,8 +22585,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function parentTabLinks() {
-  /***** SESSION ANCHOR VALUES *****/
+function sessionBehaviour() {
   // Capture top-level tab anchor click ID
   var parentAccordionTab = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs--top-level-layout .accordion-tabs__content .accordion-tabs__content__heading-anchor, .accordion-tabs__menu-fullwidth .accordion-tabs__menu-wrapper .accordion-tabs__menu a');
   parentAccordionTab.on('click', function () {
@@ -22809,41 +22607,25 @@ function parentTabLinks() {
     sessionStorage.setItem('nested-tab-data-id', selectedNestedTab);
   }); // Get selected anchor 'data-id' from session storage
 
-  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id'); // let sessionNestedAccordionId = sessionStorage.getItem('nested-accordion-data-id');
-  // let sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id');
-
-  /***** END SESSION ANCHOR VALUES *****/
-  // Find all elements on page with 'data-id' value matching sessionParentAnchorId
+  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id'); // Find all elements on page with 'data-id' value matching sessionParentAnchorId
 
   var matchingIds = document.querySelectorAll("[data-id='".concat(sessionParentAnchorId, "']")); // If there is a previously selected anchor in the session
 
   if (sessionParentAnchorId) {
     /***** SELECTOR VARIABLES *****/
-    // Tab anchors
-    var tabFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__menu__item:eq(0)');
-    var tabNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__menu__item:not(:eq(0))'); // Accordion anchors
-
     var accordionFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__content__heading-anchor:eq(0)');
-    var accordionNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__content__heading-anchor:not(:eq(0))'); // Accordion and tab anchors
+    var firstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)'); // Accordion and tab => set parent element class set on current session activity
 
-    var firstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
-    var notfirstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))'); // New anchor clicks
-
-    var newAnchorDataId;
-    /***** END SELECTOR VARIABLES *****/
-    // Accordion and tab => set parent element class set on current session activity
-
-    Object(_parent_anchor_class__WEBPACK_IMPORTED_MODULE_3__["default"])(); // Desktop => parent tab menu interaction 
+    Object(_session_parent_anchor_class__WEBPACK_IMPORTED_MODULE_2__["default"])(); // Desktop => parent tab menu interaction 
 
     jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__menu__item').click(function () {
       var newAnchorDataId = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('data-id');
-      Object(_parent_tab_clicks__WEBPACK_IMPORTED_MODULE_4__["default"])(newAnchorDataId);
+      Object(_session_parent_tab__WEBPACK_IMPORTED_MODULE_3__["default"])(newAnchorDataId);
     }); // Nested accordions behaviour
 
-    Object(_nested_accordions__WEBPACK_IMPORTED_MODULE_5__["default"])(); // Nested tabs behaviour
+    Object(_session_nested_accordions__WEBPACK_IMPORTED_MODULE_6__["default"])(); // Nested tabs behaviour
 
-    Object(_nested_tabs__WEBPACK_IMPORTED_MODULE_6__["default"])(); //
-    // Loop through elements with matching 'data-id' values
+    Object(_session_nested_tabs__WEBPACK_IMPORTED_MODULE_5__["default"])(); // Loop through elements with matching 'data-id' values
 
     [].forEach.call(matchingIds, function (elem) {
       var parent = elem.parentElement.className; // Limit behaviour to accordion-tabs
@@ -22861,54 +22643,9 @@ function parentTabLinks() {
           firstAnchorContent.hide();
           accordionFirstAnchor.attr('aria-selected', 'false');
           accordionFirstAnchor.attr('aria-expanded', 'false');
-        } // MOBILE: tab clicks
+        }
 
-
-        jquery__WEBPACK_IMPORTED_MODULE_1___default()('.accordion-tabs__content__heading-anchor').click(function () {
-          newAnchorDataId = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('data-id');
-          /***** MOBILE *****/
-
-          if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-selected') == 'true') {
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-selected', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-expanded', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('class', 'accordion-tabs__content__heading-anchor active');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('dislay', 'none');
-          } else if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-selected') == 'false') {
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-selected', 'true');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-expanded', 'true');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('dislay', 'block');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
-          }
-
-          if (newAnchorDataId == sessionParentAnchorId && jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-expanded') == 'true') {
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-selected', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-expanded', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
-            ;
-          }
-
-          if (newAnchorDataId != sessionParentAnchorId) {
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionParentAnchorId, ")")).attr({
-              'aria-expanded': 'false',
-              'aria-selected': 'false',
-              'class': 'accordion-tabs__content__heading-anchor inactive'
-            });
-          }
-
-          if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('data-id') == '0' && jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-selected') == 'true') {
-            firstAnchorContent.show();
-            notfirstAnchorContent.hide();
-            accordionNotFirstAnchor.attr('aria-selected', 'false');
-            accordionNotFirstAnchor.attr('aria-expanded', 'false');
-            jquery__WEBPACK_IMPORTED_MODULE_1___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionParentAnchorId, ")")).attr({
-              'aria-expanded': 'false',
-              'aria-selected': 'false',
-              'class': 'accordion-tabs__content__heading-anchor inactive'
-            });
-          } else {
-            notfirstAnchorContent.show();
-          }
-        }); // End mobile tab click
+        Object(_session_parent_accordion__WEBPACK_IMPORTED_MODULE_4__["default"])();
       } // End if parent is accordion-tab
 
     }); // End matching data-id values loop
@@ -22916,14 +22653,104 @@ function parentTabLinks() {
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (parentTabLinks);
+/* harmony default export */ __webpack_exports__["default"] = (sessionBehaviour);
 
 /***/ }),
 
-/***/ "./src/components/accordion-tabs/common/session-variables.js":
-/*!*******************************************************************!*\
-  !*** ./src/components/accordion-tabs/common/session-variables.js ***!
-  \*******************************************************************/
+/***/ "./src/components/accordion-tabs/common/session-nested-accordions.js":
+/*!***************************************************************************!*\
+  !*** ./src/components/accordion-tabs/common/session-nested-accordions.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+
+var sessionNestedAccordions = function sessionNestedAccordions() {
+  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
+  var sessionNestedAccordionId = sessionStorage.getItem('nested-accordion-data-id');
+
+  if (sessionNestedAccordionId) {
+    var nestedAnchors = jquery__WEBPACK_IMPORTED_MODULE_1___default()(".accordion-tabs__content__group:eq(".concat(sessionParentAnchorId, ") a.accordion__content__heading-anchor"));
+    [].forEach.call(nestedAnchors, function (e) {
+      if (e.getAttribute('data-id') == sessionNestedAccordionId) {
+        e.className = 'accordion__content__heading-anchor active';
+        e.setAttribute('aria-selected', 'true');
+        e.setAttribute('aria-expanded', 'true');
+      } else if (e.getAttribute('data-id') == '0') {
+        e.className = 'accordion__content__heading-anchor inactive';
+      } else {
+        e.className = 'accordion__content__heading-anchor inactive';
+        e.setAttribute('aria-selected', 'false');
+        e.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (sessionNestedAccordions);
+
+/***/ }),
+
+/***/ "./src/components/accordion-tabs/common/session-nested-tabs.js":
+/*!*********************************************************************!*\
+  !*** ./src/components/accordion-tabs/common/session-nested-tabs.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+
+var sessionNestedTabs = function sessionNestedTabs() {
+  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
+  var sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id');
+
+  if (sessionNestedTabId) {
+    var nestedTabAnchors = jquery__WEBPACK_IMPORTED_MODULE_1___default()(".accordion-tabs__content__group:eq(".concat(sessionParentAnchorId, ") a.tabs__menu__item"));
+    [].forEach.call(nestedTabAnchors, function (e) {
+      if (e.getAttribute('data-id') == sessionNestedTabId) {
+        e.className = 'tabs__menu__item active';
+        e.setAttribute('aria-selected', 'true');
+        e.setAttribute('aria-expanded', 'true');
+      } else if (e.getAttribute('data-id') == '0') {
+        e.className = 'tabs__menu__item inactive';
+        e.setAttribute('aria-selected', 'false');
+        e.setAttribute('aria-expanded', 'false');
+      } else {
+        e.className = 'tabs__menu__item inactive';
+        e.setAttribute('aria-selected', 'false');
+        e.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (sessionNestedTabs);
+
+/***/ }),
+
+/***/ "./src/components/accordion-tabs/common/session-parent-accordion.js":
+/*!**************************************************************************!*\
+  !*** ./src/components/accordion-tabs/common/session-parent-accordion.js ***!
+  \**************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -22935,30 +22762,170 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function sessionVars() {
-  // Capture top-level tab anchor click ID
-  var parentAccordionTab = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs--top-level-layout .accordion-tabs__content .accordion-tabs__content__heading-anchor, .accordion-tabs__menu-fullwidth .accordion-tabs__menu-wrapper .accordion-tabs__menu a');
-  parentAccordionTab.on('click', function () {
-    // ID of selected tab
-    var selectedTab = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('data-id'); // Store selected tab data ID in session storage
+var sessionParentAccordion = function sessionParentAccordion(newAnchorDataId) {
+  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
+  var firstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
+  var notfirstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))');
+  var accordionNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content__heading-anchor:not(:eq(0))');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content__heading-anchor').click(function () {
+    var newAnchorDataId = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('data-id');
 
-    sessionStorage.setItem('parent-anchor-data-id', selectedTab);
-  }); // Capture selected nested accordion data-id
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-selected') == 'true') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-selected', 'false');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-expanded', 'false');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('class', 'accordion-tabs__content__heading-anchor active');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('dislay', 'none');
+    } else if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-selected') == 'false') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-selected', 'true');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-expanded', 'true');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('dislay', 'block');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+    }
 
-  var nestedAccordion = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content .accordion__content__heading-anchor');
-  nestedAccordion.on('click', function () {
-    var selectedNestedAnchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('data-id');
-    sessionStorage.setItem('nested-accordion-data-id', selectedNestedAnchor);
-  }); // Capture selected nested tab data-id
+    if (newAnchorDataId == sessionParentAnchorId && jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-expanded') == 'true') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-selected', 'false');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-expanded', 'false');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+      ;
+    }
 
-  var nestedTab = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content .tabs__menu__item');
-  nestedTab.on('click', function () {
-    var selectedNestedTab = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('data-id');
-    sessionStorage.setItem('nested-tab-data-id', selectedNestedTab);
+    if (newAnchorDataId != sessionParentAnchorId) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionParentAnchorId, ")")).attr({
+        'aria-expanded': 'false',
+        'aria-selected': 'false',
+        'class': 'accordion-tabs__content__heading-anchor inactive'
+      });
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('data-id') == '0' && jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('aria-selected') == 'true') {
+      firstAnchorContent.show();
+      notfirstAnchorContent.hide();
+      accordionNotFirstAnchor.attr('aria-selected', 'false');
+      accordionNotFirstAnchor.attr('aria-expanded', 'false');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionParentAnchorId, ")")).attr({
+        'aria-expanded': 'false',
+        'aria-selected': 'false',
+        'class': 'accordion-tabs__content__heading-anchor inactive'
+      });
+    } else {
+      notfirstAnchorContent.show();
+    }
   });
-}
+};
 
-/* harmony default export */ __webpack_exports__["default"] = (sessionVars);
+/* harmony default export */ __webpack_exports__["default"] = (sessionParentAccordion);
+
+/***/ }),
+
+/***/ "./src/components/accordion-tabs/common/session-parent-anchor-class.js":
+/*!*****************************************************************************!*\
+  !*** ./src/components/accordion-tabs/common/session-parent-anchor-class.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__);
+
+
+
+
+// DESKTOP: Set active tab anchor menu items to correct class based on most recent session activity
+var sessionParentAnchorClass = function sessionParentAnchorClass() {
+  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
+  var tabAnchors = document.getElementsByClassName('accordion-tabs__menu__item');
+  [].forEach.call(tabAnchors, function (e) {
+    if (e.getAttribute('data-id') == sessionParentAnchorId) {
+      e.className = 'accordion-tabs__menu__item';
+      e.setAttribute('aria-selected', 'true');
+      e.setAttribute('aria-expanded', 'true');
+    } else if (e.getAttribute('data-id') == '0') {
+      e.className = 'accordion-tabs__menu__item';
+    } else {
+      e.className = 'accordion-tabs__menu__item inactive';
+      e.setAttribute('aria-selected', 'false');
+      e.setAttribute('aria-expanded', 'false');
+    }
+  });
+  var accordionAnchors = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
+  [].forEach.call(accordionAnchors, function (e) {
+    if (e.getAttribute('data-id') == sessionParentAnchorId) {
+      e.className = 'accordion-tabs__content__heading-anchor';
+      e.setAttribute('aria-selected', 'true');
+      e.setAttribute('aria-expanded', 'true');
+    } else if (e.getAttribute('data-id') == '0') {
+      e.className = 'accordion-tabs__content__heading-anchor';
+    } else {
+      e.className = 'accordion-tabs__content__heading-anchor inactive';
+      e.setAttribute('aria-selected', 'false');
+      e.setAttribute('aria-expanded', 'false');
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (sessionParentAnchorClass);
+
+/***/ }),
+
+/***/ "./src/components/accordion-tabs/common/session-parent-tab.js":
+/*!********************************************************************!*\
+  !*** ./src/components/accordion-tabs/common/session-parent-tab.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
+ // DESKTOP: Tab anchor menu interaction
+
+var sessionParentTab = function sessionParentTab(newAnchorDataId) {
+  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
+  var tabFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__menu__item:eq(0)');
+  var tabNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__menu__item:not(:eq(0))');
+  var firstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
+  var notfirstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))'); // If sessionParentAnchorId value is 0, show this content
+
+  if (sessionParentAnchorId == 0) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.container.accordion-tabs__content__group:first').show();
+  } else {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.container.accordion-tabs__content__group:first').hide();
+  } // Capture data-id attribute of clicked menu item
+  // let newAnchorDataId = $(this).attr('data-id');
+
+
+  if (newAnchorDataId == '0') {
+    // Content behaviour
+    firstAnchorContent.css('display', 'block');
+    notfirstAnchorContent.css('display', 'none'); // Menu heading behaviour
+
+    tabFirstAnchor.attr('aria-selected', 'true');
+    tabFirstAnchor.attr('aria-expanded', 'true');
+    tabNotFirstAnchor.attr('aria-selected', 'false');
+    tabNotFirstAnchor.attr('aria-expanded', 'false');
+  } else {
+    // Content behaviour
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('display', 'block');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(".concat(newAnchorDataId, "))")).css('display', 'none'); // Menu heading behaviour
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__menu__item:eq(".concat(newAnchorDataId, ")")).attr({
+      'aria-selected': 'true',
+      'aria-expanded': 'true'
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".accordion-tabs__menu__item:not(:eq(".concat(newAnchorDataId, "))")).attr({
+      'aria-selected': 'false',
+      'aria-expanded': 'false'
+    });
+    firstAnchorContent.css('display', 'none');
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (sessionParentTab);
 
 /***/ }),
 
