@@ -10871,13 +10871,13 @@ USED IN:
 }
 
 @media (min-width: 501px) and (max-width: 650px) {
-    .banner--text-ctas .banner__ctas .cta-group--overhang-bottom .cta {
+    .banner--text-ctas .banner__ctas .banner__ctas--margin-bottom .cta {
         bottom: 1rem;
     }
 }
 
 @media (min-width: 651px) {
-    .banner--text-ctas .banner__ctas .cta-group--overhang-bottom .cta {
+    .banner--text-ctas .banner__ctas .banner__ctas--margin-bottom .cta {
         bottom: 0.5rem;
     }
 }
