@@ -8290,11 +8290,11 @@ svg:not(:root) {
     border: thick solid red;
 }
 
-.url-dropdown {
+.url-dropdown .url-dropdown--ug {
     position: relative;
 }
 
-.url-dropdown select {
+.url-dropdown .url-dropdown--ug select {
     width: 100%;
     padding: 3px 20px 3px 6px;
     height: 42px;
@@ -8310,11 +8310,11 @@ svg:not(:root) {
     text-overflow: '';
 }
 
-.url-dropdown select::-ms-expand {
+.url-dropdown .url-dropdown--ug select::-ms-expand {
     display: none;
 }
 
-.url-dropdown:after {
+.url-dropdown .url-dropdown--ug:after {
     pointer-events: none;
     position: absolute;
     content: '';
@@ -8328,37 +8328,37 @@ svg:not(:root) {
     border-color: #3a343a transparent transparent;
 }
 
-.url-dropdown select::-ms-expand {
+.url-dropdown .url-dropdown--ug select::-ms-expand {
     display: none;
 }
 
-.url-dropdown a {
+.url-dropdown .url-dropdown--ug a {
     display: block;
 }
 
-.url-dropdown select {
+.url-dropdown .url-dropdown--ug select {
     background: #ffffff;
     border: 2px solid #a1a1a1;
     padding-right: 2rem;
 }
 
-.url-dropdown select:hover {
+.url-dropdown .url-dropdown--ug select:hover {
     background: rgba(0, 0, 0, 0);
 }
 
-.url-dropdown select:active {
+.url-dropdown .url-dropdown--ug select:active {
     background: #ffffff;
     outline: 2px dotted #1e1e1e;
     outline-offset: 3px;
 }
 
-.url-dropdown select:focus {
+.url-dropdown .url-dropdown--ug select:focus {
     background: #ffffff;
     outline: 3px solid #1e1e1e;
     outline-offset: 3px;
 }
 
-.url-dropdown select:-moz-focusring {
+.url-dropdown .url-dropdown--ug select:-moz-focusring {
     color: rgba(0, 0, 0, 0);
     text-shadow: 0 0 0 #1e1e1e;
 }
