@@ -5959,7 +5959,39 @@ module.exports = function extend() {
 var tabbable = __webpack_require__(/*! tabbable */ "./node_modules/tabbable/index.js");
 var xtend = __webpack_require__(/*! xtend */ "./node_modules/xtend/immutable.js");
 
-var listeningFocusTrap = null;
+var activeFocusTraps = (function() {
+  var trapQueue = [];
+  return {
+    activateTrap: function(trap) {
+      if (trapQueue.length > 0) {
+        var activeTrap = trapQueue[trapQueue.length - 1];
+        if (activeTrap !== trap) {
+          activeTrap.pause();
+        }
+      }
+
+      var trapIndex = trapQueue.indexOf(trap);
+      if (trapIndex === -1) {
+        trapQueue.push(trap);
+      } else {
+        // move this existing trap to the front of the queue
+        trapQueue.splice(trapIndex, 1);
+        trapQueue.push(trap);
+      }
+    },
+
+    deactivateTrap: function(trap) {
+      var trapIndex = trapQueue.indexOf(trap);
+      if (trapIndex !== -1) {
+        trapQueue.splice(trapIndex, 1);
+      }
+
+      if (trapQueue.length > 0) {
+        trapQueue[trapQueue.length - 1].unpause();
+      }
+    }
+  };
+})();
 
 function focusTrap(element, userOptions) {
   var doc = document;
@@ -6020,6 +6052,8 @@ function focusTrap(element, userOptions) {
     state.active = false;
     state.paused = false;
 
+    activeFocusTraps.deactivateTrap(trap);
+
     var onDeactivate =
       deactivateOptions && deactivateOptions.onDeactivate !== undefined
         ? deactivateOptions.onDeactivate
@@ -6057,10 +6091,7 @@ function focusTrap(element, userOptions) {
     if (!state.active) return;
 
     // There can be only one listening focus trap at a time
-    if (listeningFocusTrap) {
-      listeningFocusTrap.pause();
-    }
-    listeningFocusTrap = trap;
+    activeFocusTraps.activateTrap(trap);
 
     updateTabbableNodes();
 
@@ -6079,15 +6110,13 @@ function focusTrap(element, userOptions) {
   }
 
   function removeListeners() {
-    if (!state.active || listeningFocusTrap !== trap) return;
+    if (!state.active) return;
 
     doc.removeEventListener('focusin', checkFocusIn, true);
     doc.removeEventListener('mousedown', checkPointerDown, true);
     doc.removeEventListener('touchstart', checkPointerDown, true);
     doc.removeEventListener('click', checkClick, true);
     doc.removeEventListener('keydown', checkKey, true);
-
-    listeningFocusTrap = null;
 
     return trap;
   }
@@ -6376,7 +6405,7 @@ if ('IntersectionObserver' in window &&
 
 /**
  * An IntersectionObserver registry. This registry exists to hold a strong
- * reference to IntersectionObserver instances currently observering a target
+ * reference to IntersectionObserver instances currently observing a target
  * element. Without this registry, instances without another reference may be
  * garbage collected.
  */
@@ -6405,7 +6434,9 @@ function IntersectionObserverEntry(entry) {
 
   // Sets intersection ratio.
   if (targetArea) {
-    this.intersectionRatio = intersectionArea / targetArea;
+    // Round the intersection ratio to avoid floating point math issues:
+    // https://github.com/w3c/IntersectionObserver/issues/324
+    this.intersectionRatio = Number((intersectionArea / targetArea).toFixed(4));
   } else {
     // If area is zero and is intersecting, sets to 1, otherwise to 0
     this.intersectionRatio = this.isIntersecting ? 1 : 0;
@@ -6593,7 +6624,7 @@ IntersectionObserver.prototype._parseRootMargin = function(opt_rootMargin) {
 
 /**
  * Starts polling for intersection changes if the polling is not already
- * happening, and if the page's visibilty state is visible.
+ * happening, and if the page's visibility state is visible.
  * @private
  */
 IntersectionObserver.prototype._monitorIntersections = function() {
@@ -6895,7 +6926,7 @@ function now() {
 
 
 /**
- * Throttles a function and delays its executiong, so it's only called at most
+ * Throttles a function and delays its execution, so it's only called at most
  * once within a given time period.
  * @param {Function} fn The function to throttle.
  * @param {number} timeout The amount of time that must pass before the
@@ -7026,7 +7057,7 @@ function getEmptyRect() {
 }
 
 /**
- * Checks to see if a parent element contains a child elemnt (including inside
+ * Checks to see if a parent element contains a child element (including inside
  * shadow DOM).
  * @param {Node} parent The parent element.
  * @param {Node} child The child element.
@@ -21394,7 +21425,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 __webpack_require__.r(__webpack_exports__);
 /**
   stickybits - Stickybits is a lightweight alternative to `position: sticky` polyfills
-  @version v3.5.7
+  @version v3.6.1
   @link https://github.com/dollarshaveclub/stickybits#readme
   @author Jeff Wainwright <yowainwright@gmail.com> (https://jeffry.in)
   @license MIT
@@ -21459,7 +21490,7 @@ var Stickybits =
 function () {
   function Stickybits(target, obj) {
     var o = typeof obj !== 'undefined' ? obj : {};
-    this.version = '3.5.7';
+    this.version = '3.6.1';
     this.userAgent = window.navigator.userAgent || 'no `userAgent` provided by the browser';
     this.props = {
       customStickyChangeNumber: o.customStickyChangeNumber || null,
@@ -21538,7 +21569,7 @@ function () {
     }
 
     return stickyProp;
-  };
+  }
   /*
     addInstance ✔️
     --------
@@ -21563,7 +21594,7 @@ function () {
       - stickyStop = number
     - returns an instance object
   */
-
+  ;
 
   _proto.addInstance = function addInstance(el, props) {
     var _this = this;
@@ -21585,7 +21616,7 @@ function () {
 
     se.addEventListener('scroll', item.stateContainer);
     return item;
-  };
+  }
   /*
     --------
     getParent 👨‍
@@ -21594,7 +21625,7 @@ function () {
     - only used for non `window` scroll elements
     - supports older browsers
   */
-
+  ;
 
   _proto.getClosestParent = function getClosestParent(el, match) {
     // p = parent element
@@ -21608,7 +21639,7 @@ function () {
 
 
     return p;
-  };
+  }
   /*
     --------
     getTopPosition
@@ -21616,7 +21647,7 @@ function () {
     - a helper function that gets the topPosition of a Stickybit element
     - from the top level of the DOM
   */
-
+  ;
 
   _proto.getTopPosition = function getTopPosition(el) {
     if (this.props.useGetBoundingClientRect) {
@@ -21630,7 +21661,7 @@ function () {
     } while (el = el.offsetParent);
 
     return topPosition;
-  };
+  }
   /*
     computeScrollOffsets 📊
     ---
@@ -21640,7 +21671,7 @@ function () {
       - start
       - stop
   */
-
+  ;
 
   _proto.computeScrollOffsets = function computeScrollOffsets(item) {
     var it = item;
@@ -21658,7 +21689,7 @@ function () {
     it.stickyChange = it.stickyStart + stickyChangeOffset;
     it.stickyStop = isTop ? parentBottom - (el.offsetHeight + it.offset) : parentBottom - window.innerHeight;
     return it;
-  };
+  }
   /*
     toggleClasses ⚖️
     ---
@@ -21666,7 +21697,7 @@ function () {
     r = removed class
     a = added class
   */
-
+  ;
 
   _proto.toggleClasses = function toggleClasses(el, r, a) {
     var e = el;
@@ -21675,7 +21706,7 @@ function () {
     var rItem = cArray.indexOf(r);
     if (rItem !== -1) cArray.splice(rItem, 1);
     e.className = cArray.join(' ');
-  };
+  }
   /*
     manageState 📝
     ---
@@ -21684,7 +21715,7 @@ function () {
       - sticky
       - stuck
   */
-
+  ;
 
   _proto.manageState = function manageState(item) {
     // cache object
@@ -21729,7 +21760,7 @@ function () {
     var tC = this.toggleClasses;
     var scroll = this.isWin ? window.scrollY || window.pageYOffset : se.scrollTop;
     var notSticky = scroll > start && scroll < stop && (state === 'default' || state === 'stuck');
-    var isSticky = isTop && scroll <= start && state === 'sticky';
+    var isSticky = isTop && scroll <= start && (state === 'sticky' || state === 'stuck');
     var isStuck = scroll >= stop && state === 'sticky';
     /*
       Unnamed arrow functions within this block
@@ -21752,6 +21783,7 @@ function () {
       it.state = 'default';
       rAF(function () {
         tC(e, sticky);
+        tC(e, stuck);
         if (pv === 'fixed') stl.position = '';
       });
     } else if (isStuck) {
@@ -21766,7 +21798,7 @@ function () {
     }
 
     var isStickyChange = scroll >= change && scroll <= stop;
-    var isNotStickyChange = scroll < change || scroll > stop;
+    var isNotStickyChange = scroll < change / 2 || scroll > stop;
     var stub = 'stub'; // a stub css class to remove
 
     if (isNotStickyChange) {
@@ -21782,20 +21814,30 @@ function () {
     return it;
   };
 
-  _proto.update = function update() {
+  _proto.update = function update(updatedProps) {
+    if (updatedProps === void 0) {
+      updatedProps = null;
+    }
+
     for (var i = 0; i < this.instances.length; i += 1) {
       var instance = this.instances[i];
       this.computeScrollOffsets(instance);
+
+      if (updatedProps) {
+        for (var updatedProp in updatedProps) {
+          instance.props[updatedProp] = updatedProps[updatedProp];
+        }
+      }
     }
 
     return this;
-  };
+  }
   /*
     removes an instance 👋
     --------
     - cleanup instance
   */
-
+  ;
 
   _proto.removeInstance = function removeInstance(instance) {
     var e = instance.el;
@@ -21806,14 +21848,14 @@ function () {
     tC(e, p.stickyClass);
     tC(e, p.stuckClass);
     tC(e.parentNode, p.parentClass);
-  };
+  }
   /*
     cleanup 🛁
     --------
     - cleans up each instance
     - clears instance
   */
-
+  ;
 
   _proto.cleanup = function cleanup() {
     for (var i = 0; i < this.instances.length; i += 1) {
@@ -22020,7 +22062,7 @@ function UntouchabilityChecker(elementDocument) {
 // getComputedStyle accurately reflects `visibility: hidden` of ancestors
 // but not `display: none`, so we need to recursively check parents.
 UntouchabilityChecker.prototype.hasDisplayNone = function hasDisplayNone(node, nodeComputedStyle) {
-  if (node === this.doc.documentElement) return false;
+  if (node.nodeType !== Node.ELEMENT_NODE) return false;
 
     // Search for a cached result.
     var cached = find(this.cache, function(item) {
@@ -22071,7 +22113,7 @@ g = (function() {
 
 try {
 	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1, eval)("this");
+	g = g || new Function("return this")();
 } catch (e) {
 	// This works if the window reference is available
 	if (typeof window === "object") g = window;
@@ -22356,14 +22398,17 @@ function prepareContent(className, widget) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deactivateAll", function() { return deactivateAll; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return prepareLinks; });
-/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
-/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es6_string_anchor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.string.anchor */ "./node_modules/core-js/modules/es6.string.anchor.js");
-/* harmony import */ var core_js_modules_es6_string_anchor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_anchor__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _js_utils_scroll_to__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../js-utils/scroll-to */ "./src/js-utils/scroll-to.js");
-/* harmony import */ var _js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../js-utils/scrolled-above-view */ "./src/js-utils/scrolled-above-view.js");
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_string_anchor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.string.anchor */ "./node_modules/core-js/modules/es6.string.anchor.js");
+/* harmony import */ var core_js_modules_es6_string_anchor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_anchor__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _js_utils_scroll_to__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../js-utils/scroll-to */ "./src/js-utils/scroll-to.js");
+/* harmony import */ var _js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../js-utils/scrolled-above-view */ "./src/js-utils/scrolled-above-view.js");
+
 
 
 
@@ -22375,13 +22420,13 @@ __webpack_require__.r(__webpack_exports__);
 function genActivateItem(widget, headingAnchors, allAnchors) {
   return function (id, scroll) {
     allAnchors.filter("[data-id=\"".concat(id, "\"].inactive")).removeClass('inactive').addClass('active').attr('aria-selected', 'true').attr('aria-expanded', 'true');
-    allAnchors.filter(".active").not("[data-id=\"".concat(id, "\"]")).removeClass('active').addClass('inactive').attr('aria-selected', 'false').attr('aria-expanded', 'false');
+    allAnchors.filter('.active').not("[data-id=\"".concat(id, "\"]")).removeClass('active').addClass('inactive').attr('aria-selected', 'false').attr('aria-expanded', 'false');
     var heading = headingAnchors.filter("[data-id=\"".concat(id, "\"]"));
 
-    if (scroll === 'accordion' && Object(_js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_4__["default"])(heading)) {
-      Object(_js_utils_scroll_to__WEBPACK_IMPORTED_MODULE_3__["default"])(heading);
-    } else if (scroll === 'tab' && Object(_js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_4__["default"])(widget)) {
-      Object(_js_utils_scroll_to__WEBPACK_IMPORTED_MODULE_3__["default"])(widget);
+    if (scroll === 'accordion' && Object(_js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_5__["default"])(heading)) {
+      Object(_js_utils_scroll_to__WEBPACK_IMPORTED_MODULE_4__["default"])(heading);
+    } else if (scroll === 'tab' && Object(_js_utils_scrolled_above_view__WEBPACK_IMPORTED_MODULE_5__["default"])(widget)) {
+      Object(_js_utils_scroll_to__WEBPACK_IMPORTED_MODULE_4__["default"])(widget);
     }
   };
 }
@@ -22395,7 +22440,7 @@ function prepareLinks(widget, headings) {
   var headingAnchors = headings.reduce(function (acc, _ref) {
     var anchor = _ref.anchor;
     return acc.add(anchor);
-  }, jquery__WEBPACK_IMPORTED_MODULE_2___default()());
+  }, jquery__WEBPACK_IMPORTED_MODULE_3___default()());
   var allAnchors = menu ? headingAnchors.add(menu.find('a[data-id]')) : headingAnchors;
   var activateItem = genActivateItem(widget, headingAnchors, allAnchors);
 
@@ -22403,7 +22448,7 @@ function prepareLinks(widget, headings) {
     var menuAnchors = menu.find('a[data-id]');
     menuAnchors.on('keydown', function (evt) {
       var moveTo = -1;
-      var anchor = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this);
+      var anchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this);
 
       if (evt.which === 37) {
         // left
@@ -22418,10 +22463,234 @@ function prepareLinks(widget, headings) {
       }
     });
   }
+  /***** SESSION ANCHOR VALUES *****/
+  // Capture top-level tab anchor click ID
+
+
+  var parentAccordionTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs--top-level-layout .accordion-tabs__content .accordion-tabs__content__heading-anchor, .accordion-tabs__menu-fullwidth .accordion-tabs__menu-wrapper .accordion-tabs__menu a');
+  parentAccordionTab.on('click', function () {
+    // ID of selected tab
+    var selectedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id'); // Store selected tab data ID in session storage
+
+    sessionStorage.setItem('parent-anchor-data-id', selectedTab);
+  }); // Capture selected nested accordion data-id
+
+  var nestedAccordion = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion__content__heading-anchor');
+  nestedAccordion.on('click', function () {
+    var selectedNestedAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+    sessionStorage.setItem('nested-accordion-data-id', selectedNestedAnchor);
+  }); // Capture selected nested tab data-id
+
+  var nestedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .tabs__menu__item');
+  nestedTab.on('click', function () {
+    var selectedNestedTab = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+    sessionStorage.setItem('nested-tab-data-id', selectedNestedTab);
+  }); // Get selected anchor 'data-id' from session storage
+
+  var sessionParentAnchorId = sessionStorage.getItem('parent-anchor-data-id');
+  var sessionNestedAccordionId = sessionStorage.getItem('nested-accordion-data-id');
+  var sessionNestedTabId = sessionStorage.getItem('nested-tab-data-id');
+  /***** END SESSION ANCHOR VALUES *****/
+  // Find all elements on page with 'data-id' value matching sessionParentAnchorId
+
+  var matchingIds = document.querySelectorAll("[data-id='".concat(sessionParentAnchorId, "']")); // If there is a previously selected anchor in the session
+
+  if (sessionParentAnchorId) {
+    /***** SELECTOR VARIABLES *****/
+    // Tab anchors
+    var tabFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:eq(0)');
+    var tabNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item:not(:eq(0))'); // Accordion anchors
+
+    var accordionFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:eq(0)');
+    var accordionNotFirstAnchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor:not(:eq(0))'); // Accordion and tab anchors
+
+    var firstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:eq(0)');
+    var notfirstAnchorContent = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content .accordion-tabs__content__group:not(:eq(0))'); // New anchor clicks
+
+    var newAnchorDataId;
+    /***** END SELECTOR VARIABLES *****/
+    // DESKTOP: Set active tab anchor menu items to correct class based on most recent session activity
+
+    var tabAnchors = document.getElementsByClassName('accordion-tabs__menu__item');
+    [].forEach.call(tabAnchors, function (e) {
+      if (e.getAttribute('data-id') == sessionParentAnchorId) {
+        e.className = 'accordion-tabs__menu__item';
+        e.setAttribute('aria-selected', 'true');
+        e.setAttribute('aria-expanded', 'true');
+      } else if (e.getAttribute('data-id') == '0') {
+        e.className = 'accordion-tabs__menu__item';
+      } else {
+        e.className = 'accordion-tabs__menu__item inactive';
+        e.setAttribute('aria-selected', 'false');
+        e.setAttribute('aria-expanded', 'false');
+      }
+    }); // DESKTOP: Tab anchor menu interaction
+
+    jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__menu__item').click(function () {
+      // Remove stored nested anchor items so these values are only retained with the final parent anchor selection
+      sessionStorage.removeItem('nested-accordion-data-id');
+      sessionStorage.removeItem('nested-tab-data-id'); // If sessionParentAnchorId value is 0, show this content
+
+      if (sessionParentAnchorId == 0) {
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').show();
+      } else {
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()('.container.accordion-tabs__content__group:first').hide();
+      } // Capture data-id attribute of clicked menu item
+
+
+      newAnchorDataId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+
+      if (newAnchorDataId == '0') {
+        // Content behaviour
+        firstAnchorContent.css('display', 'block');
+        notfirstAnchorContent.css('display', 'none'); // Menu heading behaviour
+
+        tabFirstAnchor.attr('aria-selected', 'true');
+        tabFirstAnchor.attr('aria-expanded', 'true');
+        tabNotFirstAnchor.attr('aria-selected', 'false');
+        tabNotFirstAnchor.attr('aria-expanded', 'false');
+      } else {
+        // Content behaviour
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('display', 'block');
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:not(:eq(".concat(newAnchorDataId, "))")).css('display', 'none'); // Menu heading behaviour
+
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:eq(".concat(newAnchorDataId, ")")).attr({
+          'aria-selected': 'true',
+          'aria-expanded': 'true'
+        });
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__menu__item:not(:eq(".concat(newAnchorDataId, "))")).attr({
+          'aria-selected': 'false',
+          'aria-expanded': 'false'
+        });
+        firstAnchorContent.css('display', 'none');
+      }
+    }); // Nested accordion behaviour
+
+    if (sessionNestedAccordionId) {
+      var nestedAnchors = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__group:eq(".concat(sessionParentAnchorId, ") a.accordion__content__heading-anchor"));
+      [].forEach.call(nestedAnchors, function (e) {
+        if (e.getAttribute('data-id') == sessionNestedAccordionId) {
+          e.className = 'accordion__content__heading-anchor active';
+          e.setAttribute('aria-selected', 'true');
+          e.setAttribute('aria-expanded', 'true');
+        } else if (e.getAttribute('data-id') == '0') {
+          e.className = 'accordion__content__heading-anchor inactive';
+        } else {
+          e.className = 'accordion__content__heading-anchor inactive';
+          e.setAttribute('aria-selected', 'false');
+          e.setAttribute('aria-expanded', 'false');
+        }
+      });
+    } // Nested tabs behaviour
+
+
+    if (sessionNestedTabId) {
+      var nestedTabAnchors = jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content__group:eq(".concat(sessionParentAnchorId, ") a.tabs__menu__item"));
+      [].forEach.call(nestedTabAnchors, function (e) {
+        if (e.getAttribute('data-id') == sessionNestedTabId) {
+          e.className = 'tabs__menu__item active';
+          e.setAttribute('aria-selected', 'true');
+          e.setAttribute('aria-expanded', 'true');
+        } else if (e.getAttribute('data-id') == '0') {
+          e.className = 'tabs__menu__item inactive';
+          e.setAttribute('aria-selected', 'false');
+          e.setAttribute('aria-expanded', 'false');
+        } else {
+          e.className = 'tabs__menu__item inactive';
+          e.setAttribute('aria-selected', 'false');
+          e.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    var accordionAnchors = document.getElementsByClassName('accordion-tabs__content__heading-anchor');
+    [].forEach.call(accordionAnchors, function (e) {
+      if (e.getAttribute('data-id') == sessionParentAnchorId) {
+        e.className = 'accordion-tabs__content__heading-anchor';
+        e.setAttribute('aria-selected', 'true');
+        e.setAttribute('aria-expanded', 'true');
+      } else if (e.getAttribute('data-id') == '0') {
+        e.className = 'accordion-tabs__content__heading-anchor';
+      } else {
+        e.className = 'accordion-tabs__content__heading-anchor inactive';
+        e.setAttribute('aria-selected', 'false');
+        e.setAttribute('aria-expanded', 'false');
+      }
+    }); // Loop through elements with matching 'data-id' values
+
+    [].forEach.call(matchingIds, function (elem) {
+      var parent = elem.parentElement.className; // Limit behaviour to accordion-tabs
+
+      if (parent == 'accordion-tabs__content') {
+        elem.className = 'accordion-tabs__content__heading-anchor';
+        elem.setAttribute('aria-selected', 'true');
+        elem.setAttribute('aria-expanded', 'true'); // If previously selected tab was the first tab, show its content
+
+        if (sessionParentAnchorId == 0) {
+          firstAnchorContent.show();
+          accordionFirstAnchor.attr('aria-selected', 'true');
+          accordionFirstAnchor.attr('aria-expanded', 'true');
+        } else {
+          firstAnchorContent.hide();
+          accordionFirstAnchor.attr('aria-selected', 'false');
+          accordionFirstAnchor.attr('aria-expanded', 'false');
+        } // MOBILE: tab clicks
+
+
+        jquery__WEBPACK_IMPORTED_MODULE_3___default()('.accordion-tabs__content__heading-anchor').click(function () {
+          newAnchorDataId = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id');
+          /***** MOBILE *****/
+
+          if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'true') {
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor active');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('dislay', 'none');
+          } else if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'false') {
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'true');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'true');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__group:eq(".concat(newAnchorDataId, ")")).css('dislay', 'block');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+          }
+
+          if (newAnchorDataId == sessionParentAnchorId && jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded') == 'true') {
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-expanded', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('class', 'accordion-tabs__content__heading-anchor inactive');
+            ;
+          }
+
+          if (newAnchorDataId != sessionParentAnchorId) {
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionParentAnchorId, ")")).attr({
+              'aria-expanded': 'false',
+              'aria-selected': 'false',
+              'class': 'accordion-tabs__content__heading-anchor inactive'
+            });
+          }
+
+          if (jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('data-id') == '0' && jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).attr('aria-selected') == 'true') {
+            firstAnchorContent.show();
+            notfirstAnchorContent.hide();
+            accordionNotFirstAnchor.attr('aria-selected', 'false');
+            accordionNotFirstAnchor.attr('aria-expanded', 'false');
+            jquery__WEBPACK_IMPORTED_MODULE_3___default()(".accordion-tabs__content .accordion-tabs__content__heading-anchor:eq(".concat(sessionParentAnchorId, ")")).attr({
+              'aria-expanded': 'false',
+              'aria-selected': 'false',
+              'class': 'accordion-tabs__content__heading-anchor inactive'
+            });
+          } else {
+            notfirstAnchorContent.show();
+          }
+        }); // End mobile tab click
+      } // End if parent is accordion-tab
+
+    }); // End matching data-id values loop
+  } // End if sessionParentAnchorId, i.e. parent accordion/tab click in session data
+
 
   allAnchors.on('click', function (evt) {
     evt.preventDefault();
-    var anchor = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this);
+    var anchor = jquery__WEBPACK_IMPORTED_MODULE_3___default()(this);
     var isAccordionAnchor = anchor.attr('data-accordion-anchor');
 
     if (anchor.hasClass('inactive')) {
