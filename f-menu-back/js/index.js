@@ -23596,17 +23596,9 @@ function () {
         this.closeNav();
       } // Browser back button select
 
-      /* if (performance.navigation.type == 2) {
-          // this.closeNav();
-          this.toggleLabel.removeClass('open');
-          alert('Back click');
-      } */
-
 
       if (PerformanceNavigation.type == 2) {
-        // this.closeNav();
         this.toggleLabel.removeClass('open');
-        alert('Back click using PerformanceNavigation');
       }
     }
   }, {
