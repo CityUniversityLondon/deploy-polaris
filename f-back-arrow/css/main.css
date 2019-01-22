@@ -11855,6 +11855,11 @@ USED IN:
     }
 }
 
+.cta-group .cta--icon-left .fa, .cta-group .cta--icon-left .url-slide--right .url-slide__icon, .url-slide--right .cta-group .cta--icon-left .url-slide__icon, .cta-group .cta--icon-left .media-block .video-preview__button:before, .media-block .cta-group .cta--icon-left .video-preview__button:before, .cta-group .cta--icon-left .accordion__content__heading-anchor__icon, .cta-group .cta--icon-left .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon, .accordion.accordion--simple .accordion__content__heading-anchor .cta-group .cta--icon-left .accordion__content__heading-anchor__icon, .cta-group .cta--icon-left .js .tabs__content__heading-anchor__icon, .js .cta-group .cta--icon-left .tabs__content__heading-anchor__icon, .cta-group .cta--icon-left .js .accordion-tabs__content__heading-anchor__icon, .js .cta-group .cta--icon-left .accordion-tabs__content__heading-anchor__icon, .cta-group .cta--icon-left .header-toggle--menu .header-toggle__icon, .header-toggle--menu .cta-group .cta--icon-left .header-toggle__icon, .cta-group .cta--icon-left .header-toggle--search .header-toggle__icon, .header-toggle--search .cta-group .cta--icon-left .header-toggle__icon, .cta-group .cta--icon-left .popup-def-list-group__prevnext__prev .popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .cta-group .cta--icon-left .popup-def-list-group__prevnext__prev__icon, .cta-group .cta--icon-left .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .cta-group .cta--icon-left .popup-def-list-group__prevnext__next__icon, .cta-group .cta--icon-left .dialog__box__heading__close__icon, .cta-group .cta--icon-left .image-banner span, .image-banner .cta-group .cta--icon-left span, .cta-group .cta--icon-left .video-banner__play span, .video-banner__play .cta-group .cta--icon-left span, .cta-group .cta--icon-left .mba-popup__form__close__icon {
+    float: left;
+    margin: 3px 12px 0 0;
+}
+
 .cta-group--centered {
     text-align: center;
 }
@@ -11881,11 +11886,6 @@ USED IN:
     .cta-group--stretched .cta {
         flex: 1 0 auto;
     }
-}
-
-.cta-group--stretched .cta .fa-arrow-left--float-left {
-    float: left;
-    margin: 3px 12px 0 0;
 }
 
 @media (min-width: 651px) {
