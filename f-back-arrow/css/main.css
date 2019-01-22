@@ -11855,11 +11855,6 @@ USED IN:
     }
 }
 
-.cta-group .cta--icon-left span.cta-icon-left {
-    float: left;
-    margin: 3px 12px 0 0;
-}
-
 .cta-group--centered {
     text-align: center;
 }
@@ -11895,6 +11890,15 @@ USED IN:
 }
 
 .cta-group--stretched span {
+    float: right;
+}
+
+.cta-icon-left span {
+    float: left;
+    margin: 2px 12px 0 0;
+}
+
+.cta-icon-right span {
     float: right;
 }
 
