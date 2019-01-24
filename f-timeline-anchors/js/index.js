@@ -25101,8 +25101,10 @@ function launch(el) {
 
   if (selectedSection && window.location.hash) {
     window.location.href.replace(window.location.hash, "#section-".concat(selectedSection));
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).removeClass('timeline__collection--hide').addClass('bounce-in');
   } else if (selectedSection && !window.location.hash) {
     window.location.href = window.location.href + "#".concat(selectedSection);
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).removeClass('timeline__collection--hide').addClass('bounce-in');
   }
 }
 
