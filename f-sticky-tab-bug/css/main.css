@@ -9310,7 +9310,6 @@ svg:not(:root) {
 .js .accordion-tabs--box-shadow .accordion-tabs__menu-fullwidth {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
     background-color: #f2f2f2;
-    border: 1px solid;
     -webkit-transform: translateZ(0) scale(1, 1);
 }
 
