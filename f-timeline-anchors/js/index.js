@@ -25044,40 +25044,43 @@ var className = 'wavecontainer';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
-/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
 
 
 function launch(el) {
-  var tl = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
+  var tl = jquery__WEBPACK_IMPORTED_MODULE_2___default()(el);
   var timeLineContainer = tl.find('.timeline__collection'); //check if elements in viewpoints
 
-  jquery__WEBPACK_IMPORTED_MODULE_1___default.a.fn.isInViewport = function () {
-    var elementTop = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).offset().top;
-    var elementBottom = elementTop + jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).outerHeight();
-    var viewportTop = jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).scrollTop();
-    var viewportBottom = viewportTop + jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).height() - 300; //descrease the viewportBottom so element have to be more further up the page
+  jquery__WEBPACK_IMPORTED_MODULE_2___default.a.fn.isInViewport = function () {
+    var elementTop = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).offset().top;
+    var elementBottom = elementTop + jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).outerHeight();
+    var viewportTop = jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).scrollTop();
+    var viewportBottom = viewportTop + jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).height() - 300; //descrease the viewportBottom so element have to be more further up the page
 
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
 
-  jquery__WEBPACK_IMPORTED_MODULE_1___default()(timeLineContainer).each(function (index) {
+  jquery__WEBPACK_IMPORTED_MODULE_2___default()(timeLineContainer).each(function (index) {
     if (index < 1) {
-      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).removeClass('timeline__collection--hide');
+      jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).removeClass('timeline__collection--hide');
     }
   });
-  jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).on('scroll', function () {
-    jquery__WEBPACK_IMPORTED_MODULE_1___default()(timeLineContainer).each(function (index) {
-      if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).isInViewport() && index >= 1) {
-        jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).removeClass('timeline__collection--hide').addClass('bounce-in');
+  jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).on('scroll', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(timeLineContainer).each(function (index) {
+      if (jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).isInViewport() && index >= 1) {
+        jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).removeClass('timeline__collection--hide').addClass('bounce-in');
       }
     });
-  }); // Find nearest parent node matching selector
+  });
 
   var getClosest = function getClosest(elem, selector) {
     for (; elem && elem !== document; elem = elem.parentNode) {
@@ -25087,10 +25090,20 @@ function launch(el) {
     return null;
   };
 
+  var selectedSection = sessionStorage.getItem('selected-section');
   timeLineContainer.find('a').click(function (e) {
+    selectedSection = '';
     var parent = getClosest(e.target, '.timeline__collection');
     history.replaceState("", "", "#".concat(parent.id));
-  });
+    sessionStorage.setItem('selected-section', parent.id);
+  }); // window.location.href.replace(window.location.hash, `#section-${selectedSection}`);
+  // let updatedURL = `${window.location.href}#section-${selectedSection}`;
+
+  if (selectedSection && window.location.hash) {
+    window.location.href.replace(window.location.hash, "#section-".concat(selectedSection));
+  } else if (selectedSection && !window.location.hash) {
+    window.location.href = window.location.href + "#".concat(selectedSection);
+  }
 }
 
 var className = 'timeline';
