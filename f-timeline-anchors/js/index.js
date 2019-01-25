@@ -25064,7 +25064,7 @@ function launch(el) {
     var elementTop = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).offset().top;
     var elementBottom = elementTop + jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).outerHeight();
     var viewportTop = jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).scrollTop();
-    var viewportBottom = viewportTop + jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).height() - 300; //descrease the viewportBottom so element have to be more further up the page
+    var viewportBottom = viewportTop + jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).height() - 300; //decrease the viewportBottom so element have to be more further up the page
 
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
@@ -25096,15 +25096,16 @@ function launch(el) {
     var parent = getClosest(e.target, '.timeline__collection');
     history.replaceState("", "", "#".concat(parent.id));
     sessionStorage.setItem('selected-section', parent.id);
-  }); // window.location.href.replace(window.location.hash, `#section-${selectedSection}`);
-  // let updatedURL = `${window.location.href}#section-${selectedSection}`;
+  });
 
   if (selectedSection && window.location.hash) {
     window.location.href.replace(window.location.hash, "#section-".concat(selectedSection));
-    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).removeClass('timeline__collection--hide').addClass('bounce-in');
+    timeLineContainer.removeClass('timeline__collection--hide');
+    timeLineContainer.addClass('bounce-in');
   } else if (selectedSection && !window.location.hash) {
     window.location.href = window.location.href + "#".concat(selectedSection);
-    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).removeClass('timeline__collection--hide').addClass('bounce-in');
+    timeLineContainer.removeClass('timeline__collection--hide');
+    timeLineContainer.addClass('bounce-in');
   }
 }
 
