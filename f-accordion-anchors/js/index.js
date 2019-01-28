@@ -22695,13 +22695,38 @@ function prepareLinks(widget, headings) {
 
   allAnchors.on('click', function (evt) {
     evt.preventDefault();
+    var relContent = this.nextSibling;
 
     if (jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).hasClass('inactive')) {
-      this.nextSibling.classList.remove('inactive');
-      this.nextSibling.classList.add('active');
+      relContent.classList.remove('inactive');
+      relContent.classList.add('active');
+      var relContentLinks = relContent.querySelectorAll('a');
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = relContentLinks[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var r = _step.value;
+          r.setAttribute('tabindex', '0');
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return != null) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
     } else if (jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).hasClass('active')) {
-      this.nextSibling.classList.remove('active');
-      this.nextSibling.classList.add('inactive');
+      relContent.classList.remove('active');
+      relContent.classList.add('inactive');
     }
 
     var anchor = jquery__WEBPACK_IMPORTED_MODULE_5___default()(this);
@@ -22717,44 +22742,96 @@ function prepareLinks(widget, headings) {
     } else if (isAccordionAnchor) {
       deactivateAll(allAnchors);
     }
-  });
+  }); // Set content group classes on page load to match associated accordion anchor class
 
-  function setContentClass() {
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
+  var setContentClass = function setContentClass() {
+    var _iteratorNormalCompletion2 = true;
+    var _didIteratorError2 = false;
+    var _iteratorError2 = undefined;
 
     try {
-      for (var _iterator = allAnchors[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var a = _step.value;
+      for (var _iterator2 = allAnchors[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+        var a = _step2.value;
 
         if (a.classList.contains('inactive')) {
           a.nextSibling.classList.remove('active');
           a.nextSibling.classList.add('inactive');
-          console.log('on');
         } else if (a.classList.contains('active')) {
           a.nextSibling.classList.remove('inactive');
-          console.log('off');
           a.nextSibling.classList.add('active');
         }
       }
     } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
+      _didIteratorError2 = true;
+      _iteratorError2 = err;
     } finally {
       try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
+        if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
+          _iterator2.return();
         }
       } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
+        if (_didIteratorError2) {
+          throw _iteratorError2;
         }
       }
     }
-  }
+  };
 
-  setContentClass();
+  setContentClass(); // If accordion anchor closed, set associated content group anchors to tabindex '-1' so users can tab to next accordion anchor
+
+  var setContentAnchorTabIndex = function setContentAnchorTabIndex() {
+    var hiddenContent = document.querySelectorAll("[class='accordion__content__group inactive']");
+    var _iteratorNormalCompletion3 = true;
+    var _didIteratorError3 = false;
+    var _iteratorError3 = undefined;
+
+    try {
+      for (var _iterator3 = hiddenContent[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+        var h = _step3.value;
+        var anchors = h.getElementsByTagName('a');
+        var _iteratorNormalCompletion4 = true;
+        var _didIteratorError4 = false;
+        var _iteratorError4 = undefined;
+
+        try {
+          for (var _iterator4 = anchors[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+            var a = _step4.value;
+            var att = document.createAttribute("tabindex");
+            att.value = "-1";
+            a.setAttributeNode(att);
+          }
+        } catch (err) {
+          _didIteratorError4 = true;
+          _iteratorError4 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion4 && _iterator4.return != null) {
+              _iterator4.return();
+            }
+          } finally {
+            if (_didIteratorError4) {
+              throw _iteratorError4;
+            }
+          }
+        }
+      }
+    } catch (err) {
+      _didIteratorError3 = true;
+      _iteratorError3 = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion3 && _iterator3.return != null) {
+          _iterator3.return();
+        }
+      } finally {
+        if (_didIteratorError3) {
+          throw _iteratorError3;
+        }
+      }
+    }
+  };
+
+  setContentAnchorTabIndex();
 
   if (activateInitial !== null) {
     activateItem(activateInitial, null);
