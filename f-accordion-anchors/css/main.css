@@ -8595,6 +8595,7 @@ svg:not(:root) {
 
 .accordion__content__heading-anchor.inactive:focus {
     margin: 0;
+    outline: 2px solid red;
 }
 
 .accordion__content__heading-anchor.active:focus {
