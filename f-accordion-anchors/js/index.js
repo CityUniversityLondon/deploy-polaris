@@ -22827,7 +22827,7 @@ function prepareLinks(widget, headings) {
   setContentClass(); // If accordion anchor closed, set associated content group anchors to tabindex '-1' so users can tab to next accordion anchor
 
   var setContentAnchorTabIndex = function setContentAnchorTabIndex() {
-    var hiddenContent = document.querySelectorAll("[class='accordion__content__group inactive']");
+    var hiddenContent = document.querySelectorAll('[class="accordion__content__group inactive"]');
     var _iteratorNormalCompletion5 = true;
     var _didIteratorError5 = false;
     var _iteratorError5 = undefined;
@@ -22843,8 +22843,8 @@ function prepareLinks(widget, headings) {
         try {
           for (var _iterator6 = anchors[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
             var a = _step6.value;
-            var att = document.createAttribute("tabindex");
-            att.value = "-1";
+            var att = document.createAttribute('tabindex');
+            att.value = '-1';
             a.setAttributeNode(att);
           }
         } catch (err) {
