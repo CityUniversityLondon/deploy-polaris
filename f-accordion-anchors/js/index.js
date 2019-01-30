@@ -22691,87 +22691,66 @@ function prepareLinks(widget, headings) {
 
     }); // End matching data-id values loop
   } // End if sessionParentAnchorId, i.e. parent accordion/tab click in session data
+  // On anchor click: Set internal anchor tabindex values based on accordion state to aid link tabbing UX
 
 
   allAnchors.on('click', function (evt) {
     evt.preventDefault();
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
 
-    try {
-      for (var _iterator = allAnchors[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var a = _step.value;
+    if (this.parentNode.classList.contains('accordion__content')) {
+      var relContent = this.nextSibling;
+      var relContentLinks = relContent.querySelectorAll('a');
 
-        if (a.parentNode.classList.contains('accordion__content')) {
-          var relContent = this.nextSibling;
-          var relContentLinks = relContent.querySelectorAll('a');
+      if (this.classList.contains('inactive')) {
+        relContent.classList.toggle('inactive', 'active');
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
 
-          if (jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).hasClass('inactive')) {
-            relContent.classList.toggle('inactive', 'active');
-            var _iteratorNormalCompletion2 = true;
-            var _didIteratorError2 = false;
-            var _iteratorError2 = undefined;
-
-            try {
-              for (var _iterator2 = relContentLinks[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                var r = _step2.value;
-                r.setAttribute('tabindex', '0');
-              }
-            } catch (err) {
-              _didIteratorError2 = true;
-              _iteratorError2 = err;
-            } finally {
-              try {
-                if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
-                  _iterator2.return();
-                }
-              } finally {
-                if (_didIteratorError2) {
-                  throw _iteratorError2;
-                }
-              }
+        try {
+          for (var _iterator = relContentLinks[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            var r = _step.value;
+            r.setAttribute('tabindex', '0');
+          }
+        } catch (err) {
+          _didIteratorError = true;
+          _iteratorError = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion && _iterator.return != null) {
+              _iterator.return();
             }
-          } else if (jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).hasClass('active')) {
-            relContent.classList.toggle('inactive', 'active');
-            var _iteratorNormalCompletion3 = true;
-            var _didIteratorError3 = false;
-            var _iteratorError3 = undefined;
-
-            try {
-              for (var _iterator3 = relContentLinks[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                var _r = _step3.value;
-
-                _r.setAttribute('tabindex', '-1');
-              }
-            } catch (err) {
-              _didIteratorError3 = true;
-              _iteratorError3 = err;
-            } finally {
-              try {
-                if (!_iteratorNormalCompletion3 && _iterator3.return != null) {
-                  _iterator3.return();
-                }
-              } finally {
-                if (_didIteratorError3) {
-                  throw _iteratorError3;
-                }
-              }
+          } finally {
+            if (_didIteratorError) {
+              throw _iteratorError;
             }
           }
         }
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
+      } else if (this.classList.contains('active')) {
+        relContent.classList.toggle('inactive', 'active');
+        var _iteratorNormalCompletion2 = true;
+        var _didIteratorError2 = false;
+        var _iteratorError2 = undefined;
+
+        try {
+          for (var _iterator2 = relContentLinks[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+            var _r = _step2.value;
+
+            _r.setAttribute('tabindex', '-1');
+          }
+        } catch (err) {
+          _didIteratorError2 = true;
+          _iteratorError2 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
+              _iterator2.return();
+            }
+          } finally {
+            if (_didIteratorError2) {
+              throw _iteratorError2;
+            }
+          }
         }
       }
     }
@@ -22789,22 +22768,76 @@ function prepareLinks(widget, headings) {
     } else if (isAccordionAnchor) {
       deactivateAll(allAnchors);
     }
-  }); // Set content group classes on page load to match associated accordion anchor class
+  }); // On page load: Set internal anchor tabindex values based on accordion state to aid link tabbing UX
 
   var setContentClass = function setContentClass() {
-    var _iteratorNormalCompletion4 = true;
-    var _didIteratorError4 = false;
-    var _iteratorError4 = undefined;
+    var _iteratorNormalCompletion3 = true;
+    var _didIteratorError3 = false;
+    var _iteratorError3 = undefined;
 
     try {
-      for (var _iterator4 = allAnchors[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-        var a = _step4.value;
+      for (var _iterator3 = allAnchors[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+        var a = _step3.value;
 
         if (a.parentNode.classList.contains('accordion__content')) {
           if (a.classList.contains('inactive')) {
             a.nextSibling.classList.toggle('inactive', 'active');
           } else if (a.classList.contains('active')) {
             a.nextSibling.classList.toggle('active', 'inactive');
+          }
+        }
+      }
+    } catch (err) {
+      _didIteratorError3 = true;
+      _iteratorError3 = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion3 && _iterator3.return != null) {
+          _iterator3.return();
+        }
+      } finally {
+        if (_didIteratorError3) {
+          throw _iteratorError3;
+        }
+      }
+    }
+  };
+
+  setContentClass(); // If accordion anchor closed, set associated content group anchors to tabindex '-1' so users can tab to next accordion anchor
+
+  var setContentAnchorTabIndex = function setContentAnchorTabIndex() {
+    var hiddenContent = document.querySelectorAll("[class='accordion__content__group inactive']");
+    var _iteratorNormalCompletion4 = true;
+    var _didIteratorError4 = false;
+    var _iteratorError4 = undefined;
+
+    try {
+      for (var _iterator4 = hiddenContent[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+        var h = _step4.value;
+        var anchors = h.getElementsByTagName('a');
+        var _iteratorNormalCompletion5 = true;
+        var _didIteratorError5 = false;
+        var _iteratorError5 = undefined;
+
+        try {
+          for (var _iterator5 = anchors[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+            var a = _step5.value;
+            var att = document.createAttribute('tabindex');
+            att.value = '-1';
+            a.setAttributeNode(att);
+          }
+        } catch (err) {
+          _didIteratorError5 = true;
+          _iteratorError5 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion5 && _iterator5.return != null) {
+              _iterator5.return();
+            }
+          } finally {
+            if (_didIteratorError5) {
+              throw _iteratorError5;
+            }
           }
         }
       }
@@ -22819,60 +22852,6 @@ function prepareLinks(widget, headings) {
       } finally {
         if (_didIteratorError4) {
           throw _iteratorError4;
-        }
-      }
-    }
-  };
-
-  setContentClass(); // If accordion anchor closed, set associated content group anchors to tabindex '-1' so users can tab to next accordion anchor
-
-  var setContentAnchorTabIndex = function setContentAnchorTabIndex() {
-    var hiddenContent = document.querySelectorAll('[class="accordion__content__group inactive"]');
-    var _iteratorNormalCompletion5 = true;
-    var _didIteratorError5 = false;
-    var _iteratorError5 = undefined;
-
-    try {
-      for (var _iterator5 = hiddenContent[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
-        var h = _step5.value;
-        var anchors = h.getElementsByTagName('a');
-        var _iteratorNormalCompletion6 = true;
-        var _didIteratorError6 = false;
-        var _iteratorError6 = undefined;
-
-        try {
-          for (var _iterator6 = anchors[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
-            var a = _step6.value;
-            var att = document.createAttribute('tabindex');
-            att.value = '-1';
-            a.setAttributeNode(att);
-          }
-        } catch (err) {
-          _didIteratorError6 = true;
-          _iteratorError6 = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion6 && _iterator6.return != null) {
-              _iterator6.return();
-            }
-          } finally {
-            if (_didIteratorError6) {
-              throw _iteratorError6;
-            }
-          }
-        }
-      }
-    } catch (err) {
-      _didIteratorError5 = true;
-      _iteratorError5 = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion5 && _iterator5.return != null) {
-          _iterator5.return();
-        }
-      } finally {
-        if (_didIteratorError5) {
-          throw _iteratorError5;
         }
       }
     }
