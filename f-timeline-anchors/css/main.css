@@ -21076,6 +21076,9 @@ table tbody > tr > td:hover {
     left: 50%;
     margin-left: -28px;
     border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 @media (max-width: 500px) {
@@ -21091,8 +21094,7 @@ table tbody > tr > td:hover {
     color: #ffffff;
     font-size: 30px;
     position: relative;
-    left: 16px;
-    top: 15px;
+    top: 25%;
 }
 
 @media (max-width: 500px) {
