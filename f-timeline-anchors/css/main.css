@@ -21100,7 +21100,6 @@ table tbody > tr > td:hover {
 @media (max-width: 500px) {
     .timeline .timeline__collection .timeline__collection__icon span {
         font-size: 20px;
-        left: 10px;
         top: 10px;
     }
 }
@@ -21116,6 +21115,12 @@ table tbody > tr > td:hover {
         position: relative;
         left: 20%;
         width: 80%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .timeline .timeline__collection .timeline__collection__content li {
         text-align: left;
     }
 }

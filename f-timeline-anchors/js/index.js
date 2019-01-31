@@ -25044,12 +25044,21 @@ var className = 'wavecontainer';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace */ "./node_modules/core-js/modules/es6.regexp.replace.js");
-/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
-/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es7_symbol_async_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es7.symbol.async-iterator */ "./node_modules/core-js/modules/es7.symbol.async-iterator.js");
+/* harmony import */ var core_js_modules_es7_symbol_async_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es7_symbol_async_iterator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_symbol__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.symbol */ "./node_modules/core-js/modules/es6.symbol.js");
+/* harmony import */ var core_js_modules_es6_symbol__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
 
 
 
@@ -25057,27 +25066,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  var tl = jquery__WEBPACK_IMPORTED_MODULE_2___default()(el);
+  var tl = jquery__WEBPACK_IMPORTED_MODULE_5___default()(el);
   var timeLineContainer = tl.find('.timeline__collection'); //check if elements in viewpoints
 
-  jquery__WEBPACK_IMPORTED_MODULE_2___default.a.fn.isInViewport = function () {
-    var elementTop = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).offset().top;
-    var elementBottom = elementTop + jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).outerHeight();
-    var viewportTop = jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).scrollTop();
-    var viewportBottom = viewportTop + jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).height() - 300; //decrease the viewportBottom so element have to be more further up the page
+  jquery__WEBPACK_IMPORTED_MODULE_5___default.a.fn.isInViewport = function () {
+    var elementTop = jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).offset().top;
+    var elementBottom = elementTop + jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).outerHeight();
+    var viewportTop = jquery__WEBPACK_IMPORTED_MODULE_5___default()(window).scrollTop();
+    var viewportBottom = viewportTop + jquery__WEBPACK_IMPORTED_MODULE_5___default()(window).height() - 300; //decrease the viewportBottom so element have to be more further up the page
 
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
 
-  jquery__WEBPACK_IMPORTED_MODULE_2___default()(timeLineContainer).each(function (index) {
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()(timeLineContainer).each(function (index) {
     if (index < 1) {
-      jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).removeClass('timeline__collection--hide');
+      jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).removeClass('timeline__collection--hide');
     }
   });
-  jquery__WEBPACK_IMPORTED_MODULE_2___default()(window).on('scroll', function () {
-    jquery__WEBPACK_IMPORTED_MODULE_2___default()(timeLineContainer).each(function (index) {
-      if (jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).isInViewport() && index >= 1) {
-        jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).removeClass('timeline__collection--hide').addClass('bounce-in');
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()(window).on('scroll', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_5___default()(timeLineContainer).each(function (index) {
+      if (jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).isInViewport() && index >= 1) {
+        jquery__WEBPACK_IMPORTED_MODULE_5___default()(this).removeClass('timeline__collection--hide').addClass('bounce-in');
       }
     });
   });
@@ -25107,6 +25116,71 @@ function launch(el) {
     timeLineContainer.removeClass('timeline__collection--hide');
     timeLineContainer.addClass('bounce-in');
   }
+
+  var textDir = function textDir() {
+    var divs = document.querySelectorAll('div');
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = divs[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var div = _step.value;
+
+        if (div.hasAttribute('dir') && window.innerWidth < 500) {
+          var li = div.querySelectorAll('li');
+          var _iteratorNormalCompletion2 = true;
+          var _didIteratorError2 = false;
+          var _iteratorError2 = undefined;
+
+          try {
+            for (var _iterator2 = li[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+              var l = _step2.value;
+              var align = l.style.textAlign;
+
+              if (align == 'right') {
+                l.removeAttribute('style');
+                l.setAttribute('text-align', 'left');
+              }
+            }
+          } catch (err) {
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
+          } finally {
+            try {
+              if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
+                _iterator2.return();
+              }
+            } finally {
+              if (_didIteratorError2) {
+                throw _iteratorError2;
+              }
+            }
+          }
+
+          div.setAttribute('dir', 'ltr');
+        } else if (div.hasAttribute('dir') && window.innerWidth > 500) {
+          div.setAttribute('dir', 'rtl');
+        }
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return != null) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  };
+
+  textDir();
+  window.onresize = textDir;
 }
 
 var className = 'timeline';
