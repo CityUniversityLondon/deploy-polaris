@@ -25115,9 +25115,10 @@ function launch(el) {
     window.location.href = window.location.href + "#".concat(selectedSection);
     timeLineContainer.removeClass('timeline__collection--hide');
     timeLineContainer.addClass('bounce-in');
-  }
+  } // Switch list items to left align on mobile devices
 
-  var textDir = function textDir() {
+
+  var textDirection = function textDirection() {
     var divs = document.querySelectorAll('div');
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
@@ -25128,19 +25129,20 @@ function launch(el) {
         var div = _step.value;
 
         if (div.hasAttribute('dir') && window.innerWidth < 500) {
-          var li = div.querySelectorAll('li');
+          div.setAttribute('dir', 'ltr');
+          var listItems = div.querySelectorAll('li');
           var _iteratorNormalCompletion2 = true;
           var _didIteratorError2 = false;
           var _iteratorError2 = undefined;
 
           try {
-            for (var _iterator2 = li[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-              var l = _step2.value;
-              var align = l.style.textAlign;
+            for (var _iterator2 = listItems[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+              var listItem = _step2.value;
+              var align = listItem.style.textAlign;
 
               if (align == 'right') {
-                l.removeAttribute('style');
-                l.setAttribute('text-align', 'left');
+                listItem.removeAttribute('style');
+                listItem.setAttribute('text-align', 'left');
               }
             }
           } catch (err) {
@@ -25157,8 +25159,6 @@ function launch(el) {
               }
             }
           }
-
-          div.setAttribute('dir', 'ltr');
         } else if (div.hasAttribute('dir') && window.innerWidth > 500) {
           div.setAttribute('dir', 'rtl');
         }
@@ -25179,8 +25179,8 @@ function launch(el) {
     }
   };
 
-  textDir();
-  window.onresize = textDir;
+  textDirection();
+  window.onresize = textDirection;
 }
 
 var className = 'timeline';
