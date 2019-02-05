@@ -23560,6 +23560,9 @@ function () {
     this.toggleLabel = nav.find('.nav-mobile__toggle-label');
     this.menuContainer = nav.find('.nav-mobile__content');
     this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true);
+    this.menuContainer.on('click', function () {
+      _this.toggleLabel.hide();
+    });
     var label = this.nav.prev();
 
     if (label.length > 0 && label.attr('for')) {
@@ -23590,15 +23593,12 @@ function () {
   _createClass(NavMobile, [{
     key: "launch",
     value: function launch() {
+      this.toggleLabel.removeClass('open');
+
       if (this.toggle.prop('checked')) {
         this.openNav();
       } else {
         this.closeNav();
-      } // Browser back button select
-
-
-      if (PerformanceNavigation.type == 2) {
-        this.toggleLabel.removeClass('open');
       }
     }
   }, {
