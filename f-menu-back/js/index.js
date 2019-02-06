@@ -23560,9 +23560,6 @@ function () {
     this.toggleLabel = nav.find('.nav-mobile__toggle-label');
     this.menuContainer = nav.find('.nav-mobile__content');
     this.verticalMenu = new _vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](this.menuContainer, tree, defaultOpen, true);
-    this.menuContainer.on('click', function () {
-      _this.toggleLabel.hide();
-    });
     var label = this.nav.prev();
 
     if (label.length > 0 && label.attr('for')) {
