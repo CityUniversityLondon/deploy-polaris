@@ -7235,6 +7235,7 @@ svg:not(:root) {
 }
 
 .nav-mobile__content {
+    background-color: #ffffff;
     color: #1e1e1e;
     width: 50%;
     min-width: 17.5rem;
