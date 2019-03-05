@@ -22571,6 +22571,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! devbridge-autocomplete */ "./node_modules/devbridge-autocomplete/dist/jquery.autocomplete.js");
 
 var className = 'course-search';
+
+function launch(el) {}
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
