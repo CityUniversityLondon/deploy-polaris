@@ -21502,8 +21502,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_prepare_content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/prepare-content */ "./src/components/accordion-tabs/common/prepare-content.js");
 /* harmony import */ var _common_prepare_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/prepare-menu */ "./src/components/accordion-tabs/common/prepare-menu.js");
 /* harmony import */ var _common_prepare_links__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/prepare-links */ "./src/components/accordion-tabs/common/prepare-links.js");
-/* harmony import */ var _common_element_classnames__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/element-classnames */ "./src/components/accordion-tabs/common/element-classnames.js");
-
 
 
 
