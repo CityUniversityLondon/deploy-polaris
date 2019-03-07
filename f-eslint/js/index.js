@@ -22836,13 +22836,11 @@ function kisWidget(el) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
 /* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom.iterable */ "./node_modules/core-js/modules/web.dom.iterable.js");
-/* harmony import */ var core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _parse_nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parse-nav */ "./src/components/left-hand-navigation/parse-nav.js");
-/* harmony import */ var _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../nav-mobile/vertical-menu-helper */ "./src/components/nav-mobile/vertical-menu-helper.js");
-/* harmony import */ var stickybits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! stickybits */ "./node_modules/stickybits/dist/stickybits.es.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _parse_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parse-nav */ "./src/components/left-hand-navigation/parse-nav.js");
+/* harmony import */ var _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../nav-mobile/vertical-menu-helper */ "./src/components/nav-mobile/vertical-menu-helper.js");
+/* harmony import */ var stickybits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! stickybits */ "./node_modules/stickybits/dist/stickybits.es.js");
 
 
 
@@ -22850,109 +22848,110 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
+/*
 function prepareStickySideNav(navigation) {
-  var NAVIGATION = navigation[0];
+    const NAVIGATION = navigation[0];
+    if (NAVIGATION) {
+        const BANNER = $('.banner')[0];
+        const CONTENT = $('#content')[0];
+        const FOOTER = $('.footer')[0];
 
-  if (NAVIGATION) {
-    var callback = function callback(entries, observer) {
-      entries.forEach(function (entry) {
-        spaceRemaining = CONTENT.getBoundingClientRect().bottom;
-        navigationHeight = NAVIGATION.getBoundingClientRect().height;
+        let classAbsolute = 'left-hand-navigation--absolute';
+        let classFixed = 'left-hand-navigation--fixed';
+        let classTop = 'left-hand-navigation--top';
+        let classBottom = 'left-hand-navigation--bottom';
 
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains('banner')) {
-            isBannerVisible = true;
-          }
+        let isBannerVisible;
+        let isFooterVisible;
+        let spaceRemaining;
+        let navigationHeight;
 
-          if (entry.target.classList.contains('footer')) {
-            isFooterVisible = true;
-          }
-        } else {
-          if (entry.target.classList.contains('banner')) {
-            isBannerVisible = false;
-          }
-
-          if (entry.target.classList.contains('footer')) {
-            isFooterVisible = false;
-          }
+        let thresholds = [];
+        for (let i = 0; i <= 100; i++) {
+            thresholds.push(i * 0.01);
         }
 
-        if (isBannerVisible && isFooterVisible) {
-          NAVIGATION.classList.add(classAbsolute);
-          NAVIGATION.classList.remove(classFixed);
-          NAVIGATION.classList.add(classTop);
-          NAVIGATION.classList.remove(classBottom);
-        } else if (isBannerVisible && !isFooterVisible) {
-          NAVIGATION.classList.add(classAbsolute);
-          NAVIGATION.classList.remove(classFixed);
-          NAVIGATION.classList.add(classTop);
-          NAVIGATION.classList.remove(classBottom);
-        } else if (!isBannerVisible && isFooterVisible) {
-          if (spaceRemaining < navigationHeight) {
-            NAVIGATION.classList.add(classAbsolute);
-            NAVIGATION.classList.remove(classFixed);
-            NAVIGATION.classList.add(classBottom);
-            NAVIGATION.classList.remove(classTop);
-          } else {
-            NAVIGATION.classList.add(classFixed);
-            NAVIGATION.classList.remove(classAbsolute);
-            NAVIGATION.classList.add(classTop);
-            NAVIGATION.classList.remove(classBottom);
-          }
-        } else {
-          NAVIGATION.classList.add(classFixed);
-          NAVIGATION.classList.remove(classAbsolute);
+        function callback(entries, observer) {
+            entries.forEach(entry => {
+                spaceRemaining = CONTENT.getBoundingClientRect().bottom;
+                navigationHeight = NAVIGATION.getBoundingClientRect().height;
+
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('banner')) {
+                        isBannerVisible = true;
+                    }
+                    if (entry.target.classList.contains('footer')) {
+                        isFooterVisible = true;
+                    }
+                } else {
+                    if (entry.target.classList.contains('banner')) {
+                        isBannerVisible = false;
+                    }
+                    if (entry.target.classList.contains('footer')) {
+                        isFooterVisible = false;
+                    }
+                }
+
+                if (isBannerVisible && isFooterVisible) {
+                    NAVIGATION.classList.add(classAbsolute);
+                    NAVIGATION.classList.remove(classFixed);
+                    NAVIGATION.classList.add(classTop);
+                    NAVIGATION.classList.remove(classBottom);
+                } else if (isBannerVisible && !isFooterVisible) {
+                    NAVIGATION.classList.add(classAbsolute);
+                    NAVIGATION.classList.remove(classFixed);
+                    NAVIGATION.classList.add(classTop);
+                    NAVIGATION.classList.remove(classBottom);
+                } else if (!isBannerVisible && isFooterVisible) {
+                    if (spaceRemaining < navigationHeight) {
+                        NAVIGATION.classList.add(classAbsolute);
+                        NAVIGATION.classList.remove(classFixed);
+                        NAVIGATION.classList.add(classBottom);
+                        NAVIGATION.classList.remove(classTop);
+                    } else {
+                        NAVIGATION.classList.add(classFixed);
+                        NAVIGATION.classList.remove(classAbsolute);
+                        NAVIGATION.classList.add(classTop);
+                        NAVIGATION.classList.remove(classBottom);
+                    }
+                } else {
+                    NAVIGATION.classList.add(classFixed);
+                    NAVIGATION.classList.remove(classAbsolute);
+                }
+            });
         }
-      });
-    }; // set up the default state
 
+        // set up the default state
+        NAVIGATION.classList.add(classTop);
+        NAVIGATION.classList.add(classAbsolute);
 
-    var BANNER = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.banner')[0];
-    var CONTENT = jquery__WEBPACK_IMPORTED_MODULE_2___default()('#content')[0];
-    var FOOTER = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.footer')[0];
-    var classAbsolute = 'left-hand-navigation--absolute';
-    var classFixed = 'left-hand-navigation--fixed';
-    var classTop = 'left-hand-navigation--top';
-    var classBottom = 'left-hand-navigation--bottom';
-    var isBannerVisible;
-    var isFooterVisible;
-    var spaceRemaining;
-    var navigationHeight;
-    var thresholds = [];
+        // observe ABOVE the Left Hand Navigation
+        const BANNER_OBSERVER = new IntersectionObserver(callback, {
+            threshold: thresholds,
+        });
+        BANNER_OBSERVER.observe(BANNER);
 
-    for (var i = 0; i <= 100; i++) {
-      thresholds.push(i * 0.01);
+        // observe BELOW the Left Hand Navigation
+        const FOOTER_OBSERVER = new IntersectionObserver(callback, {
+            threshold: thresholds,
+        });
+        FOOTER_OBSERVER.observe(FOOTER);
     }
-
-    NAVIGATION.classList.add(classTop);
-    NAVIGATION.classList.add(classAbsolute); // observe ABOVE the Left Hand Navigation
-
-    var BANNER_OBSERVER = new IntersectionObserver(callback, {
-      threshold: thresholds
-    });
-    BANNER_OBSERVER.observe(BANNER); // observe BELOW the Left Hand Navigation
-
-    var FOOTER_OBSERVER = new IntersectionObserver(callback, {
-      threshold: thresholds
-    });
-    FOOTER_OBSERVER.observe(FOOTER);
-  }
 }
+*/
 
 function prepareMenu(widget) {
   var container = widget.find('.left-hand-navigation__menu');
   container.html('');
-  var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_4__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["current"], false, 14);
+  var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_2__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_2__["current"], false, 14);
   menu.launch();
   widget.addClass('left-hand-navigation--jsinit');
 }
 
 function launch(element) {
-  var widget = jquery__WEBPACK_IMPORTED_MODULE_2___default()(element);
+  var widget = jquery__WEBPACK_IMPORTED_MODULE_1___default()(element);
   prepareMenu(widget);
-  Object(stickybits__WEBPACK_IMPORTED_MODULE_5__["default"])(widget); //prepareStickySideNav(widget);
+  Object(stickybits__WEBPACK_IMPORTED_MODULE_4__["default"])(widget); //prepareStickySideNav(widget);
 }
 
 var className = 'left-hand-navigation';
