@@ -25029,7 +25029,7 @@ jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').keyup('keyup', function (e
   // If user tabs into video preview
   if (e.keyCode == 9) {
     var playIcon = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.video-preview__button');
-    playIcon.is(":focus") ? playIcon.addClass('in-focus') : playIcon.removeClass('in-focus');
+    playIcon.is(':focus') ? playIcon.addClass('in-focus') : playIcon.removeClass('in-focus');
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -25055,7 +25055,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()("iframe[src*='youtube']").each(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('iframe[src*="youtube"]').each(function () {
     var $element = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
     var $parent = $element.parent(); // don't double wrap an iframe
 
