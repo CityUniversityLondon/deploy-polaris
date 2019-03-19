@@ -25521,8 +25521,15 @@ function launch(el) {
   });
 
   var startPlaying = function startPlaying(index) {
-    var playingVideo = videos.find('video.playing')[0];
-    var rewind = playingVideo.previousElementSibling.querySelector('video').currentTime = 0;
+    var playingVideo = videos.find('video.playing')[0]; // as video sequences progresses it rewinds the previous video to starting position so it's ready once sequence restarts - this avoids some flashing glitches
+
+    if (index > 0) {
+      var rewind = document.getElementsByClassName('video-banner')[0].querySelectorAll('video')[index - 1].currentTime = 0;
+    } else {
+      // rewinds last video
+      var _rewind = document.getElementsByClassName('video-banner')[0].querySelectorAll('video')[document.getElementsByClassName('video-banner')[0].querySelectorAll('video').length - 1].currentTime = 0;
+    }
+
     if (playingVideo) playingVideo.pause();
     videos.removeClass('playing text textout');
     videos.eq(index).addClass('playing').find('video')[0].play();
