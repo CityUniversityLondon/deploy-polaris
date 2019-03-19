@@ -22147,6 +22147,16 @@ blockquote .reference {
     }
 }
 
+.twitter-hashtag-feed {
+    padding: 0.5rem;
+    border: 0.09rem #e6ecf0 solid;
+    border-radius: 0.2rem;
+}
+
+.twitter-hashtag-feed h3 {
+    border-bottom: 0.09rem #1e1e1e solid;
+}
+
 .twitter-hashtag-feed .tweet {
     margin-bottom: 1rem;
     border-bottom: 0.25rem solid #e6ecf0;
