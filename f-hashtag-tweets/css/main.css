@@ -22149,22 +22149,36 @@ blockquote .reference {
 
 .twitter-hashtag-feed {
     padding: 0.5rem;
-    border: 0.09rem #e6ecf0 solid;
+    border: 0.09rem #ececec solid;
     border-radius: 0.2rem;
 }
 
+@media (min-width: 500px) {
+    .twitter-hashtag-feed {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 899px) {
+    .twitter-hashtag-feed {
+        max-width: 36rem;
+    }
+}
+
+.twitter-hashtag-feed .fa-twitter {
+    color: #11a4ee;
+    padding-right: 0.25rem;
+}
+
 .twitter-hashtag-feed h3 {
-    border-bottom: 0.09rem #1e1e1e solid;
+    border-bottom: 0.09rem #ececec solid;
+    font-size: 1rem;
 }
 
 .twitter-hashtag-feed .tweet {
+    font-size: 0.875rem;
     margin-bottom: 1rem;
-    border-bottom: 0.25rem solid #e6ecf0;
-}
-
-.twitter-hashtag-feed .tweet .avatar {
-    grid-area: avatar;
-    border-radius: 50%;
+    border-bottom: 0.07rem solid #ececec;
 }
 
 .twitter-hashtag-feed .tweet .fullName {
@@ -22176,14 +22190,31 @@ blockquote .reference {
 }
 
 .twitter-hashtag-feed .tweet .account-group {
-    display: grid;
-    grid-auto-columns: fit-content(100%);
-    grid-template-areas: 'avatar . fullName' 'avatar . screenname';
     padding-bottom: 1rem;
 }
 
-.twitter-hashtag-feed .tweet .date-cont {
+.twitter-hashtag-feed .tweet:last-child {
+    border-bottom: none;
+}
+
+.twitter-hashtag-feed .tweet-footer {
     margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.twitter-hashtag-feed .tweet-footer time {
+    color: #666666;
+}
+
+.twitter-hashtag-feed .tweet-footer time:after {
+    content: '\2219';
+    font-weight: 700;
+    margin: 0 1rem;
+}
+
+.twitter-hashtag-feed .tweet-footer a {
+    margin-right: 0.5rem;
+    border-bottom: none;
 }
 
 .anchor-demo-list li {
