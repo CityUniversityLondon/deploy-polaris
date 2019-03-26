@@ -22182,11 +22182,7 @@ blockquote .reference {
 }
 
 .twitter-hashtag-feed .tweet .fullName {
-    grid-area: fullName;
-}
-
-.twitter-hashtag-feed .tweet .screenname {
-    grid-area: screenname;
+    font-weight: bold;
 }
 
 .twitter-hashtag-feed .tweet .account-group {
