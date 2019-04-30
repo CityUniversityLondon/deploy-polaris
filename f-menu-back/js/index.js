@@ -23590,7 +23590,6 @@ function () {
   _createClass(NavMobile, [{
     key: "launch",
     value: function launch() {
-      this.closeNav();
       var browserBackForward = window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD;
 
       if (browserBackForward) {
@@ -23623,7 +23622,6 @@ function () {
   }, {
     key: "closeNav",
     value: function closeNav() {
-      this.verticalMenu.launch();
       this.toggle.prop('checked', false);
       this.verticalMenu.closeAll();
       this.toggleLabel.attr('aria-expanded', 'false');
