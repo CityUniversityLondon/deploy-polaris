@@ -23590,23 +23590,15 @@ function () {
   _createClass(NavMobile, [{
     key: "launch",
     value: function launch() {
-      alert('test');
       this.closeNav();
+      var browserBackForward = window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD;
 
-      if (screen.width <= 480) {
-        alert('mobile');
-        var browserBackForward = window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD;
-
-        if (browserBackForward) {
-          this.closeNav();
-          alert('mobile back');
-        }
+      if (browserBackForward) {
+        this.closeNav();
       } else if (this.toggle.prop('checked')) {
         this.openNav();
-        alert('open');
       } else {
         this.closeNav();
-        alert('close');
       }
     }
   }, {
