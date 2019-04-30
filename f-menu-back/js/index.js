@@ -23591,13 +23591,16 @@ function () {
     key: "launch",
     value: function launch() {
       alert('test');
-      this.closeNav(); // Back/forward click
+      this.closeNav();
 
-      var browserBackForward = window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD;
+      if (screen.width <= 480) {
+        alert('mobile');
+        var browserBackForward = window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD;
 
-      if (browserBackForward) {
-        this.closeNav();
-        alert('back');
+        if (browserBackForward) {
+          this.closeNav();
+          alert('mobile back');
+        }
       } else if (this.toggle.prop('checked')) {
         this.openNav();
         alert('open');
@@ -23628,6 +23631,7 @@ function () {
   }, {
     key: "closeNav",
     value: function closeNav() {
+      this.verticalMenu.launch();
       this.toggle.prop('checked', false);
       this.verticalMenu.closeAll();
       this.toggleLabel.attr('aria-expanded', 'false');
