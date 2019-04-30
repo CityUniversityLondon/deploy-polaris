@@ -23590,12 +23590,18 @@ function () {
   _createClass(NavMobile, [{
     key: "launch",
     value: function launch() {
-      this.toggleLabel.removeClass('open');
+      alert('test'); // Back/forward click
 
-      if (this.toggle.prop('checked')) {
+      var browserBackForward = window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD;
+
+      if (browserBackForward) {
+        this.closeNav();
+      } else if (this.toggle.prop('checked')) {
         this.openNav();
+        console.log('open');
       } else {
         this.closeNav();
+        console.log('close');
       }
     }
   }, {
