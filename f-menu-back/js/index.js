@@ -23596,12 +23596,13 @@ function () {
 
       if (browserBackForward) {
         this.closeNav();
+        alert('back');
       } else if (this.toggle.prop('checked')) {
         this.openNav();
-        console.log('open');
+        alert('open');
       } else {
         this.closeNav();
-        console.log('close');
+        alert('close');
       }
     }
   }, {
