@@ -23590,7 +23590,8 @@ function () {
   _createClass(NavMobile, [{
     key: "launch",
     value: function launch() {
-      alert('test'); // Back/forward click
+      alert('test');
+      this.closeNav(); // Back/forward click
 
       var browserBackForward = window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD;
 
