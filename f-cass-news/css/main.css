@@ -22266,20 +22266,25 @@ blockquote .reference {
 
 .cass-events .cass-events__query .query-box {
     display: inline-block;
-    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     width: 100%;
     position: relative;
     margin-bottom: 3rem;
 }
 
 .cass-events .cass-events__query #query-box__query {
+    width: 100%;
+    list-style: none !important;
+    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     font-size: 16px;
     padding: 11px;
     height: 45px;
     border: 1px solid #a1a1a1;
     border-radius: 0;
     background: #ffffff;
-    width: 100%;
+    border-color: #d0cfcb;
 }
 
 .cass-events .cass-events__query #query-box__query:hover, .cass-events .cass-events__query #query-box__query:focus, .cass-events .cass-events__query #query-box__query:active {
@@ -22311,6 +22316,17 @@ blockquote .reference {
 .cass-events .date-selector__wrap .calendar__title__button:after {
     content: '\f061';
     margin-left: 0.5em;
+}
+
+.cass-events .calendar__title__butto__wrap {
+    display: inline;
+}
+
+@media (max-width: 649px) {
+    .cass-events .calendar__title__butto__wrap {
+        display: block;
+        margin-top: 1rem;
+    }
 }
 
 .cass-events .date {
@@ -22943,6 +22959,9 @@ input:checked + .cass-events .calendar__radio__button:before {
 }
 
 .cass-events .cass-events__view-month select {
+    width: 100%;
+    list-style: none !important;
+    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -22952,6 +22971,7 @@ input:checked + .cass-events .calendar__radio__button:before {
     border: 1px solid #a1a1a1;
     border-radius: 0;
     background: #ffffff;
+    border-color: #d0cfcb;
     padding-right: 30px;
 }
 
@@ -22964,7 +22984,6 @@ input:checked + .cass-events .calendar__radio__button:before {
 .cass-events .cass-events__view-month .date-year__wrap {
     display: inline-block;
     position: relative;
-    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     margin-right: 1rem;
 }
 
@@ -23081,8 +23100,10 @@ input:checked + .cass-events .calendar__radio__button:before {
     right: 0;
 }
 
-.cass-news-search .news-finder__query .filter-box:focus-within {
-    outline: 3px dotted #1e1e1e;
+@media (max-width: 649px) {
+    .cass-news-search .news-finder__query .filter-box:focus-within {
+        outline: 3px dotted #1e1e1e;
+    }
 }
 
 .cass-news-search .news-finder__query .filter-box__inner {
@@ -23182,6 +23203,7 @@ input:checked + .cass-events .calendar__radio__button:before {
     border: 1px solid #a1a1a1;
     border-radius: 0;
     background: #ffffff;
+    border-color: #d0cfcb;
     border-color: #d0cfcb;
 }
 
@@ -23312,6 +23334,18 @@ input:checked + .cass-events .calendar__radio__button:before {
     color: #1e1e1e;
 }
 
+@media (max-width: 649px) {
+    .cass-news-search .news-heading-toggle-link {
+        display: block;
+    }
+}
+
+@media (max-width: 319px) {
+    .cass-news-search .news-heading-toggle-link {
+        display: none;
+    }
+}
+
 .cass-news-search .news-heading-toggle-link:after {
     font-family: 'FontAwesome';
     content: '\f061';
@@ -23320,6 +23354,7 @@ input:checked + .cass-events .calendar__radio__button:before {
 
 .cass-news-search .news-listing__heading__wrap {
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .cass-news-search .news-listing__heading__before {
