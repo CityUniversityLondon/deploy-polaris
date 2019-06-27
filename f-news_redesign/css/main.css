@@ -22170,21 +22170,25 @@ blockquote .reference {
     margin-top: 2em;
 }
 
-.featured-cass-experts .inner {
+.featured-cass-experts__profile {
     display: flex;
 }
 
 .featured-cass-experts .press-officer-jobtitle {
-    margin: .5em 0 .3em 0;
+    margin: 0.5em 0 0.3em 0;
 }
 
-.featured-cass-experts .profile-photo {
+.featured-cass-experts h2 {
+    text-align: left;
+}
+
+.featured-cass-experts__profile-photo img {
     width: 80px;
     height: 80px;
     margin-right: 1em;
 }
 
-.featured-cass-experts h2 {
+.related-courses-list h2 {
     text-align: left;
 }
 
@@ -22222,6 +22226,7 @@ blockquote .reference {
 .social-icons-list {
     text-align: center;
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .social-icons-list a {
