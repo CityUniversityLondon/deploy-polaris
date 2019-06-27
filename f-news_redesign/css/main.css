@@ -22260,6 +22260,29 @@ blockquote .reference {
     margin-top: 3em;
 }
 
+.related-courses-section {
+    margin-right: 5em;
+    margin-left: 5em;
+}
+
+.related-articles-section {
+    margin-top: 2em;
+}
+
+.related-articles-section h2 {
+    margin-bottom: 1em;
+}
+
+.related-articles-section .grid, .related-articles-section .grid--tencol, .related-articles-section .grid--side-by-side, .related-articles-section .grid--thirds--small, .related-articles-section .banner__standfirst__grid, .related-articles-section .banner__freehtml > div > div, .related-articles-section .cass-knowledge-listing__grid {
+    justify-content: center;
+}
+
+@media (min-width: 321px) {
+    .related-articles-section .feature-news__card {
+        width: 25%;
+    }
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
