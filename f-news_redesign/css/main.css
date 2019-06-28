@@ -22160,9 +22160,12 @@ blockquote .reference {
 
 .article-meta-data,
 .featured-cass-experts {
-    padding: 1.4em 0 2em 0;
     border-top: 0.1em solid #cfcfcf;
     border-bottom: 0.1em solid #cfcfcf;
+}
+
+.article-meta-data {
+    padding: 1.4em 0 2em 0;
 }
 
 .article-meta-data time {
@@ -22170,8 +22173,22 @@ blockquote .reference {
     margin-top: 2em;
 }
 
+.article-meta-data .news-article-tag {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 901px) {
+    .article-meta-data .news-article-tag {
+        margin-bottom: 0;
+    }
+}
+
 .featured-cass-experts__profile {
     display: flex;
+}
+
+.featured-cass-experts {
+    padding: 1.2em 0 2em 0;
 }
 
 .featured-cass-experts .press-officer-jobtitle {
@@ -22197,6 +22214,7 @@ blockquote .reference {
     padding: 0.6em;
     color: #696969;
     border: 0.1em solid #e5e5e5;
+    border-bottom-width: 0.1em !important;
     font-weight: 600;
     margin-right: 1em;
 }
@@ -22260,9 +22278,11 @@ blockquote .reference {
     margin-top: 3em;
 }
 
-.related-courses-section {
-    margin-right: 5em;
-    margin-left: 5em;
+@media (min-width: 901px) {
+    .related-courses-section {
+        margin-right: 5em;
+        margin-left: 5em;
+    }
 }
 
 .related-articles-section {
@@ -22277,10 +22297,47 @@ blockquote .reference {
     justify-content: center;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 901px) {
     .related-articles-section .feature-news__card {
         width: 25%;
     }
+}
+
+.news-stretched-title {
+    text-align: center;
+}
+
+@media (min-width: 901px) {
+    .news-stretched-title {
+        margin: 0 10em;
+    }
+}
+
+.news-stretched-title h1 {
+    margin-top: 1rem;
+}
+
+@media (min-width: 901px) {
+    .news-stretched-title h1 {
+        margin-top: 0;
+    }
+}
+
+.news-standfirst p {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #555555;
+    font-size: 1.44rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.feature-news__card .item__date {
+    color: #666666;
+    font-weight: 600;
+}
+
+.feature-news__card .news-article-tag {
+    font-size: 14px;
 }
 
 .anchor-demo-list li {
