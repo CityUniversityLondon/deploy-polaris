@@ -22214,6 +22214,11 @@ blockquote .reference {
     text-align: left;
 }
 
+.news-article-tags {
+    margin: 2em 0 2em 0;
+}
+
+.news-article-anchor,
 .news-article-tag {
     display: inline-block;
     padding: 0.6em;
@@ -22224,19 +22229,23 @@ blockquote .reference {
     margin-right: 1em;
 }
 
+.news-article-anchor:hover,
 .news-article-tag:hover {
     background: none;
     color: #696969;
 }
 
+.news-article-anchor:first-child,
 .news-article-tag:first-child {
     color: darkblue;
 }
 
+.news-article-anchor:first-child:hover,
 .news-article-tag:first-child:hover {
     color: darkblue;
 }
 
+.news-article-anchor:last-child,
 .news-article-tag:last-child {
     margin-right: 0;
 }
@@ -22258,16 +22267,25 @@ blockquote .reference {
     color: white;
     background: black;
     border-radius: 50%;
-    padding: 0.5em 0.7em;
-    font-size: 1em;
+    font-size: 1.3em;
+    width: 2.5em;
+    height: 2.5em;
+    display: inline-block;
+    transition: background-color 0.6s, transform 0.6s;
 }
 
 .social-icons-list a:hover {
-    background-color: none;
+    transform: scale(1.2);
+    background-color: #d61726;
 }
 
-.social-icons-list .facebook-link {
-    padding: 0.5em 0.9em;
+.social-icons-list a span {
+    display: flex;
+    font-size: 1.2em;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-icons-list li {
@@ -22334,6 +22352,10 @@ blockquote .reference {
     font-size: 1.44rem;
     font-weight: 300;
     line-height: 1.5;
+}
+
+.news-standfirst strong {
+    font-weight: 300;
 }
 
 .feature-news__card .item__date {
