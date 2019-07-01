@@ -22158,8 +22158,48 @@ blockquote .reference {
     }
 }
 
-.article-meta-data,
-.featured-cass-experts {
+.news-stretched-title {
+    text-align: center;
+}
+
+@media (min-width: 901px) {
+    .news-stretched-title {
+        margin: 0 10em;
+    }
+}
+
+.news-stretched-title h1 {
+    margin-top: 1rem;
+}
+
+@media (min-width: 901px) {
+    .news-stretched-title h1 {
+        margin-top: 0;
+    }
+}
+
+.news-standfirst p {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #555555;
+    font-size: 1.44rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.news-standfirst strong {
+    font-weight: 300;
+}
+
+.feature-news__card .item__date {
+    color: #666666;
+    font-weight: 600;
+}
+
+.feature-news__card .news-article-tag {
+    font-size: 14px;
+}
+
+.article-meta-data {
     border-top: 0.1em solid #cfcfcf;
     border-bottom: 0.1em solid #cfcfcf;
 }
@@ -22170,7 +22210,7 @@ blockquote .reference {
 
 .article-meta-data time {
     display: block;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 .article-meta-data .news-article-tag {
@@ -22193,6 +22233,8 @@ blockquote .reference {
 }
 
 .featured-cass-experts {
+    border-top: 0.1em solid #cfcfcf;
+    border-bottom: 0.1em solid #cfcfcf;
     padding: 1.2em 0 2em 0;
 }
 
@@ -22210,23 +22252,47 @@ blockquote .reference {
     margin-right: 1em;
 }
 
-.related-courses-list h2 {
-    text-align: left;
-}
-
 .news-article-tags {
     margin: 2em 0 2em 0;
 }
 
 .news-article-anchor,
 .news-article-tag {
+    position: relative;
     display: inline-block;
     padding: 0.6em;
+    margin: 7px 0 0 0;
     color: #696969;
-    border: 0.1em solid #e5e5e5;
-    border-bottom-width: 0.1em !important;
     font-weight: 600;
     margin-right: 1em;
+    border-bottom: none;
+}
+
+.news-article-anchor:hover:after,
+.news-article-tag:hover:after {
+    transform: translateY(0px) translateX(0px);
+    opacity: 1;
+}
+
+.news-article-anchor:after, .news-article-anchor:before,
+.news-article-tag:after,
+.news-article-tag:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.1em solid #e1e1e1;
+    border-bottom-width: 0.1em !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.news-article-anchor:after,
+.news-article-tag:after {
+    transform: translateY(-7px) translateX(6px);
+    border-color: #696969;
+    opacity: 0;
 }
 
 .news-article-anchor:hover,
@@ -22301,6 +22367,10 @@ blockquote .reference {
     margin-top: 3em;
 }
 
+.related-courses-list h2 {
+    text-align: left;
+}
+
 @media (min-width: 901px) {
     .related-courses-section {
         margin-right: 5em;
@@ -22316,54 +22386,13 @@ blockquote .reference {
     margin-bottom: 1em;
 }
 
-.related-articles-section .grid, .related-articles-section .grid--tencol, .related-articles-section .grid--side-by-side, .related-articles-section .grid--thirds--small, .related-articles-section .banner__standfirst__grid, .related-articles-section .banner__freehtml > div > div, .related-articles-section .cass-knowledge-listing__grid {
-    justify-content: center;
-}
-
 @media (min-width: 901px) {
     .related-articles-section .feature-news__card {
         width: 25%;
     }
 }
 
-.news-stretched-title {
-    text-align: center;
-}
-
-@media (min-width: 901px) {
-    .news-stretched-title {
-        margin: 0 10em;
-    }
-}
-
-.news-stretched-title h1 {
-    margin-top: 1rem;
-}
-
-@media (min-width: 901px) {
-    .news-stretched-title h1 {
-        margin-top: 0;
-    }
-}
-
-.news-standfirst p {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    color: #555555;
-    font-size: 1.44rem;
-    font-weight: 300;
-    line-height: 1.5;
-}
-
-.news-standfirst strong {
-    font-weight: 300;
-}
-
-.feature-news__card .item__date {
-    color: #666666;
-    font-weight: 600;
-}
-
-.feature-news__card .news-article-tag {
+.related-articles-section .feature-news__card__body a {
     font-size: 14px;
 }
 
