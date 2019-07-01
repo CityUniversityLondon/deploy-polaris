@@ -22185,6 +22185,11 @@ blockquote .reference {
 
 .featured-cass-experts__profile {
     display: flex;
+    margin-bottom: 1.5em;
+}
+
+.featured-cass-experts__profile:last-child {
+    margin-bottom: 0;
 }
 
 .featured-cass-experts {
