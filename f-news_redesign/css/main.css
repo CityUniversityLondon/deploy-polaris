@@ -22257,11 +22257,18 @@ blockquote .reference {
 }
 
 .news-article-tags {
-    margin: 2em 0 2em 0;
+    margin: 3em 0;
+    color: #696969;
 }
 
 .news-article-tags a {
-    margin-right: .5em;
+    color: #696969;
+    border-bottom: none;
+}
+
+.news-article-tags a:hover {
+    transition: color 0.2s ease;
+    background: none;
 }
 
 .news-article-anchor {
