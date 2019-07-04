@@ -22233,7 +22233,7 @@ blockquote .reference {
 }
 
 .featured-cass-experts__profile i {
-    margin-right: .4em;
+    margin-right: 0.4em;
 }
 
 .featured-cass-experts {
@@ -22308,14 +22308,6 @@ blockquote .reference {
 .news-article-anchor:hover {
     background: none;
     color: #696969;
-}
-
-.news-article-anchor:first-child {
-    color: darkblue;
-}
-
-.news-article-anchor:first-child:hover {
-    color: darkblue;
 }
 
 .news-article-anchor:last-child {
@@ -22459,6 +22451,27 @@ blockquote .reference {
     .news__banner-container {
         height: 44vh;
     }
+}
+
+a.anchor--business-and-finance,
+a.anchor--finance {
+    color: #00284d;
+}
+
+a.anchor--management {
+    color: #00444d;
+}
+
+a.anchor--entrepreneurship {
+    color: #5a8054;
+}
+
+a.anchor--cass-community {
+    color: #d92231;
+}
+
+a.anchor--actuarial-science-and-insurance {
+    color: #842b91;
 }
 
 .anchor-demo-list li {
