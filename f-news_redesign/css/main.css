@@ -22200,8 +22200,8 @@ blockquote .reference {
 }
 
 .article-meta-data {
-    border-top: 0.1em solid #cfcfcf;
-    border-bottom: 0.1em solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
 }
 
 .article-meta-data {
