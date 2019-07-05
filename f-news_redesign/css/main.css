@@ -22158,6 +22158,10 @@ blockquote .reference {
     }
 }
 
+.news-article blockquote:before {
+    background-color: #d92231;
+}
+
 .news-stretched-title {
     text-align: center;
 }
@@ -22200,8 +22204,8 @@ blockquote .reference {
 }
 
 .article-meta-data {
-    border-top: 1px solid #cfcfcf;
-    border-bottom: 1px solid #cfcfcf;
+    border-top: 1px solid #a1a1a1;
+    border-bottom: 1px solid #a1a1a1;
 }
 
 .article-meta-data {
@@ -22228,6 +22232,10 @@ blockquote .reference {
     margin-bottom: 1.5em;
 }
 
+.featured-cass-experts__profile .press-officer-name a {
+    font-size: 1.2em;
+}
+
 .featured-cass-experts__profile:last-child {
     margin-bottom: 0;
 }
@@ -22237,8 +22245,8 @@ blockquote .reference {
 }
 
 .featured-cass-experts {
-    border-top: 1px solid #cfcfcf;
-    border-bottom: 1px solid #cfcfcf;
+    border-top: 1px solid #a1a1a1;
+    border-bottom: 1px solid #a1a1a1;
     padding: 1.2em 0 2em 0;
 }
 
@@ -22258,12 +22266,12 @@ blockquote .reference {
 
 .news-article-tags {
     margin: 3em 0;
-    color: #696969;
+    color: #646464;
 }
 
 .news-article-tags a {
-    color: #696969;
-    border-bottom: none;
+    color: #646464;
+    border-bottom-color: #646464;
 }
 
 .news-article-tags a:hover {
@@ -22276,10 +22284,11 @@ blockquote .reference {
     overflow: visible !important;
     padding: 0.6em;
     margin: 7px 1em 0 0;
-    color: #696969;
+    color: #646464;
     font-weight: 600;
     margin-right: 1em;
     border-bottom: none;
+    display: inline-block;
 }
 
 .news-article-anchor:after, .news-article-anchor:before {
@@ -22308,7 +22317,7 @@ blockquote .reference {
 
 .news-article-anchor:hover {
     background: none;
-    color: #696969;
+    color: #646464;
 }
 
 .news-article-anchor:last-child {
@@ -22329,8 +22338,8 @@ blockquote .reference {
 .social-icons-list a {
     border-bottom: none;
     transition: none;
-    color: white;
-    background: black;
+    color: #ffffff;
+    background: #1e1e1e;
     border-radius: 50%;
     width: 2.5em;
     height: 2.5em;
@@ -22340,7 +22349,7 @@ blockquote .reference {
 
 .social-icons-list a:hover {
     transform: scale(1.2);
-    background-color: #d61726;
+    background-color: #d92231;
 }
 
 .social-icons-list a span {
@@ -22402,9 +22411,9 @@ blockquote .reference {
     bottom: 0.5em;
     right: 0.5em;
     position: absolute;
-    color: #fff;
+    color: #ffffff;
     padding: 0.5em;
-    background: rgba(31, 27, 34, 0.8);
+    background: rgba(30, 30, 30, 0.8);
     display: flex;
     align-items: center;
 }
@@ -22426,11 +22435,11 @@ blockquote .reference {
 
 .image-credit__text a {
     color: #d8d8d8;
-    border-bottom: none;
+    border-bottom-color: #d8d8d8;
 }
 
 .image-credit__text a:hover {
-    color: #fff;
+    color: #ffffff;
     transition: color 0.2s ease;
     background: none;
 }
@@ -22463,15 +22472,42 @@ blockquote .reference {
 }
 
 .container__more-news a {
-    color: #000;
-    margin-right: 1em;
-    border-bottom: none;
-    font-weight: 600;
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    display: inline-block;
+    overflow-x: hidden;
 }
 
-.container__more-news a:hover {
-    background: none;
-    transition: none;
+.container__more-news a:hover, .container__more-news a:focus, .container__more-news a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.container__more-news a:after {
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    content: '';
+    opacity: 0;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 2px;
+    display: block;
+    transform: translateX(-100%);
+}
+
+.container__more-news a:hover:after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.container__more-news a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.container__more-news a:active {
+    outline: 2px dotted #1e1e1e;
 }
 
 .container__more-news i {
@@ -22483,7 +22519,16 @@ a.anchor--finance {
     color: #00284d;
 }
 
+a.anchor--business-and-finance:hover,
+a.anchor--finance:hover {
+    color: #00284d;
+}
+
 a.anchor--management {
+    color: #00444d;
+}
+
+a.anchor--management:hover {
     color: #00444d;
 }
 
@@ -22491,11 +22536,23 @@ a.anchor--entrepreneurship {
     color: #5a8054;
 }
 
+a.anchor--entrepreneurship:hover {
+    color: #5a8054;
+}
+
 a.anchor--cass-community {
     color: #d92231;
 }
 
+a.anchor--cass-community:hover {
+    color: #d92231;
+}
+
 a.anchor--actuarial-science {
+    color: #842b91;
+}
+
+a.anchor--actuarial-science:hover {
     color: #842b91;
 }
 
