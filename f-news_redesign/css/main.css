@@ -22237,8 +22237,8 @@ blockquote .reference {
 }
 
 .featured-cass-experts {
-    border-top: 0.1em solid #cfcfcf;
-    border-bottom: 0.1em solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
     padding: 1.2em 0 2em 0;
 }
 
