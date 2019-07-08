@@ -22341,37 +22341,64 @@ blockquote .reference {
     margin-top: 3em;
 }
 
-.related-courses-list h2 {
+.related-courses-list h2,
+.related-research-papers h2 {
     text-align: left;
 }
 
 @media (min-width: 901px) {
-    .related-courses-section {
+    .related-courses-section,
+    .related-research-papers-section {
         margin-right: 5em;
         margin-left: 5em;
     }
 }
 
-.related-articles-section {
+.related-stories-section {
     margin-top: 2em;
 }
 
-.related-articles-section .grid, .related-articles-section .grid--tencol, .related-articles-section .grid--side-by-side, .related-articles-section .grid--thirds--small, .related-articles-section .banner__standfirst__grid, .related-articles-section .banner__freehtml > div > div, .related-articles-section .cass-knowledge-listing__grid {
+.related-stories-section .grid, .related-stories-section .grid--tencol, .related-stories-section .grid--side-by-side, .related-stories-section .grid--thirds--small, .related-stories-section .banner__standfirst__grid, .related-stories-section .banner__freehtml > div > div, .related-stories-section .cass-knowledge-listing__grid {
     justify-content: center;
 }
 
-.related-articles-section h2 {
+.related-stories-section h2 {
     margin-bottom: 1em;
 }
 
 @media (min-width: 901px) {
-    .related-articles-section .feature-news__card {
+    .related-stories-section .feature-news__card {
         width: 25%;
     }
 }
 
-.related-articles-section .feature-news__card__body a {
+.related-stories-section .feature-news__card__body a {
     font-size: 14px;
+}
+
+.related-research-paper {
+    width: 100%;
+    border-top: 2px solid #ececec;
+    border-bottom: 2px solid #ececec;
+}
+
+.related-research-paper a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: block;
+    border-bottom: none;
+    display: flex;
+}
+
+.related-research-paper .icon {
+    margin-left: auto;
+    color: #1e1e1e;
+}
+
+.related-research__title {
+    vertical-align: middle;
+    display: inline-block;
+    width: 90%;
 }
 
 .news__image-credit {
@@ -22521,6 +22548,100 @@ a.anchor--actuarial-science {
 
 a.anchor--actuarial-science:hover {
     color: #842b91;
+}
+
+.feature-news__card--landscape {
+    margin: 0 2em 2em 0;
+    position: relative;
+    width: 40%;
+}
+
+.feature-news__card--landscape .feature-news__card__body {
+    background-color: white;
+    width: 70%;
+    height: 95%;
+    padding: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.feature-news__card--landscape:nth-child(2), .feature-news__card--landscape:nth-child(4) {
+    margin-right: 0;
+}
+
+.feature-news__card--landscape .feature-news__card__body__title a {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.feature-news__card--landscape .feature-news__topic {
+    color: #666666;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.feature-news__card--landscape .feature-news__card__body__title {
+    margin-bottom: 2em;
+}
+
+.feature-news__card--landscape .feature-news__card__body__title a {
+    border-bottom: none;
+    transition: none;
+    background: none;
+    color: #646464;
+    font-size: 1.5rem;
+}
+
+.feature-news__card--landscape .feature-news__card__body__published {
+    color: #666666;
+    margin-bottom: .6em;
+}
+
+.feature-news__card--landscape .item__date {
+    font-size: 1.2em;
+}
+
+.container__landscape-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.knowledge-article .article-meta-data {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #555555;
+    font-size: 1.44rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.cass-knowledge-author ul {
+    margin-bottom: 0;
+}
+
+.cass-knowledge-author li {
+    list-style-type: disc;
+    line-height: 2;
+}
+
+.cass-knowledge .article-meta-data {
+    color: #646464;
+}
+
+.cass-knowledge .cass-knowledge-attachment {
+    padding: 1.5em;
+    border: 0.25em solid #d92231;
+}
+
+.cass-knowledge-author__title {
+    margin: .5em 0;
+    font-weight: 600;
+    display: block;
+}
+
+.cass-knowledge-author__external {
+    margin-left: 1rem;
 }
 
 .anchor-demo-list li {
