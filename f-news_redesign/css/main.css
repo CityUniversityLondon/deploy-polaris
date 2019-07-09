@@ -22551,19 +22551,32 @@ a.anchor--actuarial-science:hover {
 }
 
 .feature-news__card--landscape {
-    margin: 0 2em 2em 0;
+    margin: 0 .5em 2em .5em;
     position: relative;
-    width: 40%;
+    border: 1px solid #d8d8d8;
+}
+
+@media (min-width: 1201px) {
+    .feature-news__card--landscape {
+        width: 40%;
+        margin: 0 2em 2em 0;
+        border: none;
+    }
 }
 
 .feature-news__card--landscape .feature-news__card__body {
-    background-color: white;
-    width: 70%;
-    height: 95%;
+    background-color: #fff;
     padding: 2em;
-    position: absolute;
-    right: 0;
-    top: 0;
+}
+
+@media (min-width: 501px) {
+    .feature-news__card--landscape .feature-news__card__body {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70%;
+        height: 95%;
+    }
 }
 
 .feature-news__card--landscape:nth-child(2), .feature-news__card--landscape:nth-child(4) {
@@ -22571,26 +22584,27 @@ a.anchor--actuarial-science:hover {
 }
 
 .feature-news__card--landscape .feature-news__card__body__title a {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 600;
+    border-bottom: none;
+    display: block;
+    transition: none;
+    background: none;
+    color: #666666;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+@media (min-width: 1441px) {
+    .feature-news__card--landscape .feature-news__card__body__title a {
+        font-size: 1.5em;
+    }
 }
 
 .feature-news__card--landscape .feature-news__topic {
     color: #666666;
     font-weight: 600;
     margin-bottom: 1em;
-}
-
-.feature-news__card--landscape .feature-news__card__body__title {
-    margin-bottom: 2em;
-}
-
-.feature-news__card--landscape .feature-news__card__body__title a {
-    border-bottom: none;
-    transition: none;
-    background: none;
-    color: #646464;
-    font-size: 1.5rem;
 }
 
 .feature-news__card--landscape .feature-news__card__body__published {
@@ -22632,6 +22646,7 @@ a.anchor--actuarial-science:hover {
 .cass-knowledge .cass-knowledge-attachment {
     padding: 1.5em;
     border: 0.25em solid #d92231;
+    margin-bottom: 6em;
 }
 
 .cass-knowledge-author__title {

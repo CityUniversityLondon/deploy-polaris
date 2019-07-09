@@ -24418,8 +24418,14 @@ function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.regexp.split */ "./node_modules/core-js/modules/es6.regexp.split.js");
+/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+
+
 
 
 
@@ -24427,14 +24433,14 @@ __webpack_require__.r(__webpack_exports__);
 function launch(el) {
   var series = {
     //Cass News
-    'announcements': 'Announcements',
+    announcements: 'Announcements',
     'expert-comment': 'Expert Comment',
     'graduate-success': 'Graduate Success',
-    'impact': 'Impact',
+    impact: 'Impact',
     'research-spotlight': 'Research Spotlight',
     //Cass Knowledge
     'asset-management': 'Asset Management',
-    'charity': 'Charity and Non-Governmental Sector',
+    charity: 'Charity and Non-Governmental Sector',
     'corporate-finance': 'Corporate Finance',
     'corporate-governance': 'Corporate Governance and CSR',
     'health-and-care': 'Health and Care',
@@ -24442,28 +24448,47 @@ function launch(el) {
     'insurance-and-pensions': 'Insurance and Pensions',
     'investment-and-risk': 'Investment and Risk Management',
     'leadership-entrepreneurship': 'Leadership, Entrepreneurship and Innovation',
-    'marketing': 'Marketing',
-    'operations': 'Operations and Supply Chain Management',
+    marketing: 'Marketing',
+    operations: 'Operations and Supply Chain Management',
     'professional-services': 'Professional Services',
     'real-estate': 'Real Estate',
     'shipping-and-transport': 'Shipping and Transport'
   };
-  var path = '//cass.city.ac.uk/' + jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article').data('articles-path');
+  var path = '//cass.city.ac.uk/' + jquery__WEBPACK_IMPORTED_MODULE_2___default()('.news-article').data('articles-path');
   var seriesPrefix = path + '?meta_i_orsand=';
   var tagsPrefix = path + '?all=1&meta_l_orsand="',
       tagsSuffix = '"',
       tagsName;
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-series-family').each(function () {
-    var html = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).html().trim().toLowerCase();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('href', seriesPrefix + html);
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).html(series[html]);
+  jquery__WEBPACK_IMPORTED_MODULE_2___default()('.news-article-series-family').each(function () {
+    var html = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).html().trim().toLowerCase();
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).attr('href', seriesPrefix + html);
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).html(series[html]);
   });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-article-tag').each(function () {
-    var text = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text().trim().toLowerCase();
+  jquery__WEBPACK_IMPORTED_MODULE_2___default()('.news-article-tag').each(function () {
+    var text = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).text().trim().toLowerCase();
     tagsName = encodeURIComponent(text);
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('href', tagsPrefix + tagsName + tagsSuffix);
-  });
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).attr('href', tagsPrefix + tagsName + tagsSuffix);
+  }); // call this function to pretty the attachment text/links
+
+  initAttachmentLinks();
 }
+
+var initAttachmentLinks = function initAttachmentLinks() {
+  var attachments = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.cass-knowledge-attachment__raw');
+
+  if (attachments.length) {
+    var template = '<li class="cass-knowledge-attachment__item"><a href="$0">$1</a></li>';
+    var attachmentLinks = '<ul class="cass-knowledge-attachment__listing">';
+    attachments = attachments.html().trim().split('; ');
+    jquery__WEBPACK_IMPORTED_MODULE_2___default.a.each(attachments, function (index, value) {
+      var parts = value.slice(1, -1).split('}{');
+      var attachmentLink = template.replace('$0', parts[1]).replace('$1', parts[0]);
+      attachmentLinks = attachmentLinks.concat(attachmentLink);
+    });
+    attachmentLinks = attachmentLinks.concat('</ul>');
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()('.cass-knowledge-attachment__raw').html(attachmentLinks);
+  }
+};
 
 var className = 'news-article';
 /* harmony default export */ __webpack_exports__["default"] = ({
