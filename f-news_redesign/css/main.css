@@ -22579,8 +22579,10 @@ a.anchor--actuarial-science:hover {
     }
 }
 
-.feature-news__card--landscape:nth-child(2), .feature-news__card--landscape:nth-child(4) {
-    margin-right: 0;
+@media (min-width: 1201px) {
+    .feature-news__card--landscape:nth-child(2), .feature-news__card--landscape:nth-child(4) {
+        margin-right: 0;
+    }
 }
 
 .feature-news__card--landscape .feature-news__card__body__title a {
@@ -22636,7 +22638,7 @@ a.anchor--actuarial-science:hover {
 
 .cass-knowledge-author li {
     list-style-type: disc;
-    line-height: 2;
+    margin-bottom: .5em;
 }
 
 .cass-knowledge .article-meta-data {
