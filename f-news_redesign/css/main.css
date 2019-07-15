@@ -22624,41 +22624,25 @@ a.anchor--actuarial-science:hover {
     justify-content: center;
 }
 
-.knowledge-article .article-meta-data {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    color: #555555;
-    font-size: 1.44rem;
-    font-weight: 300;
-    line-height: 1.5;
+@media (min-width: 901px) {
+    .cass-knowledge-listing.landscape-knowledge-cards {
+        padding: 0 4rem;
+    }
 }
 
-.cass-knowledge-author ul {
-    margin-bottom: 0;
+.landscape-knowledge-cards .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.cass-knowledge-author li {
-    list-style-type: disc;
-    margin-bottom: .5em;
+@media (min-width: 1201px) {
+    .landscape-knowledge-cards .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+        margin-bottom: 7rem;
+    }
 }
 
-.cass-knowledge .article-meta-data {
-    color: #646464;
-}
-
-.cass-knowledge .cass-knowledge-attachment {
-    padding: 1.5em;
-    border: 0.25em solid #d92231;
-    margin-bottom: 6em;
-}
-
-.cass-knowledge-author__title {
-    margin: .5em 0;
-    font-weight: 600;
-    display: block;
-}
-
-.cass-knowledge-author__external {
-    margin-left: 1rem;
+.landscape-knowledge-cards .news-article-anchor {
+    font-size: 14px;
 }
 
 .anchor-demo-list li {
