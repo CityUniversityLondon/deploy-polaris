@@ -22223,6 +22223,7 @@ blockquote .reference {
 
 .featured-cass-experts h2 {
     text-align: left;
+    font-size: 1.44rem;
 }
 
 .featured-cass-experts__profile-photo img {
@@ -22383,11 +22384,14 @@ blockquote .reference {
 }
 
 .related-research-paper a {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
     display: block;
     border-bottom: none;
     display: flex;
+}
+
+.related-research-paper a:hover .icon {
+    color: #ffffff;
 }
 
 .related-research-paper .icon {
@@ -22508,22 +22512,40 @@ blockquote .reference {
     margin-left: 1em;
 }
 
-a.anchor--business-and-finance,
-a.anchor--finance {
-    color: #00284d;
+a.anchor--business-and-finance {
+    color: #11365c;
 }
 
-a.anchor--business-and-finance:hover,
+a.anchor--business-and-finance:hover {
+    color: #11365c;
+}
+
+a.anchor--business-and-finance:hover:after {
+    border-color: #11365c;
+}
+
+a.anchor--finance {
+    color: #11365c;
+}
+
 a.anchor--finance:hover {
-    color: #00284d;
+    color: #11365c;
+}
+
+a.anchor--finance:hover:after {
+    border-color: #11365c;
 }
 
 a.anchor--management {
-    color: #00444d;
+    color: #ad2b1a;
 }
 
 a.anchor--management:hover {
-    color: #00444d;
+    color: #ad2b1a;
+}
+
+a.anchor--management:hover:after {
+    border-color: #ad2b1a;
 }
 
 a.anchor--entrepreneurship {
@@ -22534,24 +22556,36 @@ a.anchor--entrepreneurship:hover {
     color: #5a8054;
 }
 
+a.anchor--entrepreneurship:hover:after {
+    border-color: #5a8054;
+}
+
 a.anchor--cass-community {
-    color: #d92231;
+    color: #39655d;
 }
 
 a.anchor--cass-community:hover {
-    color: #d92231;
+    color: #39655d;
+}
+
+a.anchor--cass-community:hover:after {
+    border-color: #39655d;
 }
 
 a.anchor--actuarial-science {
-    color: #842b91;
+    color: #3f175c;
 }
 
 a.anchor--actuarial-science:hover {
-    color: #842b91;
+    color: #3f175c;
+}
+
+a.anchor--actuarial-science:hover:after {
+    border-color: #3f175c;
 }
 
 .feature-news__card--landscape {
-    margin: 0 .5em 2em .5em;
+    margin: 0 0.5em 2em 0.5em;
     position: relative;
     border: 1px solid #d8d8d8;
 }
@@ -22611,7 +22645,7 @@ a.anchor--actuarial-science:hover {
 
 .feature-news__card--landscape .feature-news__card__body__published {
     color: #666666;
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 }
 
 .feature-news__card--landscape .item__date {
@@ -22643,6 +22677,39 @@ a.anchor--actuarial-science:hover {
 
 .landscape-knowledge-cards .news-article-anchor {
     font-size: 14px;
+}
+
+.cass-knowledge .article-meta-data {
+    color: #646464;
+}
+
+.cass-knowledge .cass-knowledge-attachment {
+    padding: 1.5em;
+    border: 0.25em solid #d92231;
+    margin-bottom: 3em;
+}
+
+.cass-knowledge .cass-knowledge-attachment h2 {
+    font-size: 1.44rem;
+}
+
+.cass-knowledge-author__title {
+    margin: 0.5em 0;
+    font-weight: 600;
+    display: block;
+}
+
+.cass-knowledge-author__external {
+    margin-left: 1rem;
+}
+
+.cass-knowledge-author ul {
+    margin-bottom: 0;
+}
+
+.cass-knowledge-author li {
+    list-style-type: disc;
+    margin-bottom: 0.5em;
 }
 
 .anchor-demo-list li {
