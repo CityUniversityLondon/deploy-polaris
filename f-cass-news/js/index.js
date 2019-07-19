@@ -22194,6 +22194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/filter-dropdown/filter-dropdown */ "./src/components/filter-dropdown/filter-dropdown.js");
 /* harmony import */ var _components_soundwave_bg_soundwave_bg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/soundwave-bg/soundwave-bg */ "./src/components/soundwave-bg/soundwave-bg.js");
 /* harmony import */ var _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/carousel/carousel */ "./src/components/carousel/carousel.js");
+/* harmony import */ var _components_news_news__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/news/news */ "./src/components/news/news.js");
 
 
 
@@ -22222,7 +22223,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_components_cookie_notice_cookie_notice__WEBPACK_IMPORTED_MODULE_0__["default"], _components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_6__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_8__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_3__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_9__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_1__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_2__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_5__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_10__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_12___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_11__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_13__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_15__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_16__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_17__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_18__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_19__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_20__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_21__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_22__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_23__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_25__["default"], _components_soundwave_bg_soundwave_bg__WEBPACK_IMPORTED_MODULE_24__["default"]]);
+
+/* harmony default export */ __webpack_exports__["default"] = ([_components_cookie_notice_cookie_notice__WEBPACK_IMPORTED_MODULE_0__["default"], _components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_6__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_8__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_3__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_9__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_1__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_2__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_5__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_10__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_12___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_11__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_13__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_15__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_16__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_17__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_18__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_19__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_20__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_21__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_22__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_23__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_25__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_26__["default"], _components_soundwave_bg_soundwave_bg__WEBPACK_IMPORTED_MODULE_24__["default"]]);
 
 /***/ }),
 
@@ -24407,6 +24409,95 @@ function () {
 
 /***/ }),
 
+/***/ "./src/components/news/news.js":
+/*!*************************************!*\
+  !*** ./src/components/news/news.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.regexp.split */ "./node_modules/core-js/modules/es6.regexp.split.js");
+/* harmony import */ var core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+
+
+function launch(el) {
+  var series = {
+    //Cass News
+    announcements: 'Announcements',
+    'expert-comment': 'Expert Comment',
+    'graduate-success': 'Graduate Success',
+    impact: 'Impact',
+    'research-spotlight': 'Research Spotlight',
+    //Cass Knowledge
+    'asset-management': 'Asset Management',
+    charity: 'Charity and Non-Governmental Sector',
+    'corporate-finance': 'Corporate Finance',
+    'corporate-governance': 'Corporate Governance and CSR',
+    'health-and-care': 'Health and Care',
+    'human-resource-management': 'Human Resource Management',
+    'insurance-and-pensions': 'Insurance and Pensions',
+    'investment-and-risk': 'Investment and Risk Management',
+    'leadership-entrepreneurship': 'Leadership, Entrepreneurship and Innovation',
+    marketing: 'Marketing',
+    operations: 'Operations and Supply Chain Management',
+    'professional-services': 'Professional Services',
+    'real-estate': 'Real Estate',
+    'shipping-and-transport': 'Shipping and Transport'
+  };
+  var path = '//cass.city.ac.uk/' + jquery__WEBPACK_IMPORTED_MODULE_2___default()('.news-article').data('articles-path');
+  var seriesPrefix = path + '?meta_i_orsand=';
+  var tagsPrefix = path + '?all=1&meta_l_orsand="',
+      tagsSuffix = '"',
+      tagsName;
+  jquery__WEBPACK_IMPORTED_MODULE_2___default()('.news-article-series-family').each(function () {
+    var html = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).html().trim().toLowerCase();
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).attr('href', seriesPrefix + html);
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).html(series[html]);
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_2___default()('.news-article-tag').each(function () {
+    var text = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).text().trim().toLowerCase();
+    tagsName = encodeURIComponent(text);
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).attr('href', tagsPrefix + tagsName + tagsSuffix);
+  }); // call this function to pretty the attachment text/links
+
+  initAttachmentLinks();
+}
+
+var initAttachmentLinks = function initAttachmentLinks() {
+  var attachments = jquery__WEBPACK_IMPORTED_MODULE_2___default()('.cass-knowledge-attachment__raw');
+
+  if (attachments.length) {
+    var template = '<li class="cass-knowledge-attachment__item"><a href="$0">$1</a></li>';
+    var attachmentLinks = '<ul class="cass-knowledge-attachment__listing">';
+    attachments = attachments.html().trim().split('; ');
+    jquery__WEBPACK_IMPORTED_MODULE_2___default.a.each(attachments, function (index, value) {
+      var parts = value.slice(1, -1).split('}{');
+      var attachmentLink = template.replace('$0', parts[1]).replace('$1', parts[0]);
+      attachmentLinks = attachmentLinks.concat(attachmentLink);
+    });
+    attachmentLinks = attachmentLinks.concat('</ul>');
+    jquery__WEBPACK_IMPORTED_MODULE_2___default()('.cass-knowledge-attachment__raw').html(attachmentLinks);
+  }
+};
+
+var className = 'news-article';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
 /***/ "./src/components/popup-def-list-group/popup-def-list-group.js":
 /*!*********************************************************************!*\
   !*** ./src/components/popup-def-list-group/popup-def-list-group.js ***!
@@ -25867,6 +25958,13 @@ function loadVideo(wrapper, service) {
   }
 }
 
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').keyup('keyup', function (e) {
+  // If user tabs into video preview
+  if (e.keyCode == 9) {
+    var playIcon = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.video-preview__button');
+    playIcon.is(":focus") ? playIcon.addClass('in-focus') : playIcon.removeClass('in-focus');
+  }
+});
 /* harmony default export */ __webpack_exports__["default"] = ({
   className: 'video-preview__button',
   launch: launch
