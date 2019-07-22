@@ -23172,7 +23172,6 @@ News events landing overrides */
     .cass-news-search .filter-box__float--open .filter-box__inner {
         display: inline;
         border: none;
-        padding: 1rem;
     }
 }
 
@@ -23181,6 +23180,7 @@ News events landing overrides */
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 0.8rem;
+        padding: 0.5rem;
     }
     .cass-news-search .filter-box__float--open .filter-box__inner .row-fluid > div {
         grid-column: 1 / -1;
