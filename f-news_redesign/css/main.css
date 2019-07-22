@@ -14643,6 +14643,39 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.feature-news__card:nth-child(3) {
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+@supports (display: flex) {
+    .feature-news__card:nth-child(3) {
+        float: none;
+        flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .feature-news__card:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) {
+    .feature-news__card:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .feature-news__card:nth-child(3) {
+        width: 25%;
+    }
+}
+
 .feature-news__card--main .feature-news__card__body,
 .feature-news__card--follow .feature-news__card__body {
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
