@@ -22224,7 +22224,7 @@ blockquote .reference {
     font-weight: 600;
 }
 
-.feature-news__card .news-article-tag {
+.feature-news__card a.news-article-tag {
     font-size: 14px;
 }
 
@@ -22308,6 +22308,7 @@ blockquote .reference {
     margin: 7px 1em 0 0;
     color: #646464;
     font-weight: 600;
+    font-size: 14px !important;
     margin-right: 1em;
     border-bottom: none;
     display: inline-block;
@@ -22425,10 +22426,6 @@ blockquote .reference {
     .related-stories-section .feature-news__card {
         width: 25%;
     }
-}
-
-.related-stories-section .feature-news__card__body a {
-    font-size: 14px;
 }
 
 .related-research-paper {
