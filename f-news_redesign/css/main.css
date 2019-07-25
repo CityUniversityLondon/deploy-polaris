@@ -22162,6 +22162,14 @@ blockquote .reference {
     background-color: #d92231;
 }
 
+.news-article p {
+    font-weight: 400;
+}
+
+.news-article p strong {
+    font-weight: 400;
+}
+
 .news-article__stretched-title {
     text-align: center;
 }
