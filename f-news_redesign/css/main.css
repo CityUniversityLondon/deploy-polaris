@@ -22422,6 +22422,12 @@ blockquote .reference {
     margin-bottom: 1em;
 }
 
+@media (max-width: 499px) {
+    .related-stories-section .feature-news__card {
+        width: 80%;
+    }
+}
+
 @media (min-width: 901px) {
     .related-stories-section .feature-news__card {
         width: 25%;
