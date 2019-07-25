@@ -22755,8 +22755,20 @@ a.anchor--actuarial-science:hover:after {
     }
 }
 
-.landscape-knowledge-cards .news-article__anchor {
-    font-size: 14px;
+@media (min-width: 1441px) {
+    .landscape-knowledge-cards .cass-knowledge-listing__item img {
+        width: 55%;
+    }
+}
+
+@media (min-width: 1441px) {
+    .landscape-knowledge-cards .cass-knowledge-listing__item__text {
+        width: 70%;
+    }
+}
+
+.knowledge-article__link-container {
+    margin-top: .5em;
 }
 
 .cass-knowledge .news-article__article-meta-data {
