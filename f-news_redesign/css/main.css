@@ -22194,6 +22194,10 @@ blockquote .reference {
     font-weight: 300;
 }
 
+.news-article__date-published {
+    margin: 1.5em 0;
+}
+
 .feature-news__card .item__date {
     color: #666666;
     font-weight: 600;
@@ -22211,7 +22215,6 @@ blockquote .reference {
 
 .news-article__article-meta-data time {
     display: block;
-    margin-top: 1.5em;
 }
 
 .news-article__article-meta-data .news-article-tag {
