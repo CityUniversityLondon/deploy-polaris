@@ -22179,7 +22179,18 @@ blockquote .reference {
 }
 
 .news-article__related-course .related-course__title {
-    width: 65%;
+    width: 60%;
+}
+
+@media (min-width: 901px) {
+    .news-article__related-course .related-course__title {
+        width: 65%;
+    }
+}
+
+.news-article__related-course .icon {
+    float: right;
+    margin-top: .1em;
 }
 
 .news-article__related-course__list {
@@ -22201,6 +22212,14 @@ blockquote .reference {
     .news-article__stretched-title h1 {
         margin-top: 0;
     }
+}
+
+.news-article__news-standfirst {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #555555;
+    font-size: 1.44rem;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 .news-article__news-standfirst p {
