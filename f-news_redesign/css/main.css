@@ -22773,6 +22773,10 @@ a.anchor--actuarial-science:hover:after {
     font-size: 1.44rem;
 }
 
+.cass-knowledge .cass-knowledge-attachment .icon {
+    display: inline;
+}
+
 .cass-knowledge-author__title {
     margin: 0.5em 0;
     font-weight: 600;
