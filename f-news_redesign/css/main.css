@@ -22789,7 +22789,11 @@ a.anchor--actuarial-science:hover:after {
 
 .cass-knowledge-author li {
     list-style-type: disc;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.knowledge-article__author ul {
+    margin-left: 2em;
 }
 
 .anchor-demo-list li {
