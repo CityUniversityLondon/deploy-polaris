@@ -22178,6 +22178,10 @@ blockquote .reference {
     border-top: none;
 }
 
+.news-article__related-course .related-course__title {
+    width: 65%;
+}
+
 .news-article__related-course__list {
     border-top: 1px solid #a1a1a1;
 }
