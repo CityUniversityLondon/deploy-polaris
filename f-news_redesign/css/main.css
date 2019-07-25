@@ -22170,6 +22170,18 @@ blockquote .reference {
     font-weight: 400;
 }
 
+.news-article__related-course {
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.news-article__related-course:first-child {
+    border-top: none;
+}
+
+.news-article__related-course__list {
+    border-top: 1px solid #a1a1a1;
+}
+
 .news-article__stretched-title {
     text-align: center;
 }
