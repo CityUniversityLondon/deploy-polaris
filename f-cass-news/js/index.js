@@ -25211,21 +25211,27 @@ function launch(el) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 
 
 function launch(el) {
-  console.log('launched');
-  var viewportWidth = jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width();
-  var slideCount = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-articles-list li').length;
-  var slides = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-articles-list li');
+  console.log('lllll');
+  var slider = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
+  var viewportWidth = jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).width();
+  var slideCount = slider.find('li').length;
+  console.log(slideCount);
+  var slides = slider.find('li');
+  var slidesContainer = slider.find('ul');
   var strTouchX;
   var endTouchX;
 
-  if (viewportWidth <= 900 && slideCount > 0) {
+  if (viewportWidth <= 900 && slideCount > 1) {
     // detects slide direction. 5px movement deadzone has been allowed for swipe sensitivity. Slider will only react to swipes bigger than 5px in length 
     var slideDirection = function slideDirection(endTouchX) {
       endTouchX > strTouchX + 5 ? slide('+') : endTouchX < strTouchX - 5 ? slide('-') : null;
@@ -25233,43 +25239,40 @@ function launch(el) {
 
     // handels slide
     var slide = function slide(dir) {
-      var slidePosition = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slider-news ul").css('left'));
-      var slideWidth = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-articles-list li').css('width'));
-      var animated = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slider-news ul:animated").length;
+      var slideContainerPosition = parseInt(slidesContainer.css('left'));
+      var slideWidth = parseInt(slides.css('width'));
+      var animated = slider.find("ul:animated").length;
 
-      if (dir === '-' && slidePosition - slideWidth >= -(slideWidth * (slideCount - 1)) && animated === 0) {
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slider-news ul").animate({
+      if (dir === '-' && slideContainerPosition - slideWidth >= -(slideWidth * (slideCount - 1)) && animated === 0) {
+        slidesContainer.animate({
           left: '' + dir + '=' + slideWidth + ''
-        }, 'slow', indicatorPosition(slidePosition - slideWidth, slideWidth));
-      } else if (dir === '+' && slidePosition + slideWidth <= 0 && animated === 0) {
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slider-news ul").animate({
+        }, 'slow', indicatorPosition(slideContainerPosition - slideWidth, slideWidth));
+      } else if (dir === '+' && slideContainerPosition + slideWidth <= 0 && animated === 0) {
+        slidesContainer.animate({
           left: '' + dir + '=' + slideWidth + ''
-        }, 'slow', indicatorPosition(slidePosition + slideWidth, slideWidth));
+        }, 'slow', indicatorPosition(slideContainerPosition + slideWidth, slideWidth));
       }
     };
 
     // highlights which slide you on
     var indicatorPosition = function indicatorPosition(value, slideWidth) {
       var slideInd = value / -slideWidth;
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider__indicators__indicator').each(function () {
-        if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).index() == slideInd) {
-          jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('slider__indicators__indicator--active');
+      slider.find('.slider__indicators__indicator').each(function () {
+        if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).index() == slideInd) {
+          jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('slider__indicators__indicator--active');
         } else {
-          jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).removeClass('slider__indicators__indicator--active');
+          jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).removeClass('slider__indicators__indicator--active');
         }
       });
     };
 
     // implements slider
-    //$('.news-articles-list').before('<div class="slider"></div>');
-    var slider = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-news'); //$('.news-articles-list').appendTo($('.slider'));
     // generates slide indicators
-
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-news ul').after('<div class="slider__indicators__wrap"><div class="slider__indicators"></div></div>');
+    slidesContainer.after('<div class="slider__indicators__wrap"><div class="slider__indicators"></div></div>');
     slides.each(function () {
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider__indicators').append('<div class="slider__indicators__indicator"></div>');
+      slider.find('.slider__indicators').append('<div class="slider__indicators__indicator"></div>');
     });
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider__indicators__indicator').eq(0).addClass('slider__indicators__indicator--active'); // records touches
+    slider.find('.slider__indicators__indicator').eq(0).addClass('slider__indicators__indicator--active'); // records touches
 
     slider.on('touchstart', function (e) {
       strTouchX = e.touches[0].clientX;
@@ -25281,16 +25284,16 @@ function launch(el) {
     ;
     ; // slide index indicators
 
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider__indicators__indicator').on('click', function () {
-      var slideWidth = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('.news-articles-list li').css('width'));
-      var slideIndex = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).index();
-      var slidePosition = slideWidth * slideIndex;
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slider-news ul").animate({
-        left: -slidePosition
-      }, 'slow', indicatorPosition(slidePosition, -slideWidth));
+    slider.find('.slider__indicators__indicator').on('click', function () {
+      var slideWidth = parseInt(slides.css('width'));
+      var slideIndex = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).index();
+      var slideContainerPosition = slideWidth * slideIndex;
+      slidesContainer.animate({
+        left: -slideContainerPosition
+      }, 'slow', indicatorPosition(slideContainerPosition, -slideWidth));
     });
     ;
-  } // end if
+  } // end if 
 
 }
 

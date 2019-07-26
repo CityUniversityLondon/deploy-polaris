@@ -22813,6 +22813,7 @@ input:checked + .cass-events .calendar__radio__button:before {
     border-radius: 0;
     background: #ffffff;
     border-color: #d0cfcb;
+    font-weight: 600;
 }
 
 .cass-events .calendar__key:hover, .cass-events .calendar__key:focus, .cass-events .calendar__key:active {
@@ -22939,6 +22940,33 @@ input:checked + .cass-events .calendar__radio__button:before {
     padding: 0.5rem;
     margin-right: 0.5rem;
     margin: auto auto 0;
+    color: #00444d;
+    position: relative;
+    overflow: visible !important;
+}
+
+.cass-events .events-listing .events-listing__audience:after, .cass-events .events-listing .events-listing__audience:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    border: 0.1em solid #e1e1e1;
+    border-bottom-width: 0.1em !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.cass-events .events-listing .events-listing__audience:after {
+    transform: translateY(-7px) translateX(6px) !important;
+    border-color: #00444d;
+    opacity: 0;
+}
+
+.cass-events .events-listing .events-listing__audience:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1;
 }
 
 @media (max-width: 499px) {
@@ -23731,6 +23759,12 @@ News events landing overrides */
     list-style: none;
 }
 
+@media (max-width: 900px) {
+    .news-events-landing .featured-events .grid--thirds li, .news-events-landing .featured-events .banner-stats .banner-stats__items li, .banner-stats .news-events-landing .featured-events .banner-stats__items li {
+        width: 80vw;
+    }
+}
+
 .news-events-landing .featured-event {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -23746,6 +23780,7 @@ News events landing overrides */
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 .news-events-landing .featured-item__image img {
