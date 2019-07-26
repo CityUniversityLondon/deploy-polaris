@@ -22812,6 +22812,11 @@ a.anchor--actuarial-science:hover:after {
     margin-left: 2em;
 }
 
+.related-research-papers-section .related-research-paper {
+    border-top: 1px solid #a1a1a1;
+    border-bottom: 1px solid #a1a1a1;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
