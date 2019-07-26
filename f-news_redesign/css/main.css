@@ -22823,6 +22823,10 @@ a.anchor--actuarial-science:hover:after {
     display: none;
 }
 
+.news-article__press-body blockquote:before {
+    background-color: #d92231;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
