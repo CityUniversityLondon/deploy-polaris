@@ -22819,6 +22819,10 @@ a.anchor--actuarial-science:hover:after {
     border-bottom: 1px solid #a1a1a1;
 }
 
+.news-navigation {
+    display: none;
+}
+
 .anchor-demo-list li {
     padding: 1rem;
 }
