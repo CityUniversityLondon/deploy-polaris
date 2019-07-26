@@ -22284,6 +22284,17 @@ blockquote .reference {
     margin-right: 0.4em;
 }
 
+.featured-cass-experts__profile__photo {
+    width: 8em;
+    margin-right: 1em;
+}
+
+@media (min-width: 501px) {
+    .featured-cass-experts__profile__photo {
+        width: 5em;
+    }
+}
+
 .featured-cass-experts__press-officer-name a {
     font-size: 1.2em;
 }
@@ -22301,12 +22312,6 @@ blockquote .reference {
 
 .featured-cass-experts__press-officer-jobtitle {
     margin: 0.5em 0 0.3em 0;
-}
-
-.featured-cass-experts__profile-photo img {
-    width: 80px;
-    height: 80px;
-    margin-right: 1em;
 }
 
 .news-article__tags {
