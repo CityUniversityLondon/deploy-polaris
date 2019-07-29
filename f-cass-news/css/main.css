@@ -19416,6 +19416,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .pagination .ellipsis {
     background-color: transparent;
     margin: 0;
+    position: relative;
 }
 
 @media (min-width: 501px) {
@@ -19430,6 +19431,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
     .pagination .selected {
         border: 1px solid #666666;
+        position: relative;
     }
     .pagination .selected:before {
         content: '';
@@ -24174,6 +24176,7 @@ News events landing overrides */
     padding-right: 0.5rem;
     color: #d92231;
     margin-right: 1rem;
+    background: none;
     position: relative;
     overflow: visible !important;
 }
@@ -24217,6 +24220,7 @@ News events landing overrides */
     margin-top: 0.5rem;
     display: inline-block;
     font-size: 0.9rem;
+    background: none;
     position: relative;
     overflow: visible !important;
 }
