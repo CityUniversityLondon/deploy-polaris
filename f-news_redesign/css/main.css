@@ -24088,13 +24088,7 @@ News events landing overrides */
     display: block;
     margin-bottom: 2rem;
     width: 100%;
-    min-height: 270px;
-}
-
-@media (min-width: 1200px) {
-    .cass-knowledge-search .news-finder__form .news-articles-list li {
-        margin-bottom: 0;
-    }
+    min-height: 258px;
 }
 
 .cass-knowledge-search .news-card {
@@ -24103,6 +24097,31 @@ News events landing overrides */
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 0.8rem;
+}
+
+.cass-knowledge-search .underline-transition__title {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    display: inline;
+    overflow-x: hidden;
+    text-decoration: none;
+    background-image: linear-gradient(#1e1e1e, #1e1e1e);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.cass-knowledge-search .underline-transition__title:hover, .cass-knowledge-search .underline-transition__title:focus, .cass-knowledge-search .underline-transition__title:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-search .underline-transition__title:hover, .cass-knowledge-search .underline-transition__title :focus {
+    background-size: 100% 2px;
 }
 
 .cass-knowledge-search .news-card .image-credit {
@@ -24114,6 +24133,10 @@ News events landing overrides */
     .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text {
         width: 67%;
     }
+}
+
+.cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text .feature-news__card__body__published {
+    margin-top: 1em;
 }
 
 @media (min-width: 501px) {
@@ -24136,7 +24159,7 @@ News events landing overrides */
 
 @media (min-width: 1441px) {
     .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item img {
-        width: 40%;
+        width: 43%;
     }
 }
 
