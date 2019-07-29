@@ -14723,6 +14723,17 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-size: 100% 2px;
 }
 
+.feature-news__card a:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.feature-news__card a:hover:after {
+    transform: none;
+    opacity: 0;
+}
+
 .feature-news__card--latest {
     padding-left: 20px;
 }
@@ -22246,6 +22257,17 @@ blockquote .reference {
     background-size: 100% 2px;
 }
 
+.cass-events .events-listing h3:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.cass-events .events-listing h3:hover:after {
+    transform: none;
+    opacity: 0;
+}
+
 .cass-events #managed-form-container {
     width: 100%;
 }
@@ -24122,6 +24144,17 @@ News events landing overrides */
 
 .cass-knowledge-search .underline-transition__title:hover, .cass-knowledge-search .underline-transition__title :focus {
     background-size: 100% 2px;
+}
+
+.cass-knowledge-search .underline-transition__title:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.cass-knowledge-search .underline-transition__title:hover:after {
+    transform: none;
+    opacity: 0;
 }
 
 .cass-knowledge-search .news-card .image-credit {
