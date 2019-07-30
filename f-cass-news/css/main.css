@@ -22834,7 +22834,15 @@ input:checked + .cass-events .calendar__radio__button:before {
     border-color: #666666 transparent transparent;
 }
 
-.cass-events .calendar__key {
+.cass-events .calendar__key .filter-box__float {
+    overflow: visible;
+}
+
+.cass-events .calendar__key .filter-box__inner {
+    padding: 0;
+}
+
+.cass-events .calendar__key select {
     width: 100%;
     list-style: none !important;
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
@@ -22851,12 +22859,8 @@ input:checked + .cass-events .calendar__radio__button:before {
     font-weight: 600;
 }
 
-.cass-events .calendar__key:hover, .cass-events .calendar__key:focus, .cass-events .calendar__key:active {
+.cass-events .calendar__key select:hover, .cass-events .calendar__key select:focus, .cass-events .calendar__key select:active {
     background: #ececec;
-}
-
-.cass-events .calendar__key li {
-    display: inline-block;
 }
 
 .cass-events .events-listing ul {
@@ -23877,7 +23881,7 @@ News events landing overrides */
     margin-bottom: 0.5rem;
 }
 
-.news-events-landing .featured-item__content__details__topic .news-article-anchor {
+.news-events-landing .featured-item__content__details__topic .news-article__anchor {
     color: #ad2b1a;
     display: inline-block;
     height: 100%;
@@ -23885,7 +23889,7 @@ News events landing overrides */
     overflow: visible !important;
 }
 
-.news-events-landing .featured-item__content__details__topic .news-article-anchor:after, .news-events-landing .featured-item__content__details__topic .news-article-anchor:before {
+.news-events-landing .featured-item__content__details__topic .news-article__anchor:after, .news-events-landing .featured-item__content__details__topic .news-article__anchor:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -23898,13 +23902,13 @@ News events landing overrides */
     background-color: transparent !important;
 }
 
-.news-events-landing .featured-item__content__details__topic .news-article-anchor:after {
+.news-events-landing .featured-item__content__details__topic .news-article__anchor:after {
     transform: translateY(-7px) translateX(6px) !important;
     border-color: #ad2b1a;
     opacity: 0;
 }
 
-.news-events-landing .featured-item__content__details__topic .news-article-anchor:hover:after {
+.news-events-landing .featured-item__content__details__topic .news-article__anchor:hover:after {
     transform: translateY(0px) translateX(0px) !important;
     opacity: 1;
 }
