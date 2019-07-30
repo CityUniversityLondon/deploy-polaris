@@ -14723,6 +14723,17 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-size: 100% 2px;
 }
 
+.feature-news__card a:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.feature-news__card a:hover:after {
+    transform: none;
+    opacity: 0;
+}
+
 .feature-news__card--latest {
     padding-left: 20px;
 }
@@ -22246,6 +22257,17 @@ blockquote .reference {
     background-size: 100% 2px;
 }
 
+.cass-events .events-listing h3:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.cass-events .events-listing h3:hover:after {
+    transform: none;
+    opacity: 0;
+}
+
 .cass-events #managed-form-container {
     width: 100%;
 }
@@ -24092,6 +24114,7 @@ News events landing overrides */
     display: block;
     margin-bottom: 2rem;
     width: 100%;
+    min-height: 16.125rem;
 }
 
 .cass-knowledge-search .news-card {
@@ -24102,72 +24125,114 @@ News events landing overrides */
     grid-column-gap: 0.8rem;
 }
 
+.cass-knowledge-search .underline-transition__title {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    color: #666666;
+    display: inline;
+    overflow-x: hidden;
+    text-decoration: none;
+    background-image: linear-gradient(#1e1e1e, #1e1e1e);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.cass-knowledge-search .underline-transition__title:hover, .cass-knowledge-search .underline-transition__title:focus, .cass-knowledge-search .underline-transition__title:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-knowledge-search .underline-transition__title:hover, .cass-knowledge-search .underline-transition__title :focus {
+    background-size: 100% 2px;
+}
+
+.cass-knowledge-search .underline-transition__title:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.cass-knowledge-search .underline-transition__title:hover:after {
+    transform: none;
+    opacity: 0;
+}
+
 .cass-knowledge-search .news-card .image-credit {
     left: 0;
     right: inherit;
 }
 
-.cass-knowledge-search .news-card-media {
-    max-height: 200px;
-    grid-column: 1 / 6;
+.cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__research,
+.cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text > a {
+    margin-bottom: 1rem;
 }
 
-@media (max-width: 1199px) {
-    .cass-knowledge-search .news-card-media {
-        grid-column: 1 / 8;
+@media (max-width: 649px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 651px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text {
+        width: 84%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text {
+        width: 75%;
+    }
+}
+
+@media (min-width: 901px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text {
         position: absolute;
+        display: inline-block;
     }
 }
 
-.cass-knowledge-search .news-card-media img {
-    min-height: 250px;
-    object-fit: cover;
-    width: 100%;
+.cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text .feature-news__card__body__published {
+    margin-top: 1rem;
 }
 
-.cass-knowledge-search .news-card-text {
-    left: -10%;
-    position: relative;
-    background: #ffffff;
-    padding: 1rem;
-    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
-    grid-column: 6 / -1;
-    width: 110%;
-    margin-bottom: 1rem;
-}
-
-@media (max-width: 1199px) {
-    .cass-knowledge-search .news-card-text {
-        grid-column: 6 / -1;
+@media (max-width: 649px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item {
+        position: relative;
+        display: block;
+        width: 100%;
     }
 }
 
-.cass-knowledge-search .news-card-text .item__date {
-    color: #666666;
-    margin-bottom: 0.5rem;
-    display: block;
+@media (max-width: 649px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item img {
+        width: 100%;
+    }
 }
 
-.cass-knowledge-search .news-card-text-label {
-    color: #555555;
-    margin-bottom: 1rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
+@media (min-width: 651px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item img {
+        width: 51%;
+    }
 }
 
-.cass-knowledge-search .news-card-text-label:before {
-    content: '\f15c';
-    font-family: FontAwesome;
-    margin-right: 1rem;
+@media (min-width: 901px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item img {
+        position: absolute;
+        display: inline-block;
+    }
 }
 
-.cass-knowledge-search .news-card-content__wrap {
-    margin-bottom: 1rem;
-}
-
-.cass-knowledge-search .news-card-content {
-    margin-bottom: 1rem;
+@media (min-width: 1201px) {
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item img {
+        width: 42%;
+    }
 }
 
 .cass-knowledge-search .news-card-categories > * {
@@ -24285,7 +24350,7 @@ News events landing overrides */
 
 .news-article__related-course .icon {
     float: right;
-    margin-top: .1em;
+    margin-top: .1rem;
 }
 
 .news-article__related-course__list {
@@ -24294,7 +24359,7 @@ News events landing overrides */
 
 @media (min-width: 901px) {
     .news-article__stretched-title {
-        margin: 0 10em;
+        margin: 0 10rem;
         text-align: center;
     }
 }
@@ -24330,7 +24395,7 @@ News events landing overrides */
 }
 
 .news-article__date-published {
-    margin: 1.5em 0;
+    margin: 1.5rem 0;
 }
 
 .feature-news__card .item__date {
@@ -24339,7 +24404,7 @@ News events landing overrides */
 }
 
 .feature-news__card a.news-article-tag {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .feature-news__card:nth-child(5), .feature-news__card:nth-child(6) {
@@ -24349,7 +24414,7 @@ News events landing overrides */
 .news-article__article-meta-data {
     border-top: 1px solid #a1a1a1;
     border-bottom: 1px solid #a1a1a1;
-    padding: 1em 0 2em 0;
+    padding: 1rem 0 2rem 0;
 }
 
 .news-article__article-meta-data time {
@@ -24357,7 +24422,7 @@ News events landing overrides */
 }
 
 .news-article__article-meta-data .news-article-tag {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 901px) {
@@ -24368,7 +24433,7 @@ News events landing overrides */
 
 .featured-cass-experts__profile {
     display: flex;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
 }
 
 .featured-cass-experts__profile:last-child {
@@ -24376,17 +24441,28 @@ News events landing overrides */
 }
 
 .featured-cass-experts__profile i {
-    margin-right: 0.4em;
+    margin-right: 0.4rem;
+}
+
+.featured-cass-experts__profile__photo {
+    width: 8rem;
+    margin-right: 1rem;
+}
+
+@media (min-width: 501px) {
+    .featured-cass-experts__profile__photo {
+        width: 5rem;
+    }
 }
 
 .featured-cass-experts__press-officer-name a {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .news-article__featured-cass-experts {
     border-top: 1px solid #a1a1a1;
     border-bottom: 1px solid #a1a1a1;
-    padding: 1.2em 0 2em 0;
+    padding: 1.2rem 0 2rem 0;
 }
 
 .news-article__featured-cass-experts h2 {
@@ -24395,17 +24471,11 @@ News events landing overrides */
 }
 
 .featured-cass-experts__press-officer-jobtitle {
-    margin: 0.5em 0 0.3em 0;
-}
-
-.featured-cass-experts__profile-photo img {
-    width: 80px;
-    height: 80px;
-    margin-right: 1em;
+    margin: 0.5rem 0 0.3rem 0;
 }
 
 .news-article__tags {
-    margin: 3em 0;
+    margin: 3rem 0;
     color: #646464;
 }
 
@@ -24422,12 +24492,12 @@ News events landing overrides */
 .news-article__anchor {
     position: relative;
     overflow: visible !important;
-    padding: 0.6em;
-    margin: 7px 1em 0 0;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
     color: #646464;
     font-weight: 600;
-    font-size: 14px !important;
-    margin-right: 1em;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
     border-bottom: none;
     display: inline-block;
 }
@@ -24466,13 +24536,13 @@ News events landing overrides */
 
 .news-article__press-officer {
     display: block;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .news-article__social-icons-list {
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .news-article__social-icons-list a {
@@ -24481,8 +24551,8 @@ News events landing overrides */
     color: #ffffff;
     background: #1e1e1e;
     border-radius: 50%;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.5rem;
+    height: 2.5rem;
     display: inline-block;
     transition: background-color 0.6s, transform 0.6s;
 }
@@ -24494,7 +24564,7 @@ News events landing overrides */
 
 .news-article__social-icons-list a span {
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     height: 100%;
     width: 100%;
     align-items: center;
@@ -24503,7 +24573,7 @@ News events landing overrides */
 
 .news-article__social-icons-list li {
     display: inline;
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
 }
 
 .news-article__social-icons-list li:last-child {
@@ -24511,7 +24581,7 @@ News events landing overrides */
 }
 
 .news-article__press-body {
-    margin-top: 3em;
+    margin-top: 3rem;
 }
 
 .related-courses-list h2,
@@ -24522,13 +24592,13 @@ News events landing overrides */
 @media (min-width: 901px) {
     .related-courses-section,
     .related-research-papers-section {
-        margin-right: 5em;
-        margin-left: 5em;
+        margin-right: 5rem;
+        margin-left: 5rem;
     }
 }
 
 .related-stories-section {
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 .related-stories-section .grid, .related-stories-section .grid--tencol, .related-stories-section .grid--side-by-side, .related-stories-section .grid--thirds--small, .related-stories-section .banner__standfirst__grid, .related-stories-section .banner__freehtml > div > div, .related-stories-section .cass-knowledge-listing__grid {
@@ -24536,7 +24606,7 @@ News events landing overrides */
 }
 
 .related-stories-section h2 {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 499px) {
@@ -24580,11 +24650,11 @@ News events landing overrides */
 }
 
 .news__image-credit {
-    bottom: 0.5em;
-    right: 0.5em;
+    bottom: 0.5rem;
+    right: 0.5rem;
     position: absolute;
     color: #ffffff;
-    padding: 0.5em;
+    padding: 0.5rem;
     background: rgba(30, 30, 30, 0.8);
     display: flex;
     align-items: center;
@@ -24592,17 +24662,17 @@ News events landing overrides */
 
 @media (min-width: 901px) {
     .news__image-credit {
-        bottom: 5em;
-        right: 1em;
+        bottom: 5rem;
+        right: 1rem;
     }
 }
 
 .image-credit__text {
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
 }
 
 .image-credit__text i {
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .image-credit__text a {
@@ -24683,11 +24753,11 @@ News events landing overrides */
 }
 
 .container__more-news i {
-    margin-left: 1em;
+    margin-left: 1rem;
 }
 
 .feature-news__card--landscape {
-    margin: 0 0.5em 2em 0.5em;
+    margin: 0 0.5rem 2rem 0.5rem;
     position: relative;
     border: 1px solid #d8d8d8;
 }
@@ -24695,14 +24765,14 @@ News events landing overrides */
 @media (min-width: 1201px) {
     .feature-news__card--landscape {
         width: 40%;
-        margin: 0 2em 2em 0;
+        margin: 0 2rem 2rem 0;
         border: none;
     }
 }
 
 .feature-news__card--landscape .feature-news__card__body {
     background-color: #fff;
-    padding: 2em;
+    padding: 2rem;
 }
 
 @media (min-width: 501px) {
@@ -24722,36 +24792,36 @@ News events landing overrides */
 }
 
 .feature-news__card--landscape .feature-news__card__body__title a {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-weight: 600;
     border-bottom: none;
     display: block;
     transition: none;
     background: none;
     color: #666666;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     text-decoration: underline;
 }
 
 @media (min-width: 1441px) {
     .feature-news__card--landscape .feature-news__card__body__title a {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
 .feature-news__card--landscape .feature-news__topic {
     color: #666666;
     font-weight: 600;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .feature-news__card--landscape .feature-news__card__body__published {
     color: #666666;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.6rem;
 }
 
 .feature-news__card--landscape .item__date {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .container__landscape-cards {
@@ -24850,19 +24920,19 @@ a.anchor--actuarial-science:hover:after {
 }
 
 @media (min-width: 1441px) {
-    .landscape-knowledge-cards .cass-knowledge-listing__item img {
+    .landscape-knowledge-cards .cass-knowledge-listing__itrem img {
         width: 55%;
     }
 }
 
 @media (min-width: 1441px) {
-    .landscape-knowledge-cards .cass-knowledge-listing__item__text {
+    .landscape-knowledge-cards .cass-knowledge-listing__itrem__text {
         width: 70%;
     }
 }
 
 .knowledge-article__link-container {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
 }
 
 .cass-knowledge .news-article__article-meta-data {
@@ -24870,9 +24940,9 @@ a.anchor--actuarial-science:hover:after {
 }
 
 .cass-knowledge .cass-knowledge-attachment {
-    padding: 1.5em;
-    border: 0.25em solid #d92231;
-    margin-bottom: 3em;
+    padding: 1.5rem;
+    border: 0.25rem solid #d92231;
+    margin-bottom: 3rem;
 }
 
 .cass-knowledge .cass-knowledge-attachment h2 {
@@ -24881,12 +24951,12 @@ a.anchor--actuarial-science:hover:after {
 
 .cass-knowledge .cass-knowledge-attachment .icon {
     float: left;
-    margin-top: 0.25em;
-    margin-right: 1em;
+    margin-top: 0.25rem;
+    margin-right: 1rem;
 }
 
 .cass-knowledge-author__title {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
     font-weight: 600;
     display: block;
 }
@@ -24901,11 +24971,11 @@ a.anchor--actuarial-science:hover:after {
 
 .cass-knowledge-author li {
     list-style-type: disc;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.2rem;
 }
 
 .knowledge-article__author ul {
-    margin-left: 2em;
+    margin-left: 2rem;
 }
 
 .related-research-papers-section .related-research-paper {
@@ -24915,6 +24985,10 @@ a.anchor--actuarial-science:hover:after {
 
 .news-navigation {
     display: none;
+}
+
+.news-article__press-body blockquote:before {
+    background-color: #d92231;
 }
 
 .anchor-demo-list li {
