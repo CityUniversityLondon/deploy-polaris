@@ -22285,6 +22285,12 @@ blockquote .reference {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 650px) {
+    .cass-events .cass-events__query {
+        margin-bottom: 1rem;
+    }
+}
+
 .cass-events .cass-events__query__header {
     font-size: 1.44rem;
 }
@@ -22294,6 +22300,12 @@ blockquote .reference {
     width: 100%;
     position: relative;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 650px) {
+    .cass-events .cass-events__query .query-box {
+        margin-bottom: 1rem;
+    }
 }
 
 .cass-events .cass-events__query #query-box__query {
@@ -22323,6 +22335,12 @@ blockquote .reference {
     position: absolute;
     right: 0;
     padding: 0.5rem 1rem;
+}
+
+@media (max-width: 500px) {
+    .cass-events .cass-events__query__filter h2 {
+        display: none;
+    }
 }
 
 .cass-events .icon-search:before {
@@ -22782,9 +22800,6 @@ input:checked + .cass-events .calendar__radio__button:before {
 
 .cass-events .calendar__days__day--other-month {
     display: none;
-    /* @include breakup-breakpoint('medium') {
-            display: block;
-        } */
 }
 
 .cass-events .calendar__days__day--other-month a .calendar__date {
@@ -22838,6 +22853,12 @@ input:checked + .cass-events .calendar__radio__button:before {
     margin-bottom: 3rem;
 }
 
+@media (max-width: 500px) {
+    .cass-events .calendar__key__wrap {
+        margin-bottom: 1rem;
+    }
+}
+
 .cass-events .calendar__key__wrap {
     position: relative;
 }
@@ -22856,12 +22877,17 @@ input:checked + .cass-events .calendar__radio__button:before {
     border-color: #666666 transparent transparent;
 }
 
+.cass-events .calendar__key .filter-box__open {
+    display: none;
+}
+
 .cass-events .calendar__key .filter-box__float {
     overflow: visible;
 }
 
 .cass-events .calendar__key .filter-box__inner {
     padding: 0;
+    border: none;
 }
 
 .cass-events .calendar__key select {
