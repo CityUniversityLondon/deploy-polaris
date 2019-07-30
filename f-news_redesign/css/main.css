@@ -23796,6 +23796,15 @@ News events landing overrides */
     transform: inherit;
 }
 
+.cass-news-search__footer .connect-social__card {
+    margin-top: 0;
+}
+
+.cass-news-search__footer .connect-social__card--fb,
+.cass-news-search__footer .connect-social__card--insta {
+    display: none;
+}
+
 .news-events-landing .featured-news, .news-events-landing .row-fluid {
     width: 100%;
 }
