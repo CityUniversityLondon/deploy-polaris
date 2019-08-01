@@ -25221,11 +25221,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  console.log('lllll');
   var slider = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
   var viewportWidth = jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).width();
   var slideCount = slider.find('li').length;
-  console.log(slideCount);
   var slides = slider.find('li');
   var slidesContainer = slider.find('ul');
   var strTouchX;
@@ -25242,23 +25240,23 @@ function launch(el) {
       var slideContainerPosition = parseInt(slidesContainer.css('left'));
       var slideWidth = parseInt(slides.css('width'));
       var animated = slider.find("ul:animated").length;
+      var slideIndicator = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.slider__indicators__indicator--active').index();
 
       if (dir === '-' && slideContainerPosition - slideWidth >= -(slideWidth * (slideCount - 1)) && animated === 0) {
         slidesContainer.animate({
           left: '' + dir + '=' + slideWidth + ''
-        }, 'slow', indicatorPosition(slideContainerPosition - slideWidth, slideWidth));
+        }, 'slow', indicatorPosition(slideIndicator + 1, slideWidth));
       } else if (dir === '+' && slideContainerPosition + slideWidth <= 0 && animated === 0) {
         slidesContainer.animate({
           left: '' + dir + '=' + slideWidth + ''
-        }, 'slow', indicatorPosition(slideContainerPosition + slideWidth, slideWidth));
+        }, 'slow', indicatorPosition(slideIndicator - 1, slideWidth));
       }
     };
 
     // highlights which slide you on
-    var indicatorPosition = function indicatorPosition(value, slideWidth) {
-      var slideInd = value / -slideWidth;
+    var indicatorPosition = function indicatorPosition(value) {
       slider.find('.slider__indicators__indicator').each(function () {
-        if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).index() == slideInd) {
+        if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).index() == value) {
           jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('slider__indicators__indicator--active');
         } else {
           jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).removeClass('slider__indicators__indicator--active');
@@ -25290,9 +25288,19 @@ function launch(el) {
       var slideContainerPosition = slideWidth * slideIndex;
       slidesContainer.animate({
         left: -slideContainerPosition
-      }, 'slow', indicatorPosition(slideContainerPosition, -slideWidth));
+      }, 'slow', indicatorPosition(slideIndex));
     });
     ;
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).on('orientationchange', function () {
+      setTimeout(function () {
+        var slideIndicator = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.slider__indicators__indicator--active').index();
+        var slideWidth = parseInt(slides.css('width'));
+        var slideCorrection = -(slideIndicator * slideWidth);
+        slidesContainer.animate({
+          left: slideCorrection
+        }, 1);
+      }, 200);
+    });
   } // end if 
 
 }

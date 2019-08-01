@@ -22171,7 +22171,7 @@ blockquote .reference {
 }
 
 .cass-events .banner--cutout--none {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .cass-events .cass-events__main__left {
@@ -22227,7 +22227,7 @@ blockquote .reference {
 }
 
 .cass-events .events-listing__heading h2 {
-    padding: 0 15px;
+    padding: 0 1rem;
     display: inline;
 }
 
@@ -22331,7 +22331,7 @@ blockquote .reference {
 .cass-events .cass-events__query button {
     background: #d92231;
     color: #ffffff;
-    height: 45px;
+    height: 100%;
     position: absolute;
     right: 0;
     padding: 0.5rem 1rem;
@@ -22404,23 +22404,13 @@ blockquote .reference {
     outline: 2px dotted #1e1e1e;
 }
 
-.cass-events .footer-meta {
-    margin-top: 2rem;
-}
-
-.cass-events .footer-meta:before {
-    background: #f2f2f2;
-    left: 0;
-    transform: inherit;
-}
-
 .cass-events .date {
     float: left;
     display: inline;
     font-size: small;
     text-align: center;
     background: #fff;
-    margin: 0 10px 0 0;
+    margin: 0 0.625rem 0 0;
     width: 70px;
 }
 
@@ -22483,7 +22473,7 @@ blockquote .reference {
     margin: 0;
     overflow: hidden;
     border-top: 1px solid #ccc;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .cass-events .events-list li:first-child {
@@ -22492,7 +22482,7 @@ blockquote .reference {
 
 .cass-events .events-list .date {
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .cass-events .events-list .event-details h2 {
@@ -22505,7 +22495,7 @@ blockquote .reference {
 .cass-events .events-list .event-details .category,
 .cass-events .events-list .event-details .audience {
     display: inline;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     margin-bottom: 0;
 }
 
@@ -22524,7 +22514,7 @@ blockquote .reference {
 .cass-events .event .event-audience,
 .cass-events .event .event-audience-note {
     display: inline;
-    margin: 0 10px 0 0;
+    margin: 0 0.625rem 0 0;
     color: #666;
 }
 
@@ -22544,10 +22534,6 @@ blockquote .reference {
 .cass-events .calendar {
     width: 100%;
     display: none;
-    /*
-        @include breakup-breakpoint('wide') {
-            display: block;
-        }*/
     display: block;
 }
 
@@ -22561,16 +22547,6 @@ blockquote .reference {
     text-align: center;
     display: flex;
     flex-direction: row;
-    /*
-        @include breakup-breakpoint('wide') {
-            display: block;
-
-            @supports (display: flex) {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }*/
 }
 
 .cass-events .calendar__title__button {
@@ -22834,7 +22810,7 @@ input:checked + .cass-events .calendar__radio__button:before {
     font-family: 'FontAwesome';
     content: '';
     color: #1e1e1e;
-    font-size: 10px;
+    font-size: 0.625rem;
     vertical-align: top;
 }
 
@@ -22920,7 +22896,7 @@ input:checked + .cass-events .calendar__radio__button:before {
 .cass-events .events-listing li {
     display: block;
     background: #ffffff;
-    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 1.5rem 0.187rem rgba(0, 0, 0, 0.15);
 }
 
 .cass-events .events-listing li + li {
@@ -22970,7 +22946,7 @@ input:checked + .cass-events .calendar__radio__button:before {
 
 .cass-events .events-listing h3 {
     display: inline;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
     vertical-align: top;
@@ -23127,7 +23103,7 @@ input:checked + .cass-events .calendar__radio__button:before {
     border-radius: 0;
     background: #ffffff;
     border-color: #d0cfcb;
-    padding-right: 30px;
+    padding-right: 1.8rem;
 }
 
 .cass-events .cass-events__view-month select:hover, .cass-events .cass-events__view-month select:focus, .cass-events .cass-events__view-month select:active {
@@ -23163,12 +23139,12 @@ input:checked + .cass-events .calendar__radio__button:before {
     position: absolute;
     content: '';
     top: 50%;
-    right: 17px;
-    margin: -5px 0 0 -5px;
+    right: 1rem;
+    margin: -0.312rem 0 0 -0.312rem;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7px 4px 0;
+    border-width: 0.437rem 4px 0;
     border-color: #666666 transparent transparent;
 }
 
@@ -23239,6 +23215,16 @@ input:checked + .cass-events .calendar__radio__button:before {
     font-size: 1.5em;
 }
 
+.cass-events-search__footer {
+    margin-top: 2rem;
+}
+
+.cass-events-search__footer:before {
+    background: #f2f2f2;
+    left: 0;
+    transform: inherit;
+}
+
 /* start 
 News events landing overrides */
 .cass-news-search__wrap .cass-news-search {
@@ -23277,8 +23263,8 @@ News events landing overrides */
 
 .cass-news-search .news-finder__query button {
     background: #d92231;
-    color: white;
-    height: 45px;
+    color: #ffffff;
+    height: 100%;
     position: absolute;
     right: 0;
     padding: 0.5rem 1rem;
@@ -23510,7 +23496,7 @@ News events landing overrides */
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 100% 1rem;
-    padding: 0 15px;
+    padding: 0 1rem;
 }
 
 @media (max-width: 649px) {
@@ -23600,7 +23586,7 @@ News events landing overrides */
 }
 
 .cass-news-search .news-listing__heading h2 {
-    padding: 0 15px;
+    padding: 0 1rem;
     display: inline;
 }
 
@@ -23608,7 +23594,7 @@ News events landing overrides */
     padding: 0.22rem 0.5rem;
     border-bottom-width: 0;
     line-height: 1;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #ffffff;
     margin-left: 1rem;
     display: inline;
@@ -23726,7 +23712,7 @@ News events landing overrides */
 }
 
 .cass-news-search .image-credit .image-credit__button:focus, .cass-news-search .image-credit .image-credit__button:active {
-    border: 1px solid blue;
+    border: 1px solid #1e1e1e;
 }
 
 .cass-news-search .image-credit .image-credit__button .icon-info-sign {
@@ -23817,44 +23803,13 @@ News events landing overrides */
     display: block;
 }
 
-.cass-news-search .footer-meta {
-    margin-top: 2rem;
-}
-
-.cass-news-search .footer-meta:before {
+.cass-news-search__footer,
+.cass-knowledge-search__footer {
     background: #f2f2f2;
-    left: 0;
-    transform: inherit;
 }
 
-.cass-news-search__footer .grid, .cass-news-search__footer .grid--tencol, .cass-news-search__footer .grid--side-by-side, .cass-news-search__footer .grid--thirds--small, .cass-news-search__footer .banner__standfirst__grid, .cass-news-search__footer .banner__freehtml > div > div, .cass-news-search__footer .cass-knowledge-listing__grid {
-    justify-content: center;
-}
-
-.cass-news-search__footer .connect-social__card,
-.cass-knowledge-search__footer .connect-social__card {
-    margin: 0 1rem;
-}
-
-.cass-news-search__footer .connect-social__card:nth-child(1),
-.cass-news-search__footer .connect-social__card:nth-child(3),
-.cass-news-search__footer .connect-social__card:nth-child(4),
-.cass-knowledge-search__footer .connect-social__card:nth-child(1),
-.cass-knowledge-search__footer .connect-social__card:nth-child(3),
-.cass-knowledge-search__footer .connect-social__card:nth-child(4) {
-    display: none;
-}
-
-@media (min-width: 651px) {
-    .cass-news-search__footer .footer-widget,
-    .cass-news-search__footer .connect-social__card,
-    .cass-knowledge-search__footer .footer-widget,
-    .cass-knowledge-search__footer .connect-social__card {
-        width: 30%;
-    }
-}
-
-.news-events-landing .featured-news, .news-events-landing .row-fluid {
+.news-events-landing .featured-news,
+.news-events-landing .row-fluid {
     width: 100%;
 }
 
@@ -23903,10 +23858,10 @@ News events landing overrides */
 }
 
 .news-events-landing .featured-item__content {
-    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 1.5rem 0.187rem rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
     position: relative;
-    top: -40px;
+    top: -2.5rem;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -24047,7 +24002,7 @@ News events landing overrides */
 }
 
 .news-events-landing .promo:before {
-    content: "";
+    content: '';
     width: 100%;
     position: absolute;
     height: 60%;
@@ -24136,7 +24091,7 @@ News events landing overrides */
 }
 
 .news-events-landing .promo__twitter-tag .fa-twitter {
-    font-family: "fontAwesome";
+    font-family: 'fontAwesome';
 }
 
 .news-events-landing .promo__twitter-tag span {
@@ -24147,10 +24102,6 @@ News events landing overrides */
     background: #f2f2f2;
     left: 0;
     transform: inherit;
-}
-
-.timeline-Tweet-text, .timeline-Tweet {
-    background: green;
 }
 
 .cass-knowledge-search {
@@ -24370,6 +24321,11 @@ News events landing overrides */
 .cass-knowledge-search .news-card-topic:hover:after {
     transform: translateY(0px) translateX(0px) !important;
     opacity: 1;
+}
+
+.mailing-list-card__content .cta {
+    width: auto;
+    padding: 1rem;
 }
 
 .news-article blockquote:before {
