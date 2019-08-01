@@ -24187,11 +24187,6 @@ News events landing overrides */
     right: inherit;
 }
 
-.cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__research,
-.cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text > a {
-    margin-bottom: 1rem;
-}
-
 @media (max-width: 649px) {
     .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__text {
         position: relative;
@@ -24942,7 +24937,7 @@ a.anchor--actuarial-science:hover:after {
 
 @media (min-width: 1441px) {
     .landscape-knowledge-cards .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -25016,6 +25011,15 @@ a.anchor--actuarial-science:hover:after {
 
 .news-article__press-body blockquote:before {
     background-color: #d92231;
+}
+
+.related-stories-section h2 {
+    margin-bottom: 3.5rem;
+}
+
+.cass-knowledge-listing__item__research,
+.cass-knowledge-listing__item__text > a {
+    margin-bottom: 1rem;
 }
 
 .anchor-demo-list li {
