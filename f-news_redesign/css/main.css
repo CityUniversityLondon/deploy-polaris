@@ -24936,18 +24936,24 @@ a.anchor--actuarial-science:hover:after {
 
 @media (min-width: 1201px) {
     .landscape-knowledge-cards .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+        margin-bottom: 8rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .landscape-knowledge-cards .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
         margin-bottom: 4rem;
     }
 }
 
 @media (min-width: 1441px) {
-    .landscape-knowledge-cards .cass-knowledge-listing__itrem img {
+    .landscape-knowledge-cards .cass-knowledge-listing__item img {
         width: 55%;
     }
 }
 
 @media (min-width: 1441px) {
-    .landscape-knowledge-cards .cass-knowledge-listing__itrem__text {
+    .landscape-knowledge-cards .cass-knowledge-listing__item__text {
         width: 70%;
     }
 }
