@@ -24511,7 +24511,7 @@ News events landing overrides */
 .news-article__anchor {
     position: relative;
     overflow: visible !important;
-    padding: .7rem .6rem .6rem .6rem;
+    padding: .6rem;
     margin: 0.4375rem 1rem 0 0;
     color: #646464;
     font-weight: 600;
