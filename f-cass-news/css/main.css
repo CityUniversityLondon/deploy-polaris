@@ -23811,6 +23811,11 @@ News events landing overrides */
     width: 100%;
 }
 
+.news-events-landing h2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 .news-events-landing .news-articles-list {
     width: 100%;
 }
