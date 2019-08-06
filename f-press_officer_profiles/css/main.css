@@ -25238,10 +25238,12 @@ div.widget-123_test_ {
     margin-bottom: 1rem;
 }
 
-.person-page {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 2rem;
+@media (min-width: 651px) {
+    .person-page {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 2rem;
+    }
 }
 
 .person-page__social {
@@ -25258,4 +25260,10 @@ div.widget-123_test_ {
 
 .person-page__social li {
     margin-bottom: 1rem;
+}
+
+@media (max-width: 650px) {
+    .person-page__description {
+        margin-top: 1rem;
+    }
 }
