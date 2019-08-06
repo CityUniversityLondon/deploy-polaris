@@ -21498,15 +21498,15 @@ table tbody > tr > td:hover {
 .student-profiles-search .student-profiles-search__top .student-profiles .student-profiles__profile {
     display: flex;
     flex-direction: row;
-    float: left;
-    min-height: 185px;
-    position: relative;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    width: 47%;
     background-color: #fafafa;
     box-shadow: 0 8px 16px 0 rgba(30, 30, 30, 0.2);
     -webkit-box-shadow: 0 8px 16px 0 rgba(30, 30, 30, 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    float: left;
+    min-height: 185px;
+    position: relative;
+    width: 47%;
 }
 
 .student-profiles-search .student-profiles-search__top .student-profiles .student-profiles__profile:nth-child(even) {
@@ -25217,12 +25217,13 @@ div.widget-123_test_ {
 
 .person-profile {
     display: flex;
-    padding: 1rem;
-    margin: 0 0 1.5rem 0;
+    flex-direction: row;
     background-color: #fafafa;
     box-shadow: 0 8px 16px 0 rgba(30, 30, 30, 0.2);
     -webkit-box-shadow: 0 8px 16px 0 rgba(30, 30, 30, 0.2);
-    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin: 0 0 1.5rem 0;
 }
 
 .person-profile__img img {
@@ -25230,7 +25231,7 @@ div.widget-123_test_ {
 }
 
 .person-profile__details {
-    padding-left: 1rem;
+    padding-left: .625rem;
 }
 
 .person-profile__title,
