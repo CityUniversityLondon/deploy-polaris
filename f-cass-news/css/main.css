@@ -23948,29 +23948,24 @@ News events landing overrides */
 }
 
 .news-events-landing .featured-events__container__cta__wrap {
-    display: flex;
-    flex-direction: row-reverse;
+    display: block;
 }
 
-@supports (-ms-accelerator: true) {
+@supports (display: flex) {
     .news-events-landing .featured-events__container__cta__wrap {
-        display: block;
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
 
 .news-events-landing .featured-events__container__cta {
+    float: right;
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
     color: #666666;
     display: inline-block;
     overflow-x: hidden;
-}
-
-@supports (-ms-accelerator: true) {
-    .news-events-landing .featured-events__container__cta {
-        float: right;
-    }
 }
 
 .news-events-landing .featured-events__container__cta:hover, .news-events-landing .featured-events__container__cta:focus, .news-events-landing .featured-events__container__cta:active {
