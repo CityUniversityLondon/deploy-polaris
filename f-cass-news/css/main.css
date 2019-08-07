@@ -23477,6 +23477,7 @@ News events landing overrides */
 .cass-news-search .news-heading__wrap {
     display: flex;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 @media (max-width: 649px) {
