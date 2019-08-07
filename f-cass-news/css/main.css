@@ -23896,6 +23896,7 @@ News events landing overrides */
 
 .news-events-landing .featured-item__content__details__wrap {
     padding: 1rem;
+    width: 80%;
 }
 
 .news-events-landing .featured-item__content__details__time {
