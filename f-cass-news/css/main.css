@@ -23950,9 +23950,11 @@ News events landing overrides */
 .news-events-landing .featured-events__container__cta__wrap {
     display: flex;
     flex-direction: row-reverse;
+    -ms-display: block;
 }
 
 .news-events-landing .featured-events__container__cta {
+    -ms-float: right;
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
