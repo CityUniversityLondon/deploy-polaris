@@ -23957,6 +23957,7 @@ News events landing overrides */
 
 .news-events-landing .featured-events__container__cta__wrap {
     display: block;
+    margin-bottom: 2rem;
 }
 
 @supports (display: flex) {
@@ -24120,6 +24121,14 @@ News events landing overrides */
     background: #f2f2f2;
     left: 0;
     transform: inherit;
+}
+
+.cass-news-events-search__footer {
+    background: #f2f2f2;
+}
+
+.cass-news-events-search__footer grid {
+    justify-content: center;
 }
 
 .cass-knowledge-search {
