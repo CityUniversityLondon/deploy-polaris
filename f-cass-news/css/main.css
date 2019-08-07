@@ -23505,10 +23505,18 @@ News events landing overrides */
 }
 
 .cass-news-search .news-heading-toggle-link__wrap {
-    display: flex;
+    display: block;
+}
+
+@supports (display: flex) {
+    .cass-news-search .news-heading-toggle-link__wrap {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .cass-news-search .news-heading-toggle-link {
+    float: right;
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
