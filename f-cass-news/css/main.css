@@ -24182,6 +24182,8 @@ News events landing overrides */
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
+    display: inline-block;
+    display: inline;
 }
 
 .cass-knowledge-search .underline-transition__title:hover, .cass-knowledge-search .underline-transition__title:focus, .cass-knowledge-search .underline-transition__title:active {
@@ -24203,6 +24205,18 @@ News events landing overrides */
 .cass-knowledge-search .underline-transition__title:hover:after {
     transform: none;
     opacity: 0;
+}
+
+.cass-knowledge-search .underline-transition__title:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-knowledge-search .underline-transition__title:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-knowledge-search .underline-transition__title:after {
+    display: none;
 }
 
 .cass-knowledge-search .news-card .image-credit {
@@ -24754,7 +24768,15 @@ News events landing overrides */
 }
 
 .container__more-news {
-    justify-content: flex-end;
+    display: block;
+}
+
+@supports (display: flex) {
+    .container__more-news {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
 }
 
 .container__more-news a {
@@ -24764,6 +24786,7 @@ News events landing overrides */
     color: #666666;
     display: inline-block;
     overflow-x: hidden;
+    float: right;
 }
 
 .container__more-news a:hover, .container__more-news a:focus, .container__more-news a:active {
