@@ -14711,6 +14711,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
+    display: inline-block;
+    display: inline;
 }
 
 .feature-news__card a:hover, .feature-news__card a:focus, .feature-news__card a:active {
@@ -14732,6 +14734,14 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .feature-news__card a:hover:after {
     transform: none;
     opacity: 0;
+}
+
+.feature-news__card a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.feature-news__card a:active {
+    outline: 2px dotted #1e1e1e;
 }
 
 .feature-news__card--latest {
