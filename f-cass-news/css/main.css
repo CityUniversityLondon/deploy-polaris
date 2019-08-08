@@ -18515,6 +18515,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     position: relative;
     display: inline-block;
     vertical-align: top;
+    float: none !important;
 }
 
 @supports (display: flex) {
