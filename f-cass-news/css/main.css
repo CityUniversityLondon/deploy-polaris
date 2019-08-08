@@ -18513,6 +18513,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
 
 @supports (display: flex) {
