@@ -18507,6 +18507,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (min-width: 1441px) {
+    .cass-knowledge-listing .container__more-news {
+        margin-top: 1rem;
+    }
+}
+
 .cass-knowledge-listing__grid > div {
     /** TODO: Is min height necessary? **/
     float: left;
@@ -18651,6 +18657,21 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .cass-knowledge-listing__link .fa, .cass-knowledge-listing__link .url-slide--right .url-slide__icon, .url-slide--right .cass-knowledge-listing__link .url-slide__icon, .cass-knowledge-listing__link .media-block .video-preview__button:before, .media-block .cass-knowledge-listing__link .video-preview__button:before, .cass-knowledge-listing__link .accordion__content__heading-anchor__icon, .cass-knowledge-listing__link .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon, .accordion.accordion--simple .accordion__content__heading-anchor .cass-knowledge-listing__link .accordion__content__heading-anchor__icon, .cass-knowledge-listing__link .js .tabs__content__heading-anchor__icon, .js .cass-knowledge-listing__link .tabs__content__heading-anchor__icon, .cass-knowledge-listing__link .js .accordion-tabs__content__heading-anchor__icon, .js .cass-knowledge-listing__link .accordion-tabs__content__heading-anchor__icon, .cass-knowledge-listing__link .header-toggle--menu .header-toggle__icon, .header-toggle--menu .cass-knowledge-listing__link .header-toggle__icon, .cass-knowledge-listing__link .header-toggle--search .header-toggle__icon, .header-toggle--search .cass-knowledge-listing__link .header-toggle__icon, .cass-knowledge-listing__link .popup-def-list-group__prevnext__prev .popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .cass-knowledge-listing__link .popup-def-list-group__prevnext__prev__icon, .cass-knowledge-listing__link .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .cass-knowledge-listing__link .popup-def-list-group__prevnext__next__icon, .cass-knowledge-listing__link .dialog__box__heading__close__icon, .cass-knowledge-listing__link .image-banner span, .image-banner .cass-knowledge-listing__link span, .cass-knowledge-listing__link .video-banner__play span, .video-banner__play .cass-knowledge-listing__link span, .cass-knowledge-listing__link .mba-popup__form__close__icon {
     margin-left: 2rem;
+}
+
+@media (min-width: 1201px) {
+    .related-stories-section .landscape-knowledge-cards .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+        min-height: 25rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .related-stories-section .landscape-knowledge-cards .cass-knowledge-listing__grid.cass-knowledge-listing__grid--2 > div {
+        padding-bottom: 2%;
+        overflow: hidden;
+        min-height: auto;
+    }
 }
 
 .cass-knowledge-listing__item {
@@ -24772,6 +24793,7 @@ News events landing overrides */
 
 .container__more-news {
     display: block;
+    margin-top: 0.5rem;
 }
 
 @supports (display: flex) {
