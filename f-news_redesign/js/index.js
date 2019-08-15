@@ -25221,44 +25221,43 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  console.log('lllll');
   var slider = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
   var viewportWidth = jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).width();
   var slideCount = slider.find('li').length;
-  console.log(slideCount);
   var slides = slider.find('li');
   var slidesContainer = slider.find('ul');
   var strTouchX;
   var endTouchX;
 
   if (viewportWidth <= 900 && slideCount > 1) {
-    // detects slide direction. 5px movement deadzone has been allowed for swipe sensitivity. Slider will only react to swipes bigger than 5px in length 
+    // detects slide direction. 5px movement deadzone has been allowed for swipe sensitivity. Slider will only react to swipes bigger than 5px in length
     var slideDirection = function slideDirection(endTouchX) {
       endTouchX > strTouchX + 5 ? slide('+') : endTouchX < strTouchX - 5 ? slide('-') : null;
-    };
+    }; // handels slide
 
-    // handels slide
+
     var slide = function slide(dir) {
       var slideContainerPosition = parseInt(slidesContainer.css('left'));
       var slideWidth = parseInt(slides.css('width'));
-      var animated = slider.find("ul:animated").length;
+      var animated = slider.find('ul:animated').length;
+      var slideIndicator = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.slider__indicators__indicator--active').index();
 
       if (dir === '-' && slideContainerPosition - slideWidth >= -(slideWidth * (slideCount - 1)) && animated === 0) {
         slidesContainer.animate({
           left: '' + dir + '=' + slideWidth + ''
-        }, 'slow', indicatorPosition(slideContainerPosition - slideWidth, slideWidth));
+        }, 'slow', indicatorPosition(slideIndicator + 1, slideWidth));
       } else if (dir === '+' && slideContainerPosition + slideWidth <= 0 && animated === 0) {
         slidesContainer.animate({
           left: '' + dir + '=' + slideWidth + ''
-        }, 'slow', indicatorPosition(slideContainerPosition + slideWidth, slideWidth));
+        }, 'slow', indicatorPosition(slideIndicator - 1, slideWidth));
       }
-    };
+    }; // slide index indicators
+
 
     // highlights which slide you on
-    var indicatorPosition = function indicatorPosition(value, slideWidth) {
-      var slideInd = value / -slideWidth;
+    var indicatorPosition = function indicatorPosition(value) {
       slider.find('.slider__indicators__indicator').each(function () {
-        if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).index() == slideInd) {
+        if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).index() == value) {
           jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('slider__indicators__indicator--active');
         } else {
           jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).removeClass('slider__indicators__indicator--active');
@@ -25281,19 +25280,25 @@ function launch(el) {
       endTouchX = f.changedTouches[0].clientX;
       slideDirection(endTouchX);
     });
-    ;
-    ; // slide index indicators
-
     slider.find('.slider__indicators__indicator').on('click', function () {
       var slideWidth = parseInt(slides.css('width'));
       var slideIndex = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).index();
       var slideContainerPosition = slideWidth * slideIndex;
       slidesContainer.animate({
         left: -slideContainerPosition
-      }, 'slow', indicatorPosition(slideContainerPosition, -slideWidth));
+      }, 'slow', indicatorPosition(slideIndex));
     });
-    ;
-  } // end if 
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).on('orientationchange', function () {
+      setTimeout(function () {
+        var slideIndicator = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.slider__indicators__indicator--active').index();
+        var slideWidth = parseInt(slides.css('width'));
+        var slideCorrection = -(slideIndicator * slideWidth);
+        slidesContainer.animate({
+          left: slideCorrection
+        }, 1);
+      }, 200);
+    });
+  } // end if
 
 }
 
