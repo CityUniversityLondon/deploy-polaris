@@ -3630,8 +3630,7 @@ html {
     font-style: normal;
     font-weight: 400;
     line-height: 1.375;
-    -webkit-font-feature-settings: 'lnum' 1;
-            font-feature-settings: 'lnum' 1;
+    font-feature-settings: 'lnum' 1;
 }
 
 /**
@@ -23092,7 +23091,6 @@ input:checked + .cass-events .calendar__radio__button:before {
 
 .cass-events .events-listing .events-listing__audience {
     display: inline-block;
-    padding: 0.5rem;
     margin-right: 0.5rem;
     margin: auto auto 0;
     color: #00444d;
@@ -24411,8 +24409,6 @@ News events landing overrides */
 }
 
 .cass-knowledge-search .news-card-topic {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
     color: #555555;
     margin-top: 0.5rem;
     display: inline-block;
