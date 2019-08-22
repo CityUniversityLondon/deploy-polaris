@@ -22313,52 +22313,6 @@ blockquote .reference {
     display: inline;
 }
 
-.cass-events .events-listing h3 {
-    font-weight: 600;
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-    display: inline-block;
-    color: #666666;
-    display: inline;
-    overflow-x: hidden;
-    text-decoration: none;
-    background-image: linear-gradient(#1e1e1e, #1e1e1e);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-.cass-events .events-listing h3:hover, .cass-events .events-listing h3:focus, .cass-events .events-listing h3:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.cass-events .events-listing h3:focus {
-    outline: 3px solid #1e1e1e;
-}
-
-.cass-events .events-listing h3:active {
-    outline: 2px dotted #1e1e1e;
-}
-
-.cass-events .events-listing h3:hover, .cass-events .events-listing h3 :focus {
-    background-size: 100% 2px;
-}
-
-.cass-events .events-listing h3:hover {
-    /* 
-            remove any other transition 
-        */
-}
-
-.cass-events .events-listing h3:hover:after {
-    transform: none;
-    opacity: 0;
-}
-
 .cass-events #managed-form-container {
     width: 100%;
 }
@@ -22985,29 +22939,13 @@ input:checked + .cass-events .calendar__radio__button:before {
 }
 
 .cass-events .events-listing li {
-    display: block;
+    display: flex;
     background: #ffffff;
     box-shadow: 0 0 1.5rem 0.187rem rgba(0, 0, 0, 0.15);
 }
 
 .cass-events .events-listing li + li {
     margin-top: 2rem;
-}
-
-.cass-events .events-listing a {
-    color: inherit;
-    min-height: 4.5em;
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-}
-
-.cass-events .events-listing a:link {
-    border-bottom-width: 0;
-}
-
-.cass-events .events-listing a:hover, .cass-events .events-listing a:focus, .cass-events .events-listing a:active {
-    background-color: transparent;
 }
 
 .cass-events .events-listing .events-time__wrap {
@@ -23033,14 +22971,6 @@ input:checked + .cass-events .calendar__radio__button:before {
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1.375;
-}
-
-.cass-events .events-listing h3 {
-    display: inline;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    vertical-align: top;
 }
 
 .cass-events .events-listing .event-listing__details {
@@ -23076,10 +23006,73 @@ input:checked + .cass-events .calendar__radio__button:before {
 
 .cass-events .events-listing .events-listing__title {
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    vertical-align: top;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.cass-events .events-listing .events-listing__title a {
+    color: inherit;
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    display: inline-block;
+    color: #666666;
+    display: inline;
+    overflow-x: hidden;
+    text-decoration: none;
+    background-image: linear-gradient(#1e1e1e, #1e1e1e);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    text-decoration: none;
+}
+
+.cass-events .events-listing .events-listing__title a:hover, .cass-events .events-listing .events-listing__title a:focus, .cass-events .events-listing .events-listing__title a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.cass-events .events-listing .events-listing__title a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-events .events-listing .events-listing__title a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-events .events-listing .events-listing__title a:hover, .cass-events .events-listing .events-listing__title a :focus {
+    background-size: 100% 2px;
+}
+
+.cass-events .events-listing .events-listing__title a:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.cass-events .events-listing .events-listing__title a:hover:after {
+    transform: none;
+    opacity: 0;
+}
+
+.cass-events .events-listing .events-listing__title a:link {
+    border-bottom-width: 0;
+}
+
+.cass-events .events-listing .events-listing__title a:hover, .cass-events .events-listing .events-listing__title a:focus, .cass-events .events-listing .events-listing__title a:active {
+    background-color: transparent;
 }
 
 .cass-events .events-listing .events-listing__metadata {
     margin-bottom: 0.5rem;
+    color: #666666;
+    font-size: 0.875rem;
+    font-weight: 600;
 }
 
 .cass-events .events-listing .events-listing__metadata:before {
@@ -23978,6 +23971,9 @@ News events landing overrides */
 
 .news-events-landing .featured-item__content__details__time {
     margin-bottom: 0.5rem;
+    color: #666666;
+    font-size: 0.875rem;
+    font-weight: 600;
 }
 
 .news-events-landing .featured-item__content__details__time:before {
@@ -23991,6 +23987,53 @@ News events landing overrides */
     width: 100%;
     padding: 0;
     margin-bottom: 0.5rem;
+}
+
+.news-events-landing .featured-item__content__details__title a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    display: inline-block;
+    color: #666666;
+    display: inline;
+    overflow-x: hidden;
+    text-decoration: none;
+    background-image: linear-gradient(#1e1e1e, #1e1e1e);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.news-events-landing .featured-item__content__details__title a:hover, .news-events-landing .featured-item__content__details__title a:focus, .news-events-landing .featured-item__content__details__title a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.news-events-landing .featured-item__content__details__title a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.news-events-landing .featured-item__content__details__title a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-events-landing .featured-item__content__details__title a:hover, .news-events-landing .featured-item__content__details__title a :focus {
+    background-size: 100% 2px;
+}
+
+.news-events-landing .featured-item__content__details__title a:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.news-events-landing .featured-item__content__details__title a:hover:after {
+    transform: none;
+    opacity: 0;
 }
 
 .news-events-landing .featured-item__content__details__topic .news-article__anchor {
