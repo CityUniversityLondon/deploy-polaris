@@ -24445,7 +24445,7 @@ News events landing overrides */
     width: 60%;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1201px) {
     .news-article__related-course .related-course__title {
         width: 65%;
     }
@@ -25053,11 +25053,34 @@ News events landing overrides */
     text-align: left;
 }
 
+.related-courses-section,
+.related-research-papers-section {
+    background-color: transparent;
+}
+
 @media (min-width: 901px) {
     .related-courses-section,
     .related-research-papers-section {
-        margin-right: 5rem;
-        margin-left: 5rem;
+        position: relative;
+    }
+    .related-courses-section:after,
+    .related-research-papers-section:after {
+        content: '';
+        background-color: #f2f2f2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 9%;
+        width: 82%;
+        height: 100%;
+        z-index: 1;
+    }
+    .related-courses-section .container, .related-courses-section .banner__container, .related-courses-section .banner__standfirst, .related-courses-section .banner__freehtml > div,
+    .related-research-papers-section .container,
+    .related-research-papers-section .banner__container,
+    .related-research-papers-section .banner__standfirst,
+    .related-research-papers-section .banner__freehtml > div {
+        z-index: 2;
     }
 }
 
@@ -25402,6 +25425,7 @@ a.anchor--actuarial-science:hover:after {
 @media (min-width: 1441px) {
     .landscape-knowledge-cards .cass-knowledge-listing__item img {
         width: 55%;
+        max-width: 395px;
     }
 }
 
@@ -25409,6 +25433,55 @@ a.anchor--actuarial-science:hover:after {
     .landscape-knowledge-cards .cass-knowledge-listing__item__text {
         width: 70%;
     }
+}
+
+.landscape-knowledge-cards .cass-knowledge-listing__item__text a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    display: inline-block;
+    color: #666666;
+    display: inline;
+    overflow-x: hidden;
+    text-decoration: none;
+    background-image: linear-gradient(#1e1e1e, #1e1e1e);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.landscape-knowledge-cards .cass-knowledge-listing__item__text a:hover, .landscape-knowledge-cards .cass-knowledge-listing__item__text a:focus, .landscape-knowledge-cards .cass-knowledge-listing__item__text a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.landscape-knowledge-cards .cass-knowledge-listing__item__text a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.landscape-knowledge-cards .cass-knowledge-listing__item__text a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.landscape-knowledge-cards .cass-knowledge-listing__item__text a:hover, .landscape-knowledge-cards .cass-knowledge-listing__item__text a :focus {
+    background-size: 100% 2px;
+}
+
+.landscape-knowledge-cards .cass-knowledge-listing__item__text a:hover {
+    /* 
+            remove any other transition 
+        */
+}
+
+.landscape-knowledge-cards .cass-knowledge-listing__item__text a:hover:after {
+    transform: none;
+    opacity: 0;
+}
+
+.landscape-knowledge-cards div.item__date {
+    margin: 1.5rem 0;
 }
 
 .knowledge-article__link-container {
