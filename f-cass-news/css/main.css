@@ -15343,6 +15343,27 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
+.feature-events__cards__wrapper .feature-events__cards__content {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1199px) {
+    .feature-events__cards__wrapper .feature-events__cards__content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 649px) {
+    .feature-events__cards__wrapper .feature-events__cards__content {
+        width: 100%;
+    }
+}
+
+.feature-events__cards__wrapper .featured-item__content {
+    width: 100%;
+    top: 0;
+}
+
 .feature-events__cards__content {
     /** TODO: Is min height necessary? **/
     float: left;
