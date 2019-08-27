@@ -25240,7 +25240,7 @@ function launch(el) {
       var slideContainerPosition = parseInt(slidesContainer.css('left'));
       var slideWidth = parseInt(slides.css('width'));
       var animated = slider.find('ul:animated').length;
-      var slideIndicator = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.slider__indicators__indicator--active').index();
+      var slideIndicator = slider.find('.slider__indicators__indicator--active').index();
 
       if (dir === '-' && slideContainerPosition - slideWidth >= -(slideWidth * (slideCount - 1)) && animated === 0) {
         slidesContainer.animate({
