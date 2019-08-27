@@ -18844,364 +18844,299 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #666666;
 }
 
-.cass-knowledge-listing__item__topic {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-    color: #666666;
-    line-height: 1;
-    vertical-align: bottom;
-    padding: 0 0.7em;
-    transition: color 0.2s;
-    position: relative;
-    display: inline-block;
-    margin: 0 3px;
-    font-weight: 700;
-}
-
-.cass-knowledge-listing__item__topic:hover, .cass-knowledge-listing__item__topic:focus, .cass-knowledge-listing__item__topic:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.cass-knowledge-listing__item__topic a {
-    color: #666666;
-}
-
-.cass-knowledge-listing__item__topic a:after {
-    background-color: transparent;
-}
-
-.cass-knowledge-listing__item__topic:hover {
-    color: #666666;
-}
-
-.cass-knowledge-listing__item__topic:hover:before, .cass-knowledge-listing__item__topic:hover:after {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.cass-knowledge-listing__item__topic:before {
-    left: -0.1em;
-    content: '[';
-    transform: translateX(-100%);
-}
-
-.cass-knowledge-listing__item__topic:after {
-    right: -0.1em;
-    content: ']';
-    transform: translateX(100%);
-}
-
-.cass-knowledge-listing__item__topic:before, .cass-knowledge-listing__item__topic:after {
-    position: absolute;
-    top: -3px;
-    font-weight: 100;
-    font-size: 1.2rem;
-    line-height: 1;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
-}
-
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-    color: #5A8054;
-    line-height: 1;
-    vertical-align: bottom;
-    padding: 0 0.7em;
-    transition: color 0.2s;
     position: relative;
+    overflow: visible !important;
+    color: #5A8054 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
     display: inline-block;
-    margin: 0 3px;
-    font-weight: 700;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science a {
-    color: #5A8054;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science a:after {
-    background-color: transparent;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover {
-    color: #5A8054;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover:after {
-    opacity: 1;
-    transform: translateX(0);
+    background-image: none !important;
+    background-size: unset !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:before {
-    left: -0.1em;
-    content: '[';
-    transform: translateX(-100%);
+    border: 2px solid #d0cfcb;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:after, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:after {
-    right: -0.1em;
-    content: ']';
-    transform: translateX(100%);
+    border: 2px solid #5A8054;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
 }
 
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:after {
-    position: absolute;
-    top: -3px;
-    font-weight: 100;
-    font-size: 1.2rem;
-    line-height: 1;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:hover {
+    background: none;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science:last-child {
+    margin-right: 0;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-    color: #666666;
-    line-height: 1;
-    vertical-align: bottom;
-    padding: 0 0.7em;
-    transition: color 0.2s;
     position: relative;
+    overflow: visible !important;
+    color: #666666 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
     display: inline-block;
-    margin: 0 3px;
-    font-weight: 700;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all a {
-    color: #666666;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all a:after {
-    background-color: transparent;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover {
-    color: #666666;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover:after {
-    opacity: 1;
-    transform: translateX(0);
+    background-image: none !important;
+    background-size: unset !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:before {
-    left: -0.1em;
-    content: '[';
-    transform: translateX(-100%);
+    border: 2px solid #d0cfcb;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:after, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:after {
-    right: -0.1em;
-    content: ']';
-    transform: translateX(100%);
+    border: 2px solid #666666;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
 }
 
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:after {
-    position: absolute;
-    top: -3px;
-    font-weight: 100;
-    font-size: 1.2rem;
-    line-height: 1;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:hover {
+    background: none;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:last-child {
+    margin-right: 0;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-    color: #00444D;
-    line-height: 1;
-    vertical-align: bottom;
-    padding: 0 0.7em;
-    transition: color 0.2s;
     position: relative;
+    overflow: visible !important;
+    color: #00444D !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
     display: inline-block;
-    margin: 0 3px;
-    font-weight: 700;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance a {
-    color: #00444D;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance a:after {
-    background-color: transparent;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover {
-    color: #00444D;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover:after {
-    opacity: 1;
-    transform: translateX(0);
+    background-image: none !important;
+    background-size: unset !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:before {
-    left: -0.1em;
-    content: '[';
-    transform: translateX(-100%);
+    border: 2px solid #d0cfcb;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:after, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:after {
-    right: -0.1em;
-    content: ']';
-    transform: translateX(100%);
+    border: 2px solid #00444D;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
 }
 
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:after {
-    position: absolute;
-    top: -3px;
-    font-weight: 100;
-    font-size: 1.2rem;
-    line-height: 1;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:hover {
+    background: none;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance:last-child {
+    margin-right: 0;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-    color: #00284D;
-    line-height: 1;
-    vertical-align: bottom;
-    padding: 0 0.7em;
-    transition: color 0.2s;
     position: relative;
+    overflow: visible !important;
+    color: #00284D !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
     display: inline-block;
-    margin: 0 3px;
-    font-weight: 700;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management a {
-    color: #00284D;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management a:after {
-    background-color: transparent;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover {
-    color: #00284D;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover:after {
-    opacity: 1;
-    transform: translateX(0);
+    background-image: none !important;
+    background-size: unset !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:before {
-    left: -0.1em;
-    content: '[';
-    transform: translateX(-100%);
+    border: 2px solid #d0cfcb;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:after, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:after {
-    right: -0.1em;
-    content: ']';
-    transform: translateX(100%);
+    border: 2px solid #00284D;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
 }
 
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:after {
-    position: absolute;
-    top: -3px;
-    font-weight: 100;
-    font-size: 1.2rem;
-    line-height: 1;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:hover {
+    background: none;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management:last-child {
+    margin-right: 0;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-    color: #842B91;
-    line-height: 1;
-    vertical-align: bottom;
-    padding: 0 0.7em;
-    transition: color 0.2s;
     position: relative;
+    overflow: visible !important;
+    color: #842B91 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
     display: inline-block;
-    margin: 0 3px;
-    font-weight: 700;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:focus, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship a {
-    color: #842B91;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship a:after {
-    background-color: transparent;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover {
-    color: #842B91;
-}
-
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover:after {
-    opacity: 1;
-    transform: translateX(0);
+    background-image: none !important;
+    background-size: unset !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:before {
-    left: -0.1em;
-    content: '[';
-    transform: translateX(-100%);
+    border: 2px solid #d0cfcb;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:after, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:after {
-    right: -0.1em;
-    content: ']';
-    transform: translateX(100%);
+    border: 2px solid #842B91;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
 }
 
-.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:before, .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:after {
-    position: absolute;
-    top: -3px;
-    font-weight: 100;
-    font-size: 1.2rem;
-    line-height: 1;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:hover {
+    background: none;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:last-child {
+    margin-right: 0;
 }
 
 .cass-knowledge-listing__item__topic a {
