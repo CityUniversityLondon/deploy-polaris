@@ -24135,7 +24135,7 @@ News events landing overrides */
 
 .footer-meta::before {
     background: #f2f2f2;
-    left: 0;
+    left: -100vw;
     transform: inherit;
 }
 
