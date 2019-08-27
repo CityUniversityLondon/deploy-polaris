@@ -18748,13 +18748,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
         width: 55%;
     }
     .cass-knowledge-listing__item img {
-        position: absolute;
-        display: inline-block;
+        position: relative;
+        display: block;
     }
     .cass-knowledge-listing__item__text {
-        position: relative;
+        position: absolute;
         display: inline-block;
-        float: right;
     }
 }
 
@@ -18766,13 +18765,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
         width: 45%;
     }
     .cass-knowledge-listing__item img {
-        position: absolute;
-        display: inline-block;
+        position: relative;
+        display: block;
     }
     .cass-knowledge-listing__item__text {
-        position: relative;
+        position: absolute;
         display: inline-block;
-        float: right;
     }
 }
 
