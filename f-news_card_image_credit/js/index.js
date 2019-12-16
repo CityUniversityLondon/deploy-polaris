@@ -23539,7 +23539,7 @@ function launch(el) {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).find('.image-credit__text').toggle();
 }
 
-jquery__WEBPACK_IMPORTED_MODULE_1___default()(".image-credit__button").click(function () {
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.image-credit__button').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).siblings('.image-credit__text').toggle();
 });
 var className = 'news__image-credit__thumbnail';
