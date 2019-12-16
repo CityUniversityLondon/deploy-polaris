@@ -24434,6 +24434,7 @@ News events landing overrides */
 }
 
 .feature-news__card .news__image-credit {
+    padding: .2rem .4rem;
     bottom: unset;
     top: 0;
     right: 0;
