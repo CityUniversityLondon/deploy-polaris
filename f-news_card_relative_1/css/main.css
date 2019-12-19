@@ -23633,7 +23633,7 @@ News events landing overrides */
     padding: 0;
     position: absolute;
     top: 0;
-    right: 0.5rem;
+    right: 0;
     z-index: 1;
 }
 
