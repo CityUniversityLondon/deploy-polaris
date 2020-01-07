@@ -23256,6 +23256,7 @@ News events landing overrides */
     background-color: #222;
     padding: .2em;
     display: flex;
+    align-items: center;
 }
 
 .cass-news-search .image-credit[aria-expanded='true'] {
@@ -23297,6 +23298,7 @@ News events landing overrides */
 
 .cass-news-search .image-credit .image-credit__text {
     line-height: 1.5;
+    font-weight: 600;
 }
 
 .cass-news-search .image-credit .image-credit__text a {
