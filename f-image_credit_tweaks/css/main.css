@@ -23374,6 +23374,10 @@ News events landing overrides */
     background: #f2f2f2;
 }
 
+.cass-knowledge-listing__item--last2 .news__image-credit {
+    left: 0;
+}
+
 .news-events-landing .featured-news,
 .news-events-landing .row-fluid {
     width: 100%;

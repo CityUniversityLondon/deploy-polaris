@@ -23541,6 +23541,12 @@ function launch(el) {
 
 jquery__WEBPACK_IMPORTED_MODULE_1___default()('.image-credit__button').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).siblings('.image-credit__text').toggle();
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-pressed') == 'false') {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-pressed', 'true');
+  } else {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).attr('aria-pressed', 'false');
+  }
 });
 var className = 'news__image-credit__thumbnail';
 /* harmony default export */ __webpack_exports__["default"] = ({
