@@ -25382,7 +25382,7 @@ div.widget-123_test_ {
 }
 
 .unibuddy-profiles {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .unibuddy-profiles .container, .unibuddy-profiles .banner__container, .unibuddy-profiles .banner__standfirst, .unibuddy-profiles .banner__freehtml > div {
@@ -25430,13 +25430,13 @@ div.widget-123_test_ {
     max-width: 4rem;
 }
 
-h4.unibuddy-card__details__name {
-    font-weight: 600;
+.unibuddy-card__details__name {
+    font-weight: 700;
     margin-bottom: 0;
 }
 
 .unibuddy-card__details__title {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .unibuddy-card--ug .unibuddy-card__details__name {
