@@ -25396,7 +25396,7 @@ div.widget-123_test_ {
 
 @media (min-width: 651px) {
     .unibuddy-card {
-        flex-basis: 33.33%;
+        max-width: 25rem;
     }
 }
 
@@ -25430,8 +25430,9 @@ div.widget-123_test_ {
     max-width: 4rem;
 }
 
-.unibuddy-card__details__name {
+h4.unibuddy-card__details__name {
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .unibuddy-card__details__title {
@@ -25442,6 +25443,44 @@ div.widget-123_test_ {
     color: #f15f22;
 }
 
+.unibuddy-card--ug h4:after {
+    background: #fbae3b;
+}
+
 .unibuddy-card--ug .unibuddy-card__cta {
     background: #fbae3b;
+}
+
+.unibuddy-card--ug .unibuddy-card__cta:hover, .unibuddy-card--ug .unibuddy-card__cta:active, .unibuddy-card--ug .unibuddy-card__cta:focus {
+    background-color: #faa21d;
+}
+
+.unibuddy-card--msc .unibuddy-card__details__name {
+    color: #0077a0;
+}
+
+.unibuddy-card--msc h4:after {
+    background: #0077a0;
+}
+
+.unibuddy-card--msc .unibuddy-card__cta {
+    color: #ffffff;
+    background: #0077a0;
+}
+
+.unibuddy-card--msc .unibuddy-card__cta:hover, .unibuddy-card--msc .unibuddy-card__cta:active, .unibuddy-card--msc .unibuddy-card__cta:focus {
+    background-color: #006081;
+}
+
+.unibuddy-card--noresults {
+    text-align: center;
+}
+
+.unibuddy-card--noresults h4:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 20px auto;
+    max-height: 240px;
 }
