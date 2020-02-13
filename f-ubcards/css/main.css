@@ -25427,7 +25427,11 @@ div.widget-123_test_ {
 
 .unibuddy-card__image {
     margin-right: 1.5rem;
-    max-width: 4rem;
+    max-width: 5rem;
+}
+
+.unibuddy-card__image img {
+    border-radius: 100%;
 }
 
 .unibuddy-card__details__name {
