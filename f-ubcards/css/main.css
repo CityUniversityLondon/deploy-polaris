@@ -25389,14 +25389,23 @@ div.widget-123_test_ {
     display: flex;
 }
 
+.unibuddy-card--ug {
+    position: absolute;
+    right: -20rem;
+    top: 7rem;
+}
+
 .unibuddy-card {
+    position: absolute;
+    right: -20rem;
+    top: 7rem;
     box-shadow: 0px 0px 30px 10px #e0e0e0;
-    padding: 2rem 2.5rem;
+    padding: 2rem 1.5rem;
 }
 
 @media (min-width: 651px) {
     .unibuddy-card {
-        max-width: 25rem;
+        max-width: 19rem;
     }
 }
 
