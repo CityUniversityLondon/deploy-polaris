@@ -25425,6 +25425,11 @@ div.widget-123_test_ {
     align-items: center;
 }
 
+.unibuddy-card__details__flag {
+    max-width: 3rem;
+    margin-top: 0.5rem;
+}
+
 .unibuddy-card__image {
     margin-right: 1.5rem;
     max-width: 5rem;
