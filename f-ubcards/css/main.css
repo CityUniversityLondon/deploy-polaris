@@ -6077,6 +6077,24 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 901px) {
+    .fallout--both .unibuddy-card__container--helper, .fallout--both .unibuddy-card__container {
+        left: 10%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .fallout--both .unibuddy-card__container--helper, .fallout--both .unibuddy-card__container {
+        left: 13%;
+    }
+}
+
+@media (min-width: 1441px) {
+    .fallout--both .unibuddy-card__container--helper, .fallout--both .unibuddy-card__container {
+        left: 12%;
+    }
+}
+
 @media (min-width: 501px) {
     .fallout--both .fallout__left {
         max-width: 80%;
