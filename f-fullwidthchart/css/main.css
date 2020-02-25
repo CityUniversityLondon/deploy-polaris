@@ -20444,33 +20444,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.chart-row--fullwidth .chart-row__items__chart {
-    /** TODO: Is min height necessary? **/
-    float: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-}
-
-@supports (display: flex) {
-    .chart-row--fullwidth .chart-row__items__chart {
-        float: none;
-        flex: 0 1 auto;
-    }
-}
-
-@media (max-width: 900px) {
-    .chart-row--fullwidth .chart-row__items__chart {
-        width: 100%;
-    }
-}
-
-@media (min-width: 901px) {
-    .chart-row--fullwidth .chart-row__items__chart {
-        width: 100%;
-    }
-}
-
 .chart-row__items__chart__row__title {
     text-align: center;
     text-transform: uppercase;
