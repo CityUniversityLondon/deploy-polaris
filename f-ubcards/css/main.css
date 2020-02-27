@@ -25513,6 +25513,24 @@ div.widget-123_test_ {
     background-color: #006081;
 }
 
+.unibuddy-card--mba .unibuddy-card__details__name {
+    color: #00444d;
+}
+
+.unibuddy-card--mba h4:after {
+    background: #00444d;
+}
+
+.unibuddy-card--mba .unibuddy-card__cta {
+    background-color: #00444d;
+    color: #ffffff;
+}
+
+.unibuddy-card--mba .unibuddy-card__cta:hover, .unibuddy-card--mba .unibuddy-card__cta:focus, .unibuddy-card--mba .unibuddy-card__cta:active {
+    background-color: #00292e;
+    color: #ffffff;
+}
+
 .unibuddy-card--noresults {
     text-align: center;
 }
