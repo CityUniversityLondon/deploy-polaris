@@ -22449,7 +22449,6 @@ function deactivateAll(allAnchors) {
 function prepareLinks(widget, headings) {
   var menu = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
   var activateInitial = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
-  sessionStorage.removeItem('has-accordion-session');
   var headingAnchors = headings.reduce(function (acc, _ref) {
     var anchor = _ref.anchor;
     return acc.add(anchor);
