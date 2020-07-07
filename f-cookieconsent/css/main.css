@@ -12260,42 +12260,57 @@ USED IN:
     outline-color: #ffffff;
 }
 
-.cookieconsent-optout-marketing--styled {
-    margin: 1.5rem 0 1.5rem;
-    padding: 1rem;
+.cookieconsent-optout-marketing {
+    display: block;
     color: #ffffff;
-    background: #141414;
-}
-
-.cookieconsent-optout-marketing--styled .cookieconsent-optout-marketing__inner {
-    border: 2px solid #d92231;
-    padding: 1rem;
+    background: rgba(20, 20, 20, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    text-align: center;
+    z-index: 1;
+    padding: 2rem;
 }
 
-.cookieconsent-optout-marketing--styled .cookieconsent-optout-marketing__inner p {
-    margin-bottom: 1rem;
-}
-
-.cookieconsent-optout-marketing--styled .cookieconsent-optout-marketing__inner i {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.cookieconsent-optout-marketing--styled a {
+.cookieconsent-optout-marketing a {
     color: #ffffff;
     border-bottom-color: #ffffff;
 }
 
-.cookieconsent-optout-marketing--styled a:hover {
+.cookieconsent-optout-marketing a:hover {
     border-color: #d8d8d8;
     color: #d8d8d8;
     background-color: transparent;
 }
 
-.cookieconsent-optout-marketing--styled a:focus, .cookieconsent-optout-marketing--styled a:active {
+.cookieconsent-optout-marketing a:focus, .cookieconsent-optout-marketing a:active {
     outline-color: #ffffff;
+}
+
+.cookieconsent-optout-marketing p {
+    margin-bottom: 1rem;
+}
+
+.cookieconsent-optout-marketing i {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.cookieconsent-optout-marketing i:before {
+    padding: 0.75rem;
+    border: 2px solid;
+    border-radius: 100%;
+}
+
+.cookieconsent-optout-marketing__inner {
+    padding: 2rem;
+    border: 2px solid #6b6b6b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .scp--undergraduate .key-info--lined {
@@ -15905,7 +15920,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: none;
     width: 95%;
     max-width: 1408px;
-    margin: auto;
+    margin: 1.5rem auto 1.5rem auto;
+    position: relative;
+}
+
+.youtube-embed-container iframe {
+    display: block;
 }
 
 .image-banner {
