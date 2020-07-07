@@ -12270,7 +12270,7 @@ USED IN:
     height: 100%;
     width: 100%;
     z-index: 1;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .cookieconsent-optout-marketing a {
@@ -12304,7 +12304,7 @@ USED IN:
 }
 
 .cookieconsent-optout-marketing__inner {
-    padding: 2rem;
+    padding: 1rem;
     border: 2px solid #6b6b6b;
     text-align: center;
     display: flex;
@@ -15922,6 +15922,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     max-width: 1408px;
     margin: 1.5rem auto 1.5rem auto;
     position: relative;
+    min-height: 315px;
 }
 
 .youtube-embed-container iframe {
