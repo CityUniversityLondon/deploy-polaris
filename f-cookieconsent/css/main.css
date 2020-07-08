@@ -12260,6 +12260,15 @@ USED IN:
     outline-color: #ffffff;
 }
 
+.youtube-embed--for-content {
+    position: relative;
+    min-height: 315px;
+}
+
+.youtube-embed--for-content iframe {
+    display: block;
+}
+
 .cookieconsent-optout-marketing {
     display: block;
     color: #ffffff;
