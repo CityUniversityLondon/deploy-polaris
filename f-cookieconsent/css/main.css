@@ -12271,8 +12271,8 @@ USED IN:
 
 .cookieconsent-optout-marketing {
     display: block;
-    color: #ffffff;
-    background: rgba(30, 30, 30, 0.9);
+    color: #949494;
+    background: #222222;
     position: absolute;
     top: 0;
     left: 0;
@@ -12302,6 +12302,7 @@ USED IN:
 }
 
 .cookieconsent-optout-marketing i {
+    color: #ffffff;
     font-size: 2rem;
     padding: 1rem;
 }
@@ -12314,7 +12315,7 @@ USED IN:
 
 .cookieconsent-optout-marketing__inner {
     padding: 1rem;
-    border: 2px solid #666666;
+    border: 2px solid #646464;
     text-align: center;
     display: flex;
     flex-direction: column;
