@@ -15920,7 +15920,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: none;
     width: 95%;
     max-width: 1408px;
-    margin: 1.5rem auto 1.5rem auto;
+    margin: auto;
     position: relative;
     min-height: 315px;
 }
