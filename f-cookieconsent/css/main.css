@@ -12321,6 +12321,7 @@ USED IN:
 }
 
 .cookieconsent-optout-marketing__inner {
+    background-color: #646464;
     position: relative;
     text-align: center;
     display: flex;
