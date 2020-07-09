@@ -12271,15 +12271,22 @@ USED IN:
 
 .cookieconsent-optout-marketing {
     display: block;
-    color: #949494;
-    background: #222222;
+    color: #ffffff;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 1;
-    padding: 1rem;
+}
+
+.cookieconsent-optout-marketing img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .cookieconsent-optout-marketing a {
@@ -12314,14 +12321,17 @@ USED IN:
 }
 
 .cookieconsent-optout-marketing__inner {
-    padding: 1rem;
-    border: 2px solid #646464;
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+.cookieconsent-optout-marketing__inner__content {
+    z-index: 2;
 }
 
 .scp--undergraduate .key-info--lined {
