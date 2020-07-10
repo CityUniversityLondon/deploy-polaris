@@ -15955,12 +15955,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
-@media (max-width: 499px) {
-    .youtube-embed-container {
-        min-height: 215px;
-    }
-}
-
 .youtube-embed-container iframe {
     display: block;
 }
