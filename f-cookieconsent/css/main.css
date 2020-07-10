@@ -12267,7 +12267,7 @@ USED IN:
 
 @media (max-width: 499px) {
     .youtube-embed--for-content {
-        padding: 2rem 0;
+        min-height: 215px;
     }
 }
 
@@ -15957,7 +15957,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (max-width: 499px) {
     .youtube-embed-container {
-        padding: 2rem 0;
+        min-height: 215px;
     }
 }
 
