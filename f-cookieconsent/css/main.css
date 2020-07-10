@@ -12262,7 +12262,13 @@ USED IN:
 
 .youtube-embed--for-content {
     position: relative;
-    min-height: 315px;
+    margin: 1rem 0;
+}
+
+@media (max-width: 319px) {
+    .youtube-embed--for-content {
+        min-height: 210px;
+    }
 }
 
 .youtube-embed--for-content iframe {
@@ -12289,38 +12295,8 @@ USED IN:
     z-index: 1;
 }
 
-.cookieconsent-optout-marketing a {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
-}
-
-.cookieconsent-optout-marketing a:hover {
-    border-color: #d8d8d8;
-    color: #d8d8d8;
-    background-color: transparent;
-}
-
-.cookieconsent-optout-marketing a:focus, .cookieconsent-optout-marketing a:active {
-    outline-color: #ffffff;
-}
-
-.cookieconsent-optout-marketing p {
-    margin-bottom: 1rem;
-}
-
-.cookieconsent-optout-marketing i {
-    color: #ffffff;
-    font-size: 2rem;
-    padding: 1rem;
-}
-
-.cookieconsent-optout-marketing i:before {
-    padding: 0.75rem;
-    border: 2px solid;
-    border-radius: 100%;
-}
-
 .cookieconsent-optout-marketing__inner {
+    padding: 1rem;
     background-color: #646464;
     position: relative;
     text-align: center;
@@ -12333,6 +12309,39 @@ USED IN:
 
 .cookieconsent-optout-marketing__inner__content {
     z-index: 2;
+}
+
+.cookieconsent-optout-marketing__inner__content a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.cookieconsent-optout-marketing__inner__content a:hover {
+    border-color: #d8d8d8;
+    color: #d8d8d8;
+    background-color: transparent;
+}
+
+.cookieconsent-optout-marketing__inner__content a:focus, .cookieconsent-optout-marketing__inner__content a:active {
+    outline-color: #ffffff;
+}
+
+@media (max-width: 499px) {
+    .cookieconsent-optout-marketing__inner__content p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.cookieconsent-optout-marketing__inner__content i {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.cookieconsent-optout-marketing__inner__content i:before {
+    padding: 0.75rem;
+    border: 2px solid;
+    border-radius: 100%;
 }
 
 .scp--undergraduate .key-info--lined {
@@ -15944,7 +15953,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     max-width: 1408px;
     margin: auto;
     position: relative;
-    min-height: 315px;
+}
+
+@media (max-width: 319px) {
+    .youtube-embed-container {
+        min-height: 210px;
+    }
 }
 
 .youtube-embed-container iframe {
