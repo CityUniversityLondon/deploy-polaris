@@ -12265,9 +12265,9 @@ USED IN:
     margin: 1rem 0;
 }
 
-@media (max-width: 319px) {
+@media (max-width: 499px) {
     .youtube-embed--for-content {
-        min-height: 210px;
+        padding: 2rem 0;
     }
 }
 
@@ -15955,9 +15955,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
-@media (max-width: 319px) {
+@media (max-width: 499px) {
     .youtube-embed-container {
-        min-height: 210px;
+        padding: 2rem 0;
     }
 }
 
