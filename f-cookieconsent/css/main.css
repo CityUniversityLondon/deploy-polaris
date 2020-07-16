@@ -12263,6 +12263,7 @@ USED IN:
 .youtube-embed--for-content {
     position: relative;
     margin: 1rem 0;
+    width: 100%;
 }
 
 @media (max-width: 499px) {
