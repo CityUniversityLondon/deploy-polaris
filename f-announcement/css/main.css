@@ -25567,26 +25567,3 @@ div.widget-123_test_ {
 .js .tabs__content__group > div.announcements {
     padding: 1rem;
 }
-
-/*
-Unused
-.widget {
-    background-color: $color-gallery;
-    padding: $measure-medium;
-}
-
-.widget__list {
-    li,
-    a {
-        display: block;
-    }
-
-    a {
-        &:before {
-            @include absolute(left);
-            @include font-family(icon);
-            content: '\f105';
-        }
-    }
-}
-*/
