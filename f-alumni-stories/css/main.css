@@ -25556,37 +25556,37 @@ div.widget-123_test_ {
     background-color: #faa21d;
 }
 
-.connect-card--msc .connect-card__details__name {
+.connect-card--unibuddy-msc .connect-card__details__name {
     color: #0077a0;
 }
 
-.connect-card--msc h4:after {
+.connect-card--unibuddy-msc h4:after {
     background: #0077a0;
 }
 
-.connect-card--msc .connect-card__cta {
+.connect-card--unibuddy-msc .connect-card__cta {
     color: #ffffff;
     background: #0077a0;
 }
 
-.connect-card--msc .connect-card__cta:hover, .connect-card--msc .connect-card__cta:active, .connect-card--msc .connect-card__cta:focus {
+.connect-card--unibuddy-msc .connect-card__cta:hover, .connect-card--unibuddy-msc .connect-card__cta:active, .connect-card--unibuddy-msc .connect-card__cta:focus {
     background-color: #006081;
 }
 
-.connect-card--mba .connect-card__details__name {
+.connect-card--unibuddy-mba .connect-card__details__name {
     color: #00444d;
 }
 
-.connect-card--mba h4:after {
+.connect-card--unibuddy-mba h4:after {
     background: #00444d;
 }
 
-.connect-card--mba .connect-card__cta {
+.connect-card--unibuddy-mba .connect-card__cta {
     background-color: #00444d;
     color: #ffffff;
 }
 
-.connect-card--mba .connect-card__cta:hover, .connect-card--mba .connect-card__cta:focus, .connect-card--mba .connect-card__cta:active {
+.connect-card--unibuddy-mba .connect-card__cta:hover, .connect-card--unibuddy-mba .connect-card__cta:focus, .connect-card--unibuddy-mba .connect-card__cta:active {
     background-color: #00292e;
     color: #ffffff;
 }
