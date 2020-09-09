@@ -25479,6 +25479,7 @@ div.widget-123_test_ {
 .connect-card {
     box-shadow: 0px 0px 30px 10px #e0e0e0;
     padding: 2rem 1.5rem;
+    margin: 1rem 0;
 }
 
 @media (min-width: 651px) {
@@ -25501,7 +25502,7 @@ div.widget-123_test_ {
     color: #1e1e1e;
     border-bottom: none;
     font-weight: 600;
-    display: inline-block;
+    display: block;
 }
 
 .connect-card__cta span {
@@ -25538,6 +25539,14 @@ div.widget-123_test_ {
 
 .connect-card__details__title {
     font-weight: 700;
+}
+
+.connect-card--alumni-stories-ug .connect-card__cta, .connect-card--alumni-stories-msc .connect-card__cta {
+    background: #ffffff;
+}
+
+.connect-card--alumni-stories-ug .connect-card__cta:hover, .connect-card--alumni-stories-ug .connect-card__cta:active, .connect-card--alumni-stories-ug .connect-card__cta:focus, .connect-card--alumni-stories-msc .connect-card__cta:hover, .connect-card--alumni-stories-msc .connect-card__cta:active, .connect-card--alumni-stories-msc .connect-card__cta:focus {
+    background-color: #d0cfcb;
 }
 
 .connect-card--unibuddy-ug .connect-card__details__name {
@@ -25599,14 +25608,6 @@ div.widget-123_test_ {
     background: #fbae3b;
 }
 
-.connect-card--alumni-stories-ug .connect-card__cta {
-    background: #ffffff;
-}
-
-.connect-card--alumni-stories-ug .connect-card__cta:hover, .connect-card--alumni-stories-ug .connect-card__cta:active, .connect-card--alumni-stories-ug .connect-card__cta:focus {
-    background-color: #faa21d;
-}
-
 .connect-card--alumni-stories-msc {
     background: #0077a0;
     color: #ffffff;
@@ -25614,16 +25615,6 @@ div.widget-123_test_ {
 
 .connect-card--alumni-stories-msc h4:after {
     background: #0077a0;
-}
-
-.connect-card--alumni-stories-msc .connect-card__cta {
-    background: #ffffff;
-}
-
-.connect-card--alumni-stories-msc .connect-card__cta:hover, .connect-card--alumni-stories-msc .connect-card__cta:active, .connect-card--alumni-stories-msc .connect-card__cta:focus {
-    background-color: #006081;
-    color: #ffffff;
-    outline: 3px solid #ffffff;
 }
 
 .connect-card--noresults {
