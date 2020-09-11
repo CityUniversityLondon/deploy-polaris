@@ -6081,33 +6081,6 @@ svg:not(:root) {
     }
 }
 
-@media (min-width: 901px) {
-    .fallout--both .unibuddy-card__container--helper,
-    .fallout--both .unibuddy-card__container {
-        left: 10%;
-    }
-}
-
-@media (min-width: 1201px) {
-    .fallout--both .unibuddy-card__container--helper,
-    .fallout--both .unibuddy-card__container {
-        left: 13%;
-    }
-}
-
-@media (min-width: 1441px) {
-    .fallout--both .unibuddy-card__container--helper,
-    .fallout--both .unibuddy-card__container {
-        left: 12%;
-    }
-}
-
-@media (min-width: 901px) {
-    .fallout--both .unibuddy-card__container .unibuddy-card {
-        margin-left: 2rem;
-    }
-}
-
 @media (min-width: 501px) {
     .fallout--both .fallout__left {
         max-width: 80%;
@@ -6460,6 +6433,16 @@ svg:not(:root) {
 @media (min-width: 501px) {
     .grid--thirds--small > div {
         width: 33.333%;
+    }
+}
+
+.unibuddy-card__container {
+    margin-top: 1rem;
+}
+
+@media (min-width: 901px) {
+    .unibuddy-card__container .unibuddy-card {
+        margin-left: 1rem;
     }
 }
 
@@ -9971,13 +9954,13 @@ svg:not(:root) {
 
 @media (min-width: 1201px) {
     .banner__content .banner__content__promo {
-        width: 20%;
+        width: 25%;
     }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
     .banner__content .banner__content__promo {
-        width: 25%;
+        width: 27%;
     }
 }
 
@@ -10023,6 +10006,18 @@ svg:not(:root) {
 @media (min-width: 501px) and (max-width: 900px) {
     .banner--cutout--left .banner__content .banner__content__promo {
         margin-left: auto;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner--cutout--left .banner__content .banner__content__promo {
+        right: 7rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .banner--cutout--left .banner__content .banner__content__promo {
+        right: 0;
     }
 }
 
@@ -12263,6 +12258,91 @@ USED IN:
 
 .section--green a:focus, .section--green a:active {
     outline-color: #ffffff;
+}
+
+.youtube-embed--for-content {
+    position: relative;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+@media (max-width: 499px) {
+    .youtube-embed--for-content {
+        min-height: 215px;
+    }
+}
+
+.youtube-embed--for-content iframe {
+    display: block;
+}
+
+.cookieconsent-optout-marketing {
+    display: block;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.cookieconsent-optout-marketing img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.cookieconsent-optout-marketing__inner {
+    padding: 1rem;
+    background-color: #646464;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.cookieconsent-optout-marketing__inner__content {
+    z-index: 2;
+}
+
+.cookieconsent-optout-marketing__inner__content a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.cookieconsent-optout-marketing__inner__content a:hover {
+    border-color: #d8d8d8;
+    color: #d8d8d8;
+    background-color: transparent;
+}
+
+.cookieconsent-optout-marketing__inner__content a:focus, .cookieconsent-optout-marketing__inner__content a:active {
+    outline-color: #ffffff;
+}
+
+@media (max-width: 499px) {
+    .cookieconsent-optout-marketing__inner__content p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.cookieconsent-optout-marketing__inner__content i {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.cookieconsent-optout-marketing__inner__content i:before {
+    padding: 0.75rem;
+    border: 2px solid;
+    border-radius: 100%;
 }
 
 .scp--undergraduate .key-info--lined {
@@ -15873,6 +15953,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     width: 95%;
     max-width: 1408px;
     margin: auto;
+    position: relative;
+}
+
+.youtube-embed-container iframe {
+    display: block;
 }
 
 .image-banner {
