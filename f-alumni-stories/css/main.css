@@ -25553,6 +25553,22 @@ div.widget-123_test_ {
     max-height: 240px;
 }
 
+.announcements {
+    background-color: #E3F0FD;
+    border: 1px solid #3A87AD;
+    color: #3A87AD;
+    margin: 0 0 20px 0;
+    padding: 1rem;
+}
+
+.announcements p {
+    margin-bottom: 0;
+}
+
+.js .tabs__content__group > div.announcements {
+    padding: 1rem;
+}
+
 .connect-profiles {
     padding: 2rem 0;
 }
