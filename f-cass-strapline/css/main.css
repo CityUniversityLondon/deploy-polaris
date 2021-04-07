@@ -6948,6 +6948,12 @@ svg:not(:root) {
     padding-top: 1rem;
 }
 
+@media (min-width: 651px) {
+    .promo-strap {
+        padding-bottom: 1rem;
+    }
+}
+
 .promo-strap .promo-strap__content {
     width: 100%;
     margin-left: auto;
