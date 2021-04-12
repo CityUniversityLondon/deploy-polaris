@@ -6946,12 +6946,7 @@ svg:not(:root) {
     background-color: #BF1E2B;
     color: #ffffff;
     padding-top: 1rem;
-}
-
-@media (min-width: 651px) {
-    .promo-strap {
-        padding-bottom: 1rem;
-    }
+    padding-bottom: 1rem;
 }
 
 .promo-strap .promo-strap__content {
