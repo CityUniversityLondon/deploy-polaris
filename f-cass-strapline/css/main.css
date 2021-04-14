@@ -6878,15 +6878,6 @@ svg:not(:root) {
     }
 }
 
-@media (max-width: 900px) {
-    main section > div:nth-last-child(1):not(.section--padded):not(.hallway) {
-        padding-bottom: 3rem;
-    }
-    main section > div:nth-last-child(1):not(.section--margin) {
-        padding-bottom: 6rem;
-    }
-}
-
 .home__header {
     display: none;
 }
