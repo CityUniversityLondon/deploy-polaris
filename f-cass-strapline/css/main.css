@@ -6469,6 +6469,20 @@ svg:not(:root) {
     border-top: solid #ececec 3px;
 }
 
+.footer::before {
+    content: '';
+    width: 100%;
+    height: 4rem;
+    background-color: #ececec;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .footer::before {
+        height: 9rem;
+    }
+}
+
 .footer__back-to-top {
     width: 100%;
     padding-bottom: 0.5rem;
@@ -6508,6 +6522,12 @@ svg:not(:root) {
 .footer__address {
     margin-bottom: 1rem;
     font-style: normal;
+}
+
+@media (max-width: 900px) {
+    .footer__address {
+        padding-top: 5rem;
+    }
 }
 
 .footer__address-organisation {
@@ -6852,6 +6872,7 @@ svg:not(:root) {
 
 @media (max-width: 900px) {
     .footer__promo-box {
+        position: absolute;
         margin: 0 3rem;
         top: -10rem;
     }
