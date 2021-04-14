@@ -6809,6 +6809,63 @@ svg:not(:root) {
     display: block;
 }
 
+.footer__promo-box {
+    position: relative;
+    padding: 3rem 1rem;
+    background-color: #BF1E2B;
+    color: #ffffff;
+}
+
+.footer__promo-box a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.footer__promo-box a:hover, .footer__promo-box a:focus, .footer__promo-box a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.footer__promo-box a:focus {
+    outline: 2px solid #ffffff;
+}
+
+.footer__promo-box a:active {
+    outline: 2px dotted #ffffff;
+}
+
+@media (min-width: 1201px) {
+    .footer__promo-box {
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .footer__promo-box {
+        top: -40%;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer__promo-box {
+        margin: 0 3rem;
+        top: -10rem;
+    }
+}
+
+@media (max-width: 900px) {
+    main section > div:nth-last-child(1):not(.section--padded):not(.hallway) {
+        padding-bottom: 3rem;
+    }
+    main section > div:nth-last-child(1):not(.section--margin) {
+        padding-bottom: 6rem;
+    }
+}
+
 .home__header {
     display: none;
 }
