@@ -24764,10 +24764,10 @@ function launch(element) {
     var programme = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-programmes');
     var video = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.video-banner');
     Object(_action_on_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])(video, v, true, {
-      threshold: 0.2
+      threshold: 0.05
     });
     Object(_action_on_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])(programme, f, true, {
-      threshold: 1
+      threshold: 0.1
     });
   }
 }

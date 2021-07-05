@@ -7441,6 +7441,28 @@ svg:not(:root) {
     padding-bottom: 5rem;
     margin-top: 0;
     background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+
+.bayes-programmes--image-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.bayes-programmes--image-bg img {
+    width: 100%;
+}
+
+.bayes-programmes--image-bg:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .bayes-programmes--title {
