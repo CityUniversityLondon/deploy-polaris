@@ -24473,11 +24473,14 @@ function moveSlide(e, t) {
 }
 
 function next(e) {
+  console.log(e.target.tagName);
+  e.stopPropagation();
   e.preventDefault();
   moveSlide(e, true);
 }
 
 function previous(e) {
+  e.stopPropagation();
   e.preventDefault();
   moveSlide(e, false);
 }
@@ -24618,36 +24621,41 @@ function launch(el) {
       nextBtnWrap = document.createElement('div'),
       nextBtn = document.createElement('BUTTON'),
       prevBtn = document.createElement('BUTTON'),
-      prevFA = document.createElement('span'),
       svgns = "http://www.w3.org/2000/svg",
       nextSVG = document.createElementNS(svgns, 'svg'),
       prevSVG = document.createElementNS(svgns, 'svg'),
       svgStrokeSolid = document.createElementNS(svgns, 'path'),
-      svgStrokeDotted = document.createElementNS(svgns, 'path'),
+      rightSvgStrokeSolid = document.createElementNS(svgns, 'path'),
       svgCircle = document.createElementNS(svgns, 'path'),
+      rightSvgCircle = document.createElementNS(svgns, 'path'),
       nextIconSVG = document.createElementNS(svgns, 'path'),
       prevIconSVG = document.createElementNS(svgns, 'path'); //setup arrow SVG
 
 
   svgStrokeSolid.setAttribute('class', 'stroke-solid');
   svgStrokeSolid.setAttribute('d', 'M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5');
-  svgStrokeDotted.setAttribute('class', 'stroke-dotted');
-  svgStrokeDotted.setAttribute('d', 'M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5');
+  rightSvgStrokeSolid.setAttribute('class', 'stroke-solid');
+  rightSvgStrokeSolid.setAttribute('d', 'M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5');
   svgCircle.setAttribute('class', 'circle');
   svgCircle.setAttribute('d', 'M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5');
+  rightSvgCircle.setAttribute('class', 'circle');
+  rightSvgCircle.setAttribute('d', 'M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5');
   prevIconSVG.setAttribute('class', 'prev-svg');
-  prevIconSVG.setAttribute('d', 'M 51.991 79.943 C 49.254 82.682 44.739 82.682 41.954 79.943 L 15.349 53.339 C 12.612 50.554 12.612 46.039 15.349 43.302 L 41.954 16.697 C 44.739000000000004 13.911 49.254 13.911 51.991 16.697 C 55.592 20.49 47.717 31.104 44.019 40.611999999999995 L 81.04599999999999 40.611999999999995 C 83.591 40.611999999999995 85.702 42.72599999999999 85.702 45.270999999999994 L 85.702 52.425999999999995 C 85.702 55.019999999999996 83.591 57.132 81.04599999999999 57.132 L 44.451 57.132 C 48.293 66.115 55.304 75.718 51.991 79.943 z');
+  prevIconSVG.setAttribute('d', 'M1472 736v128q0 53-32.5 90.5T1355 992H651l293 294q38 36 38 90t-38 90l-75 76q-37 37-90 37q-52 0-91-37L37 890Q0 853 0 800q0-52 37-91L688 59q38-38 91-38q52 0 90 38l75 74q38 38 38 91t-38 91L651 608h704q52 0 84.5 37.5T1472 736z');
+  prevIconSVG.setAttribute('transform', 'translate(-17.5 -17.5) scale(0.025 0.025)');
   nextIconSVG.setAttribute('class', 'next-svg');
-  nextIconSVG.setAttribute('d', 'M 46.971 82.136 C 49.800999999999995 84.91799999999999 54.336 84.91799999999999 57.165 82.136 L 84.187 55.114999999999995 C 86.966 52.285999999999994 86.966 47.699999999999996 84.187 44.92099999999999 L 57.165 17.899 C 54.336 15.07 49.8 15.07 46.971 17.899 C 43.312999999999995 21.752000000000002 51.312999999999995 32.532 55.117 42.189 L 17.51 42.189 C 14.875000000000002 42.189 12.73 44.336 12.73 46.921 L 12.73 54.188 C 12.73 56.823 14.876000000000001 58.969 17.51 58.969 L 54.628 58.969 C 50.775 68.091 43.653 77.844 46.971 82.136 z');
+  nextIconSVG.setAttribute('d', 'M1472 736v128q0 53-32.5 90.5T1355 992H651l293 294q38 36 38 90t-38 90l-75 76q-37 37-90 37q-52 0-91-37L37 890Q0 853 0 800q0-52 37-91L688 59q38-38 91-38q52 0 90 38l75 74q38 38 38 91t-38 91L651 608h704q52 0 84.5 37.5T1472 736z');
+  nextIconSVG.setAttribute('transform', 'translate(-17.5 -17.5) scale(0.025 0.025)');
+  nextSVG.setAttribute('transform', 'scale(0.5 0.5)');
   nextSVG.setAttribute('height', '100px');
   nextSVG.setAttribute('width', '100px');
-  nextSVG.appendChild(svgStrokeSolid);
-  nextSVG.appendChild(svgStrokeDotted);
-  nextSVG.appendChild(svgCircle);
+  nextSVG.appendChild(rightSvgStrokeSolid);
+  nextSVG.appendChild(nextIconSVG);
+  nextSVG.appendChild(rightSvgCircle);
+  prevSVG.setAttribute('transform', 'scale(0.5 0.5)');
   prevSVG.setAttribute('height', '100px');
   prevSVG.setAttribute('width', '100px');
   prevSVG.appendChild(svgStrokeSolid);
-  prevSVG.appendChild(svgStrokeDotted);
   prevSVG.appendChild(prevIconSVG);
   prevSVG.appendChild(svgCircle); //setup carousel buttons
 
@@ -24656,7 +24664,7 @@ function launch(el) {
   nextBtnWrap.className = 'swiper-button-next';
   nextBtn.name = 'nextButton';
   nextBtn.type = 'button';
-  nextBtn.className = 'fa fa-arrow-right swiper-slider-arrow arrow-right--btn-next';
+  nextBtn.className = 'swiper-slider-arrow arrow-right--btn-next';
   nextBtn.setAttribute('aria-label', 'Next slider');
   nextBtn.addEventListener('click', next.bind(this), false);
   nextBtn.appendChild(nextSVG);
