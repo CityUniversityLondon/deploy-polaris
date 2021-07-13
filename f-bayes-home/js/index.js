@@ -24365,7 +24365,9 @@ __webpack_require__.r(__webpack_exports__);
 var className = 'swiper-container',
     ie = jquery__WEBPACK_IMPORTED_MODULE_3___default()(undefined).hasClass('IE');
 var i = 0,
-    config = {},
+    config = {
+  hidNumInd: true
+},
     sliderTranslateCoOr = 0,
     x0 = null,
     locked = false;
@@ -24646,15 +24648,15 @@ function launch(el) {
   nextIconSVG.setAttribute('class', 'next-svg');
   nextIconSVG.setAttribute('d', 'M1472 736v128q0 53-32.5 90.5T1355 992H651l293 294q38 36 38 90t-38 90l-75 76q-37 37-90 37q-52 0-91-37L37 890Q0 853 0 800q0-52 37-91L688 59q38-38 91-38q52 0 90 38l75 74q38 38 38 91t-38 91L651 608h704q52 0 84.5 37.5T1472 736z');
   nextIconSVG.setAttribute('transform', 'translate(-17.5 -17.5) scale(0.025 0.025)');
-  nextSVG.setAttribute('transform', 'scale(0.5 0.5)');
-  nextSVG.setAttribute('height', '100px');
-  nextSVG.setAttribute('width', '100px');
+  nextSVG.setAttribute('viewBox', '0 0 100 100');
+  nextSVG.setAttribute('height', '50px');
+  nextSVG.setAttribute('width', '50px');
   nextSVG.appendChild(rightSvgStrokeSolid);
   nextSVG.appendChild(nextIconSVG);
   nextSVG.appendChild(rightSvgCircle);
-  prevSVG.setAttribute('transform', 'scale(0.5 0.5)');
-  prevSVG.setAttribute('height', '100px');
-  prevSVG.setAttribute('width', '100px');
+  prevSVG.setAttribute('viewBox', '0 0 100 100');
+  prevSVG.setAttribute('height', '50px');
+  prevSVG.setAttribute('width', '50px');
   prevSVG.appendChild(svgStrokeSolid);
   prevSVG.appendChild(prevIconSVG);
   prevSVG.appendChild(svgCircle); //setup carousel buttons
@@ -24769,10 +24771,10 @@ function launch(element) {
   };
 
   if (_js_utils_browser_support__WEBPACK_IMPORTED_MODULE_2__["default"].intersectionObserver) {
-    var programme = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-programmes');
-    var video = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.video-banner');
-    Object(_action_on_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])(video, v, true, {
-      threshold: 0.05
+    var programme = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).has('.video-banner').length ? jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-programmes') : jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-statistic');
+    var banner = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).has('.video-banner').length ? jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.video-banner') : jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-carousel');
+    Object(_action_on_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])(banner, v, true, {
+      threshold: 0.1
     });
     Object(_action_on_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])(programme, f, true, {
       threshold: 0.1
