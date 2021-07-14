@@ -27313,7 +27313,7 @@ function launch(el) {
     }
 
     if (playingVideo) playingVideo.pause();
-    videos.removeClass('playing text textout');
+    videos.removeClass('playing textout');
     videos.eq(index).addClass('playing').find('video')[0].play().then(function () {
       playButton.removeClass('video-banner__play--pause');
       srText.text('Pause video');
@@ -27323,6 +27323,7 @@ function launch(el) {
   videos.each(function (index) {
     var banner = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this);
     var video = banner.children('video');
+    banner.addClass('text');
 
     if (screenSize <= 640) {
       var mobileVideo = video.data('mobile');
@@ -27334,17 +27335,15 @@ function launch(el) {
 
     video.on('ended', function () {
       startPlaying((index + 1) % videoCount);
-    });
-    video.on('timeupdate', function (e) {
-      var r = e.target.duration - e.target.currentTime;
-
-      if (r < 2) {
-        banner.removeClass('text');
-        banner.addClass('textout');
-      } else if (r < 8) {
-        banner.addClass('text');
-      }
-    });
+    }); // video.on('timeupdate', function(e) {
+    //     const r = e.target.duration - e.target.currentTime;
+    //     if (r < 2) {
+    //         banner.removeClass('text');
+    //         banner.addClass('textout');
+    //     } else if (r < 8) {
+    //         banner.addClass('text');
+    //     }
+    // });
   });
   startPlaying(0);
 }
