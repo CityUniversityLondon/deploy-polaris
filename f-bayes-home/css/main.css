@@ -8096,6 +8096,10 @@ svg:not(:root) {
     }
 }
 
+.bayes-social-links__instagram .connect-social__card--insta a {
+    display: block;
+}
+
 @media (min-width: 1441px) {
     .bayes-social-links__instagram__wrapper {
         width: 75%;
@@ -27517,6 +27521,10 @@ div.widget-123_test_ {
     pointer-events: auto;
 }
 
+.js .swiper-slide__text a:active, .js .swiper-slide__text a:focus {
+    outline-color: #ffffff;
+}
+
 @media (max-width: 1439px) {
     .js .swiper-slide__text {
         margin-right: none;
@@ -27710,13 +27718,15 @@ div.widget-123_test_ {
 
 .swiper-slider-arrow .prev-svg,
 .swiper-slider-arrow .next-svg {
-    transform-origin: 50% 50%;
+    transform: translate(30px, 30px) scale(0.025, 0.025);
     transition: transform 200ms ease-out;
     fill: #ffffff;
 }
 
-.swiper-button-next {
-    transform: rotate(180deg);
+.swiper-slider-arrow .next-svg {
+    transform: translate(70px, 70px) scale(0.025, 0.025) rotate(180deg);
+    transition: transform 200ms ease-out;
+    fill: #ffffff;
 }
 
 .swiper-button-next svg .stroke-solid {
