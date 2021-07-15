@@ -25100,7 +25100,7 @@ News events landing overrides */
     margin-right: 0;
 }
 
-.news-article__anchor__topic--community {
+.news-article__anchor__topic--bayes-community {
     position: relative;
     overflow: visible !important;
     color: #d92231 !important;
@@ -25115,11 +25115,11 @@ News events landing overrides */
     background-size: unset !important;
 }
 
-.news-article__anchor__topic--community:before {
+.news-article__anchor__topic--bayes-community:before {
     border: 2px solid #d0cfcb;
 }
 
-.news-article__anchor__topic--community:after, .news-article__anchor__topic--community:before {
+.news-article__anchor__topic--bayes-community:after, .news-article__anchor__topic--bayes-community:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -25130,32 +25130,32 @@ News events landing overrides */
     background-color: transparent !important;
 }
 
-.news-article__anchor__topic--community:after {
+.news-article__anchor__topic--bayes-community:after {
     border: 2px solid #d92231;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
 
-.news-article__anchor__topic--community:hover:after {
+.news-article__anchor__topic--bayes-community:hover:after {
     transform: translateY(0px) translateX(0px) !important;
     opacity: 1 !important;
 }
 
-.news-article__anchor__topic--community:hover {
+.news-article__anchor__topic--bayes-community:hover {
     background: none;
 }
 
-.news-article__anchor__topic--community:focus {
+.news-article__anchor__topic--bayes-community:focus {
     background: #ffffff;
     outline: 3px solid #1e1e1e;
 }
 
-.news-article__anchor__topic--community:active {
+.news-article__anchor__topic--bayes-community:active {
     background: #ffffff;
     outline: 2px dotted #1e1e1e;
 }
 
-.news-article__anchor__topic--community:last-child {
+.news-article__anchor__topic--bayes-community:last-child {
     margin-right: 0;
 }
 
