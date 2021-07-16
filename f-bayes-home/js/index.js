@@ -24756,29 +24756,33 @@ __webpack_require__.r(__webpack_exports__);
 var className = 'bayes-home';
 
 function launch(element) {
-  var f = function f() {
-    var leftSide = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-left-sidebar');
-    var rightSide = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-right-sidebar');
-    leftSide.addClass('bayes-left-sidebar-scrolled');
-    rightSide.addClass('bayes-right-sidebar-scrolled');
-  };
-
-  var v = function v() {
-    var leftSide = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-left-sidebar');
-    var rightSide = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-right-sidebar');
-    leftSide.removeClass('bayes-left-sidebar-scrolled');
-    rightSide.removeClass('bayes-right-sidebar-scrolled');
-  };
-
   if (_js_utils_browser_support__WEBPACK_IMPORTED_MODULE_2__["default"].intersectionObserver) {
-    var programme = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).has('.video-banner').length ? jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-programmes') : jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-statistic');
     var banner = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).has('.video-banner').length ? jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.video-banner') : jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-carousel');
-    Object(_action_on_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])(banner, v, true, {
+
+    if (banner instanceof jquery__WEBPACK_IMPORTED_MODULE_3___default.a) {
+      banner = banner[0];
+    } // what to do with observed elements
+
+
+    var actionOnScrollAction = function actionOnScrollAction(entries) {
+      var leftSide = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-left-sidebar');
+      var rightSide = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element).find('.bayes-right-sidebar');
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          leftSide.removeClass('bayes-left-sidebar-scrolled');
+          rightSide.removeClass('bayes-right-sidebar-scrolled');
+        } else {
+          leftSide.addClass('bayes-left-sidebar-scrolled');
+          rightSide.addClass('bayes-right-sidebar-scrolled');
+        }
+      });
+    }; // set up the observer and observe our element
+
+
+    var observer = new IntersectionObserver(actionOnScrollAction, {
       threshold: 0.1
     });
-    Object(_action_on_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])(programme, f, true, {
-      threshold: 0.1
-    });
+    observer.observe(banner);
   }
 }
 
@@ -27279,9 +27283,34 @@ function launch(el) {
   var videos = widget.find('.video-banner__banner');
   var videoCount = videos.length;
   var controls = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<div></div>').addClass('video-banner__controls');
-  var playButton = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<a href="#"></a>');
+  var playButton = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<a href="#"></a>'),
+      svgns = 'http://www.w3.org/2000/svg',
+      playSVG = document.createElementNS(svgns, 'svg'),
+      strokeSolid = document.createElementNS(svgns, 'path'),
+      strokeDotted = document.createElementNS(svgns, 'path'),
+      icon = document.createElementNS(svgns, 'path'),
+      circle = document.createElementNS(svgns, 'path');
+  playSVG.setAttribute('id', 'play');
+  playSVG.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+  playSVG.setAttribute('height', '50px');
+  playSVG.setAttribute('width', '50px');
+  playSVG.setAttribute('viewBox', '0 0 100 100');
+  playSVG.setAttribute('enable-background', 'new 0 0 100 100');
+  playSVG.setAttribute('xml:space', 'preserve');
+  strokeSolid.setAttribute('d', 'M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5');
+  strokeSolid.setAttribute('class', 'stroke-solid');
+  strokeDotted.setAttribute('d', 'M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5');
+  strokeDotted.setAttribute('class', 'stroke-dotted');
+  icon.setAttribute('d', 'M1536 64v1408q0 26-19 45t-45 19H960q-26 0-45-19t-19-45V64q0-26 19-45t45-19h512q26 0 45 19t19 45zm-896 0v1408q0 26-19 45t-45 19H64q-26 0-45-19t-19-45V64q0-26 19-45T64 0h512q26 0 45 19t19 45z');
+  icon.setAttribute('class', 'icon');
+  circle.setAttribute('d', 'M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5');
+  circle.setAttribute('class', 'circle');
+  playSVG.appendChild(strokeSolid);
+  playSVG.appendChild(strokeDotted);
+  playSVG.appendChild(icon);
+  playSVG.appendChild(circle);
   playButton.addClass('video-banner__play video-banner__play--pause');
-  playButton.append(jquery__WEBPACK_IMPORTED_MODULE_1___default()('<span aria-hidden="true"></span>').addClass('video-banner__play__icon'));
+  playButton.append(playSVG);
   var srText = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<span class="sr-only">Play video</span>');
   playButton.append(srText);
   playButton.appendTo(controls);
@@ -27293,9 +27322,11 @@ function launch(el) {
 
     if (isPaused) {
       video.play();
+      icon.setAttribute('d', 'M1536 64v1408q0 26-19 45t-45 19H960q-26 0-45-19t-19-45V64q0-26 19-45t45-19h512q26 0 45 19t19 45zm-896 0v1408q0 26-19 45t-45 19H64q-26 0-45-19t-19-45V64q0-26 19-45T64 0h512q26 0 45 19t19 45z');
       srText.text('Pause video');
     } else {
       video.pause();
+      icon.setAttribute('d', 'M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z');
       srText.text('Play video');
     }
 
