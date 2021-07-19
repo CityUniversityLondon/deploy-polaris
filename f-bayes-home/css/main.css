@@ -8204,7 +8204,7 @@ svg:not(:root) {
 .bayes-home .video-banner__play:focus:after {
     content: '';
     position: absolute;
-    top: -1%;
+    top: 0;
     left: -6%;
     width: 111%;
     height: 100%;
@@ -8279,7 +8279,7 @@ svg:not(:root) {
 }
 
 .bayes-home .video-banner__play.video-banner__play--pause svg .icon {
-    transform: initial;
+    transform: scale(1);
 }
 
 .vertical-menu__page-link,
