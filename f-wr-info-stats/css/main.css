@@ -11769,6 +11769,9 @@ USED IN:
 scp--masters
 scp--corporate
 scp--undergraduate
+ 	scp--mba
+     scp--phd
+      	scp--executive-education
 */
 .stats-block.stats-block--scp {
     padding-left: 1rem;
@@ -11782,72 +11785,6 @@ scp--undergraduate
     .stats-block.stats-block--scp {
         margin-top: 2rem;
     }
-}
-
-.stats-block.stats-block--scp.stats-block--undergraduate {
-    background-image: linear-gradient(to bottom, #fbae3b, #f15f22);
-    color: #1e1e1e;
-}
-
-.stats-block.stats-block--scp.stats-block--undergraduate h2 {
-    border-bottom: 1px solid #f15f22;
-}
-
-.stats-block.stats-block--scp.stats-block--undergraduate .stats-block__grid .stats-block__item__icon svg {
-    fill: #1e1e1e;
-}
-
-.stats-block.stats-block--scp.stats-block--undergraduate .stats-block__grid .stats-block__item__icon svg path {
-    fill: #1e1e1e;
-}
-
-.stats-block.stats-block--scp.stats-block--postgraduate {
-    background-image: linear-gradient(to bottom, #00284d, #0077a0);
-}
-
-.stats-block.stats-block--scp.stats-block--postgraduate h2 {
-    border-bottom: 1px solid #0077a0;
-}
-
-.stats-block.stats-block--scp.stats-block--mba {
-    background-image: linear-gradient(to bottom, #72c8c5, #88d1ce);
-    color: #1e1e1e;
-}
-
-.stats-block.stats-block--scp.stats-block--mba h2 {
-    border-bottom: 1px solid #00444d;
-}
-
-.stats-block.stats-block--scp.stats-block--mba .stats-block__grid .stats-block__item__icon svg {
-    fill: #1e1e1e;
-}
-
-.stats-block.stats-block--scp.stats-block--mba .stats-block__grid .stats-block__item__icon svg path {
-    fill: #1e1e1e;
-}
-
-.stats-block.stats-block--scp.stats-block--phd {
-    background-image: linear-gradient(to bottom, #006081, #0077a0);
-}
-
-.stats-block.stats-block--scp.stats-block--phd h2 {
-    border-bottom: 1px solid #49c7ed;
-}
-
-.stats-block.stats-block--scp.stats-block--execed {
-    background-image: linear-gradient(to bottom, #842b91, #6f2479);
-}
-
-.stats-block.stats-block--scp.stats-block--execed h2 {
-    border-bottom: 1px solid #ee3780;
-}
-
-.stats-block.stats-block--scp.stats-block--corporate {
-    background-image: linear-gradient(to bottom, #BF1E2B, #d92231);
-}
-
-.stats-block.stats-block--scp.stats-block--corporate h2 {
-    border-bottom: 1px solid #d92231;
 }
 
 .stats-block.stats-block--scp .stats-block__grid {
@@ -11887,6 +11824,72 @@ scp--undergraduate
     .stats-block.stats-block--scp .stats-block__grid[data-count='4'] .stats-block__item {
         flex-basis: 50%;
     }
+}
+
+.scp--undergraduate .stats-block.stats-block--scp, .stats-block--scp.stats-block--undergraduate {
+    background-image: linear-gradient(to bottom, #fbae3b, #f15f22);
+    color: #1e1e1e;
+}
+
+.scp--undergraduate .stats-block.stats-block--scp h2, .stats-block--scp.stats-block--undergraduate h2 {
+    border-bottom: 1px solid #f15f22;
+}
+
+.scp--undergraduate .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg, .stats-block--scp.stats-block--undergraduate .stats-block__grid .stats-block__item__icon svg {
+    fill: #1e1e1e;
+}
+
+.scp--undergraduate .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg path, .stats-block--scp.stats-block--undergraduate .stats-block__grid .stats-block__item__icon svg path {
+    fill: #1e1e1e;
+}
+
+.scp--masters .stats-block.stats-block--scp, .stats-block--scp.stats-block--postgraduate {
+    background-image: linear-gradient(to bottom, #00284d, #0077a0);
+}
+
+.scp--masters .stats-block.stats-block--scp h2, .stats-block--scp.stats-block--postgraduate h2 {
+    border-bottom: 1px solid #0077a0;
+}
+
+.scp--mba .stats-block.stats-block--scp, .stats-block--scp.stats-block--mba {
+    background-image: linear-gradient(to bottom, #72c8c5, #88d1ce);
+    color: #1e1e1e;
+}
+
+.scp--mba .stats-block.stats-block--scp h2, .stats-block--scp.stats-block--mba h2 {
+    border-bottom: 1px solid #00444d;
+}
+
+.scp--mba .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg, .stats-block--scp.stats-block--mba .stats-block__grid .stats-block__item__icon svg {
+    fill: #1e1e1e;
+}
+
+.scp--mba .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg path, .stats-block--scp.stats-block--mba .stats-block__grid .stats-block__item__icon svg path {
+    fill: #1e1e1e;
+}
+
+.scp--phd .stats-block.stats-block--scp, .stats-block--scp.stats-block--phd {
+    background-image: linear-gradient(to bottom, #006081, #0077a0);
+}
+
+.scp--phd .stats-block.stats-block--scp h2, .stats-block--scp.stats-block--phd h2 {
+    border-bottom: 1px solid #49c7ed;
+}
+
+.scp--executive-education .stats-block.stats-block--scp, .stats-block--scp.stats-block--execed {
+    background-image: linear-gradient(to bottom, #842b91, #6f2479);
+}
+
+.scp--executive-education .stats-block.stats-block--scp h2, .stats-block--scp.stats-block--execed h2 {
+    border-bottom: 1px solid #ee3780;
+}
+
+.scp--corporate .stats-block.stats-block--scp, .stats-block--scp.stats-block--corporate {
+    background-image: linear-gradient(to bottom, #BF1E2B, #d92231);
+}
+
+.scp--corporate .stats-block.stats-block--scp h2, .stats-block--scp.stats-block--corporate h2 {
+    border-bottom: 1px solid #d92231;
 }
 
 .cta {
