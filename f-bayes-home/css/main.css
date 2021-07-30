@@ -7233,121 +7233,6 @@ svg:not(:root) {
     outline: 1px dotted #1e1e1e;
 }
 
-/*Transform mixin*/
-/*Animation keyframes*/
-@-webkit-keyframes reveal {
-    0% {
-        transform: scaleY(1);
-    }
-    100% {
-        transform: scaleY(0);
-    }
-}
-@keyframes reveal {
-    0% {
-        transform: scaleY(1);
-    }
-    100% {
-        transform: scaleY(0);
-    }
-}
-
-@-webkit-keyframes lines {
-    0% {
-        transform: scaleX(0);
-    }
-    50% {
-        transform: scaleX(1);
-    }
-    100% {
-        transform: scaleX(0);
-    }
-}
-
-@keyframes lines {
-    0% {
-        transform: scaleX(0);
-    }
-    50% {
-        transform: scaleX(1);
-    }
-    100% {
-        transform: scaleX(0);
-    }
-}
-
-@-webkit-keyframes line-left {
-    0% {
-        transform-origin: 100% 50%;
-    }
-    50%, 100% {
-        transform-origin: 0% 50%;
-    }
-}
-
-@keyframes line-left {
-    0% {
-        transform-origin: 100% 50%;
-    }
-    50%, 100% {
-        transform-origin: 0% 50%;
-    }
-}
-
-@-webkit-keyframes line-right {
-    0% {
-        transform-origin: 0% 50%;
-    }
-    50%, 100% {
-        transform-origin: 100% 50%;
-    }
-}
-
-@keyframes line-right {
-    0% {
-        transform-origin: 0% 50%;
-    }
-    50%, 100% {
-        transform-origin: 100% 50%;
-    }
-}
-
-@-webkit-keyframes bracket {
-    0% {
-        transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(1);
-    }
-}
-
-@keyframes bracket {
-    0% {
-        transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(1);
-    }
-}
-
-@-webkit-keyframes bracket-line {
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes bracket-line {
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
-
 /* Layout styles*/
 @media (max-width: 1439px) {
     .bayes-container {
@@ -7392,25 +7277,8 @@ svg:not(:root) {
     }
 }
 
-/* smaller then desktop */
-.bayes-feature-content {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-/* ease in effect*/
-.ease-into-view {
-    opacity: 0;
-    transition: opacity ease-in 0.3s;
-}
-
-.ease-into-view-completed {
-    opacity: 1;
-}
-
 /* styles */
-/*Banner Video*/
-/*SVG controls*/
+/*SVG controls styles*/
 .bayes-home .video-banner__controls {
     right: 5rem;
     bottom: 5rem;
@@ -7542,6 +7410,121 @@ svg:not(:root) {
 
 .bayes-home .video-banner__play.video-banner__play--pause svg .icon {
     transform: scale(1);
+}
+
+/*carousel button svg*/
+/*Animation keyframes*/
+@-webkit-keyframes reveal {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}
+@keyframes reveal {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+@-webkit-keyframes lines {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+@keyframes lines {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+@-webkit-keyframes line-left {
+    0% {
+        transform-origin: 100% 50%;
+    }
+    50%, 100% {
+        transform-origin: 0% 50%;
+    }
+}
+
+@keyframes line-left {
+    0% {
+        transform-origin: 100% 50%;
+    }
+    50%, 100% {
+        transform-origin: 0% 50%;
+    }
+}
+
+@-webkit-keyframes line-right {
+    0% {
+        transform-origin: 0% 50%;
+    }
+    50%, 100% {
+        transform-origin: 100% 50%;
+    }
+}
+
+@keyframes line-right {
+    0% {
+        transform-origin: 0% 50%;
+    }
+    50%, 100% {
+        transform-origin: 100% 50%;
+    }
+}
+
+@-webkit-keyframes bracket {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes bracket {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@-webkit-keyframes bracket-line {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes bracket-line {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
 }
 
 .bayes-home {
@@ -7711,58 +7694,7 @@ svg:not(:root) {
     background-color: #1e1e1e;
 }
 
-/* Side bars styles */
-.bayes-left-sidebar {
-    position: absolute;
-    z-index: 2;
-    height: 100%;
-    width: 1rem;
-    left: 0;
-    top: 0;
-    background-color: transparent;
-    border-right: solid #dddddd 1px;
-    transition: background-color 1s;
-}
-
-.bayes-right-sidebar {
-    position: absolute;
-    z-index: 2;
-    height: 100%;
-    width: 1rem;
-    right: 0;
-    top: 0;
-    background-color: transparent;
-    border-left: solid #dddddd 1px;
-    transition: background-color 1s;
-}
-
-@media (min-width: 1440px) and (max-width: 1599px) {
-    .bayes-left-sidebar,
-    .bayes-right-sidebar {
-        width: calc((100% - 1440px)/2);
-    }
-}
-
-@media (min-width: 1600px) {
-    .bayes-left-sidebar {
-        width: 5rem;
-    }
-    .bayes-right-sidebar {
-        width: 5rem;
-    }
-}
-
-.bayes-left-sidebar-scrolled {
-    transition: background-color 1s;
-    background-color: #00284d;
-}
-
-.bayes-right-sidebar-scrolled {
-    transition: background-color 1s;
-    background-color: #ffffff;
-}
-
-/* Spotlight styles */
+/*Banner Video*/
 @media (max-width: 900px) {
     .bayes-spotlight .bayes-full-width-container__wrapper {
         max-width: initial;
@@ -7906,7 +7838,7 @@ svg:not(:root) {
     font-weight: bold;
 }
 
-/* Programmes block styles */
+/* Spotlight styles */
 .bayes-programmes {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -8025,7 +7957,7 @@ svg:not(:root) {
     font-weight: 500;
 }
 
-/* Statistic block styles */
+/* Programmes block styles */
 .bayes-statistic {
     position: relative;
     padding-top: 5rem;
@@ -8128,7 +8060,7 @@ svg:not(:root) {
     outline: 3px dotted #ffffff;
 }
 
-/* News styles */
+/* Statistic block styles */
 .bayes-news {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -8261,8 +8193,10 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
-/* Feature content block styles */
+/* News styles */
 .bayes-feature-content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #d0cfcb;
 }
 
@@ -8316,97 +8250,8 @@ svg:not(:root) {
     margin-top: 1rem;
 }
 
-/* events styles */
-.bayes-events {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    clear: both;
-    zoom: 1;
-    max-width: 1440px;
-}
-
-@supports (display: flex) {
-    .bayes-events {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-}
-
-.bayes-events:before, .bayes-events:after {
-    content: '';
-    display: block;
-}
-
-.bayes-events:after {
-    clear: both;
-}
-
-@media (max-width: 500px) {
-    .bayes-events {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-}
-
-@media (min-width: 501px) {
-    .bayes-events {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-.bayes-events .bayes-events__title {
-    position: relative;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    align-items: center;
-    padding: 0.5rem 2rem;
-    margin-bottom: 1rem;
-}
-
-.bayes-events .bayes-events__title h2 {
-    line-height: 1;
-    margin-bottom: 1rem;
-    font-size: 2.75rem;
-    font-weight: bold;
-}
-
-.bayes-events a {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-}
-
-@media (min-width: 900px) {
-    .bayes-events {
-        display: flex;
-    }
-    .bayes-events .bayes-events__wrapper {
-        width: 33%;
-    }
-    .bayes-events .feature-events__cards__wrapper {
-        width: 65%;
-    }
-    .bayes-events .feature-events__cards__content {
-        width: 50%;
-    }
-}
-
-@media (max-width: 899px) {
-    .bayes-events .bayes-events__wrapper {
-        margin-bottom: 1rem;
-    }
-}
-
-/* social styles */
+/* Feature content block styles */
+/*Transform mixin*/
 .bayes-social-links {
     background-color: #00284d;
 }
@@ -8636,6 +8481,158 @@ svg:not(:root) {
 @media (max-width: 649px) {
     .bayes-social-links__wrap {
         padding: 1rem;
+    }
+}
+
+/* social styles */
+/* ease in effect*/
+.ease-into-view {
+    opacity: 0;
+    transition: opacity ease-in 0.3s;
+}
+
+.ease-into-view-completed {
+    opacity: 1;
+}
+
+/* Side bars styles */
+.bayes-left-sidebar {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 1rem;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    border-right: solid #dddddd 1px;
+    transition: background-color 1s;
+}
+
+.bayes-right-sidebar {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 1rem;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border-left: solid #dddddd 1px;
+    transition: background-color 1s;
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .bayes-left-sidebar,
+    .bayes-right-sidebar {
+        width: calc((100% - 1440px)/2);
+    }
+}
+
+@media (min-width: 1600px) {
+    .bayes-left-sidebar {
+        width: 5rem;
+    }
+    .bayes-right-sidebar {
+        width: 5rem;
+    }
+}
+
+.bayes-left-sidebar-scrolled {
+    transition: background-color 1s;
+    background-color: #00284d;
+}
+
+.bayes-right-sidebar-scrolled {
+    transition: background-color 1s;
+    background-color: #ffffff;
+}
+
+/* events styles */
+.bayes-events {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    clear: both;
+    zoom: 1;
+    max-width: 1440px;
+}
+
+@supports (display: flex) {
+    .bayes-events {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.bayes-events:before, .bayes-events:after {
+    content: '';
+    display: block;
+}
+
+.bayes-events:after {
+    clear: both;
+}
+
+@media (max-width: 500px) {
+    .bayes-events {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .bayes-events {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.bayes-events .bayes-events__title {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.bayes-events .bayes-events__title h2 {
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: bold;
+}
+
+.bayes-events a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+@media (min-width: 900px) {
+    .bayes-events {
+        display: flex;
+    }
+    .bayes-events .bayes-events__wrapper {
+        width: 33%;
+    }
+    .bayes-events .feature-events__cards__wrapper {
+        width: 65%;
+    }
+    .bayes-events .feature-events__cards__content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 899px) {
+    .bayes-events .bayes-events__wrapper {
+        margin-bottom: 1rem;
     }
 }
 
