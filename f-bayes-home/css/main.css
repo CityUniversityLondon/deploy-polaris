@@ -7860,6 +7860,17 @@ svg:not(:root) {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+@media (max-width: 899px) {
+    .bayes-programmes--image-bg {
+        top: 0;
+        transform: initial;
+        height: 100%;
+    }
+    .bayes-programmes--image-bg img {
+        height: 100%;
+    }
+}
+
 .bayes-programmes--title {
     font-size: 3.75rem;
     color: #ffffff;
