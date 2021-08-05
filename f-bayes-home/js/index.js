@@ -24779,7 +24779,7 @@ function launch(element) {
 
 
     var observer = new IntersectionObserver(actionOnScrollAction, {
-      threshold: 0.1
+      threshold: 0.5
     });
     observer.observe(banner);
     var easeElements = [].slice.call(element.querySelectorAll('.ease-into-view'));
