@@ -7386,6 +7386,27 @@ svg:not(:root) {
 
 /*carousel button svg*/
 /*Animation keyframes*/
+@-webkit-keyframes revealSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes revealSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @-webkit-keyframes reveal {
     0% {
         transform: scaleY(1);
@@ -7394,6 +7415,7 @@ svg:not(:root) {
         transform: scaleY(0);
     }
 }
+
 @keyframes reveal {
     0% {
         transform: scaleY(1);
@@ -7511,110 +7533,32 @@ svg:not(:root) {
     display: block;
 }
 
-.bayes-home .video-banner__banner .banner-bracket-block__anglesA:before, .bayes-home .video-banner__banner .banner-bracket-block__anglesA:after {
-    width: 3rem;
-    left: -2rem;
+@media (min-width: 901px) {
+    .bayes-home .video-banner__banner .banner-bracket-block__anglesA:before, .bayes-home .video-banner__banner .banner-bracket-block__anglesA:after {
+        width: 3rem;
+        left: -2rem;
+    }
+    .bayes-home .video-banner__banner .banner-bracket-block__anglesA::before {
+        border-width: 1.5rem 0 0 1.5rem;
+    }
+    .bayes-home .video-banner__banner .banner-bracket-block__anglesA:after {
+        border-width: 0 0 1.5rem 1.5rem;
+    }
+    .bayes-home .video-banner__banner .banner-bracket-block__anglesB:before, .bayes-home .video-banner__banner .banner-bracket-block__anglesB:after {
+        width: 3rem;
+        right: -2rem;
+    }
+    .bayes-home .video-banner__banner .banner-bracket-block__anglesB::before {
+        border-width: 1.5rem 1.5rem 0 0;
+    }
+    .bayes-home .video-banner__banner .banner-bracket-block__anglesB:after {
+        border-width: 0 1.5rem 1.5rem 0;
+    }
 }
 
-.bayes-home .video-banner__banner .banner-bracket-block__anglesA::before {
-    border-width: 1.5rem 0 0 1.5rem;
-}
-
-.bayes-home .video-banner__banner .banner-bracket-block__anglesA:after {
-    border-width: 0 0 1.5rem 1.5rem;
-}
-
-.bayes-home .video-banner__banner .banner-bracket-block__anglesB:before, .bayes-home .video-banner__banner .banner-bracket-block__anglesB:after {
-    width: 3rem;
-    right: -2rem;
-}
-
-.bayes-home .video-banner__banner .banner-bracket-block__anglesB::before {
-    border-width: 1.5rem 1.5rem 0 0;
-}
-
-.bayes-home .video-banner__banner .banner-bracket-block__anglesB:after {
-    border-width: 0 1.5rem 1.5rem 0;
-}
-
-.bayes-home .animate .banner-text__hide-top,
-.bayes-home .animate .banner-text__hide-bottom {
-    position: absolute;
-    z-index: 3;
-    width: 105%;
-    height: 90%;
-    background: #BF1E2B;
-    left: -1rem;
-    -webkit-animation: reveal .4s ease-out 1.7s;
-            animation: reveal .4s ease-out 1.7s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-}
-
-.bayes-home .animate .banner-text__hide-top {
-    top: -1rem;
-    transform-origin: bottom;
-}
-
-.bayes-home .animate .banner-text__hide-bottom {
-    bottom: -1rem;
-    transform-origin: top;
-}
-
-.bayes-home .animate .line {
-    position: absolute;
-    z-index: 10;
-    width: 90%;
-    height: 4px;
-    top: 50%;
-    background: #fff;
-    transform: scaleX(0);
-}
-
-.bayes-home .animate .line.left {
-    left: 50px;
-    transform-origin: 100% 50%;
-    -webkit-animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s;
-            animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s;
-}
-
-.bayes-home .animate .line.right {
-    right: 50px;
-    transform-origin: 0% 50%;
-    -webkit-animation: lines 1s ease-in-out 0.8s, line-right 1s steps(1) 0.8s;
-            animation: lines 1s ease-in-out 0.8s, line-right 1s steps(1) 0.8s;
-}
-
-.bayes-home .animate .banner-bracket-block__anglesA:before {
-    transform-origin: 0% 50%;
-    -webkit-animation: bracket-line .2s ease-out 2.1s;
-            animation: bracket-line .2s ease-out 2.1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-}
-
-.bayes-home .animate .banner-bracket-block__anglesA:after {
-    transform-origin: 0% 50%;
-    -webkit-animation: bracket-line .2s ease-out 2.1s;
-            animation: bracket-line .2s ease-out 2.1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-}
-
-.bayes-home .animate .banner-bracket-block__anglesB:before {
-    transform-origin: 100% 50%;
-    -webkit-animation: bracket-line .2s ease-out 2.1s;
-            animation: bracket-line .2s ease-out 2.1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-}
-
-.bayes-home .animate .banner-bracket-block__anglesB:after {
-    transform-origin: 100% 50%;
-    -webkit-animation: bracket-line .2s ease-out 2.1s;
-            animation: bracket-line .2s ease-out 2.1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+.bayes-home .animate .video-banner__text__wrapper {
+    -webkit-animation: revealSlideUp ease-in 2s;
+            animation: revealSlideUp ease-in 2s;
 }
 
 .bayes-home .video-banner__text__wrapper {
@@ -7653,6 +7597,10 @@ svg:not(:root) {
         height: 100%;
         width: 100%;
     }
+    .bayes-home .video-banner__text__wrapper .video-banner__text {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 }
 
 .bayes-home .image-banner .yt-video__cta {
@@ -7684,6 +7632,8 @@ svg:not(:root) {
 
 .bayes-home .image-banner .image-banner__text__wrapper--title h2 {
     font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3rem;
     text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -7729,7 +7679,6 @@ svg:not(:root) {
     background-color: #00284d;
     padding: 2rem 2rem 2rem 1rem;
     position: relative;
-    z-index: 3;
 }
 
 @media (min-width: 1201px) {
@@ -7739,6 +7688,9 @@ svg:not(:root) {
 }
 
 @media (min-width: 901px) {
+    .bayes-spotlight .bayes-spotlight__twocards {
+        z-index: 3;
+    }
     .bayes-spotlight .bayes-spotlight__twocards:before {
         content: '';
         height: 5rem;
@@ -18243,7 +18195,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .video-banner__banner .video-banner__text__wrapper {
     opacity: 0;
-    transition: opacity 2s;
 }
 
 .video-banner__banner.playing {
@@ -18252,6 +18203,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .video-banner__banner.playing.text:before, .video-banner__banner.playing.textout:before {
     opacity: 1;
+    transition: opacity ease-in 3s;
 }
 
 .video-banner__banner.playing.text .video-banner__text__wrapper {
