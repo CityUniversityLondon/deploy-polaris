@@ -26381,12 +26381,15 @@ div.widget-123_test_ {
     padding: 1rem 2rem;
 }
 
-@media (max-width: 650px) {
-    .course-subject-list {
-        padding: 1rem;
-    }
+@media (max-width: 649px) {
     .course-subject-list h2 {
         line-height: 1.1;
+    }
+}
+
+@media (max-width: 500px) {
+    .course-subject-list {
+        padding: 1rem;
     }
 }
 
@@ -26480,6 +26483,12 @@ div.widget-123_test_ {
     list-style: none;
     margin-bottom: initial;
     margin-left: initial;
+}
+
+@media (min-width: 651px) {
+    .course-subject-list ul {
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media (min-width: 501px) {
