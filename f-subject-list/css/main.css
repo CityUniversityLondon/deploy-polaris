@@ -26378,7 +26378,16 @@ div.widget-123_test_ {
 }
 
 .course-subject-list {
-    padding: 2rem;
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 650px) {
+    .course-subject-list {
+        padding: 1rem;
+    }
+    .course-subject-list h2 {
+        line-height: 1.1;
+    }
 }
 
 .course-subject-list .subject-bracket-block__anglesA:before, .course-subject-list .subject-bracket-block__anglesA:after,
