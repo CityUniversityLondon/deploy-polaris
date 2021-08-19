@@ -7778,19 +7778,15 @@ svg:not(:root) {
     padding: 2rem;
 }
 
+.bayes-spotlight__feature h2 {
+    line-height: 2.2rem;
+    margin-bottom: initial;
+}
+
 @media (min-width: 1201px) {
     .bayes-spotlight__feature {
         padding: 4rem 8rem;
     }
-}
-
-.bayes-spotlight__feature .bayes-spotlight__feature--strapline {
-    font-size: 1.25rem;
-    margin-bottom: 0;
-}
-
-.bayes-spotlight__feature p {
-    font-weight: bold;
 }
 
 /* Spotlight styles */
@@ -8439,7 +8435,15 @@ svg:not(:root) {
     outline-width: 0;
 }
 
-@media (min-width: 651px) {
+@media (min-width: 651px) and (max-width: 1439px) {
+    .bayes-social-links__instagram__wrapper .connect-social__card--insta a {
+        width: 27rem;
+        height: 27rem;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1440px) {
     .bayes-social-links__instagram__wrapper .connect-social__card--insta a {
         width: 33rem;
         height: 33rem;
