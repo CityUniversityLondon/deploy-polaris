@@ -8242,6 +8242,12 @@ svg:not(:root) {
     background-color: #00284d;
 }
 
+@media (max-width: 500px) {
+    .bayes-social-links {
+        overflow: hidden;
+    }
+}
+
 .bayes-social-links .bayes-full-width-container__wrapper {
     position: relative;
 }
