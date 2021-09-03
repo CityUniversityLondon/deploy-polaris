@@ -24878,9 +24878,9 @@ youtubeCloseBtn.append(youtubeCloseBtn_icon);
 youtube_container.append(youtubeCloseBtn);
 jquery__WEBPACK_IMPORTED_MODULE_1___default()(youtube_cta).click(function (e) {
   e.preventDefault(); // Remove MP4 video banner
-
-  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.bayes-video-banner__banner').remove();
-  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.video-banner__controls').remove(); // Show/hide animation
+  // $('.bayes-video-banner__banner').remove();
+  // $('.video-banner__controls').remove();
+  // Show/hide animation
 
   youtube_container.show();
   banner_image.hide();
