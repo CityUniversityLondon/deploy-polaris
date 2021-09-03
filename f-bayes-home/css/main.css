@@ -7195,6 +7195,10 @@ svg:not(:root) {
     font-weight: 900;
 }
 
+.promo-strap .promo-strap__content p {
+    margin: initial;
+}
+
 .promo-strap .promo-strap__content a {
     background-color: inherit;
     color: inherit;
