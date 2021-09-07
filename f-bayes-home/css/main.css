@@ -28777,7 +28777,6 @@ div.widget-123_test_ {
     transition: opacity 0.2s ease 0s, 0.5s 0.2s ease 0s, ease 0.2s ease 0s;
     display: block;
     margin: auto;
-    width: 60%;
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
