@@ -28779,6 +28779,12 @@ div.widget-123_test_ {
     margin: auto;
 }
 
+@media (max-width: 899px) {
+    .bayes-video-banner__text__wrapper .video-banner__text {
+        width: 60%;
+    }
+}
+
 @media (min-width: 901px) and (max-width: 1200px) {
     .bayes-video-banner__text__wrapper .video-banner__text {
         bottom: 25px;
@@ -28811,7 +28817,6 @@ div.widget-123_test_ {
     .bayes-video-banner__text__wrapper .video-banner__text .video-banner__text__title {
         font-size: 2.98598rem;
         margin: auto;
-        padding: 1rem;
     }
 }
 
