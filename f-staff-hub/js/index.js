@@ -25860,7 +25860,7 @@ function launch(el) {
     nav.launch();
     Object(_home_link__WEBPACK_IMPORTED_MODULE_6__["default"])(containerTop);
     var tertiaryMenu = jquery__WEBPACK_IMPORTED_MODULE_3___default()(el).find('.tertiary-navigation__list');
-    jquery__WEBPACK_IMPORTED_MODULE_3___default()(tertiaryMenu).find('li.staffhub').remove();
+    jquery__WEBPACK_IMPORTED_MODULE_3___default()(tertiaryMenu).find('li:last').remove();
   } else {
     var _nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["current"], containerTop);
 

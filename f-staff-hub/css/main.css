@@ -9832,6 +9832,10 @@ svg:not(:root) {
     top: 5px;
 }
 
+.secondary-navigation__list--home:hover i {
+    top: 0px;
+}
+
 .tertiary-navigation--desktop {
     position: absolute;
     bottom: 100%;
