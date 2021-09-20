@@ -25571,10 +25571,11 @@ function prepareStickySideNav(navigation) {
 
 function prepareMenu(widget) {
   var container = widget.find('.left-hand-navigation__menu');
-  container.html('');
+  container.html(''); // remove noscript lefthand-navigation
 
   if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
-    var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14);
+    var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14); // Staffhub(SH) uses different tree due to being type2 asset in Matrix
+
     menu.launch();
   } else {
     var _menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["current"], false, 14);
@@ -25633,7 +25634,12 @@ function processTree(gCurrent, gTree) {
     return {
       tree: null,
       current: null
-    };
+    }; // left hand navigation only starts on level 3
+  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 2) {
+    return {
+      tree: null,
+      current: null
+    }; // left hand navigation only starts on level 2 if Staffhub
   }
 
   var tree = gCurrent.slice(1, 3).reduce(function (acc, currentItem) {
@@ -25883,6 +25889,7 @@ function launch(el) {
   var containerTri = element.find('.nav-mobile__tertiary__children');
 
   if (_parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
+    // Staffhub(SH) uses different tree due to being type2 asset in Matrix
     var nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentSH"], containerTri);
     nav.launch();
     Object(_home_link__WEBPACK_IMPORTED_MODULE_6__["default"])(containerTop);
@@ -26082,7 +26089,7 @@ var PARSE_REGEX = /^\s*([0-9]) ([^\s]+) [0-9] (.+)$/;
 var currentURL = document.getElementById('page_urls').innerHTML;
 
 function loadData() {
-  return document.getElementById('nav-mobile__data').innerHTML;
+  return document.getElementById('nav-mobile__data').innerHTML; // Global tree
 }
 
 function loadUrls() {
@@ -26090,7 +26097,7 @@ function loadUrls() {
 }
 
 function loadDataStaffHub() {
-  return document.getElementById('nav-mobile__data__tertiary').innerHTML;
+  return document.getElementById('nav-mobile__data__tertiary').innerHTML; // Staffhub tree
 }
 
 function getPath(url) {
@@ -26106,6 +26113,12 @@ function matchLevel(path, currentPath) {
     return 0;
   }
 }
+/*
+pareseNav function to return asset tree Object and current asset tree Array
+This data is used in VerticalMenuHelper() which creates left-hand navigation and also called in NavMobile() which creates
+mobile navigation
+*/
+
 
 function parseNav(data, currentUrl) {
   var tree = {
