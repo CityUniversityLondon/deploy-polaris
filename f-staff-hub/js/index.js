@@ -25459,13 +25459,19 @@ function kisWidget(el) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
-/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _parse_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parse-nav */ "./src/components/left-hand-navigation/parse-nav.js");
-/* harmony import */ var _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../nav-mobile/vertical-menu-helper */ "./src/components/nav-mobile/vertical-menu-helper.js");
-/* harmony import */ var stickybits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! stickybits */ "./node_modules/stickybits/dist/stickybits.es.js");
+/* harmony import */ var core_js_modules_es7_array_includes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es7.array.includes */ "./node_modules/core-js/modules/es7.array.includes.js");
+/* harmony import */ var core_js_modules_es7_array_includes__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es7_array_includes__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_string_includes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.string.includes */ "./node_modules/core-js/modules/es6.string.includes.js");
+/* harmony import */ var core_js_modules_es6_string_includes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_includes__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
+/* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _parse_nav__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./parse-nav */ "./src/components/left-hand-navigation/parse-nav.js");
+/* harmony import */ var _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../nav-mobile/vertical-menu-helper */ "./src/components/nav-mobile/vertical-menu-helper.js");
+/* harmony import */ var stickybits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! stickybits */ "./node_modules/stickybits/dist/stickybits.es.js");
+
+
 
 
 
@@ -25478,9 +25484,9 @@ function prepareStickySideNav(navigation) {
   var NAVIGATION = navigation[0];
 
   if (NAVIGATION) {
-    var BANNER = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.banner')[0];
-    var CONTENT = jquery__WEBPACK_IMPORTED_MODULE_1___default()('#content')[0];
-    var FOOTER = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.footer')[0];
+    var BANNER = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.banner')[0];
+    var CONTENT = jquery__WEBPACK_IMPORTED_MODULE_3___default()('#content')[0];
+    var FOOTER = jquery__WEBPACK_IMPORTED_MODULE_3___default()('.footer')[0];
     var classAbsolute = 'left-hand-navigation--absolute';
     var classFixed = 'left-hand-navigation--fixed';
     var classTop = 'left-hand-navigation--top';
@@ -25566,15 +25572,23 @@ function prepareStickySideNav(navigation) {
 function prepareMenu(widget) {
   var container = widget.find('.left-hand-navigation__menu');
   container.html('');
-  var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_2__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_2__["current"], false, 14);
-  menu.launch();
+
+  if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
+    var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14);
+    menu.launch();
+  } else {
+    var _menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["current"], false, 14);
+
+    _menu.launch();
+  }
+
   widget.addClass('left-hand-navigation--jsinit');
 }
 
 function launch(element) {
-  var widget = jquery__WEBPACK_IMPORTED_MODULE_1___default()(element);
+  var widget = jquery__WEBPACK_IMPORTED_MODULE_3___default()(element);
   prepareMenu(widget);
-  Object(stickybits__WEBPACK_IMPORTED_MODULE_4__["default"])(widget); //prepareStickySideNav(widget);
+  Object(stickybits__WEBPACK_IMPORTED_MODULE_6__["default"])(widget); //prepareStickySideNav(widget);
 }
 
 var className = 'left-hand-navigation';
@@ -25589,44 +25603,58 @@ var className = 'left-hand-navigation';
 /*!**********************************************************!*\
   !*** ./src/components/left-hand-navigation/parse-nav.js ***!
   \**********************************************************/
-/*! exports provided: tree, current */
+/*! exports provided: tree, current, treeSH, currentSH, currentURL */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tree", function() { return tree; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "current", function() { return current; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "treeSH", function() { return treeSH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentSH", function() { return currentSH; });
 /* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.find */ "./node_modules/core-js/modules/es6.array.find.js");
 /* harmony import */ var core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../nav-mobile/parse-nav */ "./src/components/nav-mobile/parse-nav.js");
+/* harmony import */ var core_js_modules_es7_array_includes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es7.array.includes */ "./node_modules/core-js/modules/es7.array.includes.js");
+/* harmony import */ var core_js_modules_es7_array_includes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es7_array_includes__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_string_includes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.string.includes */ "./node_modules/core-js/modules/es6.string.includes.js");
+/* harmony import */ var core_js_modules_es6_string_includes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_includes__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../nav-mobile/parse-nav */ "./src/components/nav-mobile/parse-nav.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "currentURL", function() { return _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"]; });
 
 
 
 
 
-function processTree() {
-  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["current"].length < 3) {
+
+
+
+function processTree(gCurrent, gTree) {
+  if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 3) {
     return {
       tree: null,
       current: null
     };
   }
 
-  var tree = _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["current"].slice(1, 3).reduce(function (acc, currentItem) {
+  var tree = gCurrent.slice(1, 3).reduce(function (acc, currentItem) {
     return acc.children.find(function (child) {
       return child.url === currentItem.url;
     });
-  }, _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["tree"]);
-  var current = _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["current"].slice(2);
+  }, gTree);
+  var current = gCurrent.slice(2);
   return {
     current: current,
     tree: tree
   };
 }
 
-var _processTree = processTree(),
+var _processTree = processTree(_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_3__["current"], _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_3__["tree"]),
     tree = _processTree.tree,
     current = _processTree.current;
+
+var _processTree2 = processTree(_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentSH"], _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_3__["treeSH"]),
+    treeSH = _processTree2.tree,
+    currentSH = _processTree2.current;
 
 
 
@@ -25851,11 +25879,10 @@ __webpack_require__.r(__webpack_exports__);
 
 function launch(el) {
   var element = jquery__WEBPACK_IMPORTED_MODULE_3___default()(el);
-  var currentURL = document.getElementById('page_urls').innerHTML;
   var containerTop = element.find('.nav-mobile__content');
   var containerTri = element.find('.nav-mobile__tertiary__children');
 
-  if (currentURL.includes('bayes.city.ac.uk/staff-hub')) {
+  if (_parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
     var nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentSH"], containerTri);
     nav.launch();
     Object(_home_link__WEBPACK_IMPORTED_MODULE_6__["default"])(containerTop);
@@ -25993,7 +26020,7 @@ var NavMobile = /*#__PURE__*/function () {
 /*!************************************************!*\
   !*** ./src/components/nav-mobile/parse-nav.js ***!
   \************************************************/
-/*! exports provided: tree, current, treeSH, currentSH */
+/*! exports provided: tree, current, treeSH, currentSH, currentURL */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26002,6 +26029,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "current", function() { return current; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "treeSH", function() { return treeSH; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentSH", function() { return currentSH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentURL", function() { return currentURL; });
 /* harmony import */ var core_js_modules_es6_string_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.string.iterator */ "./node_modules/core-js/modules/es6.string.iterator.js");
 /* harmony import */ var core_js_modules_es6_string_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_es6_array_from__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.array.from */ "./node_modules/core-js/modules/es6.array.from.js");
@@ -26051,6 +26079,7 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var PARSE_REGEX = /^\s*([0-9]) ([^\s]+) [0-9] (.+)$/;
+var currentURL = document.getElementById('page_urls').innerHTML;
 
 function loadData() {
   return document.getElementById('nav-mobile__data').innerHTML;
