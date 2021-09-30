@@ -12329,6 +12329,7 @@ svg:not(:root) {
 
 .banner__img > picture > img {
     max-width: initial;
+    min-width: 100%;
 }
 
 .banner--full-overlay .banner__img:after,
