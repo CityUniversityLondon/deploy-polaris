@@ -14290,6 +14290,45 @@ USED IN:
     border-radius: 100%;
 }
 
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper .CybotCookiebotDialogBodyButton {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll,
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    border: 1px solid transparent;
+    color: #d92231;
+    background-color: transparent;
+    transition: border 0.2s;
+}
+
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:hover,
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover {
+    border: 1px solid #d92231;
+}
+
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:focus, #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:active,
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:focus,
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:active {
+    border: 1px solid #d92231;
+}
+
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+    background-color: #d92231;
+    transition: background-color 0.2s;
+    border: 2px dotted transparent;
+}
+
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover {
+    background-color: #ad1b27;
+    border: 2px dotted transparent;
+}
+
+#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:focus, #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:active {
+    border: 2px dotted #ffffff;
+}
+
 .scp--undergraduate .key-info--lined {
     border-top: 1px solid #f15f22;
     border-bottom: 1px solid #f15f22;
