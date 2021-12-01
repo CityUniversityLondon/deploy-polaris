@@ -110,10 +110,6 @@
     background-color: #fafafa;
 }
 
-.background--dove-gray {
-    background-color: #646464;
-}
-
 .background--white-smoke {
     background-color: #f2f2f2;
 }
@@ -144,6 +140,10 @@
 
 .background--lucifer {
     background-color: #666666;
+}
+
+.background--dove-gray {
+    background-color: #646464;
 }
 
 .background--black {
