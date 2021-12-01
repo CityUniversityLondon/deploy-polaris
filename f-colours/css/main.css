@@ -98,183 +98,183 @@
     display: none;
 }
 
-.background-white {
+.background--white {
     background-color: #ffffff;
 }
 
-.color-white {
+.color--white {
     color: #ffffff;
 }
 
-.background-lightgray {
+.background--lightgray {
     background-color: #fafafa;
 }
 
-.background-dove-gray {
+.background--dove-gray {
     background-color: #646464;
 }
 
-.background-white-smoke {
+.background--white-smoke {
     background-color: #f2f2f2;
 }
 
-.background-gainsboro {
+.background--gainsboro {
     background-color: #d8d8d8;
 }
 
-.background-whisper {
+.background--whisper {
     background-color: #e5e5e5;
 }
 
-.background-gallery {
+.background--gallery {
     background-color: #ececec;
 }
 
-.background-quill {
+.background--quill {
     background-color: #a9a19c;
 }
 
-.background-nobel {
+.background--nobel {
     background-color: #a1a1a1;
 }
 
-.background-emperor {
+.background--emperor {
     background-color: #555555;
 }
 
-.background-lucifer {
+.background--lucifer {
     background-color: #666666;
 }
 
-.background-black {
+.background--black {
     background-color: #1e1e1e;
 }
 
-.color-black {
+.color--black {
     color: #1e1e1e;
 }
 
-.background-endeavour {
+.background--endeavour {
     background-color: #005ea5;
 }
 
-.background-alizarin {
+.background--alizarin {
     background-color: #e30613;
 }
 
-.background-darkred {
+.background--darkred {
     background-color: #bd0510;
 }
 
-.background-flamingo {
+.background--flamingo {
     background-color: #e35205;
 }
 
-.background-yellow {
+.background--yellow {
     background-color: #f1b434;
 }
 
-.background-sherpa {
+.background--sherpa {
     background-color: #2e767a;
 }
 
-.background-montecarlo {
+.background--montecarlo {
     background-color: #a3d5cd;
 }
 
-.background-seablue {
-    background-color: #5BCCba;
+.background--seablue {
+    background-color: #5bccba;
 }
 
-.background-stromboli {
+.background--stromboli {
     background-color: #189183;
 }
 
-.background-neptune {
+.background--neptune {
     background-color: #91baa3;
 }
 
-.background-prussian {
+.background--prussian {
     background-color: #002b49;
 }
 
-.background-prussia-light {
+.background--prussia-light {
     background-color: #002a4c;
 }
 
-.background-allports {
+.background--allports {
     background-color: #006699;
 }
 
-.background-darkteal {
+.background--darkteal {
     background-color: #006081;
 }
 
-.background-picton {
+.background--picton {
     background-color: #5bc2e7;
 }
 
-.background-vivid {
-    background-color: #93328E;
+.background--vivid {
+    background-color: #93328e;
 }
 
-.background-clairvoyante {
+.background--clairvoyante {
     background-color: #6f2479;
 }
 
-.background-violet {
+.background--violet {
     background-color: #e31c79;
 }
 
-.background-fern {
+.background--fern {
     background-color: #496c60;
 }
 
-.background-glade {
+.background--glade {
     background-color: #5a8054;
 }
 
-.background-apricot {
+.background--apricot {
     background-color: #fddfb0;
 }
 
-.background-concrete {
+.background--concrete {
     background-color: #f2f2f2;
 }
 
-.background-catskill-white {
+.background--catskill-white {
     background-color: #f7fbfc;
 }
 
-.background-lead-mid-grey {
-    background-color: #7E756d;
+.background--lead-mid-grey {
+    background-color: #7e756d;
 }
 
-.background-cce-lead {
+.background--cce-lead {
     background-color: #8b2433;
 }
 
-.background-cce-accent {
+.background--cce-accent {
     background-color: #a9a19c;
 }
 
-.background-maroon {
+.background--maroon {
     background-color: #390032;
 }
 
-.background-facebook-blue {
+.background--facebook-blue {
     background-color: #3b5998;
 }
 
-.background-twitter-blue {
+.background--twitter-blue {
     background-color: #11a4ee;
 }
 
-.background-catskill {
+.background--catskill {
     background-color: #dce9f1;
 }
 
-.background-instagram {
+.background--instagram {
     background-color: #be297f;
 }
 
@@ -12085,7 +12085,7 @@ svg:not(:root) {
 }
 
 .banner--theme--execed .banner__content h1 {
-    background-color: #93328E;
+    background-color: #93328e;
     color: #ffffff;
 }
 
@@ -12095,7 +12095,7 @@ svg:not(:root) {
 }
 
 .banner--theme--executive-education .banner__content h1 {
-    background-color: #93328E;
+    background-color: #93328e;
     color: #ffffff;
 }
 
@@ -12195,7 +12195,7 @@ svg:not(:root) {
 }
 
 .scp--execed .banner--theme--corporate .banner__content h1 {
-    background-color: #93328E;
+    background-color: #93328e;
     color: #ffffff;
 }
 
@@ -12205,7 +12205,7 @@ svg:not(:root) {
 }
 
 .scp--executive-education .banner--theme--corporate .banner__content h1 {
-    background-color: #93328E;
+    background-color: #93328e;
     color: #ffffff;
 }
 
@@ -13594,7 +13594,7 @@ USED IN:
 .scp--mba .stats-block.stats-block--scp,
 .stats-block--scp.stats-block--mba {
     color: #1e1e1e;
-    background-image: linear-gradient(to bottom, #5BCCba, #a3d5cd);
+    background-image: linear-gradient(to bottom, #5bccba, #a3d5cd);
 }
 
 .scp--mba .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg,
@@ -13636,7 +13636,7 @@ USED IN:
 .scp--executive-education .stats-block.stats-block--scp,
 .stats-block--scp.stats-block--execed {
     color: #ffffff;
-    background-image: linear-gradient(to bottom, #93328E, #6f2479);
+    background-image: linear-gradient(to bottom, #93328e, #6f2479);
 }
 
 .scp--executive-education .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg,
@@ -13746,7 +13746,7 @@ USED IN:
 }
 
 .cta--purple {
-    background-color: #93328E;
+    background-color: #93328e;
     color: #ffffff;
 }
 
@@ -13963,7 +13963,7 @@ USED IN:
 }
 
 .scp--executive-education .cta--theme--primary {
-    background-color: #93328E;
+    background-color: #93328e;
     color: #ffffff;
 }
 
@@ -17268,7 +17268,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .feature-news__card__body__topic--entrepreneurship {
     position: relative;
     overflow: visible !important;
-    color: #93328E !important;
+    color: #93328e !important;
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
     font-weight: 600;
@@ -17296,7 +17296,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .feature-news__card__body__topic--entrepreneurship:after {
-    border: 2px solid #93328E;
+    border: 2px solid #93328e;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
@@ -17755,7 +17755,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    color: #93328E;
+    color: #93328e;
     line-height: 1;
     vertical-align: bottom;
     padding: 0 0.7em;
@@ -17773,7 +17773,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 [data-event-audience*='Executive Education'] a a {
-    color: #93328E;
+    color: #93328e;
 }
 
 [data-event-audience*='Executive Education'] a a:after {
@@ -17781,7 +17781,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 [data-event-audience*='Executive Education'] a:hover {
-    color: #93328E;
+    color: #93328e;
 }
 
 [data-event-audience*='Executive Education'] a:hover:before, [data-event-audience*='Executive Education'] a:hover:after {
@@ -18467,7 +18467,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .promo-cta--white-purple h2:after {
-    background-color: #93328E;
+    background-color: #93328e;
 }
 
 .youtube-embed-container {
@@ -19240,7 +19240,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .block-links__items--purple {
-    background-color: #93328E;
+    background-color: #93328e;
 }
 
 .block-links__items--undergraduate {
@@ -19850,7 +19850,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--executive-education {
-    border-bottom-color: #93328E;
+    border-bottom-color: #93328e;
 }
 
 .course-search__form--executive-education .course-search__form__select:before {
@@ -19858,7 +19858,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--executive-education .course-search__form__select select {
-    background-color: #93328E;
+    background-color: #93328e;
     color: #ffffff;
 }
 
@@ -20401,7 +20401,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .footer-meta.section--executive-education:before {
-    background-color: #93328E;
+    background-color: #93328e;
 }
 
 .footer-meta.section--masters:before {
@@ -20449,7 +20449,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--executive-education .footer-meta.section--scp-theme:before {
-    background-color: #93328E;
+    background-color: #93328e;
 }
 
 .scp--online-msc .footer-meta.section--scp-theme:before {
@@ -21295,7 +21295,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship {
     position: relative;
     overflow: visible !important;
-    color: #93328E !important;
+    color: #93328e !important;
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
     font-weight: 600;
@@ -21323,7 +21323,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:after {
-    border: 2px solid #93328E;
+    border: 2px solid #93328e;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
@@ -24094,7 +24094,7 @@ table tbody > tr > td:hover {
         background: #002a4c;
     }
     80% {
-        background: #93328E;
+        background: #93328e;
     }
     100% {
         background: #2e767a;
@@ -24109,7 +24109,7 @@ table tbody > tr > td:hover {
         background: #002a4c;
     }
     80% {
-        background: #93328E;
+        background: #93328e;
     }
     100% {
         background: #2e767a;
@@ -24355,7 +24355,7 @@ table tbody > tr > td:hover {
 }
 
 .scp--executive-education blockquote::before {
-    background-color: #93328E;
+    background-color: #93328e;
 }
 
 blockquote {
@@ -27064,7 +27064,7 @@ News events landing overrides */
 .news-article__anchor__topic--entrepreneurship {
     position: relative;
     overflow: visible !important;
-    color: #93328E !important;
+    color: #93328e !important;
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
     font-weight: 600;
@@ -27092,7 +27092,7 @@ News events landing overrides */
 }
 
 .news-article__anchor__topic--entrepreneurship:after {
-    border: 2px solid #93328E;
+    border: 2px solid #93328e;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
@@ -27613,15 +27613,15 @@ a.anchor--management:hover:after {
 }
 
 a.anchor--entrepreneurship {
-    color: #93328E;
+    color: #93328e;
 }
 
 a.anchor--entrepreneurship:hover {
-    color: #93328E;
+    color: #93328e;
 }
 
 a.anchor--entrepreneurship:hover:after {
-    border-color: #93328E;
+    border-color: #93328e;
 }
 
 a.anchor--cass-community {
@@ -28896,13 +28896,13 @@ div.widget-123_test_ {
 .course-subject-list-executive-education .subject-bracket-block__anglesA:before, .course-subject-list-executive-education .subject-bracket-block__anglesA:after,
 .course-subject-list-executive-education .subject-bracket-block__anglesB:before,
 .course-subject-list-executive-education .subject-bracket-block__anglesB:after {
-    border-color: #93328E;
+    border-color: #93328e;
 }
 
 .course-subject-list-executive-education .subject-bracket-block__anglesA:before, .course-subject-list-executive-education .subject-bracket-block__anglesA:after,
 .course-subject-list-executive-education .subject-bracket-block__anglesB:before,
 .course-subject-list-executive-education .subject-bracket-block__anglesB:after {
-    border-color: #93328E;
+    border-color: #93328e;
 }
 
 .bayes-youtube-embed-container {
