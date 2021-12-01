@@ -98,6 +98,186 @@
     display: none;
 }
 
+.background-white {
+    background-color: #ffffff;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.background-lightgray {
+    background-color: #fafafa;
+}
+
+.background-dove-gray {
+    background-color: #646464;
+}
+
+.background-white-smoke {
+    background-color: #f2f2f2;
+}
+
+.background-gainsboro {
+    background-color: #d8d8d8;
+}
+
+.background-whisper {
+    background-color: #e5e5e5;
+}
+
+.background-gallery {
+    background-color: #ececec;
+}
+
+.background-quill {
+    background-color: #a9a19c;
+}
+
+.background-nobel {
+    background-color: #a1a1a1;
+}
+
+.background-emperor {
+    background-color: #555555;
+}
+
+.background-lucifer {
+    background-color: #666666;
+}
+
+.background-black {
+    background-color: #1e1e1e;
+}
+
+.color-black {
+    color: #1e1e1e;
+}
+
+.background-endeavour {
+    background-color: #005ea5;
+}
+
+.background-alizarin {
+    background-color: #e30613;
+}
+
+.background-darkred {
+    background-color: #bd0510;
+}
+
+.background-flamingo {
+    background-color: #e35205;
+}
+
+.background-yellow {
+    background-color: #f1b434;
+}
+
+.background-sherpa {
+    background-color: #2e767a;
+}
+
+.background-montecarlo {
+    background-color: #a3d5cd;
+}
+
+.background-seablue {
+    background-color: #5BCCba;
+}
+
+.background-stromboli {
+    background-color: #189183;
+}
+
+.background-neptune {
+    background-color: #91baa3;
+}
+
+.background-prussian {
+    background-color: #002b49;
+}
+
+.background-prussia-light {
+    background-color: #002a4c;
+}
+
+.background-allports {
+    background-color: #006699;
+}
+
+.background-darkteal {
+    background-color: #006081;
+}
+
+.background-picton {
+    background-color: #5bc2e7;
+}
+
+.background-vivid {
+    background-color: #93328E;
+}
+
+.background-clairvoyante {
+    background-color: #6f2479;
+}
+
+.background-violet {
+    background-color: #e31c79;
+}
+
+.background-fern {
+    background-color: #496c60;
+}
+
+.background-glade {
+    background-color: #5a8054;
+}
+
+.background-apricot {
+    background-color: #fddfb0;
+}
+
+.background-concrete {
+    background-color: #f2f2f2;
+}
+
+.background-catskill-white {
+    background-color: #f7fbfc;
+}
+
+.background-lead-mid-grey {
+    background-color: #7E756d;
+}
+
+.background-cce-lead {
+    background-color: #8b2433;
+}
+
+.background-cce-accent {
+    background-color: #a9a19c;
+}
+
+.background-maroon {
+    background-color: #390032;
+}
+
+.background-facebook-blue {
+    background-color: #3b5998;
+}
+
+.background-twitter-blue {
+    background-color: #11a4ee;
+}
+
+.background-catskill {
+    background-color: #dce9f1;
+}
+
+.background-instagram {
+    background-color: #be297f;
+}
+
 /**
  * Managing anchors is a difficult process on a website as vast as ours, and
  * given the great variety in styles our anchors take, it is of the utmost
