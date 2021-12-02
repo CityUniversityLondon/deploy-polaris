@@ -8457,7 +8457,7 @@ svg:not(:root) {
 }
 
 .bayes-social-links__icons {
-    background-color: #bd0510;
+    background-color: #7e756d;
     color: #ffffff;
     padding: 1rem;
 }
@@ -8644,7 +8644,7 @@ svg:not(:root) {
 }
 
 .bayes-social-links__instagram__wrapper .connect-social__card--insta a:active, .bayes-social-links__instagram__wrapper .connect-social__card--insta a:focus {
-    outline-color: #ffffff;
+    outline-color: #0c0c0e;
     outline-offset: 1px;
     outline-width: 3px;
 }
