@@ -7849,7 +7849,7 @@ svg:not(:root) {
         content: '';
         width: 100%;
         height: calc(100% + 5rem);
-        background-color: #002b49;
+        background-color: #5bccba;
         position: absolute;
         left: -50%;
         top: -5rem;
@@ -7858,7 +7858,7 @@ svg:not(:root) {
 }
 
 .bayes-spotlight .bayes-spotlight__twocards {
-    background-color: #002b49;
+    background-color: #5bccba;
     padding: 2rem 2rem 2rem 1rem;
     position: relative;
 }
@@ -7877,7 +7877,7 @@ svg:not(:root) {
         content: '';
         height: 5rem;
         width: 100%;
-        background-color: #002b49;
+        background-color: #5bccba;
         position: absolute;
         top: -5rem;
         left: 0;
@@ -8717,7 +8717,7 @@ svg:not(:root) {
 
 .bayes-left-sidebar-scrolled {
     transition: background-color 1s;
-    background-color: #002b49;
+    background-color: #5bccba;
 }
 
 .bayes-right-sidebar-scrolled {
