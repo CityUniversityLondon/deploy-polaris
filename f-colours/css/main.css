@@ -146,6 +146,10 @@
     background-color: #646464;
 }
 
+.background--woodsmoke {
+    background-color: #0c0c0e;
+}
+
 .background--black {
     background-color: #1e1e1e;
 }
@@ -7926,14 +7930,14 @@ svg:not(:root) {
 
 .bayes-spotlight__cards a:focus {
     background-color: #ffffff;
-    outline: 3px solid #ffffff;
+    outline: 3px solid #0c0c0e;
     outline-offset: 3px;
 }
 
 .bayes-spotlight__cards a:active {
     background-color: #ffffff;
     transform: scale(1.05);
-    outline: 3px dotted #ffffff;
+    outline: 3px dotted #0c0c0e;
     outline-offset: 3px;
 }
 
