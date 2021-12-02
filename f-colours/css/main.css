@@ -8110,7 +8110,7 @@ svg:not(:root) {
     position: relative;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #bd0510;
+    background-color: #7e756d;
     color: #ffffff;
 }
 
@@ -8118,7 +8118,7 @@ svg:not(:root) {
     content: "";
     width: 30%;
     height: 4rem;
-    background-color: #bd0510;
+    background-color: #7e756d;
     position: absolute;
     top: -4rem;
     left: 0;
@@ -8425,7 +8425,7 @@ svg:not(:root) {
 /* Feature content block styles */
 /*Transform mixin*/
 .bayes-social-links {
-    background-color: #002b49;
+    background-color: #5bccba;
 }
 
 @media (max-width: 500px) {
