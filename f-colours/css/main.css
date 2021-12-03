@@ -134,6 +134,10 @@
     background-color: #a1a1a1;
 }
 
+.background--lead-mid-grey {
+    background-color: #7e756d;
+}
+
 .background--emperor {
     background-color: #555555;
 }
@@ -246,16 +250,8 @@
     background-color: #f7fbfc;
 }
 
-.background--lead-mid-grey {
-    background-color: #7e756d;
-}
-
-.background--cce-lead {
+.background--shiraz {
     background-color: #8b2433;
-}
-
-.background--cce-accent {
-    background-color: #a9a19c;
 }
 
 .background--maroon {
@@ -12055,7 +12051,7 @@ svg:not(:root) {
 }
 
 .banner--theme--mba .banner__content h1 {
-    background-color: #2e767a;
+    background-color: #496c60;
     color: #ffffff;
 }
 
@@ -12065,7 +12061,7 @@ svg:not(:root) {
 }
 
 .banner--theme--emba .banner__content h1 {
-    background-color: #189183;
+    background-color: #496c60;
     color: #ffffff;
 }
 
@@ -12075,7 +12071,7 @@ svg:not(:root) {
 }
 
 .banner--theme--demba .banner__content h1 {
-    background-color: #189183;
+    background-color: #91baa3;
     color: #ffffff;
 }
 
@@ -12165,7 +12161,7 @@ svg:not(:root) {
 }
 
 .scp--mba .banner--theme--corporate .banner__content h1 {
-    background-color: #2e767a;
+    background-color: #496c60;
     color: #ffffff;
 }
 
@@ -12175,7 +12171,7 @@ svg:not(:root) {
 }
 
 .scp--emba .banner--theme--corporate .banner__content h1 {
-    background-color: #189183;
+    background-color: #496c60;
     color: #ffffff;
 }
 
@@ -12185,7 +12181,7 @@ svg:not(:root) {
 }
 
 .scp--demba .banner--theme--corporate .banner__content h1 {
-    background-color: #189183;
+    background-color: #91baa3;
     color: #ffffff;
 }
 
@@ -13861,6 +13857,16 @@ USED IN:
     color: #1e1e1e;
 }
 
+.cta--fern {
+    background-color: #496c60;
+    color: #ffffff;
+}
+
+.cta--fern:hover, .cta--fern:focus, .cta--fern:active {
+    background-color: #3d5a50;
+    color: #ffffff;
+}
+
 .cta--online-msc {
     background-color: #189183;
     color: #ffffff;
@@ -13943,12 +13949,12 @@ USED IN:
 }
 
 .scp--mba .cta--theme--primary {
-    background-color: #2e767a;
+    background-color: #496c60;
     color: #ffffff;
 }
 
 .scp--mba .cta--theme--primary:hover, .scp--mba .cta--theme--primary:focus, .scp--mba .cta--theme--primary:active {
-    background-color: #266164;
+    background-color: #3d5a50;
     color: #ffffff;
 }
 
@@ -13958,6 +13964,26 @@ USED IN:
 }
 
 .scp--mba .cta--theme--secondary:hover, .scp--mba .cta--theme--secondary:focus, .scp--mba .cta--theme--secondary:active {
+    background-color: #8ecbc2;
+    color: #1e1e1e;
+}
+
+.scp--demba .cta--theme--primary {
+    background-color: #91baa3;
+    color: #1e1e1e;
+}
+
+.scp--demba .cta--theme--primary:hover, .scp--demba .cta--theme--primary:focus, .scp--demba .cta--theme--primary:active {
+    background-color: #7eae93;
+    color: #1e1e1e;
+}
+
+.scp--demba .cta--theme--secondary {
+    background-color: #a3d5cd;
+    color: #1e1e1e;
+}
+
+.scp--demba .cta--theme--secondary:hover, .scp--demba .cta--theme--secondary:focus, .scp--demba .cta--theme--secondary:active {
     background-color: #8ecbc2;
     color: #1e1e1e;
 }
@@ -20409,7 +20435,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .footer-meta.section--mba:before {
-    background-color: #2e767a;
+    background-color: #496c60;
+}
+
+.footer-meta.section--demba:before {
+    background-color: #91baa3;
 }
 
 .footer-meta.section--phd, .footer-meta.section--executive-phd {
@@ -20445,7 +20475,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--mba .footer-meta.section--scp-theme:before {
-    background-color: #2e767a;
+    background-color: #496c60;
+}
+
+.scp--demba .footer-meta.section--scp-theme:before {
+    background-color: #91baa3;
 }
 
 .scp--executive-education .footer-meta.section--scp-theme:before {
@@ -20454,6 +20488,10 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--online-msc .footer-meta.section--scp-theme:before {
     background-color: #189183;
+}
+
+.scp--online-cce .footer-meta.section--scp-theme:before {
+    background-color: #a9a19c;
 }
 
 .footer-meta__card {
@@ -23416,6 +23454,14 @@ table tbody > tr > td:hover {
 
 .scp--mba .timeline__collection .timeline__collection__icon {
     background-color: #a3d5cd;
+}
+
+.scp--demba .timeline__collection .timeline__collection__icon {
+    background-color: #a3d5cd;
+}
+
+.scp--cce .timeline__collection .timeline__collection__icon {
+    background-color: #a9a19c;
 }
 
 .scp--phd .timeline__collection .timeline__collection__icon {
