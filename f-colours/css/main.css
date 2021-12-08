@@ -14003,8 +14003,8 @@ USED IN:
 }
 
 .scp--corporate .cta--theme--secondary {
-    background-color: #ececec;
-    color: #1e1e1e;
+    background-color: #7e756d;
+    color: #ffffff;
     display: block;
     padding: 1.5rem;
     border-bottom-width: 0;
@@ -14012,8 +14012,8 @@ USED IN:
 }
 
 .scp--corporate .cta--theme--secondary:hover, .scp--corporate .cta--theme--secondary:focus, .scp--corporate .cta--theme--secondary:active {
-    background-color: #9b918c;
-    color: #1e1e1e;
+    background-color: #6e665f;
+    color: #ffffff;
 }
 
 .scp--mba .cta--theme--primary {
