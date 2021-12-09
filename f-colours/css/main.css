@@ -14726,12 +14726,12 @@ USED IN:
 }
 
 .scp--demba .key-info--lined {
-    border-top: 1px solid #91baa3;
-    border-bottom: 1px solid #91baa3;
+    border-top: 1px solid #2e767a;
+    border-bottom: 1px solid #2e767a;
 }
 
 .scp--demba .key-info__item__value {
-    color: #91baa3;
+    color: #2e767a;
 }
 
 .scp--cce .key-info--lined {
