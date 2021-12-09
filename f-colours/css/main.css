@@ -13917,6 +13917,16 @@ USED IN:
     color: #1e1e1e;
 }
 
+.cta--mba-secondary {
+    background-color: #a3d5cd;
+    color: #1e1e1e;
+}
+
+.cta--mba-secondary:hover, .cta--mba-secondary:focus, .cta--mba-secondary:active {
+    background-color: #8ecbc2;
+    color: #1e1e1e;
+}
+
 .cta--cce {
     background-color: #8b2433;
     color: #ffffff;
@@ -13949,6 +13959,16 @@ USED IN:
 .scp--online-msc .cta--theme--primary:hover, .scp--online-msc .cta--theme--primary:focus, .scp--online-msc .cta--theme--primary:active {
     background-color: #14776b;
     color: #ffffff;
+}
+
+.scp--online-msc .cta--theme--secondary {
+    background-color: #a3d5cd;
+    color: #1e1e1e;
+}
+
+.scp--online-msc .cta--theme--secondary:hover, .scp--online-msc .cta--theme--secondary:focus, .scp--online-msc .cta--theme--secondary:active {
+    background-color: #8ecbc2;
+    color: #1e1e1e;
 }
 
 .scp--masters .cta--theme--primary {
@@ -14026,6 +14046,16 @@ USED IN:
     color: #ffffff;
 }
 
+.scp--mba .cta--theme--secondary {
+    background-color: #a3d5cd;
+    color: #1e1e1e;
+}
+
+.scp--mba .cta--theme--secondary:hover, .scp--mba .cta--theme--secondary:focus, .scp--mba .cta--theme--secondary:active {
+    background-color: #8ecbc2;
+    color: #1e1e1e;
+}
+
 .scp--emba .cta--theme--primary {
     background-color: #496c60;
     color: #ffffff;
@@ -14036,6 +14066,16 @@ USED IN:
     color: #ffffff;
 }
 
+.scp--emba .cta--theme--secondary {
+    background-color: #a3d5cd;
+    color: #1e1e1e;
+}
+
+.scp--emba .cta--theme--secondary:hover, .scp--emba .cta--theme--secondary:focus, .scp--emba .cta--theme--secondary:active {
+    background-color: #8ecbc2;
+    color: #1e1e1e;
+}
+
 .scp--demba .cta--theme--primary {
     background-color: #91baa3;
     color: #1e1e1e;
@@ -14043,6 +14083,16 @@ USED IN:
 
 .scp--demba .cta--theme--primary:hover, .scp--demba .cta--theme--primary:focus, .scp--demba .cta--theme--primary:active {
     background-color: #7eae93;
+    color: #1e1e1e;
+}
+
+.scp--demba .cta--theme--secondary {
+    background-color: #a3d5cd;
+    color: #1e1e1e;
+}
+
+.scp--demba .cta--theme--secondary:hover, .scp--demba .cta--theme--secondary:focus, .scp--demba .cta--theme--secondary:active {
+    background-color: #8ecbc2;
     color: #1e1e1e;
 }
 
