@@ -12107,7 +12107,7 @@ svg:not(:root) {
 
 .banner--theme--online-msc .banner__content .banner__content__text__subtitle {
     background-color: #a3d5cd;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .banner--theme--cce .banner__content h1 {
@@ -12227,7 +12227,7 @@ svg:not(:root) {
 
 .scp--online-msc .banner--theme--corporate .banner__content .banner__content__text__subtitle {
     background-color: #a3d5cd;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .scp--cce .banner--theme--corporate .banner__content h1 {
@@ -19344,17 +19344,82 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--emba .ksp__item__figure,
 .ksp__item--emba .ksp__item__pre-figure {
-    color: #496c60;
+    color: #2e767a;
 }
 
 .ksp__item--demba .ksp__item__figure,
 .ksp__item--demba .ksp__item__pre-figure {
-    color: #91baa3;
+    color: #2e767a;
 }
 
 .ksp__item--cce .ksp__item__figure,
 .ksp__item--cce .ksp__item__pre-figure {
     color: #8b2433;
+}
+
+.ksp__item--corporate .ksp__item__figure,
+.ksp__item--corporate .ksp__item__pre-figure {
+    color: #e30613;
+}
+
+.ksp__item--phd .ksp__item__figure,
+.ksp__item--phd .ksp__item__pre-figure {
+    color: #006699;
+}
+
+.ksp__item--executive-phd .ksp__item__figure,
+.ksp__item--executive-phd .ksp__item__pre-figure {
+    color: #006699;
+}
+
+.scp--undergraduate .ksp__item .ksp__item__figure,
+.scp--undergraduate .ksp__item .ksp__item__pre-figure {
+    color: #e35205;
+}
+
+.scp--masters .ksp__item .ksp__item__figure,
+.scp--masters .ksp__item .ksp__item__pre-figure {
+    color: #002b49;
+}
+
+.scp--mba .ksp__item .ksp__item__figure,
+.scp--mba .ksp__item .ksp__item__pre-figure {
+    color: #2e767a;
+}
+
+.scp--online-msc .ksp__item .ksp__item__figure,
+.scp--online-msc .ksp__item .ksp__item__pre-figure {
+    color: #189183;
+}
+
+.scp--emba .ksp__item .ksp__item__figure,
+.scp--emba .ksp__item .ksp__item__pre-figure {
+    color: #2e767a;
+}
+
+.scp--demba .ksp__item .ksp__item__figure,
+.scp--demba .ksp__item .ksp__item__pre-figure {
+    color: #2e767a;
+}
+
+.scp--cce .ksp__item .ksp__item__figure,
+.scp--cce .ksp__item .ksp__item__pre-figure {
+    color: #8b2433;
+}
+
+.scp--corporate .ksp__item .ksp__item__figure,
+.scp--corporate .ksp__item .ksp__item__pre-figure {
+    color: #e30613;
+}
+
+.scp--phd .ksp__item .ksp__item__figure,
+.scp--phd .ksp__item .ksp__item__pre-figure {
+    color: #006699;
+}
+
+.scp--executive-phd .ksp__item .ksp__item__figure,
+.scp--executive-phd .ksp__item .ksp__item__pre-figure {
+    color: #006699;
 }
 
 .block-links__bg {
