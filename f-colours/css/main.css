@@ -8435,21 +8435,7 @@ svg:not(:root) {
 }
 
 .bayes-social-links__bg-image {
-    overflow: hidden;
-    max-height: 40rem;
-}
-
-@media (min-width: 1201px) {
-    .bayes-social-links__bg-image {
-        max-width: 70%;
-    }
-}
-
-@media (max-width: 1200px) {
-    .bayes-social-links__bg-image {
-        position: absolute;
-        width: calc(100% - 2rem);
-    }
+    display: none;
 }
 
 .bayes-social-links__icons {
@@ -8589,21 +8575,14 @@ svg:not(:root) {
 
 @media (min-width: 1201px) {
     .bayes-social-links__instagram {
-        position: absolute;
-        bottom: 3rem;
-        right: 0;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
     }
 }
 
 @media (max-width: 1200px) {
     .bayes-social-links__instagram {
         justify-content: center;
-    }
-}
-
-@media (max-width: 1440px) {
-    .bayes-social-links__instagram {
-        right: 3rem;
     }
 }
 
@@ -8660,6 +8639,12 @@ svg:not(:root) {
 @media (max-width: 649px) {
     .bayes-social-links__wrap {
         padding: 1rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    .bayes-social-links__wrap {
+        padding: 2rem 0;
     }
 }
 
