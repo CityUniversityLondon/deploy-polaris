@@ -595,7 +595,7 @@ if (__webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.j
 /*!**************************************!*\
   !*** ./src/js-utils/url-sanitise.js ***!
   \**************************************/
-/*! no exports provided */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -612,24 +612,32 @@ __webpack_require__.r(__webpack_exports__);
 /*
 This function is inserted in the head section of the website. It's to check if any XSS cross site scripting is taking place via the URL
 */
-if (typeof window !== 'undefined') {
-  // %3C is '<' sign. It checks for this as it's used to insert <script>
-  var urlLoc = window.location;
-  var urlStrip = urlLoc.toString().indexOf('%3Cscript');
-  var newnewURL;
+function urlsan() {
+  if (typeof window !== 'undefined') {
+    // %3C is '<' sign. It checks for this as it's used to insert <script>
+    var urlLoc = window.location;
+    var urlStrip = urlLoc.toString().indexOf('%3Cscript');
+    var newnewURL;
 
-  if (urlStrip > 0) {
-    // checks URL if containing <script
-    newURL = window.location.toString().slice(0, urlStrip);
+    if (urlStrip > 0) {
+      // checks URL if containing <script
+      newURL = window.location.toString().slice(0, urlStrip);
+    }
+
+    if (newURL.indexOf('%3C/script') > 0) {
+      // checks URL if containing </script
+      newURL = newURL.slice(0, newURL.indexOf('%3C/script'));
+    }
+
+    window.location.href = newURL;
   }
-
-  if (newURL.indexOf('%3C/script') > 0) {
-    // checks URL if containing </script
-    newURL = newURL.slice(0, newURL.indexOf('%3C/script'));
-  }
-
-  window.location.href = newURL;
 }
+
+var className = 'container';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  urlsan: urlsan,
+  className: className
+});
 
 /***/ })
 
