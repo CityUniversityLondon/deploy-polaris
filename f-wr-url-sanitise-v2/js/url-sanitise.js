@@ -617,7 +617,7 @@ function urlsan() {
     // %3C is '<' sign. It checks for this as it's used to insert <script>
     var urlLoc = window.location;
     var urlStrip = urlLoc.toString().indexOf('%3Cscript');
-    var newnewURL;
+    var newURL;
 
     if (urlStrip > 0) {
       // checks URL if containing <script
