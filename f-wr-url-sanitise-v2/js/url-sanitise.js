@@ -612,30 +612,26 @@ __webpack_require__.r(__webpack_exports__);
 /*
 This function is inserted in the head section of the website. It's to check if any XSS cross site scripting is taking place via the URL
 */
-function urlsan() {
+function urlSanitise() {
   if (typeof window !== 'undefined') {
-    // %3C is '<' sign. It checks for this as it's used to insert <script>
-    var urlLoc = window.location;
-    var urlStrip = urlLoc.toString().indexOf('%3Cscript');
-    var newURL;
+    var urlLocation = window.location.toString();
+    var threads = 0;
+    var maliciousTerms = ['%3Cscript', '%3C/script'];
+    maliciousTerms.forEach(function (term) {
+      var found = urlLocation.indexOf(term);
 
-    if (urlStrip > 0) {
-      // checks URL if containing <script
-      newURL = window.location.toString().slice(0, urlStrip);
-    }
-
-    if (newURL.indexOf('%3C/script') > 0) {
-      // checks URL if containing </script
-      newURL = newURL.slice(0, newURL.indexOf('%3C/script'));
-    }
-
-    window.location.href = newURL;
+      if (found > 0) {
+        urlLocation = urlLocation.slice(0, found);
+        threads += 1;
+      }
+    });
+    threads > 0 ? window.location.href = urlLocation : null;
   }
 }
 
 var className = 'container';
 /* harmony default export */ __webpack_exports__["default"] = ({
-  urlsan: urlsan,
+  urlSanitise: urlSanitise,
   className: className
 });
 
