@@ -595,7 +595,7 @@ if (__webpack_require__(/*! ./_fails */ "./node_modules/core-js/modules/_fails.j
 /*!**************************************!*\
   !*** ./src/js-utils/url-sanitise.js ***!
   \**************************************/
-/*! exports provided: default */
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -629,11 +629,16 @@ function urlSanitise() {
   }
 }
 
-var className = 'container';
-/* harmony default export */ __webpack_exports__["default"] = ({
-  urlSanitise: urlSanitise,
-  className: className
-});
+urlSanitise();
+/*
+const className = 'container';
+
+export default {
+    urlSanitise,
+    className,
+};
+
+*/
 
 /***/ })
 
