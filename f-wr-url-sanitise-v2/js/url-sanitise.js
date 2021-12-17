@@ -630,15 +630,6 @@ function urlSanitise() {
 }
 
 urlSanitise();
-/*
-const className = 'container';
-
-export default {
-    urlSanitise,
-    className,
-};
-
-*/
 
 /***/ })
 
