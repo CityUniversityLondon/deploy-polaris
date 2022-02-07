@@ -11821,13 +11821,7 @@ svg:not(:root) {
     }
 }
 
-@media (min-width: 501px) and (max-width: 650px) {
-    .banner__content .banner__content__promo {
-        width: 50%;
-    }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     .banner__content .banner__content__promo {
         width: auto;
         margin-left: 0.5rem;
@@ -11854,7 +11848,7 @@ svg:not(:root) {
     left: auto;
 }
 
-@media (min-width: 501px) and (max-width: 900px) {
+@media (min-width: 651px) and (max-width: 900px) {
     .banner--cutout--left .banner__content .banner__content__promo {
         margin-left: auto;
     }
