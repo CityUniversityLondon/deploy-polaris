@@ -11747,6 +11747,32 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 650px) {
+    .banner.banner-promo:not(.banner-no-img) + #content {
+        position: relative;
+        top: -3rem;
+    }
+    .banner.banner-no-img.banner-promo + #content {
+        position: relative;
+        margin-top: 10rem;
+    }
+    .banner.banner-no-img.banner-promo .banner__image__group {
+        overflow: initial;
+    }
+}
+
+@media (max-width: 650px) and (max-width: 650px) {
+    .banner.banner-no-img.banner-promo .banner__content .banner__content__promo {
+        bottom: -6rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner.banner-no-img.banner-promo .banner__content .banner__content__text__item:first-child {
+        padding-bottom: initial;
+    }
+}
+
 @media (min-width: 651px) {
     .banner__content {
         /** TODO: Is min height necessary? **/
@@ -15759,27 +15785,27 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     position: relative;
 }
 
-.animation-reveal:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-    -webkit-animation-direction: both;
-            animation-direction: both;
-}
-
-.animation-reveal:after {
-    background-color: white;
-    -webkit-animation-delay: 0.33333s;
-            animation-delay: 0.33333s;
-}
-
-.animation-reveal .animation-reveal__content {
-    opacity: 0;
+@media (min-width: 651px) {
+    .animation-reveal:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-timing-function: ease;
+                animation-timing-function: ease;
+        -webkit-animation-direction: both;
+                animation-direction: both;
+    }
+    .animation-reveal:after {
+        background-color: white;
+        -webkit-animation-delay: 0.33333s;
+                animation-delay: 0.33333s;
+    }
+    .animation-reveal .animation-reveal__content {
+        opacity: 0;
+    }
 }
 
 @media (min-width: 901px) {
@@ -15812,6 +15838,13 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .animation-reveal__load--left-to-right:after {
     -webkit-animation-name: video-slide--left-to-right;
             animation-name: video-slide--left-to-right;
+}
+
+@media (max-width: 650px) {
+    .animation-reveal__load--right-to-left,
+    .animation-reveal__load--left-to-right {
+        box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .animation-reveal__load--left-to-right:after {
