@@ -15843,7 +15843,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 @media (max-width: 650px) {
     .animation-reveal__load--right-to-left,
     .animation-reveal__load--left-to-right {
-        box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.3);
     }
 }
 
