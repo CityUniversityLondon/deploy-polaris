@@ -11748,28 +11748,28 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
-    .banner.banner-promo:not(.banner-no-img) + #content {
+    .banner__content__promo__wrapper {
         position: relative;
-        top: -3rem;
     }
-    .banner.banner-no-img.banner-promo + #content {
-        position: relative;
-        margin-top: 10rem;
+    .banner__content__promo--bg:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 0;
+    }
+    .banner__content__promo--bg:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
     }
     .banner.banner-no-img.banner-promo .banner__image__group {
         overflow: initial;
     }
-}
-
-@media (max-width: 650px) and (max-width: 650px) {
-    .banner.banner-no-img.banner-promo .banner__content .banner__content__promo {
-        bottom: -6rem;
-    }
-}
-
-@media (max-width: 650px) {
-    .banner.banner-no-img.banner-promo .banner__content .banner__content__text__item:first-child {
-        padding-bottom: initial;
+    .banner.banner-no-img.banner-promo .banner__content .banner__content__text__item {
+        margin-bottom: initial;
     }
 }
 
@@ -11871,7 +11871,8 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner__content .banner__content__promo {
-        bottom: 6rem;
+        bottom: initial;
+        margin-bottom: 1rem;
     }
 }
 
@@ -11933,8 +11934,10 @@ svg:not(:root) {
     }
 }
 
-.banner__content .banner__content__text__item {
-    margin-bottom: 0.5rem;
+@media (min-width: 651px) {
+    .banner__content .banner__content__text__item {
+        margin-bottom: 0.5rem;
+    }
 }
 
 .banner__content h1,
@@ -11969,7 +11972,6 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner--theme--corporate .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #e30613;
     }
 }
@@ -11985,8 +11987,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #e30613;
+    }
+    .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--undergraduate .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #e35205;
     }
 }
@@ -12002,8 +12012,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--undergraduate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #e35205;
+    }
+    .banner--theme--undergraduate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--postgraduate .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #002b49;
     }
 }
@@ -12019,8 +12037,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--postgraduate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #002b49;
+    }
+    .banner--theme--postgraduate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--masters .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #002b49;
     }
 }
@@ -12036,8 +12062,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--masters .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #002b49;
+    }
+    .banner--theme--masters .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--phd .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #006699;
     }
 }
@@ -12053,8 +12087,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--phd .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #006699;
+    }
+    .banner--theme--phd .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--mba .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #2e767a;
     }
 }
@@ -12070,8 +12112,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--mba .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #2e767a;
+    }
+    .banner--theme--mba .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--emba .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #496c60;
     }
 }
@@ -12087,8 +12137,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--emba .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #496c60;
+    }
+    .banner--theme--emba .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--demba .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #91baa3;
     }
 }
@@ -12104,8 +12162,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--demba .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #91baa3;
+    }
+    .banner--theme--demba .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--execed .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #93328e;
     }
 }
@@ -12121,8 +12187,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--execed .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #93328e;
+    }
+    .banner--theme--execed .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--executive-education .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #93328e;
     }
 }
@@ -12138,8 +12212,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--executive-education .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #93328e;
+    }
+    .banner--theme--executive-education .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--online-msc .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #189183;
     }
 }
@@ -12155,8 +12237,16 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
+    .banner--theme--online-msc .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #189183;
+    }
+    .banner--theme--online-msc .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
     .banner--theme--cce .banner__content .banner__content__text__item:first-child {
-        padding-bottom: 6rem;
         background-color: #8b2433;
     }
 }
@@ -12169,6 +12259,15 @@ svg:not(:root) {
 .banner--theme--cce .banner__content .banner__content__text__subtitle {
     background-color: #a9a19c;
     color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .banner--theme--cce .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #8b2433;
+    }
+    .banner--theme--cce .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
 }
 
 .scp--corporate .banner--theme--corporate .banner__content h1 {
@@ -12447,10 +12546,6 @@ svg:not(:root) {
     }
 }
 
-.banner--image:not(.banner--with-ctas):not(.banner--image--with-promo):not(.banner--image--with-freehtml) .banner__content__text {
-    margin-bottom: 10rem;
-}
-
 .banner--image .banner__content__text__standfirst {
     color: #ffffff;
 }
@@ -12619,8 +12714,18 @@ svg:not(:root) {
     min-height: 100%;
 }
 
-.banner__over-image--no-img-bg .banner__content__text {
-    margin-bottom: 1rem !important;
+.banner-no-img.banner-promo .banner__image__group {
+    padding-top: 5rem;
+}
+
+@media (max-width: 650px) {
+    .banner-no-img:not(.banner-promo) .banner__content__text {
+        margin-top: 5rem;
+    }
+}
+
+.banner-no-img:not(.banner-promo) .banner__content__text .banner__content__text__item {
+    margin-bottom: initial;
 }
 
 .banner--cutout--none {
