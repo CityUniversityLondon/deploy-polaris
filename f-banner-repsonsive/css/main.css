@@ -12714,18 +12714,10 @@ svg:not(:root) {
     min-height: 100%;
 }
 
-.banner-no-img.banner-promo .banner__image__group {
-    padding-top: 5rem;
-}
-
 @media (max-width: 650px) {
     .banner-no-img:not(.banner-promo) .banner__content__text {
         margin-top: 5rem;
     }
-}
-
-.banner-no-img:not(.banner-promo) .banner__content__text .banner__content__text__item {
-    margin-bottom: initial;
 }
 
 .banner--cutout--none {
