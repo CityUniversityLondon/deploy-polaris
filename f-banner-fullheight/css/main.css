@@ -12694,6 +12694,24 @@ svg:not(:root) {
     height: 100%;
 }
 
+@media (min-width: 651px) {
+    .banner__img {
+        max-height: 520px;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner__img {
+        max-height: 390px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .banner__img {
+        max-height: 520px;
+    }
+}
+
 .banner__img > picture > img {
     max-width: initial;
     min-width: 100%;
@@ -12726,10 +12744,6 @@ svg:not(:root) {
     min-width: 100%;
     max-width: none;
     min-height: 100%;
-}
-
-.banner-no-img:not(.banner-promo) .banner__content__text .banner__content__text__item {
-    margin-bottom: initial;
 }
 
 .banner--cutout--none {
