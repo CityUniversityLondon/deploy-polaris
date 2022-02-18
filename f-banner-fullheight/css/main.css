@@ -12694,24 +12694,6 @@ svg:not(:root) {
     height: 100%;
 }
 
-@media (min-width: 651px) {
-    .banner__img {
-        max-height: 520px;
-    }
-}
-
-@media (min-width: 901px) {
-    .banner__img {
-        max-height: 390px;
-    }
-}
-
-@media (min-width: 1201px) {
-    .banner__img {
-        max-height: 520px;
-    }
-}
-
 .banner__img > picture > img {
     max-width: initial;
     min-width: 100%;
@@ -12735,6 +12717,18 @@ svg:not(:root) {
     background-size: 100% 70%;
 }
 
+.banner--image:not(.banner-news) .banner__img > img,
+.banner--image:not(.banner-news) .banner__img > picture > img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 651px) {
+    .banner--image:not(.banner-news) .banner__img {
+        max-height: 520px;
+    }
+}
+
 .banner__img__none {
     background-color: #1e1e1e;
     position: absolute;
@@ -12748,6 +12742,16 @@ svg:not(:root) {
 
 .banner--cutout--none {
     margin-bottom: 2rem;
+}
+
+.banner-news .banner__img > img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    max-width: none;
+    min-height: 100%;
 }
 
 .banner__content__video__grid {
