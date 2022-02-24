@@ -12305,7 +12305,7 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner-new .banner__container,
-    .banner-old.banner-no-img .banner__container {
+    .banner-no-img-varieties.banner-no-img .banner__container {
         padding-left: initial;
         padding-right: initial;
         display: block;
@@ -12317,7 +12317,7 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner-new .banner__content,
-    .banner-old.banner-no-img .banner__content {
+    .banner-no-img-varieties.banner-no-img .banner__content {
         padding-left: initial;
         padding-right: initial;
     }
@@ -12325,61 +12325,61 @@ svg:not(:root) {
 
 @media (max-width: 500px) {
     .banner-new .banner__content,
-    .banner-old.banner-no-img .banner__content {
+    .banner-no-img-varieties.banner-no-img .banner__content {
         left: 0;
     }
 }
 
 @media (min-width: 501px) {
     .banner-new .banner__content,
-    .banner-old.banner-no-img .banner__content {
+    .banner-no-img-varieties.banner-no-img .banner__content {
         left: 0%;
     }
 }
 
 @media (min-width: 1441px) {
     .banner-new .banner__content,
-    .banner-old.banner-no-img .banner__content {
+    .banner-no-img-varieties.banner-no-img .banner__content {
         left: 8.333%;
     }
 }
 
 .banner-new .banner__content .banner__content__promo,
-.banner-old.banner-no-img .banner__content .banner__content__promo {
+.banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
     left: 0;
 }
 
 @media (min-width: 1201px) {
     .banner-new .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         width: 25%;
     }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
     .banner-new .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         width: 27%;
     }
 }
 
 @media (min-width: 651px) and (max-width: 900px) {
     .banner-new .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         width: 33.333%;
     }
 }
 
 @media (min-width: 501px) and (max-width: 650px) {
     .banner-new .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         width: 50%;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         width: auto;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -12388,7 +12388,7 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner-new .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         bottom: initial;
         margin-bottom: 1rem;
     }
@@ -12396,7 +12396,7 @@ svg:not(:root) {
 
 @media (min-width: 901px) {
     .banner-new .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         position: absolute;
         bottom: -2rem;
         z-index: 3;
@@ -12405,7 +12405,7 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner-new .banner__content .banner__content__text,
-    .banner-old.banner-no-img .banner__content .banner__content__text {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__text {
         padding-top: initial;
         padding-left: initial;
         padding-right: initial;
@@ -12415,22 +12415,22 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner-new .banner__content .banner__content__text h1,
-    .banner-old.banner-no-img .banner__content .banner__content__text h1 {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__text h1 {
         width: 100%;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new .banner__content .banner__content__text__item,
-    .banner-old.banner-no-img .banner__content .banner__content__text__item {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__text__item {
         margin-bottom: initial;
     }
 }
 
 .banner-new .banner__content h1,
 .banner-new .banner__content .banner__content__text__subtitle,
-.banner-old.banner-no-img .banner__content h1,
-.banner-old.banner-no-img .banner__content .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img .banner__content h1,
+.banner-no-img-varieties.banner-no-img .banner__content .banner__content__text__subtitle {
     display: inline-block;
     margin: 0;
     padding: 0.5rem 1rem;
@@ -12441,413 +12441,413 @@ svg:not(:root) {
 
 .banner-new .banner__content .banner__content__text__subtitle,
 .banner-new .banner__content .banner__content__text__standfirst,
-.banner-old.banner-no-img .banner__content .banner__content__text__subtitle,
-.banner-old.banner-no-img .banner__content .banner__content__text__standfirst {
+.banner-no-img-varieties.banner-no-img .banner__content .banner__content__text__subtitle,
+.banner-no-img-varieties.banner-no-img .banner__content .banner__content__text__standfirst {
     font-weight: 300;
 }
 
 .banner-new .banner__content .banner__content__text__standfirst,
-.banner-old.banner-no-img .banner__content .banner__content__text__standfirst {
+.banner-no-img-varieties.banner-no-img .banner__content .banner__content__text__standfirst {
     font-size: 1.44rem;
 }
 
 @media (max-width: 900px) {
     .banner-new .banner__content .banner__content__text__subtitle,
     .banner-new .banner__content .banner__content__text__standfirst,
-    .banner-old.banner-no-img .banner__content .banner__content__text__subtitle,
-    .banner-old.banner-no-img .banner__content .banner__content__text__standfirst {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__text__subtitle,
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__text__standfirst {
         display: none;
     }
 }
 
 .banner-new .banner__content h1,
-.banner-old.banner-no-img .banner__content h1 {
+.banner-no-img-varieties.banner-no-img .banner__content h1 {
     font-weight: 500;
 }
 
 .banner-new.banner--cutout--left .banner__content .banner__content__promo,
-.banner-old.banner-no-img .banner__content .banner__content__promo {
+.banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
     right: 0;
     left: auto;
 }
 
 @media (min-width: 651px) and (max-width: 900px) {
     .banner-new.banner--cutout--left .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         margin-left: auto;
     }
 }
 
 @media (min-width: 901px) {
     .banner-new.banner--cutout--left .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         right: 7rem;
     }
 }
 
 @media (min-width: 1441px) {
     .banner-new.banner--cutout--left .banner__content .banner__content__promo,
-    .banner-old.banner-no-img .banner__content .banner__content__promo {
+    .banner-no-img-varieties.banner-no-img .banner__content .banner__content__promo {
         right: 0;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--corporate .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--corporate .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--corporate .banner__content__text__item:first-child {
         background-color: #e30613;
     }
 }
 
 .banner-new.banner--theme--corporate h1,
-.banner-old.banner-no-img.banner--theme--corporate h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--corporate h1 {
     background-color: #e30613;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--corporate .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--corporate .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--corporate .banner__content__text__subtitle {
     background-color: #7e756d;
     color: #ffffff;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--corporate .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--corporate .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--corporate .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #e30613;
     }
     .banner-new.banner--theme--corporate .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--corporate .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--corporate .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--undergraduate .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--undergraduate .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--undergraduate .banner__content__text__item:first-child {
         background-color: #e35205;
     }
 }
 
 .banner-new.banner--theme--undergraduate h1,
-.banner-old.banner-no-img.banner--theme--undergraduate h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--undergraduate h1 {
     background-color: #e35205;
     color: #1e1e1e;
 }
 
 .banner-new.banner--theme--undergraduate .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--undergraduate .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--undergraduate .banner__content__text__subtitle {
     background-color: #f1b434;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #e35205;
     }
     .banner-new.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--postgraduate .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--postgraduate .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--postgraduate .banner__content__text__item:first-child {
         background-color: #002b49;
     }
 }
 
 .banner-new.banner--theme--postgraduate h1,
-.banner-old.banner-no-img.banner--theme--postgraduate h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--postgraduate h1 {
     background-color: #002b49;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--postgraduate .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--postgraduate .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--postgraduate .banner__content__text__subtitle {
     background-color: #006699;
     color: #ffffff;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #002b49;
     }
     .banner-new.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--masters .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--masters .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--masters .banner__content__text__item:first-child {
         background-color: #002b49;
     }
 }
 
 .banner-new.banner--theme--masters h1,
-.banner-old.banner-no-img.banner--theme--masters h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--masters h1 {
     background-color: #002b49;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--masters .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--masters .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--masters .banner__content__text__subtitle {
     background-color: #006699;
     color: #ffffff;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #002b49;
     }
     .banner-new.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--phd .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--phd .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--phd .banner__content__text__item:first-child {
         background-color: #006699;
     }
 }
 
 .banner-new.banner--theme--phd h1,
-.banner-old.banner-no-img.banner--theme--phd h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--phd h1 {
     background-color: #006699;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--phd .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--phd .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--phd .banner__content__text__subtitle {
     background-color: #5bc2e7;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--phd .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--phd .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--phd .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #006699;
     }
     .banner-new.banner--theme--phd .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--phd .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--phd .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--mba .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--mba .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--mba .banner__content__text__item:first-child {
         background-color: #2e767a;
     }
 }
 
 .banner-new.banner--theme--mba h1,
-.banner-old.banner-no-img.banner--theme--mba h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--mba h1 {
     background-color: #2e767a;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--mba .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--mba .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--mba .banner__content__text__subtitle {
     background-color: #a3d5cd;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--mba .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--mba .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--mba .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #2e767a;
     }
     .banner-new.banner--theme--mba .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--mba .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--mba .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--emba .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--emba .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--emba .banner__content__text__item:first-child {
         background-color: #496c60;
     }
 }
 
 .banner-new.banner--theme--emba h1,
-.banner-old.banner-no-img.banner--theme--emba h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--emba h1 {
     background-color: #496c60;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--emba .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--emba .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--emba .banner__content__text__subtitle {
     background-color: #a3d5cd;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--emba .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--emba .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--emba .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #496c60;
     }
     .banner-new.banner--theme--emba .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--emba .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--emba .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--demba .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--demba .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--demba .banner__content__text__item:first-child {
         background-color: #91baa3;
     }
 }
 
 .banner-new.banner--theme--demba h1,
-.banner-old.banner-no-img.banner--theme--demba h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--demba h1 {
     background-color: #91baa3;
     color: #1e1e1e;
 }
 
 .banner-new.banner--theme--demba .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--demba .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--demba .banner__content__text__subtitle {
     background-color: #a3d5cd;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--demba .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--demba .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--demba .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #91baa3;
     }
     .banner-new.banner--theme--demba .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--demba .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--demba .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--execed .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--execed .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--execed .banner__content__text__item:first-child {
         background-color: #93328e;
     }
 }
 
 .banner-new.banner--theme--execed h1,
-.banner-old.banner-no-img.banner--theme--execed h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--execed h1 {
     background-color: #93328e;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--execed .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--execed .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--execed .banner__content__text__subtitle {
     background-color: #e31c79;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #93328e;
     }
     .banner-new.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--executive-education .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--executive-education .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--executive-education .banner__content__text__item:first-child {
         background-color: #93328e;
     }
 }
 
 .banner-new.banner--theme--executive-education h1,
-.banner-old.banner-no-img.banner--theme--executive-education h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--executive-education h1 {
     background-color: #93328e;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--executive-education .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--executive-education .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--executive-education .banner__content__text__subtitle {
     background-color: #e31c79;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #93328e;
     }
     .banner-new.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--online-msc .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--online-msc .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--online-msc .banner__content__text__item:first-child {
         background-color: #189183;
     }
 }
 
 .banner-new.banner--theme--online-msc h1,
-.banner-old.banner-no-img.banner--theme--online-msc h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--online-msc h1 {
     background-color: #189183;
     color: #1e1e1e;
 }
 
 .banner-new.banner--theme--online-msc .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--online-msc .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--online-msc .banner__content__text__subtitle {
     background-color: #a3d5cd;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--online-msc .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--online-msc .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--online-msc .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #189183;
     }
     .banner-new.banner--theme--online-msc .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--online-msc .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--online-msc .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--cce .banner__content__text__item:first-child,
-    .banner-old.banner-no-img.banner--theme--cce .banner__content__text__item:first-child {
+    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__text__item:first-child {
         background-color: #8b2433;
     }
 }
 
 .banner-new.banner--theme--cce h1,
-.banner-old.banner-no-img.banner--theme--cce h1 {
+.banner-no-img-varieties.banner-no-img.banner--theme--cce h1 {
     background-color: #8b2433;
     color: #ffffff;
 }
 
 .banner-new.banner--theme--cce .banner__content__text__subtitle,
-.banner-old.banner-no-img.banner--theme--cce .banner__content__text__subtitle {
+.banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__text__subtitle {
     background-color: #a9a19c;
     color: #1e1e1e;
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-old.banner-no-img.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:before {
         background-color: #8b2433;
     }
     .banner-new.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-old.banner-no-img.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
@@ -12859,6 +12859,10 @@ svg:not(:root) {
 
 .banner--image .banner__content__text {
     margin-bottom: 6rem;
+}
+
+.banner--image:not(.banner--with-ctas):not(.banner--image--with-promo):not(.banner--image--with-freehtml):not(.banner-new):not(.banner-no-img) .banner__content__text {
+    margin-bottom: 10rem;
 }
 
 .banner--image .banner__content__text__standfirst {
@@ -16713,16 +16717,16 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .banner-new .animation-reveal__load--right-to-left,
 .banner-new .animation-reveal__load--left-to-right,
-.banner-old.banner-no-img .animation-reveal__load--right-to-left,
-.banner-old.banner-no-img .animation-reveal__load--left-to-right {
+.banner-no-img-varieties.banner-no-img .animation-reveal__load--right-to-left,
+.banner-no-img-varieties.banner-no-img .animation-reveal__load--left-to-right {
     overflow: hidden;
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0);
 }
 
 .banner-new .animation-reveal__load--right-to-left:after,
 .banner-new .animation-reveal__load--left-to-right:after,
-.banner-old.banner-no-img .animation-reveal__load--right-to-left:after,
-.banner-old.banner-no-img .animation-reveal__load--left-to-right:after {
+.banner-no-img-varieties.banner-no-img .animation-reveal__load--right-to-left:after,
+.banner-no-img-varieties.banner-no-img .animation-reveal__load--left-to-right:after {
     left: 0;
     right: 0;
     transform: translateX(100%);
@@ -16730,16 +16734,16 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .banner-new .animation-reveal__load--right-to-left .animation-reveal__content,
 .banner-new .animation-reveal__load--left-to-right .animation-reveal__content,
-.banner-old.banner-no-img .animation-reveal__load--right-to-left .animation-reveal__content,
-.banner-old.banner-no-img .animation-reveal__load--left-to-right .animation-reveal__content {
+.banner-no-img-varieties.banner-no-img .animation-reveal__load--right-to-left .animation-reveal__content,
+.banner-no-img-varieties.banner-no-img .animation-reveal__load--left-to-right .animation-reveal__content {
     -webkit-animation: content-reveal 0s linear 0.83333s forwards;
             animation: content-reveal 0s linear 0.83333s forwards;
 }
 
 .banner-new .animation-reveal__load--right-to-left:after,
 .banner-new .animation-reveal__load--left-to-right:after,
-.banner-old.banner-no-img .animation-reveal__load--right-to-left:after,
-.banner-old.banner-no-img .animation-reveal__load--left-to-right:after {
+.banner-no-img-varieties.banner-no-img .animation-reveal__load--right-to-left:after,
+.banner-no-img-varieties.banner-no-img .animation-reveal__load--left-to-right:after {
     -webkit-animation-name: video-slide--left-to-right;
             animation-name: video-slide--left-to-right;
 }
@@ -16747,8 +16751,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 @media (max-width: 650px) {
     .banner-new .animation-reveal__load--right-to-left,
     .banner-new .animation-reveal__load--left-to-right,
-    .banner-old.banner-no-img .animation-reveal__load--right-to-left,
-    .banner-old.banner-no-img .animation-reveal__load--left-to-right {
+    .banner-no-img-varieties.banner-no-img .animation-reveal__load--right-to-left,
+    .banner-no-img-varieties.banner-no-img .animation-reveal__load--left-to-right {
         box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.3);
     }
 }
