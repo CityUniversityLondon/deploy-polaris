@@ -13227,7 +13227,7 @@ svg:not(:root) {
     }
 }
 
-.banner-news.banner-new .banner__img {
+.banner-news .banner__img img {
     position: relative;
 }
 
