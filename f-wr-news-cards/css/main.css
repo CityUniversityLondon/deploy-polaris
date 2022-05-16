@@ -17893,6 +17893,10 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: block;
 }
 
+.feature-news__card__body__topic__wrap {
+    margin-bottom: 0;
+}
+
 .feature-news__card__body__topic {
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
