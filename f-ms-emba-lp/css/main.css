@@ -17149,9 +17149,35 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     outline: 2px dotted #1e1e1e;
 }
 
+.card--course[data-study-level=emba] .card__side-image__text__heading {
+    background: #496c60;
+    margin: 0;
+    padding: 0 1rem calc(0.5rem/2);
+}
+
+.card--course[data-study-level=emba] .card__side-image__text__heading a {
+    color: #ffffff;
+}
+
+.card--course[data-study-level=emba] .summary-delivery {
+    color: #496c60;
+}
+
+.card--course[data-study-level=mmba] .card__side-image__text__heading {
+    background: #2e767a;
+    margin: 0;
+    padding: 0 1rem calc(0.5rem/2);
+}
+
+.card--course[data-study-level=mmba] .card__side-image__text__heading a {
+    color: #ffffff;
+}
+
+.card--course[data-study-level=mmba] .summary-delivery {
+    color: #2e767a;
+}
+
 .card--course {
-    background: #f2f2f2;
-    border: 1px solid #e5e5e5;
     margin-bottom: 2em;
 }
 
@@ -17160,16 +17186,17 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
         align-items: start;
         display: flex;
     }
-    .card--course > * {
-        flex-basis: 60%;
-    }
     .card--course .card--course__figure {
-        flex: 1;
-        padding: 1rem;
+        min-width: 75%;
     }
     .card--course .card__side-image__text {
-        background: #ffffff;
-        padding: calc(0.5rem/2) 1rem 1rem 1rem;
+        min-width: 68%;
+        margin-top: 2rem;
+        transform: translateX(-75%);
+    }
+    .card--course .card__side-image__text .card__side-image__text__content {
+        padding: 1rem;
+        background: #f2f2f2;
     }
 }
 
@@ -17179,8 +17206,21 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
+.card--course .card__side-image__text__heading a {
+    border-bottom-color: #ffffff;
+}
+
+.card--course .card__side-image__text__heading a:hover, .card--course .card__side-image__text__heading a:focus, .card--course .card__side-image__text__heading a:active {
+    background-color: transparent;
+    outline-color: #ffffff;
+}
+
 .card--course .card__side-image__text p {
     margin-bottom: 0.5rem;
+}
+
+.card--course .card__side-image__text .icon {
+    margin-right: 0.5rem;
 }
 
 .card {
