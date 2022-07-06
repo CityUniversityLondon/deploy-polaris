@@ -17195,7 +17195,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     .card--course .card__side-image__text {
         min-width: 68%;
         margin-top: 2rem;
-        transform: translateX(-75%);
+        transform: translateX(-63%);
     }
 }
 
