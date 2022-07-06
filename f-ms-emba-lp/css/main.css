@@ -17149,32 +17149,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     outline: 2px dotted #1e1e1e;
 }
 
-.card--course[data-study-level=emba] .card--course__bracket:before, .card--course[data-study-level=emba] .card--course__bracket:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    width: calc(0.75rem * 2);
-    border-style: solid;
-    border-color: #496c60;
-    height: 30%;
-    top: calc(1rem + (1rem * 0.5));
-    left: calc(1rem + (1rem * 0.5));
-}
-
-@media (max-width: 650px) {
-    .card--course[data-study-level=emba] .card--course__bracket:before, .card--course[data-study-level=emba] .card--course__bracket:after {
-        height: 20%;
-    }
-}
-
-.card--course[data-study-level=emba] .card--course__bracket:before {
-    border-width: 0.75rem 0 0.75rem 0;
-}
-
-.card--course[data-study-level=emba] .card--course__bracket:after {
-    border-width: 0 0 0.75rem 0.75rem;
-}
-
 .card--course[data-study-level=emba] .card__side-image__text__heading {
     background: #496c60;
     margin: 0;
@@ -17188,32 +17162,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .card--course[data-study-level=emba] .summary-delivery {
     color: #496c60;
-}
-
-.card--course[data-study-level=mmba] .card--course__bracket:before, .card--course[data-study-level=mmba] .card--course__bracket:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    width: calc(0.75rem * 2);
-    border-style: solid;
-    border-color: #2e767a;
-    height: 30%;
-    top: calc(1rem + (1rem * 0.5));
-    left: calc(1rem + (1rem * 0.5));
-}
-
-@media (max-width: 650px) {
-    .card--course[data-study-level=mmba] .card--course__bracket:before, .card--course[data-study-level=mmba] .card--course__bracket:after {
-        height: 20%;
-    }
-}
-
-.card--course[data-study-level=mmba] .card--course__bracket:before {
-    border-width: 0.75rem 0 0.75rem 0;
-}
-
-.card--course[data-study-level=mmba] .card--course__bracket:after {
-    border-width: 0 0 0.75rem 0.75rem;
 }
 
 .card--course[data-study-level=mmba] .card__side-image__text__heading {
@@ -17275,7 +17223,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 @media (max-width: 500px) {
     .card--course .card__side-image__text {
         width: 90%;
-        margin-top: -30%;
+        margin-top: -25%;
     }
 }
 
