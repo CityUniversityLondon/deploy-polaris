@@ -17154,9 +17154,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin: 0;
     padding: 0 1rem calc(0.5rem/2);
     z-index: 1;
-}
-
-.card--course[data-study-level=emba] .card__side-image__text__heading a {
     color: #ffffff;
 }
 
@@ -17169,9 +17166,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin: 0;
     padding: 0 1rem calc(0.5rem/2);
     z-index: 1;
-}
-
-.card--course[data-study-level=mmba] .card__side-image__text__heading a {
     color: #ffffff;
 }
 
@@ -17185,8 +17179,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 @media (min-width: 501px) {
-    .card--course {
-        align-items: start;
+    .card--course .card--course__anchor {
         display: flex;
     }
     .card--course .card--course__figure {
@@ -17194,7 +17187,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
     .card--course .card__side-image__text {
         min-width: 68%;
-        margin-top: 2rem;
         transform: translateX(-63%);
     }
 }
@@ -17205,13 +17197,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.card--course .card__side-image__text__heading a {
-    border-bottom-color: #ffffff;
-}
-
-.card--course .card__side-image__text__heading a:hover, .card--course .card__side-image__text__heading a:focus, .card--course .card__side-image__text__heading a:active {
-    background-color: transparent;
-    outline-color: #ffffff;
+.card--course .card--course__anchor {
+    color: inherit;
+    border-bottom-width: 0;
+    background-clip: padding-box;
+    background-color: #ffffff;
 }
 
 .card--course .card__side-image__text__content {
