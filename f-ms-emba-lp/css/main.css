@@ -6,7 +6,6 @@
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     touch-action: pan-y;
@@ -9076,7 +9075,6 @@ svg:not(:root) {
 
 .nav-mobile__toggle-label {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     -webkit-touch-callout: default;
@@ -15588,7 +15586,6 @@ input.header-toggle-input {
 
 .header-toggle > label {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     -webkit-touch-callout: default;
@@ -17178,7 +17175,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-bottom: 2em;
 }
 
-@media (min-width: 501px) {
+@media (min-width: 651px) {
     .card--course .card--course__anchor {
         display: flex;
     }
@@ -17191,17 +17188,15 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-@media (max-width: 500px) {
-    .card--course .card--course__figure {
-        margin: 0;
-    }
-}
-
 .card--course .card--course__anchor {
     color: inherit;
     border-bottom-width: 0;
     background-clip: padding-box;
     background-color: #ffffff;
+}
+
+.card--course .card--course__figure {
+    margin: 0;
 }
 
 .card--course .card__side-image__text__content {
@@ -17232,7 +17227,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: inline-block;
     border-bottom-width: 0;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     -webkit-touch-callout: default;
@@ -20868,7 +20862,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .course-search__form__select:before {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     -webkit-touch-callout: default;
@@ -21647,7 +21640,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     left: 50%;
     transform: translateX(-50%);
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     -webkit-touch-callout: default;
@@ -23369,7 +23361,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     opacity: 0;
     pointer-events: none;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     -webkit-animation: fade-out 1s linear;
@@ -24126,7 +24117,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     opacity: 0;
     pointer-events: none;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     -webkit-animation: fade-out 1s linear;
@@ -25622,7 +25612,6 @@ blockquote .reference {
     top: -2rem;
     background: #f2f2f2;
     -webkit-user-select: none;
-    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-touch-callout: default;
@@ -26626,7 +26615,6 @@ input:checked + .cass-events .calendar__radio__button:before {
     opacity: 0;
     pointer-events: none;
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     -webkit-animation: fade-out 1s linear;
@@ -26907,7 +26895,6 @@ News events landing overrides */
     position: absolute;
     top: -2rem;
     -webkit-user-select: none;
-    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-touch-callout: default;
@@ -29621,7 +29608,6 @@ div.widget-123_test_ {
     width: 100%;
     width: calc(100% / var(--n));
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     pointer-events: none;
