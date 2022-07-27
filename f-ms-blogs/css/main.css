@@ -29085,6 +29085,242 @@ News events landing overrides */
     margin-right: 0;
 }
 
+.news-article__anchor__topic--executive-mba {
+    position: relative;
+    overflow: visible !important;
+    color: #496c60 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--executive-mba:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--executive-mba:after, .news-article__anchor__topic--executive-mba:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--executive-mba:after {
+    border: 2px solid #496c60;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--executive-mba:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--executive-mba:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--executive-mba:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--executive-mba:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--executive-mba:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai {
+    position: relative;
+    overflow: visible !important;
+    color: #4F7D65 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai:after, .news-article__anchor__topic--executive-mba-in-dubai:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai:after {
+    border: 2px solid #4F7D65;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--executive-mba-in-dubai:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--full-time-mba {
+    position: relative;
+    overflow: visible !important;
+    color: #2e767a !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--full-time-mba:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--full-time-mba:after, .news-article__anchor__topic--full-time-mba:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--full-time-mba:after {
+    border: 2px solid #2e767a;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--full-time-mba:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--full-time-mba:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--full-time-mba:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--full-time-mba:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--full-time-mba:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--modular-executive-mba {
+    position: relative;
+    overflow: visible !important;
+    color: #496c60 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--modular-executive-mba:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--modular-executive-mba:after, .news-article__anchor__topic--modular-executive-mba:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--modular-executive-mba:after {
+    border: 2px solid #496c60;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--modular-executive-mba:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--modular-executive-mba:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--modular-executive-mba:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--modular-executive-mba:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--modular-executive-mba:last-child {
+    margin-right: 0;
+}
+
 .news-article__anchor__topic--all {
     position: relative;
     overflow: visible !important;
