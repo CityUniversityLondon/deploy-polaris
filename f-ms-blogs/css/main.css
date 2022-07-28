@@ -201,8 +201,16 @@
     background-color: #189183;
 }
 
+.background--stromboli-light-bg {
+    background-color: #158477;
+}
+
 .background--neptune {
     background-color: #91baa3;
+}
+
+.background--neptune-light-bg {
+    background-color: #4F7D65;
 }
 
 .background--prussian {
@@ -271,6 +279,10 @@
 
 .background--instagram {
     background-color: #be297f;
+}
+
+.background--apprenticeship-pink {
+    background-color: #DE1B76;
 }
 
 /**
@@ -29085,6 +29097,301 @@ News events landing overrides */
     margin-right: 0;
 }
 
+.news-article__anchor__topic--all {
+    position: relative;
+    overflow: visible !important;
+    color: #1e1e1e !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--all:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--all:after, .news-article__anchor__topic--all:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--all:after {
+    border: 2px solid #1e1e1e;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--all:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--all:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--all:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--all:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--all:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--apprenticeship {
+    position: relative;
+    overflow: visible !important;
+    color: #DE1B76 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--apprenticeship:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--apprenticeship:after, .news-article__anchor__topic--apprenticeship:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--apprenticeship:after {
+    border: 2px solid #DE1B76;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--apprenticeship:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--apprenticeship:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--apprenticeship:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--apprenticeship:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--apprenticeship:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--undergraduate {
+    position: relative;
+    overflow: visible !important;
+    color: #CD4A04 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--undergraduate:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--undergraduate:after, .news-article__anchor__topic--undergraduate:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--undergraduate:after {
+    border: 2px solid #CD4A04;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--undergraduate:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--undergraduate:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--undergraduate:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--undergraduate:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--undergraduate:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--masters {
+    position: relative;
+    overflow: visible !important;
+    color: #002b49 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--masters:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--masters:after, .news-article__anchor__topic--masters:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--masters:after {
+    border: 2px solid #002b49;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--masters:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--masters:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--masters:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--masters:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--masters:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--executive-master {
+    position: relative;
+    overflow: visible !important;
+    color: #496c60 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--executive-master:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--executive-master:after, .news-article__anchor__topic--executive-master:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--executive-master:after {
+    border: 2px solid #496c60;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--executive-master:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--executive-master:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--executive-master:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--executive-master:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--executive-master:last-child {
+    margin-right: 0;
+}
+
 .news-article__anchor__topic--executive-mba {
     position: relative;
     overflow: visible !important;
@@ -29203,7 +29510,7 @@ News events landing overrides */
     margin-right: 0;
 }
 
-.news-article__anchor__topic--full-time-mba {
+.news-article__anchor__topic--full-time-mba, .news-article__anchor__topic--mba {
     position: relative;
     overflow: visible !important;
     color: #2e767a !important;
@@ -29218,11 +29525,11 @@ News events landing overrides */
     background-size: unset !important;
 }
 
-.news-article__anchor__topic--full-time-mba:before {
+.news-article__anchor__topic--full-time-mba:before, .news-article__anchor__topic--mba:before {
     border: 2px solid #a9a19c;
 }
 
-.news-article__anchor__topic--full-time-mba:after, .news-article__anchor__topic--full-time-mba:before {
+.news-article__anchor__topic--full-time-mba:after, .news-article__anchor__topic--full-time-mba:before, .news-article__anchor__topic--mba:after, .news-article__anchor__topic--mba:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -29233,32 +29540,32 @@ News events landing overrides */
     background-color: transparent !important;
 }
 
-.news-article__anchor__topic--full-time-mba:after {
+.news-article__anchor__topic--full-time-mba:after, .news-article__anchor__topic--mba:after {
     border: 2px solid #2e767a;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
 
-.news-article__anchor__topic--full-time-mba:hover:after {
+.news-article__anchor__topic--full-time-mba:hover:after, .news-article__anchor__topic--mba:hover:after {
     transform: translateY(0px) translateX(0px) !important;
     opacity: 1 !important;
 }
 
-.news-article__anchor__topic--full-time-mba:hover {
+.news-article__anchor__topic--full-time-mba:hover, .news-article__anchor__topic--mba:hover {
     background: none;
 }
 
-.news-article__anchor__topic--full-time-mba:focus {
+.news-article__anchor__topic--full-time-mba:focus, .news-article__anchor__topic--mba:focus {
     background: #ffffff;
     outline: 3px solid #1e1e1e;
 }
 
-.news-article__anchor__topic--full-time-mba:active {
+.news-article__anchor__topic--full-time-mba:active, .news-article__anchor__topic--mba:active {
     background: #ffffff;
     outline: 2px dotted #1e1e1e;
 }
 
-.news-article__anchor__topic--full-time-mba:last-child {
+.news-article__anchor__topic--full-time-mba:last-child, .news-article__anchor__topic--mba:last-child {
     margin-right: 0;
 }
 
@@ -29321,7 +29628,420 @@ News events landing overrides */
     margin-right: 0;
 }
 
-.news-article__anchor__topic--all {
+.news-article__anchor__topic--phd {
+    position: relative;
+    overflow: visible !important;
+    color: #006699 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--phd:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--phd:after, .news-article__anchor__topic--phd:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--phd:after {
+    border: 2px solid #006699;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--phd:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--phd:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--phd:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--phd:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--phd:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--online-programmes {
+    position: relative;
+    overflow: visible !important;
+    color: #158477 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--online-programmes:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--online-programmes:after, .news-article__anchor__topic--online-programmes:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--online-programmes:after {
+    border: 2px solid #158477;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--online-programmes:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--online-programmes:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--online-programmes:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--online-programmes:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--online-programmes:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--student-life, .news-article__anchor__topic--admissions {
+    position: relative;
+    overflow: visible !important;
+    color: #e30613 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--student-life:before, .news-article__anchor__topic--admissions:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--student-life:after, .news-article__anchor__topic--student-life:before, .news-article__anchor__topic--admissions:after, .news-article__anchor__topic--admissions:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--student-life:after, .news-article__anchor__topic--admissions:after {
+    border: 2px solid #e30613;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--student-life:hover:after, .news-article__anchor__topic--admissions:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--student-life:hover, .news-article__anchor__topic--admissions:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--student-life:focus, .news-article__anchor__topic--admissions:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--student-life:active, .news-article__anchor__topic--admissions:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--student-life:last-child, .news-article__anchor__topic--admissions:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--careers {
+    position: relative;
+    overflow: visible !important;
+    color: #390032 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--careers:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--careers:after, .news-article__anchor__topic--careers:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--careers:after {
+    border: 2px solid #390032;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--careers:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--careers:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--careers:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--careers:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--careers:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--knowledge-hub {
+    position: relative;
+    overflow: visible !important;
+    color: #496c60 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--knowledge-hub:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--knowledge-hub:after, .news-article__anchor__topic--knowledge-hub:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--knowledge-hub:after {
+    border: 2px solid #496c60;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--knowledge-hub:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--knowledge-hub:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--knowledge-hub:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--knowledge-hub:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--knowledge-hub:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--charities-social-enterprise {
+    position: relative;
+    overflow: visible !important;
+    color: #8b2433 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--charities-social-enterprise:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--charities-social-enterprise:after, .news-article__anchor__topic--charities-social-enterprise:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--charities-social-enterprise:after {
+    border: 2px solid #8b2433;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--charities-social-enterprise:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--charities-social-enterprise:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--charities-social-enterprise:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--charities-social-enterprise:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--charities-social-enterprise:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--research {
+    position: relative;
+    overflow: visible !important;
+    color: #7e756d !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--research:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--research:after, .news-article__anchor__topic--research:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--research:after {
+    border: 2px solid #7e756d;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--research:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--research:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--research:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--research:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--research:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--business-services {
     position: relative;
     overflow: visible !important;
     color: #1e1e1e !important;
@@ -29336,11 +30056,11 @@ News events landing overrides */
     background-size: unset !important;
 }
 
-.news-article__anchor__topic--all:before {
+.news-article__anchor__topic--business-services:before {
     border: 2px solid #a9a19c;
 }
 
-.news-article__anchor__topic--all:after, .news-article__anchor__topic--all:before {
+.news-article__anchor__topic--business-services:after, .news-article__anchor__topic--business-services:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -29351,32 +30071,150 @@ News events landing overrides */
     background-color: transparent !important;
 }
 
-.news-article__anchor__topic--all:after {
+.news-article__anchor__topic--business-services:after {
     border: 2px solid #1e1e1e;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
 
-.news-article__anchor__topic--all:hover:after {
+.news-article__anchor__topic--business-services:hover:after {
     transform: translateY(0px) translateX(0px) !important;
     opacity: 1 !important;
 }
 
-.news-article__anchor__topic--all:hover {
+.news-article__anchor__topic--business-services:hover {
     background: none;
 }
 
-.news-article__anchor__topic--all:focus {
+.news-article__anchor__topic--business-services:focus {
     background: #ffffff;
     outline: 3px solid #1e1e1e;
 }
 
-.news-article__anchor__topic--all:active {
+.news-article__anchor__topic--business-services:active {
     background: #ffffff;
     outline: 2px dotted #1e1e1e;
 }
 
-.news-article__anchor__topic--all:last-child {
+.news-article__anchor__topic--business-services:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--professional-development {
+    position: relative;
+    overflow: visible !important;
+    color: #006081 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--professional-development:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--professional-development:after, .news-article__anchor__topic--professional-development:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--professional-development:after {
+    border: 2px solid #006081;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--professional-development:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--professional-development:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--professional-development:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--professional-development:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--professional-development:last-child {
+    margin-right: 0;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation {
+    position: relative;
+    overflow: visible !important;
+    color: #6f2479 !important;
+    padding: 0.6rem;
+    margin: 0.4375rem 1rem 0 0;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    margin-right: 1rem;
+    border-bottom: none;
+    display: inline-block;
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation:before {
+    border: 2px solid #a9a19c;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation:after, .news-article__anchor__topic--marketing-strategy-and-innovation:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    content: '';
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: transparent !important;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation:after {
+    border: 2px solid #6f2479;
+    transform: translateY(-7px) translateX(6px) !important;
+    opacity: 0;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation:hover:after {
+    transform: translateY(0px) translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation:hover {
+    background: none;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation:focus {
+    background: #ffffff;
+    outline: 3px solid #1e1e1e;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation:active {
+    background: #ffffff;
+    outline: 2px dotted #1e1e1e;
+}
+
+.news-article__anchor__topic--marketing-strategy-and-innovation:last-child {
     margin-right: 0;
 }
 
