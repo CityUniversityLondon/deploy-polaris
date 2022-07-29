@@ -30317,6 +30317,15 @@ News events landing overrides */
     margin-top: 2rem;
 }
 
+@media (min-width: 901px) {
+    .related-stories-section .section--lightgray, .related-stories-section .course-finder__main, .related-stories-section .expert-finder__main {
+        left: 10%;
+        width: 80%;
+        margin: 0;
+        padding: 2rem 0;
+    }
+}
+
 .related-stories-section .grid, .related-stories-section .grid--tencol, .related-stories-section .grid--side-by-side, .related-stories-section .grid--thirds--small, .related-stories-section .banner__standfirst__grid, .related-stories-section .banner__freehtml > div > div, .related-stories-section .cass-knowledge-listing__grid {
     justify-content: center;
 }
@@ -30545,11 +30554,11 @@ News events landing overrides */
     margin-left: 1rem;
 }
 
-.container__more-news .anchor__icon {
+.news-heading-toggle-link .fa.fa-arrow-right, .news-heading-toggle-link .url-slide--right .fa-arrow-right.url-slide__icon, .url-slide--right .news-heading-toggle-link .fa-arrow-right.url-slide__icon, .news-heading-toggle-link .media-block .fa-arrow-right.video-preview__button:before, .media-block .news-heading-toggle-link .fa-arrow-right.video-preview__button:before, .news-heading-toggle-link .media-block .popup-def-list-group__prevnext__next .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .media-block .popup-def-list-group__prevnext__next .news-heading-toggle-link .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .news-heading-toggle-link .popup-def-list-group__prevnext__next .media-block .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .popup-def-list-group__prevnext__next .media-block .news-heading-toggle-link .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .news-heading-toggle-link .fa-arrow-right.accordion__content__heading-anchor__icon, .news-heading-toggle-link .accordion.accordion--simple .accordion__content__heading-anchor .fa-arrow-right.accordion__content__heading-anchor__icon, .accordion.accordion--simple .accordion__content__heading-anchor .news-heading-toggle-link .fa-arrow-right.accordion__content__heading-anchor__icon, .news-heading-toggle-link .accordion.accordion--simple .accordion__content__heading-anchor .popup-def-list-group__prevnext__next .accordion__content__heading-anchor__icon.popup-def-list-group__prevnext__next__icon, .accordion.accordion--simple .accordion__content__heading-anchor .popup-def-list-group__prevnext__next .news-heading-toggle-link .accordion__content__heading-anchor__icon.popup-def-list-group__prevnext__next__icon, .news-heading-toggle-link .popup-def-list-group__prevnext__next .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .accordion.accordion--simple .accordion__content__heading-anchor .news-heading-toggle-link .accordion__content__heading-anchor__icon.popup-def-list-group__prevnext__next__icon, .news-heading-toggle-link .js .fa-arrow-right.tabs__content__heading-anchor__icon, .js .news-heading-toggle-link .fa-arrow-right.tabs__content__heading-anchor__icon, .news-heading-toggle-link .js .fa-arrow-right.accordion-tabs__content__heading-anchor__icon, .js .news-heading-toggle-link .fa-arrow-right.accordion-tabs__content__heading-anchor__icon, .news-heading-toggle-link .header-toggle--menu .fa-arrow-right.header-toggle__icon, .header-toggle--menu .news-heading-toggle-link .fa-arrow-right.header-toggle__icon, .news-heading-toggle-link .header-toggle--search .fa-arrow-right.header-toggle__icon, .header-toggle--search .news-heading-toggle-link .fa-arrow-right.header-toggle__icon, .news-heading-toggle-link .popup-def-list-group__prevnext__prev .fa-arrow-right.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .news-heading-toggle-link .fa-arrow-right.popup-def-list-group__prevnext__prev__icon, .news-heading-toggle-link .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .news-heading-toggle-link .popup-def-list-group__prevnext__next__icon, .news-heading-toggle-link .fa-arrow-right.dialog__box__heading__close__icon, .news-heading-toggle-link .image-banner span.fa-arrow-right, .image-banner .news-heading-toggle-link span.fa-arrow-right, .news-heading-toggle-link .video-banner__play span.fa-arrow-right, .video-banner__play .news-heading-toggle-link span.fa-arrow-right, .news-heading-toggle-link .fa-arrow-right.mba-popup__form__close__icon {
     background: #e30613;
     border-radius: 100%;
     color: #ffffff;
-    padding: 0.75rem;
+    padding: 0.5rem;
     margin: calc(0.25rem);
 }
 
