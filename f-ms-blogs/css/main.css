@@ -26970,9 +26970,14 @@ News events landing overrides */
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    color: #666666;
-    display: inline-block;
-    overflow-x: hidden;
+    background-image: none;
+    border-bottom-color: #0c0c0e;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: #0c0c0e;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .cass-news-search .news-heading-toggle-link:hover, .cass-news-search .news-heading-toggle-link:focus, .cass-news-search .news-heading-toggle-link:active {
@@ -26981,28 +26986,62 @@ News events landing overrides */
     outline-width: 0;
 }
 
-.cass-news-search .news-heading-toggle-link:after {
-    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
-    content: '';
-    opacity: 0;
-    background-color: #1e1e1e;
-    width: 100%;
-    height: 2px;
-    display: block;
-    transform: translateX(-100%);
+.cass-news-search .news-heading-toggle-link:focus, .cass-news-search .news-heading-toggle-link:active {
+    outline-color: #0c0c0e;
+    outline-offset: 4px;
+    outline-style: dotted;
+    outline-width: 2px;
 }
 
-.cass-news-search .news-heading-toggle-link:hover:after {
-    opacity: 1;
-    transform: translateX(0);
+.cass-news-search .news-heading-toggle-link:before {
+    background: #e30613;
+    bottom: -2px;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.2s ease, width 0.6s ease;
+    width: 0;
+}
+
+.cass-news-search .news-heading-toggle-link:before {
+    transition: opacity 0.2s ease, width 0.6s ease;
 }
 
 .cass-news-search .news-heading-toggle-link:focus {
-    outline: 3px solid #1e1e1e;
+    border-bottom-color: #0c0c0e;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: #0c0c0e;
+}
+
+.cass-news-search .news-heading-toggle-link:visited {
+    border-bottom-color: #0c0c0e;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: #0c0c0e;
+}
+
+.cass-news-search .news-heading-toggle-link:hover {
+    background-image: none;
+    border-bottom-color: #0c0c0e;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: #0c0c0e;
+}
+
+.cass-news-search .news-heading-toggle-link:hover:before {
+    opacity: 1;
+    width: 100%;
+    transition: opacity 0.2s ease, width 0.6s ease;
 }
 
 .cass-news-search .news-heading-toggle-link:active {
-    outline: 2px dotted #1e1e1e;
+    border-bottom-color: #0c0c0e;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
 }
 
 @media (max-width: 649px) {
@@ -29777,7 +29816,7 @@ News events landing overrides */
     margin-left: 1rem;
 }
 
-.news-heading-toggle-link[data-type='blog'] .fa.fa-arrow-right, .news-heading-toggle-link[data-type='blog'] .url-slide--right .fa-arrow-right.url-slide__icon, .url-slide--right .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.url-slide__icon, .news-heading-toggle-link[data-type='blog'] .media-block .fa-arrow-right.video-preview__button:before, .media-block .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.video-preview__button:before, .news-heading-toggle-link[data-type='blog'] .media-block .popup-def-list-group__prevnext__next .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .media-block .popup-def-list-group__prevnext__next .news-heading-toggle-link[data-type='blog'] .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .news-heading-toggle-link[data-type='blog'] .popup-def-list-group__prevnext__next .media-block .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .popup-def-list-group__prevnext__next .media-block .news-heading-toggle-link[data-type='blog'] .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.accordion__content__heading-anchor__icon, .news-heading-toggle-link[data-type='blog'] .js .fa-arrow-right.tabs__content__heading-anchor__icon, .js .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.tabs__content__heading-anchor__icon, .news-heading-toggle-link[data-type='blog'] .js .fa-arrow-right.accordion-tabs__content__heading-anchor__icon, .js .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.accordion-tabs__content__heading-anchor__icon, .news-heading-toggle-link[data-type='blog'] .header-toggle--menu .fa-arrow-right.header-toggle__icon, .header-toggle--menu .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.header-toggle__icon, .news-heading-toggle-link[data-type='blog'] .header-toggle--search .fa-arrow-right.header-toggle__icon, .header-toggle--search .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.header-toggle__icon, .news-heading-toggle-link[data-type='blog'] .popup-def-list-group__prevnext__prev .fa-arrow-right.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.popup-def-list-group__prevnext__prev__icon, .news-heading-toggle-link[data-type='blog'] .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .news-heading-toggle-link[data-type='blog'] .popup-def-list-group__prevnext__next__icon, .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.dialog__box__heading__close__icon, .news-heading-toggle-link[data-type='blog'] .image-banner span.fa-arrow-right, .image-banner .news-heading-toggle-link[data-type='blog'] span.fa-arrow-right, .news-heading-toggle-link[data-type='blog'] .video-banner__play span.fa-arrow-right, .video-banner__play .news-heading-toggle-link[data-type='blog'] span.fa-arrow-right, .news-heading-toggle-link[data-type='blog'] .fa-arrow-right.mba-popup__form__close__icon {
+.news-heading-toggle-link .fa.fa-arrow-right, .news-heading-toggle-link .url-slide--right .fa-arrow-right.url-slide__icon, .url-slide--right .news-heading-toggle-link .fa-arrow-right.url-slide__icon, .news-heading-toggle-link .media-block .fa-arrow-right.video-preview__button:before, .media-block .news-heading-toggle-link .fa-arrow-right.video-preview__button:before, .news-heading-toggle-link .media-block .popup-def-list-group__prevnext__next .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .media-block .popup-def-list-group__prevnext__next .news-heading-toggle-link .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .news-heading-toggle-link .popup-def-list-group__prevnext__next .media-block .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .popup-def-list-group__prevnext__next .media-block .news-heading-toggle-link .video-preview__button.popup-def-list-group__prevnext__next__icon:before, .news-heading-toggle-link .fa-arrow-right.accordion__content__heading-anchor__icon, .news-heading-toggle-link .accordion.accordion--simple .accordion__content__heading-anchor .fa-arrow-right.accordion__content__heading-anchor__icon, .accordion.accordion--simple .accordion__content__heading-anchor .news-heading-toggle-link .fa-arrow-right.accordion__content__heading-anchor__icon, .news-heading-toggle-link .accordion.accordion--simple .accordion__content__heading-anchor .popup-def-list-group__prevnext__next .accordion__content__heading-anchor__icon.popup-def-list-group__prevnext__next__icon, .accordion.accordion--simple .accordion__content__heading-anchor .popup-def-list-group__prevnext__next .news-heading-toggle-link .accordion__content__heading-anchor__icon.popup-def-list-group__prevnext__next__icon, .news-heading-toggle-link .popup-def-list-group__prevnext__next .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .accordion.accordion--simple .accordion__content__heading-anchor .news-heading-toggle-link .accordion__content__heading-anchor__icon.popup-def-list-group__prevnext__next__icon, .news-heading-toggle-link .js .fa-arrow-right.tabs__content__heading-anchor__icon, .js .news-heading-toggle-link .fa-arrow-right.tabs__content__heading-anchor__icon, .news-heading-toggle-link .js .fa-arrow-right.accordion-tabs__content__heading-anchor__icon, .js .news-heading-toggle-link .fa-arrow-right.accordion-tabs__content__heading-anchor__icon, .news-heading-toggle-link .header-toggle--menu .fa-arrow-right.header-toggle__icon, .header-toggle--menu .news-heading-toggle-link .fa-arrow-right.header-toggle__icon, .news-heading-toggle-link .header-toggle--search .fa-arrow-right.header-toggle__icon, .header-toggle--search .news-heading-toggle-link .fa-arrow-right.header-toggle__icon, .news-heading-toggle-link .popup-def-list-group__prevnext__prev .fa-arrow-right.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .news-heading-toggle-link .fa-arrow-right.popup-def-list-group__prevnext__prev__icon, .news-heading-toggle-link .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .news-heading-toggle-link .popup-def-list-group__prevnext__next__icon, .news-heading-toggle-link .fa-arrow-right.dialog__box__heading__close__icon, .news-heading-toggle-link .image-banner span.fa-arrow-right, .image-banner .news-heading-toggle-link span.fa-arrow-right, .news-heading-toggle-link .video-banner__play span.fa-arrow-right, .video-banner__play .news-heading-toggle-link span.fa-arrow-right, .news-heading-toggle-link .fa-arrow-right.mba-popup__form__close__icon {
     background: #e30613;
     border-radius: 100%;
     color: #ffffff;
