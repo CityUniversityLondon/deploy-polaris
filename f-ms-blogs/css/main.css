@@ -9844,6 +9844,7 @@ svg:not(:root) {
 }
 
 .secondary-navigation__list li {
+    visibility: hidden;
     display: inline-block;
 }
 
