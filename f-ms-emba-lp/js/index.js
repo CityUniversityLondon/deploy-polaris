@@ -26384,7 +26384,7 @@ function launch(el) {
     });
   });
   input.autocomplete({
-    serviceUrl: '/fb/suggest.json?collection=main-cass&fmt=json',
+    serviceUrl: '/webservices/funnelback-16-suggest?collection=city-university~main-cass&fmt=json',
     paramName: 'partial_query',
     transformResult: function transformResult(response, query) {
       return {
