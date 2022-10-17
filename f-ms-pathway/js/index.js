@@ -24957,19 +24957,33 @@ if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').is('[class*="scp"]')) 
   jquery__WEBPACK_IMPORTED_MODULE_1___default()('a').each(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('left-hand-navigation-grid')) {
       //  If link is external add class external which will allow FA icon (linkIcons.scss)
-      if (checkLinkExternal(this) && !checkImage(this) && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__left') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__right') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item')) {
+      if (checkLinkExternal(this) && !checkImage(this) && jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__left') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__right') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item')) {
+        console.log(2);
         jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('link__external');
       } // If link contains pdf add class pdf which will alow FA pdf icon (linkIcons.scss)
 
 
       if (checkLinkPDF(this) && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('cta')) {
+        console.log(3);
         jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('link__pdf');
       } // For pathway cards and hallway items as both title is in a span rather than in the actual a tag
 
 
-      if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card') || jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__left') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__right')) {
+      if ( // $(this).hasClass('pathway-card') ||
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item') // !$(this).hasClass('pathway-card__left') &&
+      // !$(this).hasClass('pathway-card__right'))
+      ) {
+          if (checkLinkExternal(this)) {
+            console.log(1);
+            jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).find('span').addClass('link__external');
+          }
+        }
+
+      if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card')) {
         if (checkLinkExternal(this)) {
-          jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).find('span').addClass('link__external');
+          console.log('pathway has external link');
+          jquery__WEBPACK_IMPORTED_MODULE_1___default()(this) // .find('span')
+          .removeClass('link__external');
         }
       }
     }
