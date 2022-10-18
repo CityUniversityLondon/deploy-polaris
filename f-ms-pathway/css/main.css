@@ -17282,9 +17282,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .pathway-cards .pathway-card {
     margin-bottom: 2rem;
-    border-right: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
-    border-left: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -17295,20 +17293,20 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     transition: background-color 0.2s ease-in-out 0s;
 }
 
-.pathway-cards .pathway-card a:focus .pathway-card__content {
+.pathway-cards .pathway-card__anchor:focus .pathway-card__content {
     outline: 3px solid #1e1e1e;
     background-color: #f2f2f2;
 }
 
-.pathway-cards .pathway-card a:active .pathway-card__content {
+.pathway-cards .pathway-card__anchor:active .pathway-card__content {
     outline: 2px dotted #1e1e1e;
 }
 
-.pathway-cards .pathway-card a:hover .pathway-card__img img {
+.pathway-cards .pathway-card__anchor:hover .pathway-card__img img {
     transform: scale(1.02);
 }
 
-.pathway-cards .pathway-card a:hover .pathway-card__content {
+.pathway-cards .pathway-card__anchor:hover .pathway-card__content {
     background-color: #f2f2f2;
 }
 
