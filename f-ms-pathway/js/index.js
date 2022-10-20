@@ -24969,15 +24969,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').is('[class*="scp"]')) 
 
       if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card') || jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__left') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__right')) {
         if (checkLinkExternal(this)) {
-          // console.log(1)
           jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).find('span').addClass('link__external');
-        }
-      }
-
-      if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card')) {
-        if (checkLinkExternal(this)) {
-          console.log('pathway has external link');
-          jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).find('span').removeClass('link__external');
         }
       }
     }

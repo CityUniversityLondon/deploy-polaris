@@ -17310,10 +17310,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: #f2f2f2;
 }
 
-.pathway-cards .pathway-card__img {
-    overflow: hidden;
-}
-
 .pathway-cards .pathway-card__img img {
     width: 100%;
     transition: transform 0.2s ease-in-out 0s;
