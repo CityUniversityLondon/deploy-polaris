@@ -20120,6 +20120,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (min-width: 1201px) {
+    .ksp__item {
+        width: 25%;
+    }
+}
+
 @media (min-width: 901px) {
     .ksp__items--2 .ksp__item {
         /** TODO: Is min height necessary? **/
@@ -20184,7 +20190,53 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 901px) and (min-width: 901px) {
     .ksp__items--3 .ksp__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 1201px) {
+    .ksp__items--3 .ksp__item {
         width: 33.333%;
+    }
+}
+
+@media (min-width: 901px) {
+    .ksp__items--4 .ksp__item {
+        /** TODO: Is min height necessary? **/
+        float: left;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+    }
+    @supports (display: flex) {
+        .ksp__items--4 .ksp__item {
+            float: none;
+            flex: 0 1 auto;
+        }
+    }
+}
+
+@media (min-width: 901px) and (max-width: 500px) {
+    .ksp__items--4 .ksp__item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 501px) {
+    .ksp__items--4 .ksp__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .ksp__items--4 .ksp__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 1201px) {
+    .ksp__items--4 .ksp__item {
+        width: 25%;
     }
 }
 
@@ -20198,7 +20250,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .ksp__item:nth-child(2) {
         border-right: none;
     }
