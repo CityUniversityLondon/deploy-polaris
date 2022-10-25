@@ -24957,7 +24957,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').is('[class*="scp"]')) 
   jquery__WEBPACK_IMPORTED_MODULE_1___default()('a').each(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('left-hand-navigation-grid')) {
       //  If link is external add class external which will allow FA icon (linkIcons.scss)
-      if (checkLinkExternal(this) && !checkImage(this) && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__left') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__right') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item')) {
+      if (checkLinkExternal(this) && !checkImage(this) && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__anchor') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item')) {
         jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('link__external');
       } // If link contains pdf add class pdf which will alow FA pdf icon (linkIcons.scss)
 
