@@ -20607,6 +20607,24 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: #006699;
 }
 
+.ksp__item--executive-education .ksp__item__figure,
+.ksp__item--executive-education .ksp__item__pre-figure {
+    color: #93328e;
+}
+
+.ksp__item--executive-education .ksp__item__icon {
+    background-color: #93328e;
+}
+
+.scp--executive-education .ksp__item .ksp__item__figure,
+.scp--executive-education .ksp__item .ksp__item__pre-figure {
+    color: #93328e;
+}
+
+.scp--executive-education .ksp__item .ksp__item__icon {
+    background-color: #93328e;
+}
+
 .block-links__bg {
     background-color: #fafafa;
     position: relative;
