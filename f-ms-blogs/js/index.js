@@ -22794,11 +22794,14 @@ function launch(el, i) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _common_prepare_sections__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/prepare-sections */ "./src/components/accordion-tabs/common/prepare-sections.js");
-/* harmony import */ var _common_prepare_content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/prepare-content */ "./src/components/accordion-tabs/common/prepare-content.js");
-/* harmony import */ var _common_prepare_links__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/prepare-links */ "./src/components/accordion-tabs/common/prepare-links.js");
+/* harmony import */ var core_js_modules_es6_function_name__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.function.name */ "./node_modules/core-js/modules/es6.function.name.js");
+/* harmony import */ var core_js_modules_es6_function_name__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_function_name__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _common_prepare_sections__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./common/prepare-sections */ "./src/components/accordion-tabs/common/prepare-sections.js");
+/* harmony import */ var _common_prepare_content__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./common/prepare-content */ "./src/components/accordion-tabs/common/prepare-content.js");
+/* harmony import */ var _common_prepare_links__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./common/prepare-links */ "./src/components/accordion-tabs/common/prepare-links.js");
+
 
 
 
@@ -22807,10 +22810,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el, i) {
-  var widget = jquery__WEBPACK_IMPORTED_MODULE_0___default()(el);
-  var contentWrapper = Object(_common_prepare_content__WEBPACK_IMPORTED_MODULE_2__["default"])(className, widget);
-  var headings = Object(_common_prepare_sections__WEBPACK_IMPORTED_MODULE_1__["default"])(className, widget, contentWrapper);
-  Object(_common_prepare_links__WEBPACK_IMPORTED_MODULE_3__["default"])(widget, headings, null);
+  var headingLevel;
+  jquery__WEBPACK_IMPORTED_MODULE_1___default.a.each(el.attributes, function () {
+    this.name === "data-level" ? headingLevel = this.value : null;
+  });
+  var widget = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
+  var contentWrapper = Object(_common_prepare_content__WEBPACK_IMPORTED_MODULE_3__["default"])(className, widget);
+  var headings = Object(_common_prepare_sections__WEBPACK_IMPORTED_MODULE_2__["default"])(className, widget, contentWrapper, headingLevel);
+  Object(_common_prepare_links__WEBPACK_IMPORTED_MODULE_4__["default"])(widget, headings, null);
 }
 
 var className = 'accordion';
@@ -23428,18 +23435,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function prepareAccordionHeading(patternClassname, text, id) {
+function prepareAccordionHeading(patternClassname, text, id, headingLevel) {
   var anchor = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<a/>').addClass("".concat(Object(_element_classnames__WEBPACK_IMPORTED_MODULE_2__["headingAnchorCn"])(patternClassname), " inactive")).attr('href', '#').attr('data-id', id).attr('data-accordion-anchor', true);
-  jquery__WEBPACK_IMPORTED_MODULE_1___default()('<span/>').html(text).addClass(Object(_element_classnames__WEBPACK_IMPORTED_MODULE_2__["headingAnchorLabelCn"])(patternClassname)).appendTo(anchor);
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('<h' + headingLevel + '/>').addClass('accordion__content__heading-anchor__label').html(text).appendTo(anchor);
   jquery__WEBPACK_IMPORTED_MODULE_1___default()('<span/>').attr('aria-hidden', 'true').addClass(Object(_element_classnames__WEBPACK_IMPORTED_MODULE_2__["headingAnchorIconCn"])(patternClassname)).appendTo(anchor);
   return anchor;
 }
 
-function findHeadings(className, widget, contentWrapper) {
+function findHeadings(className, widget, contentWrapper, headingLevel) {
   var firstHeading = contentWrapper.find('h2:not(.dropdown-heading),h3,h4');
   var headingTagName = firstHeading.prop('tagName');
   var headerElements = contentWrapper.find("".concat(headingTagName, ":not(.dropdown-heading)"));
-  console.log(contentWrapper);
   return headerElements.toArray().map(function (element, i) {
     var header = jquery__WEBPACK_IMPORTED_MODULE_1___default()(element).attr('data-id', i).addClass(Object(_element_classnames__WEBPACK_IMPORTED_MODULE_2__["headingCn"])(className));
     var parents = header.parentsUntil(contentWrapper);
@@ -23458,7 +23464,7 @@ function findHeadings(className, widget, contentWrapper) {
     }
 
     wrapper.addClass(Object(_element_classnames__WEBPACK_IMPORTED_MODULE_2__["contentGroupCn"])(className));
-    var anchor = prepareAccordionHeading(className, header.html(), i);
+    var anchor = prepareAccordionHeading(className, header.html(), i, headingLevel);
     anchor.insertBefore(wrapper);
     return {
       id: i,
@@ -24957,7 +24963,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').is('[class*="scp"]')) 
   jquery__WEBPACK_IMPORTED_MODULE_1___default()('a').each(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('left-hand-navigation-grid')) {
       //  If link is external add class external which will allow FA icon (linkIcons.scss)
-      if (checkLinkExternal(this) && !checkImage(this) && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__left') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__right') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item')) {
+      if (checkLinkExternal(this) && !checkImage(this) && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hasClass('pathway-card__anchor') && !jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).parents().hasClass('hallway__item')) {
         jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('link__external');
       } // If link contains pdf add class pdf which will alow FA pdf icon (linkIcons.scss)
 
