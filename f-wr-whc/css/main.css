@@ -17236,47 +17236,49 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: #f2f2f2;
 }
 
-.card--event {
-    /*
-    @include media('>mobile', '<small') {
-        @include landscape-card();
-
-        .card--event__label--event
-            + .card--event__label--shortdate
-            + .card__details__text {
-            margin-top: 7rem; //$measure--large4
-        }
-    }
-    */
-}
-
-.card--event .card__anchor {
+.event-card .event-card__anchor {
+    display: block;
     background-color: #ffffff;
-    position: relative;
+    transition: background-color 0.2s ease-in-out 0s;
+    border-bottom: none;
 }
 
-.card--event .card__anchor, .card--event .card__anchor:focus, .card--event .card__anchor:active, .card--event .card__anchor:visited {
-    border: none;
+.event-card .event-card__anchor:focus {
+    outline: 3px solid #1e1e1e;
+    background-color: #f2f2f2;
 }
 
-.card--event .card__anchor:hover {
+.event-card .event-card__anchor:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.event-card .event-card__anchor:hover {
+    background-color: #f2f2f2;
+}
+
+.event-card .event-card__anchor:hover .news-card__thumbnail img {
+    transform: scale(1.02);
+}
+
+.event-card .event-card__anchor:hover .card--event__label--shortdate {
     /*
-            @include media('hover') {
-                @include box-shadow-darker();
-
-                border: none;
-            }
-            */
+                @include media('hover') {
+                    background-color: red;//$color-red70
+                }
+                */
 }
 
-.card--event .card__anchor .card--event__label--event {
-    color: gray;
-    font-style: italic;
-    margin-left: 1rem;
-    margin-top: 1rem;
+.event-card .event-card__label {
+    position: absolute;
+    z-index: 1;
+    background-color: #777777;
+    color: #ffffff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: 600;
 }
 
-.card--event .card__anchor .card--event__label--shortdate {
+.event-card .event-card__label--shortdate {
     align-self: flex-start;
     background-color: red;
     color: #ffffff;
@@ -17288,60 +17290,48 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     top: 2rem;
     transition: background-color 0.2s ease-in;
     /*
-            @include media('reducemotion') {
-                transition: none;
-            }
-            */
+        @include media('reducemotion') {
+            transition: none;
+        }
+        */
 }
 
-.card--event .card__anchor .card--event__label--shortdate:first-child {
+.event-card .event-card__label--shortdate:first-child {
     top: 0;
 }
 
-.card--event .card__anchor .card--event__label--shortdate:first-child + .card__details__text {
+.event-card .event-card__label--shortdate:first-child + .card__details__text {
     margin-top: 2rem;
 }
 
-.card--event .card__anchor:hover .card--event__label--shortdate {
-    /*
-                @include media('hover') {
-                    background-color: red;//$color-red70
-                }
-                */
-}
-
-.card--event .card__anchor .card__details__text {
+.event-card .event-card__details {
     margin-top: 3.5rem;
     padding-bottom: 1rem;
 }
 
-.card--event .card__anchor .card--event__label--shortdate .card--event__label--event + .card--event__label--shortdate {
+.event-card .event-card__label--shortdate {
     top: 2rem;
 }
 
-.card--event .card__anchor .card--event__label--event + .card__thumbnail + .card--event__label--shortdate {
+.event-card .event-card__label--shortdate {
     top: 4rem;
 }
 
-.card--event .card__anchor .card__thumbnail ~ .card__details__text {
+.event-card .event-card__text {
     margin-top: 0;
 }
 
-.card--event .card__anchor .card__type {
+.event-card .event-card__date {
     color: gray;
 }
 
-.card--event .card__anchor .card--event__divider {
+.event-card .card--event__divider {
     color: red;
 }
 
-.card--event .card__anchor:after {
+.event-card:after {
     content: unset;
     display: none;
-}
-
-.card--event.card--landscape .card--event__label--event + .card--event__label--shortdate + .card__details__text {
-    margin-top: 7rem;
 }
 
 .left-hand-navigation-grid .pathway-cards {
