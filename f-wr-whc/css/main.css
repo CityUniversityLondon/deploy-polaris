@@ -285,6 +285,10 @@
     background-color: #d61726;
 }
 
+.background--citygray4 {
+    background-color: #cbcbcb;
+}
+
 /**
  * Managing anchors is a difficult process on a website as vast as ours, and
  * given the great variety in styles our anchors take, it is of the utmost
@@ -17241,6 +17245,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .event-card .event-card__anchor {
+    box-shadow: 0 0 1.5rem 0.187rem rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
     transition: background-color 0.2s ease-in-out 0s;
     border-bottom: none;
@@ -17468,142 +17473,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .pathway-cards .pathway-card__txt .icon::before {
     content: "\f054";
-}
-
-.news-card .news-card__anchor {
-    display: block;
-    background-color: #ffffff;
-    transition: background-color 0.2s ease-in-out 0s;
-    border-bottom: none;
-}
-
-.news-card .news-card__anchor:focus {
-    outline: 3px solid #1e1e1e;
-    background-color: #f2f2f2;
-}
-
-.news-card .news-card__anchor:active {
-    outline: 2px dotted #1e1e1e;
-}
-
-.news-card .news-card__anchor:hover {
-    background-color: #f2f2f2;
-}
-
-.news-card .news-card__anchor:hover .news-card__thumbnail img {
-    transform: scale(1.02);
-}
-
-.news-card .news-card__label {
-    position: absolute;
-    z-index: 1;
-    background-color: #777777;
-    color: #ffffff;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-weight: 600;
-}
-
-.news-card .news-card__date {
-    color: #696969;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    font-weight: 600;
-}
-
-.news-card .news-card__heading {
-    margin-top: 0;
-    text-decoration: underline;
-    color: #1e1e1e;
-}
-
-.news-card .news-card__description {
-    color: #1e1e1e;
-}
-
-.social-card .social-card__anchor {
-    background-color: #ffffff;
-    transition: background-color 0.2s ease-in-out 0s;
-    border-bottom: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.social-card .social-card__anchor:focus {
-    outline: 3px solid #1e1e1e;
-    background-color: #f2f2f2;
-}
-
-.social-card .social-card__anchor:active {
-    outline: 2px dotted #1e1e1e;
-}
-
-.social-card .social-card__anchor:hover {
-    background-color: #f2f2f2;
-}
-
-.social-card .social-card__anchor:hover .news-card__thumbnail img {
-    transform: scale(1.02);
-}
-
-.social-card .social-card__label {
-    background-color: #777777;
-    color: #ffffff;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-weight: 600;
-    align-self: flex-start;
-}
-
-.social-card .social-card__details {
-    display: flex;
-    flex-direction: column;
-}
-
-.social-card .social-card__heading {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.social-card .social-card__label--source {
-    align-self: flex-start;
-    align-items: center;
-    background-color: #ffffff;
-    border-color: #d61726;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    color: #1e1e1e;
-    display: flex;
-    justify-content: center;
-}
-
-.social-card .social-card__content {
-    margin-top: 0;
-    color: #1e1e1e;
-    font-size: 1.2rem;
-}
-
-.social-card .social-card__footer {
-    margin-top: 0.5em;
-}
-
-.social-card .social-card__screenname {
-    color: #1e1e1e;
-}
-
-.social-card .social-card__screenname span {
-    color: green;
-}
-
-.social-card .social-card__time {
-    color: #696969;
 }
 
 .card {
@@ -30356,13 +30225,16 @@ div.widget-123_test_ {
 
 .whc {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .whc .whc__card {
-    flex: 1;
-    margin-right: 1rem;
+    flex-basis: 47%;
 }
 
-.whc .whc__card:last-child {
-    margin-right: 0;
+.whc .whc__card div {
+    width: 100%;
 }
