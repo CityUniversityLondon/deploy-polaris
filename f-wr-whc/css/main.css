@@ -30353,3 +30353,9 @@ div.widget-123_test_ {
     top: 0;
     margin-top: -40px;
 }
+
+@media (max-width: 500px) {
+    .whc .whc__card {
+        flex-basis: 100%;
+    }
+}
