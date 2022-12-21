@@ -17273,11 +17273,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     text-align: center;
     margin-bottom: 0;
     padding: 3.5rem;
-    /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
 }
 
 .event-card .event-card__label--shortdate span {
@@ -17389,20 +17384,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-right: 0.5rem;
 }
 
-.event-card .event-card__tag--location {
-    margin-bottom: 0.5rem;
-}
-
-.event-card .card--event__divider {
-    color: #d61726;
-}
-
-.event-card:after {
-    content: unset;
-    display: none;
-}
-
-.event-card__tag__audience {
+.event-card .event-card__tag__audience {
     display: inline-block;
     margin-right: 0.5rem;
     margin: auto auto 0;
@@ -17419,11 +17401,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-size: unset !important;
 }
 
-.event-card__tag__audience:before {
+.event-card .event-card__tag__audience:before {
     border: 2px solid #a9a19c;
 }
 
-.event-card__tag__audience:after, .event-card__tag__audience:before {
+.event-card .event-card__tag__audience:after, .event-card .event-card__tag__audience:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -17434,33 +17416,46 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: transparent !important;
 }
 
-.event-card__tag__audience:after {
+.event-card .event-card__tag__audience:after {
     border: 2px solid #2e767a;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
 
-.event-card__tag__audience:hover:after {
+.event-card .event-card__tag__audience:hover:after {
     transform: translateY(0px) translateX(0px) !important;
     opacity: 1 !important;
 }
 
-.event-card__tag__audience:hover {
+.event-card .event-card__tag__audience:hover {
     background: none;
     color: #2e767a;
 }
 
-.event-card__tag__audience:last-child {
+.event-card .event-card__tag__audience:last-child {
     margin-right: 0;
 }
 
 @media (max-width: 499px) {
-    .event-card__tag__audience {
+    .event-card .event-card__tag__audience {
         margin: inherit;
     }
 }
 
-.event-card__tag__audience:empty {
+.event-card .event-card__tag__audience:empty {
+    display: none;
+}
+
+.event-card .event-card__tag--location {
+    margin-bottom: 0.5rem;
+}
+
+.event-card .card--event__divider {
+    color: #d61726;
+}
+
+.event-card:after {
+    content: unset;
     display: none;
 }
 
