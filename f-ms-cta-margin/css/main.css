@@ -13255,7 +13255,6 @@ svg:not(:root) {
     border-bottom-width: 0;
     font-weight: 700;
     display: inline-block;
-    margin-bottom: 0.5rem;
     background-color: #006699;
     color: #ffffff;
     margin: 0 2rem 2rem 0;
@@ -14338,7 +14337,6 @@ USED IN:
 
 .cta--inline {
     display: inline-block;
-    margin-bottom: 0.5rem;
 }
 
 .cta--red {
@@ -14800,7 +14798,7 @@ USED IN:
     flex-wrap: wrap;
     font-size: 0;
     margin-bottom: 1.5rem;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .cta-group--stretched .cta {
