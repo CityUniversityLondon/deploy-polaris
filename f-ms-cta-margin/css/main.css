@@ -13428,6 +13428,12 @@ USED IN:
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 650px) {
+    .banner--text-ctas .banner__ctas .cta-group--stretched {
+        display: block;
+    }
+}
+
 @media (max-width: 500px) {
     .banner--text-ctas .banner__ctas .cta-group--stretched a:first-child {
         margin-bottom: 1rem;
