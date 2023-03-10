@@ -17356,6 +17356,24 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #189183;
 }
 
+.scp--online-msc .card--course.card--course--advanced .txt__heading {
+    background: #189183;
+    color: #1e1e1e;
+}
+
+.scp--online-msc .card--course.card--course--advanced .summary {
+    color: #189183;
+}
+
+.card--course[data-study-level=online-msc] .txt__heading {
+    background: #189183;
+    color: #1e1e1e;
+}
+
+.card--course[data-study-level=online-msc] .summary {
+    color: #189183;
+}
+
 .scp--phd .card--course.card--course--advanced .txt__heading {
     background: #006699;
     color: #ffffff;
@@ -17457,6 +17475,10 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pathway-cards--omba .pathway-card__txt:only-child {
+    border-top: 4px solid #189183;
+}
+
+.pathway-cards--online-msc .pathway-card__txt:only-child {
     border-top: 4px solid #189183;
 }
 
