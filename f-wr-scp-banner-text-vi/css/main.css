@@ -13312,7 +13312,15 @@ svg:not(:root) {
 }
 
 .scp--corporate .banner--theme--corporate.banner--text-home-vi .banner__img__none {
-    background-image: linear-gradient(140deg, #e30613 0%, #7e756d 100%);
+    background-image: linear-gradient(140deg, #a9a19c 0%, #7e756d 100%);
+}
+
+@media (max-width: 650px) {
+    .scp--corporate .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 72%);
+        left: inherit;
+        transform: inherit;
+    }
 }
 
 .scp--corporate .banner--theme--corporate.banner--text-home-vi h1 {
@@ -13320,7 +13328,40 @@ svg:not(:root) {
     color: #ffffff;
 }
 
+@media (max-width: 650px) {
+    .scp--corporate .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
+}
+
 .scp--corporate .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--corporate-alt .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #8b2433 0%, #e30613 100%);
+}
+
+@media (max-width: 650px) {
+    .scp--corporate-alt .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
+.scp--corporate-alt .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #e30613;
+    color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .scp--corporate-alt .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
+}
+
+.scp--corporate-alt .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
     display: none;
 }
 
@@ -13328,9 +13369,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #e35205 0%, #f1b434 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--undergraduate .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--undergraduate .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #f1b434;
     color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--undergraduate .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--undergraduate .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13341,9 +13396,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #002b49 0%, #006699 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--postgraduate .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--postgraduate .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #006699;
     color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .scp--postgraduate .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--postgraduate .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13354,9 +13423,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #002b49 0%, #006699 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--masters .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--masters .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #006699;
     color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .scp--masters .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--masters .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13367,9 +13450,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #006699 0%, #5bc2e7 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--phd .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #006699 0%, #5bc2e7 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--phd .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #5bc2e7;
-    color: #ffffff;
+    color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--phd .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--phd .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13380,9 +13477,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #2e767a 0%, #a3d5cd 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--mba .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #2e767a 0%, #a3d5cd 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--mba .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #a3d5cd;
-    color: #ffffff;
+    color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--mba .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--mba .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13393,9 +13504,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #496c60 0%, #a3d5cd 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--emba .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #496c60 0%, #a3d5cd 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--emba .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #a3d5cd;
-    color: #ffffff;
+    color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--emba .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--emba .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13406,9 +13531,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #91baa3 0%, #a3d5cd 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--demba .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #91baa3 0%, #a3d5cd 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--demba .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #a3d5cd;
     color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--demba .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--demba .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13419,9 +13558,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #93328e 0%, #e31c79 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--execed .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--execed .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #e31c79;
-    color: #ffffff;
+    color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--execed .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--execed .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13432,9 +13585,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #93328e 0%, #e31c79 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--executive-education .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--executive-education .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #e31c79;
-    color: #ffffff;
+    color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--executive-education .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--executive-education .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13445,9 +13612,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #189183 0%, #a3d5cd 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--online-msc .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #189183 0%, #a3d5cd 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--online-msc .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #a3d5cd;
     color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--online-msc .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--online-msc .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13458,9 +13639,23 @@ svg:not(:root) {
     background-image: linear-gradient(140deg, #8b2433 0%, #a9a19c 100%);
 }
 
+@media (max-width: 650px) {
+    .scp--cce .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 72%);
+        left: inherit;
+        transform: inherit;
+    }
+}
+
 .scp--cce .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #a9a19c;
-    color: #ffffff;
+    color: #1e1e1e;
+}
+
+@media (max-width: 650px) {
+    .scp--cce .banner--theme--corporate.banner--text-home-vi h1 {
+        text-align: center;
+    }
 }
 
 .scp--cce .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
@@ -13471,10 +13666,23 @@ svg:not(:root) {
     width: 100%;
 }
 
+@media (max-width: 650px) {
+    .banner--text-home-vi .banner__content__text {
+        margin-top: 10rem;
+    }
+}
+
 .banner--text-home-vi .banner__home-vi-shape {
     position: absolute;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+@media (max-width: 650px) {
+    .banner--text-home-vi .banner__home-vi-shape {
+        height: 0.5rem;
+        width: 0.5rem;
+    }
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(1) {
