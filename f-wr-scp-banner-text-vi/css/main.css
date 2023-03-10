@@ -13311,17 +13311,176 @@ svg:not(:root) {
     }
 }
 
+.scp--corporate .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #e30613 0%, #7e756d 100%);
+}
+
+.scp--corporate .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #7e756d;
+    color: #ffffff;
+}
+
+.scp--corporate .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--undergraduate .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #e35205 0%, #f1b434 100%);
+}
+
+.scp--undergraduate .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #f1b434;
+    color: #1e1e1e;
+}
+
+.scp--undergraduate .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--postgraduate .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #002b49 0%, #006699 100%);
+}
+
+.scp--postgraduate .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #006699;
+    color: #ffffff;
+}
+
+.scp--postgraduate .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--masters .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #002b49 0%, #006699 100%);
+}
+
+.scp--masters .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #006699;
+    color: #ffffff;
+}
+
+.scp--masters .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--phd .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #006699 0%, #5bc2e7 100%);
+}
+
+.scp--phd .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #5bc2e7;
+    color: #ffffff;
+}
+
+.scp--phd .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--mba .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #2e767a 0%, #a3d5cd 100%);
+}
+
+.scp--mba .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #a3d5cd;
+    color: #ffffff;
+}
+
+.scp--mba .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--emba .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #496c60 0%, #a3d5cd 100%);
+}
+
+.scp--emba .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #a3d5cd;
+    color: #ffffff;
+}
+
+.scp--emba .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--demba .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #91baa3 0%, #a3d5cd 100%);
+}
+
+.scp--demba .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #a3d5cd;
+    color: #1e1e1e;
+}
+
+.scp--demba .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--execed .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #93328e 0%, #e31c79 100%);
+}
+
+.scp--execed .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #e31c79;
+    color: #ffffff;
+}
+
+.scp--execed .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--executive-education .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #93328e 0%, #e31c79 100%);
+}
+
+.scp--executive-education .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #e31c79;
+    color: #ffffff;
+}
+
+.scp--executive-education .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--online-msc .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #189183 0%, #a3d5cd 100%);
+}
+
+.scp--online-msc .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #a3d5cd;
+    color: #1e1e1e;
+}
+
+.scp--online-msc .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.scp--cce .banner--theme--corporate.banner--text-home-vi .banner__img__none {
+    background-image: linear-gradient(140deg, #8b2433 0%, #a9a19c 100%);
+}
+
+.scp--cce .banner--theme--corporate.banner--text-home-vi h1 {
+    background-color: #a9a19c;
+    color: #ffffff;
+}
+
+.scp--cce .banner--theme--corporate.banner--text-home-vi .banner__content__text__subtitle {
+    display: none;
+}
+
+.banner--text-home-vi .banner__image__group:after {
+    width: 100%;
+}
+
 .banner--text-home-vi .banner__home-vi-shape {
     position: absolute;
-    height: 50px;
-    width: 50px;
-    border: thin solid yellow;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(1) {
-    transform: rotate(30deg);
-    -webkit-animation: shape-1-trajectory linear 50s infinite;
-            animation: shape-1-trajectory linear 50s infinite;
+    transform: rotate(195deg);
+    -webkit-animation: shape-1-trajectory linear 70s infinite;
+            animation: shape-1-trajectory linear 70s infinite;
     left: 6%;
     top: 50%;
 }
@@ -13363,9 +13522,9 @@ svg:not(:root) {
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(2) {
-    transform: rotate(60deg);
-    -webkit-animation: shape-2-trajectory linear 60s infinite;
-            animation: shape-2-trajectory linear 60s infinite;
+    transform: rotate(290deg);
+    -webkit-animation: shape-2-trajectory linear 80s infinite;
+            animation: shape-2-trajectory linear 80s infinite;
     left: 20%;
     top: 10%;
 }
@@ -13407,9 +13566,9 @@ svg:not(:root) {
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(3) {
-    transform: rotate(-30deg);
-    -webkit-animation: shape-3-trajectory linear 60s infinite;
-            animation: shape-3-trajectory linear 60s infinite;
+    transform: rotate(90deg);
+    -webkit-animation: shape-3-trajectory linear 90s infinite;
+            animation: shape-3-trajectory linear 90s infinite;
     left: 37%;
     top: 60%;
 }
@@ -13451,9 +13610,9 @@ svg:not(:root) {
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(4) {
-    transform: rotate(-30deg);
-    -webkit-animation: shape-4-trajectory linear 50s infinite;
-            animation: shape-4-trajectory linear 50s infinite;
+    transform: rotate(-6deg);
+    -webkit-animation: shape-4-trajectory linear 70s infinite;
+            animation: shape-4-trajectory linear 70s infinite;
     left: 52%;
     top: 35%;
 }
@@ -13495,9 +13654,9 @@ svg:not(:root) {
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(5) {
-    transform: rotate(-30deg);
-    -webkit-animation: shape-5-trajectory linear 70s infinite;
-            animation: shape-5-trajectory linear 70s infinite;
+    transform: rotate(34deg);
+    -webkit-animation: shape-5-trajectory linear 90s infinite;
+            animation: shape-5-trajectory linear 90s infinite;
     left: 67%;
     top: 48%;
 }
@@ -13539,9 +13698,9 @@ svg:not(:root) {
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(6) {
-    transform: rotate(-30deg);
-    -webkit-animation: shape-6-trajectory linear 55s infinite;
-            animation: shape-6-trajectory linear 55s infinite;
+    transform: rotate(-75deg);
+    -webkit-animation: shape-6-trajectory linear 75s infinite;
+            animation: shape-6-trajectory linear 75s infinite;
     left: 78%;
     top: 5%;
 }
@@ -13583,9 +13742,9 @@ svg:not(:root) {
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(7) {
-    transform: rotate(-30deg);
-    -webkit-animation: shape-7-trajectory linear 60s infinite;
-            animation: shape-7-trajectory linear 60s infinite;
+    transform: rotate(105deg);
+    -webkit-animation: shape-7-trajectory linear 80s infinite;
+            animation: shape-7-trajectory linear 80s infinite;
     left: 88%;
     top: 35%;
 }
@@ -13623,6 +13782,18 @@ svg:not(:root) {
     100% {
         left: 84%;
         top: -25%;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner--text-home-vi .banner__container {
+        padding-bottom: 6rem;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+    .banner--text-home-vi .banner__container {
+        padding-bottom: 2rem;
     }
 }
 
