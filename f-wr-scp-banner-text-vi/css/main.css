@@ -13479,309 +13479,390 @@ svg:not(:root) {
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(1) {
     transform: rotate(195deg);
-    -webkit-animation: shape-1-trajectory linear 70s infinite;
-            animation: shape-1-trajectory linear 70s infinite;
+    -webkit-animation: shape-1-trajectory linear 120s infinite;
+            animation: shape-1-trajectory linear 120s infinite;
     left: 6%;
     top: 50%;
 }
 
-@-webkit-keyframes shape-1-trajectory {
-    0% {
-        left: 6%;
-        top: 50%;
-        opacity: 0;
+@media (min-width: 651px) {
+    @-webkit-keyframes shape-1-trajectory {
+        0% {
+            left: 6%;
+            top: 50%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 16%;
+            top: -9%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 16%;
-        top: -25%;
-    }
-}
-
-@keyframes shape-1-trajectory {
-    0% {
-        left: 6%;
-        top: 50%;
-        opacity: 0;
-    }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 16%;
-        top: -25%;
+    @keyframes shape-1-trajectory {
+        0% {
+            left: 6%;
+            top: 50%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 16%;
+            top: -9%;
+        }
     }
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(2) {
     transform: rotate(290deg);
-    -webkit-animation: shape-2-trajectory linear 80s infinite;
-            animation: shape-2-trajectory linear 80s infinite;
+    -webkit-animation: shape-2-trajectory linear 115s infinite;
+            animation: shape-2-trajectory linear 115s infinite;
     left: 20%;
     top: 10%;
 }
 
-@-webkit-keyframes shape-2-trajectory {
-    0% {
-        left: 20%;
-        top: 10%;
-        opacity: 0;
+@media (min-width: 651px) and (max-width: 900px) {
+    @-webkit-keyframes shape-2-trajectory {
+        0% {
+            left: 20%;
+            top: 10%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 31%;
+            top: 80%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 31%;
-        top: 110%;
+    @keyframes shape-2-trajectory {
+        0% {
+            left: 20%;
+            top: 10%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 31%;
+            top: 80%;
+        }
     }
 }
 
-@keyframes shape-2-trajectory {
-    0% {
-        left: 20%;
-        top: 10%;
-        opacity: 0;
+@media (min-width: 901px) {
+    @-webkit-keyframes shape-2-trajectory {
+        0% {
+            left: 20%;
+            top: 10%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 31%;
+            top: 100%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 31%;
-        top: 110%;
+    @keyframes shape-2-trajectory {
+        0% {
+            left: 20%;
+            top: 10%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 31%;
+            top: 100%;
+        }
     }
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(3) {
     transform: rotate(90deg);
-    -webkit-animation: shape-3-trajectory linear 90s infinite;
-            animation: shape-3-trajectory linear 90s infinite;
+    -webkit-animation: shape-3-trajectory linear 125s infinite;
+            animation: shape-3-trajectory linear 125s infinite;
     left: 37%;
     top: 60%;
 }
 
-@-webkit-keyframes shape-3-trajectory {
-    0% {
-        left: 37%;
-        top: 60%;
-        opacity: 0;
+@media (min-width: 651px) {
+    @-webkit-keyframes shape-3-trajectory {
+        0% {
+            left: 37%;
+            top: 60%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 60%;
+            top: -9%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 60%;
-        top: -25%;
-    }
-}
-
-@keyframes shape-3-trajectory {
-    0% {
-        left: 37%;
-        top: 60%;
-        opacity: 0;
-    }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 60%;
-        top: -25%;
+    @keyframes shape-3-trajectory {
+        0% {
+            left: 37%;
+            top: 60%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 60%;
+            top: -9%;
+        }
     }
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(4) {
     transform: rotate(-6deg);
-    -webkit-animation: shape-4-trajectory linear 70s infinite;
-            animation: shape-4-trajectory linear 70s infinite;
+    -webkit-animation: shape-4-trajectory linear 110s infinite;
+            animation: shape-4-trajectory linear 110s infinite;
     left: 52%;
     top: 35%;
 }
 
-@-webkit-keyframes shape-4-trajectory {
-    0% {
-        left: 52%;
-        top: 35%;
-        opacity: 0;
+@media (min-width: 651px) {
+    @-webkit-keyframes shape-4-trajectory {
+        0% {
+            left: 52%;
+            top: 35%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 44%;
+            top: -9%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 44%;
-        top: -25%;
-    }
-}
-
-@keyframes shape-4-trajectory {
-    0% {
-        left: 52%;
-        top: 35%;
-        opacity: 0;
-    }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 44%;
-        top: -25%;
+    @keyframes shape-4-trajectory {
+        0% {
+            left: 52%;
+            top: 35%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 44%;
+            top: -9%;
+        }
     }
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(5) {
     transform: rotate(34deg);
-    -webkit-animation: shape-5-trajectory linear 90s infinite;
-            animation: shape-5-trajectory linear 90s infinite;
+    -webkit-animation: shape-5-trajectory linear 115s infinite;
+            animation: shape-5-trajectory linear 115s infinite;
     left: 67%;
     top: 48%;
 }
 
-@-webkit-keyframes shape-5-trajectory {
-    0% {
-        left: 67%;
-        top: 48%;
-        opacity: 0;
+@media (min-width: 651px) {
+    @-webkit-keyframes shape-5-trajectory {
+        0% {
+            left: 67%;
+            top: 48%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 62%;
+            top: -9%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 62%;
-        top: -25%;
-    }
-}
-
-@keyframes shape-5-trajectory {
-    0% {
-        left: 67%;
-        top: 48%;
-        opacity: 0;
-    }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 62%;
-        top: -25%;
+    @keyframes shape-5-trajectory {
+        0% {
+            left: 67%;
+            top: 48%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 62%;
+            top: -9%;
+        }
     }
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(6) {
     transform: rotate(-75deg);
-    -webkit-animation: shape-6-trajectory linear 75s infinite;
-            animation: shape-6-trajectory linear 75s infinite;
+    -webkit-animation: shape-6-trajectory linear 120s infinite;
+            animation: shape-6-trajectory linear 120s infinite;
     left: 78%;
     top: 5%;
 }
 
-@-webkit-keyframes shape-6-trajectory {
-    0% {
-        left: 78%;
-        top: 5%;
-        opacity: 0;
+@media (min-width: 651px) and (max-width: 900px) {
+    @-webkit-keyframes shape-6-trajectory {
+        0% {
+            left: 78%;
+            top: 5%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 64%;
+            top: 80%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 64%;
-        top: 110%;
+    @keyframes shape-6-trajectory {
+        0% {
+            left: 78%;
+            top: 5%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 64%;
+            top: 80%;
+        }
     }
 }
 
-@keyframes shape-6-trajectory {
-    0% {
-        left: 78%;
-        top: 5%;
-        opacity: 0;
+@media (min-width: 901px) {
+    @-webkit-keyframes shape-6-trajectory {
+        0% {
+            left: 78%;
+            top: 5%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 64%;
+            top: 110%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 64%;
-        top: 110%;
+    @keyframes shape-6-trajectory {
+        0% {
+            left: 78%;
+            top: 5%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 64%;
+            top: 110%;
+        }
     }
 }
 
 .banner--text-home-vi .banner__home-vi-shape:nth-child(7) {
     transform: rotate(105deg);
-    -webkit-animation: shape-7-trajectory linear 80s infinite;
-            animation: shape-7-trajectory linear 80s infinite;
+    -webkit-animation: shape-7-trajectory linear 120s infinite;
+            animation: shape-7-trajectory linear 120s infinite;
     left: 88%;
     top: 35%;
 }
 
-@-webkit-keyframes shape-7-trajectory {
-    0% {
-        left: 88%;
-        top: 35%;
-        opacity: 0;
+@media (min-width: 651px) {
+    @-webkit-keyframes shape-7-trajectory {
+        0% {
+            left: 88%;
+            top: 35%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 84%;
+            top: -9%;
+        }
     }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 84%;
-        top: -25%;
-    }
-}
-
-@keyframes shape-7-trajectory {
-    0% {
-        left: 88%;
-        top: 35%;
-        opacity: 0;
-    }
-    1% {
-        opacity: 0.5;
-    }
-    20% {
-        opacity: 1;
-    }
-    100% {
-        left: 84%;
-        top: -25%;
+    @keyframes shape-7-trajectory {
+        0% {
+            left: 88%;
+            top: 35%;
+            opacity: 0;
+        }
+        1% {
+            opacity: 0.5;
+        }
+        3% {
+            opacity: 1;
+        }
+        100% {
+            left: 84%;
+            top: -9%;
+        }
     }
 }
 
