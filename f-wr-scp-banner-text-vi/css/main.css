@@ -13323,6 +13323,10 @@ svg:not(:root) {
     }
 }
 
+.scp--corporate .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
+}
+
 .scp--corporate .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #7e756d;
     color: #ffffff;
@@ -13348,6 +13352,10 @@ svg:not(:root) {
         left: inherit;
         transform: inherit;
     }
+}
+
+.scp--corporate-alt .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
 }
 
 .scp--corporate-alt .banner--theme--corporate.banner--text-home-vi h1 {
@@ -13377,6 +13385,10 @@ svg:not(:root) {
     }
 }
 
+.scp--undergraduate .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
+}
+
 .scp--undergraduate .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #f1b434;
     color: #1e1e1e;
@@ -13402,6 +13414,10 @@ svg:not(:root) {
         left: inherit;
         transform: inherit;
     }
+}
+
+.scp--postgraduate .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
 }
 
 .scp--postgraduate .banner--theme--corporate.banner--text-home-vi h1 {
@@ -13431,6 +13447,10 @@ svg:not(:root) {
     }
 }
 
+.scp--masters .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
+}
+
 .scp--masters .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #006699;
     color: #ffffff;
@@ -13456,6 +13476,10 @@ svg:not(:root) {
         left: inherit;
         transform: inherit;
     }
+}
+
+.scp--phd .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
 }
 
 .scp--phd .banner--theme--corporate.banner--text-home-vi h1 {
@@ -13485,6 +13509,10 @@ svg:not(:root) {
     }
 }
 
+.scp--mba .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
+}
+
 .scp--mba .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #a3d5cd;
     color: #1e1e1e;
@@ -13510,6 +13538,10 @@ svg:not(:root) {
         left: inherit;
         transform: inherit;
     }
+}
+
+.scp--emba .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
 }
 
 .scp--emba .banner--theme--corporate.banner--text-home-vi h1 {
@@ -13539,6 +13571,10 @@ svg:not(:root) {
     }
 }
 
+.scp--demba .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
+}
+
 .scp--demba .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #a3d5cd;
     color: #1e1e1e;
@@ -13564,6 +13600,10 @@ svg:not(:root) {
         left: inherit;
         transform: inherit;
     }
+}
+
+.scp--execed .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
 }
 
 .scp--execed .banner--theme--corporate.banner--text-home-vi h1 {
@@ -13593,6 +13633,10 @@ svg:not(:root) {
     }
 }
 
+.scp--executive-education .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
+}
+
 .scp--executive-education .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #e31c79;
     color: #1e1e1e;
@@ -13618,6 +13662,10 @@ svg:not(:root) {
         left: inherit;
         transform: inherit;
     }
+}
+
+.scp--online-msc .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
 }
 
 .scp--online-msc .banner--theme--corporate.banner--text-home-vi h1 {
@@ -13647,6 +13695,10 @@ svg:not(:root) {
     }
 }
 
+.scp--cce .banner--theme--corporate.banner--text-home-vi .banner__content__text__item {
+    margin-bottom: 0;
+}
+
 .scp--cce .banner--theme--corporate.banner--text-home-vi h1 {
     background-color: #a9a19c;
     color: #1e1e1e;
@@ -13664,6 +13716,17 @@ svg:not(:root) {
 
 .banner--text-home-vi .banner__image__group:after {
     width: 100%;
+}
+
+.banner--text-home-vi .banner__content__text {
+    margin-bottom: 0;
+}
+
+@media (min-width: 651px) {
+    .banner--text-home-vi .banner__content__text {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
 
 @media (max-width: 650px) {
@@ -14076,7 +14139,7 @@ svg:not(:root) {
 
 @media (min-width: 901px) {
     .banner--text-home-vi .banner__container {
-        padding-bottom: 6rem;
+        padding-bottom: 4rem;
     }
 }
 
