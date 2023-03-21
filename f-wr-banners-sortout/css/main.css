@@ -13315,23 +13315,6 @@ svg:not(:root) {
     position: relative;
 }
 
-.banner-vi--text .banner__content__text {
-    margin-bottom: 0;
-}
-
-@media (min-width: 651px) {
-    .banner-vi--text .banner__content__text {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
-}
-
-@media (max-width: 650px) {
-    .banner-vi--text .banner__content__text {
-        margin-top: 10rem;
-    }
-}
-
 .banner-vi--text .banner-vi__shape {
     position: absolute;
     height: 1.5rem;
@@ -13347,10 +13330,49 @@ svg:not(:root) {
 
 .banner-vi--text .banner-vi__shape:nth-child(1) {
     transform: rotate(195deg);
-    -webkit-animation: shape-1-trajectory linear 120s infinite;
-            animation: shape-1-trajectory linear 120s infinite;
     left: 6%;
     top: 50%;
+}
+
+.banner-vi--text .banner-vi__shape:nth-child(2) {
+    transform: rotate(290deg);
+    left: 20%;
+    top: 10%;
+}
+
+.banner-vi--text .banner-vi__shape:nth-child(3) {
+    transform: rotate(90deg);
+    left: 37%;
+    top: 60%;
+}
+
+.banner-vi--text .banner-vi__shape:nth-child(4) {
+    transform: rotate(-6deg);
+    left: 52%;
+    top: 35%;
+}
+
+.banner-vi--text .banner-vi__shape:nth-child(5) {
+    transform: rotate(34deg);
+    left: 67%;
+    top: 48%;
+}
+
+.banner-vi--text .banner-vi__shape:nth-child(6) {
+    transform: rotate(-75deg);
+    left: 78%;
+    top: 5%;
+}
+
+.banner-vi--text .banner-vi__shape:nth-child(7) {
+    transform: rotate(105deg);
+    left: 88%;
+    top: 35%;
+}
+
+.banner-vi--text[data-animated="yes"] .banner-vi__shape:nth-child(1) {
+    -webkit-animation: shape-1-trajectory linear 120s infinite;
+            animation: shape-1-trajectory linear 120s infinite;
 }
 
 @media (min-width: 651px) {
@@ -13390,12 +13412,9 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--text .banner-vi__shape:nth-child(2) {
-    transform: rotate(290deg);
+.banner-vi--text[data-animated="yes"] .banner-vi__shape:nth-child(2) {
     -webkit-animation: shape-2-trajectory linear 115s infinite;
             animation: shape-2-trajectory linear 115s infinite;
-    left: 20%;
-    top: 10%;
 }
 
 @media (min-width: 651px) and (max-width: 900px) {
@@ -13472,12 +13491,9 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--text .banner-vi__shape:nth-child(3) {
-    transform: rotate(90deg);
+.banner-vi--text[data-animated="yes"] .banner-vi__shape:nth-child(3) {
     -webkit-animation: shape-3-trajectory linear 125s infinite;
             animation: shape-3-trajectory linear 125s infinite;
-    left: 37%;
-    top: 60%;
 }
 
 @media (min-width: 651px) {
@@ -13517,12 +13533,9 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--text .banner-vi__shape:nth-child(4) {
-    transform: rotate(-6deg);
+.banner-vi--text[data-animated="yes"] .banner-vi__shape:nth-child(4) {
     -webkit-animation: shape-4-trajectory linear 110s infinite;
             animation: shape-4-trajectory linear 110s infinite;
-    left: 52%;
-    top: 35%;
 }
 
 @media (min-width: 651px) {
@@ -13562,12 +13575,9 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--text .banner-vi__shape:nth-child(5) {
-    transform: rotate(34deg);
+.banner-vi--text[data-animated="yes"] .banner-vi__shape:nth-child(5) {
     -webkit-animation: shape-5-trajectory linear 115s infinite;
             animation: shape-5-trajectory linear 115s infinite;
-    left: 67%;
-    top: 48%;
 }
 
 @media (min-width: 651px) {
@@ -13607,12 +13617,9 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--text .banner-vi__shape:nth-child(6) {
-    transform: rotate(-75deg);
+.banner-vi--text[data-animated="yes"] .banner-vi__shape:nth-child(6) {
     -webkit-animation: shape-6-trajectory linear 120s infinite;
             animation: shape-6-trajectory linear 120s infinite;
-    left: 78%;
-    top: 5%;
 }
 
 @media (min-width: 651px) and (max-width: 900px) {
@@ -13689,12 +13696,9 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--text .banner-vi__shape:nth-child(7) {
-    transform: rotate(105deg);
+.banner-vi--text[data-animated="yes"] .banner-vi__shape:nth-child(7) {
     -webkit-animation: shape-7-trajectory linear 120s infinite;
             animation: shape-7-trajectory linear 120s infinite;
-    left: 88%;
-    top: 35%;
 }
 
 @media (min-width: 651px) {
