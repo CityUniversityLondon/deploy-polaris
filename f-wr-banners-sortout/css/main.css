@@ -13758,8 +13758,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--corporate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13770,8 +13769,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13804,8 +13802,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #8b2433 0%, #e30613 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13816,8 +13813,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient {
         background-image: linear-gradient(180deg, #8b2433 0%, #e30613 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13850,8 +13846,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--undergraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #e35205 0%, #f1b434 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13862,8 +13857,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--undergraduate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #e35205 0%, #f1b434 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13896,8 +13890,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--postgraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13908,8 +13901,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--postgraduate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13942,8 +13934,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--masters .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13954,8 +13945,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--masters.banner-vi--gradient {
         background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -13988,8 +13978,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--phd .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #006699 0%, #5bc2e7 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14000,8 +13989,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--phd.banner-vi--gradient {
         background-image: linear-gradient(180deg, #006699 0%, #5bc2e7 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14034,8 +14022,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--mba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #2e767a 0%, #a3d5cd 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14046,8 +14033,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--mba.banner-vi--gradient {
         background-image: linear-gradient(180deg, #2e767a 0%, #a3d5cd 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14080,8 +14066,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--emba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #496c60 0%, #a3d5cd 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14092,8 +14077,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--emba.banner-vi--gradient {
         background-image: linear-gradient(180deg, #496c60 0%, #a3d5cd 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14126,8 +14110,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--demba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #91baa3 0%, #a3d5cd 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14138,8 +14121,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--demba.banner-vi--gradient {
         background-image: linear-gradient(180deg, #91baa3 0%, #a3d5cd 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14172,8 +14154,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--execed .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14184,8 +14165,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--execed.banner-vi--gradient {
         background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14218,8 +14198,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--executive-education .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14230,8 +14209,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--executive-education.banner-vi--gradient {
         background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14264,8 +14242,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--online-msc .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #189183 0%, #a3d5cd 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14276,8 +14253,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--online-msc.banner-vi--gradient {
         background-image: linear-gradient(180deg, #189183 0%, #a3d5cd 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14310,8 +14286,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
         background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14322,8 +14297,7 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--cce.banner-vi--gradient {
         background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 72%);
-        left: inherit;
-        transform: inherit;
+        display: flex;
     }
 }
 
@@ -14423,7 +14397,35 @@ svg:not(:root) {
 }
 
 .banner-vi .banner-vi__content__text {
-    padding-top: 3.5rem;
+    /** TODO: Is min height necessary? **/
+    float: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+    /* 
+         
+         REMOVE SUBTITLE BELOW ?????
+
+         */
+}
+
+@supports (display: flex) {
+    .banner-vi .banner-vi__content__text {
+        float: none;
+        flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner-vi .banner-vi__content__text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .banner-vi .banner-vi__content__text {
+        width: 50%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -14433,6 +14435,16 @@ svg:not(:root) {
         padding-right: initial;
         margin-bottom: initial;
     }
+}
+
+.banner-vi .banner-vi__content__text h1,
+.banner-vi .banner-vi__content__text .banner-vi__content__text__subtitle {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    width: auto;
+    font-size: 1.728rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 650px) {
