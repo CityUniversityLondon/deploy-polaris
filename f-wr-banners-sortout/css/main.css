@@ -14508,6 +14508,7 @@ svg:not(:root) {
     padding-bottom: 3rem;
     align-items: center;
     display: flex;
+    width: inherit;
 }
 
 .banner-vi--image .banner-vi__shape--left {
@@ -14524,6 +14525,10 @@ svg:not(:root) {
     fill: #1e1e1e;
 }
 
+.banner-vi--image .banner-vi__content--right {
+    left: inherit;
+}
+
 .banner-vi--image .banner-vi__shape--right {
     transform: rotate(180deg);
     height: 100%;
@@ -14538,6 +14543,15 @@ svg:not(:root) {
 
 .banner-vi--image .banner-vi__shape--right svg path {
     fill: #ffffff;
+}
+
+.banner-vi--image .banner-vi__shape--right:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 50vw;
+    right: 95%;
 }
 
 /**
