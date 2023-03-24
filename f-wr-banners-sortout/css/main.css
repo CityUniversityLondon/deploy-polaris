@@ -13355,6 +13355,16 @@ svg:not(:root) {
     }
 }
 
+.scp--corporate .banner-vi.banner-vi--theme--corporate .cta, .scp--corporate .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #a9a19c;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--corporate .cta, .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #a9a19c;
+    color: #ffffff;
+}
+
 .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
     background-image: linear-gradient(140deg, #8b2433 0%, #e30613 100%);
 }
@@ -13397,6 +13407,16 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--corporate-alt h1 {
         text-align: center;
     }
+}
+
+.scp--corporate-alt .banner-vi.banner-vi--theme--corporate .cta, .scp--corporate-alt .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #8b2433;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--corporate-alt .cta, .banner-vi.banner-vi--theme--corporate-alt .promo-cta.promo-cta--small h2::after {
+    background-color: #8b2433;
+    color: #ffffff;
 }
 
 .scp--undergraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
@@ -13443,6 +13463,16 @@ svg:not(:root) {
     }
 }
 
+.scp--undergraduate .banner-vi.banner-vi--theme--corporate .cta, .scp--undergraduate .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #e35205;
+    color: #1e1e1e;
+}
+
+.banner-vi.banner-vi--theme--undergraduate .cta, .banner-vi.banner-vi--theme--undergraduate .promo-cta.promo-cta--small h2::after {
+    background-color: #e35205;
+    color: #1e1e1e;
+}
+
 .scp--postgraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
     background-image: linear-gradient(140deg, #002b49 0%, #006699 100%);
 }
@@ -13485,6 +13515,16 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--postgraduate h1 {
         text-align: center;
     }
+}
+
+.scp--postgraduate .banner-vi.banner-vi--theme--corporate .cta, .scp--postgraduate .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #002b49;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--postgraduate .cta, .banner-vi.banner-vi--theme--postgraduate .promo-cta.promo-cta--small h2::after {
+    background-color: #002b49;
+    color: #ffffff;
 }
 
 .scp--masters .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
@@ -13531,6 +13571,16 @@ svg:not(:root) {
     }
 }
 
+.scp--masters .banner-vi.banner-vi--theme--corporate .cta, .scp--masters .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #002b49;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--masters .cta, .banner-vi.banner-vi--theme--masters .promo-cta.promo-cta--small h2::after {
+    background-color: #002b49;
+    color: #ffffff;
+}
+
 .scp--phd .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
     background-image: linear-gradient(140deg, #006699 0%, #5bc2e7 100%);
 }
@@ -13573,6 +13623,16 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--phd h1 {
         text-align: center;
     }
+}
+
+.scp--phd .banner-vi.banner-vi--theme--corporate .cta, .scp--phd .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #006699;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--phd .cta, .banner-vi.banner-vi--theme--phd .promo-cta.promo-cta--small h2::after {
+    background-color: #006699;
+    color: #ffffff;
 }
 
 .scp--mba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
@@ -13619,6 +13679,16 @@ svg:not(:root) {
     }
 }
 
+.scp--mba .banner-vi.banner-vi--theme--corporate .cta, .scp--mba .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #2e767a;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--mba .cta, .banner-vi.banner-vi--theme--mba .promo-cta.promo-cta--small h2::after {
+    background-color: #2e767a;
+    color: #ffffff;
+}
+
 .scp--emba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
     background-image: linear-gradient(140deg, #496c60 0%, #a3d5cd 100%);
 }
@@ -13661,6 +13731,16 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--emba h1 {
         text-align: center;
     }
+}
+
+.scp--emba .banner-vi.banner-vi--theme--corporate .cta, .scp--emba .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #496c60;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--emba .cta, .banner-vi.banner-vi--theme--emba .promo-cta.promo-cta--small h2::after {
+    background-color: #496c60;
+    color: #ffffff;
 }
 
 .scp--demba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
@@ -13707,6 +13787,16 @@ svg:not(:root) {
     }
 }
 
+.scp--demba .banner-vi.banner-vi--theme--corporate .cta, .scp--demba .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #91baa3;
+    color: #1e1e1e;
+}
+
+.banner-vi.banner-vi--theme--demba .cta, .banner-vi.banner-vi--theme--demba .promo-cta.promo-cta--small h2::after {
+    background-color: #91baa3;
+    color: #1e1e1e;
+}
+
 .scp--execed .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
     background-image: linear-gradient(140deg, #93328e 0%, #e31c79 100%);
 }
@@ -13749,6 +13839,16 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--execed h1 {
         text-align: center;
     }
+}
+
+.scp--execed .banner-vi.banner-vi--theme--corporate .cta, .scp--execed .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #93328e;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--execed .cta, .banner-vi.banner-vi--theme--execed .promo-cta.promo-cta--small h2::after {
+    background-color: #93328e;
+    color: #ffffff;
 }
 
 .scp--executive-education .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
@@ -13795,6 +13895,16 @@ svg:not(:root) {
     }
 }
 
+.scp--executive-education .banner-vi.banner-vi--theme--corporate .cta, .scp--executive-education .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #93328e;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--executive-education .cta, .banner-vi.banner-vi--theme--executive-education .promo-cta.promo-cta--small h2::after {
+    background-color: #93328e;
+    color: #ffffff;
+}
+
 .scp--online-msc .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
     background-image: linear-gradient(140deg, #189183 0%, #a3d5cd 100%);
 }
@@ -13839,6 +13949,16 @@ svg:not(:root) {
     }
 }
 
+.scp--online-msc .banner-vi.banner-vi--theme--corporate .cta, .scp--online-msc .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #189183;
+    color: #1e1e1e;
+}
+
+.banner-vi.banner-vi--theme--online-msc .cta, .banner-vi.banner-vi--theme--online-msc .promo-cta.promo-cta--small h2::after {
+    background-color: #189183;
+    color: #1e1e1e;
+}
+
 .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
     background-image: linear-gradient(140deg, #8b2433 0%, #a9a19c 100%);
 }
@@ -13881,6 +14001,16 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--cce h1 {
         text-align: center;
     }
+}
+
+.scp--cce .banner-vi.banner-vi--theme--corporate .cta, .scp--cce .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #8b2433;
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--cce .cta, .banner-vi.banner-vi--theme--cce .promo-cta.promo-cta--small h2::after {
+    background-color: #8b2433;
+    color: #ffffff;
 }
 
 .banner-vi .banner-vi__container {
@@ -14460,6 +14590,7 @@ svg:not(:root) {
 .banner-vi--image {
     position: relative;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .banner-vi--image .banner-vi__image {
@@ -14497,28 +14628,33 @@ svg:not(:root) {
 .banner-vi--image .banner-vi__content {
     /*
         position: relative;
-        display: flex;
-        flex-direction: row;
+        
         height: 100%;
         */
+    display: flex;
+    flex-direction: row;
 }
 
 .banner-vi--image .banner-vi__content__text {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
     align-items: center;
     display: flex;
     width: inherit;
+    left: -5%;
 }
 
 .banner-vi--image .banner-vi__shape--left {
-    height: 100%;
+    position: relative;
+    display: flex;
+    flex: 1;
+    height: inherit;
 }
 
 .banner-vi--image .banner-vi__shape--left svg {
     position: absolute;
     height: 100%;
-    left: -10%;
+    width: inherit;
 }
 
 .banner-vi--image .banner-vi__shape--left svg path {
