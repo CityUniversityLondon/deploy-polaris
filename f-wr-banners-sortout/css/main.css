@@ -14932,13 +14932,33 @@ svg:not(:root) {
     }
     @-webkit-keyframes brackets-slide-in {
         0% {
-            left: -70vw;
+            left: -90vw;
         }
         100% {
             left: 0;
         }
     }
     @keyframes brackets-slide-in {
+        0% {
+            left: -90vw;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    .banner-vi--image[data-animated="yes"].banner-vi--image--promo .banner-vi__shape {
+        -webkit-animation: brackets-slide-in-alt ease-out 2.5s;
+                animation: brackets-slide-in-alt ease-out 2.5s;
+    }
+    @-webkit-keyframes brackets-slide-in-alt {
+        0% {
+            left: -70vw;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    @keyframes brackets-slide-in-alt {
         0% {
             left: -70vw;
         }
