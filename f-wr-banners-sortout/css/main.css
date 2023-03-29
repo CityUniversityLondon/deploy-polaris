@@ -14976,12 +14976,33 @@ svg:not(:root) {
     }
 }
 
-@media (min-width: 651px) {
-    .banner-vi--listing[data-animated="yes"] {
-        /*
-            padding-top: $measure-large * 2.5;
-            padding-bottom: $measure-large * 2.5;
-            */
+.banner-vi--listing[data-animated="yes"].banner-vi--gradient, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .container, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__container, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__standfirst, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__freehtml > div, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner-vi__container {
+    background-size: 400% 400%;
+    -webkit-animation: gradient-wave ease-out 12s infinite;
+            animation: gradient-wave ease-out 12s infinite;
+}
+
+@-webkit-keyframes gradient-wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient-wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
@@ -14998,6 +15019,7 @@ svg:not(:root) {
     max-width: initial;
     position: relative;
     overflow: hidden;
+    padding: 0;
 }
 
 .banner-vi--listing + main .course-finder__top .query-box {
@@ -15147,6 +15169,9 @@ svg:not(:root) {
 }
 
 .banner-vi--listing + main .course-finder__top .course-finder__clear-buttons {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -15208,8 +15233,47 @@ svg:not(:root) {
     left: 0;
 }
 
+.banner-vi--listing + main .course-finder__top .course-finder__clear-buttons div:first-child {
+    margin-top: 2rem;
+}
+
 .banner-vi--listing + main .course-finder__top .course-finder__clear-buttons a {
     z-index: 1;
+}
+
+.banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__inner {
+    padding-left: 0;
+    background: none;
+}
+
+.banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__filter__content {
+    position: relative;
+}
+
+.banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__filter__content:after {
+    font-family: "FontAwesome";
+    content: "";
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    font-weight: 100;
+    text-align: center;
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    padding-top: 0.15rem;
+}
+
+.banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__filter__content select {
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
 }
 
 /**
