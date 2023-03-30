@@ -13319,18 +13319,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--corporate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 72%);
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--corporate.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
     background-image: linear-gradient(90deg, #a9a19c 0%, #7e756d 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--corporate.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 72%);
+    .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #a9a19c 0%, #7e756d 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi__container {
+        background: #7e756d;
         display: flex;
     }
 }
@@ -13382,18 +13393,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 72%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient {
     background-image: linear-gradient(90deg, #8b2433 0%, #e30613 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 72%);
+    .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #8b2433 0%, #e30613 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi__container {
+        background: #e30613;
         display: flex;
     }
 }
@@ -13445,18 +13467,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--undergraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 72%);
+        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--undergraduate.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--undergraduate.banner-vi--gradient {
     background-image: linear-gradient(90deg, #e35205 0%, #f1b434 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--undergraduate.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 72%);
+    .banner-vi.banner-vi--theme--undergraduate.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #e35205 0%, #f1b434 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--undergraduate + main .course-finder__top .banner-vi__container {
+        background: #f1b434;
         display: flex;
     }
 }
@@ -13508,18 +13541,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--postgraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
+        background-image: linear-gradient(180deg, #002b49 0%, #006699 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--postgraduate.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--postgraduate.banner-vi--gradient {
     background-image: linear-gradient(90deg, #002b49 0%, #006699 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--postgraduate.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
+    .banner-vi.banner-vi--theme--postgraduate.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #002b49 0%, #006699 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #002b49 0%, #006699 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--postgraduate + main .course-finder__top .banner-vi__container {
+        background: #006699;
         display: flex;
     }
 }
@@ -13571,18 +13615,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--masters .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
+        background-image: linear-gradient(180deg, #002b49 0%, #006699 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--masters.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--masters.banner-vi--gradient {
     background-image: linear-gradient(90deg, #002b49 0%, #006699 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--masters.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #002b49 0%, #006699 72%);
+    .banner-vi.banner-vi--theme--masters.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #002b49 0%, #006699 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #002b49 0%, #006699 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--masters + main .course-finder__top .banner-vi__container {
+        background: #006699;
         display: flex;
     }
 }
@@ -13634,18 +13689,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--phd .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #006699 0%, #5bc2e7 72%);
+        background-image: linear-gradient(180deg, #006699 0%, #5bc2e7 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--phd.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--phd.banner-vi--gradient {
     background-image: linear-gradient(90deg, #006699 0%, #5bc2e7 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--phd.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #006699 0%, #5bc2e7 72%);
+    .banner-vi.banner-vi--theme--phd.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #006699 0%, #5bc2e7 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #006699 0%, #5bc2e7 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--phd + main .course-finder__top .banner-vi__container {
+        background: #5bc2e7;
         display: flex;
     }
 }
@@ -13697,18 +13763,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--mba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #2e767a 0%, #a3d5cd 72%);
+        background-image: linear-gradient(180deg, #2e767a 0%, #a3d5cd 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--mba.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--mba.banner-vi--gradient {
     background-image: linear-gradient(90deg, #2e767a 0%, #a3d5cd 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--mba.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #2e767a 0%, #a3d5cd 72%);
+    .banner-vi.banner-vi--theme--mba.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #2e767a 0%, #a3d5cd 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #2e767a 0%, #a3d5cd 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--mba + main .course-finder__top .banner-vi__container {
+        background: #a3d5cd;
         display: flex;
     }
 }
@@ -13760,18 +13837,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--emba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #496c60 0%, #a3d5cd 72%);
+        background-image: linear-gradient(180deg, #496c60 0%, #a3d5cd 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--emba.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--emba.banner-vi--gradient {
     background-image: linear-gradient(90deg, #496c60 0%, #a3d5cd 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--emba.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #496c60 0%, #a3d5cd 72%);
+    .banner-vi.banner-vi--theme--emba.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #496c60 0%, #a3d5cd 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #496c60 0%, #a3d5cd 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--emba + main .course-finder__top .banner-vi__container {
+        background: #a3d5cd;
         display: flex;
     }
 }
@@ -13823,18 +13911,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--demba .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #91baa3 0%, #a3d5cd 72%);
+        background-image: linear-gradient(180deg, #91baa3 0%, #a3d5cd 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--demba.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--demba.banner-vi--gradient {
     background-image: linear-gradient(90deg, #91baa3 0%, #a3d5cd 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--demba.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #91baa3 0%, #a3d5cd 72%);
+    .banner-vi.banner-vi--theme--demba.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #91baa3 0%, #a3d5cd 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #91baa3 0%, #a3d5cd 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--demba + main .course-finder__top .banner-vi__container {
+        background: #a3d5cd;
         display: flex;
     }
 }
@@ -13886,18 +13985,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--execed .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
+        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--execed.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--execed.banner-vi--gradient {
     background-image: linear-gradient(90deg, #93328e 0%, #e31c79 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--execed.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
+    .banner-vi.banner-vi--theme--execed.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #93328e 0%, #e31c79 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--execed + main .course-finder__top .banner-vi__container {
+        background: #e31c79;
         display: flex;
     }
 }
@@ -13949,18 +14059,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--executive-education .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
+        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--executive-education.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--executive-education.banner-vi--gradient {
     background-image: linear-gradient(90deg, #93328e 0%, #e31c79 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--executive-education.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 72%);
+    .banner-vi.banner-vi--theme--executive-education.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #93328e 0%, #e31c79 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #93328e 0%, #e31c79 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--executive-education + main .course-finder__top .banner-vi__container {
+        background: #e31c79;
         display: flex;
     }
 }
@@ -14012,18 +14133,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--online-msc .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #189183 0%, #a3d5cd 72%);
+        background-image: linear-gradient(180deg, #189183 0%, #a3d5cd 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--online-msc.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--online-msc.banner-vi--gradient {
     background-image: linear-gradient(90deg, #189183 0%, #a3d5cd 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--online-msc.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #189183 0%, #a3d5cd 72%);
+    .banner-vi.banner-vi--theme--online-msc.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #189183 0%, #a3d5cd 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #189183 0%, #a3d5cd 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--online-msc + main .course-finder__top .banner-vi__container {
+        background: #a3d5cd;
         display: flex;
     }
 }
@@ -14075,18 +14207,29 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 72%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 69%);
         display: flex;
     }
 }
 
-.banner-vi.banner-vi--theme--cce.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner-vi__container {
+.banner-vi.banner-vi--theme--cce.banner-vi--gradient {
     background-image: linear-gradient(90deg, #8b2433 0%, #a9a19c 100%);
 }
 
 @media (max-width: 650px) {
-    .banner-vi.banner-vi--theme--cce.banner-vi--gradient, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner-vi__container {
-        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 72%);
+    .banner-vi.banner-vi--theme--cce.banner-vi--gradient {
+        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 69%);
+        display: flex;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner-vi__container {
+    background-image: linear-gradient(90deg, #8b2433 0%, #a9a19c 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--cce + main .course-finder__top .banner-vi__container {
+        background: #a9a19c;
         display: flex;
     }
 }
@@ -14980,33 +15123,39 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--listing[data-animated="yes"].banner-vi--gradient, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .container, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__container, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__standfirst, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__freehtml > div, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner-vi__container {
-    background-size: 400% 400%;
-    -webkit-animation: gradient-wave ease-out 12s infinite;
-            animation: gradient-wave ease-out 12s infinite;
-}
-
-@-webkit-keyframes gradient-wave {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+@media (max-width: 650px) {
+    .banner-vi--listing .banner-vi__content__text {
+        margin-top: 8rem;
     }
 }
 
-@keyframes gradient-wave {
-    0% {
-        background-position: 0% 50%;
+@media (min-width: 651px) {
+    .banner-vi--listing[data-animated="yes"].banner-vi--gradient, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .container, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__container, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__standfirst, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner__freehtml > div, .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing[data-animated="yes"].banner-vi--gradient + main .course-finder__top .banner-vi__container {
+        background-size: 400% 400%;
+        -webkit-animation: gradient-wave ease-out 12s infinite;
+                animation: gradient-wave ease-out 12s infinite;
     }
-    50% {
-        background-position: 100% 50%;
+    @-webkit-keyframes gradient-wave {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
-    100% {
-        background-position: 0% 50%;
+    @keyframes gradient-wave {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
 }
 
@@ -15085,6 +15234,14 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 650px) {
+    .banner-vi--listing + main .course-finder__top .query-box {
+        position: relative;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
 .banner-vi--listing + main .course-finder__top input {
     position: relative;
     border: none;
@@ -15111,19 +15268,19 @@ svg:not(:root) {
 
 @media (min-width: 321px) {
     .banner-vi--listing + main .course-finder__top input {
-        width: 83.333%;
+        width: 91.667%;
     }
 }
 
 @media (min-width: 501px) {
     .banner-vi--listing + main .course-finder__top input {
-        width: 83.333%;
+        width: 100%;
     }
 }
 
 @media (min-width: 651px) {
     .banner-vi--listing + main .course-finder__top input {
-        width: 66.667%;
+        width: 83.333%;
     }
 }
 
@@ -15163,6 +15320,13 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 650px) {
+    .banner-vi--listing + main .course-finder__top input {
+        border-radius: 0.25rem;
+        border: 2px solid #1e1e1e;
+    }
+}
+
 .banner-vi--listing + main .course-finder__top button {
     position: relative;
     border: none;
@@ -15184,6 +15348,27 @@ svg:not(:root) {
 @media (min-width: 1441px) {
     .banner-vi--listing + main .course-finder__top button {
         left: 8.333%;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing + main .course-finder__top button {
+        position: absolute;
+        right: 0;
+        left: inherit;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        height: 48px;
+        width: 44px;
+        border-top: 2px solid #1e1e1e;
+        border-right: 2px solid #1e1e1e;
+        border-bottom: 2px solid #1e1e1e;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner-vi--listing + main .course-finder__top button {
+        margin-right: 0.5rem;
     }
 }
 
@@ -15277,6 +15462,32 @@ svg:not(:root) {
     z-index: 1;
 }
 
+.banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__open {
+    border-radius: 0.25rem;
+    border: 2px solid #1e1e1e;
+    background: none;
+    color: #1e1e1e;
+}
+
+.banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__open span:before {
+    font-family: "FontAwesome";
+    content: "";
+    position: absolute;
+    right: 0;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    font-weight: 100;
+    text-align: center;
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    padding-top: 0.15rem;
+    line-height: 1.625;
+}
+
 .banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__inner {
     padding-left: 0;
     background: none;
@@ -15303,6 +15514,7 @@ svg:not(:root) {
     margin-top: 0.5rem;
     font-size: 14px;
     padding-top: 0.15rem;
+    line-height: 1.625;
 }
 
 .banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__filter__content select {
