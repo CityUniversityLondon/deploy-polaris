@@ -15525,6 +15525,48 @@ svg:not(:root) {
     border: 2px solid #1e1e1e;
 }
 
+.banner-vi--video .banner-vi__container {
+    flex-direction: row;
+}
+
+.banner-vi--video .banner-vi__container__column {
+    flex-basis: 50%;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 650px) {
+    .banner-vi--video .banner-vi__container__column {
+        flex-basis: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.banner-vi--video .banner-vi__content__text {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    align-items: center;
+    display: flex;
+    width: inherit;
+    flex-basis: 85%;
+    left: -3%;
+}
+
+@media (max-width: 650px) {
+    .banner-vi--video .banner-vi__content__text {
+        padding: 0;
+        flex-basis: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-vi--video .banner-vi__content__text__item {
+        width: 100%;
+    }
+}
+
 /**
 USED IN:
  - 361894 (DEV)
