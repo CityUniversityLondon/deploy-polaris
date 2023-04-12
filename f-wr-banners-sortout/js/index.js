@@ -24113,6 +24113,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
+  // Only applicable to video banner - switches video to large version for bigger view ports
+  var videoLarge = el.querySelector("video").getAttribute("data-src-large");
+  var videoMobile = el.querySelector("video").getAttribute("data-src-mobile");
+  var viewPortWidth = window.innerWidth;
+
+  if (videoLarge && videoMobile && 650 < viewPortWidth) {
+    el.querySelector("video").setAttribute("src", el.querySelector("video").getAttribute("data-src-large"));
+  } // end
+
+
   var widget = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
   var screenSize = jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').width();
   var videos = widget.find('.bayes-video-banner__banner');
