@@ -14748,6 +14748,26 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 651px) {
+    .banner-vi--no-banner + main .news-article__stretched-title {
+        margin-bottom: 4rem;
+    }
+}
+
+.banner-vi--no-banner + main .news-article__stretched-title h1 {
+    color: #ffffff;
+    background-color: #e30613;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline;
+}
+
+@media (max-width: 650px) {
+    .banner-vi--no-banner + main .news-article__stretched-title h1 {
+        display: block;
+    }
+}
+
 .banner-vi--text {
     position: relative;
 }
