@@ -15254,6 +15254,7 @@ svg:not(:root) {
     flex-basis: 50%;
     align-items: center;
     display: flex;
+    height: 100%;
 }
 
 @media (max-width: 650px) {
@@ -15368,17 +15369,22 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--image .banner-vi__shape--right, .banner-vi--image .banner-vi__shape__mobile--right {
+.banner-vi--image .banner-vi__shape__wrap {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-vi--image .banner-vi__shape--right, .banner-vi--image .banner-vi__shape__mobile--right {
+    height: 100%;
 }
 
 .banner-vi--image .banner-vi__shape--right svg, .banner-vi--image .banner-vi__shape__mobile--right svg {
     transform: rotate(180deg);
-    position: absolute;
-    height: 100%;
+    position: relative;
     width: auto;
-    right: 0;
+    height: 100%;
 }
 
 .banner-vi--image .banner-vi__shape--right svg path, .banner-vi--image .banner-vi__shape__mobile--right svg path {
@@ -15392,8 +15398,56 @@ svg:not(:root) {
         background-color: white;
         height: 100%;
         width: 100vw;
-        left: 99%;
+        left: 50%;
+        top: 0;
     }
+}
+
+.banner-vi--image .image-credit {
+    position: relative;
+    color: inherit;
+    font-size: 1em;
+    height: 3rem;
+    min-width: 3rem;
+    background-color: #222;
+    color: #d8d8d8;
+    font-weight: 700;
+}
+
+.banner-vi--image .image-credit span:after {
+    font-family: 'FontAwesome';
+    content: '\f05a';
+    position: absolute;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.banner-vi--image .image-credit .image-credit__checkbox {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.banner-vi--image .image-credit .image-credit__checkbox:checked ~ .image-credit__text {
+    display: flex;
+}
+
+.banner-vi--image .image-credit__text {
+    display: none;
+    margin-right: 3rem;
+    display: none;
+    height: 3rem;
+    align-items: center;
 }
 
 @media (max-width: 650px) {
