@@ -14750,6 +14750,8 @@ svg:not(:root) {
     width: auto;
     font-size: 1.728rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
 }
 
 @media (min-width: 651px) {
@@ -16196,7 +16198,8 @@ svg:not(:root) {
 }
 
 .banner-vi--video-embedded .bayes-youtube-embed-container {
-    display: initial;
+    display: block;
+    width: 100%;
     padding: 0;
 }
 
