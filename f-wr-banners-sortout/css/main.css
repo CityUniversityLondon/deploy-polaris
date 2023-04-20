@@ -7624,6 +7624,25 @@ svg:not(:root) {
     transform: scale(1);
 }
 
+.banner-vi--video-embedded .banner-vi__video__cta svg {
+    width: 6rem;
+    height: 6rem;
+}
+
+@media (max-width: 900px) {
+    .banner-vi--video-embedded .banner-vi__video__cta svg {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-vi--video-embedded .banner-vi__video__cta svg {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
 /*carousel button svg*/
 /*Animation keyframes*/
 @-webkit-keyframes revealSlideUp {
@@ -16201,6 +16220,10 @@ svg:not(:root) {
     display: block;
     width: 100%;
     padding: 0;
+}
+
+.banner-vi--video-embedded .youtube-embed-container__close-btn {
+    display: none;
 }
 
 .banner-vi--video {
