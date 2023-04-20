@@ -23721,33 +23721,21 @@ __webpack_require__.r(__webpack_exports__);
 var className = 'banner-vi--video-embedded';
 
 function launch(el) {
-  console.log("test.."); // Variables
-
-  var youtube_cta = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.banner-vi__video__cta'); //const youtube_container = $('.bayes-youtube-embed-container');
-
+  // Variables
+  var youtube_cta = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.banner-vi__video__cta');
   var fallback_image = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.banner-vi__video__fallback-image__wrap');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(youtube_cta).click(function (e) {
-    e.preventDefault(); // Remove MP4 video banner
-    // $('.bayes-video-banner__banner').remove();
-    // $('.video-banner__controls').remove();
-    // Show/hide animation
-    //youtube_container.show();
+  var video_youtube = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.media--youtube'); //hide video sitting behind fallback image 
 
+  video_youtube.css('visibility', 'hidden');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(youtube_cta).click(function (e) {
+    e.preventDefault();
+    video_youtube.css('visibility', 'visible');
     fallback_image.hide(); // Scroll to top where video is positioned
 
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('html,body').animate({
       scrollTop: 0
     }, 'slow');
   });
-  /*
-  youtubeCloseBtn.click( e => {
-      e.preventDefault();
-       youtube_container.hide();
-      banner_image.show();
-   });
-   youtubeCloseBtn.append(youtubeCloseBtn_icon);
-  youtube_container.append(youtubeCloseBtn);
-  */
 }
 
 /* harmony default export */ __webpack_exports__["default"] = ({

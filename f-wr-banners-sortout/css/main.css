@@ -7465,20 +7465,21 @@ svg:not(:root) {
 
 /* styles */
 /*SVG controls styles*/
-.bayes-home .video-banner__controls, .banner-vi--video .video-banner__controls {
+.bayes-home .video-banner__controls, .banner-vi--video .video-banner__controls, .banner-vi--video-embedded .video-banner__controls {
     right: 5rem;
     bottom: 5rem;
 }
 
 @media (min-width: 1201px) {
-    .bayes-home .video-banner__controls, .banner-vi--video .video-banner__controls {
+    .bayes-home .video-banner__controls, .banner-vi--video .video-banner__controls, .banner-vi--video-embedded .video-banner__controls {
         right: 10rem;
     }
 }
 
 .bayes-home .video-banner__play,
-.bayes-home .yt-video__cta, .banner-vi--video .video-banner__play,
-.banner-vi--video .yt-video__cta {
+.bayes-home .yt-video__cta, .bayes-home .banner-vi__video__cta, .banner-vi--video .video-banner__play,
+.banner-vi--video .yt-video__cta, .banner-vi--video .banner-vi__video__cta, .banner-vi--video-embedded .video-banner__play,
+.banner-vi--video-embedded .yt-video__cta, .banner-vi--video-embedded .banner-vi__video__cta {
     position: absolute;
     background-color: transparent;
     z-index: 2;
@@ -7490,36 +7491,44 @@ svg:not(:root) {
 
 .bayes-home .video-banner__play:focus, .bayes-home .video-banner__play:active,
 .bayes-home .yt-video__cta:focus,
-.bayes-home .yt-video__cta:active, .banner-vi--video .video-banner__play:focus, .banner-vi--video .video-banner__play:active,
+.bayes-home .yt-video__cta:active, .bayes-home .banner-vi__video__cta:focus, .bayes-home .banner-vi__video__cta:active, .banner-vi--video .video-banner__play:focus, .banner-vi--video .video-banner__play:active,
 .banner-vi--video .yt-video__cta:focus,
-.banner-vi--video .yt-video__cta:active {
+.banner-vi--video .yt-video__cta:active, .banner-vi--video .banner-vi__video__cta:focus, .banner-vi--video .banner-vi__video__cta:active, .banner-vi--video-embedded .video-banner__play:focus, .banner-vi--video-embedded .video-banner__play:active,
+.banner-vi--video-embedded .yt-video__cta:focus,
+.banner-vi--video-embedded .yt-video__cta:active, .banner-vi--video-embedded .banner-vi__video__cta:focus, .banner-vi--video-embedded .banner-vi__video__cta:active {
     outline-color: #ffffff;
     outline-offset: 1px;
 }
 
 .bayes-home .video-banner__play:hover svg .stroke-dotted, .bayes-home .video-banner__play:active svg .stroke-dotted,
 .bayes-home .yt-video__cta:hover svg .stroke-dotted,
-.bayes-home .yt-video__cta:active svg .stroke-dotted, .banner-vi--video .video-banner__play:hover svg .stroke-dotted, .banner-vi--video .video-banner__play:active svg .stroke-dotted,
+.bayes-home .yt-video__cta:active svg .stroke-dotted, .bayes-home .banner-vi__video__cta:hover svg .stroke-dotted, .bayes-home .banner-vi__video__cta:active svg .stroke-dotted, .banner-vi--video .video-banner__play:hover svg .stroke-dotted, .banner-vi--video .video-banner__play:active svg .stroke-dotted,
 .banner-vi--video .yt-video__cta:hover svg .stroke-dotted,
-.banner-vi--video .yt-video__cta:active svg .stroke-dotted {
+.banner-vi--video .yt-video__cta:active svg .stroke-dotted, .banner-vi--video .banner-vi__video__cta:hover svg .stroke-dotted, .banner-vi--video .banner-vi__video__cta:active svg .stroke-dotted, .banner-vi--video-embedded .video-banner__play:hover svg .stroke-dotted, .banner-vi--video-embedded .video-banner__play:active svg .stroke-dotted,
+.banner-vi--video-embedded .yt-video__cta:hover svg .stroke-dotted,
+.banner-vi--video-embedded .yt-video__cta:active svg .stroke-dotted, .banner-vi--video-embedded .banner-vi__video__cta:hover svg .stroke-dotted, .banner-vi--video-embedded .banner-vi__video__cta:active svg .stroke-dotted {
     stroke-width: 4px;
     opacity: 1;
 }
 
 .bayes-home .video-banner__play:hover svg .stroke-solid, .bayes-home .video-banner__play:active svg .stroke-solid,
 .bayes-home .yt-video__cta:hover svg .stroke-solid,
-.bayes-home .yt-video__cta:active svg .stroke-solid, .banner-vi--video .video-banner__play:hover svg .stroke-solid, .banner-vi--video .video-banner__play:active svg .stroke-solid,
+.bayes-home .yt-video__cta:active svg .stroke-solid, .bayes-home .banner-vi__video__cta:hover svg .stroke-solid, .bayes-home .banner-vi__video__cta:active svg .stroke-solid, .banner-vi--video .video-banner__play:hover svg .stroke-solid, .banner-vi--video .video-banner__play:active svg .stroke-solid,
 .banner-vi--video .yt-video__cta:hover svg .stroke-solid,
-.banner-vi--video .yt-video__cta:active svg .stroke-solid {
+.banner-vi--video .yt-video__cta:active svg .stroke-solid, .banner-vi--video .banner-vi__video__cta:hover svg .stroke-solid, .banner-vi--video .banner-vi__video__cta:active svg .stroke-solid, .banner-vi--video-embedded .video-banner__play:hover svg .stroke-solid, .banner-vi--video-embedded .video-banner__play:active svg .stroke-solid,
+.banner-vi--video-embedded .yt-video__cta:hover svg .stroke-solid,
+.banner-vi--video-embedded .yt-video__cta:active svg .stroke-solid, .banner-vi--video-embedded .banner-vi__video__cta:hover svg .stroke-solid, .banner-vi--video-embedded .banner-vi__video__cta:active svg .stroke-solid {
     opacity: 0;
     stroke-dashoffset: 200;
 }
 
 .bayes-home .video-banner__play:hover svg .circle, .bayes-home .video-banner__play:active svg .circle,
 .bayes-home .yt-video__cta:hover svg .circle,
-.bayes-home .yt-video__cta:active svg .circle, .banner-vi--video .video-banner__play:hover svg .circle, .banner-vi--video .video-banner__play:active svg .circle,
+.bayes-home .yt-video__cta:active svg .circle, .bayes-home .banner-vi__video__cta:hover svg .circle, .bayes-home .banner-vi__video__cta:active svg .circle, .banner-vi--video .video-banner__play:hover svg .circle, .banner-vi--video .video-banner__play:active svg .circle,
 .banner-vi--video .yt-video__cta:hover svg .circle,
-.banner-vi--video .yt-video__cta:active svg .circle {
+.banner-vi--video .yt-video__cta:active svg .circle, .banner-vi--video .banner-vi__video__cta:hover svg .circle, .banner-vi--video .banner-vi__video__cta:active svg .circle, .banner-vi--video-embedded .video-banner__play:hover svg .circle, .banner-vi--video-embedded .video-banner__play:active svg .circle,
+.banner-vi--video-embedded .yt-video__cta:hover svg .circle,
+.banner-vi--video-embedded .yt-video__cta:active svg .circle, .banner-vi--video-embedded .banner-vi__video__cta:hover svg .circle, .banner-vi--video-embedded .banner-vi__video__cta:active svg .circle {
     fill: #1e1e1e;
     fill-opacity: 0;
 }
@@ -7527,16 +7536,20 @@ svg:not(:root) {
 .bayes-home .video-banner__play:active, .bayes-home .video-banner__play:hover, .bayes-home .video-banner__play:focus,
 .bayes-home .yt-video__cta:active,
 .bayes-home .yt-video__cta:hover,
-.bayes-home .yt-video__cta:focus, .banner-vi--video .video-banner__play:active, .banner-vi--video .video-banner__play:hover, .banner-vi--video .video-banner__play:focus,
+.bayes-home .yt-video__cta:focus, .bayes-home .banner-vi__video__cta:active, .bayes-home .banner-vi__video__cta:hover, .bayes-home .banner-vi__video__cta:focus, .banner-vi--video .video-banner__play:active, .banner-vi--video .video-banner__play:hover, .banner-vi--video .video-banner__play:focus,
 .banner-vi--video .yt-video__cta:active,
 .banner-vi--video .yt-video__cta:hover,
-.banner-vi--video .yt-video__cta:focus {
+.banner-vi--video .yt-video__cta:focus, .banner-vi--video .banner-vi__video__cta:active, .banner-vi--video .banner-vi__video__cta:hover, .banner-vi--video .banner-vi__video__cta:focus, .banner-vi--video-embedded .video-banner__play:active, .banner-vi--video-embedded .video-banner__play:hover, .banner-vi--video-embedded .video-banner__play:focus,
+.banner-vi--video-embedded .yt-video__cta:active,
+.banner-vi--video-embedded .yt-video__cta:hover,
+.banner-vi--video-embedded .yt-video__cta:focus, .banner-vi--video-embedded .banner-vi__video__cta:active, .banner-vi--video-embedded .banner-vi__video__cta:hover, .banner-vi--video-embedded .banner-vi__video__cta:focus {
     background-color: transparent;
 }
 
 .bayes-home .video-banner__play svg,
-.bayes-home .yt-video__cta svg, .banner-vi--video .video-banner__play svg,
-.banner-vi--video .yt-video__cta svg {
+.bayes-home .yt-video__cta svg, .bayes-home .banner-vi__video__cta svg, .banner-vi--video .video-banner__play svg,
+.banner-vi--video .yt-video__cta svg, .banner-vi--video .banner-vi__video__cta svg, .banner-vi--video-embedded .video-banner__play svg,
+.banner-vi--video-embedded .yt-video__cta svg, .banner-vi--video-embedded .banner-vi__video__cta svg {
     max-width: initial;
     width: 50px;
     height: 50px;
@@ -7547,16 +7560,18 @@ svg:not(:root) {
 
 @media (max-width: 499px) {
     .bayes-home .video-banner__play svg,
-    .bayes-home .yt-video__cta svg, .banner-vi--video .video-banner__play svg,
-    .banner-vi--video .yt-video__cta svg {
+    .bayes-home .yt-video__cta svg, .bayes-home .banner-vi__video__cta svg, .banner-vi--video .video-banner__play svg,
+    .banner-vi--video .yt-video__cta svg, .banner-vi--video .banner-vi__video__cta svg, .banner-vi--video-embedded .video-banner__play svg,
+    .banner-vi--video-embedded .yt-video__cta svg, .banner-vi--video-embedded .banner-vi__video__cta svg {
         width: 80px;
         height: 80px;
     }
 }
 
 .bayes-home .video-banner__play svg .stroke-dotted,
-.bayes-home .yt-video__cta svg .stroke-dotted, .banner-vi--video .video-banner__play svg .stroke-dotted,
-.banner-vi--video .yt-video__cta svg .stroke-dotted {
+.bayes-home .yt-video__cta svg .stroke-dotted, .bayes-home .banner-vi__video__cta svg .stroke-dotted, .banner-vi--video .video-banner__play svg .stroke-dotted,
+.banner-vi--video .yt-video__cta svg .stroke-dotted, .banner-vi--video .banner-vi__video__cta svg .stroke-dotted, .banner-vi--video-embedded .video-banner__play svg .stroke-dotted,
+.banner-vi--video-embedded .yt-video__cta svg .stroke-dotted, .banner-vi--video-embedded .banner-vi__video__cta svg .stroke-dotted {
     opacity: 0;
     stroke-dasharray: 1, 8;
     stroke-width: 4px;
@@ -7569,8 +7584,9 @@ svg:not(:root) {
 }
 
 .bayes-home .video-banner__play svg .stroke-solid,
-.bayes-home .yt-video__cta svg .stroke-solid, .banner-vi--video .video-banner__play svg .stroke-solid,
-.banner-vi--video .yt-video__cta svg .stroke-solid {
+.bayes-home .yt-video__cta svg .stroke-solid, .bayes-home .banner-vi__video__cta svg .stroke-solid, .banner-vi--video .video-banner__play svg .stroke-solid,
+.banner-vi--video .yt-video__cta svg .stroke-solid, .banner-vi--video .banner-vi__video__cta svg .stroke-solid, .banner-vi--video-embedded .video-banner__play svg .stroke-solid,
+.banner-vi--video-embedded .yt-video__cta svg .stroke-solid, .banner-vi--video-embedded .banner-vi__video__cta svg .stroke-solid {
     stroke-dashoffset: 0;
     stroke-dasharray: 300;
     stroke-width: 4px;
@@ -7579,30 +7595,32 @@ svg:not(:root) {
 }
 
 .bayes-home .video-banner__play svg .icon,
-.bayes-home .yt-video__cta svg .icon, .banner-vi--video .video-banner__play svg .icon,
-.banner-vi--video .yt-video__cta svg .icon {
+.bayes-home .yt-video__cta svg .icon, .bayes-home .banner-vi__video__cta svg .icon, .banner-vi--video .video-banner__play svg .icon,
+.banner-vi--video .yt-video__cta svg .icon, .banner-vi--video .banner-vi__video__cta svg .icon, .banner-vi--video-embedded .video-banner__play svg .icon,
+.banner-vi--video-embedded .yt-video__cta svg .icon, .banner-vi--video-embedded .banner-vi__video__cta svg .icon {
     transform: translate(-16px, -16px) scale(0.025);
     transform-origin: 50% 50%;
     fill: #ffffff;
 }
 
 .bayes-home .video-banner__play svg .circle,
-.bayes-home .yt-video__cta svg .circle, .banner-vi--video .video-banner__play svg .circle,
-.banner-vi--video .yt-video__cta svg .circle {
+.bayes-home .yt-video__cta svg .circle, .bayes-home .banner-vi__video__cta svg .circle, .banner-vi--video .video-banner__play svg .circle,
+.banner-vi--video .yt-video__cta svg .circle, .banner-vi--video .banner-vi__video__cta svg .circle, .banner-vi--video-embedded .video-banner__play svg .circle,
+.banner-vi--video-embedded .yt-video__cta svg .circle, .banner-vi--video-embedded .banner-vi__video__cta svg .circle {
     fill: #1e1e1e;
     fill-opacity: 0.2;
 }
 
-.bayes-home .yt-video__cta, .banner-vi--video .yt-video__cta {
+.bayes-home .yt-video__cta, .bayes-home .banner-vi__video__cta, .banner-vi--video .yt-video__cta, .banner-vi--video .banner-vi__video__cta, .banner-vi--video-embedded .yt-video__cta, .banner-vi--video-embedded .banner-vi__video__cta {
     left: 50%;
     transform: translateX(-50%);
 }
 
-.bayes-home .yt-video__cta svg .icon, .banner-vi--video .yt-video__cta svg .icon {
+.bayes-home .yt-video__cta svg .icon, .bayes-home .banner-vi__video__cta svg .icon, .banner-vi--video .yt-video__cta svg .icon, .banner-vi--video .banner-vi__video__cta svg .icon, .banner-vi--video-embedded .yt-video__cta svg .icon, .banner-vi--video-embedded .banner-vi__video__cta svg .icon {
     transform: scale(1);
 }
 
-.bayes-home .video-banner__play.video-banner__play--pause svg .icon, .banner-vi--video .video-banner__play.video-banner__play--pause svg .icon {
+.bayes-home .video-banner__play.video-banner__play--pause svg .icon, .banner-vi--video .video-banner__play.video-banner__play--pause svg .icon, .banner-vi--video-embedded .video-banner__play.video-banner__play--pause svg .icon {
     transform: scale(1);
 }
 
@@ -16149,7 +16167,31 @@ svg:not(:root) {
     display: inherit;
 }
 
-.banner-vi--video-embedded .figcaption span {
+.banner-vi--video-embedded figcaption {
+    display: inline-block;
+    width: 100%;
+    padding-top: 0.5rem;
+    color: #666666;
+    font-style: normal;
+    font-family: "PT Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.banner-vi--video-embedded figcaption .figcaption__bulleted-item {
+    text-transform: uppercase;
+}
+
+.banner-vi--video-embedded figcaption .figcaption__bulleted-item:before {
+    content: '\25CF';
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.banner-vi--video-embedded figcaption p:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+.banner-vi--video-embedded figcaption span {
     white-space: initial;
 }
 
