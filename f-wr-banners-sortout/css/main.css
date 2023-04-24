@@ -13430,7 +13430,7 @@ svg:not(:root) {
     }
 }
 
-.scp--corporate .banner-vi--image .banner-vi__shape--left svg path, .scp--corporate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--corporate .banner-vi .banner-vi__shape--left svg path, .scp--corporate .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #a9a19c;
 }
 
@@ -13449,7 +13449,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--corporate .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--corporate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--corporate .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--corporate .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #a9a19c;
 }
 
@@ -13538,7 +13538,7 @@ svg:not(:root) {
     }
 }
 
-.scp--corporate-alt .banner-vi--image .banner-vi__shape--left svg path, .scp--corporate-alt .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--corporate-alt .banner-vi .banner-vi__shape--left svg path, .scp--corporate-alt .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #8b2433;
 }
 
@@ -13557,7 +13557,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--corporate-alt .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--corporate-alt .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--corporate-alt .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--corporate-alt .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #8b2433;
 }
 
@@ -13646,7 +13646,7 @@ svg:not(:root) {
     }
 }
 
-.scp--undergraduate .banner-vi--image .banner-vi__shape--left svg path, .scp--undergraduate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--undergraduate .banner-vi .banner-vi__shape--left svg path, .scp--undergraduate .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #e35205;
 }
 
@@ -13665,7 +13665,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--undergraduate .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--undergraduate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--undergraduate .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--undergraduate .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #e35205;
 }
 
@@ -13754,7 +13754,7 @@ svg:not(:root) {
     }
 }
 
-.scp--postgraduate .banner-vi--image .banner-vi__shape--left svg path, .scp--postgraduate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--postgraduate .banner-vi .banner-vi__shape--left svg path, .scp--postgraduate .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #002b49;
 }
 
@@ -13773,7 +13773,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--postgraduate .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--postgraduate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--postgraduate .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--postgraduate .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #002b49;
 }
 
@@ -13862,7 +13862,7 @@ svg:not(:root) {
     }
 }
 
-.scp--masters .banner-vi--image .banner-vi__shape--left svg path, .scp--masters .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--masters .banner-vi .banner-vi__shape--left svg path, .scp--masters .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #002b49;
 }
 
@@ -13881,7 +13881,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--masters .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--masters .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--masters .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--masters .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #002b49;
 }
 
@@ -13970,7 +13970,7 @@ svg:not(:root) {
     }
 }
 
-.scp--phd .banner-vi--image .banner-vi__shape--left svg path, .scp--phd .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--phd .banner-vi .banner-vi__shape--left svg path, .scp--phd .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #006699;
 }
 
@@ -13989,7 +13989,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--phd .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--phd .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--phd .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--phd .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #006699;
 }
 
@@ -14078,7 +14078,7 @@ svg:not(:root) {
     }
 }
 
-.scp--mba .banner-vi--image .banner-vi__shape--left svg path, .scp--mba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--mba .banner-vi .banner-vi__shape--left svg path, .scp--mba .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #2e767a;
 }
 
@@ -14097,7 +14097,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--mba .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--mba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--mba .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--mba .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #2e767a;
 }
 
@@ -14186,7 +14186,7 @@ svg:not(:root) {
     }
 }
 
-.scp--emba .banner-vi--image .banner-vi__shape--left svg path, .scp--emba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--emba .banner-vi .banner-vi__shape--left svg path, .scp--emba .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #496c60;
 }
 
@@ -14205,7 +14205,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--emba .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--emba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--emba .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--emba .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #496c60;
 }
 
@@ -14294,7 +14294,7 @@ svg:not(:root) {
     }
 }
 
-.scp--demba .banner-vi--image .banner-vi__shape--left svg path, .scp--demba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--demba .banner-vi .banner-vi__shape--left svg path, .scp--demba .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #91baa3;
 }
 
@@ -14313,7 +14313,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--demba .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--demba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--demba .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--demba .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #91baa3;
 }
 
@@ -14402,7 +14402,7 @@ svg:not(:root) {
     }
 }
 
-.scp--execed .banner-vi--image .banner-vi__shape--left svg path, .scp--execed .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--execed .banner-vi .banner-vi__shape--left svg path, .scp--execed .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #93328e;
 }
 
@@ -14421,7 +14421,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--execed .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--execed .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--execed .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--execed .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #93328e;
 }
 
@@ -14510,7 +14510,7 @@ svg:not(:root) {
     }
 }
 
-.scp--executive-education .banner-vi--image .banner-vi__shape--left svg path, .scp--executive-education .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--executive-education .banner-vi .banner-vi__shape--left svg path, .scp--executive-education .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #93328e;
 }
 
@@ -14529,7 +14529,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--executive-education .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--executive-education .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--executive-education .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--executive-education .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #93328e;
 }
 
@@ -14618,7 +14618,7 @@ svg:not(:root) {
     }
 }
 
-.scp--online-msc .banner-vi--image .banner-vi__shape--left svg path, .scp--online-msc .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--online-msc .banner-vi .banner-vi__shape--left svg path, .scp--online-msc .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #189183;
 }
 
@@ -14637,7 +14637,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--online-msc .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--online-msc .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--online-msc .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--online-msc .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #189183;
 }
 
@@ -14726,7 +14726,7 @@ svg:not(:root) {
     }
 }
 
-.scp--cce .banner-vi--image .banner-vi__shape--left svg path, .scp--cce .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.scp--cce .banner-vi .banner-vi__shape--left svg path, .scp--cce .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #8b2433;
 }
 
@@ -14745,7 +14745,7 @@ svg:not(:root) {
     }
 }
 
-.banner-vi.banner-vi--theme--cce .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--cce .banner-vi--image .banner-vi__shape__mobile--left svg path {
+.banner-vi.banner-vi--theme--cce .banner-vi .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--cce .banner-vi .banner-vi__shape__mobile--left svg path {
     fill: #8b2433;
 }
 
