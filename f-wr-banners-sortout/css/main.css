@@ -13430,6 +13430,10 @@ svg:not(:root) {
     }
 }
 
+.scp--corporate .banner-vi--image .banner-vi__shape--left svg path, .scp--corporate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #a9a19c;
+}
+
 .scp--corporate .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #ffffff;
 }
@@ -13443,6 +13447,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--corporate h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--corporate .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--corporate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #a9a19c;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -13530,6 +13538,10 @@ svg:not(:root) {
     }
 }
 
+.scp--corporate-alt .banner-vi--image .banner-vi__shape--left svg path, .scp--corporate-alt .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #8b2433;
+}
+
 .scp--corporate-alt .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #ffffff;
 }
@@ -13543,6 +13555,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--corporate-alt h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--corporate-alt .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--corporate-alt .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #8b2433;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--corporate-alt figcaption {
@@ -13630,6 +13646,10 @@ svg:not(:root) {
     }
 }
 
+.scp--undergraduate .banner-vi--image .banner-vi__shape--left svg path, .scp--undergraduate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #e35205;
+}
+
 .scp--undergraduate .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -13643,6 +13663,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--undergraduate h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--undergraduate .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--undergraduate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #e35205;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--undergraduate figcaption {
@@ -13730,6 +13754,10 @@ svg:not(:root) {
     }
 }
 
+.scp--postgraduate .banner-vi--image .banner-vi__shape--left svg path, .scp--postgraduate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #002b49;
+}
+
 .scp--postgraduate .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #ffffff;
 }
@@ -13743,6 +13771,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--postgraduate h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--postgraduate .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--postgraduate .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #002b49;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--postgraduate figcaption {
@@ -13830,6 +13862,10 @@ svg:not(:root) {
     }
 }
 
+.scp--masters .banner-vi--image .banner-vi__shape--left svg path, .scp--masters .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #002b49;
+}
+
 .scp--masters .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #ffffff;
 }
@@ -13843,6 +13879,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--masters h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--masters .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--masters .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #002b49;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--masters figcaption {
@@ -13930,6 +13970,10 @@ svg:not(:root) {
     }
 }
 
+.scp--phd .banner-vi--image .banner-vi__shape--left svg path, .scp--phd .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #006699;
+}
+
 .scp--phd .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -13943,6 +13987,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--phd h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--phd .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--phd .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #006699;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--phd figcaption {
@@ -14030,6 +14078,10 @@ svg:not(:root) {
     }
 }
 
+.scp--mba .banner-vi--image .banner-vi__shape--left svg path, .scp--mba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #2e767a;
+}
+
 .scp--mba .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -14043,6 +14095,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--mba h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--mba .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--mba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #2e767a;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--mba figcaption {
@@ -14130,6 +14186,10 @@ svg:not(:root) {
     }
 }
 
+.scp--emba .banner-vi--image .banner-vi__shape--left svg path, .scp--emba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #496c60;
+}
+
 .scp--emba .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -14143,6 +14203,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--emba h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--emba .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--emba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #496c60;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--emba figcaption {
@@ -14230,6 +14294,10 @@ svg:not(:root) {
     }
 }
 
+.scp--demba .banner-vi--image .banner-vi__shape--left svg path, .scp--demba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #91baa3;
+}
+
 .scp--demba .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -14243,6 +14311,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--demba h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--demba .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--demba .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #91baa3;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--demba figcaption {
@@ -14330,6 +14402,10 @@ svg:not(:root) {
     }
 }
 
+.scp--execed .banner-vi--image .banner-vi__shape--left svg path, .scp--execed .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #93328e;
+}
+
 .scp--execed .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -14343,6 +14419,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--execed h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--execed .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--execed .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #93328e;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--execed figcaption {
@@ -14430,6 +14510,10 @@ svg:not(:root) {
     }
 }
 
+.scp--executive-education .banner-vi--image .banner-vi__shape--left svg path, .scp--executive-education .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #93328e;
+}
+
 .scp--executive-education .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -14443,6 +14527,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--executive-education h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--executive-education .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--executive-education .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #93328e;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--executive-education figcaption {
@@ -14530,6 +14618,10 @@ svg:not(:root) {
     }
 }
 
+.scp--online-msc .banner-vi--image .banner-vi__shape--left svg path, .scp--online-msc .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #189183;
+}
+
 .scp--online-msc .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -14543,6 +14635,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--online-msc h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--online-msc .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--online-msc .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #189183;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--online-msc figcaption {
@@ -14630,6 +14726,10 @@ svg:not(:root) {
     }
 }
 
+.scp--cce .banner-vi--image .banner-vi__shape--left svg path, .scp--cce .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #8b2433;
+}
+
 .scp--cce .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
     color: #1e1e1e;
 }
@@ -14643,6 +14743,10 @@ svg:not(:root) {
     .banner-vi.banner-vi--theme--cce h1 {
         text-align: center;
     }
+}
+
+.banner-vi.banner-vi--theme--cce .banner-vi--image .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--cce .banner-vi--image .banner-vi__shape__mobile--left svg path {
+    fill: #8b2433;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--cce figcaption {
