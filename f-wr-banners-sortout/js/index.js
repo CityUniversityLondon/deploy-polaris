@@ -22708,7 +22708,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/bayes-carousel/bayes-carousel */ "./src/components/bayes-carousel/bayes-carousel.js");
 /* harmony import */ var _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/bayes-home/home */ "./src/components/bayes-home/home.js");
 /* harmony import */ var _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/bayes-home/Video-banner/bayes-video-banner */ "./src/components/bayes-home/Video-banner/bayes-video-banner.js");
-/* harmony import */ var _components_banner_banners_new_video_embedded_vi_banner__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/banner/banners-new/_video-embedded-vi-banner */ "./src/components/banner/banners-new/_video-embedded-vi-banner.js");
 
 
 
@@ -22741,8 +22740,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_banner_banners_new_video_embedded_vi_banner__WEBPACK_IMPORTED_MODULE_30__["default"]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"]]);
 
 /***/ }),
 
@@ -23697,47 +23695,6 @@ function launch(el) {
 }
 
 var className = 'banner-stats';
-/* harmony default export */ __webpack_exports__["default"] = ({
-  launch: launch,
-  className: className
-});
-
-/***/ }),
-
-/***/ "./src/components/banner/banners-new/_video-embedded-vi-banner.js":
-/*!************************************************************************!*\
-  !*** ./src/components/banner/banners-new/_video-embedded-vi-banner.js ***!
-  \************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
-
-
-var className = 'banner-vi--video-embedded';
-
-function launch(el) {
-  // Variables
-  var youtube_cta = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.banner-vi__video__cta');
-  var fallback_image = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.banner-vi__video__fallback-image__wrap');
-  var video_youtube = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.media--youtube'); //hide video sitting behind fallback image 
-
-  video_youtube.css('visibility', 'hidden');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(youtube_cta).click(function (e) {
-    e.preventDefault();
-    video_youtube.css('visibility', 'visible');
-    fallback_image.hide(); // Scroll to top where video is positioned
-
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('html,body').animate({
-      scrollTop: 0
-    }, 'slow');
-  });
-}
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
