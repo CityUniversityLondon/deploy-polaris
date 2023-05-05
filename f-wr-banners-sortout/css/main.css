@@ -3849,6 +3849,7 @@ h6 {
 
 .alpha,
 h1,
+.banner-vi--video .banner-vi__content__text__item h1,
 .banner--text-ctas .banner__text .banner__text__subtitle,
 .section--prussian .banner__text__subtitle,
 .video-banner__text__wrapper .video-banner__text .video-banner__text__title,
@@ -16577,12 +16578,53 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-vi--video .banner-vi__content__text__item {
         width: 100%;
+        text-align: center;
     }
 }
 
 .banner-vi--video .banner-vi__content__text__item h1 {
     background: none;
     color: #ffffff;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #fafafa;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.625;
+    margin: auto;
+    margin-bottom: 1rem;
+    display: inline;
+}
+
+@media (min-width: 1201px) {
+    .banner-vi--video .banner-vi__content__text__item h1 {
+        margin: auto;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .banner-vi--video .banner-vi__content__text__item h1 {
+        font-size: 2.98598rem;
+        margin: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner-vi--video .banner-vi__content__text__item h1 {
+        font-size: 1.728rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner-vi--video .banner-vi__content__text__item h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner-vi--video .banner-vi__content__text__item h1 {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 650px) {
@@ -16653,7 +16695,7 @@ svg:not(:root) {
 }
 
 .banner-vi--video .banner-vi__shape--left svg path, .banner-vi--video .banner-vi__shape__mobile--left svg path {
-    fill: #1e1e1e;
+    fill: #e30613;
 }
 
 .banner-vi--video .banner-vi__content--right {
@@ -16733,21 +16775,6 @@ svg:not(:root) {
 
 .banner-vi--video .bayes-video-banner__banner {
     line-height: 0;
-    /*
-        video {
-            &:nth-child(1){
-                @include media('>between'){
-                    display: none;
-                }
-            }
-
-            &:nth-child(2){
-                @include media('<=between'){
-                    display: none;
-                }
-            }
-        }
-        */
 }
 
 .banner-vi--video .bayes-video-banner__banner:before {
