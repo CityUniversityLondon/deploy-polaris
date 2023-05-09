@@ -13376,70 +13376,70 @@ svg:not(:root) {
 }
 
 .scp--corporate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #a9a19c 0%, #7e756d 100%);
-    background-color: #7e756d;
+    background-image: linear-gradient(90deg, #8b2433 0%, #e30613 100%);
+    background-color: #e30613;
 }
 
 @media (max-width: 650px) {
     .scp--corporate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 69%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 69%);
         display: flex;
     }
     .scp--corporate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 46%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #a9a19c 0%, #7e756d 100%);
-    background-color: #7e756d;
+    background-image: linear-gradient(90deg, #8b2433 0%, #e30613 100%);
+    background-color: #e30613;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 69%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 46%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--corporate .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 95%);
-        background-color: #7e756d;
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 95%);
+        background-color: #e30613;
     }
     .scp--corporate .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
-        background: #7e756d;
+        background: #e30613;
     }
 }
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--corporate.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 95%);
-        background-color: #7e756d;
+        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 95%);
+        background-color: #e30613;
     }
     .banner-vi--video-embedded.banner-vi--theme--corporate.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
-        background: #7e756d;
+        background: #e30613;
     }
 }
 
 .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi__container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi--video .video-banner__controls, .banner-vi--video .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #a9a19c 0%, #7e756d 100%);
+    background-image: linear-gradient(90deg, #8b2433 0%, #e30613 100%);
 }
 
 @media (max-width: 650px) {
     .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi__container, .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .banner-vi--video .video-banner__controls, .banner-vi--video .banner-vi--listing.banner-vi--theme--corporate + main .course-finder__top .video-banner__controls {
-        background: #7e756d;
+        background: #e30613;
         display: flex;
     }
 }
 
 .scp--corporate .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #7e756d;
+    background-color: #e30613;
     color: #ffffff;
 }
 
@@ -13450,7 +13450,7 @@ svg:not(:root) {
 }
 
 .scp--corporate .banner-vi .banner-vi__shape--left svg path, .scp--corporate .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #e30613;
+    fill: #0c0c0e;
 }
 
 .scp--corporate .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -13458,7 +13458,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #7e756d;
+    background-color: #e30613;
     color: #ffffff;
 }
 
@@ -13469,7 +13469,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--corporate .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--corporate .banner-vi__shape__mobile--left svg path {
-    fill: #e30613;
+    fill: #0c0c0e;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -13477,89 +13477,89 @@ svg:not(:root) {
 }
 
 .scp--corporate .banner-vi.banner-vi--theme--corporate .cta, .scp--corporate .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
-    background-color: #a9a19c;
+    background-color: #e30613;
     color: #ffffff;
 }
 
 .banner-vi.banner-vi--theme--corporate .cta, .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
-    background-color: #a9a19c;
+    background-color: #e30613;
     color: #ffffff;
 }
 
 @media (max-width: 650px) {
     .scp--corporate .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #7e756d;
+        background-color: #e30613;
     }
     .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #7e756d;
+        background-color: #e30613;
     }
 }
 
 .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #8b2433 0%, #e30613 100%);
-    background-color: #e30613;
+    background-image: linear-gradient(90deg, #a9a19c 0%, #7e756d 100%);
+    background-color: #7e756d;
 }
 
 @media (max-width: 650px) {
     .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 69%);
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 69%);
         display: flex;
     }
     .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 46%);
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #8b2433 0%, #e30613 100%);
-    background-color: #e30613;
+    background-image: linear-gradient(90deg, #a9a19c 0%, #7e756d 100%);
+    background-color: #7e756d;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 69%);
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 46%);
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--corporate-alt .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 95%);
-        background-color: #e30613;
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 95%);
+        background-color: #7e756d;
     }
     .scp--corporate-alt .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
-        background: #e30613;
+        background: #7e756d;
     }
 }
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--corporate-alt.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #e30613 95%);
-        background-color: #e30613;
+        background-image: linear-gradient(180deg, #a9a19c 0%, #7e756d 95%);
+        background-color: #7e756d;
     }
     .banner-vi--video-embedded.banner-vi--theme--corporate-alt.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
-        background: #e30613;
+        background: #7e756d;
     }
 }
 
 .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi__container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi--video .video-banner__controls, .banner-vi--video .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #8b2433 0%, #e30613 100%);
+    background-image: linear-gradient(90deg, #a9a19c 0%, #7e756d 100%);
 }
 
 @media (max-width: 650px) {
     .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi__container, .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .banner-vi--video .video-banner__controls, .banner-vi--video .banner-vi--listing.banner-vi--theme--corporate-alt + main .course-finder__top .video-banner__controls {
-        background: #e30613;
+        background: #7e756d;
         display: flex;
     }
 }
 
 .scp--corporate-alt .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #e30613;
+    background-color: #7e756d;
     color: #ffffff;
 }
 
@@ -13570,7 +13570,7 @@ svg:not(:root) {
 }
 
 .scp--corporate-alt .banner-vi .banner-vi__shape--left svg path, .scp--corporate-alt .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #0c0c0e;
+    fill: #e30613;
 }
 
 .scp--corporate-alt .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -13578,7 +13578,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--corporate-alt h1 {
-    background-color: #e30613;
+    background-color: #7e756d;
     color: #ffffff;
 }
 
@@ -13589,7 +13589,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--corporate-alt .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--corporate-alt .banner-vi__shape__mobile--left svg path {
-    fill: #0c0c0e;
+    fill: #e30613;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--corporate-alt figcaption {
@@ -13597,21 +13597,21 @@ svg:not(:root) {
 }
 
 .scp--corporate-alt .banner-vi.banner-vi--theme--corporate .cta, .scp--corporate-alt .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
-    background-color: #8b2433;
+    background-color: #0c0c0e;
     color: #ffffff;
 }
 
 .banner-vi.banner-vi--theme--corporate-alt .cta, .banner-vi.banner-vi--theme--corporate-alt .promo-cta.promo-cta--small h2::after {
-    background-color: #8b2433;
+    background-color: #0c0c0e;
     color: #ffffff;
 }
 
 @media (max-width: 650px) {
     .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #e30613;
+        background-color: #7e756d;
     }
     .banner-vi.banner-vi--theme--corporate-alt.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #e30613;
+        background-color: #7e756d;
     }
 }
 
@@ -15723,6 +15723,7 @@ svg:not(:root) {
 }
 
 .banner-vi--image .image-credit__wrap {
+    height: 100%;
     flex: 1;
     max-width: 70%;
     display: flex;
@@ -15730,6 +15731,7 @@ svg:not(:root) {
 }
 
 .banner-vi--image .image-credit {
+    height: 100%;
     position: relative;
     color: inherit;
     font-size: 1em;
@@ -15837,8 +15839,18 @@ svg:not(:root) {
     }
 }
 
-.banner-vi--image promo-cta h2 {
+.banner-vi--image .promo-cta h2, .banner-vi--image .promo-cta p {
     line-height: 1.625;
+}
+
+.banner-vi--image .promo-cta {
+    padding: 5px 15px;
+}
+
+@media (max-width: 650px) {
+    .banner-vi--image .promo-cta h2 {
+        font-size: 1.2rem;
+    }
 }
 
 .banner-vi--image .promo-cta__button {
@@ -15860,9 +15872,6 @@ svg:not(:root) {
         0% {
             left: -90vw;
         }
-        65% {
-            left: -10vw;
-        }
         100% {
             left: 0;
         }
@@ -15871,23 +15880,17 @@ svg:not(:root) {
         0% {
             left: -90vw;
         }
-        65% {
-            left: -10vw;
-        }
         100% {
             left: 0;
         }
     }
     .banner-vi--image[data-animated="yes"].banner-vi--image--promo .banner-vi__shape {
-        -webkit-animation: brackets-slide-in-alt linear 2s;
-                animation: brackets-slide-in-alt linear 2s;
+        -webkit-animation: brackets-slide-in-alt ease-out 2s;
+                animation: brackets-slide-in-alt ease-out 2s;
     }
     @-webkit-keyframes brackets-slide-in-alt {
         0% {
             left: -70vw;
-        }
-        60% {
-            left: -10vw;
         }
         100% {
             left: 0;
@@ -15897,22 +15900,19 @@ svg:not(:root) {
         0% {
             left: -70vw;
         }
-        60% {
-            left: -10vw;
-        }
         100% {
             left: 0;
         }
     }
     .banner-vi--image[data-animated="yes"] .banner-vi__content.banner-vi__content--right {
-        -webkit-animation: promo-slide-up ease-out 2s;
-                animation: promo-slide-up ease-out 2s;
+        -webkit-animation: promo-slide-up ease-out 3s;
+                animation: promo-slide-up ease-out 3s;
     }
     @-webkit-keyframes promo-slide-up {
         0% {
             top: 100%;
         }
-        83% {
+        66% {
             top: 100%;
         }
         100% {
@@ -15923,7 +15923,7 @@ svg:not(:root) {
         0% {
             top: 100%;
         }
-        83% {
+        66% {
             top: 100%;
         }
         100% {
