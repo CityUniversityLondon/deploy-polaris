@@ -13477,12 +13477,12 @@ svg:not(:root) {
 }
 
 .scp--corporate .banner-vi.banner-vi--theme--corporate .cta, .scp--corporate .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
-    background-color: #e30613;
+    background-color: #0c0c0e;
     color: #ffffff;
 }
 
 .banner-vi.banner-vi--theme--corporate .cta, .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
-    background-color: #e30613;
+    background-color: #0c0c0e;
     color: #ffffff;
 }
 
@@ -13597,12 +13597,12 @@ svg:not(:root) {
 }
 
 .scp--corporate-alt .banner-vi.banner-vi--theme--corporate .cta, .scp--corporate-alt .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
-    background-color: #0c0c0e;
+    background-color: #e30613;
     color: #ffffff;
 }
 
 .banner-vi.banner-vi--theme--corporate-alt .cta, .banner-vi.banner-vi--theme--corporate-alt .promo-cta.promo-cta--small h2::after {
-    background-color: #0c0c0e;
+    background-color: #e30613;
     color: #ffffff;
 }
 
@@ -15843,13 +15843,9 @@ svg:not(:root) {
     line-height: 1.625;
 }
 
-.banner-vi--image .promo-cta {
-    padding: 5px 15px;
-}
-
-@media (max-width: 650px) {
-    .banner-vi--image .promo-cta h2 {
-        font-size: 1.2rem;
+@media (min-width: 651px) {
+    .banner-vi--image .promo-cta.promo-cta--small {
+        padding: 0;
     }
 }
 
