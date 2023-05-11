@@ -15861,8 +15861,8 @@ svg:not(:root) {
 
 @media (min-width: 651px) {
     .banner-vi--image[data-animated="yes"] .banner-vi__shape {
-        -webkit-animation: brackets-slide-in ease-out 2s;
-                animation: brackets-slide-in ease-out 2s;
+        -webkit-animation: brackets-slide-in ease-out 1s;
+                animation: brackets-slide-in ease-out 1s;
     }
     @-webkit-keyframes brackets-slide-in {
         0% {
@@ -15881,8 +15881,8 @@ svg:not(:root) {
         }
     }
     .banner-vi--image[data-animated="yes"].banner-vi--image--promo .banner-vi__shape {
-        -webkit-animation: brackets-slide-in-alt ease-out 2s;
-                animation: brackets-slide-in-alt ease-out 2s;
+        -webkit-animation: brackets-slide-in-alt ease-out 1s;
+                animation: brackets-slide-in-alt ease-out 1s;
     }
     @-webkit-keyframes brackets-slide-in-alt {
         0% {
@@ -15901,8 +15901,8 @@ svg:not(:root) {
         }
     }
     .banner-vi--image[data-animated="yes"] .banner-vi__content.banner-vi__content--right {
-        -webkit-animation: promo-slide-up ease-out 3s;
-                animation: promo-slide-up ease-out 3s;
+        -webkit-animation: promo-slide-up ease-out 1.5s;
+                animation: promo-slide-up ease-out 1.5s;
     }
     @-webkit-keyframes promo-slide-up {
         0% {
@@ -15927,8 +15927,8 @@ svg:not(:root) {
         }
     }
     .banner-vi--image[data-animated="yes"] .image-credit__wrap {
-        -webkit-animation: image-credit-fade-in linear 3s;
-                animation: image-credit-fade-in linear 3s;
+        -webkit-animation: image-credit-fade-in linear 1.5s;
+                animation: image-credit-fade-in linear 1.5s;
     }
     @-webkit-keyframes image-credit-fade-in {
         0% {
