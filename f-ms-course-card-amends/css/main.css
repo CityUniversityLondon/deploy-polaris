@@ -17164,14 +17164,17 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 651px) {
     .card--course .card--course__anchor {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: calc(1.5rem);
     }
     .card--course figure {
-        min-width: 75%;
+        grid-column: 1/16;
+        grid-row: 1;
     }
     .card--course .txt {
-        min-width: 68%;
-        transform: translateX(-63%);
+        grid-column: 8/-1;
+        grid-row: 1;
     }
 }
 
