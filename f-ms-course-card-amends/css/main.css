@@ -17192,6 +17192,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .card--course figure {
     margin: 0;
+    display: block;
 }
 
 .card--course .txt {
