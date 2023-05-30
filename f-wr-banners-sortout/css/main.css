@@ -15997,9 +15997,9 @@ svg:not(:root) {
 }
 
 .banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__open span:before {
-    transition: transform 300ms;
     font-family: "FontAwesome";
     content: "";
+    font-size: 1.2rem;
     position: absolute;
     right: 0;
     color: #ffffff;
@@ -16014,6 +16014,7 @@ svg:not(:root) {
     font-size: 14px;
     padding-top: 0.15rem;
     line-height: 1.625;
+    transition: transform 300ms;
 }
 
 .banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__open span.fa-angle-up:before {
@@ -16022,6 +16023,10 @@ svg:not(:root) {
 
 .banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__inner {
     background: none;
+}
+
+.banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__inner h2 {
+    display: block;
 }
 
 .banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__filter__content {
