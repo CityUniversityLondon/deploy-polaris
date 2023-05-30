@@ -16014,6 +16014,10 @@ svg:not(:root) {
     font-size: 14px;
     padding-top: 0.15rem;
     line-height: 1.625;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
     transition: transform 300ms;
 }
 
@@ -16051,6 +16055,10 @@ svg:not(:root) {
     font-size: 14px;
     padding-top: 0.15rem;
     line-height: 1.625;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-vi--listing + main .course-finder__main .course-finder__main__left .filter-box__filter__content select {
