@@ -292,6 +292,10 @@
     background-color: #979797;
 }
 
+.background--blue-powerup {
+    background-color: #3457F1;
+}
+
 /**
  * Managing anchors is a difficult process on a website as vast as ours, and
  * given the great variety in styles our anchors take, it is of the utmost
