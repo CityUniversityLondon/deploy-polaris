@@ -5,6 +5,7 @@
     display: block;
     box-sizing: border-box;
     -webkit-touch-callout: none;
+    -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     touch-action: pan-y;
@@ -3926,8 +3927,10 @@ p:empty {
 @media (min-width: 1201px) {
     p.columns {
         text-align: justify;
-        column-count: 2;
-        column-gap: 2em;
+        -moz-column-count: 2;
+             column-count: 2;
+        -moz-column-gap: 2em;
+             column-gap: 2em;
     }
 }
 
@@ -8044,7 +8047,8 @@ svg:not(:root) {
     .bayes-programmes__list ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
+        -moz-column-gap: 1.5rem;
+             column-gap: 1.5rem;
         row-gap: 0.5rem;
         width: 66.667%;
     }
@@ -9051,8 +9055,9 @@ svg:not(:root) {
 }
 
 .nav-mobile__toggle-label {
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-touch-callout: default;
     -webkit-touch-callout: none;
     background-color: #ffffff;
@@ -18994,8 +18999,9 @@ input.header-toggle-input {
 }
 
 .header-toggle > label {
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-touch-callout: default;
     -webkit-touch-callout: none;
 }
@@ -20700,8 +20706,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #1e1e1e;
     display: inline-block;
     border-bottom-width: 0;
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-touch-callout: default;
     -webkit-touch-callout: none;
     color: inherit;
@@ -20852,6 +20859,15 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .highlight-info.highlight-info--prussian .highlight-info__lead {
     color: #002b49;
+}
+
+.highlighted-content-v23 {
+    border-left: 0.5rem solid #e35205;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
 }
 
 .course__kis__content a,
@@ -24608,8 +24624,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form__select:before {
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-touch-callout: default;
     -webkit-touch-callout: none;
     content: '\f0d7';
@@ -24771,8 +24788,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-touch-callout: default;
     -webkit-touch-callout: none;
     content: '';
@@ -26491,8 +26509,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .fade-out {
     opacity: 0;
     pointer-events: none;
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     animation: fade-out 1s linear;
 }
 
@@ -27245,8 +27264,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .fade-out {
     opacity: 0;
     pointer-events: none;
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     animation: fade-out 1s linear;
 }
 
@@ -28678,6 +28698,7 @@ blockquote .reference {
     position: absolute;
     top: -2rem;
     background: #f2f2f2;
+    -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-touch-callout: default;
@@ -29680,8 +29701,9 @@ input:checked + .cass-events .calendar__radio__button:before {
 .cass-events .fade-out {
     opacity: 0;
     pointer-events: none;
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     animation: fade-out 1s linear;
 }
 
@@ -29957,6 +29979,7 @@ News events landing overrides */
 .cass-news-search .news-finder__main__right:before {
     position: absolute;
     top: -2rem;
+    -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-touch-callout: default;
@@ -33831,8 +33854,9 @@ div.widget-123_test_ {
 .swiper-slide {
     width: 100%;
     width: calc(100% / var(--n));
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     pointer-events: none;
     position: relative;
 }
@@ -34275,8 +34299,10 @@ div.widget-123_test_ {
 
 @media (min-width: 501px) {
     .course-subject-list ul {
-        column-count: 2;
-        column-gap: 1.5rem;
+        -moz-column-count: 2;
+             column-count: 2;
+        -moz-column-gap: 1.5rem;
+             column-gap: 1.5rem;
     }
 }
 
