@@ -297,6 +297,10 @@
     background-color: #3457F1;
 }
 
+.background--gray7 {
+    background-color: #696969;
+}
+
 /**
  * Managing anchors is a difficult process on a website as vast as ours, and
  * given the great variety in styles our anchors take, it is of the utmost
