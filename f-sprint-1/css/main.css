@@ -34547,3 +34547,44 @@ div.widget-123_test_ {
     position: absolute;
     right: 0.5rem;
 }
+
+.embedded-video {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+@media (min-width: 651px) {
+    .embedded-video {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+.youtube-video__wrapper {
+    height: 0;
+    padding-bottom: 50%;
+    position: relative;
+    width: 100%;
+}
+
+.youtube-video__wrapper iframe {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: none;
+}
+
+.youtube-video__wrapper .media {
+    margin-bottom: 0.5rem;
+}
+
+.youtube-video__caption-element--text,
+.youtube-video__caption-element--time {
+    display: block;
+    color: #696969;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
