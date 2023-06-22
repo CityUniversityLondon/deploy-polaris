@@ -11795,6 +11795,24 @@ svg:not(:root) {
     font-style: italic;
 }
 
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .secondary-navigation__list a {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .secondary-navigation__list a {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 7680px) {
+    .secondary-navigation__list a {
+        font-size: 92px;
+    }
+}
+
 .secondary-navigation__list--home i {
     position: relative;
     top: 5px;
