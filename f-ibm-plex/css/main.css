@@ -97,6 +97,90 @@
     display: none;
 }
 
+/**
+ * Managing anchors is a difficult process on a website as vast as ours, and
+ * given the great variety in styles our anchors take, it is of the utmost
+ * importance that they be set up properly and with extensibility on the mind.
+ * The current issue we face is that we are not making proper use of the
+ * cascade. New styles for links are introduced in a bespoke manner, and due to
+ * the way these different designs and patterns are communicated, or lack
+ * thereof, we even have instances where the same stylistic goal is being
+ * accomplished in two or more separate instances of CSS. To properly use the
+ * cascade, we need to dissect the variety of different styles we currently
+ * use, figure out any common denominators and determine how each style
+ * branches away from the default element’s styles—exposing how each style
+ * cascade and iterate on the established patterns.
+ *
+ * The biggest challenge in doing this is understanding the scope of the links
+ * and how far-reaching any high-level styles will cascade, and mentally
+ * extrapolating to understand how the styles will be managed and maintained,
+ * and ensuring that every step of the way takes us closer to unity and
+ * simplicity.
+ *
+ *
+ * It is important to make the details of the anchor tag, its states, and its
+ * functionality and known and understood completely:
+ *
+ * :link
+ *   - Applies to any `<a>` tag with a `href` attribute, whether empty or not
+ *   - Persists regardless of other states based on above criteria
+ * :visited
+ *   - Applies to any `<a>` tag with a `href` in the browser history
+ *   - Applies to any `<a>` tag with a target anchor which has been activated
+ *   - Restricted to styling `color`, `background-color`, `border-color` and
+ *     variants, `outline-color`, and `fill` and `stroke` color values for
+ *     security/privacy reasons
+ *   - Similarly to above, checking for these properties with JS will yield
+ *     results as if `:visited` anchors are just `:link` anchors
+ * :hover
+ *   - Applies to any `<a>` tag which the user designates with a pointing
+ *     device but does not necessarily activate it
+ * :focus
+ *   - Applies to any `<a>` tag which has been activated by the user, either
+ *     from selecting with they keyboard or pointing device
+ * :active
+ *   - Applies to any `<a>` tag which is *currently* being activated by the
+ *     user (i.e. mouse button down)
+ *
+ *
+ * Order of states for a link when it is moused over and clicked:
+ *
+ * default ->    :hover   -> :hover:focus -> :hover:active
+ *   N/A   ->  Mouse Over ->  Mouse Down  ->   Mouse Up
+ *
+ * For this reason, it’s important to maintain an order of states in the CSS,
+ * easily memorised with the phrase "LoVe HAte":
+ *   - :link (unused)
+ *   - :visited (unused)
+ *   - :hover
+ *   - :focus
+ *   - :active
+ *
+ *
+ * The only properties which live inside the `:link`, `:visited`, `:hover`,
+ * `:focus`, and `:active` pseudo classes are as follow:
+ *   - background-color
+ *   - color
+ *   - border-bottom-width
+ *   - border-bottom-style
+ *   - border-bottom-color
+ *   - outline
+ *   - text-decoration
+ *
+ *
+ * It is important to take notice of some other key points regarding anchor
+ * states:
+ *   - `:focus` and `:active` states do not automatically trigger `:hover`;
+ *     this means styles that should apply to all three must be declared for
+ *     all three
+ *
+ *
+ * If a link should *not* appear visually-similar to the default anchor styles,
+ * there are a number of properties/values that need to be reset/unset which
+ * cascade and need to be anticipated.
+ *   1. Set the `border-border-width` to `0`
+ *   2. Set the `background-color` to `transparent` for `:hover` state
+ */
 .background--white {
     background-color: #ffffff;
 }
@@ -301,90 +385,6 @@
     background-color: #696969;
 }
 
-/**
- * Managing anchors is a difficult process on a website as vast as ours, and
- * given the great variety in styles our anchors take, it is of the utmost
- * importance that they be set up properly and with extensibility on the mind.
- * The current issue we face is that we are not making proper use of the
- * cascade. New styles for links are introduced in a bespoke manner, and due to
- * the way these different designs and patterns are communicated, or lack
- * thereof, we even have instances where the same stylistic goal is being
- * accomplished in two or more separate instances of CSS. To properly use the
- * cascade, we need to dissect the variety of different styles we currently
- * use, figure out any common denominators and determine how each style
- * branches away from the default element’s styles—exposing how each style
- * cascade and iterate on the established patterns.
- *
- * The biggest challenge in doing this is understanding the scope of the links
- * and how far-reaching any high-level styles will cascade, and mentally
- * extrapolating to understand how the styles will be managed and maintained,
- * and ensuring that every step of the way takes us closer to unity and
- * simplicity.
- *
- *
- * It is important to make the details of the anchor tag, its states, and its
- * functionality and known and understood completely:
- *
- * :link
- *   - Applies to any `<a>` tag with a `href` attribute, whether empty or not
- *   - Persists regardless of other states based on above criteria
- * :visited
- *   - Applies to any `<a>` tag with a `href` in the browser history
- *   - Applies to any `<a>` tag with a target anchor which has been activated
- *   - Restricted to styling `color`, `background-color`, `border-color` and
- *     variants, `outline-color`, and `fill` and `stroke` color values for
- *     security/privacy reasons
- *   - Similarly to above, checking for these properties with JS will yield
- *     results as if `:visited` anchors are just `:link` anchors
- * :hover
- *   - Applies to any `<a>` tag which the user designates with a pointing
- *     device but does not necessarily activate it
- * :focus
- *   - Applies to any `<a>` tag which has been activated by the user, either
- *     from selecting with they keyboard or pointing device
- * :active
- *   - Applies to any `<a>` tag which is *currently* being activated by the
- *     user (i.e. mouse button down)
- *
- *
- * Order of states for a link when it is moused over and clicked:
- *
- * default ->    :hover   -> :hover:focus -> :hover:active
- *   N/A   ->  Mouse Over ->  Mouse Down  ->   Mouse Up
- *
- * For this reason, it’s important to maintain an order of states in the CSS,
- * easily memorised with the phrase "LoVe HAte":
- *   - :link (unused)
- *   - :visited (unused)
- *   - :hover
- *   - :focus
- *   - :active
- *
- *
- * The only properties which live inside the `:link`, `:visited`, `:hover`,
- * `:focus`, and `:active` pseudo classes are as follow:
- *   - background-color
- *   - color
- *   - border-bottom-width
- *   - border-bottom-style
- *   - border-bottom-color
- *   - outline
- *   - text-decoration
- *
- *
- * It is important to take notice of some other key points regarding anchor
- * states:
- *   - `:focus` and `:active` states do not automatically trigger `:hover`;
- *     this means styles that should apply to all three must be declared for
- *     all three
- *
- *
- * If a link should *not* appear visually-similar to the default anchor styles,
- * there are a number of properties/values that need to be reset/unset which
- * cascade and need to be anticipated.
- *   1. Set the `border-border-width` to `0`
- *   2. Set the `background-color` to `transparent` for `:hover` state
- */
 @font-face {
     font-family: "FF Meta";
     font-style: normal;
