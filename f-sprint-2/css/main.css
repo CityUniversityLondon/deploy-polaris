@@ -97,6 +97,90 @@
     display: none;
 }
 
+/**
+ * Managing anchors is a difficult process on a website as vast as ours, and
+ * given the great variety in styles our anchors take, it is of the utmost
+ * importance that they be set up properly and with extensibility on the mind.
+ * The current issue we face is that we are not making proper use of the
+ * cascade. New styles for links are introduced in a bespoke manner, and due to
+ * the way these different designs and patterns are communicated, or lack
+ * thereof, we even have instances where the same stylistic goal is being
+ * accomplished in two or more separate instances of CSS. To properly use the
+ * cascade, we need to dissect the variety of different styles we currently
+ * use, figure out any common denominators and determine how each style
+ * branches away from the default element’s styles—exposing how each style
+ * cascade and iterate on the established patterns.
+ *
+ * The biggest challenge in doing this is understanding the scope of the links
+ * and how far-reaching any high-level styles will cascade, and mentally
+ * extrapolating to understand how the styles will be managed and maintained,
+ * and ensuring that every step of the way takes us closer to unity and
+ * simplicity.
+ *
+ *
+ * It is important to make the details of the anchor tag, its states, and its
+ * functionality and known and understood completely:
+ *
+ * :link
+ *   - Applies to any `<a>` tag with a `href` attribute, whether empty or not
+ *   - Persists regardless of other states based on above criteria
+ * :visited
+ *   - Applies to any `<a>` tag with a `href` in the browser history
+ *   - Applies to any `<a>` tag with a target anchor which has been activated
+ *   - Restricted to styling `color`, `background-color`, `border-color` and
+ *     variants, `outline-color`, and `fill` and `stroke` color values for
+ *     security/privacy reasons
+ *   - Similarly to above, checking for these properties with JS will yield
+ *     results as if `:visited` anchors are just `:link` anchors
+ * :hover
+ *   - Applies to any `<a>` tag which the user designates with a pointing
+ *     device but does not necessarily activate it
+ * :focus
+ *   - Applies to any `<a>` tag which has been activated by the user, either
+ *     from selecting with they keyboard or pointing device
+ * :active
+ *   - Applies to any `<a>` tag which is *currently* being activated by the
+ *     user (i.e. mouse button down)
+ *
+ *
+ * Order of states for a link when it is moused over and clicked:
+ *
+ * default ->    :hover   -> :hover:focus -> :hover:active
+ *   N/A   ->  Mouse Over ->  Mouse Down  ->   Mouse Up
+ *
+ * For this reason, it’s important to maintain an order of states in the CSS,
+ * easily memorised with the phrase "LoVe HAte":
+ *   - :link (unused)
+ *   - :visited (unused)
+ *   - :hover
+ *   - :focus
+ *   - :active
+ *
+ *
+ * The only properties which live inside the `:link`, `:visited`, `:hover`,
+ * `:focus`, and `:active` pseudo classes are as follow:
+ *   - background-color
+ *   - color
+ *   - border-bottom-width
+ *   - border-bottom-style
+ *   - border-bottom-color
+ *   - outline
+ *   - text-decoration
+ *
+ *
+ * It is important to take notice of some other key points regarding anchor
+ * states:
+ *   - `:focus` and `:active` states do not automatically trigger `:hover`;
+ *     this means styles that should apply to all three must be declared for
+ *     all three
+ *
+ *
+ * If a link should *not* appear visually-similar to the default anchor styles,
+ * there are a number of properties/values that need to be reset/unset which
+ * cascade and need to be anticipated.
+ *   1. Set the `border-border-width` to `0`
+ *   2. Set the `background-color` to `transparent` for `:hover` state
+ */
 .background--white {
     background-color: #ffffff;
 }
@@ -301,90 +385,6 @@
     background-color: #696969;
 }
 
-/**
- * Managing anchors is a difficult process on a website as vast as ours, and
- * given the great variety in styles our anchors take, it is of the utmost
- * importance that they be set up properly and with extensibility on the mind.
- * The current issue we face is that we are not making proper use of the
- * cascade. New styles for links are introduced in a bespoke manner, and due to
- * the way these different designs and patterns are communicated, or lack
- * thereof, we even have instances where the same stylistic goal is being
- * accomplished in two or more separate instances of CSS. To properly use the
- * cascade, we need to dissect the variety of different styles we currently
- * use, figure out any common denominators and determine how each style
- * branches away from the default element’s styles—exposing how each style
- * cascade and iterate on the established patterns.
- *
- * The biggest challenge in doing this is understanding the scope of the links
- * and how far-reaching any high-level styles will cascade, and mentally
- * extrapolating to understand how the styles will be managed and maintained,
- * and ensuring that every step of the way takes us closer to unity and
- * simplicity.
- *
- *
- * It is important to make the details of the anchor tag, its states, and its
- * functionality and known and understood completely:
- *
- * :link
- *   - Applies to any `<a>` tag with a `href` attribute, whether empty or not
- *   - Persists regardless of other states based on above criteria
- * :visited
- *   - Applies to any `<a>` tag with a `href` in the browser history
- *   - Applies to any `<a>` tag with a target anchor which has been activated
- *   - Restricted to styling `color`, `background-color`, `border-color` and
- *     variants, `outline-color`, and `fill` and `stroke` color values for
- *     security/privacy reasons
- *   - Similarly to above, checking for these properties with JS will yield
- *     results as if `:visited` anchors are just `:link` anchors
- * :hover
- *   - Applies to any `<a>` tag which the user designates with a pointing
- *     device but does not necessarily activate it
- * :focus
- *   - Applies to any `<a>` tag which has been activated by the user, either
- *     from selecting with they keyboard or pointing device
- * :active
- *   - Applies to any `<a>` tag which is *currently* being activated by the
- *     user (i.e. mouse button down)
- *
- *
- * Order of states for a link when it is moused over and clicked:
- *
- * default ->    :hover   -> :hover:focus -> :hover:active
- *   N/A   ->  Mouse Over ->  Mouse Down  ->   Mouse Up
- *
- * For this reason, it’s important to maintain an order of states in the CSS,
- * easily memorised with the phrase "LoVe HAte":
- *   - :link (unused)
- *   - :visited (unused)
- *   - :hover
- *   - :focus
- *   - :active
- *
- *
- * The only properties which live inside the `:link`, `:visited`, `:hover`,
- * `:focus`, and `:active` pseudo classes are as follow:
- *   - background-color
- *   - color
- *   - border-bottom-width
- *   - border-bottom-style
- *   - border-bottom-color
- *   - outline
- *   - text-decoration
- *
- *
- * It is important to take notice of some other key points regarding anchor
- * states:
- *   - `:focus` and `:active` states do not automatically trigger `:hover`;
- *     this means styles that should apply to all three must be declared for
- *     all three
- *
- *
- * If a link should *not* appear visually-similar to the default anchor styles,
- * there are a number of properties/values that need to be reset/unset which
- * cascade and need to be anticipated.
- *   1. Set the `border-border-width` to `0`
- *   2. Set the `background-color` to `transparent` for `:hover` state
- */
 @font-face {
     font-family: "FF Meta";
     font-style: normal;
@@ -4965,6 +4965,18 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 768px) {
+    .float-left--below-tablet {
+        float: left !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .float-left--above-tablet {
+        float: left !important;
+    }
+}
+
 @media (max-width: 900px) {
     .float-left--below-medium {
         float: left !important;
@@ -5013,6 +5025,42 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 1920px) {
+    .float-left--below-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1921px) {
+    .float-left--above-1080p {
+        float: left !important;
+    }
+}
+
+@media (max-width: 3840px) {
+    .float-left--below-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 3841px) {
+    .float-left--above-4K {
+        float: left !important;
+    }
+}
+
+@media (max-width: 7680px) {
+    .float-left--below-8K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 7681px) {
+    .float-left--above-8K {
+        float: left !important;
+    }
+}
+
 @media (min-width: 321px) and (max-width: 500px) {
     .float-left--min-small {
         float: left !important;
@@ -5021,6 +5069,12 @@ svg:not(:root) {
 
 @media (min-width: 321px) and (max-width: 650px) {
     .float-left--min-between {
+        float: left !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .float-left--min-tablet {
         float: left !important;
     }
 }
@@ -5049,8 +5103,32 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 321px) and (max-width: 1920px) {
+    .float-left--min-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 3840px) {
+    .float-left--min-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 7680px) {
+    .float-left--min-8K {
+        float: left !important;
+    }
+}
+
 @media (min-width: 501px) and (max-width: 650px) {
     .float-left--small-between {
+        float: left !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .float-left--small-tablet {
         float: left !important;
     }
 }
@@ -5079,6 +5157,30 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 501px) and (max-width: 1920px) {
+    .float-left--small-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 3840px) {
+    .float-left--small-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 7680px) {
+    .float-left--small-8K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+    .float-left--between-tablet {
+        float: left !important;
+    }
+}
+
 @media (min-width: 651px) and (max-width: 900px) {
     .float-left--between-medium {
         float: left !important;
@@ -5103,6 +5205,66 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 651px) and (max-width: 1920px) {
+    .float-left--between-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 3840px) {
+    .float-left--between-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 7680px) {
+    .float-left--between-8K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    .float-left--tablet-medium {
+        float: left !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .float-left--tablet-large {
+        float: left !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .float-left--tablet-extralarge {
+        float: left !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1600px) {
+    .float-left--tablet-extralargePlusSides {
+        float: left !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+    .float-left--tablet-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 3840px) {
+    .float-left--tablet-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 7680px) {
+    .float-left--tablet-8K {
+        float: left !important;
+    }
+}
+
 @media (min-width: 901px) and (max-width: 1200px) {
     .float-left--medium-large {
         float: left !important;
@@ -5121,6 +5283,24 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 901px) and (max-width: 1920px) {
+    .float-left--medium-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 3840px) {
+    .float-left--medium-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 7680px) {
+    .float-left--medium-8K {
+        float: left !important;
+    }
+}
+
 @media (min-width: 1201px) and (max-width: 1440px) {
     .float-left--large-extralarge {
         float: left !important;
@@ -5133,8 +5313,80 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 1201px) and (max-width: 1920px) {
+    .float-left--large-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 3840px) {
+    .float-left--large-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 7680px) {
+    .float-left--large-8K {
+        float: left !important;
+    }
+}
+
 @media (min-width: 1441px) and (max-width: 1600px) {
     .float-left--extralarge-extralargePlusSides {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .float-left--extralarge-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 3840px) {
+    .float-left--extralarge-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 7680px) {
+    .float-left--extralarge-8K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+    .float-left--extralargePlusSides-1080p {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 3840px) {
+    .float-left--extralargePlusSides-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 7680px) {
+    .float-left--extralargePlusSides-8K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 3840px) {
+    .float-left--1080p-4K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 7680px) {
+    .float-left--1080p-8K {
+        float: left !important;
+    }
+}
+
+@media (min-width: 3841px) and (max-width: 7680px) {
+    .float-left--4K-8K {
         float: left !important;
     }
 }
@@ -5175,6 +5427,18 @@ svg:not(:root) {
 
 @media (min-width: 651px) {
     .float-right--above-between {
+        float: right !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .float-right--below-tablet {
+        float: right !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .float-right--above-tablet {
         float: right !important;
     }
 }
@@ -5227,6 +5491,42 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 1920px) {
+    .float-right--below-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1921px) {
+    .float-right--above-1080p {
+        float: right !important;
+    }
+}
+
+@media (max-width: 3840px) {
+    .float-right--below-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 3841px) {
+    .float-right--above-4K {
+        float: right !important;
+    }
+}
+
+@media (max-width: 7680px) {
+    .float-right--below-8K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 7681px) {
+    .float-right--above-8K {
+        float: right !important;
+    }
+}
+
 @media (min-width: 321px) and (max-width: 500px) {
     .float-right--min-small {
         float: right !important;
@@ -5235,6 +5535,12 @@ svg:not(:root) {
 
 @media (min-width: 321px) and (max-width: 650px) {
     .float-right--min-between {
+        float: right !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .float-right--min-tablet {
         float: right !important;
     }
 }
@@ -5263,8 +5569,32 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 321px) and (max-width: 1920px) {
+    .float-right--min-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 3840px) {
+    .float-right--min-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 7680px) {
+    .float-right--min-8K {
+        float: right !important;
+    }
+}
+
 @media (min-width: 501px) and (max-width: 650px) {
     .float-right--small-between {
+        float: right !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .float-right--small-tablet {
         float: right !important;
     }
 }
@@ -5293,6 +5623,30 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 501px) and (max-width: 1920px) {
+    .float-right--small-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 3840px) {
+    .float-right--small-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 7680px) {
+    .float-right--small-8K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+    .float-right--between-tablet {
+        float: right !important;
+    }
+}
+
 @media (min-width: 651px) and (max-width: 900px) {
     .float-right--between-medium {
         float: right !important;
@@ -5317,6 +5671,66 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 651px) and (max-width: 1920px) {
+    .float-right--between-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 3840px) {
+    .float-right--between-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 7680px) {
+    .float-right--between-8K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    .float-right--tablet-medium {
+        float: right !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .float-right--tablet-large {
+        float: right !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .float-right--tablet-extralarge {
+        float: right !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1600px) {
+    .float-right--tablet-extralargePlusSides {
+        float: right !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+    .float-right--tablet-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 3840px) {
+    .float-right--tablet-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 7680px) {
+    .float-right--tablet-8K {
+        float: right !important;
+    }
+}
+
 @media (min-width: 901px) and (max-width: 1200px) {
     .float-right--medium-large {
         float: right !important;
@@ -5335,6 +5749,24 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 901px) and (max-width: 1920px) {
+    .float-right--medium-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 3840px) {
+    .float-right--medium-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 7680px) {
+    .float-right--medium-8K {
+        float: right !important;
+    }
+}
+
 @media (min-width: 1201px) and (max-width: 1440px) {
     .float-right--large-extralarge {
         float: right !important;
@@ -5347,8 +5779,80 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 1201px) and (max-width: 1920px) {
+    .float-right--large-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 3840px) {
+    .float-right--large-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 7680px) {
+    .float-right--large-8K {
+        float: right !important;
+    }
+}
+
 @media (min-width: 1441px) and (max-width: 1600px) {
     .float-right--extralarge-extralargePlusSides {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .float-right--extralarge-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 3840px) {
+    .float-right--extralarge-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 7680px) {
+    .float-right--extralarge-8K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+    .float-right--extralargePlusSides-1080p {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 3840px) {
+    .float-right--extralargePlusSides-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 7680px) {
+    .float-right--extralargePlusSides-8K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 3840px) {
+    .float-right--1080p-4K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 7680px) {
+    .float-right--1080p-8K {
+        float: right !important;
+    }
+}
+
+@media (min-width: 3841px) and (max-width: 7680px) {
+    .float-right--4K-8K {
         float: right !important;
     }
 }
@@ -5389,6 +5893,18 @@ svg:not(:root) {
 
 @media (min-width: 651px) {
     .float-none--above-between {
+        float: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .float-none--below-tablet {
+        float: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .float-none--above-tablet {
         float: none !important;
     }
 }
@@ -5441,6 +5957,42 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 1920px) {
+    .float-none--below-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1921px) {
+    .float-none--above-1080p {
+        float: none !important;
+    }
+}
+
+@media (max-width: 3840px) {
+    .float-none--below-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 3841px) {
+    .float-none--above-4K {
+        float: none !important;
+    }
+}
+
+@media (max-width: 7680px) {
+    .float-none--below-8K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 7681px) {
+    .float-none--above-8K {
+        float: none !important;
+    }
+}
+
 @media (min-width: 321px) and (max-width: 500px) {
     .float-none--min-small {
         float: none !important;
@@ -5449,6 +6001,12 @@ svg:not(:root) {
 
 @media (min-width: 321px) and (max-width: 650px) {
     .float-none--min-between {
+        float: none !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .float-none--min-tablet {
         float: none !important;
     }
 }
@@ -5477,8 +6035,32 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 321px) and (max-width: 1920px) {
+    .float-none--min-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 3840px) {
+    .float-none--min-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 7680px) {
+    .float-none--min-8K {
+        float: none !important;
+    }
+}
+
 @media (min-width: 501px) and (max-width: 650px) {
     .float-none--small-between {
+        float: none !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .float-none--small-tablet {
         float: none !important;
     }
 }
@@ -5507,6 +6089,30 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 501px) and (max-width: 1920px) {
+    .float-none--small-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 3840px) {
+    .float-none--small-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 7680px) {
+    .float-none--small-8K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+    .float-none--between-tablet {
+        float: none !important;
+    }
+}
+
 @media (min-width: 651px) and (max-width: 900px) {
     .float-none--between-medium {
         float: none !important;
@@ -5531,6 +6137,66 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 651px) and (max-width: 1920px) {
+    .float-none--between-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 3840px) {
+    .float-none--between-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 7680px) {
+    .float-none--between-8K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    .float-none--tablet-medium {
+        float: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .float-none--tablet-large {
+        float: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .float-none--tablet-extralarge {
+        float: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1600px) {
+    .float-none--tablet-extralargePlusSides {
+        float: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+    .float-none--tablet-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 3840px) {
+    .float-none--tablet-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 7680px) {
+    .float-none--tablet-8K {
+        float: none !important;
+    }
+}
+
 @media (min-width: 901px) and (max-width: 1200px) {
     .float-none--medium-large {
         float: none !important;
@@ -5549,6 +6215,24 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 901px) and (max-width: 1920px) {
+    .float-none--medium-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 3840px) {
+    .float-none--medium-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 7680px) {
+    .float-none--medium-8K {
+        float: none !important;
+    }
+}
+
 @media (min-width: 1201px) and (max-width: 1440px) {
     .float-none--large-extralarge {
         float: none !important;
@@ -5561,8 +6245,80 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 1201px) and (max-width: 1920px) {
+    .float-none--large-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 3840px) {
+    .float-none--large-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 7680px) {
+    .float-none--large-8K {
+        float: none !important;
+    }
+}
+
 @media (min-width: 1441px) and (max-width: 1600px) {
     .float-none--extralarge-extralargePlusSides {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .float-none--extralarge-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 3840px) {
+    .float-none--extralarge-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 7680px) {
+    .float-none--extralarge-8K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+    .float-none--extralargePlusSides-1080p {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 3840px) {
+    .float-none--extralargePlusSides-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 7680px) {
+    .float-none--extralargePlusSides-8K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 3840px) {
+    .float-none--1080p-4K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 7680px) {
+    .float-none--1080p-8K {
+        float: none !important;
+    }
+}
+
+@media (min-width: 3841px) and (max-width: 7680px) {
+    .float-none--4K-8K {
         float: none !important;
     }
 }
@@ -20870,8 +21626,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-bottom: 1rem;
     margin-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 2.5rem;
+    padding-left: 1.5rem;
     padding-top: 1rem;
+}
+
+.highlighted-content-v23 *:last-child {
+    margin: 0;
 }
 
 .course__kis__content a,
@@ -21006,6 +21766,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
+@media (max-width: 768px) {
+    .no-scroll--below-tablet {
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 769px) {
+    .no-scroll-above-tablet {
+        overflow-y: hidden;
+    }
+}
+
 @media (max-width: 900px) {
     .no-scroll--below-medium {
         overflow-y: hidden;
@@ -21050,6 +21822,42 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1601px) {
     .no-scroll-above-extralargePlusSides {
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 1920px) {
+    .no-scroll--below-1080p {
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 1921px) {
+    .no-scroll-above-1080p {
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 3840px) {
+    .no-scroll--below-4K {
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 3841px) {
+    .no-scroll-above-4K {
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 7680px) {
+    .no-scroll--below-8K {
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 7681px) {
+    .no-scroll-above-8K {
         overflow-y: hidden;
     }
 }
