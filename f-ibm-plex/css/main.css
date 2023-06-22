@@ -11688,6 +11688,21 @@ svg:not(:root) {
     font-weight: 700;
     white-space: nowrap;
     display: block;
+    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    /**
+     * IBM Plex OpenType stylistic sets:
+     *
+     * ss01: 0/1 double-storey/simple 'a'
+     * ss02: 0/1 double-storey/simple 'g'
+     * ss03: 0/1 plain/slashed '0'
+     * ss04: 0/1 plain/dotted '0'
+     */
+    font-feature-settings: 'ss01' 0, 'ss02' 1, 'ss03' 1, 'ss04' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'frac' 0, 'liga' 1;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: -0.005em;
+    font-style: normal;
+    font-weight: 450;
 }
 
 .secondary-navigation__list a:hover, .secondary-navigation__list a:focus, .secondary-navigation__list a:active {
@@ -11739,6 +11754,45 @@ svg:not(:root) {
 
 .secondary-navigation__list a:active {
     outline: 2px dotted #1e1e1e;
+}
+
+.secondary-navigation__list a i,
+.secondary-navigation__list a em {
+    font-feature-settings: 'ss01' 0, 'ss02' 1, 'ss03' 1, 'ss04' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'frac' 0, 'liga' 1;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .secondary-navigation__list a {
+        letter-spacing: -0.008em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .secondary-navigation__list a {
+        letter-spacing: -0.013em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .secondary-navigation__list a {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .secondary-navigation__list a {
+        letter-spacing: -0.017em;
+    }
+}
+
+.secondary-navigation__list a b,
+.secondary-navigation__list a strong {
+    font-weight: 700;
+}
+
+.secondary-navigation__list a i,
+.secondary-navigation__list a em {
+    font-style: italic;
 }
 
 .secondary-navigation__list--home i {
