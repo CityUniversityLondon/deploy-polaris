@@ -24878,6 +24878,92 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     filter: invert(0%);
 }
 
+.ksp-v23 {
+    background-color: #ededee;
+    color: #1e1e1e;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ksp-v23 img {
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+.ksp-v23 p {
+    margin: 0;
+}
+
+.ksp-v23 ul {
+    list-style-type: disc;
+}
+
+.ksp-ordered-list--tick ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.ksp-ordered-list--tick ul li:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    color: #e35205;
+    padding-right: 0.5rem;
+}
+
+@media (min-width: 651px) {
+    .ksp-v23-block-wrapper {
+        display: flex;
+    }
+}
+
+.ksp-v23-block-text {
+    margin-right: 1rem;
+}
+
+.ksp-v23-block {
+    display: flex;
+}
+
+@media (min-width: 651px) {
+    .ksp-v23-block--1 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .ksp-v23-block--2 {
+        margin-top: 2rem;
+    }
+}
+
+.ug-courses-v23 .ksp-v23 {
+    background-color: #7e756d;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-v23—-light-bg {
+    background-color: #ededee;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-ordered-list--tick ul li:before {
+    color: #e35205;
+}
+
+.pg-courses-v23 .ksp-v23 {
+    background-color: #002b49;
+    color: #ffffff;
+}
+
+.pg-courses-v23 .ksp-v23—-light-bg {
+    background-color: #ededee;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .ksp-ordered-list--tick ul li:before {
+    color: #3457F1;
+}
+
 .block-links__bg {
     background-color: #fafafa;
     position: relative;
