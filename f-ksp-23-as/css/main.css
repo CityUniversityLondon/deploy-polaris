@@ -24879,6 +24879,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .ksp-v23 {
+    position: relative;
     background-color: #ededee;
     color: #1e1e1e;
     padding: 2rem;
@@ -24991,7 +24992,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .half-bracket-dec {
-    background: linear-gradient(to bottom, red 10px, transparent 10px) 0 0, linear-gradient(to left, blue 10px, transparent 10px) 100% 100%, linear-gradient(to bottom, red 10px, transparent 10px) 0 0, linear-gradient(to top, blue 10px, transparent 10px) 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, red 10px, transparent 10px) 0 0, linear-gradient(to left, blue 10px, transparent 10px) 100% 100%, linear-gradient(to bottom, red 10px, transparent 10px) 0 0, linear-gradient(to top, blue 10px, transparent 10px) 100% 100%;
     background-repeat: no-repeat;
     background-size: 20px 20px;
 }
