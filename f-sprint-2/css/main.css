@@ -24887,7 +24887,14 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp-v23 img {
     height: 4rem;
-    margin-right: 2rem;
+    width: 200px;
+}
+
+@media (max-width: 500px) {
+    .ksp-v23 img {
+        width: auto;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .ksp-v23 p {
@@ -24896,6 +24903,15 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp-v23 ul {
     list-style-type: disc;
+}
+
+.ksp-v23-img {
+    margin-right: 2rem;
+}
+
+.ksp-v23--dark-bg {
+    background-color: #7e756d;
+    color: #1e1e1e;
 }
 
 .ksp-ordered-list--tick ul {
@@ -24924,10 +24940,20 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: flex;
 }
 
+@media (max-width: 500px) {
+    .ksp-v23-block {
+        flex-direction: column;
+    }
+}
+
 @media (min-width: 651px) {
     .ksp-v23-block--1 {
         width: 50%;
     }
+}
+
+.ksp-v23-block--1 img {
+    width: auto;
 }
 
 @media (max-width: 650px) {
@@ -24936,7 +24962,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.ug-courses-v23 .ksp-v23--dark {
+.ug-courses-v23 .ksp-v23--dark-bg {
     background-color: #7e756d;
     color: #1e1e1e;
 }
@@ -24950,7 +24976,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #e35205;
 }
 
-.pg-courses-v23 .ksp-v23--dark {
+.pg-courses-v23 .ksp-v23--dark-bg {
     background-color: #002b49;
     color: #ffffff;
 }
