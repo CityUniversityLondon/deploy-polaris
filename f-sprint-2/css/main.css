@@ -24936,7 +24936,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.ug-courses-v23 .ksp-v23 {
+.ug-courses-v23 .ksp-v23--dark {
     background-color: #7e756d;
     color: #1e1e1e;
 }
@@ -24950,7 +24950,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #e35205;
 }
 
-.pg-courses-v23 .ksp-v23 {
+.pg-courses-v23 .ksp-v23--dark {
     background-color: #002b49;
     color: #ffffff;
 }
