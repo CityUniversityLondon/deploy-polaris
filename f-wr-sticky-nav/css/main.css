@@ -34621,6 +34621,11 @@ div.widget-123_test_ {
     padding: 0.5rem;
 }
 
+.sticky .higher {
+    border: thick solid red;
+    background: white;
+}
+
 /* 
 .container {
     display: flex;

@@ -25595,10 +25595,8 @@ function launch(el) {
       */
 
       if (!entry.isIntersecting) {
-        console.log("If kicked in!");
         elemFix.classList.add('sticky');
       } else {
-        console.log("...else");
         elemFix.classList.remove('sticky');
       }
     });
@@ -25607,53 +25605,63 @@ function launch(el) {
   //
   // ----------
   //
+
+  var contentSections = document.querySelectorAll('.sticky-nav__sec');
+
+  // ----  Approach 1 ----//
   /*
-  let contentSections = document.querySelectorAll('.sticky-nav__sec');
-  console.log("sticky-nav__sec length: " + contentSections );
-  let i;
-   for(i = 0; i <= contentSections.length; i ++){
-      console.log("i is: " + i);
-      console.log(contentSections[i]);
-      createObserverContentSections(contentSections[i]);
-    }
-        
-    
-   function createObserverContentSections(el) {
-      let observer;
-  
-      let options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: buildThresholdList()
-      };
-  
-      observer = new IntersectionObserver(highlightMenu, options);
-      observer.observe(el);
-  }
-   function highlightMenu(entries, observer) {
+  function handleIntersect_stickyMenu1(entries, observer) {
   
       entries.forEach((entry) => {    
           
-           if (!entry.isIntersecting) {
-              console.log("new section in view " + entry.innerHTML);
-              //elemFix.classList.add('sticky');
-          } 
-          else {
-              //console.log("...else")
-              //elemFix.classList.remove('sticky');
+          //console.log("intersect Ratio: " + entry.intersectionRatio);
+          //console.log("intersect top: " + entry.boundingClientRect.top);
+          //console.log("intersect: bot " + entry.boundingClientRect.bottom);
+          //console.log("-------------------");
+          
+          let entryTitle = entry.target.textContent;
+           if (entry.isIntersecting) {  
+              console.log('Intersecting: '+ entryTitle + " ,top: " + entry.boundingClientRect.top);
+              //console.log('entry text: '  + entryTitle);
+              highlightNavMenuItem(entryTitle);
+              //document.querySelector('a[href="#'+ id +'"]').classList.toggle("active-link");
+          } else {
+             // document.querySelector('a[href="#'+ id +'"]').classList.remove("active-link");
           }
       });
   }
+   function test(helperElStickyNav) {
+      let createObserverContentSections;
+  
+      let options = {
+        root: null,
+        rootMargin: "-50%"
+        //threshold: buildThresholdList()
+      };
+  
+      contentSections.forEach(area => {
+          createObserverContentSections = new IntersectionObserver(handleIntersect_stickyMenu1, options); 
+          createObserverContentSections.observe(area);
+          
+       });
+  }
+  test();
   */
+  // ---- Approach 2 ----//
 
-  var contentSections = document.querySelectorAll('.sticky-nav__sec');
-  var createObserverContentSections = new IntersectionObserver(function (entries) {
+  //const areas = document.querySelectorAll(".text-area");
+
+  var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
-      //entry.target.classList.toggle("show", entry.isIntersecting);
-
-      var id = entry.target.getAttribute('id');
+      entry.target.classList.toggle("show", entry.isIntersecting);
+      if (entry.boundingClientRect.top < 400 && entry.boundingClientRect.top > 0) {
+        console.log('400 - 0!!!!!');
+      }
+      var entryTitle = entry.target.textContent;
       if (entry.isIntersecting) {
-        console.log('...Yes');
+        console.log('Intersecting: ' + entryTitle + " ,top: " + entry.boundingClientRect.top);
+        //console.log('entry text: '  + entryTitle);
+        highlightNavMenuItem(entryTitle);
         //document.querySelector('a[href="#'+ id +'"]').classList.toggle("active-link");
       } else {
         // document.querySelector('a[href="#'+ id +'"]').classList.remove("active-link");
@@ -25661,7 +25669,27 @@ function launch(el) {
     });
   });
   contentSections.forEach(function (area) {
-    createObserverContentSections.observe(area);
+    observer.observe(area);
+  });
+
+  // Other fucntions
+  var stickyNavMenuItems = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item");
+  console.log(stickyNavMenuItems);
+  function highlightNavMenuItem(text) {
+    stickyNavMenuItems.forEach(function (item) {
+      if (item.innerText == text) {
+        //console.log("match")
+        item.classList.add('higher');
+      } else {
+        //console.log("...scanning");
+        item.classList.remove('higher');
+      }
+    });
+  }
+  stickyNavMenuItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+      highlightNavMenuItem(item.innerText);
+    });
   });
 }
 var className = 'nav-sticky__helper';
