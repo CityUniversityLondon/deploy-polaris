@@ -25558,11 +25558,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  console.log('sticky nav launched');
   var elemFix = document.querySelector(".nav-sticky");
-  var numSteps = 20.00; // need ??
 
-  createObserverStickyNav(el);
+  /*
+  // Observer to watching menu position and make it stick
+  */
+
   function createObserverStickyNav(helperElStickyNav) {
     var observer;
     var options = {
@@ -25579,21 +25580,12 @@ function launch(el) {
     for (var i = 1.0; i <= numSteps; i++) {
       var ratio = i / numSteps;
       thresholds.push(ratio);
-      //console.log("ratio: " + ratio); 
     }
-
     thresholds.push(0);
     return thresholds;
   }
   function handleIntersect_stickyMenu(entries, observer) {
     entries.forEach(function (entry) {
-      /*
-      console.log("intersect Ratio: " + entry.intersectionRatio);
-      console.log("intersect top: " + entry.boundingClientRect.top);
-      console.log("intersect: bot " + entry.boundingClientRect.bottom);
-      console.log("-------------------");
-      */
-
       if (!entry.isIntersecting) {
         elemFix.classList.add('sticky');
       } else {
@@ -25601,97 +25593,85 @@ function launch(el) {
       }
     });
   }
+  createObserverStickyNav(el);
 
-  //
-  // ----------
-  //
+  /*
+  // Observer to watching different content sections and highlight corresponding menu item
+  */
 
   var contentSections = document.querySelectorAll('.sticky-nav__sec');
-
-  // ----  Approach 1 ----//
-  /*
   function handleIntersect_stickyMenu1(entries, observer) {
-  
-      entries.forEach((entry) => {    
-          
-          //console.log("intersect Ratio: " + entry.intersectionRatio);
-          //console.log("intersect top: " + entry.boundingClientRect.top);
-          //console.log("intersect: bot " + entry.boundingClientRect.bottom);
-          //console.log("-------------------");
-          
-          let entryTitle = entry.target.textContent;
-           if (entry.isIntersecting) {  
-              console.log('Intersecting: '+ entryTitle + " ,top: " + entry.boundingClientRect.top);
-              //console.log('entry text: '  + entryTitle);
-              highlightNavMenuItem(entryTitle);
-              //document.querySelector('a[href="#'+ id +'"]').classList.toggle("active-link");
-          } else {
-             // document.querySelector('a[href="#'+ id +'"]').classList.remove("active-link");
-          }
-      });
-  }
-   function test(helperElStickyNav) {
-      let createObserverContentSections;
-  
-      let options = {
-        root: null,
-        rootMargin: "-50%"
-        //threshold: buildThresholdList()
-      };
-  
-      contentSections.forEach(area => {
-          createObserverContentSections = new IntersectionObserver(handleIntersect_stickyMenu1, options); 
-          createObserverContentSections.observe(area);
-          
-       });
-  }
-  test();
-  */
-  // ---- Approach 2 ----//
-
-  //const areas = document.querySelectorAll(".text-area");
-
-  var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
-      entry.target.classList.toggle("show", entry.isIntersecting);
-      if (entry.boundingClientRect.top < 400 && entry.boundingClientRect.top > 0) {
-        console.log('400 - 0!!!!!');
-      }
-      var entryTitle = entry.target.textContent;
+      var entryTitle = entry.target.getAttribute('data-sticky');
       if (entry.isIntersecting) {
-        console.log('Intersecting: ' + entryTitle + " ,top: " + entry.boundingClientRect.top);
-        //console.log('entry text: '  + entryTitle);
         highlightNavMenuItem(entryTitle);
-        //document.querySelector('a[href="#'+ id +'"]').classList.toggle("active-link");
-      } else {
-        // document.querySelector('a[href="#'+ id +'"]').classList.remove("active-link");
-      }
-    });
-  });
-  contentSections.forEach(function (area) {
-    observer.observe(area);
-  });
-
-  // Other fucntions
-  var stickyNavMenuItems = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item");
-  console.log(stickyNavMenuItems);
-  function highlightNavMenuItem(text) {
-    stickyNavMenuItems.forEach(function (item) {
-      if (item.innerText == text) {
-        //console.log("match")
-        item.classList.add('higher');
-      } else {
-        //console.log("...scanning");
-        item.classList.remove('higher');
       }
     });
   }
-  stickyNavMenuItems.forEach(function (item) {
+  function createObserverMenuItems(helperElStickyNav) {
+    var createObserverContentSections;
+    var options = {
+      root: null,
+      rootMargin: "-50%"
+    };
+    contentSections.forEach(function (area) {
+      createObserverContentSections = new IntersectionObserver(handleIntersect_stickyMenu1, options);
+      createObserverContentSections.observe(area);
+    });
+  }
+  createObserverMenuItems();
+
+  /*
+  // Functions below, ensuring the corresponding menu item is set to active that corelates 
+  // to the section of the page you are viewing. The 'active' menu item is triggered by either
+  // clicking on it, or scrolling to a new section
+  */
+
+  var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
+  var stickyNavMenuItems = document.querySelector(".nav-sticky__items");
+  var stickyNav = document.querySelector(".nav-sticky");
+  function highlightNavMenuItem(text) {
+    stickyNavMenuItemLinks.forEach(function (item) {
+      if (item.innerText == text) {
+        item.classList.add('active');
+        item.scrollIntoView();
+      } else {
+        item.classList.remove('active');
+      }
+
+      //horizontalScrollPos();
+    });
+  }
+
+  stickyNavMenuItemLinks.forEach(function (item) {
     item.addEventListener("click", function () {
       highlightNavMenuItem(item.innerText);
     });
   });
+  stickyNavMenuItems.addEventListener("scroll", function () {
+    console.log('Horizontally scrolled');
+    var scrollLeftPos = document.querySelector(".nav-sticky__items").scrollLeft;
+    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
+    var stickyNavWidth = document.querySelector(".nav-sticky").offsetWidth;
+    if (scrollLeftPos === 0) {
+      console.log('......all way left');
+      stickyNav.classList.add('nav-sticky--right');
+      stickyNav.classList.remove('nav-sticky--left');
+    } else if (scrollLeftPos == horizontalScrollWidth - stickyNavWidth) {
+      console.log('......all way right');
+      stickyNav.classList.add('nav-sticky--left');
+      stickyNav.classList.remove('nav-sticky--right');
+    }
+
+    /*
+    console.log('Scrollleft pos: ' + scrollLeftPos);
+    console.log('horizontalScrollWidth: ' + horizontalScrollWidth);
+    console.log(' stickyNavWidth: ' + stickyNavWidth);
+    console.log('-------------------------------------')
+    */
+  });
 }
+
 var className = 'nav-sticky__helper';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,

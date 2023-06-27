@@ -34594,36 +34594,65 @@ div.widget-123_test_ {
 }
 
 .nav-sticky {
-    position: sticky;
-    background: pink;
+    position: absolute;
+    background: #ffffff;
     border: yellow;
+    border: thin solid pink;
 }
 
-.nav-sticky ul {
+.nav-sticky .nav-sticky__items {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     list-style: none;
-    justify-content: space-around;
+    overflow-x: auto;
 }
 
-.nav-sticky ul .nav-sticky__item {
+.nav-sticky .nav-sticky__item {
     margin-top: 0;
+    margin-right: 2rem;
+}
+
+.nav-sticky .nav-sticky__item__link {
+    padding: 0.5rem;
+    background: grey;
+    border-radius: 3px;
+}
+
+.nav-sticky.nav-sticky--left:before {
+    content: "";
+    width: 15%;
+    height: 100%;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nav-sticky.nav-sticky--right:after {
+    content: "";
+    width: 15%;
+    height: 100%;
+    background: yellow;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .sticky {
     position: fixed;
     top: 0;
+    z-index: 1;
+    width: 95%;
 }
 
-.sticky li {
-    margin-right: 2rem;
-    padding: 0.5rem;
-}
-
-.sticky .higher {
+.active {
     border: thick solid red;
     background: white;
+}
+
+.sticky-nav__sec {
+    padding-top: 3rem;
 }
 
 /* 
