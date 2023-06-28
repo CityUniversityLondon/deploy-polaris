@@ -34596,8 +34596,6 @@ div.widget-123_test_ {
 .nav-sticky {
     position: absolute;
     background: #ffffff;
-    border: yellow;
-    border: thin solid pink;
 }
 
 .nav-sticky .nav-sticky__items {
@@ -34606,6 +34604,7 @@ div.widget-123_test_ {
     align-items: flex-start;
     list-style: none;
     overflow-x: auto;
+    white-space: nowrap;
 }
 
 .nav-sticky .nav-sticky__item {
@@ -34623,20 +34622,22 @@ div.widget-123_test_ {
     content: "";
     width: 15%;
     height: 100%;
-    background: yellow;
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 2;
 }
 
 .nav-sticky.nav-sticky--right:after {
     content: "";
     width: 15%;
     height: 100%;
-    background: yellow;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 2;
 }
 
 .sticky {
