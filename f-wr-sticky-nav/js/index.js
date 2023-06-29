@@ -25558,6 +25558,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
+  console.log('func la');
   var elemFix = document.querySelector(".nav-sticky");
 
   /*
@@ -25587,9 +25588,9 @@ function launch(el) {
   function handleIntersect_stickyMenu(entries, observer) {
     entries.forEach(function (entry) {
       if (!entry.isIntersecting) {
-        elemFix.classList.add('sticky');
+        elemFix.classList.add('nav-sticky--stick');
       } else {
-        elemFix.classList.remove('sticky');
+        elemFix.classList.remove('nav-sticky--stick');
       }
     });
   }
@@ -25633,10 +25634,10 @@ function launch(el) {
   function highlightNavMenuItem(text) {
     stickyNavMenuItemLinks.forEach(function (item) {
       if (item.innerText == text) {
-        item.classList.add('active');
+        item.classList.add('nav-sticky__item__link__active');
         item.scrollIntoView();
       } else {
-        item.classList.remove('active');
+        item.classList.remove('nav-sticky__item__link__active');
       }
 
       //horizontalScrollPos();
