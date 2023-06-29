@@ -35816,10 +35816,6 @@ div.widget-123_test_ {
     line-height: 1.25rem;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .nav-sticky__wrap {
     width: 100%;
 }
@@ -35860,7 +35856,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-sticky.nav-sticky--left:before {
@@ -35910,38 +35906,20 @@ html {
     font-size: 14px;
 }
 
-.nav-sticky .nav-sticky__item__link__active {
+.pg-courses-v23 .nav-sticky .nav-sticky__item__link__active {
     background: #006699;
     color: #ffffff;
+}
+
+.ug-courses-v23 .nav-sticky .nav-sticky__item__link__active {
+    background: #f1b434;
+    color: #1e1e1e;
 }
 
 .sticky-nav__sec {
     padding-top: 3rem;
 }
 
-/* 
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    border: 2px dashed rgba(114, 186, 94, 0.35);
-    height: 400px;
-    background: rgba(114, 186, 94, 0.05);
-  }
-  
-  .shark-1 {
-    position: sticky;
-    top: 0;
-  }
-  
-  .shark-2 {
-    position: sticky;
-    top: 4rem;
-  }
-  
-  .shark-3 {
-    position: sticky;
-    bottom: 1rem;
-    align-self: flex-end;
-  }
-  */
+html {
+    scroll-behavior: smooth;
+}

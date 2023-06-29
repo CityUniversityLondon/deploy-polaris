@@ -25567,12 +25567,15 @@ function launch(el) {
 
   function createObserverStickyNav(helperElStickyNav) {
     var observer;
-    var options = {
+    /*
+    let options = {
       root: null,
       rootMargin: "0px",
       threshold: buildThresholdList()
     };
-    observer = new IntersectionObserver(handleIntersect_stickyMenu, options);
+    */
+
+    observer = new IntersectionObserver(handleIntersect_stickyMenu);
     observer.observe(helperElStickyNav);
   }
   function buildThresholdList() {
@@ -25636,14 +25639,12 @@ function launch(el) {
       if (item.innerText == text) {
         item.classList.add('nav-sticky__item__link__active');
         item.scrollIntoView();
+        console.log(item);
       } else {
         item.classList.remove('nav-sticky__item__link__active');
       }
-
-      //horizontalScrollPos();
     });
   }
-
   stickyNavMenuItemLinks.forEach(function (item) {
     item.addEventListener("click", function () {
       //highlightNavMenuItem(item.innerText);
