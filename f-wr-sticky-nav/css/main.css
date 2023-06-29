@@ -35816,12 +35816,26 @@ div.widget-123_test_ {
     line-height: 1.25rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-sticky__wrap {
+    width: 100%;
+}
+
+.nav-sticky__helper {
+    width: 100%;
+    height: 10px;
+    background: yellow;
+}
+
 .nav-sticky {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     background: #ffffff;
-    border: thick dotted green;
+    border: thin solid purple;
     z-index: 2;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     grid-template-columns: repeat(24, 1fr);
