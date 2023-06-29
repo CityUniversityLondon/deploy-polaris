@@ -35821,7 +35821,7 @@ div.widget-123_test_ {
     top: 0;
     left: 0;
     background: #ffffff;
-    border: thin solid purple;
+    border: thick dotted green;
     z-index: 2;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     grid-template-columns: repeat(24, 1fr);
