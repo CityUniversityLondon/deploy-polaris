@@ -25654,8 +25654,8 @@ function launch(el) {
     console.log('Horizontally scrolled');
     var scrollLeftPos = document.querySelector(".nav-sticky__items").scrollLeft;
     var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-    var stickyNavWidth = document.querySelector(".nav-sticky").offsetWidth;
-    if (scrollLeftPos === 0) {
+    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+    if (scrollLeftPos >= 0 && scrollLeftPos < 50) {
       console.log('......all way left');
       stickyNav.classList.add('nav-sticky--right');
       stickyNav.classList.remove('nav-sticky--left');
@@ -25664,16 +25664,13 @@ function launch(el) {
       stickyNav.classList.add('nav-sticky--left');
       stickyNav.classList.remove('nav-sticky--right');
     }
-
-    /*
     console.log('Scrollleft pos: ' + scrollLeftPos);
     console.log('horizontalScrollWidth: ' + horizontalScrollWidth);
     console.log(' stickyNavWidth: ' + stickyNavWidth);
-    console.log('-------------------------------------')
-    */
+    console.log(' Threshold: ' + (horizontalScrollWidth - stickyNavWidth));
+    console.log('-------------------------------------');
   });
 }
-
 var className = 'nav-sticky__helper';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
