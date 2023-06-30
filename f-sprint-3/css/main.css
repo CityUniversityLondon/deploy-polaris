@@ -21912,6 +21912,27 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin: 0;
 }
 
+.text-highlight {
+    color: #ffffff;
+    background-color: #e30613;
+    box-shadow: 0.5rem 0 0 #e30613, -0.5rem 0 0 #e30613;
+    display: inline;
+}
+
+.ug-courses-v23 .text-highlight {
+    color: #1e1e1e;
+    background-color: #f1b434;
+    box-shadow: 0.5rem 0 0 #f1b434, -0.5rem 0 0 #f1b434;
+    display: inline;
+}
+
+.pg-courses-v23 .text-highlight {
+    color: #ffffff;
+    background-color: #006699;
+    box-shadow: 0.5rem 0 0 #006699, -0.5rem 0 0 #006699;
+    display: inline;
+}
+
 .course__kis__content a,
 .course__kis__content a:active,
 .course__kis__content a:focus,
