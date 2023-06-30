@@ -25567,34 +25567,12 @@ function launch(el) {
 
   function createObserverStickyNav(helperElStickyNav) {
     var observer;
-    /*
-    let options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: buildThresholdList()
-    };
-    */
-
     observer = new IntersectionObserver(handleIntersect_stickyMenu);
     observer.observe(helperElStickyNav);
   }
-  function buildThresholdList() {
-    var thresholds = [];
-    var numSteps = 2000;
-    for (var i = 1.0; i <= numSteps; i++) {
-      var ratio = i / numSteps;
-      thresholds.push(ratio);
-    }
-    thresholds.push(0);
-    return thresholds;
-  }
-  function handleIntersect_stickyMenu(entries, observer) {
+  function handleIntersect_stickyMenu(entries) {
     entries.forEach(function (entry) {
-      if (!entry.isIntersecting) {
-        elemFix.classList.add('nav-sticky--stick');
-      } else {
-        elemFix.classList.remove('nav-sticky--stick');
-      }
+      elemFix.classList.toggle('nav-sticky--stick', !entry.isIntersecting);
     });
   }
   createObserverStickyNav(el);
@@ -25604,7 +25582,7 @@ function launch(el) {
   */
 
   var contentSections = document.querySelectorAll('.sticky-nav__sec');
-  function handleIntersect_contentSections(entries, observer) {
+  function handleIntersect_contentSections(entries) {
     entries.forEach(function (entry) {
       var entryTitle = entry.target.getAttribute('data-sticky');
       if (entry.isIntersecting) {
@@ -25612,18 +25590,50 @@ function launch(el) {
       }
     });
   }
-  function createObserverMenuItems(helperElStickyNav) {
-    var createObserverContentSections;
+  function createObserverContentSections() {
+    var observerContentSections;
     var options = {
       root: null,
       rootMargin: "-50%"
     };
     contentSections.forEach(function (area) {
-      createObserverContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
-      createObserverContentSections.observe(area);
+      observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
+      observerContentSections.observe(area);
     });
   }
-  createObserverMenuItems();
+  createObserverContentSections();
+
+  /*
+  // Observer to watchinging 1st menu item then add blur effect to end of nav
+  */
+
+  var stickyNavFirstItem = document.querySelector(".nav-sticky__item:first-child");
+  var observeStickyNavFirstItem = new IntersectionObserver(function (entries) {
+    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
+    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+    if (stickyNavWidth < horizontalScrollWidth) {
+      entries.forEach(function (entry) {
+        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--right', entry.isIntersecting);
+      });
+    }
+  });
+  observeStickyNavFirstItem.observe(stickyNavFirstItem);
+
+  /*
+  // Observer to watchinging last menu item then add blur effect to start of nav
+  */
+
+  var stickyNavLastItem = document.querySelector(".nav-sticky__item:last-child");
+  var observeStickyNavLastItem = new IntersectionObserver(function (entries) {
+    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
+    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+    if (stickyNavWidth < horizontalScrollWidth) {
+      entries.forEach(function (entry) {
+        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--left', entry.isIntersecting);
+      });
+    }
+  });
+  observeStickyNavLastItem.observe(stickyNavLastItem);
 
   /*
   // Functions below, ensuring the corresponding menu item is set to active that corelates 
@@ -25650,27 +25660,40 @@ function launch(el) {
       //highlightNavMenuItem(item.innerText);
     });
   });
-  stickyNavMenuItems.addEventListener("scroll", function () {
-    console.log('Horizontally scrolled');
-    var scrollLeftPos = document.querySelector(".nav-sticky__items").scrollLeft;
-    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
-    if (scrollLeftPos >= 0 && scrollLeftPos < 50) {
-      console.log('......all way left');
-      stickyNav.classList.add('nav-sticky--right');
-      stickyNav.classList.remove('nav-sticky--left');
-    } else if (scrollLeftPos == horizontalScrollWidth - stickyNavWidth) {
-      console.log('......all way right');
-      stickyNav.classList.add('nav-sticky--left');
-      stickyNav.classList.remove('nav-sticky--right');
-    }
-    console.log('Scrollleft pos: ' + scrollLeftPos);
-    console.log('horizontalScrollWidth: ' + horizontalScrollWidth);
-    console.log(' stickyNavWidth: ' + stickyNavWidth);
-    console.log(' Threshold: ' + (horizontalScrollWidth - stickyNavWidth));
-    console.log('-------------------------------------');
-  });
+
+  /*
+  stickyNavMenuItems.addEventListener("scroll", function(){
+      console.log('Horizontally scrolled');
+      const scrollLeftPos = document.querySelector(".nav-sticky__items").scrollLeft;
+      const horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
+      const stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+       if(scrollLeftPos >= 0 && scrollLeftPos < 50){
+          console.log('......all way left');
+          stickyNav.classList.add('nav-sticky--right');
+          stickyNav.classList.remove('nav-sticky--left');
+          
+      }
+       else if(scrollLeftPos <= (horizontalScrollWidth - stickyNavWidth) && scrollLeftPos > (horizontalScrollWidth - stickyNavWidth - 50)){
+          console.log('......all way right');
+          stickyNav.classList.add('nav-sticky--left');
+          stickyNav.classList.remove('nav-sticky--right');
+      }
+       else {
+          stickyNav.classList.remove('nav-sticky--right');
+          stickyNav.classList.remove('nav-sticky--left');
+      }
+      
+      
+      console.log('Scrollleft pos: ' + scrollLeftPos);
+      console.log('horizontalScrollWidth: ' + horizontalScrollWidth);
+      console.log(' stickyNavWidth: ' + stickyNavWidth);
+      console.log(' Threshold: ' + (horizontalScrollWidth - stickyNavWidth));
+       console.log('-------------------------------------')
+      
+  }); 
+  */
 }
+
 var className = 'nav-sticky__helper';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
