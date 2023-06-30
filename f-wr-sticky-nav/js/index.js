@@ -25558,7 +25558,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  console.log('func la');
   var elemFix = document.querySelector(".nav-sticky");
 
   /*
@@ -25642,14 +25641,13 @@ function launch(el) {
   */
 
   var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
-  var stickyNavMenuItems = document.querySelector(".nav-sticky__items");
-  var stickyNav = document.querySelector(".nav-sticky");
   function highlightNavMenuItem(text) {
+    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
     stickyNavMenuItemLinks.forEach(function (item) {
       if (item.innerText == text) {
         item.classList.add('nav-sticky__item__link__active');
-        item.scrollIntoView();
-        console.log(item);
+        //item.scrollIntoView();
+        document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
       } else {
         item.classList.remove('nav-sticky__item__link__active');
       }
@@ -25660,40 +25658,7 @@ function launch(el) {
       //highlightNavMenuItem(item.innerText);
     });
   });
-
-  /*
-  stickyNavMenuItems.addEventListener("scroll", function(){
-      console.log('Horizontally scrolled');
-      const scrollLeftPos = document.querySelector(".nav-sticky__items").scrollLeft;
-      const horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-      const stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
-       if(scrollLeftPos >= 0 && scrollLeftPos < 50){
-          console.log('......all way left');
-          stickyNav.classList.add('nav-sticky--right');
-          stickyNav.classList.remove('nav-sticky--left');
-          
-      }
-       else if(scrollLeftPos <= (horizontalScrollWidth - stickyNavWidth) && scrollLeftPos > (horizontalScrollWidth - stickyNavWidth - 50)){
-          console.log('......all way right');
-          stickyNav.classList.add('nav-sticky--left');
-          stickyNav.classList.remove('nav-sticky--right');
-      }
-       else {
-          stickyNav.classList.remove('nav-sticky--right');
-          stickyNav.classList.remove('nav-sticky--left');
-      }
-      
-      
-      console.log('Scrollleft pos: ' + scrollLeftPos);
-      console.log('horizontalScrollWidth: ' + horizontalScrollWidth);
-      console.log(' stickyNavWidth: ' + stickyNavWidth);
-      console.log(' Threshold: ' + (horizontalScrollWidth - stickyNavWidth));
-       console.log('-------------------------------------')
-      
-  }); 
-  */
 }
-
 var className = 'nav-sticky__helper';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
