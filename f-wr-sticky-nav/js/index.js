@@ -25653,11 +25653,6 @@ function launch(el) {
       }
     });
   }
-  stickyNavMenuItemLinks.forEach(function (item) {
-    item.addEventListener("click", function () {
-      //highlightNavMenuItem(item.innerText);
-    });
-  });
 }
 var className = 'nav-sticky__helper';
 /* harmony default export */ __webpack_exports__["default"] = ({
