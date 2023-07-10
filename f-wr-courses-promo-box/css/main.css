@@ -36153,3 +36153,70 @@ html {
 .student-life-v23__links__promo {
     grid-column: 14/-1;
 }
+
+.promo-box-v23__wrapper .promo-box-v23 {
+    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+    padding: 2rem 3rem;
+}
+
+.promo-box-v23__wrapper .promo-box-v23__heading__wrap:after {
+    content: '';
+    display: block;
+    height: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 5rem;
+}
+
+.promo-box-v23__wrapper .promo-box-v23__heading {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.44rem;
+}
+
+.promo-box-v23__wrapper .promo-box-v23__cta {
+    font-size: 1.44rem;
+    display: flex;
+    flex-direction: revert;
+    position: relative;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1.44rem;
+}
+
+.promo-box-v23__wrapper .promo-box-v23__cta__link {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0;
+    width: 100%;
+    padding: 1.25rem;
+    background-clip: padding-box;
+    border-radius: 8px;
+    font-weight: 700;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.ug-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
+    background: #a9a19c;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .promo-box-v23 .promo-box-v23__cta__link {
+    background: #a9a19c;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
+    background: #002b49;
+    color: #ffffff;
+}
+
+.pg-courses-v23 .promo-box-v23 .promo-box-v23__cta__link {
+    background: #002b49;
+    color: #ffffff;
+}
