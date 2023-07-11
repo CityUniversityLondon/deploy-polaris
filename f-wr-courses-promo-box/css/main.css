@@ -18980,6 +18980,30 @@ USED IN:
     color: #ffffff;
 }
 
+.cta--ug-v23 {
+    background-color: #a9a19c;
+    color: #1e1e1e;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+}
+
+.cta--ug-v23:hover, .cta--ug-v23:focus, .cta--ug-v23:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+}
+
+.cta--pg-v23 {
+    background-color: #002b49;
+    color: #ffffff;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+}
+
+.cta--pg-v23:hover, .cta--pg-v23:focus, .cta--pg-v23:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+}
+
 .scp--online-msc .cta--theme--primary {
     background-color: #189183;
     color: #ffffff;
@@ -36195,8 +36219,6 @@ html {
     border-bottom: 0;
     width: 100%;
     padding: 1.25rem;
-    background-clip: padding-box;
-    border-radius: 8px;
     font-weight: 700;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
@@ -36206,8 +36228,15 @@ html {
     color: #1e1e1e;
 }
 
-.ug-courses-v23 .promo-box-v23 .promo-box-v23__cta__link {
-    background: #a9a19c;
+.ug-courses-v23 .promo-box-v23 .cta--main {
+    background-color: #a9a19c;
+    color: #1e1e1e;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+}
+
+.ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
+    background-color: #ececec;
     color: #1e1e1e;
 }
 
@@ -36216,7 +36245,14 @@ html {
     color: #ffffff;
 }
 
-.pg-courses-v23 .promo-box-v23 .promo-box-v23__cta__link {
-    background: #002b49;
+.pg-courses-v23 .promo-box-v23 .cta--main {
+    background-color: #002b49;
     color: #ffffff;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+}
+
+.pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
+    background-color: #ececec;
+    color: #1e1e1e;
 }
