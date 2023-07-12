@@ -29721,8 +29721,8 @@ table tbody > tr > td:hover {
     border: none;
     font-family: "FontAwesome";
     content: "";
-    background: black;
-    color: white;
+    background: #1e1e1e;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29735,10 +29735,6 @@ table tbody > tr > td:hover {
     border: 2px solid #1e1e1e;
     background-clip: padding-box;
     border-radius: 0.25rem;
-}
-
-.dropdown-filter__v23 .dropdown-filter:focus-within .filter--box:after {
-    transform: rotate(180deg);
 }
 
 @keyframes fade-up {
