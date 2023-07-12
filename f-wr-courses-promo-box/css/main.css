@@ -18988,6 +18988,7 @@ USED IN:
 .cta--ug-v23:hover, .cta--ug-v23:focus, .cta--ug-v23:active {
     background-color: #ececec;
     color: #1e1e1e;
+    outline-offset: 0.1875rem;
 }
 
 .cta--pg-v23 {
@@ -18998,6 +18999,7 @@ USED IN:
 .cta--pg-v23:hover, .cta--pg-v23:focus, .cta--pg-v23:active {
     background-color: #ececec;
     color: #1e1e1e;
+    outline-offset: 0.1875rem;
 }
 
 .cta--v23-round {
@@ -36227,7 +36229,6 @@ html {
     position: relative;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 0;
     width: 100%;
     padding: 1.25rem;
     font-weight: 700;
@@ -36247,6 +36248,7 @@ html {
 .ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
     background-color: #ececec;
     color: #1e1e1e;
+    outline-offset: 0.1875rem;
 }
 
 .pg-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
@@ -36262,4 +36264,5 @@ html {
 .pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
     background-color: #ececec;
     color: #1e1e1e;
+    outline-offset: 0.1875rem;
 }
