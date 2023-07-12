@@ -18983,8 +18983,6 @@ USED IN:
 .cta--ug-v23 {
     background-color: #a9a19c;
     color: #1e1e1e;
-    background-clip: padding-box;
-    border-radius: 0.5rem;
 }
 
 .cta--ug-v23:hover, .cta--ug-v23:focus, .cta--ug-v23:active {
@@ -18995,13 +18993,26 @@ USED IN:
 .cta--pg-v23 {
     background-color: #002b49;
     color: #ffffff;
-    background-clip: padding-box;
-    border-radius: 0.5rem;
 }
 
 .cta--pg-v23:hover, .cta--pg-v23:focus, .cta--pg-v23:active {
     background-color: #ececec;
     color: #1e1e1e;
+}
+
+.cta--v23-round {
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+}
+
+.cta--v23-right-arrow:after {
+    content: "\f054";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .scp--online-msc .cta--theme--primary {
@@ -36231,8 +36242,6 @@ html {
 .ug-courses-v23 .promo-box-v23 .cta--main {
     background-color: #a9a19c;
     color: #1e1e1e;
-    background-clip: padding-box;
-    border-radius: 0.5rem;
 }
 
 .ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
@@ -36248,8 +36257,6 @@ html {
 .pg-courses-v23 .promo-box-v23 .cta--main {
     background-color: #002b49;
     color: #ffffff;
-    background-clip: padding-box;
-    border-radius: 0.5rem;
 }
 
 .pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
