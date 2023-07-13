@@ -23585,6 +23585,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+/**/
 function appendAll(elem, children) {
   children.forEach(function (child) {
     return elem.appendChild(child);
@@ -23600,6 +23601,16 @@ function removeClass(elem, className, removePartials) {
     return matchFn(s);
   }).join(' ');
 }
+var partialMatchFn = function partialMatchFn(m) {
+    return function (s) {
+      return s.indexOf(m) < 0;
+    };
+  },
+  fullMatchFn = function fullMatchFn(m) {
+    return function (s) {
+      return s !== m;
+    };
+  };
 function toBool(s) {
   return s === 'true' ? true : false;
 }
@@ -23636,14 +23647,17 @@ function screenWidth(size) {
 //////////////////////////////
 /*
 import {
+    partialMatchFn,
+    fullMatchFn,
     appendAll,
     reduceMotion,
     removeClass,
     toBool,
     verticallyInWindow,
     screenWidth,
-} from '../../util';
+} from './util';
 */
+
 
 /**
  * Accordion
@@ -23825,7 +23839,7 @@ function buttonFromHeading(heading) {
  *
  * @param {HTMLElement} accordion - An HTML element with the accordion class.
  */
-function launchAccordion(accordion) {
+function launch(accordion) {
   console.log('wr launched');
   var toggleOpen = toBool(accordion.dataset.toggleopen),
     defaultOpen = toBool(accordion.dataset.defaultopen),
@@ -23893,8 +23907,8 @@ function launchAccordion(accordion) {
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
-  launchFn: launchAccordion,
-  launchQuery: ".".concat(className)
+  launch: launch,
+  className: className
 });
 
 /***/ }),
