@@ -23671,7 +23671,7 @@ import {
 var className = 'accordion-v23',
   headingClassName = className + '__heading',
   headingTextClassName = headingClassName + '__text',
-  headingIconClassName = headingClassName + '__indicator far fa-sharp',
+  headingIconClassName = headingClassName + '__indicator',
   bodyClassName = className + '__body',
   oneSecond = 1000,
   tenthOfASecond = 100,
@@ -23815,7 +23815,7 @@ function buttonFromHeading(heading) {
   iconSpan.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].hidden, true);
   button.setAttribute('type', 'button');
   textSpan.appendChild(document.createTextNode(heading.textContent));
-  appendAll(wrapper, [textSpan, iconSpan]);
+  appendAll(wrapper, [iconSpan, textSpan]);
   button.appendChild(wrapper);
   return button;
 }
@@ -23891,7 +23891,12 @@ function launch(accordion) {
         scroll.to(heading, scrollDuration);
       };
     }
-
+    //
+    //
+    // POSSIBLY DELETE BELOW
+    //
+    //THEN ALSO DELETE SCREENWIDTH UTIL
+    //
     // determines if the hash is perhaps of an accordion which kicks in on smaller viewports, as part of a tabs / accordion pattern
     if (accordion.parentElement.className === 'tabs--accordion' && accordion.parentElement.querySelector('' + urlHash + '') && viewportWidth <= screenWidth('tablet')) {
       var hashConvert = urlHash.replace('tabs', 'accordion').replace('link', 'header');

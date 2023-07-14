@@ -36117,7 +36117,6 @@ html {
 
 @media screen {
     .js .accordion-v23 > .accordion-v23__body {
-        background-color: orange;
         padding: 1rem;
     }
     .js .accordion-v23 > .accordion-v23__heading {
@@ -36144,14 +36143,41 @@ html {
         grid-column-gap: 0;
     }
     .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator {
-        align-self: center;
-        text-align: right;
-        height: 100%;
+        /*
+            align-self: center;
+            text-align: right;
+            height: 100%;
+            */
+        background-color: transparent;
+        color: #005ea5;
+        width: 2rem;
+        height: 2rem;
+        border-width: 0;
+        position: relative;
+        cursor: pointer;
+        transition: transform 1s ease;
+        display: inline-block;
+    }
+    .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator::before, .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator::after {
+        content: "";
+        background-color: currentColor;
+        width: 0.4rem;
+        height: 2rem;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        animation: depressed 1s ease both;
+    }
+    .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator::after {
+        animation: bar 1s ease both reverse;
     }
     .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator:before {
-        content: fa-content("");
-        display: inline-block;
-        text-decoration: none;
+        /*
+                content: fa-content($fa-var-plus);
+                display: inline-block;
+                text-decoration: none;
+                */
     }
     .js .accordion-v23 > .accordion-v23__heading button:hover {
         /*
@@ -36181,17 +36207,16 @@ html {
         outline: 0;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button {
-        border-top: 2px dotted yellow;
-        border-left: 2px dotted yellow;
-        border-right: 2px dotted yellow;
-        border-bottom: 1px solid darkgray;
-        color: yellow;
-        padding: 0;
-    }
-    .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__text,
-    .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator {
-        padding: 1rem;
-        border: thick solid red;
+        /*
+            border-top: $border-width-default dotted yellow;
+            border-left: $border-width-default dotted
+                yellow;
+            border-right: $border-width-default dotted
+                yellow;
+            border-bottom: $border-width-hairline $border-style-default
+                darkgray;
+            color: yellow;
+            */
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__text:hover {
         /*
@@ -36200,10 +36225,19 @@ html {
                     }
                     */
     }
+    .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator {
+        color: gray;
+        animation: pressed 1s ease both;
+    }
+    .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator::after {
+        animation: bar 1s ease both;
+    }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator:before {
-        content: fa-content("");
-        display: inline-block;
-        text-decoration: none;
+        /*
+                    content: fa-content($fa-var-minus);
+                    display: inline-block;
+                    text-decoration: none;
+                    */
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button:focus, .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button:active {
         border-top: 2px dotted yellow;
@@ -36242,9 +36276,6 @@ html {
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] + .accordion-v23__body:first-child {
         margin-top: 0;
     }
-    .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button {
-        background: orange;
-    }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
         margin-bottom: 1rem;
     }
@@ -36256,5 +36287,35 @@ html {
     }
     .js .accordion-v23 > .accordion-v23__heading + .accordion-v23__body[data-closed='true'] {
         display: none;
+    }
+}
+
+@keyframes pressed {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes depressed {
+    0% {
+        transform: rotateZ(90deg);
+    }
+    99.999% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes bar {
+    from {
+        transform: rotateZ(-90deg);
+    }
+    to {
+        transform: rotateZ(0deg);
     }
 }
