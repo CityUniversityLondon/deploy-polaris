@@ -36120,28 +36120,26 @@ html {
         padding: 1rem;
     }
     .js .accordion-v23 > .accordion-v23__heading {
-        border-bottom: 1px solid lilac;
         margin-top: 1rem;
         margin-bottom: 0;
     }
     .js .accordion-v23 > .accordion-v23__heading:focus {
-        outline: 2px dotted yellow;
         border: 0;
     }
     .js .accordion-v23 > .accordion-v23__heading:active {
         border: 0;
-        border-bottom: 1px solid transparent;
         outline: 0;
     }
     .js .accordion-v23 > .accordion-v23__heading button {
         width: 100%;
         text-align: left;
         padding: 1rem;
-        color: lightblue;
+        color: #1e1e1e;
         outline: 2px solid transparent;
         background-color: #ececec;
         background-clip: padding-box;
         border-radius: 0.5rem;
+        border: 2px solid #ececec;
     }
     .js .accordion-v23 > .accordion-v23__heading button div {
         grid-column-gap: 0;
@@ -36191,6 +36189,8 @@ html {
                 */
     }
     .js .accordion-v23 > .accordion-v23__heading button:hover {
+        background-color: #ffffff;
+        border: 2px solid #d8d8d8;
         /*
             @include media('hover') {
                 text-decoration: underline;
@@ -36200,12 +36200,23 @@ html {
             }
             */
     }
+    .js .accordion-v23 > .accordion-v23__heading button:hover .accordion-v23__heading__text {
+        text-decoration: underline;
+    }
     .js .accordion-v23 > .accordion-v23__heading button:focus {
-        outline: 2px dotted yellow;
-        border: 0;
+        border: 2px solid #d8d8d8;
+        outline: 2px solid #1e1e1e;
+        outline-offset: 4px;
+        background-color: #ffffff;
     }
     .js .accordion-v23 > .accordion-v23__heading button:active {
-        outline: 2px dotted yellow;
+        border: 2px solid #d8d8d8;
+        outline: 2px dotted #1e1e1e;
+        outline-offset: 4px;
+        background-color: #ffffff;
+    }
+    .js .accordion-v23 > .accordion-v23__heading button:active .accordion-v23__heading__text {
+        text-decoration: underline;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] {
         margin-top: 1rem;
@@ -36215,18 +36226,16 @@ html {
         outline: 0;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button {
+        border: 2px solid #d8d8d8;
+        border-bottom: none;
         /*
-            border-top: $border-width-default dotted yellow;
-            border-left: $border-width-default dotted
-                yellow;
-            border-right: $border-width-default dotted
-                yellow;
-            border-bottom: $border-width-hairline $border-style-default
-                darkgray;
-            color: yellow;
+            border-top: $border-width-default $border-style-default $color-gainsboro;
+            border-left: $border-width-default solid yellow;
+            border-right: $border-width-default solid yellow;
             */
         background-clip: padding-box;
         border-radius: 0.5rem 0.5rem 0 0;
+        background-color: #ffffff;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__text:hover {
         /*
@@ -36249,11 +36258,17 @@ html {
                     */
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button:focus, .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button:active {
-        border-top: 2px dotted yellow;
-        border-left: 2px dotted yellow;
-        border-right: 2px dotted yellow;
-        border-bottom: 1px solid darkgray;
-        outline: 0;
+        /*
+                border-top: $border-width-default dotted
+                    yellow;
+                border-left: $border-width-default dotted
+                    yellow;
+                border-right: $border-width-default dotted
+                    yellow;
+                border-bottom: $border-width-hairline $border-style-default
+                    darkgray;
+                outline: 0;
+                */
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button:hover {
         /*
@@ -36264,17 +36279,19 @@ html {
                 */
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
-        border-top: 0;
-        border-left: 2px dotted yellow;
-        border-right: 2px dotted yellow;
-        border-bottom: 2px dotted yellow;
+        border: 2px solid #d8d8d8;
+        border-top: none;
+        background-clip: padding-box;
+        border-radius: 0 0 0.5rem 0.5rem;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] + .accordion-v23__body p {
         margin: 1rem 0;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] + .accordion-v23__body:focus, .js .accordion-v23 > .accordion-v23__heading[data-open='true'] + .accordion-v23__body:active {
-        border-style: dotted;
-        border-color: yellow;
+        /*
+                border-style: dotted;
+                border-color: yellow;
+                */
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] + .accordion-v23__body > :first-child {
         margin-top: 0;
