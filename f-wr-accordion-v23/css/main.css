@@ -36121,7 +36121,8 @@ html {
     }
     .js .accordion-v23 > .accordion-v23__heading {
         border-bottom: 1px solid lilac;
-        margin-top: 0;
+        margin-top: 1rem;
+        margin-bottom: 0;
     }
     .js .accordion-v23 > .accordion-v23__heading:focus {
         outline: 2px dotted yellow;
@@ -36138,9 +36139,15 @@ html {
         padding: 1rem;
         color: lightblue;
         outline: 2px solid transparent;
+        background-color: #ececec;
+        background-clip: padding-box;
+        border-radius: 0.5rem;
     }
     .js .accordion-v23 > .accordion-v23__heading button div {
         grid-column-gap: 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
     .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator {
         /*
@@ -36149,7 +36156,7 @@ html {
             height: 100%;
             */
         background-color: transparent;
-        color: #005ea5;
+        color: #1e1e1e;
         width: 2rem;
         height: 2rem;
         border-width: 0;
@@ -36157,20 +36164,24 @@ html {
         cursor: pointer;
         transition: transform 1s ease;
         display: inline-block;
+        border: 2px solid #1e1e1e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator::before, .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator::after {
         content: "";
         background-color: currentColor;
-        width: 0.4rem;
-        height: 2rem;
+        width: 0.2rem;
+        height: 1rem;
         display: block;
         position: absolute;
-        top: 0;
-        left: 40%;
-        animation: depressed 1s ease both;
+        animation: depressed 0.1s ease both;
+        margin: 0.5rem;
     }
     .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator::after {
-        animation: bar 1s ease both reverse;
+        animation: bar 0.1s ease both reverse;
     }
     .js .accordion-v23 > .accordion-v23__heading button .accordion-v23__heading__indicator:before {
         /*
@@ -36196,9 +36207,6 @@ html {
     .js .accordion-v23 > .accordion-v23__heading button:active {
         outline: 2px dotted yellow;
     }
-    .js .accordion-v23 > .accordion-v23__heading:first-of-type {
-        margin-top: 1rem;
-    }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] {
         margin-top: 1rem;
         border-bottom: 0;
@@ -36217,6 +36225,8 @@ html {
                 darkgray;
             color: yellow;
             */
+        background-clip: padding-box;
+        border-radius: 0.5rem 0.5rem 0 0;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__text:hover {
         /*
@@ -36226,11 +36236,10 @@ html {
                     */
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator {
-        color: gray;
-        animation: pressed 1s ease both;
+        animation: pressed 0.1s ease both;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator::after {
-        animation: bar 1s ease both;
+        animation: bar 0.1s ease both;
     }
     .js .accordion-v23 > .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator:before {
         /*

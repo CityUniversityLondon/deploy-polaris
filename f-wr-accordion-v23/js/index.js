@@ -23885,6 +23885,7 @@ function launch(accordion) {
     // condition when hash in URL is of a 'always' accordion, regardless of viewport width
     if (heading) {
       // Wait for DOM to load before accessing selected accordion
+      console.log('Hash found on page load');
       window.onload = function () {
         setSection(heading, true);
         heading.nextElementSibling.dataset.closed = 'false';
