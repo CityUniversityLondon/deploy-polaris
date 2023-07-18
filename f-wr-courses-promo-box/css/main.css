@@ -19015,8 +19015,7 @@ USED IN:
 }
 
 .cta--ug-v23:hover, .cta--ug-v23:focus, .cta--ug-v23:active {
-    background-color: #ececec;
-    color: #1e1e1e;
+    background-color: #9b918c;
     outline-offset: 0.1875rem;
 }
 
@@ -19026,8 +19025,7 @@ USED IN:
 }
 
 .cta--pg-v23:hover, .cta--pg-v23:focus, .cta--pg-v23:active {
-    background-color: #ececec;
-    color: #1e1e1e;
+    background-color: #00192a;
     outline-offset: 0.1875rem;
 }
 
@@ -36288,8 +36286,7 @@ html {
 }
 
 .ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
-    background-color: #ececec;
-    color: #1e1e1e;
+    background-color: #9b918c;
     outline-offset: 0.1875rem;
 }
 
@@ -36304,7 +36301,6 @@ html {
 }
 
 .pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
-    background-color: #ececec;
-    color: #1e1e1e;
+    background-color: #00192a;
     outline-offset: 0.1875rem;
 }
