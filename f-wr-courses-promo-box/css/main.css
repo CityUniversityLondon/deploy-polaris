@@ -9712,6 +9712,13 @@ svg:not(:root) {
     }
 }
 
+.courses-v23 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+
 @media (max-width: 500px) {
     .courses-v23 {
         padding-left: 0.5rem;
@@ -9724,6 +9731,28 @@ svg:not(:root) {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+}
+
+.courses-v23__overview__grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0;
+}
+
+@media (min-width: 650px) {
+    .courses-v23__overview__grid {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__overview__grid {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.courses-v23__overview {
+    grid-column: 1/7;
+    max-width: 55ch;
 }
 
 .vertical-menu__page-link,
@@ -29744,6 +29773,36 @@ table tbody > tr > td:hover {
     padding: 20px 20px 15px;
 }
 
+.dropdown-filter__v23 .filter--box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-filter__v23 .filter--box:after {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    border: none;
+    font-family: "FontAwesome";
+    content: "";
+    background: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    right: 2.5rem;
+}
+
+.dropdown-filter__v23 .filter--box select {
+    border: 2px solid #1e1e1e;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+}
+
 @keyframes fade-up {
     from {
         opacity: 0;
@@ -35939,23 +35998,6 @@ div.widget-123_test_ {
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
-}
-
-.youtube-video__wrapper {
-    height: 0;
-    padding-bottom: 50%;
-    position: relative;
-    width: 100%;
-}
-
-.youtube-video__wrapper iframe {
-    height: 100%;
-    left: 0;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    border: none;
 }
 
 .youtube-video__wrapper .media {
