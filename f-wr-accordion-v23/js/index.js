@@ -23549,30 +23549,28 @@ function launch(el, i) {
 /*!*******************************************************!*\
   !*** ./src/components/accordion-v23/accordion-v23.js ***!
   \*******************************************************/
-/*! exports provided: screenWidth, default */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "screenWidth", function() { return screenWidth; });
-/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.filter.js */ "./node_modules/core-js/modules/es6.array.filter.js");
-/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.regexp.split.js */ "./node_modules/core-js/modules/es6.regexp.split.js");
-/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.symbol.js */ "./node_modules/core-js/modules/es6.symbol.js");
-/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.array.from.js */ "./node_modules/core-js/modules/es6.array.from.js");
-/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.string.iterator.js */ "./node_modules/core-js/modules/es6.string.iterator.js");
-/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es6.object.to-string.js */ "./node_modules/core-js/modules/es6.object.to-string.js");
-/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es6.array.iterator.js */ "./node_modules/core-js/modules/es6.array.iterator.js");
-/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
-/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace.js */ "./node_modules/core-js/modules/es6.regexp.replace.js");
-/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.split.js */ "./node_modules/core-js/modules/es6.regexp.split.js");
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.symbol.js */ "./node_modules/core-js/modules/es6.symbol.js");
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.array.from.js */ "./node_modules/core-js/modules/es6.array.from.js");
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.string.iterator.js */ "./node_modules/core-js/modules/es6.string.iterator.js");
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.object.to-string.js */ "./node_modules/core-js/modules/es6.object.to-string.js");
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es6.array.iterator.js */ "./node_modules/core-js/modules/es6.array.iterator.js");
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es6.array.filter.js */ "./node_modules/core-js/modules/es6.array.filter.js");
+/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./util */ "./src/components/accordion-v23/util.js");
 /* harmony import */ var _aria_attributes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./aria-attributes */ "./src/components/accordion-v23/aria-attributes.js");
 
 
@@ -23584,79 +23582,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-/**/
-function appendAll(elem, children) {
-  children.forEach(function (child) {
-    return elem.appendChild(child);
-  });
-}
-function reduceMotion() {
-  var reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-  return reducedMotionQuery.matches ? true : false;
-}
-function removeClass(elem, className, removePartials) {
-  var matchFn = removePartials ? partialMatchFn(className) : fullMatchFn(className);
-  elem.className = elem.className.split(/\s+/).filter(function (s) {
-    return matchFn(s);
-  }).join(' ');
-}
-var partialMatchFn = function partialMatchFn(m) {
-    return function (s) {
-      return s.indexOf(m) < 0;
-    };
-  },
-  fullMatchFn = function fullMatchFn(m) {
-    return function (s) {
-      return s !== m;
-    };
-  };
-function toBool(s) {
-  return s === 'true' ? true : false;
-}
-function verticallyInWindow(elem) {
-  return elem.getBoundingClientRect().top >= 0 && elem.getBoundingClientRect().top <= window.innerHeight ? true : false;
-}
-function screenWidth(size) {
-  switch (size) {
-    case 'tiny':
-      return 375;
-    case 'mobile':
-      return 432;
-    case 'tablet':
-      return 768;
-    case 'between':
-      return 900;
-    case 'small':
-      return 1024;
-    case 'desktop':
-      return 1280;
-    case 'large':
-      return 1440;
-    case '1080':
-      return 1920;
-    case '4k':
-      return 3840;
-    case '8k':
-      return 7680;
-    default:
-      return 1280;
-  }
-}
-
-//////////////////////////////
-/*
-import {
-    partialMatchFn,
-    fullMatchFn,
-    appendAll,
-    reduceMotion,
-    removeClass,
-    toBool,
-    verticallyInWindow,
-    screenWidth,
-} from './util';
-*/
 
 
 /**
@@ -23675,7 +23600,7 @@ var className = 'accordion-v23',
   bodyClassName = className + '__body',
   oneSecond = 1000,
   tenthOfASecond = 100,
-  scrollDuration = reduceMotion() ? 0 : oneSecond,
+  scrollDuration = Object(_util__WEBPACK_IMPORTED_MODULE_8__["reduceMotion"])() ? 0 : oneSecond,
   scrollTo = true;
 
 /**
@@ -23686,6 +23611,7 @@ var className = 'accordion-v23',
  */
 function setSection(heading, open) {
   heading.dataset.open = open;
+  heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
 }
 
@@ -23725,7 +23651,7 @@ function setupTransition(element, initialHeight) {
  * @param {HTMLElement} accordionSection - The section that transitioned.
  */
 function cleanupTransition(section) {
-  var open = toBool(section.previousElementSibling.dataset.open);
+  var open = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(section.previousElementSibling.dataset.open);
   section.style.height = null;
   section.dataset.closed = open ? 'false' : 'true';
 }
@@ -23763,7 +23689,7 @@ function buttonClick(button, headings, toggleOpen) {
     capture: true,
     once: true
   });
-  if (toBool(button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded))) {
+  if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded))) {
     // Starting height is the current height
     setupTransition(accordionSection, accordionSection.offsetHeight + 'px');
     // setTimeout lets the DOM recalculate before we continue, so the transition will fire
@@ -23781,7 +23707,7 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = sectionHeight;
     }, tenthOfASecond);
     if (toggleOpen) {
-      var sections = Array.from(heading.parentNode.parentNode.querySelectorAll("#".concat(heading.parentElement.id, " > .").concat(bodyClassName)));
+      var sections = Array.from(heading.parentNode.parentNode.querySelectorAll("#".concat(heading.parentElement.parentElement.id, " > .").concat(bodyClassName)));
       headings.forEach(function (heading) {
         return setSection(heading, false);
       });
@@ -23792,7 +23718,7 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    if (scrollTo && !(verticallyInWindow(heading) && verticallyInWindow(accordionSection))) {
+    if (scrollTo && !(Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(heading) && Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(accordionSection))) {
       scroll.to(heading, scrollDuration);
     }
   }
@@ -23815,7 +23741,7 @@ function buttonFromHeading(heading) {
   iconSpan.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].hidden, true);
   button.setAttribute('type', 'button');
   textSpan.appendChild(document.createTextNode(heading.textContent));
-  appendAll(wrapper, [iconSpan, textSpan]);
+  Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(wrapper, [iconSpan, textSpan]);
   button.appendChild(wrapper);
   return button;
 }
@@ -23840,17 +23766,16 @@ function buttonFromHeading(heading) {
  * @param {HTMLElement} accordion - An HTML element with the accordion class.
  */
 function launch(accordion) {
-  console.log('wr launched');
-  var toggleOpen = toBool(accordion.dataset.toggleopen),
-    defaultOpen = toBool(accordion.dataset.defaultopen),
-    allowSingle = toBool(accordion.dataset.allowsingle),
+  var toggleOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.toggleopen),
+    defaultOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.defaultopen),
+    allowSingle = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.allowsingle),
     headings = Array.from(accordion.parentNode.querySelectorAll("#".concat(accordion.id, " > .").concat(headingClassName)));
   var idLinked = false;
   if (!(allowSingle || headings.length > 1)) {
     /**
      * not enough content to accordion
      */
-    removeClass(accordion, className, false);
+    Object(_util__WEBPACK_IMPORTED_MODULE_8__["removeClass"])(accordion, className, false);
     return;
   }
   headings.forEach(function (heading) {
@@ -23859,6 +23784,13 @@ function launch(accordion) {
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
+
+    // v23 added to wrap accordion heading and body in a div
+    var accordionSectionWrap = document.createElement('div');
+    accordionSectionWrap.classList.add('accordion-v23__section');
+    accordionSectionWrap.setAttribute('data-open', 'false');
+    Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(accordionSectionWrap, [heading, content]);
+    accordion.appendChild(accordionSectionWrap);
     setSection(heading, false);
     heading.nextElementSibling.dataset.closed = 'true';
     button.addEventListener('click', function () {
@@ -23880,35 +23812,10 @@ function launch(accordion) {
     //finds accordion heading in URL
     var urlHash = window.location.hash;
     var heading = accordion.querySelector('' + urlHash + '');
-    var viewportWidth = window.innerWidth;
-
-    // condition when hash in URL is of a 'always' accordion, regardless of viewport width
     if (heading) {
       // Wait for DOM to load before accessing selected accordion
-      console.log('Hash found on page load');
-      window.onload = function () {
-        setSection(heading, true);
-        heading.nextElementSibling.dataset.closed = 'false';
-        scroll.to(heading, scrollDuration);
-      };
-    }
-    //
-    //
-    // POSSIBLY DELETE BELOW
-    //
-    //THEN ALSO DELETE SCREENWIDTH UTIL
-    //
-    // determines if the hash is perhaps of an accordion which kicks in on smaller viewports, as part of a tabs / accordion pattern
-    if (accordion.parentElement.className === 'tabs--accordion' && accordion.parentElement.querySelector('' + urlHash + '') && viewportWidth <= screenWidth('tablet')) {
-      var hashConvert = urlHash.replace('tabs', 'accordion').replace('link', 'header');
-
-      // Wait for DOM to load before accessing selected accordion
-      window.onload = function () {
-        heading = accordion.parentElement.querySelector('' + hashConvert + '');
-        setSection(heading, true);
-        heading.nextElementSibling.dataset.closed = 'false';
-        scroll.to(heading, scrollDuration);
-      };
+      setSection(heading, true);
+      heading.nextElementSibling.dataset.closed = 'false';
     }
   }
 }
@@ -24048,6 +23955,64 @@ var aria = {
   valueText: 'aria-valuetext'
 };
 /* harmony default export */ __webpack_exports__["default"] = (Object.freeze(aria));
+
+/***/ }),
+
+/***/ "./src/components/accordion-v23/util.js":
+/*!**********************************************!*\
+  !*** ./src/components/accordion-v23/util.js ***!
+  \**********************************************/
+/*! exports provided: toBool, partialMatchFn, fullMatchFn, removeClass, reduceMotion, verticallyInWindow, appendAll */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toBool", function() { return toBool; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "partialMatchFn", function() { return partialMatchFn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fullMatchFn", function() { return fullMatchFn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeClass", function() { return removeClass; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reduceMotion", function() { return reduceMotion; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "verticallyInWindow", function() { return verticallyInWindow; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "appendAll", function() { return appendAll; });
+/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.filter.js */ "./node_modules/core-js/modules/es6.array.filter.js");
+/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.regexp.split.js */ "./node_modules/core-js/modules/es6.regexp.split.js");
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+function toBool(s) {
+  return s === 'true' ? true : false;
+}
+var partialMatchFn = function partialMatchFn(m) {
+    return function (s) {
+      return s.indexOf(m) < 0;
+    };
+  },
+  fullMatchFn = function fullMatchFn(m) {
+    return function (s) {
+      return s !== m;
+    };
+  };
+function removeClass(elem, className, removePartials) {
+  var matchFn = removePartials ? partialMatchFn(className) : fullMatchFn(className);
+  elem.className = elem.className.split(/\s+/).filter(function (s) {
+    return matchFn(s);
+  }).join(' ');
+}
+function reduceMotion() {
+  var reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  return reducedMotionQuery.matches ? true : false;
+}
+function verticallyInWindow(elem) {
+  return elem.getBoundingClientRect().top >= 0 && elem.getBoundingClientRect().top <= window.innerHeight ? true : false;
+}
+function appendAll(elem, children) {
+  children.forEach(function (child) {
+    return elem.appendChild(child);
+  });
+}
 
 /***/ }),
 
