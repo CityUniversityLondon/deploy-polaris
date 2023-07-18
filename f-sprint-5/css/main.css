@@ -29733,6 +29733,36 @@ table tbody > tr > td:hover {
     padding: 20px 20px 15px;
 }
 
+.dropdown-filter__v23 .filter--box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-filter__v23 .filter--box:after {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    border: none;
+    font-family: "FontAwesome";
+    content: "";
+    background: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    right: 2.5rem;
+}
+
+.dropdown-filter__v23 .filter--box select {
+    border: 2px solid #1e1e1e;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+}
+
 @keyframes fade-up {
     from {
         opacity: 0;
