@@ -19012,6 +19012,7 @@ USED IN:
 .cta--ug-v23 {
     background-color: #a9a19c;
     color: #1e1e1e;
+    font-size: 1rem;
 }
 
 .cta--ug-v23:hover, .cta--ug-v23:focus, .cta--ug-v23:active {
@@ -19022,6 +19023,7 @@ USED IN:
 .cta--pg-v23 {
     background-color: #002b49;
     color: #ffffff;
+    font-size: 1rem;
 }
 
 .cta--pg-v23:hover, .cta--pg-v23:focus, .cta--pg-v23:active {
@@ -36283,6 +36285,7 @@ html {
 .ug-courses-v23 .promo-box-v23 .cta--main {
     background-color: #a9a19c;
     color: #1e1e1e;
+    font-size: 1rem;
 }
 
 .ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
@@ -36298,6 +36301,7 @@ html {
 .pg-courses-v23 .promo-box-v23 .cta--main {
     background-color: #002b49;
     color: #ffffff;
+    font-size: 1rem;
 }
 
 .pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
