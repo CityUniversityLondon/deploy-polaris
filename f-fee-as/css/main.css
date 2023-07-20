@@ -3855,6 +3855,7 @@ h6 {
 
 .alpha,
 h1,
+.courses-v23__fee__inner .fee-amount,
 .banner-vi--video .banner-vi__content__text__item h1,
 .banner--text-ctas .banner__text .banner__text__subtitle,
 .section--prussian .banner__text__subtitle,
@@ -3884,6 +3885,7 @@ h2 {
 
 .gamma,
 h3,
+.courses-v23__fee__inner .fee-entry,
 .course-search__title {
     font-size: 23.04px;
     font-size: 1.44rem;
@@ -4135,7 +4137,7 @@ a:active {
     outline: 2px dotted #1e1e1e;
 }
 
-h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, .courses-v23__fee__inner .fee-amount > a {
     border-bottom-width: 2px;
 }
 
@@ -4179,7 +4181,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 .ghost h3:before,
 .ghost h4:before,
 .ghost h5:before,
-.ghost h6:before {
+.ghost h6:before, .ghost .courses-v23__fee__inner .fee-amount:before, .courses-v23__fee__inner .ghost .fee-amount:before {
     transform: translateX(105%);
     animation: slide-right-out 0.2s ease 0s both normal;
     position: absolute;
@@ -4199,7 +4201,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 .ghost:hover h3:before,
 .ghost:hover h4:before,
 .ghost:hover h5:before,
-.ghost:hover h6:before {
+.ghost:hover h6:before, .ghost:hover .courses-v23__fee__inner .fee-amount:before, .courses-v23__fee__inner .ghost:hover .fee-amount:before {
     transform: translateX(-105%);
     animation: slide-left-in 0.2s ease 0s both normal;
     opacity: 1;
@@ -9715,6 +9717,7 @@ svg:not(:root) {
 .courses-v23__fee {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
+    display: grid;
 }
 
 @media (min-width: 650px) {
@@ -9729,14 +9732,62 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 650px) {
+    .courses-v23__fee {
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 0;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 650px) {
+    .courses-v23__fee {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 901px) {
+    .courses-v23__fee {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.courses-v23__fee-block {
+    grid-column: span 6;
+}
+
+.courses-v23__fee__heading {
+    margin-bottom: 1.5rem;
+}
+
+.courses-v23__fee__inner {
+    padding: 3.5rem 1.5rem;
+}
+
+.courses-v23__fee__inner .fee-entry {
+    font-weight: 600;
+}
+
+.courses-v23__fee__inner .fee-amount {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
 .ug-courses-v23 .courses-v23__fee__inner {
     background-color: #a9a19c;
     color: #1e1e1e;
 }
 
+.ug-courses-v23 .courses-v23__fee__inner .fee-amount--bar {
+    border-top: 1px solid #1e1e1e;
+}
+
 .pg-courses-v23 .courses-v23__fee__inner {
     background-color: #002b49;
     color: #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__fee__inner .fee-amount--bar {
+    border-top: 1px solid #ffffff;
 }
 
 .courses-v23 {
@@ -9763,6 +9814,7 @@ svg:not(:root) {
 .courses-v23__overview__grid {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
+    display: grid;
 }
 
 @media (min-width: 650px) {
