@@ -9712,6 +9712,16 @@ svg:not(:root) {
     }
 }
 
+.ug-courses-v23 .courses-v23--fee--block {
+    background-color: #a9a19c;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .courses-v23--fee--block {
+    background-color: #002b49;
+    color: #ffffff;
+}
+
 .courses-v23 {
     width: 100%;
     margin-left: auto;
