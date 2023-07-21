@@ -8146,7 +8146,7 @@ svg:not(:root) {
 
 .header__logo a,
 .header__logo img {
-    width: 140px;
+    width: 8rem;
     display: block;
 }
 
@@ -8155,7 +8155,7 @@ svg:not(:root) {
     color: inherit;
     border-bottom-width: 0;
     display: block;
-    min-height: 65px;
+    min-height: 3rem;
 }
 
 .header__logo a:hover, .header__logo a:focus, .header__logo a:active {
@@ -8174,10 +8174,10 @@ svg:not(:root) {
 
 @media (max-width: 500px) {
     .header__logo a {
-        min-height: 52px;
+        min-height: 3rem;
     }
     .header__logo img {
-        width: 112px;
+        width: 6rem;
     }
 }
 
