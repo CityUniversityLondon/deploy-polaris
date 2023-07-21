@@ -36309,6 +36309,9 @@ html {
     outline-offset: 0.1875rem;
 }
 
+/*
+* Styles for arrow and responsive slider
+*/
 .js .slider-v23:not([data-style='dots']) {
     outline: thick solid pink;
     display: flex;
@@ -36938,9 +36941,15 @@ html {
     overflow: hidden;
     margin: 1rem 0;
     position: relative;
+    overflow: hidden;
+    margin: 1rem 0;
+    position: relative;
 }
 
 .js .slider-v23[data-style='dots'] .slide {
+    top: 0;
+    transition: left 1s ease-in-out;
+    width: 100%;
     /*
         @include media('reducemotion') {
             transition: none;
@@ -36969,6 +36978,11 @@ html {
     margin-top: 0;
     top: 0;
     transition: left 1s ease-in-out;
+    /*
+            @include media('reducemotion') {
+                transition: none;
+            }
+            */
 }
 
 .js .slider-v23[data-style='dots'] .slide:focus {
@@ -37063,4 +37077,8 @@ html {
 
 .js .slider-v23[data-style='dots']:not([data-count='0']) + .slider-v23__controls button[aria-expanded='true']:active, .js .slider-v23[data-style='dots']:not([data-count='0']) + .slider-v23__controls button[aria-expanded='true']:focus {
     box-shadow: none;
+}
+
+.js .slider-v23[data-style='dots'][data-count='0'] + .slider-v23__controls {
+    display: none;
 }
