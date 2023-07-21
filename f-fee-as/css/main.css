@@ -3885,7 +3885,7 @@ h2 {
 
 .gamma,
 h3,
-.courses-v23__fee__inner .fee-entry,
+.courses-v23__fee__inner .fee-amount__sub,
 .course-search__title {
     font-size: 23.04px;
     font-size: 1.44rem;
@@ -3897,7 +3897,8 @@ h3 {
 }
 
 .delta,
-h4 {
+h4,
+.courses-v23__fee__inner .fee-entry {
     font-size: 19.2px;
     font-size: 1.2rem;
     line-height: 1.355;
@@ -9714,10 +9715,32 @@ svg:not(:root) {
     }
 }
 
+.polaris-guidline--fullscreen {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+
+@media (max-width: 500px) {
+    .polaris-guidline--fullscreen {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .polaris-guidline--fullscreen {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 .courses-v23__fee {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
     display: grid;
+    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 650px) {
@@ -9751,12 +9774,24 @@ svg:not(:root) {
     }
 }
 
-.courses-v23__fee-block {
-    grid-column: span 6;
+.courses-v23__fee p,
+.courses-v23__fee h2,
+.courses-v23__fee h3 {
+    margin-bottom: 0;
+    padding: 0;
 }
 
-.courses-v23__fee__heading {
+.courses-v23__fee p {
+    margin-bottom: 0.75rem;
+}
+
+.courses-v23__fee .courses-v23--fee__heading {
+    font-weight: 500;
     margin-bottom: 1.5rem;
+}
+
+.courses-v23__fee-block {
+    grid-column: span 6;
 }
 
 .courses-v23__fee__inner {
@@ -9764,12 +9799,21 @@ svg:not(:root) {
 }
 
 .courses-v23__fee__inner .fee-entry {
-    font-weight: 600;
+    font-weight: 450;
+    margin-bottom: 0;
 }
 
 .courses-v23__fee__inner .fee-amount {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 900;
+}
+
+.courses-v23__fee__inner .fee-amount--bar {
+    padding-top: 0.5rem;
+}
+
+.courses-v23__fee__inner .fee-amount__sub {
+    font-weight: 500;
 }
 
 .ug-courses-v23 .courses-v23__fee__inner {
@@ -9778,7 +9822,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__fee__inner .fee-amount--bar {
-    border-top: 1px solid #1e1e1e;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .pg-courses-v23 .courses-v23__fee__inner {
@@ -9787,7 +9831,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__fee__inner .fee-amount--bar {
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .courses-v23 {
