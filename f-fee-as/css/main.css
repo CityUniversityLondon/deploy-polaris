@@ -9790,6 +9790,13 @@ svg:not(:root) {
     margin-bottom: 1.5rem;
 }
 
+@media (max-width: 650px) {
+    .courses-v23__fee .courses-v23--fee__heading {
+        margin-bottom: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
 .courses-v23__fee-block {
     grid-column: span 6;
 }
