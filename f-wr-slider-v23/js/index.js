@@ -27108,10 +27108,23 @@ function launchDot(slider) {
   // Wrap element around slider__controls
   controlsWrapper.className = className + '__controls';
   controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, 'Slider navigation');
+  var sliderContainer = document.createElement('div');
+  sliderContainer.classList.add('slider-v23--dot__container');
+  sliderContainer.setAttribute('data-count', slider.dataset.count);
+  slider.parentElement.appendChild(sliderContainer);
+  sliderContainer.appendChild(slider);
 
-  // Places controls directly after 'ul' containing the slides
-  slider.nextElementSibling ? slider.parentElement.insertBefore(controlsWrapper, slider.nextElementSibling) : slider.parentElement.appendChild(controlsWrapper);
-
+  /*
+     // Places controls directly after 'ul' containing the slides
+     slider.nextElementSibling
+         ? slider.parentElement.insertBefore(
+               controlsWrapper,
+               slider.nextElementSibling
+           )
+         : slider.parentElement.appendChild(controlsWrapper);
+      
+      */
+  slider.parentElement.parentElement.appendChild(controlsWrapper);
   //add event listeners
   addSwipeEvents(slider, controlsWrapper);
 
