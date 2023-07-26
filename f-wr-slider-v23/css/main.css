@@ -9790,116 +9790,6 @@ svg:not(:root) {
     position: relative;
 }
 
-.js .courses-v23__careers .slider-v23__heading {
-    padding: 0 1.5rem;
-    margin-bottom: 0;
-    font-size: 1.728rem;
-}
-
-.js .courses-v23__careers .slider-v23--dot__container {
-    padding: 1.5rem;
-}
-
-.js .courses-v23__careers .slider-v23[data-style="dots"] {
-    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
-    background-color: #ffffff;
-    margin: 0;
-}
-
-.js .courses-v23__careers .slider-v23[data-style="dots"] .alumni-card-v23 {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.js .courses-v23__careers .alumni-card-v23__content__image {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.js .courses-v23__careers .alumni-card-v23__content__image img {
-    width: 6.5rem;
-    background-clip: padding-box;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.js .courses-v23__careers .alumni-card-v23__content__image:after {
-    content: '';
-    display: block;
-    height: 0.25rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 4rem;
-}
-
-.js .courses-v23__careers .alumni-card-v23__content__details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.js .courses-v23__careers .alumni-card-v23__content__details__column {
-    font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-}
-
-.js .courses-v23__careers .alumni-card-v23__cta__link {
-    font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-}
-
-.ug-courses-v23 .courses-v23__careers .slider-v23--dot__container {
-    background: linear-gradient(to right, #f1b434 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #f1b434 3rem, transparent 3rem) 0% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-size: 6rem 6rem;
-}
-
-.ug-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
-    background: #e35205;
-}
-
-.ug-courses-v23 .courses-v23__careers .cta--main {
-    background-color: #e35205;
-    color: #1e1e1e;
-}
-
-.ug-courses-v23 .courses-v23__careers .cta--main:hover, .ug-courses-v23 .courses-v23__careers .cta--main:focus, .ug-courses-v23 .courses-v23__careers .cta--main:active {
-    background-color: #c54704;
-    outline-offset: 0.1875rem;
-}
-
-.pg-courses-v23 .courses-v23__careers .slider-v23--dot__container {
-    background: linear-gradient(to right, #006699 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #006699 3rem, transparent 3rem) 0% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-size: 6rem 6rem;
-}
-
-.pg-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
-    background: #002b49;
-}
-
-.pg-courses-v23 .courses-v23__careers .cta--main {
-    background-color: #002b49;
-    color: #ffffff;
-}
-
-.pg-courses-v23 .courses-v23__careers .cta--main:hover, .pg-courses-v23 .courses-v23__careers .cta--main:focus, .pg-courses-v23 .courses-v23__careers .cta--main:active {
-    background-color: #00192a;
-    outline-offset: 0.1875rem;
-}
-
 .vertical-menu__page-link,
 .vertical-menu__toggle-link {
     background-color: inherit;
@@ -19179,6 +19069,7 @@ USED IN:
 .cta--alumni-ug-v23 {
     background-color: #e35205;
     color: #1e1e1e;
+    padding: 0.75rem 1.25rem;
 }
 
 .cta--alumni-ug-v23:hover, .cta--alumni-ug-v23:focus, .cta--alumni-ug-v23:active {
@@ -19189,6 +19080,7 @@ USED IN:
 .cta--alumni-pg-v23 {
     background-color: #002b49;
     color: #ffffff;
+    padding: 0.75rem 1.25rem;
 }
 
 .cta--alumni-pg-v23:hover, .cta--alumni-pg-v23:focus, .cta--alumni-pg-v23:active {
@@ -36955,33 +36847,145 @@ html {
     visibility: hidden;
 }
 
-.js .slider-v23--dot__container + .slider-v23__controls {
+.js .slider-v23__container + .slider-v23__controls {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.js .slider-v23--dot__container + .slider-v23__controls button {
+.js .slider-v23__container + .slider-v23__controls button {
     border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     margin-right: 1rem;
     border: 1px solid #1e1e1e;
 }
 
-.js .slider-v23--dot__container + .slider-v23__controls button:last-of-type {
+.js .slider-v23__container + .slider-v23__controls button:last-of-type {
     margin-right: 0;
 }
 
-.js .slider-v23--dot__container + .slider-v23__controls button:hover, .js .slider-v23--dot__container + .slider-v23__controls button:focus, .js .slider-v23--dot__container + .slider-v23__controls button:active {
+.js .slider-v23__container + .slider-v23__controls button:hover, .js .slider-v23__container + .slider-v23__controls button:focus, .js .slider-v23__container + .slider-v23__controls button:active {
     outline-offset: 0.1875rem;
 }
 
-.js .slider-v23--dot__container + .slider-v23__controls button[aria-expanded='true'] {
+.js .slider-v23__container + .slider-v23__controls button[aria-expanded='true'] {
     background-color: #1e1e1e;
     width: 1.75rem;
     height: 1.75rem;
 }
 
-.js .slider-v23--dot__container[data-count='1'] + .slider-v23__controls {
+.js .slider-v23__container[data-count='1'] + .slider-v23__controls {
     display: none;
+}
+
+.js .courses-v23__careers .slider-v23__heading {
+    padding: 0 1.5rem;
+    margin-bottom: 0;
+    font-size: 1.728rem;
+}
+
+.js .courses-v23__careers .slider-v23__container {
+    padding: 1.5rem;
+}
+
+.js .courses-v23__careers .slider-v23__cards[data-style="dots"] {
+    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.js .courses-v23__careers .slider-v23__cards[data-style="dots"] .alumni-card-v23 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.js .courses-v23__careers .alumni-card-v23__content__image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.js .courses-v23__careers .alumni-card-v23__content__image img {
+    width: 6.5rem;
+    background-clip: padding-box;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.js .courses-v23__careers .alumni-card-v23__content__image:after {
+    content: '';
+    display: block;
+    height: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 4rem;
+}
+
+.js .courses-v23__careers .alumni-card-v23__content__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.js .courses-v23__careers .alumni-card-v23__content__details__column {
+    font-weight: 700;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.js .courses-v23__careers .alumni-card-v23__cta__link {
+    font-weight: 700;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.ug-courses-v23 .courses-v23__careers .slider-v23__container {
+    background: linear-gradient(to right, #f1b434 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #f1b434 3rem, transparent 3rem) 0% 100%;
+    background-repeat: repeat, repeat;
+    background-size: auto, auto;
+    background-repeat: no-repeat;
+    background-size: 6rem 6rem;
+}
+
+.ug-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
+    background: #e35205;
+}
+
+.ug-courses-v23 .courses-v23__careers .cta--main {
+    background-color: #e35205;
+    color: #1e1e1e;
+    padding: 0.75rem 1.25rem;
+}
+
+.ug-courses-v23 .courses-v23__careers .cta--main:hover, .ug-courses-v23 .courses-v23__careers .cta--main:focus, .ug-courses-v23 .courses-v23__careers .cta--main:active {
+    background-color: #c54704;
+    outline-offset: 0.1875rem;
+}
+
+.pg-courses-v23 .courses-v23__careers .slider-v23__container {
+    background: linear-gradient(to right, #006699 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #006699 3rem, transparent 3rem) 0% 100%;
+    background-repeat: repeat, repeat;
+    background-size: auto, auto;
+    background-repeat: no-repeat;
+    background-size: 6rem 6rem;
+}
+
+.pg-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
+    background: #002b49;
+}
+
+.pg-courses-v23 .courses-v23__careers .cta--main {
+    background-color: #002b49;
+    color: #ffffff;
+    padding: 0.75rem 1.25rem;
+}
+
+.pg-courses-v23 .courses-v23__careers .cta--main:hover, .pg-courses-v23 .courses-v23__careers .cta--main:focus, .pg-courses-v23 .courses-v23__careers .cta--main:active {
+    background-color: #00192a;
+    outline-offset: 0.1875rem;
 }
