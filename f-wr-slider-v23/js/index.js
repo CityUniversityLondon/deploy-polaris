@@ -26705,9 +26705,9 @@ function responsiveOptimisation(slides, slider, controls, direction) {
   // Resets pagination during screensize change - not during launch
   if (controls) {
     slides[Math.floor((currentSlide + direction) / 2)].focus();
-    controls.querySelector('.slider__indicator__total').innerText = slides.length;
+    controls.querySelector('.slider-v23__indicator__total').innerText = slides.length;
     //slides.length == 1? controls.querySelector('.slider__indicator__total').innerText=9 : controls.querySelector('.slider__indicator__total').innerText=slides.length;
-    controls.querySelector('.slider__indicator__current').innerText = Math.floor((currentSlide + direction) / 2) + 1;
+    controls.querySelector('.slider-v23__indicator__current').innerText = Math.floor((currentSlide + direction) / 2) + 1;
     updateButtonState(slider, controls);
   }
   slider.setAttribute('data-count', slides.length);
@@ -27009,25 +27009,17 @@ function launchArrow(slider) {
   controlsWrapper.appendChild(indicator);
   controlsWrapper.appendChild(prevButton);
   controlsWrapper.appendChild(nextButton);
-  controlsWrapper.className = className + '__controls';
+  responsive == 'responsive' ? controlsWrapper.className = className + '__controls ' + className + '__controls--responsive' : controlsWrapper.className = className + '__controls ' + className + '__controls--arrows';
   controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, 'Slider navigation');
 
   // Places controls directly after 'ul' containing the slides
+
   slider.nextElementSibling ? slider.parentElement.insertBefore(controlsWrapper, slider.nextElementSibling) : slider.parentElement.appendChild(controlsWrapper);
 
-  /**** 
-   * 
-   * 
-   * 
-   
-    // WR possibly add this like in Dot slider:
-   // Places controls directly after the element wrapping the 'ul' slides
-   // slider.parentElement.parentElement.appendChild(controlsWrapper);
-    
-   *
-   *
-   *
-   ****/
+  /*
+      //Places controls directly after the element wrapping the 'ul' slides
+      slider.parentElement.parentElement.appendChild(controlsWrapper);
+       */
 
   // Add event listeners
   addSwipeEvents(slider, controlsWrapper);
@@ -27120,7 +27112,7 @@ function launchDot(slider) {
   }, true);
 
   // Wrap element around slider__controls
-  controlsWrapper.className = className + '__controls';
+  controlsWrapper.className = className + '__controls ' + className + '__controls--dots';
   controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, 'Slider navigation');
 
   // Places controls directly after the element wrapping the 'ul' slides
