@@ -24688,8 +24688,8 @@ function reverseOptimisation(slider, controls, direction) {
 
   // Resets pagination and places focus on first slide
   slides[currentSlide * 2 + (Math.round(direction / 2) + direction) + adjustment].focus();
-  controls.querySelector('.slider__indicator__total').innerText = slides.length;
-  controls.querySelector('.slider__indicator__current').innerText = currentSlide * 2 + (Math.round(direction / 2) + direction + 1) + adjustment;
+  controls.querySelector('.slider-v23__indicator__total').innerText = slides.length;
+  controls.querySelector('.slider-v23__indicator__current').innerText = currentSlide * 2 + (Math.round(direction / 2) + direction + 1) + adjustment;
   slider.setAttribute('data-count', slides.length);
   updateButtonState(slider, controls);
   return slides;
@@ -24722,6 +24722,7 @@ function updateButtonState(slider, controls) {
 * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
 */
 function handleNextPrevClick(slider, controls, direction) {
+  console.log('handleNextPrevClick');
   var slides = Array.from(slider.children);
   var responsive = slider.getAttribute('data-style');
   var optimised = slider.getAttribute('data-optimised');
@@ -24739,10 +24740,13 @@ function handleNextPrevClick(slider, controls, direction) {
     currentPage = controls.querySelector(".".concat(className, "__indicator__current")),
     nextButton = controls.querySelector(".".concat(className, "__controls__next")),
     prevButton = controls.querySelector(".".concat(className, "__controls__prev"));
+  var next = current.nextElementSibling;
+  var previous = current.previousElementSibling;
 
   // Next arrow clicked
   if (direction === 1) {
-    var next = current.nextElementSibling;
+    //const next = current.nextElementSibling;
+
     if (next) {
       // Disables buttons during slide animation from current to next
       nextButton.setAttribute('disabled', true);
@@ -24764,19 +24768,22 @@ function handleNextPrevClick(slider, controls, direction) {
 
       // Updates position of slides
       // Moves current slide to back to previous position
+      previous ? previous.classList.remove('slide--prev') : '';
+      current.classList.add('slide--prev');
       current.dataset.sliderposition = -1;
-      current.dataset.smallposition = -1;
       // Sets 'active' current slide
       next.dataset.hidden = false;
       next.dataset.smallhidden = false;
+      next.classList.remove('slide--next');
+      next.nextElementSibling ? next.nextElementSibling.classList.add('slide--next') : '';
       next.dataset.sliderposition = 0;
-      next.dataset.smallposition = 0;
       // Updates pagination to current slide position
       currentPage.innerText = slides.indexOf(next) + 1;
     }
   } else {
     // Previous arrow clicked
-    var previous = current.previousElementSibling;
+    //const previous = current.previousElementSibling;
+
     if (previous) {
       nextButton.setAttribute('disabled', true);
       prevButton.setAttribute('disabled', true);
@@ -24793,13 +24800,15 @@ function handleNextPrevClick(slider, controls, direction) {
 
       // Updates position of slides
       // Moves current slide forward to next position
+      next ? next.classList.remove('slide--next') : '';
+      current.classList.add('slide--next');
       current.dataset.sliderposition = 1;
-      current.dataset.smallposition = 1;
       // Sets current / active slide
       previous.dataset.hidden = false;
       previous.dataset.smallhidden = false;
+      previous.classList.remove('slide--prev');
+      previous.previousElementSibling ? previous.previousElementSibling.classList.add('slide--prev') : '';
       previous.dataset.sliderposition = 0;
-      previous.dataset.smallposition = 0;
       // Updates pagination to current slide
       currentPage.innerText = slides.indexOf(previous) + 1;
     }
@@ -24824,18 +24833,17 @@ function prepareSlides(slides, current) {
     // 0 = active / first slide
     if (i === current) {
       slide.dataset.sliderposition = 0;
-      slide.dataset.smallposition = 0;
       slide.dataset.hidden = false;
     } else if (i > current) {
       // 1 = next slide
       slide.dataset.sliderposition = 1;
-      slide.dataset.smallposition = 1;
       slide.dataset.hidden = 'true';
       slide.dataset.smallhidden = 'true';
+      current + 1 == i ? slide.classList.add('slide--next') : '';
     } else {
       slide.dataset.sliderposition = -1;
-      slide.dataset.smallposition = -1;
       slide.dataset.hidden = true;
+      current - 1 == i ? slide.classList.add('slide--prev') : '';
       // @ WR review smallhidden - what was intended by it?
     }
   });
@@ -24989,11 +24997,9 @@ function launchDot(slider) {
     // Sets data attributes for slides which controls their position within slide collection
     if (i === 0) {
       slide.dataset.sliderposition = 0; // 0 for active slide
-      slide.dataset.smallposition = 0;
       slide.dataset.hidden = false;
     } else {
       slide.dataset.sliderposition = 1; // 1 for 'next' slide
-      slide.dataset.smallposition = 1;
       slide.dataset.hidden = 'true';
       slide.dataset.smallhidden = 'true';
     }
@@ -25082,7 +25088,6 @@ function handleDotClick(slider, controlsWrapper, selection) {
     // Cycles through slides and makes active the one 'selected'
     if (i === selection) {
       slide.dataset.sliderposition = 0;
-      slide.dataset.smallposition = 0;
       slide.dataset.hidden = false;
       slide.addEventListener('transitionend', function focusNext() {
         slide.removeEventListener('transitionend', focusNext, true);
@@ -25093,14 +25098,12 @@ function handleDotClick(slider, controlsWrapper, selection) {
     // Places slides 'after' current slide in next position
     else if (i > selection) {
       slide.dataset.sliderposition = 1;
-      slide.dataset.smallposition = 1;
       slide.dataset.hidden = true;
       // @ WR review smallhidden - what was intended by it?
     }
     // Places slides 'before' current slide in previous position
     else {
       slide.dataset.sliderposition = -1;
-      slide.dataset.smallposition = -1;
       slide.dataset.hidden = true;
       // @ WR review smallhidden - what was intended by it?
     }
