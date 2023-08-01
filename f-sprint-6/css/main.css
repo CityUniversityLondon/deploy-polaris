@@ -36314,6 +36314,254 @@ html {
     scroll-behavior: smooth;
 }
 
+@media screen {
+    .js .accordion-v23 .accordion-v23__section {
+        background-clip: padding-box;
+        border-radius: 0.5rem;
+    }
+    .js .accordion-v23 .accordion-v23__section[data-open='true'] {
+        outline: 2px dotted #1e1e1e;
+        outline-offset: 4px;
+    }
+    .js .accordion-v23 .accordion-v23__body {
+        padding: 1rem;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button {
+        background-color: #d8d8d8;
+        border: 2px solid #d8d8d8;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:hover, .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:focus, .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:active {
+        background-color: #ececec;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading[data-open='true'] button {
+        background-color: #ececec;
+        border-bottom: none;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
+        background-color: #ececec;
+    }
+    .js .accordion-v23 .accordion-v23__heading {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading:focus {
+        border: 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading:active {
+        border: 0;
+        outline: 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading button {
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+        color: #1e1e1e;
+        outline: 2px solid transparent;
+        background-color: #ececec;
+        background-clip: padding-box;
+        border-radius: 0.5rem;
+        border: 2px solid #ececec;
+    }
+    .js .accordion-v23 .accordion-v23__heading button div {
+        grid-column-gap: 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator {
+        /*
+            align-self: center;
+            text-align: right;
+            height: 100%;
+            */
+        background-color: transparent;
+        color: #1e1e1e;
+        width: 2rem;
+        height: 2rem;
+        border-width: 0;
+        position: relative;
+        cursor: pointer;
+        transition: transform 1s ease;
+        display: inline-block;
+        border: 2px solid #1e1e1e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::before, .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::after {
+        content: "";
+        background-color: currentColor;
+        width: 0.2rem;
+        height: 1rem;
+        display: block;
+        position: absolute;
+        animation: depressed 0.1s ease both;
+        margin: 0.5rem;
+    }
+    .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::after {
+        animation: bar 0.1s ease both reverse;
+    }
+    .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator:before {
+        /*
+                content: fa-content($fa-var-plus);
+                display: inline-block;
+                text-decoration: none;
+                */
+    }
+    .js .accordion-v23 .accordion-v23__heading button:hover {
+        background-color: #ffffff;
+        border: 2px solid #d8d8d8;
+        /*
+            @include media('hover') {
+                text-decoration: underline;
+                color: lightblue;
+                outline: $border-width-default $border-style-default transparent;
+                background: orange;
+            }
+            */
+    }
+    .js .accordion-v23 .accordion-v23__heading button:hover .accordion-v23__heading__text {
+        text-decoration: underline;
+    }
+    .js .accordion-v23 .accordion-v23__heading button:focus {
+        border: 2px solid #d8d8d8;
+        outline: 2px solid #1e1e1e;
+        outline-offset: 4px;
+        background-color: #ffffff;
+    }
+    .js .accordion-v23 .accordion-v23__heading button:active {
+        border: 2px solid #d8d8d8;
+        outline: 2px dotted #1e1e1e;
+        outline-offset: 4px;
+        background-color: #ffffff;
+    }
+    .js .accordion-v23 .accordion-v23__heading button:active .accordion-v23__heading__text {
+        text-decoration: underline;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] {
+        margin-top: 1rem;
+        border-bottom: 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true']:focus, .js .accordion-v23 .accordion-v23__heading[data-open='true']:active {
+        outline: 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button {
+        border: 2px solid #d8d8d8;
+        border-bottom: none;
+        /*
+            border-top: $border-width-default $border-style-default $color-gainsboro;
+            border-left: $border-width-default solid yellow;
+            border-right: $border-width-default solid yellow;
+            */
+        text-decoration: underline;
+        background-clip: padding-box;
+        border-radius: 0.5rem 0.5rem 0 0;
+        background-color: #ffffff;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__text:hover {
+        /*
+                    @include media('hover') {
+                        text-decoration: underline;
+                    }
+                    */
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator {
+        animation: pressed 0.1s ease both;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator::after {
+        animation: bar 0.1s ease both;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator:before {
+        /*
+                    content: fa-content($fa-var-minus);
+                    display: inline-block;
+                    text-decoration: none;
+                    */
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button:focus, .js .accordion-v23 .accordion-v23__heading[data-open='true'] button:active {
+        /*
+                border-top: $border-width-default dotted
+                    yellow;
+                border-left: $border-width-default dotted
+                    yellow;
+                border-right: $border-width-default dotted
+                    yellow;
+                border-bottom: $border-width-hairline $border-style-default
+                    darkgray;
+                outline: 0;
+                */
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button:hover {
+        /*
+                @include media('hover') {
+                    background: orange;
+                    color: yellow;
+                }
+                */
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
+        border: 2px solid #d8d8d8;
+        border-top: none;
+        background-clip: padding-box;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body p {
+        margin: 1rem 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body > :first-child {
+        margin-top: 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body > :last-child {
+        margin-bottom: 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body:first-child {
+        margin-top: 0;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
+        margin-bottom: 1rem;
+    }
+    .js .accordion-v23 .accordion-v23__heading + .accordion-v23__body {
+        overflow-y: hidden;
+        transition-duration: 0.2s;
+        transition-property: height;
+        transition-timing-function: ease;
+    }
+    .js .accordion-v23 .accordion-v23__heading + .accordion-v23__body[data-closed='true'] {
+        display: none;
+    }
+}
+
+@keyframes pressed {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes depressed {
+    0% {
+        transform: rotateZ(90deg);
+    }
+    99.999% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes bar {
+    from {
+        transform: rotateZ(-90deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
 .student-life-v23__wrap {
     margin-left: 1rem;
     margin-right: 1rem;
