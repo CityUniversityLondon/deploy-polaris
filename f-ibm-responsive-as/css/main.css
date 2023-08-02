@@ -10362,6 +10362,20 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 1600px) {
+    .bayes-news {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .bayes-news {
+        margin-left: calc((100% - 1440px)/2);
+        margin-right: calc((100% - 1440px)/2);
+    }
+}
+
 @media (min-width: 901px) {
     .bayes-news__wrapper {
         display: flex;
@@ -10771,6 +10785,20 @@ svg:not(:root) {
     .bayes-events {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .bayes-events {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .bayes-events {
+        margin-left: calc((100% - 1440px)/2);
+        margin-right: calc((100% - 1440px)/2);
     }
 }
 
@@ -25332,6 +25360,13 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     height: 100%;
     position: relative;
     object-fit: cover;
+}
+
+@media (min-width: 1600px) {
+    .connect-social__card--insta img {
+        max-height: 25rem;
+        width: auto;
+    }
 }
 
 .connect-social__card__timestamp {
