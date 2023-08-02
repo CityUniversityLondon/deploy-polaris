@@ -37059,26 +37059,26 @@ html {
     padding: 1rem;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-smallposition='-1'] {
+.js .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'] {
     left: -100%;
     position: absolute;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-smallposition='-1'][data-smallhidden='true'] {
+.js .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'][data-smallhidden='true'] {
     visibility: hidden;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-smallposition='0'] {
+.js .slider-v23[data-style='dots'] .slide[data-sliderposition='0'] {
     left: 0;
     position: relative;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-smallposition='1'] {
+.js .slider-v23[data-style='dots'] .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-smallposition='1'][data-smallhidden='true'] {
+.js .slider-v23[data-style='dots'] .slide[data-sliderposition='1'][data-smallhidden='true'] {
     visibility: hidden;
 }
 
