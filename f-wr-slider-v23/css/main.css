@@ -9925,7 +9925,6 @@ svg:not(:root) {
 }
 
 .js .slider-v23--related-courses__wrap {
-    border: thin solid lime;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     grid-column-gap: 0;
@@ -9990,11 +9989,15 @@ svg:not(:root) {
     left: -200%;
 }
 
+.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide[data-sliderposition='-1'][data-hidden='true'] .course-card-v23__details__wrap {
+    opacity: 0;
+}
+
 .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--prev[data-sliderposition='-1'][data-hidden='true'] {
     left: -100%;
 }
 
-.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--prev[data-sliderposition='-1'][data-hidden='true'] .course-card-v23__details__wrap {
+.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--prev .course-card-v23__details__wrap {
     opacity: 0;
 }
 
@@ -10004,12 +10007,17 @@ svg:not(:root) {
     transition: left 1s ease-in-out;
 }
 
+.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide[data-sliderposition='1'][data-hidden='true'] .course-card-v23__details__wrap {
+    opacity: 0;
+}
+
 .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--next[data-sliderposition='1'][data-hidden='true'] {
     z-index: 2;
     left: 100%;
 }
 
-.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--next[data-sliderposition='1'][data-hidden='true'] .course-card-v23__details__wrap {
+.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--next .course-card-v23__details__wrap {
+    animation-duration: 1s;
     opacity: 0;
 }
 
@@ -10031,6 +10039,24 @@ svg:not(:root) {
     display: inline-block;
     padding: 1.25rem;
     width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #1e1e1e;
+}
+
+.js .slider-v23--related-courses__wrap .course-card-v23__details__title {
+    font-weight: 700;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.44rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .js .slider-v23--related-courses__wrap .course-card-v23__content {
@@ -10093,6 +10119,8 @@ svg:not(:root) {
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #f1b434;
     color: #1e1e1e;
+    width: 3rem;
+    height: 3rem;
 }
 
 .pg-courses-v23 .courses-v23__related-courses {
@@ -10130,6 +10158,8 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #006699;
     color: #ffffff;
+    width: 3rem;
+    height: 3rem;
 }
 
 .vertical-menu__page-link,
@@ -37123,6 +37153,9 @@ html {
     overflow: hidden;
     margin: 1rem 0;
     position: relative;
+    overflow: hidden;
+    margin: 1rem 0;
+    position: relative;
 }
 
 .js .slider-v23[data-style='responsive'] .slide {
@@ -37159,10 +37192,17 @@ html {
 }
 
 .js .slider-v23[data-style='responsive'] .slide {
+    top: 0;
+    transition: left 1s ease-in-out;
     width: 100%;
     list-style: none;
     padding: 4px;
     margin-top: 0;
+    /*
+            @include media('reducemotion') {
+                transition: none;
+            }
+            */
 }
 
 .js .slider-v23[data-style='responsive'] .slide ul {
