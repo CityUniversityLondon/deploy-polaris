@@ -12364,6 +12364,30 @@ svg:not(:root) {
     outline: 2px dotted #1e1e1e;
 }
 
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .tertiary-navigation--desktop .tertiary-navigation__list a {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .tertiary-navigation--desktop .tertiary-navigation__list a {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .tertiary-navigation--desktop .tertiary-navigation__list a {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 7680px) {
+    .tertiary-navigation--desktop .tertiary-navigation__list a {
+        font-size: 92px;
+    }
+}
+
 .tertiary-navigation--mobile .tertiary-navigation__list {
     background-color: #f2f2f2;
     padding: 0.5rem 0;
@@ -12427,6 +12451,30 @@ svg:not(:root) {
     border-bottom-color: #1e1e1e;
 }
 
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .tertiary-navigation--mobile .tertiary-navigation__list a {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .tertiary-navigation--mobile .tertiary-navigation__list a {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .tertiary-navigation--mobile .tertiary-navigation__list a {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 7680px) {
+    .tertiary-navigation--mobile .tertiary-navigation__list a {
+        font-size: 92px;
+    }
+}
+
 @media (min-width: 901px) {
     .tertiary-navigation__toggles {
         display: none;
@@ -12474,6 +12522,30 @@ svg:not(:root) {
 .explore-theme .tertiary-navigation--desktop .tertiary-navigation__list a:active {
     color: #ffffff;
     outline: 2px dotted #ffffff;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .explore-theme .tertiary-navigation--desktop .tertiary-navigation__list a {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .explore-theme .tertiary-navigation--desktop .tertiary-navigation__list a {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .explore-theme .tertiary-navigation--desktop .tertiary-navigation__list a {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 7680px) {
+    .explore-theme .tertiary-navigation--desktop .tertiary-navigation__list a {
+        font-size: 92px;
+    }
 }
 
 .url-dropdown select {
