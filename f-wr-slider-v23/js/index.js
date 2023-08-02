@@ -22756,6 +22756,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/bayes-home/Video-banner/bayes-video-banner */ "./src/components/bayes-home/Video-banner/bayes-video-banner.js");
 /* harmony import */ var _components_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/nav-sticky/nav-sticky */ "./src/components/nav-sticky/nav-sticky.js");
 /* harmony import */ var _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/components-v23/slider-v23/slider-v23 */ "./src/components/components-v23/slider-v23/slider-v23.js");
+/* harmony import */ var _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/components-v23/accordion-v23/accordion-v23 */ "./src/components/components-v23/accordion-v23/accordion-v23.js");
 
 
 
@@ -22790,7 +22791,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__["default"]]);
+
+/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__["default"]]);
 
 /***/ }),
 
@@ -23671,6 +23673,138 @@ function launch(el) {
 
 /***/ }),
 
+/***/ "./src/components/aria-attributes.js":
+/*!*******************************************!*\
+  !*** ./src/components/aria-attributes.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_object_freeze_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.object.freeze.js */ "./node_modules/core-js/modules/es6.object.freeze.js");
+/* harmony import */ var core_js_modules_es6_object_freeze_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_freeze_js__WEBPACK_IMPORTED_MODULE_0__);
+
+
+
+/**
+ * WAI-ARIA attributes
+ *
+ * Quicker to type, intellisensible, documents what they're for, and saves a
+ * tiny amount of code by replacing the string 'aria-' with a minifiable
+ * variable and dot notation.
+ *
+ * @module aria-attributes
+ * @author Web Development
+ * @copyright City, University of London 2018
+ */
+
+/**
+ * @readonly
+ * @enum {string}
+ */
+var aria = {
+  /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
+  activeDescendant: 'aria-activedescendant',
+  /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
+  atomic: 'aria-atomic',
+  /** Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be presented if they are made. */
+  autoComplete: 'aria-autocomplete',
+  /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
+  busy: 'aria-busy',
+  /** Indicates the current "checked" state of checkboxes, radio buttons, and other widgets. */
+  checked: 'aria-checked',
+  /** Defines the total number of columns in a table, grid, or treegrid. */
+  colCount: 'aria-colcount',
+  /** Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid. */
+  colIndex: 'aria-colindex',
+  /** Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid. */
+  colSpan: 'aria-colspan',
+  /** Identifies the element (or elements) whose contents or presence are controlled by the current element. */
+  controls: 'aria-controls',
+  /** Indicates the element that represents the current item within a container or set of related elements. */
+  current: 'aria-current',
+  /** Identifies the element (or elements) that describes the object. */
+  describedBy: 'aria-describedby',
+  /** Identifies the element that provides a detailed, extended description for the object. */
+  details: 'aria-details',
+  /** Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. */
+  disabled: 'aria-disabled',
+  /** [Deprecated in ARIA 1.1] Indicates what functions can be performed when a dragged object is released on the drop target. */
+  dropEffect: 'aria-dropeffect',
+  /** Identifies the element that provides an error message for the object. */
+  errorMessage: 'aria-errormessage',
+  /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
+  expanded: 'aria-expanded',
+  /** Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion, allows assistive technology to override the general default of reading in document source order. */
+  flowTo: 'aria-flowto',
+  /** [Deprecated in ARIA 1.1] Indicates an element's "grabbed" state in a drag-and-drop operation. */
+  grabbed: 'aria-grabbed',
+  /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
+  hasPopup: 'aria-haspopup',
+  /** Indicates whether the element is exposed to an accessibility API. */
+  hidden: 'aria-hidden',
+  /** Indicates the entered value does not conform to the format expected by the application. */
+  invalid: 'aria-invalid',
+  /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
+  keyShortcuts: 'aria-keyshortcuts',
+  /** Defines a string value that labels the current element. */
+  label: 'aria-label',
+  /** Identifies the element (or elements) that labels the current element. */
+  labelledBy: 'aria-labelledby',
+  /** Defines the hierarchical level of an element within a structure. */
+  level: 'aria-level',
+  /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
+  live: 'aria-live',
+  /** Indicates whether an element is modal when displayed. */
+  modal: 'aria-modal',
+  /** Indicates whether a text box accepts multiple lines of input or only a single line. */
+  multiLine: 'aria-multiline',
+  /** Indicates that the user may select more than one item from the current selectable descendants. */
+  multiSelectable: 'aria-multiselectable',
+  /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
+  orientation: 'aria-orientation',
+  /** Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship between DOM elements where the DOM hierarchy cannot be used to represent the relationship. */
+  owns: 'aria-owns',
+  /** Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value. A hint could be a sample value or a brief description of the expected format. */
+  placeholder: 'aria-placeholder',
+  /** Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. */
+  posInset: 'aria-posinset',
+  /** Indicates the current "pressed" state of toggle buttons. */
+  pressed: 'aria-pressed',
+  /** Indicates that the element is not editable, but is otherwise operable. */
+  readOnly: 'aria-readonly',
+  /** Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified. */
+  relevant: 'aria-relevant',
+  /** Indicates that user input is required on the element before a form may be submitted. */
+  required: 'aria-required',
+  /** Defines a human-readable, author-localized description for the role of an element. */
+  roleDescription: 'aria-roledescription',
+  /** Defines the total number of rows in a table, grid, or treegrid. */
+  rowCount: 'aria-rowcount',
+  /** Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid. */
+  rowIndex: 'aria-rowindex',
+  /** Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid. */
+  rowSpan: 'aria-rowspan',
+  /** Indicates the current "selected" state of various widgets. */
+  selected: 'aria-selected',
+  /** Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. */
+  setSize: 'aria-setsize',
+  /** Indicates if items in a table or grid are sorted in ascending or descending order. */
+  sort: 'aria-sort',
+  /** Defines the maximum allowed value for a range widget. */
+  valueMax: 'aria-valuemax',
+  /** Defines the minimum allowed value for a range widget. */
+  valueMin: 'aria-valuemin',
+  /** Defines the current value for a range widget. */
+  valueNow: 'aria-valuenow',
+  /** Defines the human readable text alternative of aria-valuenow for a range widget. */
+  valueText: 'aria-valuetext'
+};
+/* harmony default export */ __webpack_exports__["default"] = (Object.freeze(aria));
+
+/***/ }),
+
 /***/ "./src/components/banner/banner-stats.js":
 /*!***********************************************!*\
   !*** ./src/components/banner/banner-stats.js ***!
@@ -24363,6 +24497,287 @@ function launch(el) {
   });
 }
 var className = 'carousel';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
+/***/ "./src/components/components-v23/accordion-v23/accordion-v23.js":
+/*!**********************************************************************!*\
+  !*** ./src/components/components-v23/accordion-v23/accordion-v23.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.split.js */ "./node_modules/core-js/modules/es6.regexp.split.js");
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.symbol.js */ "./node_modules/core-js/modules/es6.symbol.js");
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.array.from.js */ "./node_modules/core-js/modules/es6.array.from.js");
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.string.iterator.js */ "./node_modules/core-js/modules/es6.string.iterator.js");
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.object.to-string.js */ "./node_modules/core-js/modules/es6.object.to-string.js");
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es6.array.iterator.js */ "./node_modules/core-js/modules/es6.array.iterator.js");
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es6.array.filter.js */ "./node_modules/core-js/modules/es6.array.filter.js");
+/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../util */ "./src/components/util.js");
+/* harmony import */ var _aria_attributes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../aria-attributes */ "./src/components/aria-attributes.js");
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Accordion
+ *
+ * @module patterns/accordion/accordion
+ * @author Web Development
+ * @copyright City, University of London 2018-2019
+ */
+//import scroll from 'zenscroll';
+
+var className = 'accordion-v23',
+  headingClassName = className + '__heading',
+  headingTextClassName = headingClassName + '__text',
+  headingIconClassName = headingClassName + '__indicator',
+  bodyClassName = className + '__body',
+  oneSecond = 1000,
+  tenthOfASecond = 100,
+  scrollDuration = Object(_util__WEBPACK_IMPORTED_MODULE_8__["reduceMotion"])() ? 0 : oneSecond,
+  scrollTo = true;
+
+/**
+ * Sets a heading and the button nested within to be open or closed.
+ *
+ * @param {HTMLHeadingElement} heading - An accordion heading.
+ * @param {boolean} open - Set this section to be open?
+ */
+function setSection(heading, open) {
+  heading.dataset.open = open;
+  heading.parentElement.dataset.open = open;
+  heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
+}
+
+/**
+ * Open a section, calculate its height, then close it again.
+ *
+ * With no transition, this is essentially invisible to the user.
+ *
+ * @param {HTMLHeadingElement} heading - An accordion heading.
+ * @return {string} The pixel height of the section when open.
+ */
+function calculateAccordionBodyHeight(heading) {
+  var section = heading.nextElementSibling;
+  setSection(heading, true);
+  section.dataset.closed = 'false';
+  var height = section.offsetHeight + 'px';
+  setSection(heading, false);
+  section.dataset.closed = 'true';
+  return height;
+}
+
+/**
+ * Set style properties for transition.
+ *
+ * @param {HTMLElement} element - The section to transition.
+ * @param {string} initialHeight - The initial height from which to transition.
+ */
+function setupTransition(element, initialHeight) {
+  element.style.height = initialHeight;
+  element.dataset.closed = 'false';
+  return true;
+}
+
+/**
+ * Cleanup after transition.
+ *
+ * @param {HTMLElement} accordionSection - The section that transitioned.
+ */
+function cleanupTransition(section) {
+  var open = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(section.previousElementSibling.dataset.open);
+  section.style.height = null;
+  section.dataset.closed = open ? 'false' : 'true';
+}
+
+/**
+ * Respond to button clicks - open if closed, close if open.
+ *
+ * If opening, will also push the heading ID into the history, so C+Ping the URL
+ * will open the most recently viewed section. Closing a section removes any
+ * hash.
+ *
+ * @param {HTMLButtonElement} button - The button that was clicked.
+ * @param {HTMLElement[]} headings - All headings in this accordion.
+ * @param {boolean} [toggleOpen] - Should other accordion sections close? Default to false.
+ */
+function buttonClick(button, headings, toggleOpen) {
+  var heading = button.parentNode,
+    accordionSection = heading.nextElementSibling;
+  if (button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded) === 'true') {
+    // updates URL hash, by removing hash from URL when accordion closes
+    history.pushState({}, null, location.href.split('#')[0]);
+  } else {
+    // updates URL hash with accordion heading, when accordion opens
+    window.location.hash = event.currentTarget.parentElement.id;
+  }
+
+  /**
+   * After we've transitioned the opening/closing, we want to revert to
+   * letting the CSS size the element. Add a listener to do this that will
+   * self-destruct after running.
+   */
+  accordionSection.addEventListener('transitionend', function () {
+    return cleanupTransition(accordionSection);
+  }, {
+    capture: true,
+    once: true
+  });
+  if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded))) {
+    // Starting height is the current height
+    setupTransition(accordionSection, accordionSection.offsetHeight + 'px');
+    // setTimeout lets the DOM recalculate before we continue, so the transition will fire
+    setTimeout(function () {
+      accordionSection.style.height = '0px';
+    }, tenthOfASecond);
+    setSection(heading, false);
+  } else {
+    // Calclulate and save how big we're transitioning to
+    var sectionHeight = calculateAccordionBodyHeight(heading);
+    // Starting height is 0
+    setupTransition(accordionSection, '0px');
+    // setTimeout lets the DOM recalculate before we continue, so the transition will fire
+    setTimeout(function () {
+      accordionSection.style.height = sectionHeight;
+    }, tenthOfASecond);
+    if (toggleOpen) {
+      var sections = Array.from(heading.parentNode.parentNode.querySelectorAll("#".concat(heading.parentElement.parentElement.id, " > .").concat(bodyClassName)));
+      headings.forEach(function (heading) {
+        return setSection(heading, false);
+      });
+      sections.filter(function (section) {
+        return section.id !== accordionSection.id;
+      }).forEach(function (section) {
+        section.dataset.closed = 'true';
+      });
+    }
+    setSection(heading, true);
+    if (scrollTo && !(Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(heading) && Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(accordionSection))) {
+      scroll.to(heading, scrollDuration);
+    }
+  }
+}
+
+/**
+ * Create a button from the text content of a heading.
+ *
+ * @param {HTMLElement} heading - An accordion heading.
+ * @returns {HTMLButtonElement} An accordion section button.
+ */
+function buttonFromHeading(heading) {
+  var button = document.createElement('button'),
+    // Chrome can't apply grid layout to buttons, need to wrap contents
+    wrapper = document.createElement('div'),
+    textSpan = document.createElement('span'),
+    iconSpan = document.createElement('span');
+  textSpan.className = headingTextClassName;
+  iconSpan.className = headingIconClassName;
+  iconSpan.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].hidden, true);
+  button.setAttribute('type', 'button');
+  textSpan.appendChild(document.createTextNode(heading.textContent));
+  Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(wrapper, [iconSpan, textSpan]);
+  button.appendChild(wrapper);
+  return button;
+}
+
+/**
+ * Transform an element with the accordion class into an accordion.
+ *
+ * accordions should contain an even number of children, alternating headings
+ * and content elements. The element type is unimportant - headings should have
+ * the headingClassName - but headings should contain only text, no other
+ * children.
+ *
+ * e.g.
+ *
+ * <div class="accordion">
+ * <h2 class="accordion__heading">Heading 1</h2>
+ * <div>Content 1</div>
+ * <h2 class="accordion__heading">Heading 2</h2>
+ * <div>Content 2</div>
+ * </div>
+ *
+ * @param {HTMLElement} accordion - An HTML element with the accordion class.
+ */
+function launch(accordion) {
+  var toggleOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.toggleopen),
+    defaultOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.defaultopen),
+    allowSingle = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.allowsingle),
+    headings = Array.from(accordion.parentNode.querySelectorAll("#".concat(accordion.id, " > .").concat(headingClassName)));
+  var idLinked = false;
+  if (!(allowSingle || headings.length > 1)) {
+    /**
+     * not enough content to accordion
+     */
+    Object(_util__WEBPACK_IMPORTED_MODULE_8__["removeClass"])(accordion, className, false);
+    return;
+  }
+  headings.forEach(function (heading) {
+    var content = heading.nextElementSibling,
+      button = buttonFromHeading(heading);
+    content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].labelledBy, heading.id);
+    content.setAttribute('role', 'region');
+    heading.replaceChild(button, heading.firstChild);
+
+    // v23 added to wrap accordion heading and body in a div
+    var accordionSectionWrap = document.createElement('div');
+    accordionSectionWrap.classList.add('accordion-v23__section');
+    accordionSectionWrap.setAttribute('data-open', 'false');
+    Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(accordionSectionWrap, [heading, content]);
+    accordion.appendChild(accordionSectionWrap);
+    setSection(heading, false);
+    heading.nextElementSibling.dataset.closed = 'true';
+    button.addEventListener('click', function () {
+      return buttonClick(button, headings, toggleOpen);
+    }, true);
+  });
+
+  /* Show first item of accordion, if accordion is set to default open,
+         and we haven't linked to a specific section */
+  if (defaultOpen && !idLinked) {
+    setSection(headings[0], true);
+    headings[0].nextElementSibling.dataset.closed = 'false';
+  }
+
+  /**
+   * Checks if hash ID is present in the URL then on page load it will open the corresponding accordordion
+   */
+  if (window.location.hash) {
+    //finds accordion heading in URL
+    var urlHash = window.location.hash;
+    var heading = accordion.querySelector('' + urlHash + '');
+    if (heading) {
+      // Wait for DOM to load before accessing selected accordion
+      setSection(heading, true);
+      heading.nextElementSibling.dataset.closed = 'false';
+    }
+  }
+}
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
@@ -27745,6 +28160,64 @@ var className = 'url-slide';
   launch: launch,
   className: className
 });
+
+/***/ }),
+
+/***/ "./src/components/util.js":
+/*!********************************!*\
+  !*** ./src/components/util.js ***!
+  \********************************/
+/*! exports provided: toBool, partialMatchFn, fullMatchFn, removeClass, reduceMotion, verticallyInWindow, appendAll */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toBool", function() { return toBool; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "partialMatchFn", function() { return partialMatchFn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fullMatchFn", function() { return fullMatchFn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeClass", function() { return removeClass; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reduceMotion", function() { return reduceMotion; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "verticallyInWindow", function() { return verticallyInWindow; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "appendAll", function() { return appendAll; });
+/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.filter.js */ "./node_modules/core-js/modules/es6.array.filter.js");
+/* harmony import */ var core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_filter_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.regexp.split.js */ "./node_modules/core-js/modules/es6.regexp.split.js");
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+function toBool(s) {
+  return s === 'true' ? true : false;
+}
+var partialMatchFn = function partialMatchFn(m) {
+    return function (s) {
+      return s.indexOf(m) < 0;
+    };
+  },
+  fullMatchFn = function fullMatchFn(m) {
+    return function (s) {
+      return s !== m;
+    };
+  };
+function removeClass(elem, className, removePartials) {
+  var matchFn = removePartials ? partialMatchFn(className) : fullMatchFn(className);
+  elem.className = elem.className.split(/\s+/).filter(function (s) {
+    return matchFn(s);
+  }).join(' ');
+}
+function reduceMotion() {
+  var reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  return reducedMotionQuery.matches ? true : false;
+}
+function verticallyInWindow(elem) {
+  return elem.getBoundingClientRect().top >= 0 && elem.getBoundingClientRect().top <= window.innerHeight ? true : false;
+}
+function appendAll(elem, children) {
+  children.forEach(function (child) {
+    return elem.appendChild(child);
+  });
+}
 
 /***/ }),
 
