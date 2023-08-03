@@ -11225,6 +11225,18 @@ svg:not(:root) {
     outline: 2px dotted #1e1e1e;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .vertical-menu__toggle-link {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .vertical-menu__toggle-link {
+        font-size: 92px;
+    }
+}
+
 .vertical-menu--l0 > .vertical-menu__header {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -20555,6 +20567,18 @@ USED IN:
     outline-offset: 0.1875rem;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cta--ug-v23 {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cta--ug-v23 {
+        font-size: 92px;
+    }
+}
+
 .cta--pg-v23 {
     background-color: #002b49;
     color: #ffffff;
@@ -20564,6 +20588,18 @@ USED IN:
 .cta--pg-v23:hover, .cta--pg-v23:focus, .cta--pg-v23:active {
     background-color: #00192a;
     outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cta--pg-v23 {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cta--pg-v23 {
+        font-size: 92px;
+    }
 }
 
 .cta--v23-round {
@@ -24269,6 +24305,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .feature-news__card__body__topic--actuarial-science {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .feature-news__card__body__topic--actuarial-science {
+        font-size: 92px;
+    }
+}
+
 .feature-news__card__body__topic--all {
     position: relative;
     overflow: visible !important;
@@ -24326,6 +24374,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .feature-news__card__body__topic--all:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .feature-news__card__body__topic--all {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .feature-news__card__body__topic--all {
+        font-size: 92px;
+    }
 }
 
 .feature-news__card__body__topic--finance {
@@ -24387,6 +24447,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .feature-news__card__body__topic--finance {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .feature-news__card__body__topic--finance {
+        font-size: 92px;
+    }
+}
+
 .feature-news__card__body__topic--management {
     position: relative;
     overflow: visible !important;
@@ -24444,6 +24516,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .feature-news__card__body__topic--management:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .feature-news__card__body__topic--management {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .feature-news__card__body__topic--management {
+        font-size: 92px;
+    }
 }
 
 .feature-news__card__body__topic--entrepreneurship {
@@ -24505,6 +24589,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .feature-news__card__body__topic--entrepreneurship {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .feature-news__card__body__topic--entrepreneurship {
+        font-size: 92px;
+    }
+}
+
 .feature-news__card__body__topic--community {
     position: relative;
     overflow: visible !important;
@@ -24564,6 +24660,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .feature-news__card__body__topic--community {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .feature-news__card__body__topic--community {
+        font-size: 92px;
+    }
+}
+
 .feature-news__card__body__topic--bayes-community {
     position: relative;
     overflow: visible !important;
@@ -24621,6 +24729,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .feature-news__card__body__topic--bayes-community:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .feature-news__card__body__topic--bayes-community {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .feature-news__card__body__topic--bayes-community {
+        font-size: 92px;
+    }
 }
 
 .feature-news__card--latest > .feature-news__card__body:not(.feature-news__card__body--slider-dots) .feature-news__card__slider__item:not(:first-child) {
@@ -24931,6 +25051,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     transition: opacity 0.2s, transform 0.2s;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .feature-events__cards__content__item__audience a:before, .feature-events__cards__content__item__audience a:after {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .feature-events__cards__content__item__audience a:before, .feature-events__cards__content__item__audience a:after {
+        font-size: 92px;
+    }
+}
+
 [data-event-audience*='Prospective Student Events'] a {
     background-color: inherit;
     color: inherit;
@@ -24989,6 +25121,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     line-height: 1;
     opacity: 0;
     transition: opacity 0.2s, transform 0.2s;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    [data-event-audience*='Prospective Student Events'] a:before, [data-event-audience*='Prospective Student Events'] a:after {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    [data-event-audience*='Prospective Student Events'] a:before, [data-event-audience*='Prospective Student Events'] a:after {
+        font-size: 92px;
+    }
 }
 
 [data-event-audience*='Executive Education'] a {
@@ -25051,6 +25195,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     transition: opacity 0.2s, transform 0.2s;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    [data-event-audience*='Executive Education'] a:before, [data-event-audience*='Executive Education'] a:after {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    [data-event-audience*='Executive Education'] a:before, [data-event-audience*='Executive Education'] a:after {
+        font-size: 92px;
+    }
+}
+
 [data-event-audience*='Cass Society'] a {
     background-color: inherit;
     color: inherit;
@@ -25109,6 +25265,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     line-height: 1;
     opacity: 0;
     transition: opacity 0.2s, transform 0.2s;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    [data-event-audience*='Cass Society'] a:before, [data-event-audience*='Cass Society'] a:after {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    [data-event-audience*='Cass Society'] a:before, [data-event-audience*='Cass Society'] a:after {
+        font-size: 92px;
+    }
 }
 
 [data-event-audience*='Professional and Careers'] a {
@@ -25171,6 +25339,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     transition: opacity 0.2s, transform 0.2s;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    [data-event-audience*='Professional and Careers'] a:before, [data-event-audience*='Professional and Careers'] a:after {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    [data-event-audience*='Professional and Careers'] a:before, [data-event-audience*='Professional and Careers'] a:after {
+        font-size: 92px;
+    }
+}
+
 [data-event-audience*='Faculty/Research'] a {
     background-color: inherit;
     color: inherit;
@@ -25229,6 +25409,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     line-height: 1;
     opacity: 0;
     transition: opacity 0.2s, transform 0.2s;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    [data-event-audience*='Faculty/Research'] a:before, [data-event-audience*='Faculty/Research'] a:after {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    [data-event-audience*='Faculty/Research'] a:before, [data-event-audience*='Faculty/Research'] a:after {
+        font-size: 92px;
+    }
 }
 
 [data-event-audience*='Corporate'] a {
@@ -25291,6 +25483,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     transition: opacity 0.2s, transform 0.2s;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    [data-event-audience*='Corporate'] a:before, [data-event-audience*='Corporate'] a:after {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    [data-event-audience*='Corporate'] a:before, [data-event-audience*='Corporate'] a:after {
+        font-size: 92px;
+    }
+}
+
 [data-event-audience*='Alumni'] a {
     background-color: inherit;
     color: inherit;
@@ -25349,6 +25553,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     line-height: 1;
     opacity: 0;
     transition: opacity 0.2s, transform 0.2s;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    [data-event-audience*='Alumni'] a:before, [data-event-audience*='Alumni'] a:after {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    [data-event-audience*='Alumni'] a:before, [data-event-audience*='Alumni'] a:after {
+        font-size: 92px;
+    }
 }
 
 .connect-social__wrapper {
@@ -27263,12 +27479,36 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     top: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .left-hand-navigation {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .left-hand-navigation {
+        font-size: 92px;
+    }
+}
+
 .left-hand-navigation h2 {
     background-color: #fafafa;
     margin: 0;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: 700;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .left-hand-navigation h2 {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .left-hand-navigation h2 {
+        font-size: 92px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -27554,6 +27794,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .left-hand-navigation--jsinit .vertical-menu--l2 > .vertical-menu__header > .vertical-menu__page-link {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .left-hand-navigation--jsinit .vertical-menu--l2 > .vertical-menu__header > .vertical-menu__page-link {
+        font-size: 92px;
+    }
 }
 
 .course-search {
@@ -28520,6 +28772,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science {
+        font-size: 92px;
+    }
+}
+
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all {
     position: relative;
     overflow: visible !important;
@@ -28577,6 +28841,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all {
+        font-size: 92px;
+    }
 }
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance {
@@ -28638,6 +28914,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance {
+        font-size: 92px;
+    }
+}
+
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management {
     position: relative;
     overflow: visible !important;
@@ -28697,6 +28985,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management {
+        font-size: 92px;
+    }
+}
+
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship {
     position: relative;
     overflow: visible !important;
@@ -28754,6 +29054,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship {
+        font-size: 92px;
+    }
 }
 
 .cass-knowledge-listing__item__topic a {
@@ -33908,6 +34220,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-knowledge-search .news-card-series {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-knowledge-search .news-card-series {
+        font-size: 92px;
+    }
+}
+
 .cass-knowledge-search .news-card-topic__wrap {
     display: inline-block;
     margin-right: 1rem;
@@ -34211,6 +34535,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--actuarial-science {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--actuarial-science {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--finance {
     position: relative;
     overflow: visible !important;
@@ -34268,6 +34604,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--finance:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--finance {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--finance {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--management {
@@ -34329,6 +34677,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--management {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--management {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--entrepreneurship {
     position: relative;
     overflow: visible !important;
@@ -34386,6 +34746,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--entrepreneurship:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--entrepreneurship {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--entrepreneurship {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--bayes-community {
@@ -34447,6 +34819,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--bayes-community {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--bayes-community {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--all {
     position: relative;
     overflow: visible !important;
@@ -34504,6 +34888,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--all:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--all {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--all {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--apprenticeship {
@@ -34565,6 +34961,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--apprenticeship {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--apprenticeship {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--undergraduate {
     position: relative;
     overflow: visible !important;
@@ -34622,6 +35030,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--undergraduate:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--undergraduate {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--undergraduate {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--masters {
@@ -34683,6 +35103,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--masters {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--masters {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--executive-master {
     position: relative;
     overflow: visible !important;
@@ -34740,6 +35172,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--executive-master:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--executive-master {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--executive-master {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--executive-mba {
@@ -34801,6 +35245,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--executive-mba {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--executive-mba {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--executive-mba-in-dubai {
     position: relative;
     overflow: visible !important;
@@ -34858,6 +35314,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--executive-mba-in-dubai:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--executive-mba-in-dubai {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--executive-mba-in-dubai {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--full-time-mba, .news-article__anchor__topic--mba {
@@ -34919,6 +35387,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--full-time-mba, .news-article__anchor__topic--mba {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--full-time-mba, .news-article__anchor__topic--mba {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--modular-executive-mba {
     position: relative;
     overflow: visible !important;
@@ -34976,6 +35456,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--modular-executive-mba:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--modular-executive-mba {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--modular-executive-mba {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--phd {
@@ -35037,6 +35529,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--phd {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--phd {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--online-programmes {
     position: relative;
     overflow: visible !important;
@@ -35094,6 +35598,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--online-programmes:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--online-programmes {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--online-programmes {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--student-life, .news-article__anchor__topic--admissions {
@@ -35155,6 +35671,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--student-life, .news-article__anchor__topic--admissions {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--student-life, .news-article__anchor__topic--admissions {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--careers {
     position: relative;
     overflow: visible !important;
@@ -35212,6 +35740,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--careers:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--careers {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--careers {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--knowledge-hub {
@@ -35273,6 +35813,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--knowledge-hub {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--knowledge-hub {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--charities-social-enterprise {
     position: relative;
     overflow: visible !important;
@@ -35330,6 +35882,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--charities-social-enterprise:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--charities-social-enterprise {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--charities-social-enterprise {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--research {
@@ -35391,6 +35955,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--research {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--research {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--business-services {
     position: relative;
     overflow: visible !important;
@@ -35448,6 +36024,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--business-services:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--business-services {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--business-services {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor__topic--professional-development {
@@ -35509,6 +36097,18 @@ News events landing overrides */
     margin-right: 0;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--professional-development {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--professional-development {
+        font-size: 92px;
+    }
+}
+
 .news-article__anchor__topic--marketing-strategy-and-innovation {
     position: relative;
     overflow: visible !important;
@@ -35566,6 +36166,18 @@ News events landing overrides */
 
 .news-article__anchor__topic--marketing-strategy-and-innovation:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .news-article__anchor__topic--marketing-strategy-and-innovation {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .news-article__anchor__topic--marketing-strategy-and-innovation {
+        font-size: 92px;
+    }
 }
 
 .news-article__anchor:hover {
@@ -38107,6 +38719,18 @@ html {
     outline-offset: 0.1875rem;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .promo-box-v23 .cta--main {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .ug-courses-v23 .promo-box-v23 .cta--main {
+        font-size: 92px;
+    }
+}
+
 .pg-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
     background: #002b49;
     color: #ffffff;
@@ -38121,4 +38745,16 @@ html {
 .pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
     background-color: #00192a;
     outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .promo-box-v23 .cta--main {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .pg-courses-v23 .promo-box-v23 .cta--main {
+        font-size: 92px;
+    }
 }
