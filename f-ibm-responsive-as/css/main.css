@@ -4094,7 +4094,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__icon:before,
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .alpha-type {
-        letter-spacing: -0.013em;
+        letter-spacing: -0.011em;
     }
 }
 
@@ -4124,7 +4124,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__icon:before,
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .beta-type {
-        letter-spacing: -0.014em;
+        letter-spacing: -0.013em;
     }
 }
 
@@ -4214,7 +4214,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__icon:before,
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .epsilon-type {
-        letter-spacing: -0.017em;
+        letter-spacing: -0.016em;
     }
 }
 
@@ -4334,7 +4334,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__icon:before,
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .small-type {
-        letter-spacing: -0.01em;
+        letter-spacing: -0.008em;
     }
 }
 
@@ -4364,13 +4364,13 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__icon:before,
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .extra-small-type {
-        letter-spacing: -0.007em;
+        letter-spacing: -0.004em;
     }
 }
 
 @media (min-width: 3840px) and (max-width: 7679px) {
     .extra-small-type {
-        letter-spacing: -0.017em;
+        letter-spacing: -0.016em;
     }
 }
 
@@ -4505,13 +4505,13 @@ html em {
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     html {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
 @media (min-width: 3840px) and (max-width: 7679px) {
     html {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -4842,7 +4842,7 @@ iframe[src*='prezi'] {
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .h6-style {
-        letter-spacing: -0.013em;
+        letter-spacing: -0.011em;
     }
 }
 
@@ -4900,7 +4900,7 @@ iframe[src*='prezi'] {
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .h5-style {
-        letter-spacing: -0.014em;
+        letter-spacing: -0.013em;
     }
 }
 
@@ -5074,7 +5074,7 @@ iframe[src*='prezi'] {
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .h2-style {
-        letter-spacing: -0.017em;
+        letter-spacing: -0.016em;
     }
 }
 
@@ -8955,7 +8955,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__address-organisation {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -8972,7 +8972,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__address-details {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -9043,7 +9043,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__misc-links {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -9110,7 +9110,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__misc-links a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -9127,7 +9127,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__social li {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -9176,7 +9176,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__social a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -9229,7 +9229,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__social .fa, .footer__social .url-slide--right .url-slide__icon, .url-slide--right .footer__social .url-slide__icon, .footer__social .media-block .video-preview__button:before, .media-block .footer__social .video-preview__button:before, .footer__social .accordion__content__heading-anchor__icon, .footer__social .accordion.accordion--simple .accordion__content__heading-anchor .accordion__content__heading-anchor__icon, .accordion.accordion--simple .accordion__content__heading-anchor .footer__social .accordion__content__heading-anchor__icon, .footer__social .js .tabs__content__heading-anchor__icon, .js .footer__social .tabs__content__heading-anchor__icon, .footer__social .js .accordion-tabs__content__heading-anchor__icon, .js .footer__social .accordion-tabs__content__heading-anchor__icon, .footer__social .header-toggle--menu .header-toggle__icon, .header-toggle--menu .footer__social .header-toggle__icon, .footer__social .header-toggle--search .header-toggle__icon, .header-toggle--search .footer__social .header-toggle__icon, .footer__social .popup-def-list-group__prevnext__prev .popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .footer__social .popup-def-list-group__prevnext__prev__icon, .footer__social .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .footer__social .popup-def-list-group__prevnext__next__icon, .footer__social .dialog__box__heading__close__icon, .footer__social .image-banner span, .image-banner .footer__social span, .footer__social .video-banner__play span, .video-banner__play .footer__social span, .footer__social .mba-popup__form__close__icon {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -9259,7 +9259,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__social span:not([class]) {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -9324,7 +9324,7 @@ svg:not(:root) {
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__accreditation a,
     .footer__bloomberg a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -9358,7 +9358,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer__copyright {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -11227,7 +11227,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .vertical-menu__toggle-link {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -12083,21 +12083,9 @@ svg:not(:root) {
     outline: 2px dotted #1e1e1e;
 }
 
-@media (min-width: 1200px) and (max-width: 1919px) {
-    .primary-navigation__list a {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1920px) and (max-width: 3839px) {
-    .primary-navigation__list a {
-        font-size: 22px;
-    }
-}
-
 @media (min-width: 3840px) and (max-width: 7679px) {
     .primary-navigation__list a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -12198,21 +12186,9 @@ svg:not(:root) {
     outline: 2px dotted white;
 }
 
-@media (min-width: 1200px) and (max-width: 1919px) {
-    .explore-theme .primary-navigation .primary-navigation__list a {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1920px) and (max-width: 3839px) {
-    .explore-theme .primary-navigation .primary-navigation__list a {
-        font-size: 22px;
-    }
-}
-
 @media (min-width: 3840px) and (max-width: 7679px) {
     .explore-theme .primary-navigation .primary-navigation__list a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -12393,7 +12369,7 @@ svg:not(:root) {
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .secondary-navigation__list a {
-        letter-spacing: -0.013em;
+        letter-spacing: -0.011em;
     }
 }
 
@@ -12421,13 +12397,13 @@ svg:not(:root) {
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .secondary-navigation__list a {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
 @media (min-width: 3840px) and (max-width: 7679px) {
     .secondary-navigation__list a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -12500,7 +12476,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .tertiary-navigation--desktop .tertiary-navigation__list a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -12575,7 +12551,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .tertiary-navigation--mobile .tertiary-navigation__list a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -12636,7 +12612,7 @@ svg:not(:root) {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .explore-theme .tertiary-navigation--desktop .tertiary-navigation__list a {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -18593,6 +18569,18 @@ svg:not(:root) {
     /**/
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .banner-vi--listing + main .course-finder__top input, .banner-vi--listing + main .expert-finder__top input {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .banner-vi--listing + main .course-finder__top input, .banner-vi--listing + main .expert-finder__top input {
+        font-size: 92px;
+    }
+}
+
 @supports (display: flex) {
     .banner-vi--listing + main .course-finder__top input, .banner-vi--listing + main .expert-finder__top input {
         float: none;
@@ -18831,6 +18819,18 @@ svg:not(:root) {
     transition: transform 300ms;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .banner-vi--listing + main .course-finder__main .filter-box__open span:before, .banner-vi--listing + main .expert-finder__main .filter-box__open span:before {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .banner-vi--listing + main .course-finder__main .filter-box__open span:before, .banner-vi--listing + main .expert-finder__main .filter-box__open span:before {
+        font-size: 92px;
+    }
+}
+
 .banner-vi--listing + main .course-finder__main .filter-box__open span.fa-angle-up:before, .banner-vi--listing + main .expert-finder__main .filter-box__open span.fa-angle-up:before {
     transform: rotate(180deg);
 }
@@ -18850,6 +18850,7 @@ svg:not(:root) {
     border-radius: 0.25rem;
     background-color: #ffffff;
     z-index: 0;
+    height: 100%;
 }
 
 .banner-vi--listing + main .course-finder__main .filter-box__filter__content:after, .banner-vi--listing + main .expert-finder__main .filter-box__filter__content:after {
@@ -18877,12 +18878,37 @@ svg:not(:root) {
     z-index: -1;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .banner-vi--listing + main .course-finder__main .filter-box__filter__content:after, .banner-vi--listing + main .expert-finder__main .filter-box__filter__content:after {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .banner-vi--listing + main .course-finder__main .filter-box__filter__content:after, .banner-vi--listing + main .expert-finder__main .filter-box__filter__content:after {
+        font-size: 92px;
+    }
+}
+
 .banner-vi--listing + main .course-finder__main .filter-box__filter__content select, .banner-vi--listing + main .expert-finder__main .filter-box__filter__content select {
     border-radius: 0.25rem;
     -webkit-appearance: none;
             appearance: none;
     border: 2px solid #1e1e1e;
     background-color: transparent;
+    height: 100%;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .banner-vi--listing + main .course-finder__main .filter-box__filter__content select, .banner-vi--listing + main .expert-finder__main .filter-box__filter__content select {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .banner-vi--listing + main .course-finder__main .filter-box__filter__content select, .banner-vi--listing + main .expert-finder__main .filter-box__filter__content select {
+        font-size: 92px;
+    }
 }
 
 .banner-vi--video-embedded .banner-vi__container {
@@ -20569,7 +20595,7 @@ USED IN:
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cta--ug-v23 {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -20592,7 +20618,7 @@ USED IN:
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cta--pg-v23 {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -24218,7 +24244,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .item__date {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -24307,7 +24333,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .feature-news__card__body__topic--actuarial-science {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -24378,7 +24404,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .feature-news__card__body__topic--all {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -24449,7 +24475,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .feature-news__card__body__topic--finance {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -24520,7 +24546,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .feature-news__card__body__topic--management {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -24591,7 +24617,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .feature-news__card__body__topic--entrepreneurship {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -24662,7 +24688,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .feature-news__card__body__topic--community {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -24733,7 +24759,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .feature-news__card__body__topic--bayes-community {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -25053,7 +25079,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .feature-events__cards__content__item__audience a:before, .feature-events__cards__content__item__audience a:after {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -25125,7 +25151,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     [data-event-audience*='Prospective Student Events'] a:before, [data-event-audience*='Prospective Student Events'] a:after {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -25197,7 +25223,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     [data-event-audience*='Executive Education'] a:before, [data-event-audience*='Executive Education'] a:after {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -25269,7 +25295,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     [data-event-audience*='Cass Society'] a:before, [data-event-audience*='Cass Society'] a:after {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -25341,7 +25367,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     [data-event-audience*='Professional and Careers'] a:before, [data-event-audience*='Professional and Careers'] a:after {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -25413,7 +25439,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     [data-event-audience*='Faculty/Research'] a:before, [data-event-audience*='Faculty/Research'] a:after {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -25485,7 +25511,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     [data-event-audience*='Corporate'] a:before, [data-event-audience*='Corporate'] a:after {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -25557,7 +25583,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     [data-event-audience*='Alumni'] a:before, [data-event-audience*='Alumni'] a:after {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -27481,7 +27507,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .left-hand-navigation {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -27501,7 +27527,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .left-hand-navigation h2 {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -27798,7 +27824,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .left-hand-navigation--jsinit .vertical-menu--l2 > .vertical-menu__header > .vertical-menu__page-link {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -28155,7 +28181,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .footer-meta__card h5 {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -28662,10 +28688,34 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-knowledge-listing__item__text span {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-knowledge-listing__item__text span {
+        font-size: 92px;
+    }
+}
+
 .cass-knowledge-listing__item__text a {
     font-size: 1.2rem;
     font-weight: 600;
     border-bottom: none;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-knowledge-listing__item__text a {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-knowledge-listing__item__text a {
+        font-size: 92px;
+    }
 }
 
 .cass-knowledge-listing__item__text > a {
@@ -28786,7 +28836,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--actuarial-science {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -28857,7 +28907,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--all {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -28928,7 +28978,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--finance {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -28999,7 +29049,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--management {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -29070,7 +29120,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cass-knowledge-listing__item__topic.cass-knowledge-listing__item__topic--entrepreneurship {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -29250,6 +29300,25 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .filter-box__filter__content select:hover, .filter-box__filter__content select:focus, .filter-box__filter__content select:active {
     background: #ececec;
+}
+
+@media (min-width: 1600px) {
+    .filter-box__filter__content select {
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .filter-box__filter__content select {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .filter-box__filter__content select {
+        font-size: 92px;
+    }
 }
 
 .filter-box__filter__content input {
@@ -30025,6 +30094,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .filter-box__filter__content select {
     width: 100%;
+    height: 100%;
     font-size: 16px;
     padding: 11px;
     height: 45px;
@@ -30035,6 +30105,37 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .filter-box__filter__content select:hover, .filter-box__filter__content select:focus, .filter-box__filter__content select:active {
     background: #ececec;
+}
+
+@media (min-width: 1600px) {
+    .filter-box__filter__content select {
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .filter-box__filter__content select {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .filter-box__filter__content select {
+        font-size: 92px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .filter-box__filter__content select {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .filter-box__filter__content select {
+        font-size: 92px;
+    }
 }
 
 .filter-box__filter__content input {
@@ -32122,6 +32223,25 @@ blockquote .reference {
     background: #ececec;
 }
 
+@media (min-width: 1600px) {
+    .cass-events .cass-events__query #query-box__query {
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-events .cass-events__query #query-box__query {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-events .cass-events__query #query-box__query {
+        font-size: 92px;
+    }
+}
+
 .cass-events .cass-events__query button {
     background: #e30613;
     color: #ffffff;
@@ -32680,6 +32800,25 @@ input:checked + .cass-events .calendar__radio__button:before {
     background: #ececec;
 }
 
+@media (min-width: 1600px) {
+    .cass-events .calendar__key select {
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-events .calendar__key select {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-events .calendar__key select {
+        font-size: 92px;
+    }
+}
+
 .cass-events .events-listing ul {
     padding: 0 !important;
     margin: 2rem 0 !important;
@@ -32941,6 +33080,25 @@ input:checked + .cass-events .calendar__radio__button:before {
 
 .cass-events .cass-events__view-month select:hover, .cass-events .cass-events__view-month select:focus, .cass-events .cass-events__view-month select:active {
     background: #ececec;
+}
+
+@media (min-width: 1600px) {
+    .cass-events .cass-events__view-month select {
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-events .cass-events__view-month select {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-events .cass-events__view-month select {
+        font-size: 92px;
+    }
 }
 
 @media (max-width: 499px) {
@@ -33214,6 +33372,25 @@ News events landing overrides */
     background: #ececec;
 }
 
+@media (min-width: 1600px) {
+    .cass-news-search .news-finder__query #query-box__query {
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-news-search .news-finder__query #query-box__query {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-news-search .news-finder__query #query-box__query {
+        font-size: 92px;
+    }
+}
+
 .cass-news-search .news-finder__query .icon-search:before {
     font-family: 'FontAwesome';
     content: '\f002';
@@ -33255,6 +33432,25 @@ News events landing overrides */
 
 .cass-news-search .news-finder__query .filter-box__filter__content select:hover, .cass-news-search .news-finder__query .filter-box__filter__content select:focus, .cass-news-search .news-finder__query .filter-box__filter__content select:active {
     background: #ececec;
+}
+
+@media (min-width: 1600px) {
+    .cass-news-search .news-finder__query .filter-box__filter__content select {
+        height: 2.5rem;
+        padding: 0.75rem;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cass-news-search .news-finder__query .filter-box__filter__content select {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cass-news-search .news-finder__query .filter-box__filter__content select {
+        font-size: 92px;
+    }
 }
 
 .cass-news-search .news-finder__main {
@@ -34234,7 +34430,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cass-knowledge-search .news-card-series {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -34549,7 +34745,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--actuarial-science {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -34620,7 +34816,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--finance {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -34691,7 +34887,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--management {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -34762,7 +34958,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--entrepreneurship {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -34833,7 +35029,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--bayes-community {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -34904,7 +35100,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--all {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -34975,7 +35171,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--apprenticeship {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35046,7 +35242,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--undergraduate {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35117,7 +35313,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--masters {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35188,7 +35384,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--executive-master {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35259,7 +35455,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--executive-mba {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35330,7 +35526,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--executive-mba-in-dubai {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35401,7 +35597,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--full-time-mba, .news-article__anchor__topic--mba {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35472,7 +35668,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--modular-executive-mba {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35543,7 +35739,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--phd {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35614,7 +35810,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--online-programmes {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35685,7 +35881,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--student-life, .news-article__anchor__topic--admissions {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35756,7 +35952,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--careers {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35827,7 +36023,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--knowledge-hub {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35898,7 +36094,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--charities-social-enterprise {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -35969,7 +36165,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--research {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -36040,7 +36236,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--business-services {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -36111,7 +36307,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--professional-development {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -36182,7 +36378,7 @@ News events landing overrides */
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .news-article__anchor__topic--marketing-strategy-and-innovation {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -36584,13 +36780,13 @@ News events landing overrides */
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .feature-news__card--landscape .item__date {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
 @media (min-width: 3840px) and (max-width: 7679px) {
     .feature-news__card--landscape .item__date {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -36738,6 +36934,18 @@ a.anchor--actuarial-science:hover:after {
 @media (min-width: 1441px) {
     .landscape-knowledge-cards .cass-knowledge-listing__item__text {
         width: 70%;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .landscape-knowledge-cards .cass-knowledge-listing__item__text {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .landscape-knowledge-cards .cass-knowledge-listing__item__text {
+        font-size: 92px;
     }
 }
 
@@ -38733,7 +38941,7 @@ html {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .ug-courses-v23 .promo-box-v23 .cta--main {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -38761,7 +38969,7 @@ html {
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .pg-courses-v23 .promo-box-v23 .cta--main {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
