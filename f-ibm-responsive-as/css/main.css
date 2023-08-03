@@ -28153,6 +28153,18 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #666666;
 }
 
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .footer-meta__card h5 {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .footer-meta__card h5 {
+        font-size: 92px;
+    }
+}
+
 .footer-meta__card a {
     vertical-align: top;
     word-wrap: break-word;
