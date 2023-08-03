@@ -9841,7 +9841,7 @@ svg:not(:root) {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.courses-v23 {
+.courses-v23 section, .courses-v23 > div {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -9849,14 +9849,14 @@ svg:not(:root) {
 }
 
 @media (max-width: 500px) {
-    .courses-v23 {
+    .courses-v23 section, .courses-v23 > div {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 }
 
 @media (min-width: 501px) {
-    .courses-v23 {
+    .courses-v23 section, .courses-v23 > div {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -9920,6 +9920,10 @@ svg:not(:root) {
     position: relative;
 }
 
+.courses-v23 .courses-v23__related-courses {
+    border: thin solid red;
+}
+
 .courses-v23 .courses-v23__related-courses__heading {
     margin-top: 1.5rem;
 }
@@ -9942,6 +9946,16 @@ svg:not(:root) {
 @media (min-width: 901px) {
     .js .slider-v23--related-courses__wrap {
         grid-column-gap: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap {
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -10011,6 +10025,12 @@ svg:not(:root) {
     left: -100%;
 }
 
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--prev[data-sliderposition='-1'][data-hidden='true'] {
+        left: -105%;
+    }
+}
+
 .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--prev .course-card-v23__details__wrap {
     opacity: 0;
 }
@@ -10030,9 +10050,39 @@ svg:not(:root) {
     left: 100%;
 }
 
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--next[data-sliderposition='1'][data-hidden='true'] {
+        left: 105%;
+    }
+}
+
 .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--next .course-card-v23__details__wrap {
     animation-duration: 1s;
     opacity: 0;
+}
+
+.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive {
+        padding-left: 0;
+        padding-right: 0;
+        width: 98vw;
+    }
+}
+
+.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive .slider-v23__indicator {
+    display: none;
+}
+
+.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:hover, .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus, .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:active {
+    outline-offset: 0.1875rem;
 }
 
 .js .slider-v23--related-courses__wrap .course-card-v23 {
@@ -10084,22 +10134,6 @@ svg:not(:root) {
 
 .js .slider-v23--related-courses__wrap .course-card-v23__image {
     position: relative;
-}
-
-.js .slider-v23--related-courses__wrap .slider-v23[data-style="responsive"] + .slider-v23__controls--responsive {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-}
-
-.js .slider-v23--related-courses__wrap .slider-v23[data-style="responsive"] + .slider-v23__controls--responsive .slider-v23__indicator {
-    display: none;
-}
-
-.js .slider-v23--related-courses__wrap .slider-v23[data-style="responsive"] + .slider-v23__controls--responsive button:hover, .js .slider-v23--related-courses__wrap .slider-v23[data-style="responsive"] + .slider-v23__controls--responsive button:focus, .js .slider-v23--related-courses__wrap .slider-v23[data-style="responsive"] + .slider-v23__controls--responsive button:active {
-    outline-offset: 0.1875rem;
 }
 
 .ug-courses-v23 .courses-v23__related-courses {
