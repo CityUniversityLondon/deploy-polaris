@@ -11097,6 +11097,7 @@ svg:not(:root) {
     margin-left: auto;
     margin-right: auto;
     max-width: 7680px;
+    max-width: 1440px;
 }
 
 @media (max-width: 500px) {
@@ -11169,10 +11170,6 @@ svg:not(:root) {
 .courses-v23__careers .courses-v23__careers__alumni .slider-v23__container {
     padding: 1.5rem;
     position: relative;
-}
-
-.courses-v23 .courses-v23__related-courses {
-    border: thin solid red;
 }
 
 .courses-v23 .courses-v23__related-courses__heading {
