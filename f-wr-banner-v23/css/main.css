@@ -11117,7 +11117,7 @@ svg:not(:root) {
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__image {
-    border: thin solid red;
+    border: thin solid lime;
     position: absolute;
     z-index: 0;
     width: 100%;
@@ -11167,7 +11167,17 @@ svg:not(:root) {
     flex: 1;
 }
 
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__qoute {
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry {
+    font-weight: 600;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry:before {
+    font-family: "FontAwesome";
+    content: "\f19d";
+    margin-right: 0.5rem;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst {
     padding: 1rem;
     margin-top: 1rem;
     position: relative;
@@ -20662,10 +20672,17 @@ USED IN:
     border-radius: 0.5rem;
 }
 
+.cta--v23-right-arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .cta--v23-right-arrow:after {
     content: "\f054";
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font-family: "FontAwesome";
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -38580,7 +38597,7 @@ div.widget-123_test_ {
     flex-direction: row;
     align-items: flex-start;
     list-style: none;
-    overflow-x: auto;
+    overflow-x: hidden;
     white-space: nowrap;
     gap: 0.5rem;
     grid-column: 1/-1;
