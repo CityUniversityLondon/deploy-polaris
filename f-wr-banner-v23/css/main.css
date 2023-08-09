@@ -11167,11 +11167,13 @@ svg:not(:root) {
     flex: 1;
 }
 
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry {
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__wrap {
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
 }
 
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry:before {
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__wrap:before {
     font-family: "FontAwesome";
     content: "\f19d";
     margin-right: 0.5rem;
@@ -38597,7 +38599,7 @@ div.widget-123_test_ {
     flex-direction: row;
     align-items: flex-start;
     list-style: none;
-    overflow-x: hidden;
+    overflow-x: auto;
     white-space: nowrap;
     gap: 0.5rem;
     grid-column: 1/-1;
@@ -38623,6 +38625,7 @@ div.widget-123_test_ {
     border-bottom: none;
     color: #0c0c0e;
     font-size: 14px;
+    touch-action: none;
 }
 
 .nav-sticky .nav-sticky__item__link:focus {
