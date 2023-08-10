@@ -11248,7 +11248,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__key-info__details__content {
-    border-left: 5px solid #474753;
+    border-left: 5px solid rgba(12, 12, 14, 0.6);
 }
 
 .ug-courses-v23 .cta--v23--ki {
@@ -11338,7 +11338,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__key-info__details__content {
-    border-left: 5px solid white;
+    border-left: 5px solid rgba(221, 221, 221, 0.6);
 }
 
 .pg-courses-v23 .cta--v23--ki {
