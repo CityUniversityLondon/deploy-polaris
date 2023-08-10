@@ -11163,6 +11163,14 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 767px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
+        flex-direction: column;
+        background-clip: padding-box;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div {
     flex: 1;
 }
@@ -11205,12 +11213,24 @@ svg:not(:root) {
     margin-bottom: 1rem;
 }
 
+@media (max-width: 767px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__cta:last-child {
+        margin-bottom: 0;
+    }
+}
+
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst {
     padding: 1rem;
     margin-top: 1rem;
     position: relative;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 2.0736rem;
+}
+
+@media (max-width: 767px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst {
+        margin-top: 0;
+    }
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst p {
