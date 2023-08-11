@@ -11117,7 +11117,6 @@ svg:not(:root) {
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__image {
-    border: thin solid lime;
     position: absolute;
     z-index: 0;
     width: 100%;
