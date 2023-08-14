@@ -39129,18 +39129,30 @@ html {
 }
 
 .ug-courses-v23 .unibuddy-card-v23__content__image:after, .ug-courses-v23 .unibuddy-card-v23__content__title:after {
-    background: #e35205;
+    background: #a9a19c;
 }
 
 .ug-courses-v23 .cta--main {
-    background-color: #e35205;
+    background-color: #a9a19c;
     color: #1e1e1e;
-    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
 }
 
 .ug-courses-v23 .cta--main:hover, .ug-courses-v23 .cta--main:focus, .ug-courses-v23 .cta--main:active {
-    background-color: #c54704;
+    background-color: #9b918c;
     outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .cta--main {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .ug-courses-v23 .cta--main {
+        font-size: 92px;
+    }
 }
 
 .pg-courses-v23 .unibuddy-card-v23__content__image:after, .pg-courses-v23 .unibuddy-card-v23__content__title:after {
@@ -39150,12 +39162,24 @@ html {
 .pg-courses-v23 .cta--main {
     background-color: #002b49;
     color: #ffffff;
-    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
 }
 
 .pg-courses-v23 .cta--main:hover, .pg-courses-v23 .cta--main:focus, .pg-courses-v23 .cta--main:active {
     background-color: #00192a;
     outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .cta--main {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .pg-courses-v23 .cta--main {
+        font-size: 92px;
+    }
 }
 
 /*
