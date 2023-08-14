@@ -11092,6 +11092,45 @@ svg:not(:root) {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.courses-v23 .courses-v23__student-life {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 1440px;
+}
+
+@media (min-width: 651px) {
+    .courses-v23 .courses-v23__student-life {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+.courses-v23 .courses-v23__student-life .student-life-v23__links {
+    grid-template-columns: repeat(24, 1fr);
+    grid-column-gap: 0;
+    display: grid;
+}
+
+@media (min-width: 650px) {
+    .courses-v23 .courses-v23__student-life .student-life-v23__links {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23 .courses-v23__student-life .student-life-v23__links {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.courses-v23 .courses-v23__student-life .student-life-v23__links__cards {
+    grid-column: 1/17;
+}
+
+.courses-v23 .courses-v23__student-life .student-life-v23__links__unibuddy {
+    grid-column: 17/-1;
+}
+
 .courses-v23 section, .courses-v23 > div {
     width: 100%;
     margin-left: auto;
@@ -38918,45 +38957,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.student-life-v23__wrap {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: 1440px;
-}
-
-@media (min-width: 651px) {
-    .student-life-v23__wrap {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-}
-
-.student-life-v23__links {
-    grid-template-columns: repeat(24, 1fr);
-    grid-column-gap: 0;
-    display: grid;
-}
-
-@media (min-width: 650px) {
-    .student-life-v23__links {
-        grid-column-gap: 1rem;
-    }
-}
-
-@media (min-width: 901px) {
-    .student-life-v23__links {
-        grid-column-gap: 1.5rem;
-    }
-}
-
-.student-life-v23__links__cards {
-    grid-column: 1/13;
-}
-
-.student-life-v23__links__promo {
-    grid-column: 14/-1;
-}
-
 .promo-box-v23__wrapper .promo-box-v23 {
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     padding: 2rem 3rem;
@@ -39063,6 +39063,7 @@ html {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    max-width: 19.5rem;
 }
 
 .unibuddy-card-v23 .unibuddy-card-v23__content__image {
@@ -39109,7 +39110,25 @@ html {
     font-size: 1.2rem;
 }
 
-.ug-courses-v23 .unibuddy-card-v23__content__image:after {
+.unibuddy-card-v23--general .unibuddy-card-v23__content__title {
+    font-weight: 700;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.unibuddy-card-v23--general .unibuddy-card-v23__content__title:after {
+    content: '';
+    display: block;
+    height: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 4rem;
+}
+
+.ug-courses-v23 .unibuddy-card-v23__content__image:after, .ug-courses-v23 .unibuddy-card-v23__content__title:after {
     background: #e35205;
 }
 
@@ -39124,7 +39143,7 @@ html {
     outline-offset: 0.1875rem;
 }
 
-.pg-courses-v23 .unibuddy-card-v23__content__image:after {
+.pg-courses-v23 .unibuddy-card-v23__content__image:after, .pg-courses-v23 .unibuddy-card-v23__content__title:after {
     background: #002b49;
 }
 
