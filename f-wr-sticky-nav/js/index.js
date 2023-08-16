@@ -26106,13 +26106,23 @@ function launch(el) {
     stickyNavMenuItemLinks.forEach(function (item) {
       if (item.innerText == text) {
         item.classList.add('nav-sticky__item__link__active');
-        //item.scrollIntoView();
+        item.scrollIntoView();
         document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
       } else {
         item.classList.remove('nav-sticky__item__link__active');
       }
     });
   }
+  stickyNavMenuItemLinks.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      event.preventDefault();
+      var tpl = item.getAttribute('href');
+      document.querySelector(tpl).scrollIntoView({
+        behaviour: 'smooth'
+      });
+      console.log('clicked: ' + tpl);
+    });
+  });
 }
 var className = 'nav-sticky__helper';
 /* harmony default export */ __webpack_exports__["default"] = ({
