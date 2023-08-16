@@ -26106,7 +26106,6 @@ function launch(el) {
     stickyNavMenuItemLinks.forEach(function (item) {
       if (item.innerText == text) {
         item.classList.add('nav-sticky__item__link__active');
-        item.scrollIntoView();
         document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
       } else {
         item.classList.remove('nav-sticky__item__link__active');
@@ -26116,11 +26115,9 @@ function launch(el) {
   stickyNavMenuItemLinks.forEach(function (item) {
     item.addEventListener('click', function (event) {
       event.preventDefault();
-      var tpl = item.getAttribute('href');
-      document.querySelector(tpl).scrollIntoView({
-        behaviour: 'smooth'
-      });
-      console.log('clicked: ' + tpl);
+      var scrollToLink = item.getAttribute('href');
+      document.querySelector(scrollToLink).scrollIntoView();
+      document.querySelector(scrollToLink).style.border = "thick solid pink";
     });
   });
 }
