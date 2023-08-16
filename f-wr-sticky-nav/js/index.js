@@ -26106,7 +26106,8 @@ function launch(el) {
     stickyNavMenuItemLinks.forEach(function (item) {
       if (item.innerText == text) {
         item.classList.add('nav-sticky__item__link__active');
-        document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
+        //document.querySelector(".nav-sticky__items").scrollLeft = (item.offsetLeft - (stickyNavWidth/2) + (item.offsetWidth /2));
+        //item.scrollIntoView();
       } else {
         item.classList.remove('nav-sticky__item__link__active');
       }
@@ -26117,7 +26118,7 @@ function launch(el) {
       event.preventDefault();
       var scrollToLink = item.getAttribute('href');
       document.querySelector(scrollToLink).scrollIntoView();
-      document.querySelector(scrollToLink).style.border = "thick solid pink";
+      document.querySelector(scrollToLink).style.border = "thick solid lime";
     });
   });
 }
