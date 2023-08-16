@@ -11080,7 +11080,6 @@ svg:not(:root) {
     border: 1px solid #ededee;
     color: #1e1e1e;
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     background-color: #ffffff;
     border-radius: 0;
@@ -17289,7 +17288,6 @@ svg:not(:root) {
 .banner-vi--listing + main .course-finder__main .filter-box__filter__content select, .banner-vi--listing + main .expert-finder__main .filter-box__filter__content select {
     border-radius: 0.25rem;
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     border: 2px solid #1e1e1e;
     background-color: transparent;
@@ -25879,7 +25877,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 .course-search__form__select select {
     display: block;
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     background-color: #e30613;
     color: #ffffff;
@@ -29263,7 +29260,6 @@ table tbody > tr > td:hover {
     border: 1px solid #ededee;
     color: #1e1e1e;
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     background-color: #ffffff;
     border-radius: 0;
@@ -29546,7 +29542,6 @@ table tbody > tr > td:hover {
     border: 1px solid #ededee;
     color: #1e1e1e;
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     background-color: #ffffff;
     border-radius: 0;
@@ -30020,7 +30015,6 @@ blockquote .reference {
     list-style: none !important;
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     font-size: 16px;
     padding: 11px;
@@ -30578,7 +30572,6 @@ input:checked + .cass-events .calendar__radio__button:before {
     list-style: none !important;
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     font-size: 16px;
     padding: 11px;
@@ -30842,7 +30835,6 @@ input:checked + .cass-events .calendar__radio__button:before {
     list-style: none !important;
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     font-size: 16px;
     padding: 11px;
@@ -31114,7 +31106,6 @@ News events landing overrides */
     list-style: none !important;
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     font-size: 16px;
     padding: 11px;
@@ -31158,7 +31149,6 @@ News events landing overrides */
     list-style: none !important;
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
     font-size: 16px;
     padding: 11px;
@@ -35814,6 +35804,11 @@ div.widget-123_test_ {
     color: #555555;
     font-weight: 500;
     line-height: 1.25rem;
+}
+
+.courses-v23 {
+    padding-left: 2rem;
+    border: thick solid yellow;
 }
 
 .nav-sticky__wrap {
