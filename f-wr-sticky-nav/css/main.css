@@ -38365,13 +38365,9 @@ div.widget-123_test_ {
     line-height: 1.25rem;
 }
 
-.courses-v23 {
-    padding-left: 2rem;
-    border: thick solid yellow;
-}
-
 .nav-sticky__wrap {
     width: 100%;
+    position: relative;
 }
 
 .nav-sticky__helper {
@@ -38380,7 +38376,7 @@ div.widget-123_test_ {
 }
 
 .nav-sticky {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     background: #ffffff;
