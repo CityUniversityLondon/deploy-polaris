@@ -26128,11 +26128,11 @@ function launch(el) {
   }
   stickyNavMenuItemLinks.forEach(function (item) {
     item.addEventListener('click', function (event) {
-      //event.preventDefault();
-      var scrollToLink = item.innerHTML;
-      //document.querySelector(scrollToLink).scrollIntoView();
-      //document.querySelector(scrollToLink).style.border = "thick solid lime";
-      scrollActiveLink = scrollToLink;
+      event.preventDefault();
+      var scrollToLink = item.getAttribute('href');
+      document.querySelector(scrollToLink).scrollIntoView();
+      document.querySelector(scrollToLink).style.border = "thick dotted lime";
+      scrollActiveLink = item.innerHTML;
       console.log('scrollActiveLink: ' + scrollActiveLink);
     });
   });
