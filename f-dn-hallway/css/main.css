@@ -11121,6 +11121,8 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
+    display: block;
+    outline-offset: 0.25rem;
 }
 
 .student-life-v23__links .student-life-v23__links__cards li a:hover, .student-life-v23__links .student-life-v23__links__cards li a:focus, .student-life-v23__links .student-life-v23__links__cards li a:active {
@@ -11129,8 +11131,26 @@ svg:not(:root) {
     outline-width: 0;
 }
 
+.student-life-v23__links .student-life-v23__links__cards li a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
 .student-life-v23__links .student-life-v23__links__card {
     position: relative;
+}
+
+.student-life-v23__links .student-life-v23__links__card--image::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, #1e1e1e, transparent);
 }
 
 .student-life-v23__links .student-life-v23__links__card--label {
@@ -11151,6 +11171,7 @@ svg:not(:root) {
 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading {
     display: inline-flex;
     margin-bottom: initial;
+    text-wrap: wrap;
 }
 
 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-text {
@@ -11160,8 +11181,9 @@ svg:not(:root) {
 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
     color: #ffffff;
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: #f1b434;
+    line-height: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
