@@ -26019,6 +26019,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function launch(el) {
   var elemFix = document.querySelector(".nav-sticky");
+  var scrollActiveLink = '';
 
   /*
   // Observer to watching menu position and make it stick
@@ -26102,12 +26103,24 @@ function launch(el) {
 
   var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
   function highlightNavMenuItem(text) {
+    console.log('highlightNavMenuItem text: ' + text);
     var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
     stickyNavMenuItemLinks.forEach(function (item) {
-      if (item.innerText == text) {
+      if (item.innerText == text && !scrollActiveLink) {
         item.classList.add('nav-sticky__item__link__active');
-        //document.querySelector(".nav-sticky__items").scrollLeft = (item.offsetLeft - (stickyNavWidth/2) + (item.offsetWidth /2));
+        document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
         //item.scrollIntoView();
+      } else if (item.innerText == text && scrollActiveLink == text) {
+        console.log('...else if');
+        // item.classList.add('nav-sticky__item__link__active');
+        setTimeout(function () {
+          console.log('..timeout starts');
+          item.classList.add('nav-sticky__item__link__active');
+          scrollActiveLink = '';
+          console.log('scrollActiveLink: ' + scrollActiveLink);
+          document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
+          //item.scrollIntoView();
+        }, "500");
       } else {
         item.classList.remove('nav-sticky__item__link__active');
       }
@@ -26115,10 +26128,12 @@ function launch(el) {
   }
   stickyNavMenuItemLinks.forEach(function (item) {
     item.addEventListener('click', function (event) {
-      event.preventDefault();
-      var scrollToLink = item.getAttribute('href');
-      document.querySelector(scrollToLink).scrollIntoView();
-      document.querySelector(scrollToLink).style.border = "thick solid lime";
+      //event.preventDefault();
+      var scrollToLink = item.innerHTML;
+      //document.querySelector(scrollToLink).scrollIntoView();
+      //document.querySelector(scrollToLink).style.border = "thick solid lime";
+      scrollActiveLink = scrollToLink;
+      console.log('scrollActiveLink: ' + scrollActiveLink);
     });
   });
 }
