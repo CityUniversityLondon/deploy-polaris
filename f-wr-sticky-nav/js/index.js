@@ -26103,7 +26103,6 @@ function launch(el) {
 
   var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
   function highlightNavMenuItem(text) {
-    console.log('highlightNavMenuItem text: ' + text);
     var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
     stickyNavMenuItemLinks.forEach(function (item) {
       if (item.innerText == text && !scrollActiveLink) {
