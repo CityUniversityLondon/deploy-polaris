@@ -39060,12 +39060,6 @@ html {
 /*
 * Styles for arrow and responsive slider
 */
-.js {
-    /*
-
-    */
-}
-
 .js .slider-v23[data-style='arrows'] {
     display: flex;
 }
@@ -39080,11 +39074,6 @@ html {
         top: 0;
         transition: left 1s ease-in-out;
         width: 100%;
-        /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
     }
 }
 
@@ -39108,11 +39097,6 @@ html {
         top: 0;
         transition: left 1s ease-in-out;
         width: 100%;
-        /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
     }
 }
 
@@ -39126,11 +39110,6 @@ html {
         top: 0;
         transition: left 1s ease-in-out;
         width: 100%;
-        /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
     }
     .js .slider-v23[data-style='arrows']:not([data-small='true'])[data-style='buttons'] {
         display: flex;
@@ -39251,23 +39230,6 @@ html {
     color: red;
     padding: 0.75rem;
     transition: background-color 0.2s ease-in, border-color 0.2s ease-in, color 0.2s ease-in;
-    /*
-                @include media('reducemotion') {
-                    //We can't completely disable the transition becasuse we action on transitionend 
-                    transition: background-color $transition-duration--instant
-                            ease-in,
-                        border-color $transition-duration--instant ease-in,
-                        color $transition-duration--instant ease-in;
-                }
-                */
-    /*
-                &:hover:not(:disabled) {
-                    @include media('hover') {
-                        background-color: red;
-                        color: $color-purewhite;
-                    }
-                }
-                */
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__prev:focus:not(:disabled), .js .slider-v23 + .slider-v23__controls .slider-v23__controls__prev:active:not(:disabled),
@@ -39325,24 +39287,6 @@ html {
     margin-left: 1rem;
 }
 
-@media (min-width: 768px) {
-    .js .related-content[data-style='arrows']:not(.slider-v23) {
-        justify-content: initial;
-        grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
-        grid-gap: 1.5rem;
-        display: grid;
-    }
-}
-
-.js .related-content:not(.slider-v23) {
-    margin: 1rem 0;
-}
-
-.js .related-content:not(.slider-v23) li:only-child {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .js .slider-v23[data-style='dots'] {
     display: flex;
     overflow: hidden;
@@ -39357,11 +39301,6 @@ html {
     top: 0;
     transition: left 1s ease-in-out;
     width: 100%;
-    /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
 }
 
 @media (max-width: 649px) {
@@ -39385,11 +39324,6 @@ html {
     margin-top: 0;
     top: 0;
     transition: left 1s ease-in-out;
-    /*
-            @include media('reducemotion') {
-                transition: none;
-            }
-            */
 }
 
 .js .slider-v23[data-style='dots'] .slide:focus {
