@@ -24668,7 +24668,7 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = sectionHeight;
     }, tenthOfASecond);
     if (toggleOpen) {
-      var sections = Array.from(heading.parentNode.parentNode.querySelectorAll("#".concat(heading.parentElement.parentElement.id, " > .").concat(bodyClassName)));
+      var sections = Array.from(heading.parentNode.parentNode.querySelectorAll("#".concat(heading.parentElement.parentElement.id, " > .accordion-v23__section .").concat(bodyClassName)));
       headings.forEach(function (heading) {
         return setSection(heading, false);
       });
