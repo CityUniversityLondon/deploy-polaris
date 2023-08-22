@@ -38757,6 +38757,8 @@ div.widget-123_test_ {
     grid-column-gap: 0;
     display: grid;
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media (min-width: 650px) {
@@ -38771,14 +38773,21 @@ div.widget-123_test_ {
     }
 }
 
+.nav-sticky:before {
+    content: "";
+    background-color: #ffffff;
+    width: 200vw;
+    position: absolute;
+    height: 100%;
+    left: -100%;
+}
+
 .nav-sticky.nav-sticky--stick {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 2;
-    padding-left: 1rem;
-    padding-right: 1rem;
     max-width: 1440px;
 }
 
