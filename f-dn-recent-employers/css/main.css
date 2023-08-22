@@ -38936,7 +38936,7 @@ html {
 
 .courses-v23__careers__recent-employers {
     padding: 2rem 1rem;
-    background: radial-gradient(ellipse at center, #a1a1a1, #a1a1a1 1px, transparent 0, transparent 100%);
+    background: radial-gradient(ellipse at center, #a1a1a1, #a1a1a1 0.0625rem, transparent 0, transparent 100%);
     background-size: 1.25rem 1.25rem;
 }
 
@@ -38946,7 +38946,7 @@ html {
     margin-bottom: initial;
 }
 
-@media (min-width: 433px) {
+@media (min-width: 769px) {
     .courses-v23__careers__recent-employers ul {
         display: flex;
         flex-wrap: wrap;
@@ -38958,7 +38958,7 @@ html {
     margin-right: 1rem;
 }
 
-@media (max-width: 432px) {
+@media (max-width: 768px) {
     .courses-v23__careers__recent-employers ul li {
         margin-bottom: 1rem;
     }
