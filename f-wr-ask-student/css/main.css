@@ -11131,6 +11131,113 @@ svg:not(:root) {
     grid-column: 17/-1;
 }
 
+.student-life-v23__links .student-life-v23__links__cards {
+    list-style: none;
+    margin-left: initial;
+    margin-bottom: initial;
+}
+
+@media (min-width: 901px) {
+    .student-life-v23__links .student-life-v23__links__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+}
+
+.student-life-v23__links .student-life-v23__links__cards li {
+    margin-top: initial;
+}
+
+@media (max-width: 900px) {
+    .student-life-v23__links .student-life-v23__links__cards li {
+        margin-bottom: 1rem;
+    }
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    display: block;
+    outline-offset: 0.25rem;
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a:hover, .student-life-v23__links .student-life-v23__links__cards li a:focus, .student-life-v23__links .student-life-v23__links__cards li a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.student-life-v23__links .student-life-v23__links__card {
+    position: relative;
+}
+
+.student-life-v23__links .student-life-v23__links__card--image::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, #1e1e1e, transparent);
+}
+
+.student-life-v23__links .student-life-v23__links__card--label {
+    position: absolute;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    bottom: 1.25rem;
+    left: 1.25rem;
+}
+
+@media (min-width: 901px) {
+    .student-life-v23__links .student-life-v23__links__card--label {
+        bottom: 1.75rem;
+        left: 1.75rem;
+    }
+}
+
+.student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading {
+    display: inline-flex;
+    margin-bottom: initial;
+    text-wrap: wrap;
+}
+
+.student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-text {
+    padding: 0.5rem;
+}
+
+.student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f1b434;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ug-courses-v23 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
+    background-color: #f1b434;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
+    background-color: #006699;
+    color: #ffffff;
+}
+
 .courses-v23 section, .courses-v23 > div {
     width: 100%;
     margin-left: auto;
@@ -39128,7 +39235,8 @@ html {
     width: 4rem;
 }
 
-.ug-courses-v23 .unibuddy-card-v23__content__image:after, .ug-courses-v23 .unibuddy-card-v23__content__title:after {
+.ug-courses-v23 .unibuddy-card-v23__content__image:after,
+.ug-courses-v23 .unibuddy-card-v23__content__title:after {
     background: #a9a19c;
 }
 
@@ -39155,7 +39263,8 @@ html {
     }
 }
 
-.pg-courses-v23 .unibuddy-card-v23__content__image:after, .pg-courses-v23 .unibuddy-card-v23__content__title:after {
+.pg-courses-v23 .unibuddy-card-v23__content__image:after,
+.pg-courses-v23 .unibuddy-card-v23__content__title:after {
     background: #002b49;
 }
 
@@ -39185,12 +39294,6 @@ html {
 /*
 * Styles for arrow and responsive slider
 */
-.js {
-    /*
-
-    */
-}
-
 .js .slider-v23[data-style='arrows'] {
     display: flex;
 }
@@ -39205,11 +39308,6 @@ html {
         top: 0;
         transition: left 1s ease-in-out;
         width: 100%;
-        /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
     }
 }
 
@@ -39233,11 +39331,6 @@ html {
         top: 0;
         transition: left 1s ease-in-out;
         width: 100%;
-        /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
     }
 }
 
@@ -39251,11 +39344,6 @@ html {
         top: 0;
         transition: left 1s ease-in-out;
         width: 100%;
-        /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
     }
     .js .slider-v23[data-style='arrows']:not([data-small='true'])[data-style='buttons'] {
         display: flex;
@@ -39376,23 +39464,6 @@ html {
     color: red;
     padding: 0.75rem;
     transition: background-color 0.2s ease-in, border-color 0.2s ease-in, color 0.2s ease-in;
-    /*
-                @include media('reducemotion') {
-                    //We can't completely disable the transition becasuse we action on transitionend 
-                    transition: background-color $transition-duration--instant
-                            ease-in,
-                        border-color $transition-duration--instant ease-in,
-                        color $transition-duration--instant ease-in;
-                }
-                */
-    /*
-                &:hover:not(:disabled) {
-                    @include media('hover') {
-                        background-color: red;
-                        color: $color-purewhite;
-                    }
-                }
-                */
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__prev:focus:not(:disabled), .js .slider-v23 + .slider-v23__controls .slider-v23__controls__prev:active:not(:disabled),
@@ -39450,24 +39521,6 @@ html {
     margin-left: 1rem;
 }
 
-@media (min-width: 768px) {
-    .js .related-content[data-style='arrows']:not(.slider-v23) {
-        justify-content: initial;
-        grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
-        grid-gap: 1.5rem;
-        display: grid;
-    }
-}
-
-.js .related-content:not(.slider-v23) {
-    margin: 1rem 0;
-}
-
-.js .related-content:not(.slider-v23) li:only-child {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .js .slider-v23[data-style='dots'] {
     display: flex;
     overflow: hidden;
@@ -39482,11 +39535,6 @@ html {
     top: 0;
     transition: left 1s ease-in-out;
     width: 100%;
-    /*
-        @include media('reducemotion') {
-            transition: none;
-        }
-        */
 }
 
 @media (max-width: 649px) {
@@ -39510,11 +39558,6 @@ html {
     margin-top: 0;
     top: 0;
     transition: left 1s ease-in-out;
-    /*
-            @include media('reducemotion') {
-                transition: none;
-            }
-            */
 }
 
 .js .slider-v23[data-style='dots'] .slide:focus {
