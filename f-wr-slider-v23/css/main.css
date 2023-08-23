@@ -11092,84 +11092,433 @@ svg:not(:root) {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.courses-v23 section, .courses-v23 > div {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 7680px;
+.courses-v23 .courses-v23__student-life {
+    margin-left: 1rem;
+    margin-right: 1rem;
     max-width: 1440px;
 }
 
-@media (max-width: 500px) {
-    .courses-v23 section, .courses-v23 > div {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+@media (min-width: 651px) {
+    .courses-v23 .courses-v23__student-life {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 }
 
-@media (min-width: 501px) {
-    .courses-v23 section, .courses-v23 > div {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-.courses-v23__overview__grid {
-    grid-template-columns: repeat(12, 1fr);
+.courses-v23 .courses-v23__student-life .student-life-v23__links {
+    grid-template-columns: repeat(24, 1fr);
     grid-column-gap: 0;
     display: grid;
 }
 
 @media (min-width: 650px) {
-    .courses-v23__overview__grid {
+    .courses-v23 .courses-v23__student-life .student-life-v23__links {
         grid-column-gap: 1rem;
     }
 }
 
 @media (min-width: 901px) {
-    .courses-v23__overview__grid {
+    .courses-v23 .courses-v23__student-life .student-life-v23__links {
         grid-column-gap: 1.5rem;
     }
 }
 
-.courses-v23__overview {
-    grid-column: 1/7;
-    max-width: 55ch;
+.courses-v23 .courses-v23__student-life .student-life-v23__links__cards {
+    grid-column: 1/17;
 }
 
-.courses-v23__careers {
-    grid-template-columns: repeat(18, 1fr);
-    grid-column-gap: 0;
-    display: grid;
+.courses-v23 .courses-v23__student-life .student-life-v23__links__unibuddy {
+    grid-column: 17/-1;
 }
 
-@media (min-width: 650px) {
-    .courses-v23__careers {
-        grid-column-gap: 1rem;
-    }
-}
-
-@media (min-width: 901px) {
-    .courses-v23__careers {
-        grid-column-gap: 1.5rem;
-    }
-}
-
-.courses-v23__careers .courses-v23__careers__heading {
-    grid-column: 1/-1;
-}
-
-.courses-v23__careers .courses-v23__careers__content {
-    grid-column: 1/14;
-}
-
-.courses-v23__careers .courses-v23__careers__alumni {
-    grid-column: 14/-1;
-}
-
-.courses-v23__careers .courses-v23__careers__alumni .slider-v23__container {
-    padding: 1.5rem;
+#apply {
     position: relative;
+    background-color: #a9a19c;
+    width: 90%;
+    padding: 4rem 2rem;
+}
+
+#apply .courses-v23__apply__cta {
+    background-color: transparent;
+    color: #1e1e1e;
+    font-size: 1rem;
+    border: 2px solid #1e1e1e;
+}
+
+#apply .courses-v23__apply__cta:hover, #apply .courses-v23__apply__cta:focus, #apply .courses-v23__apply__cta:active {
+    background-color: #1e1e1e;
+    outline-offset: 0.1875rem;
+    color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    #apply .courses-v23__apply__cta {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    #apply .courses-v23__apply__cta {
+        font-size: 92px;
+    }
+}
+
+#apply:after {
+    content: '';
+    width: 10%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: -10%;
+    background-color: #a9a19c;
+}
+
+@media (max-width: 768px) {
+    #apply:after {
+        height: 95%;
+        top: 2.5%;
+    }
+}
+
+#apply .courses-v23__apply__promo-content {
+    position: relative;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 769px) {
+    #apply .courses-v23__apply__promo-content {
+        padding-top: 3rem;
+        padding-left: 5rem;
+        padding-bottom: 3rem;
+    }
+    #apply .courses-v23__apply__promo-content .courses-v23__apply__promo-content__cta-group {
+        display: flex;
+        -moz-column-gap: 1rem;
+             column-gap: 1rem;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 768px) {
+    #apply .courses-v23__apply__promo-content .courses-v23__apply__promo-content__cta:nth-child(n+2) {
+        margin-top: 1rem;
+    }
+}
+
+#apply .courses-v23__apply__right-bracket {
+    position: relative;
+}
+
+#apply .courses-v23__apply__right-bracket svg {
+    transform: rotate(180deg);
+    position: absolute;
+    height: 101%;
+    width: auto;
+    right: 0;
+}
+
+.ug-courses-v23 #apply {
+    background-color: #a9a19c;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 #apply:after {
+    background-color: #a9a19c;
+}
+
+.ug-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #f1b434;
+    border-width: 1.5rem 0 0 1.5rem;
+    left: -0;
+    top: -0;
+}
+
+.ug-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesA:after {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #f1b434;
+    border-width: 0 0 1.5rem 1.5rem;
+    left: -0;
+    top: 0;
+}
+
+.ug-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesB:before {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #f1b434;
+    border-width: 1.5rem 1.5rem 0 0;
+    right: -0;
+    top: -0;
+}
+
+.ug-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesB:after {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #f1b434;
+    border-width: 0 1.5rem 1.5rem 0;
+    right: -0;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .ug-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
+        left: -2rem;
+        border-width: 1rem 0 0 1rem;
+        width: 2rem;
+    }
+    .ug-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesA:after {
+        left: -2rem;
+        border-width: 0 0 1rem 1rem;
+        width: 2rem;
+    }
+    .ug-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesB:before {
+        right: -2rem;
+        border-width: 1rem 1rem 0 0;
+        width: 2rem;
+    }
+    .ug-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesB:after {
+        right: -2rem;
+        border-width: 0 1rem 1rem 0;
+        width: 2rem;
+    }
+}
+
+.ug-courses-v23 #apply .courses-v23__apply__promo-content__cta {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.ug-courses-v23 #apply .courses-v23__apply__promo-content__cta:hover, .ug-courses-v23 #apply .courses-v23__apply__promo-content__cta:active {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 #apply .courses-v23__apply__promo-content__cta:active {
+    outline: 2px dotted #ffffff;
+    outline-offset: 3px;
+}
+
+.ug-courses-v23 #apply .courses-v23__apply__promo-content__cta:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.pg-courses-v23 #apply {
+    background-color: #002b49;
+    color: #ffffff;
+}
+
+.pg-courses-v23 #apply:after {
+    background-color: #002b49;
+}
+
+.pg-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #006699;
+    border-width: 1.5rem 0 0 1.5rem;
+    left: -0;
+    top: -0;
+}
+
+.pg-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesA:after {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #006699;
+    border-width: 0 0 1.5rem 1.5rem;
+    left: -0;
+    top: 0;
+}
+
+.pg-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesB:before {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #006699;
+    border-width: 1.5rem 1.5rem 0 0;
+    right: -0;
+    top: -0;
+}
+
+.pg-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesB:after {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #006699;
+    border-width: 0 1.5rem 1.5rem 0;
+    right: -0;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .pg-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
+        left: -2rem;
+        border-width: 1rem 0 0 1rem;
+        width: 2rem;
+    }
+    .pg-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesA:after {
+        left: -2rem;
+        border-width: 0 0 1rem 1rem;
+        width: 2rem;
+    }
+    .pg-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesB:before {
+        right: -2rem;
+        border-width: 1rem 1rem 0 0;
+        width: 2rem;
+    }
+    .pg-courses-v23 #apply .courses-v23__apply__promo-content .bracket-block__anglesB:after {
+        right: -2rem;
+        border-width: 0 1rem 1rem 0;
+        width: 2rem;
+    }
+}
+
+.pg-courses-v23 #apply .courses-v23__apply__promo-content__cta {
+    width: 100%;
+    background-color: white;
+    color: #1e1e1e;
+    border: 2px solid #ececec;
+}
+
+.pg-courses-v23 #apply .courses-v23__apply__promo-content__cta:hover, .pg-courses-v23 #apply .courses-v23__apply__promo-content__cta:focus, .pg-courses-v23 #apply .courses-v23__apply__promo-content__cta:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+    border: 2px solid white;
+}
+
+.student-life-v23__links .student-life-v23__links__cards {
+    list-style: none;
+    margin-left: initial;
+    margin-bottom: initial;
+}
+
+@media (min-width: 901px) {
+    .student-life-v23__links .student-life-v23__links__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+}
+
+.student-life-v23__links .student-life-v23__links__cards li {
+    margin-top: initial;
+}
+
+@media (max-width: 900px) {
+    .student-life-v23__links .student-life-v23__links__cards li {
+        margin-bottom: 1rem;
+    }
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a {
+    background-color: inherit;
+    color: inherit;
+    border-bottom-width: 0;
+    display: block;
+    outline-offset: 0.25rem;
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a:hover, .student-life-v23__links .student-life-v23__links__cards li a:focus, .student-life-v23__links .student-life-v23__links__cards li a:active {
+    background-color: inherit;
+    color: inherit;
+    outline-width: 0;
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a:focus {
+    outline: 3px solid #1e1e1e;
+}
+
+.student-life-v23__links .student-life-v23__links__cards li a:active {
+    outline: 2px dotted #1e1e1e;
+}
+
+.student-life-v23__links .student-life-v23__links__card {
+    position: relative;
+}
+
+.student-life-v23__links .student-life-v23__links__card--image::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, #1e1e1e, transparent);
+}
+
+.student-life-v23__links .student-life-v23__links__card--label {
+    position: absolute;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    bottom: 1.25rem;
+    left: 1.25rem;
+}
+
+@media (min-width: 901px) {
+    .student-life-v23__links .student-life-v23__links__card--label {
+        bottom: 1.75rem;
+        left: 1.75rem;
+    }
+}
+
+.student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading {
+    display: inline-flex;
+    margin-bottom: initial;
+    text-wrap: wrap;
+}
+
+.student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-text {
+    padding: 0.5rem;
+}
+
+.student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f1b434;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ug-courses-v23 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
+    background-color: #f1b434;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
+    background-color: #006699;
+    color: #ffffff;
 }
 
 .courses-v23 .courses-v23__related-courses__heading {
@@ -11476,6 +11825,86 @@ svg:not(:root) {
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
     outline-color: #ffffff;
+}
+
+.courses-v23 section, .courses-v23 > div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 7680px;
+    max-width: 1440px;
+}
+
+@media (max-width: 500px) {
+    .courses-v23 section, .courses-v23 > div {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .courses-v23 section, .courses-v23 > div {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.courses-v23__overview__grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0;
+    display: grid;
+}
+
+@media (min-width: 650px) {
+    .courses-v23__overview__grid {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__overview__grid {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.courses-v23__overview {
+    grid-column: 1/7;
+    max-width: 55ch;
+}
+
+.courses-v23__careers {
+    grid-template-columns: repeat(18, 1fr);
+    grid-column-gap: 0;
+    display: grid;
+}
+
+@media (min-width: 650px) {
+    .courses-v23__careers {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__careers {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.courses-v23__careers .courses-v23__careers__heading {
+    grid-column: 1/-1;
+}
+
+.courses-v23__careers .courses-v23__careers__content {
+    grid-column: 1/14;
+}
+
+.courses-v23__careers .courses-v23__careers__alumni {
+    grid-column: 14/-1;
+}
+
+.courses-v23__careers .courses-v23__careers__alumni .slider-v23__container {
+    padding: 1.5rem;
+    position: relative;
 }
 
 .vertical-menu__page-link,
@@ -31432,6 +31861,10 @@ table tbody > tr > td:hover {
     background: #d8d8d8;
 }
 
+.courses-v23 table tbody tr:nth-child(odd) {
+    background: #fafafa;
+}
+
 .timeline {
     position: relative;
     margin-bottom: 3rem;
@@ -38738,6 +39171,7 @@ div.widget-123_test_ {
 
 .nav-sticky__wrap {
     width: 100%;
+    position: relative;
 }
 
 .nav-sticky__helper {
@@ -38746,7 +39180,7 @@ div.widget-123_test_ {
 }
 
 .nav-sticky {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     background: #ffffff;
@@ -38756,6 +39190,8 @@ div.widget-123_test_ {
     grid-column-gap: 0;
     display: grid;
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media (min-width: 650px) {
@@ -38770,14 +39206,21 @@ div.widget-123_test_ {
     }
 }
 
+.nav-sticky:before {
+    content: "";
+    background-color: #ffffff;
+    width: 200vw;
+    position: absolute;
+    height: 100%;
+    left: -100%;
+}
+
 .nav-sticky.nav-sticky--stick {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 2;
-    padding-left: 1rem;
-    padding-right: 1rem;
     max-width: 1440px;
 }
 
@@ -38857,6 +39300,7 @@ div.widget-123_test_ {
     grid-column: 1/-1;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    position: relative;
 }
 
 .nav-sticky .nav-sticky__item {
@@ -38894,6 +39338,7 @@ div.widget-123_test_ {
 
 .pg-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .pg-courses-v23 .nav-sticky .nav-sticky__item__link:active {
     background: #006699;
+    color: #ffffff;
 }
 
 .pg-courses-v23 .nav-sticky .nav-sticky__item__link__active {
@@ -38916,45 +39361,6 @@ div.widget-123_test_ {
 
 html {
     scroll-behavior: smooth;
-}
-
-.student-life-v23__wrap {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: 1440px;
-}
-
-@media (min-width: 651px) {
-    .student-life-v23__wrap {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-}
-
-.student-life-v23__links {
-    grid-template-columns: repeat(24, 1fr);
-    grid-column-gap: 0;
-    display: grid;
-}
-
-@media (min-width: 650px) {
-    .student-life-v23__links {
-        grid-column-gap: 1rem;
-    }
-}
-
-@media (min-width: 901px) {
-    .student-life-v23__links {
-        grid-column-gap: 1.5rem;
-    }
-}
-
-.student-life-v23__links__cards {
-    grid-column: 1/13;
-}
-
-.student-life-v23__links__promo {
-    grid-column: 14/-1;
 }
 
 .promo-box-v23__wrapper .promo-box-v23 {
@@ -39055,6 +39461,168 @@ html {
     .pg-courses-v23 .promo-box-v23 .cta--main {
         font-size: 92px;
     }
+}
+
+.unibuddy-card-v23 {
+    box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 19.5rem;
+}
+
+.unibuddy-card-v23 .unibuddy-card-v23__content__image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.unibuddy-card-v23 .unibuddy-card-v23__content__image img {
+    width: 6.5rem;
+    background-clip: padding-box;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.unibuddy-card-v23 .unibuddy-card-v23__content__image:after {
+    content: '';
+    display: block;
+    height: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 4rem;
+}
+
+.unibuddy-card-v23 .unibuddy-card-v23__content__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.unibuddy-card-v23 .unibuddy-card-v23__content__details__name {
+    font-weight: 700;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.unibuddy-card-v23 .unibuddy-card-v23__cta__link {
+    font-weight: 700;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.unibuddy-card-v23--general .unibuddy-card-v23__content__title {
+    font-weight: 700;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.unibuddy-card-v23--general .unibuddy-card-v23__content__title:after {
+    content: '';
+    display: block;
+    height: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 4rem;
+}
+
+.ug-courses-v23 .unibuddy-card-v23__content__image:after,
+.ug-courses-v23 .unibuddy-card-v23__content__title:after {
+    background: #a9a19c;
+}
+
+.ug-courses-v23 .cta--main {
+    background-color: #a9a19c;
+    color: #1e1e1e;
+    font-size: 1rem;
+}
+
+.ug-courses-v23 .cta--main:hover, .ug-courses-v23 .cta--main:focus, .ug-courses-v23 .cta--main:active {
+    background-color: #9b918c;
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .cta--main {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .ug-courses-v23 .cta--main {
+        font-size: 92px;
+    }
+}
+
+.pg-courses-v23 .unibuddy-card-v23__content__image:after,
+.pg-courses-v23 .unibuddy-card-v23__content__title:after {
+    background: #002b49;
+}
+
+.pg-courses-v23 .cta--main {
+    background-color: #002b49;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.pg-courses-v23 .cta--main:hover, .pg-courses-v23 .cta--main:focus, .pg-courses-v23 .cta--main:active {
+    background-color: #00192a;
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .cta--main {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .pg-courses-v23 .cta--main {
+        font-size: 92px;
+    }
+}
+
+.courses-v23__careers__recent-employers {
+    padding: 2rem 1rem;
+    background: radial-gradient(ellipse at center, #a1a1a1, #a1a1a1 0.0625rem, transparent 0, transparent 100%);
+    background-size: 1.25rem 1.25rem;
+}
+
+.courses-v23__careers__recent-employers ul {
+    list-style: none;
+    margin-left: initial;
+    margin-bottom: initial;
+}
+
+@media (min-width: 769px) {
+    .courses-v23__careers__recent-employers ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.courses-v23__careers__recent-employers ul li {
+    margin-top: initial;
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .courses-v23__careers__recent-employers ul li {
+        margin-bottom: 1rem;
+    }
+}
+
+.courses-v23__careers__recent-employers ul li img {
+    background-color: #ffffff;
+    max-width: 80%;
 }
 
 /*
@@ -39645,9 +40213,10 @@ html {
     .js .accordion-v23 .accordion-v23__section[data-open='true'] {
         outline: 2px dotted #1e1e1e;
         outline-offset: 4px;
+        margin-top: 4.5rem;
     }
     .js .accordion-v23 .accordion-v23__body {
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button {
         background-color: #d8d8d8;
@@ -39655,6 +40224,16 @@ html {
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:hover, .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:focus, .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:active {
         background-color: #ececec;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator:before {
+        content: "\f054";
+        font-family: "FontAwesome";
+        height: initial;
+        width: initial;
+        background-color: initial;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator:after {
+        content: none;
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading[data-open='true'] button {
         background-color: #ececec;
@@ -39692,11 +40271,6 @@ html {
         gap: 1rem;
     }
     .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator {
-        /*
-            align-self: center;
-            text-align: right;
-            height: 100%;
-            */
         background-color: transparent;
         color: #1e1e1e;
         width: 2rem;
@@ -39725,24 +40299,9 @@ html {
     .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::after {
         animation: bar 0.1s ease both reverse;
     }
-    .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator:before {
-        /*
-                content: fa-content($fa-var-plus);
-                display: inline-block;
-                text-decoration: none;
-                */
-    }
     .js .accordion-v23 .accordion-v23__heading button:hover {
         background-color: #ffffff;
         border: 2px solid #d8d8d8;
-        /*
-            @include media('hover') {
-                text-decoration: underline;
-                color: lightblue;
-                outline: $border-width-default $border-style-default transparent;
-                background: orange;
-            }
-            */
     }
     .js .accordion-v23 .accordion-v23__heading button:hover .accordion-v23__heading__text {
         text-decoration: underline;
@@ -39772,56 +40331,16 @@ html {
     .js .accordion-v23 .accordion-v23__heading[data-open='true'] button {
         border: 2px solid #d8d8d8;
         border-bottom: none;
-        /*
-            border-top: $border-width-default $border-style-default $color-gainsboro;
-            border-left: $border-width-default solid yellow;
-            border-right: $border-width-default solid yellow;
-            */
         text-decoration: underline;
         background-clip: padding-box;
         border-radius: 0.5rem 0.5rem 0 0;
         background-color: #ffffff;
-    }
-    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__text:hover {
-        /*
-                    @include media('hover') {
-                        text-decoration: underline;
-                    }
-                    */
     }
     .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator {
         animation: pressed 0.1s ease both;
     }
     .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator::after {
         animation: bar 0.1s ease both;
-    }
-    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator:before {
-        /*
-                    content: fa-content($fa-var-minus);
-                    display: inline-block;
-                    text-decoration: none;
-                    */
-    }
-    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button:focus, .js .accordion-v23 .accordion-v23__heading[data-open='true'] button:active {
-        /*
-                border-top: $border-width-default dotted
-                    yellow;
-                border-left: $border-width-default dotted
-                    yellow;
-                border-right: $border-width-default dotted
-                    yellow;
-                border-bottom: $border-width-hairline $border-style-default
-                    darkgray;
-                outline: 0;
-                */
-    }
-    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button:hover {
-        /*
-                @include media('hover') {
-                    background: orange;
-                    color: yellow;
-                }
-                */
     }
     .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
         border: 2px solid #d8d8d8;
@@ -39843,6 +40362,9 @@ html {
     }
     .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
         margin-bottom: 1rem;
+    }
+    .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body .wrapper--accordion-v23__body__content p:first-of-type {
+        margin-top: 0;
     }
     .js .accordion-v23 .accordion-v23__heading + .accordion-v23__body {
         overflow-y: hidden;
