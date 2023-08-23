@@ -25138,7 +25138,6 @@ function updateButtonState(slider, controls) {
 * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
 */
 function handleNextPrevClick(slider, controls, direction) {
-  console.log('handleNextPrevClick');
   var slides = Array.from(slider.children);
   var responsive = slider.getAttribute('data-style');
   var optimised = slider.getAttribute('data-optimised');
@@ -25625,7 +25624,6 @@ function move(e, slider, controlsWrapper) {
 * @param {HTMLElement} slider - An element with the slider class
 */
 function launch(slider) {
-  console.log('slider v23 launched');
   var style = slider.dataset.style || defaultStyle,
     cardsPerRow = parseInt(slider.dataset.cardsperrow) || defaultCardsPerRow; // CardsPerRow not currently in use. Tom's old code.
   // Might have use case for bigger screen which have capacity to have more than 1 item per slide.
