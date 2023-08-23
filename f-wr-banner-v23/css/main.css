@@ -32019,6 +32019,10 @@ table tbody > tr > td:hover {
     background: #d8d8d8;
 }
 
+.courses-v23 table tbody tr:nth-child(odd) {
+    background: #fafafa;
+}
+
 .timeline {
     position: relative;
     margin-bottom: 3rem;
@@ -39650,6 +39654,41 @@ html {
     .pg-courses-v23 .promo-box-v23 .cta--main {
         font-size: 92px;
     }
+}
+
+.courses-v23__careers__recent-employers {
+    padding: 2rem 1rem;
+    background: radial-gradient(ellipse at center, #a1a1a1, #a1a1a1 0.0625rem, transparent 0, transparent 100%);
+    background-size: 1.25rem 1.25rem;
+}
+
+.courses-v23__careers__recent-employers ul {
+    list-style: none;
+    margin-left: initial;
+    margin-bottom: initial;
+}
+
+@media (min-width: 769px) {
+    .courses-v23__careers__recent-employers ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.courses-v23__careers__recent-employers ul li {
+    margin-top: initial;
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .courses-v23__careers__recent-employers ul li {
+        margin-bottom: 1rem;
+    }
+}
+
+.courses-v23__careers__recent-employers ul li img {
+    background-color: #ffffff;
+    max-width: 80%;
 }
 
 /*
