@@ -11092,6 +11092,66 @@ svg:not(:root) {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.courses-v23__summary .accordion-v23 {
+    margin-bottom: 2rem;
+}
+
+.courses-v23__summary .summary__profiles__wrap {
+    margin-left: 2rem;
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .courses-v23__summary .summary__profiles__wrap {
+        width: 100%;
+    }
+}
+
+.courses-v23__summary .summary__profile {
+    border-left-width: 4px;
+    border-left-style: solid;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.courses-v23__summary .summary__profile:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.courses-v23__summary .summary__profile .summary__profile__text {
+    flex-basis: 70%;
+}
+
+.courses-v23__summary .summary__profile .summary__profile__text__name {
+    margin-bottom: 0.5rem;
+    font-size: 1.44rem;
+}
+
+.courses-v23__summary .summary__profile .summary__profile__text__title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #555555;
+}
+
+.courses-v23__summary .summary__profile .summary__profile__img {
+    padding-left: 1rem;
+}
+
+.courses-v23__summary .summary__profile .summary__profile__img img {
+    background-clip: padding-box;
+    border-radius: 50%;
+    max-width: 6rem;
+}
+
+.ug-courses-v23 .courses-v23__summary .summary__profile {
+    border-color: #e35205;
+}
+
+.pg-courses-v23 .courses-v23__summary .summary__profile {
+    border-color: #3457F1;
+}
+
 .courses-v23 .courses-v23__student-life {
     margin-left: 1rem;
     margin-right: 1rem;
