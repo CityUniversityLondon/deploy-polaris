@@ -393,6 +393,10 @@
     background-color: #e4e4e4;
 }
 
+.background--steam {
+    background-color: #DDDDDD;
+}
+
 @font-face {
     font-family: "FF Meta";
     font-style: normal;
@@ -11092,6 +11096,332 @@ svg:not(:root) {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.courses-v23 .courses-v23__key-info__wrap {
+    /*
+        @include x-column-grid(12);
+        display: grid;
+        margin-bottom: $measure--small2;
+
+        @include media("<=between") {
+            @include x-column-grid(6);
+        }
+        */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: initial;
+    margin-bottom: 5rem;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__image {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__image img {
+    width: 100%;
+    object-fit: cover;
+    top: -6rem;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 7680px;
+    max-width: 1440px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+    gap: 2.25rem;
+    background-clip: padding-box;
+    border-radius: 10px;
+    top: 5rem;
+    position: relative;
+    padding: 1.75rem 1rem;
+}
+
+@media (max-width: 500px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
+        flex-direction: column;
+        background-clip: padding-box;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div {
+    flex: 1;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content {
+    padding-left: 1rem;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p {
+    margin-bottom: 0.5rem;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content__label {
+    font-weight: 600;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__wrap {
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__wrap:before {
+    font-family: "FontAwesome";
+    content: "\f19d";
+    margin-right: 0.5rem;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__wrap ul {
+    margin: 0;
+    list-style: none;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current {
+    margin-bottom: 0.5rem;
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__cta {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__cta:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst {
+    padding: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 2.0736rem;
+}
+
+@media (max-width: 767px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst {
+        margin-top: 0;
+    }
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst p {
+    margin-bottom: 1rem;
+}
+
+.ug-courses-v23 .courses-v23__key-info {
+    background-color: #a9a19c;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .courses-v23__key-info__details a {
+    color: #1e1e1e;
+    border-bottom-color: #1e1e1e;
+}
+
+.ug-courses-v23 .courses-v23__key-info__details a:hover {
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+
+.ug-courses-v23 .courses-v23__key-info__details a:active, .ug-courses-v23 .courses-v23__key-info__details a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #1e1e1e;
+}
+
+.ug-courses-v23 .courses-v23__key-info__details__content {
+    border-left: 5px solid rgba(12, 12, 14, 0.6);
+}
+
+.ug-courses-v23 .cta--v23--ki {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.ug-courses-v23 .cta--v23--ki--apply {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.ug-courses-v23 .cta--v23--ki--apply:hover, .ug-courses-v23 .cta--v23--ki--apply:focus, .ug-courses-v23 .cta--v23--ki--apply:active {
+    background-color: #3d3d3d;
+    outline-offset: 0.1875rem;
+    color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .cta--v23--ki--apply {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .ug-courses-v23 .cta--v23--ki--apply {
+        font-size: 92px;
+    }
+}
+
+.ug-courses-v23 .cta--v23--ki--clearing {
+    background-color: #f1b434;
+    color: #1e1e1e;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.ug-courses-v23 .cta--v23--ki--clearing:hover, .ug-courses-v23 .cta--v23--ki--clearing:focus, .ug-courses-v23 .cta--v23--ki--clearing:active {
+    background-color: #efa917;
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .cta--v23--ki--clearing {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .ug-courses-v23 .cta--v23--ki--clearing {
+        font-size: 92px;
+    }
+}
+
+.pg-courses-v23 .courses-v23__key-info {
+    background-color: #002b49;
+    color: #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__key-info__details a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__key-info__details a:hover {
+    color: #1e1e1e;
+    background-color: #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__key-info__details a:active, .pg-courses-v23 .courses-v23__key-info__details a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__key-info__details__content {
+    border-left: 5px solid rgba(221, 221, 221, 0.6);
+}
+
+.pg-courses-v23 .cta--v23--ki {
+    background-color: #002b49;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1.25rem;
+    border: 2px solid #ffffff;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.pg-courses-v23 .cta--v23--ki:hover, .pg-courses-v23 .cta--v23--ki:focus, .pg-courses-v23 .cta--v23--ki:active {
+    background-color: #00192a;
+    outline-offset: 0.1875rem;
+    color: #ffffff;
+    outline-color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .cta--v23--ki {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .pg-courses-v23 .cta--v23--ki {
+        font-size: 92px;
+    }
+}
+
+.pg-courses-v23 .cta--v23--ki--apply {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.pg-courses-v23 .cta--v23--ki--apply:hover, .pg-courses-v23 .cta--v23--ki--apply:focus, .pg-courses-v23 .cta--v23--ki--apply:active {
+    background-color: #f0f0f0;
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .cta--v23--ki--apply {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .pg-courses-v23 .cta--v23--ki--apply {
+        font-size: 92px;
+    }
+}
+
+.pg-courses-v23 .cta--v23--ki--clearing {
+    background-color: #f1b434;
+    color: #1e1e1e;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.pg-courses-v23 .cta--v23--ki--clearing:hover, .pg-courses-v23 .cta--v23--ki--clearing:focus, .pg-courses-v23 .cta--v23--ki--clearing:active {
+    background-color: #efa917;
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .cta--v23--ki--clearing {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .pg-courses-v23 .cta--v23--ki--clearing {
+        font-size: 92px;
+    }
+}
+
 .courses-v23__summary .accordion-v23 {
     margin-bottom: 2rem;
 }
@@ -21234,6 +21564,27 @@ USED IN:
     color: #1e1e1e;
 }
 
+.cta--black {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.cta--black:hover, .cta--black:active {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.cta--black:active {
+    outline: 2px dotted #ffffff;
+    outline-offset: 3px;
+}
+
+.cta--black:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
 .cta--montecarlo {
     background-color: #a3d5cd;
     color: #1e1e1e;
@@ -21346,6 +21697,8 @@ USED IN:
     background-color: #a9a19c;
     color: #1e1e1e;
     font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .cta--ug-v23:hover, .cta--ug-v23:focus, .cta--ug-v23:active {
@@ -21369,6 +21722,8 @@ USED IN:
     background-color: #002b49;
     color: #ffffff;
     font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .cta--pg-v23:hover, .cta--pg-v23:focus, .cta--pg-v23:active {
@@ -21388,6 +21743,119 @@ USED IN:
     }
 }
 
+.cta--ug-v23--ki {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.cta--ug-v23--ki--apply {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.cta--ug-v23--ki--apply:hover, .cta--ug-v23--ki--apply:focus, .cta--ug-v23--ki--apply:active {
+    background-color: #3d3d3d;
+    outline-offset: 0.1875rem;
+    color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cta--ug-v23--ki--apply {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cta--ug-v23--ki--apply {
+        font-size: 92px;
+    }
+}
+
+.cta--ug-v23--ki--clearing {
+    background-color: #f1b434;
+    color: #1e1e1e;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.cta--ug-v23--ki--clearing:hover, .cta--ug-v23--ki--clearing:focus, .cta--ug-v23--ki--clearing:active {
+    background-color: #efa917;
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cta--ug-v23--ki--clearing {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cta--ug-v23--ki--clearing {
+        font-size: 92px;
+    }
+}
+
+.cta--pg-v23--ki {
+    background-color: #002b49;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1.25rem;
+    border: 2px solid #ffffff;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.cta--pg-v23--ki:hover, .cta--pg-v23--ki:focus, .cta--pg-v23--ki:active {
+    background-color: #00192a;
+    outline-offset: 0.1875rem;
+    color: #ffffff;
+    outline-color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cta--pg-v23--ki {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cta--pg-v23--ki {
+        font-size: 92px;
+    }
+}
+
+.cta--pg-v23--ki--apply {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.cta--pg-v23--ki--apply:hover, .cta--pg-v23--ki--apply:focus, .cta--pg-v23--ki--apply:active {
+    background-color: #f0f0f0;
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cta--pg-v23--ki--apply {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cta--pg-v23--ki--apply {
+        font-size: 92px;
+    }
+}
+
 .cta--alumni-ug-v23 {
     background-color: #e35205;
     color: #1e1e1e;
@@ -21395,8 +21863,20 @@ USED IN:
 }
 
 .cta--alumni-ug-v23:hover, .cta--alumni-ug-v23:focus, .cta--alumni-ug-v23:active {
-    background-color: #c54704;
+    background-color: #f0f0f0;
     outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cta--alumni-ug-v23 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cta--alumni-ug-v23 {
+        font-size: 92px;
+    }
 }
 
 .cta--alumni-pg-v23 {
@@ -21425,7 +21905,7 @@ USED IN:
 .cta--v23-right-arrow:after {
     content: "\f054";
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font-family: "FontAwesome";
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -39462,9 +39942,7 @@ html {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1.25rem;
     font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .ug-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
@@ -39476,6 +39954,8 @@ html {
     background-color: #a9a19c;
     color: #1e1e1e;
     font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
@@ -39504,6 +39984,8 @@ html {
     background-color: #002b49;
     color: #ffffff;
     font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
@@ -39603,6 +40085,8 @@ html {
     background-color: #a9a19c;
     color: #1e1e1e;
     font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .ug-courses-v23 .cta--main:hover, .ug-courses-v23 .cta--main:focus, .ug-courses-v23 .cta--main:active {
@@ -39631,6 +40115,8 @@ html {
     background-color: #002b49;
     color: #ffffff;
     font-size: 1rem;
+    padding: 1.25rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .pg-courses-v23 .cta--main:hover, .pg-courses-v23 .cta--main:focus, .pg-courses-v23 .cta--main:active {
@@ -40238,8 +40724,20 @@ html {
 }
 
 .ug-courses-v23 .courses-v23__careers .cta--main:hover, .ug-courses-v23 .courses-v23__careers .cta--main:focus, .ug-courses-v23 .courses-v23__careers .cta--main:active {
-    background-color: #c54704;
+    background-color: #f0f0f0;
     outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .courses-v23__careers .cta--main {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .ug-courses-v23 .courses-v23__careers .cta--main {
+        font-size: 92px;
+    }
 }
 
 .pg-courses-v23 .courses-v23__careers .slider-v23__container {
