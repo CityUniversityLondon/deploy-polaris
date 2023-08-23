@@ -39132,6 +39132,7 @@ div.widget-123_test_ {
 
 .nav-sticky__wrap {
     width: 100%;
+    position: relative;
 }
 
 .nav-sticky__helper {
@@ -39140,7 +39141,7 @@ div.widget-123_test_ {
 }
 
 .nav-sticky {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     background: #ffffff;
@@ -39150,6 +39151,8 @@ div.widget-123_test_ {
     grid-column-gap: 0;
     display: grid;
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media (min-width: 650px) {
@@ -39164,14 +39167,21 @@ div.widget-123_test_ {
     }
 }
 
+.nav-sticky:before {
+    content: "";
+    background-color: #ffffff;
+    width: 200vw;
+    position: absolute;
+    height: 100%;
+    left: -100%;
+}
+
 .nav-sticky.nav-sticky--stick {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 2;
-    padding-left: 1rem;
-    padding-right: 1rem;
     max-width: 1440px;
 }
 
@@ -39251,6 +39261,7 @@ div.widget-123_test_ {
     grid-column: 1/-1;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    position: relative;
 }
 
 .nav-sticky .nav-sticky__item {
@@ -39288,6 +39299,7 @@ div.widget-123_test_ {
 
 .pg-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .pg-courses-v23 .nav-sticky .nav-sticky__item__link:active {
     background: #006699;
+    color: #ffffff;
 }
 
 .pg-courses-v23 .nav-sticky .nav-sticky__item__link__active {
