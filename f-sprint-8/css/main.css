@@ -24867,6 +24867,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: #e30613;
     box-shadow: 0.5rem 0 0 #e30613, -0.5rem 0 0 #e30613;
     display: inline;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    line-height: 2.5rem;
 }
 
 .ug-courses-v23 .text-highlight {
@@ -24874,6 +24877,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: #f1b434;
     box-shadow: 0.5rem 0 0 #f1b434, -0.5rem 0 0 #f1b434;
     display: inline;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
 }
 
 .pg-courses-v23 .text-highlight {
@@ -24881,6 +24886,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: #006699;
     box-shadow: 0.5rem 0 0 #006699, -0.5rem 0 0 #006699;
     display: inline;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
 }
 
 .course__kis__content a,
