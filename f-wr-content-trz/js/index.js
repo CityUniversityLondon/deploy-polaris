@@ -24820,7 +24820,7 @@ function launch(el) {
     var observerContentSections;
     var options = {
       root: null,
-      rootMargin: "-30%"
+      rootMargin: "-20%"
     };
     transitionsSections.forEach(function (area) {
       observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);

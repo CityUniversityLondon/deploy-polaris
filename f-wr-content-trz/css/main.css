@@ -40974,13 +40974,13 @@ html {
 
 .content-transition {
     border: thick solid pink;
-    transition: opacity 2s, top 2s;
+    transition: opacity 1.5s ease, top 1s ease;
     position: relative;
 }
 
 .content-transition--start {
     opacity: 0;
-    top: 1rem;
+    top: 2rem;
 }
 
 .content-transition--end {
