@@ -5493,7 +5493,7 @@ svg:not(:root) {
     position: relative;
     clear: both;
     zoom: 1;
-    max-width: 7680px;
+    max-width: 100%;
 }
 
 @supports (display: flex) {
@@ -5524,6 +5524,18 @@ svg:not(:root) {
     .container, .banner__container, .banner__standfirst, .banner__freehtml > div, .banner-vi .banner-vi__container, .banner-vi--video .video-banner__controls {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .container, .banner__container, .banner__standfirst, .banner__freehtml > div, .banner-vi .banner-vi__container, .banner-vi--video .video-banner__controls {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .container, .banner__container, .banner__standfirst, .banner__freehtml > div, .banner-vi .banner-vi__container, .banner-vi--video .video-banner__controls {
+        max-width: 83.333%;
     }
 }
 
@@ -7972,7 +7984,7 @@ svg:not(:root) {
     position: relative;
     clear: both;
     zoom: 1;
-    max-width: 7680px;
+    max-width: 100%;
     padding-top: calc(2rem + 10px);
     position: relative;
 }
@@ -8005,6 +8017,18 @@ svg:not(:root) {
     .header {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .header {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .header {
+        max-width: 83.333%;
     }
 }
 
@@ -9578,7 +9602,7 @@ svg:not(:root) {
     position: relative;
     clear: both;
     zoom: 1;
-    max-width: 7680px;
+    max-width: 100%;
 }
 
 @supports (display: flex) {
@@ -9609,6 +9633,18 @@ svg:not(:root) {
     .promo-strap .promo-strap__content {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .promo-strap .promo-strap__content {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .promo-strap .promo-strap__content {
+        max-width: 83.333%;
     }
 }
 
@@ -10454,7 +10490,7 @@ svg:not(:root) {
     position: relative;
     clear: both;
     zoom: 1;
-    max-width: 7680px;
+    max-width: 100%;
 }
 
 @supports (display: flex) {
@@ -10485,6 +10521,18 @@ svg:not(:root) {
     .bayes-news {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .bayes-news {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .bayes-news {
+        max-width: 83.333%;
     }
 }
 
@@ -10880,7 +10928,7 @@ svg:not(:root) {
     position: relative;
     clear: both;
     zoom: 1;
-    max-width: 7680px;
+    max-width: 100%;
 }
 
 @supports (display: flex) {
@@ -10911,6 +10959,18 @@ svg:not(:root) {
     .bayes-events {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .bayes-events {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .bayes-events {
+        max-width: 83.333%;
     }
 }
 
@@ -14871,7 +14931,7 @@ svg:not(:root) {
     position: relative;
     clear: both;
     zoom: 1;
-    max-width: 7680px;
+    max-width: 100%;
 }
 
 @supports (display: flex) {
@@ -14902,6 +14962,18 @@ svg:not(:root) {
     .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .accordion-tabs--top-level-layout .accordion-tabs__menu-wrapper {
+        max-width: 83.333%;
     }
 }
 
@@ -19590,7 +19662,7 @@ svg:not(:root) {
     position: relative;
     clear: both;
     zoom: 1;
-    max-width: 7680px;
+    max-width: 100%;
 }
 
 @supports (display: flex) {
@@ -19621,6 +19693,18 @@ svg:not(:root) {
     .banner-vi--listing + main .course-finder__top .query-box, .banner-vi--listing + main .expert-finder__top .query-box {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .banner-vi--listing + main .course-finder__top .query-box, .banner-vi--listing + main .expert-finder__top .query-box {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .banner-vi--listing + main .course-finder__top .query-box, .banner-vi--listing + main .expert-finder__top .query-box {
+        max-width: 83.333%;
     }
 }
 
@@ -19792,7 +19876,7 @@ svg:not(:root) {
     position: relative;
     clear: both;
     zoom: 1;
-    max-width: 7680px;
+    max-width: 100%;
     position: initial;
 }
 
@@ -19824,6 +19908,18 @@ svg:not(:root) {
     .banner-vi--listing + main .course-finder__top .course-finder__clear-buttons, .banner-vi--listing + main .course-finder__top .expert-finder__clear-buttons, .banner-vi--listing + main .expert-finder__top .course-finder__clear-buttons, .banner-vi--listing + main .expert-finder__top .expert-finder__clear-buttons {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .banner-vi--listing + main .course-finder__top .course-finder__clear-buttons, .banner-vi--listing + main .course-finder__top .expert-finder__clear-buttons, .banner-vi--listing + main .expert-finder__top .course-finder__clear-buttons, .banner-vi--listing + main .expert-finder__top .expert-finder__clear-buttons {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .banner-vi--listing + main .course-finder__top .course-finder__clear-buttons, .banner-vi--listing + main .course-finder__top .expert-finder__clear-buttons, .banner-vi--listing + main .expert-finder__top .course-finder__clear-buttons, .banner-vi--listing + main .expert-finder__top .expert-finder__clear-buttons {
+        max-width: 83.333%;
     }
 }
 
