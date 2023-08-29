@@ -11944,7 +11944,7 @@ svg:not(:root) {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(0deg, #1e1e1e, transparent);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .student-life-v23__links .student-life-v23__links__card--label {
@@ -11953,13 +11953,6 @@ svg:not(:root) {
     color: #1e1e1e;
     bottom: 1.25rem;
     left: 1.25rem;
-}
-
-@media (min-width: 901px) {
-    .student-life-v23__links .student-life-v23__links__card--label {
-        bottom: 1.75rem;
-        left: 1.75rem;
-    }
 }
 
 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading {
