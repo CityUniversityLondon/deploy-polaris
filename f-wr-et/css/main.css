@@ -12309,13 +12309,26 @@ svg:not(:root) {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+@media (max-width: 768px) {
+    .courses-v23__entry-requirements .entry-req-v23 {
+        padding: 1rem 1rem;
+    }
+}
+
 .courses-v23__entry-requirements .entry-req-v23__heading {
     text-align: center;
+    font-size: 1.802rem;
 }
 
 .courses-v23__entry-requirements .entry-req-v23__list {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .courses-v23__entry-requirements .entry-req-v23__list {
+        flex-direction: column;
+    }
 }
 
 .courses-v23__entry-requirements .entry-req-v23__item {
@@ -12325,12 +12338,35 @@ svg:not(:root) {
     padding: 1rem;
 }
 
+@media (max-width: 768px) {
+    .courses-v23__entry-requirements .entry-req-v23__item {
+        border-right: none;
+        border-bottom: solid 1px #979797;
+        padding: 2rem 0;
+    }
+}
+
+.courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__first-line {
+    font-size: 1.602rem;
+}
+
 .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__second-line {
     color: #e35205;
+    font-size: 2.28rem;
+}
+
+.courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__third-line {
+    font-size: 1.602rem;
 }
 
 .courses-v23__entry-requirements .entry-req-v23__item:last-of-type {
     border-right: none;
+}
+
+@media (max-width: 768px) {
+    .courses-v23__entry-requirements .entry-req-v23__item:last-of-type {
+        border-bottom: none;
+    }
 }
 
 .courses-v23 section, .courses-v23 > div {
