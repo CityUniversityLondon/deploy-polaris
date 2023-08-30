@@ -11100,6 +11100,7 @@ svg:not(:root) {
 
 .courses-v23 .chart-row__items__chart__row {
     flex-direction: column;
+    align-content: center;
 }
 
 .courses-v23 .chart-row__items__chart__row__legend__item {
