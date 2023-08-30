@@ -11034,7 +11034,7 @@ svg:not(:root) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 7680px;
+    max-width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -11048,6 +11048,18 @@ svg:not(:root) {
     .polaris-guidline--fullscreen {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .polaris-guidline--fullscreen {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .polaris-guidline--fullscreen {
+        max-width: 83.333%;
     }
 }
 
@@ -12296,27 +12308,7 @@ svg:not(:root) {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    clear: both;
-    zoom: 1;
     max-width: 100%;
-}
-
-@supports (display: flex) {
-    .courses-v23 section, .courses-v23 > div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-}
-
-.courses-v23 section:before, .courses-v23 section:after, .courses-v23 > div:before, .courses-v23 > div:after {
-    content: '';
-    display: block;
-}
-
-.courses-v23 section:after, .courses-v23 > div:after {
-    clear: both;
 }
 
 @media (max-width: 500px) {
