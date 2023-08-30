@@ -12407,6 +12407,75 @@ svg:not(:root) {
     }
 }
 
+.courses-v23 p,
+.courses-v23 li {
+    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    /**
+     * IBM Plex OpenType stylistic sets:
+     *
+     * ss01: 0/1 double-storey/simple 'a'
+     * ss02: 0/1 double-storey/simple 'g'
+     * ss03: 0/1 plain/slashed '0'
+     * ss04: 0/1 plain/dotted '0'
+     */
+    font-feature-settings: 'ss01' 0, 'ss02' 1, 'ss03' 1, 'ss04' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'frac' 0, 'liga' 1;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: -0.005em;
+    font-style: normal;
+    font-weight: 450;
+    max-width: 55ch;
+}
+
+.courses-v23 p i,
+.courses-v23 p em,
+.courses-v23 li i,
+.courses-v23 li em {
+    font-feature-settings: 'ss01' 0, 'ss02' 1, 'ss03' 1, 'ss04' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'frac' 0, 'liga' 1;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .courses-v23 p,
+    .courses-v23 li {
+        letter-spacing: -0.008em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .courses-v23 p,
+    .courses-v23 li {
+        letter-spacing: -0.011em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .courses-v23 p,
+    .courses-v23 li {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .courses-v23 p,
+    .courses-v23 li {
+        letter-spacing: -0.017em;
+    }
+}
+
+.courses-v23 p b,
+.courses-v23 p strong,
+.courses-v23 li b,
+.courses-v23 li strong {
+    font-weight: 700;
+}
+
+.courses-v23 p i,
+.courses-v23 p em,
+.courses-v23 li i,
+.courses-v23 li em {
+    font-style: italic;
+}
+
 .courses-v23__overview__grid {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
