@@ -11705,31 +11705,6 @@ svg:not(:root) {
     border-width: 0 5rem 5rem 0;
 }
 
-.courses-v23__apply .courses-v23__apply__cta {
-    background-color: transparent;
-    color: #1e1e1e;
-    font-size: 1rem;
-    border: 2px solid #1e1e1e;
-}
-
-.courses-v23__apply .courses-v23__apply__cta:hover, .courses-v23__apply .courses-v23__apply__cta:focus, .courses-v23__apply .courses-v23__apply__cta:active {
-    background-color: #1e1e1e;
-    outline-offset: 0.1875rem;
-    color: #ffffff;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .courses-v23__apply .courses-v23__apply__cta {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .courses-v23__apply .courses-v23__apply__cta {
-        font-size: 92px;
-    }
-}
-
 .courses-v23__apply .courses-v23__apply__promo-content {
     position: relative;
     margin-top: 1rem;
@@ -11773,6 +11748,35 @@ svg:not(:root) {
 .ug-courses-v23 .courses-v23__apply {
     background-color: #a9a19c;
     color: #1e1e1e;
+}
+
+.ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+    background-color: transparent;
+    color: #1e1e1e;
+    font-size: 1rem;
+    border: 2px solid #1e1e1e;
+}
+
+.ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta:hover, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta:focus, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta:active {
+    background-color: #1e1e1e;
+    outline-offset: 0.1875rem;
+    color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+        font-size: 92px;
+    }
+}
+
+.ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta:hover, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta:focus, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta:active {
+    color: #ffffff;
 }
 
 .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
@@ -11871,6 +11875,35 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__apply {
     background-color: #002b49;
     color: #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    border: 2px solid #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta:hover, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta:focus, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta:active {
+    background-color: #ffffff;
+    outline-offset: 0.1875rem;
+    color: #ffffff;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+        font-size: 92px;
+    }
+}
+
+.pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta:hover, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta:focus, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta:active {
+    color: #1e1e1e;
 }
 
 .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
