@@ -40501,12 +40501,16 @@ html {
 }
 
 .courses-v23__careers__recent-employers ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
     list-style: none;
     margin-left: initial;
     margin-bottom: initial;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 651px) {
     .courses-v23__careers__recent-employers ul {
         display: flex;
         flex-wrap: wrap;
