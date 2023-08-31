@@ -12575,6 +12575,10 @@ svg:not(:root) {
     max-width: 55ch;
 }
 
+.courses-v23 table {
+    margin: 0;
+}
+
 .courses-v23__overview__grid {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
