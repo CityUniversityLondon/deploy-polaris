@@ -24846,7 +24846,7 @@ function launch(el) {
   createObserverContentSections();
 
   /*
-  // Observer to watchinging 1st menu item then add blur effect to end of nav
+  // Observer to watchinging 1st menu item then add blur effect to start of nav
   */
 
   var stickyNavFirstItem = document.querySelector(".nav-sticky__item:first-child");
@@ -24855,14 +24855,14 @@ function launch(el) {
     var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
     if (stickyNavWidth < horizontalScrollWidth) {
       entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--right', entry.isIntersecting);
+        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--left', !entry.isIntersecting);
       });
     }
   });
   observeStickyNavFirstItem.observe(stickyNavFirstItem);
 
   /*
-  // Observer to watchinging last menu item then add blur effect to start of nav
+  // Observer to watchinging last menu item then add blur effect to end of nav
   */
 
   var stickyNavLastItem = document.querySelector(".nav-sticky__item:last-child");
@@ -24871,7 +24871,7 @@ function launch(el) {
     var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
     if (stickyNavWidth < horizontalScrollWidth) {
       entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--left', entry.isIntersecting);
+        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--right', !entry.isIntersecting);
       });
     }
   });
