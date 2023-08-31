@@ -38774,7 +38774,7 @@ div.widget-123_test_ {
 }
 
 .nav-sticky:before {
-    content: "";
+    content: '';
     background-color: #ffffff;
     width: 200vw;
     position: absolute;
@@ -38799,10 +38799,10 @@ div.widget-123_test_ {
 }
 
 .nav-sticky.nav-sticky--left:before {
-    content: "";
+    content: '';
     width: 4rem;
     height: 100%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white 80%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 60%);
     position: absolute;
     left: 0;
     top: 0;
@@ -38821,17 +38821,11 @@ div.widget-123_test_ {
     }
 }
 
-@media (max-width: 319px) {
-    .nav-sticky.nav-sticky--left:before {
-        width: 1rem;
-    }
-}
-
 .nav-sticky.nav-sticky--right:after {
-    content: "";
+    content: '';
     width: 4rem;
     height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 80%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 60%);
     position: absolute;
     right: 0;
     top: 0;
@@ -38850,12 +38844,6 @@ div.widget-123_test_ {
     }
 }
 
-@media (max-width: 319px) {
-    .nav-sticky.nav-sticky--right:after {
-        width: 1rem;
-    }
-}
-
 .nav-sticky .nav-sticky__items {
     display: flex;
     flex-direction: row;
@@ -38868,6 +38856,10 @@ div.widget-123_test_ {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     position: relative;
+    margin-left: -0.5rem;
+    padding-left: 0.5rem;
+    margin-right: -0.5rem;
+    padding-right: 0.5rem;
 }
 
 .nav-sticky .nav-sticky__item {
