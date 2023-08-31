@@ -12722,10 +12722,10 @@ svg:not(:root) {
     font-style: italic;
 }
 
-.courses-v23 h2,
-.courses-v23 h3,
-.courses-v23 h4,
-.courses-v23 a {
+.courses-v23 h2:not(.accordion-v23__heading),
+.courses-v23 h3:not(.accordion-v23__heading),
+.courses-v23 h4:not(.accordion-v23__heading),
+.courses-v23 a:not(.accordion-v23__heading) {
     max-width: 55ch;
 }
 
