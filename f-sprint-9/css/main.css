@@ -12280,13 +12280,13 @@ svg:not(:root) {
 }
 
 .js .slider-v23--related-courses__wrap .slider-v23__cards {
-    grid-column: 4/-4;
+    grid-column: 3/-3;
     overflow: visible;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     .js .slider-v23--related-courses__wrap .slider-v23__cards {
-        grid-column: 3/-3;
+        grid-column: 2/-2;
     }
 }
 
@@ -12412,7 +12412,7 @@ svg:not(:root) {
 .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
     position: absolute;
     padding: 0.75rem;
-    height: 70%;
+    height: 75%;
     display: block;
     width: 100%;
 }
@@ -12437,10 +12437,13 @@ svg:not(:root) {
     font-size: 1.44rem;
     margin-bottom: 1rem;
     text-decoration: underline;
+    line-height: 1.25;
 }
 
 .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .js .slider-v23--related-courses__wrap .course-card-v23__content {
@@ -12499,6 +12502,10 @@ svg:not(:root) {
     outline-color: #1e1e1e;
 }
 
+.ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
+    background: #f5c96d;
+}
+
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
     outline-color: #1e1e1e;
 }
@@ -12544,6 +12551,10 @@ svg:not(:root) {
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus, .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:active {
     outline-color: #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
+    background: #008fd6;
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
@@ -41158,6 +41169,10 @@ html {
     .js .slider-v23[data-style='responsive'][data-count='1']:not([data-small='true']) + .slider-v23__controls {
         display: none;
     }
+}
+
+.js .slider-v23[data-style='responsive'] + .slider-v23__controls button {
+    border: none;
 }
 
 @media (min-width: 768px) {
