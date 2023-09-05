@@ -41321,6 +41321,7 @@ html {
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button {
         background-color: #ececec;
+        border-bottom: 2px solid #ffffff;
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:hover, .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:focus, .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:active {
         background-color: #ececec;
@@ -41401,13 +41402,11 @@ html {
         text-decoration: underline;
     }
     .js .accordion-v23 .accordion-v23__heading button:focus {
-        border: 2px solid #d8d8d8;
         outline: 2px solid #1e1e1e;
         outline-offset: 4px;
         background-color: #ffffff;
     }
     .js .accordion-v23 .accordion-v23__heading button:active {
-        border: 2px solid #d8d8d8;
         outline: 2px dotted #1e1e1e;
         outline-offset: 4px;
         background-color: #ffffff;
