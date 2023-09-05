@@ -12791,11 +12791,11 @@ svg:not(:root) {
 }
 
 .courses-v23__careers .courses-v23__careers__content {
-    grid-column: 1/14;
+    grid-column: 1/13;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni {
-    grid-column: 14/-1;
+    grid-column: 13/-1;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni .slider-v23__container {
@@ -40703,7 +40703,7 @@ html {
 
 .courses-v23__careers__recent-employers ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
     list-style: none;
@@ -40718,7 +40718,7 @@ html {
     }
 }
 
-@media (min-width: 651px) {
+@media (min-width: 1441px) {
     .courses-v23__careers__recent-employers ul {
         display: flex;
         flex-wrap: wrap;
