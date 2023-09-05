@@ -41405,6 +41405,8 @@ html {
         outline: 2px solid #1e1e1e;
         outline-offset: 4px;
         background-color: #ffffff;
+        position: relative;
+        z-index: 1;
     }
     .js .accordion-v23 .accordion-v23__heading button:active {
         outline: 2px dotted #1e1e1e;
