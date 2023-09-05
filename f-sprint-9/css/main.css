@@ -32949,7 +32949,7 @@ table tbody > tr > td:hover {
 }
 
 .courses-v23 table {
-    border: 1px solid #e5e5e5;
+    border: 1px solid #D7D7D7;
 }
 
 .courses-v23 table thead th {
@@ -32957,12 +32957,34 @@ table tbody > tr > td:hover {
 }
 
 .courses-v23 table tbody tr:nth-child(odd) {
-    background: #fafafa;
+    background: #f2f2f2;
 }
 
 .courses-v23 table td,
 .courses-v23 table th {
-    border-right: 1px solid #e5e5e5;
+    text-align: left;
+    border-right: 1px solid #D7D7D7;
+}
+
+.courses-v23 table tbody > tr:hover td,
+.courses-v23 table tbody > tr:hover th {
+    background: initial;
+}
+
+.courses-v23 table td:hover:after,
+.courses-v23 table thead th:not(:empty):hover:after {
+    content: initial;
+    position: initial;
+    z-index: initial;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+    background: initial;
+}
+
+.courses-v23 table tbody > tr > td:hover {
+    background: initial;
 }
 
 .timeline {
