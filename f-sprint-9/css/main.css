@@ -12766,19 +12766,21 @@ svg:not(:root) {
     grid-column: 1/7;
 }
 
-.courses-v23__careers {
-    grid-template-columns: repeat(18, 1fr);
-    grid-column-gap: 0;
-    display: grid;
+@media (min-width: 901px) {
+    .courses-v23__careers {
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        display: grid;
+    }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 901px) and (min-width: 650px) {
     .courses-v23__careers {
         grid-column-gap: 1rem;
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 901px) and (min-width: 901px) {
     .courses-v23__careers {
         grid-column-gap: 1.5rem;
     }
@@ -12789,11 +12791,11 @@ svg:not(:root) {
 }
 
 .courses-v23__careers .courses-v23__careers__content {
-    grid-column: 1/14;
+    grid-column: 1/13;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni {
-    grid-column: 14/-1;
+    grid-column: 13/-1;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni .slider-v23__container {
@@ -32987,6 +32989,27 @@ table tbody > tr > td:hover {
     background: initial;
 }
 
+.courses-v23 table tbody > tr:hover td,
+.courses-v23 table tbody > tr:hover th {
+    background: initial;
+}
+
+.courses-v23 table td:hover:after,
+.courses-v23 table thead th:not(:empty):hover:after {
+    content: initial;
+    position: initial;
+    z-index: initial;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+    background: initial;
+}
+
+.courses-v23 table tbody > tr > td:hover {
+    background: initial;
+}
+
 .timeline {
     position: relative;
     margin-bottom: 3rem;
@@ -40702,7 +40725,7 @@ html {
 
 .courses-v23__careers__recent-employers ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
     list-style: none;
@@ -40710,7 +40733,14 @@ html {
     margin-bottom: initial;
 }
 
-@media (min-width: 651px) {
+@media (max-width: 499px) {
+    .courses-v23__careers__recent-employers ul {
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+}
+
+@media (min-width: 1441px) {
     .courses-v23__careers__recent-employers ul {
         display: flex;
         flex-wrap: wrap;
@@ -40719,18 +40749,11 @@ html {
 
 .courses-v23__careers__recent-employers ul li {
     margin-top: initial;
-    margin-right: 1rem;
-}
-
-@media (max-width: 768px) {
-    .courses-v23__careers__recent-employers ul li {
-        margin-bottom: 1rem;
-    }
+    margin-right: initial;
 }
 
 .courses-v23__careers__recent-employers ul li img {
     background-color: #ffffff;
-    max-width: 80%;
 }
 
 /*
