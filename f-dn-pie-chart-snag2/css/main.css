@@ -11207,7 +11207,7 @@ svg:not(:root) {
 
 @media (min-width: 501px) {
     .courses-v23 .chart-row__items__chart__row__graph {
-        width: 100%;
+        width: 90%;
     }
 }
 
