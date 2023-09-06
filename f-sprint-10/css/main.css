@@ -12681,7 +12681,7 @@ svg:not(:root) {
     letter-spacing: -0.005em;
     font-style: normal;
     font-weight: 450;
-    max-width: 55ch;
+    max-width: 60ch;
 }
 
 .courses-v23 p i,
@@ -12737,7 +12737,7 @@ svg:not(:root) {
 .courses-v23 h3:not(.accordion-v23__heading),
 .courses-v23 h4:not(.accordion-v23__heading),
 .courses-v23 a:not(.accordion-v23__heading) {
-    max-width: 55ch;
+    max-width: 60ch;
 }
 
 .courses-v23 table {
@@ -12810,7 +12810,6 @@ svg:not(:root) {
 
 .ug-courses-v23 .courses-v23__structure ul li {
     display: flex;
-    margin-top: 0;
 }
 
 .ug-courses-v23 .courses-v23__structure ul li:before {
@@ -12828,7 +12827,6 @@ svg:not(:root) {
 
 .pg-courses-v23 .courses-v23__structure ul li {
     display: flex;
-    margin-top: 0;
 }
 
 .pg-courses-v23 .courses-v23__structure ul li:before {
@@ -29063,7 +29061,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .ksp-v23-block-text {
-    max-width: 55ch;
+    max-width: 60ch;
 }
 
 @media (max-width: 768px) {
@@ -29115,7 +29113,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ug-courses-v23 .ksp-ordered-list--tick ul li {
     display: flex;
-    margin-top: 0;
 }
 
 .ug-courses-v23 .ksp-ordered-list--tick ul li:before {
@@ -29158,7 +29155,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .pg-courses-v23 .ksp-ordered-list--tick ul li {
     display: flex;
-    margin-top: 0;
 }
 
 .pg-courses-v23 .ksp-ordered-list--tick ul li:before {
@@ -40329,7 +40325,7 @@ div.widget-123_test_ {
     padding-right: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-    max-width: 55ch;
+    max-width: 60ch;
     padding-top: 0.5rem;
     padding-bottom: 3rem;
     position: relative;
