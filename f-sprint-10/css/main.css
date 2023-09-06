@@ -12803,6 +12803,42 @@ svg:not(:root) {
     position: relative;
 }
 
+.ug-courses-v23 .courses-v23__structure ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.ug-courses-v23 .courses-v23__structure ul li {
+    display: flex;
+    margin-top: 0;
+}
+
+.ug-courses-v23 .courses-v23__structure ul li:before {
+    display: block;
+    font-family: 'FontAwesome';
+    content: "";
+    color: #e35205;
+    padding-right: 0.5rem;
+}
+
+.pg-courses-v23 .courses-v23__structure ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.pg-courses-v23 .courses-v23__structure ul li {
+    display: flex;
+    margin-top: 0;
+}
+
+.pg-courses-v23 .courses-v23__structure ul li:before {
+    display: block;
+    font-family: 'FontAwesome';
+    content: "";
+    color: #3457F1;
+    padding-right: 0.5rem;
+}
+
 .vertical-menu__page-link,
 .vertical-menu__toggle-link {
     background-color: inherit;
@@ -29006,25 +29042,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #1e1e1e;
 }
 
-.ksp-ordered-list--tick ul {
-    list-style-type: none;
-    margin-left: 0;
-}
-
-.ksp-ordered-list--tick ul li {
-    display: flex;
-    margin-top: 0;
-}
-
-.ksp-ordered-list--tick ul li:before {
-    display: block;
-    font-family: 'FontAwesome';
-    content: '\f00c';
-    color: #e35205;
-    padding-right: 0.5rem;
-    color: #e30613;
-}
-
 @media (min-width: 769px) {
     .ksp-v23-block-wrapper {
         grid-template-columns: repeat(12, 1fr);
@@ -29091,6 +29108,24 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-size: 1.5rem 1.5rem;
 }
 
+.ug-courses-v23 .ksp-ordered-list--tick ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.ug-courses-v23 .ksp-ordered-list--tick ul li {
+    display: flex;
+    margin-top: 0;
+}
+
+.ug-courses-v23 .ksp-ordered-list--tick ul li:before {
+    display: block;
+    font-family: 'FontAwesome';
+    content: "";
+    color: #e35205;
+    padding-right: 0.5rem;
+}
+
 .pg-courses-v23 .ksp-v23-wrapper--dark {
     background-color: #002b49;
     color: #ffffff;
@@ -29114,6 +29149,24 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: linear-gradient(to right, #3457F1 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #3457F1 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #3457F1 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #3457F1 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
+}
+
+.pg-courses-v23 .ksp-ordered-list--tick ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.pg-courses-v23 .ksp-ordered-list--tick ul li {
+    display: flex;
+    margin-top: 0;
+}
+
+.pg-courses-v23 .ksp-ordered-list--tick ul li:before {
+    display: block;
+    font-family: 'FontAwesome';
+    content: "";
+    color: #3457F1;
+    padding-right: 0.5rem;
 }
 
 .block-links__bg {
