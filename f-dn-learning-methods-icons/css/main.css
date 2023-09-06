@@ -41536,6 +41536,7 @@ html {
 .courses-v23__learning-methods-icons li {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .courses-v23__learning-methods-icons .courses-v23__learning-methods-icons--icon {
