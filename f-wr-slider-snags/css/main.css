@@ -41136,8 +41136,6 @@ html {
 
 .js .slider-v23__container + .slider-v23__controls--dots button[aria-expanded='true'] {
     background-color: #1e1e1e;
-    width: 1.75rem;
-    height: 1.75rem;
 }
 
 .js .slider-v23__container[data-count='1'] + .slider-v23__controls--dots {
