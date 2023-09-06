@@ -12631,6 +12631,17 @@ svg:not(:root) {
     }
 }
 
+.courses-v23__study-abroad .partner-institution {
+    list-style-type: none;
+    border-bottom: 0.06rem solid #1e1e1e;
+    margin-bottom: 1rem;
+}
+
+.courses-v23__study-abroad .partner-institution:last-of-type {
+    border-bottom: none;
+    margin-bottom: none;
+}
+
 .courses-v23 section, .courses-v23 > div {
     width: 100%;
     margin-left: auto;

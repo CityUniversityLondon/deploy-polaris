@@ -24654,8 +24654,10 @@ function launch(accordion) {
     var heading = accordion.querySelector('' + urlHash + '');
     if (heading) {
       // Wait for DOM to load before accessing selected accordion
-      setSection(heading, true);
-      heading.nextElementSibling.dataset.closed = 'false';
+      setTimeout(function () {
+        setSection(heading, true);
+        heading.nextElementSibling.dataset.closed = 'false';
+      }, 200);
     }
   }
 }
