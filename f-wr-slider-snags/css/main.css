@@ -41183,6 +41183,7 @@ html {
     list-style: none;
     padding: 4px;
     margin-top: 0;
+    max-width: inherit;
     /*
             @include media('reducemotion') {
                 transition: none;
