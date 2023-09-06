@@ -12744,6 +12744,12 @@ svg:not(:root) {
     margin: 0;
 }
 
+.courses-v23 .accordion-v23 {
+    width: 66%;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
 .courses-v23__overview__grid {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
@@ -41359,7 +41365,6 @@ html {
     .js .accordion-v23 .accordion-v23__section[data-open='true'] {
         outline: 0.12rem dotted #1e1e1e;
         outline-offset: 0.24rem;
-        margin-top: 4.5rem;
     }
     .js .accordion-v23 .accordion-v23__body {
         padding: 0 1rem 1rem 1rem;

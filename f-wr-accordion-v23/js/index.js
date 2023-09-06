@@ -24440,6 +24440,11 @@ function setSection(heading, open) {
   heading.dataset.open = open;
   heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
+
+  // Automatically scrolls heading into view being at the top of the page
+  var viewportOffset = heading.parentElement.getBoundingClientRect();
+  var top = viewportOffset.top;
+  scrollBy(0, top - stickyNavHeight());
 }
 
 /**
@@ -24481,6 +24486,17 @@ function cleanupTransition(section) {
   var open = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(section.previousElementSibling.dataset.open);
   section.style.height = null;
   section.dataset.closed = open ? 'false' : 'true';
+}
+
+/**
+ * Checking if stickyNav is present and returns its height
+ *
+ */
+function stickyNavHeight() {
+  var stickyNavEl = document.getElementsByClassName('nav-sticky')[0];
+  if (stickyNavEl) {
+    return stickyNavEl.offsetHeight;
+  }
 }
 
 /**
@@ -24545,9 +24561,6 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    if (scrollTo && !(Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(heading) && Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(accordionSection))) {
-      scroll.to(heading, scrollDuration);
-    }
   }
 }
 
