@@ -41513,6 +41513,26 @@ html {
     }
 }
 
+@media (min-width: 500px) and (max-width: 649px) {
+    .courses-v23__learning-methods-icons {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0.75rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 649px) and (min-width: 650px) {
+    .courses-v23__learning-methods-icons {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 649px) and (min-width: 901px) {
+    .courses-v23__learning-methods-icons {
+        grid-column-gap: 1.5rem;
+    }
+}
+
 @media (max-width: 499px) {
     .courses-v23__learning-methods-icons {
         grid-template-columns: repeat(2, 1fr);
