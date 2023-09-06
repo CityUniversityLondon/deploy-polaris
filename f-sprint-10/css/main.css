@@ -25445,6 +25445,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: inline;
     -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
+    margin-left: 0.5rem;
     line-height: 2.5rem;
 }
 
@@ -25455,6 +25456,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: inline;
     -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
+    margin-left: 0.5rem;
 }
 
 .pg-courses-v23 .text-highlight {
@@ -25464,6 +25466,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: inline;
     -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
+    margin-left: 0.5rem;
 }
 
 .course__kis__content a,
