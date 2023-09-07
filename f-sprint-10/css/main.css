@@ -12664,6 +12664,8 @@ svg:not(:root) {
 
 .courses-v23__contact {
     background-color: #f2f2f2;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .courses-v23__contact__cta li {
@@ -12685,12 +12687,13 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__contact__cta a {
-    background-color: #006699;
+    background-color: #002b49;
     color: #ffffff;
+    border: 0.12rem solid #ececec;
 }
 
 .pg-courses-v23 .courses-v23__contact__cta a:hover, .pg-courses-v23 .courses-v23__contact__cta a:focus, .pg-courses-v23 .courses-v23__contact__cta a:active {
-    background-color: #00527a;
+    background-color: #00192a;
     color: #ffffff;
 }
 
@@ -25476,6 +25479,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-top: 1rem;
+    background-color: #ffffff;
 }
 
 .highlighted-content-v23 *:last-child {
@@ -25489,6 +25493,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-top: 1rem;
+    background-color: #ffffff;
 }
 
 .ug-courses-v23 .highlighted-content-v23 *:last-child {
@@ -25502,6 +25507,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-top: 1rem;
+    background-color: #ffffff;
 }
 
 .pg-courses-v23 .highlighted-content-v23 *:last-child {
