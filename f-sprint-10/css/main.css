@@ -12503,6 +12503,10 @@ svg:not(:root) {
     left: 50%;
 }
 
+.ug-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
+    width: 100%;
+}
+
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #f1b434;
     color: #1e1e1e;
@@ -12552,6 +12556,10 @@ svg:not(:root) {
     display: flex;
     z-index: 2;
     left: 50%;
+}
+
+.pg-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
+    width: 100%;
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
