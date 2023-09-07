@@ -12662,6 +12662,38 @@ svg:not(:root) {
     margin-bottom: none;
 }
 
+.courses-v23__contact {
+    background-color: #f2f2f2;
+}
+
+.courses-v23__contact__cta li {
+    display: inline-block;
+}
+
+.ug-courses-v23 .courses-v23__contact__cta a {
+    background-color: #a9a19c;
+    color: #1e1e1e;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.ug-courses-v23 .courses-v23__contact__cta a:hover, .ug-courses-v23 .courses-v23__contact__cta a:focus, .ug-courses-v23 .courses-v23__contact__cta a:active {
+    background-color: #9b918c;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .courses-v23__contact__cta a {
+    background-color: #006699;
+    color: #ffffff;
+}
+
+.pg-courses-v23 .courses-v23__contact__cta a:hover, .pg-courses-v23 .courses-v23__contact__cta a:focus, .pg-courses-v23 .courses-v23__contact__cta a:active {
+    background-color: #00527a;
+    color: #ffffff;
+}
+
 .courses-v23 section, .courses-v23 > div {
     width: 100%;
     margin-left: auto;
@@ -22521,6 +22553,7 @@ USED IN:
     font-family: "FontAwesome";
     font-size: inherit;
     text-rendering: auto;
+    margin-left: 0.5rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
