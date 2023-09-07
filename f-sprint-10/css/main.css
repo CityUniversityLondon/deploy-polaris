@@ -41154,8 +41154,8 @@ html {
     border-radius: 50%;
     width: 1.25rem;
     height: 1.25rem;
-    margin-right: 1rem;
-    border: 0.06rem solid #1e1e1e;
+    margin-right: 0.75rem;
+    border: 0.12rem solid #1e1e1e;
 }
 
 .js .slider-v23__container + .slider-v23__controls--dots button:last-of-type {
@@ -41168,8 +41168,6 @@ html {
 
 .js .slider-v23__container + .slider-v23__controls--dots button[aria-expanded='true'] {
     background-color: #1e1e1e;
-    width: 1.75rem;
-    height: 1.75rem;
 }
 
 .js .slider-v23__container[data-count='1'] + .slider-v23__controls--dots {
@@ -41217,6 +41215,7 @@ html {
     list-style: none;
     padding: 0.24rem;
     margin-top: 0;
+    max-width: inherit;
     /*
             @include media('reducemotion') {
                 transition: none;
