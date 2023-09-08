@@ -12531,7 +12531,7 @@ svg:not(:root) {
     position: absolute;
     height: 4.5rem;
     width: 50vw;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     top: 0;
     display: flex;
     z-index: 2;
@@ -12586,7 +12586,7 @@ svg:not(:root) {
     position: absolute;
     height: 4.5rem;
     width: 50vw;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     top: 0;
     display: flex;
     z-index: 2;
