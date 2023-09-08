@@ -11150,6 +11150,10 @@ svg:not(:root) {
     font-weight: 500;
 }
 
+.courses-v23--fee .cta {
+    display: inline-block;
+}
+
 .ug-courses-v23 .courses-v23__fee__inner {
     background-color: #a9a19c;
     color: #1e1e1e;
