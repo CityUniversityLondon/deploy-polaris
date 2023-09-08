@@ -12668,6 +12668,10 @@ svg:not(:root) {
     padding-bottom: 2rem;
 }
 
+.courses-v23__contact .kis-widget {
+    margin-top: 2rem;
+}
+
 .courses-v23__contact__cta li {
     display: inline-block;
 }
