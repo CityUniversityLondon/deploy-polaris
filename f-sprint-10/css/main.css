@@ -40549,13 +40549,26 @@ div.widget-123_test_ {
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 2;
-    max-width: 1440px;
+    max-width: 100%;
+    width: 100%;
 }
 
 @media (max-width: 499px) {
     .nav-sticky.nav-sticky--stick {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .nav-sticky.nav-sticky--stick {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .nav-sticky.nav-sticky--stick {
+        max-width: 83.333%;
     }
 }
 
