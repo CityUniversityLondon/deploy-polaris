@@ -24425,9 +24425,7 @@ var className = 'accordion-v23',
   headingIconClassName = headingClassName + '__indicator',
   bodyClassName = className + '__body',
   oneSecond = 1000,
-  tenthOfASecond = 100,
-  scrollDuration = Object(_util__WEBPACK_IMPORTED_MODULE_8__["reduceMotion"])() ? 0 : oneSecond,
-  scrollTo = true;
+  tenthOfASecond = 100;
 
 /**
  * Only triggeered on page load when an accordion address is present in the URL. 
