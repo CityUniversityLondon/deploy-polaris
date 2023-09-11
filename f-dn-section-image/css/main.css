@@ -13012,6 +13012,12 @@ svg:not(:root) {
     position: relative;
 }
 
+@media (max-width: 767px) {
+    .courses-v23__side-image-mobile-hidden {
+        display: none;
+    }
+}
+
 .ug-courses-v23 .courses-v23__structure ul {
     list-style-type: none;
     margin-left: 0;
