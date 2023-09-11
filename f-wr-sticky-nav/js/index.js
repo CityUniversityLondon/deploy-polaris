@@ -24440,6 +24440,11 @@ function setSection(heading, open) {
   heading.dataset.open = open;
   heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
+
+  // Automatically scrolls heading into view being at the top of the page
+  var viewportOffset = heading.parentElement.getBoundingClientRect();
+  var top = viewportOffset.top;
+  scrollBy(0, top - stickyNavHeight());
 }
 
 /**
@@ -24481,6 +24486,17 @@ function cleanupTransition(section) {
   var open = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(section.previousElementSibling.dataset.open);
   section.style.height = null;
   section.dataset.closed = open ? 'false' : 'true';
+}
+
+/**
+ * Checking if stickyNav is present and returns its height
+ *
+ */
+function stickyNavHeight() {
+  var stickyNavEl = document.getElementsByClassName('nav-sticky')[0];
+  if (stickyNavEl) {
+    return stickyNavEl.offsetHeight;
+  }
 }
 
 /**
@@ -24545,9 +24561,6 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    if (scrollTo && !(Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(heading) && Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(accordionSection))) {
-      scroll.to(heading, scrollDuration);
-    }
   }
 }
 
@@ -24641,8 +24654,10 @@ function launch(accordion) {
     var heading = accordion.querySelector('' + urlHash + '');
     if (heading) {
       // Wait for DOM to load before accessing selected accordion
-      setSection(heading, true);
-      heading.nextElementSibling.dataset.closed = 'false';
+      setTimeout(function () {
+        setSection(heading, true);
+        heading.nextElementSibling.dataset.closed = 'false';
+      }, 200);
     }
   }
 }
@@ -25138,7 +25153,6 @@ function updateButtonState(slider, controls) {
 * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
 */
 function handleNextPrevClick(slider, controls, direction) {
-  console.log('handleNextPrevClick');
   var slides = Array.from(slider.children);
   var responsive = slider.getAttribute('data-style');
   var optimised = slider.getAttribute('data-optimised');
@@ -25625,7 +25639,6 @@ function move(e, slider, controlsWrapper) {
 * @param {HTMLElement} slider - An element with the slider class
 */
 function launch(slider) {
-  console.log('slider v23 launched');
   var style = slider.dataset.style || defaultStyle,
     cardsPerRow = parseInt(slider.dataset.cardsperrow) || defaultCardsPerRow; // CardsPerRow not currently in use. Tom's old code.
   // Might have use case for bigger screen which have capacity to have more than 1 item per slide.
