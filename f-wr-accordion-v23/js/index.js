@@ -24418,7 +24418,6 @@ __webpack_require__.r(__webpack_exports__);
  * @author Web Development
  * @copyright City, University of London 2018-2019
  */
-//import scroll from 'zenscroll';
 
 var className = 'accordion-v23',
   headingClassName = className + '__heading',
@@ -24429,6 +24428,24 @@ var className = 'accordion-v23',
   tenthOfASecond = 100,
   scrollDuration = Object(_util__WEBPACK_IMPORTED_MODULE_8__["reduceMotion"])() ? 0 : oneSecond,
   scrollTo = true;
+
+/**
+ * Only triggeered on page load when an accordion address is present in the URL. 
+ * This function ensures that the page scrolls down to this accrodion heading, by checking if it scrolled
+ * down far enough, if not then try again automatically
+ *
+ * @param {HTMLHeadingElement} heading - An accordion heading.
+ */
+function forcedScroll(heading) {
+  var viewportOffset = heading.parentElement.getBoundingClientRect();
+  var top = viewportOffset.top;
+  scrollBy(0, top - stickyNavHeight());
+  setTimeout(function () {
+    if (top > 200) {
+      forcedScroll(heading);
+    }
+  }, 700);
+}
 
 /**
  * Sets a heading and the button nested within to be open or closed.
@@ -24657,6 +24674,7 @@ function launch(accordion) {
       setTimeout(function () {
         setSection(heading, true);
         heading.nextElementSibling.dataset.closed = 'false';
+        forcedScroll(heading);
       }, 200);
     }
   }
