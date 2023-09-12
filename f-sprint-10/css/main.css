@@ -11686,7 +11686,12 @@ svg:not(:root) {
     }
 }
 
+.courses-v23__summary .ksp-v23-wrapper {
+    grid-column: 1 / -1;
+}
+
 .courses-v23__summary .accordion-v23 {
+    grid-column: 1 / -1;
     margin-bottom: 2rem;
 }
 
@@ -11699,6 +11704,11 @@ svg:not(:root) {
     .courses-v23__summary .summary__profiles__wrap {
         width: 100%;
     }
+}
+
+.courses-v23__summary .youtube-embed--for-content,
+.courses-v23__summary figure {
+    max-width: 60ch;
 }
 
 .courses-v23__summary .summary__profile {
@@ -11744,6 +11754,47 @@ svg:not(:root) {
 
 .pg-courses-v23 .courses-v23__summary .summary__profile {
     border-color: #3457F1;
+}
+
+@media (min-width: 901px) {
+    .courses-v23__summary {
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        display: grid;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 650px) {
+    .courses-v23__summary {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .courses-v23__summary {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.courses-v23__summary__content {
+    grid-column: 1 / 13;
+}
+
+.courses-v23__summary__heading {
+    grid-column: 1 / -1;
+}
+
+.courses-v23__summary__widget {
+    grid-column: 13 / -1;
+}
+
+.courses-v23__summary__widget__logos li {
+    display: inline-block;
+}
+
+.courses-v23__summary__widget__logos img {
+    width: 8rem;
+    height: auto;
 }
 
 .courses-v23 .courses-v23__student-life {
@@ -12741,7 +12792,13 @@ svg:not(:root) {
 }
 
 .courses-v23__contact__cta li {
-    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 901px) {
+    .courses-v23__contact__cta li {
+        display: inline-block;
+    }
 }
 
 .ug-courses-v23 .courses-v23__contact__cta a {
@@ -12751,6 +12808,7 @@ svg:not(:root) {
     padding: 1.5rem;
     border-bottom-width: 0;
     font-weight: 700;
+    padding: 1rem;
 }
 
 .ug-courses-v23 .courses-v23__contact__cta a:hover, .ug-courses-v23 .courses-v23__contact__cta a:focus, .ug-courses-v23 .courses-v23__contact__cta a:active {
@@ -12762,6 +12820,7 @@ svg:not(:root) {
     background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ececec;
+    padding: 1rem;
 }
 
 .pg-courses-v23 .courses-v23__contact__cta a:hover, .pg-courses-v23 .courses-v23__contact__cta a:focus, .pg-courses-v23 .courses-v23__contact__cta a:active {
@@ -12883,31 +12942,14 @@ svg:not(:root) {
 }
 
 .courses-v23 .accordion-v23 {
-    width: 66%;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
 
-.courses-v23__overview__grid {
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 0;
-    display: grid;
-}
-
-@media (min-width: 650px) {
-    .courses-v23__overview__grid {
-        grid-column-gap: 1rem;
-    }
-}
-
 @media (min-width: 901px) {
-    .courses-v23__overview__grid {
-        grid-column-gap: 1.5rem;
+    .courses-v23 .accordion-v23 {
+        width: 66%;
     }
-}
-
-.courses-v23__overview {
-    grid-column: 1/7;
 }
 
 @media (min-width: 901px) {
