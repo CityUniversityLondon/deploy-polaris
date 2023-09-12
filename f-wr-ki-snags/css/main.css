@@ -12809,7 +12809,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__contact__cta a {
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     color: #1e1e1e;
     display: block;
     padding: 1.5rem;
@@ -12818,7 +12818,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__contact__cta a:hover, .ug-courses-v23 .courses-v23__contact__cta a:focus, .ug-courses-v23 .courses-v23__contact__cta a:active {
-    background-color: #9b918c;
+    background-color: #c2b8b4;
     color: #1e1e1e;
 }
 
@@ -22381,6 +22381,20 @@ USED IN:
     outline-offset: 3px;
 }
 
+.cta--alto {
+    background-color: #d0c8c5;
+    color: #1e1e1e;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.cta--alto:hover, .cta--alto:focus, .cta--alto:active {
+    background-color: #c2b8b4;
+    color: #1e1e1e;
+}
+
 .cta--montecarlo {
     background-color: #a3d5cd;
     color: #1e1e1e;
@@ -22517,7 +22531,7 @@ USED IN:
     padding: 0.75rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     color: #1e1e1e;
 }
 
@@ -22538,7 +22552,7 @@ USED IN:
 }
 
 .cta--ug-v23--ask-student:hover, .cta--ug-v23--ask-student:focus, .cta--ug-v23--ask-student:active {
-    background-color: #9b918c;
+    background-color: #c2b8b4;
 }
 
 .cta--pg-v23--ask-student {
@@ -40893,7 +40907,7 @@ html {
     padding: 0.75rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     color: #1e1e1e;
 }
 
@@ -40914,7 +40928,7 @@ html {
 }
 
 .ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
-    background-color: #9b918c;
+    background-color: #c2b8b4;
 }
 
 .pg-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
@@ -41032,7 +41046,7 @@ html {
     padding: 0.75rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     color: #1e1e1e;
 }
 
@@ -41053,7 +41067,7 @@ html {
 }
 
 .ug-courses-v23 .cta--main:hover, .ug-courses-v23 .cta--main:focus, .ug-courses-v23 .cta--main:active {
-    background-color: #9b918c;
+    background-color: #c2b8b4;
 }
 
 .pg-courses-v23 .unibuddy-card-v23__content__image:after,
