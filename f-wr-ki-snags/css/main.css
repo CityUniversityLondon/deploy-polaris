@@ -397,6 +397,10 @@
     background-color: #DDDDDD;
 }
 
+.background--alto {
+    background-color: #d0c8c5;
+}
+
 @font-face {
     font-family: "FF Meta";
     font-style: normal;
@@ -11155,7 +11159,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__fee__inner {
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     color: #1e1e1e;
 }
 
@@ -11510,7 +11514,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__key-info {
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     color: #1e1e1e;
 }
 
@@ -11963,7 +11967,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__apply {
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     color: #1e1e1e;
 }
 
@@ -12567,7 +12571,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__related-courses {
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12580,7 +12584,7 @@ svg:not(:root) {
     position: absolute;
     height: 100%;
     width: 100vw;
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     top: 0;
     display: flex;
     z-index: -1;
@@ -29373,7 +29377,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .ug-courses-v23 .ksp-v23-wrapper--dark {
-    background-color: #a9a19c;
+    background-color: #d0c8c5;
     color: #1e1e1e;
 }
 
@@ -40880,7 +40884,7 @@ html {
 }
 
 .ug-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
-    background: #a9a19c;
+    background: #d0c8c5;
     color: #1e1e1e;
 }
 
@@ -41020,7 +41024,7 @@ html {
 
 .ug-courses-v23 .unibuddy-card-v23__content__image:after,
 .ug-courses-v23 .unibuddy-card-v23__content__title:after {
-    background: #a9a19c;
+    background: #d0c8c5;
 }
 
 .ug-courses-v23 .cta--main {
