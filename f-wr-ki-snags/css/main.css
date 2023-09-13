@@ -11509,7 +11509,7 @@ svg:not(:root) {
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__text {
     margin-bottom: 1rem;
-    font-size: 1.728rem;
+    font-size: 1.44rem;
     font-weight: 400;
 }
 
@@ -11539,7 +11539,7 @@ svg:not(:root) {
 
 .ug-courses-v23 .cta--v23--ki {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #ffffff;
@@ -11564,7 +11564,7 @@ svg:not(:root) {
 
 .ug-courses-v23 .cta--v23--ki--apply {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #1e1e1e;
@@ -11594,7 +11594,7 @@ svg:not(:root) {
 
 .ug-courses-v23 .cta--v23--ki--clearing {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #f1b434;
@@ -11647,7 +11647,7 @@ svg:not(:root) {
 
 .pg-courses-v23 .cta--v23--ki {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #002b49;
@@ -11679,7 +11679,7 @@ svg:not(:root) {
 
 .pg-courses-v23 .cta--v23--ki--apply {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #ffffff;
@@ -11709,7 +11709,7 @@ svg:not(:root) {
 
 .pg-courses-v23 .cta--v23--ki--clearing {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #f1b434;
@@ -11988,7 +11988,7 @@ svg:not(:root) {
 
 .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 1.5rem;
@@ -12137,7 +12137,7 @@ svg:not(:root) {
 
 .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 1.5rem;
@@ -12812,7 +12812,6 @@ svg:not(:root) {
     background-color: #d0c8c5;
     color: #1e1e1e;
     display: block;
-    padding: 1.5rem;
     border-bottom-width: 0;
     font-weight: 700;
 }
@@ -22385,7 +22384,6 @@ USED IN:
     background-color: #d0c8c5;
     color: #1e1e1e;
     display: block;
-    padding: 1.5rem;
     border-bottom-width: 0;
     font-weight: 700;
 }
@@ -22505,7 +22503,7 @@ USED IN:
 
 .cta--v23 {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -22528,7 +22526,7 @@ USED IN:
 
 .cta--ug-v23--ask-student {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #d0c8c5;
@@ -22557,7 +22555,7 @@ USED IN:
 
 .cta--pg-v23--ask-student {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #002b49;
@@ -22586,7 +22584,7 @@ USED IN:
 
 .cta--ug-v23--ki {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #ffffff;
@@ -22611,7 +22609,7 @@ USED IN:
 
 .cta--ug-v23--ki--apply {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #1e1e1e;
@@ -22641,7 +22639,7 @@ USED IN:
 
 .cta--ug-v23--ki--clearing {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #f1b434;
@@ -22670,7 +22668,7 @@ USED IN:
 
 .cta--pg-v23--ki {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #002b49;
@@ -22702,7 +22700,7 @@ USED IN:
 
 .cta--pg-v23--ki--apply {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #ffffff;
@@ -22741,7 +22739,7 @@ USED IN:
 
 .cta--alumni-pg-v23 {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #002b49;
@@ -40904,7 +40902,7 @@ html {
 
 .ug-courses-v23 .promo-box-v23 .cta--main {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #d0c8c5;
@@ -40938,7 +40936,7 @@ html {
 
 .pg-courses-v23 .promo-box-v23 .cta--main {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #002b49;
@@ -41043,7 +41041,7 @@ html {
 
 .ug-courses-v23 .cta--main {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #d0c8c5;
@@ -41077,7 +41075,7 @@ html {
 
 .pg-courses-v23 .cta--main {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #002b49;
@@ -41675,9 +41673,11 @@ html {
 }
 
 .js .courses-v23__careers .alumni-card-v23__cta__link {
-    font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    /*
+        font-weight: $font-weight-bold;
+        @include font-family(meta);
+        font-size: $font-size-delta;
+        */
 }
 
 .ug-courses-v23 .courses-v23__careers .slider-v23__container {
@@ -41715,7 +41715,7 @@ html {
 
 .pg-courses-v23 .courses-v23__careers .cta--main {
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #002b49;
