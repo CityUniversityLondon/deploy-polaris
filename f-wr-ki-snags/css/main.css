@@ -12888,7 +12888,6 @@ svg:not(:root) {
     background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ececec;
-    padding: 1rem;
 }
 
 .pg-courses-v23 .courses-v23__contact__cta a:hover, .pg-courses-v23 .courses-v23__contact__cta a:focus, .pg-courses-v23 .courses-v23__contact__cta a:active {
@@ -41689,6 +41688,7 @@ html {
     background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ececec;
+    border: none;
 }
 
 .pg-courses-v23 .alumni-card-v23__cta__link:hover, .pg-courses-v23 .alumni-card-v23__cta__link:focus, .pg-courses-v23 .alumni-card-v23__cta__link:active {
