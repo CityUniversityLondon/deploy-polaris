@@ -40640,7 +40640,7 @@ html {
 }
 
 .student-life-v23__links__unibuddy ul li {
-    max-width: 19.5rem;
+    max-width: initial;
 }
 
 .unibuddy-card-v23 {
