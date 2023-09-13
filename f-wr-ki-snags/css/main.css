@@ -11542,6 +11542,7 @@ svg:not(:root) {
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #ffffff;
     color: #1e1e1e;
 }
@@ -11567,6 +11568,7 @@ svg:not(:root) {
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #1e1e1e;
     color: #ffffff;
 }
@@ -11597,6 +11599,7 @@ svg:not(:root) {
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #f1b434;
     color: #1e1e1e;
 }
@@ -11650,6 +11653,7 @@ svg:not(:root) {
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ffffff;
@@ -11682,6 +11686,7 @@ svg:not(:root) {
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #ffffff;
     color: #1e1e1e;
 }
@@ -11712,6 +11717,7 @@ svg:not(:root) {
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #f1b434;
     color: #1e1e1e;
 }
@@ -11991,7 +11997,7 @@ svg:not(:root) {
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 1.5rem;
+    font-weight: 700;
     background-color: transparent;
     color: #1e1e1e;
     border: 0.12rem solid #1e1e1e;
@@ -12140,7 +12146,7 @@ svg:not(:root) {
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 1.5rem;
+    font-weight: 700;
     background-color: transparent;
     color: #ffffff;
     border: 0.12rem solid #ffffff;
@@ -22506,6 +22512,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
 }
 
 .cta--v23:hover, .cta--v23:focus, .cta--v23:active {
@@ -22529,6 +22536,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #d0c8c5;
     color: #1e1e1e;
 }
@@ -22558,6 +22566,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #002b49;
     color: #ffffff;
 }
@@ -22587,6 +22596,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #ffffff;
     color: #1e1e1e;
 }
@@ -22612,6 +22622,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #1e1e1e;
     color: #ffffff;
 }
@@ -22642,6 +22653,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #f1b434;
     color: #1e1e1e;
 }
@@ -22671,6 +22683,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ffffff;
@@ -22703,6 +22716,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #ffffff;
     color: #1e1e1e;
 }
@@ -22729,8 +22743,29 @@ USED IN:
 }
 
 .cta--alumni-ug-v23 {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 700;
     background-color: #e35205;
     color: #0c0c0e;
+}
+
+.cta--alumni-ug-v23:hover, .cta--alumni-ug-v23:focus, .cta--alumni-ug-v23:active {
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .cta--alumni-ug-v23 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .cta--alumni-ug-v23 {
+        font-size: 92px;
+    }
 }
 
 .cta--alumni-ug-v23:hover, .cta--alumni-ug-v23:focus, .cta--alumni-ug-v23:active {
@@ -22742,6 +22777,7 @@ USED IN:
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     text-align: center;
+    font-weight: 700;
     background-color: #002b49;
     color: #ffffff;
 }
@@ -40895,72 +40931,38 @@ html {
     font-weight: 700;
 }
 
+.ug-courses-v23 .promo-box-v23__cta__link {
+    background-color: #d0c8c5;
+    color: #1e1e1e;
+    display: block;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.ug-courses-v23 .promo-box-v23__cta__link:hover, .ug-courses-v23 .promo-box-v23__cta__link:focus, .ug-courses-v23 .promo-box-v23__cta__link:active {
+    background-color: #c2b8b4;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .promo-box-v23__cta__link {
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ececec;
+}
+
+.pg-courses-v23 .promo-box-v23__cta__link:hover, .pg-courses-v23 .promo-box-v23__cta__link:focus, .pg-courses-v23 .promo-box-v23__cta__link:active {
+    background-color: #00192a;
+    color: #ffffff;
+}
+
 .ug-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
     background: #d0c8c5;
     color: #1e1e1e;
 }
 
-.ug-courses-v23 .promo-box-v23 .cta--main {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #d0c8c5;
-    color: #1e1e1e;
-}
-
-.ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .ug-courses-v23 .promo-box-v23 .cta--main {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .ug-courses-v23 .promo-box-v23 .cta--main {
-        font-size: 92px;
-    }
-}
-
-.ug-courses-v23 .promo-box-v23 .cta--main:hover, .ug-courses-v23 .promo-box-v23 .cta--main:focus, .ug-courses-v23 .promo-box-v23 .cta--main:active {
-    background-color: #c2b8b4;
-}
-
 .pg-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
     background: #002b49;
     color: #ffffff;
-}
-
-.pg-courses-v23 .promo-box-v23 .cta--main {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #002b49;
-    color: #ffffff;
-}
-
-.pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .pg-courses-v23 .promo-box-v23 .cta--main {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .pg-courses-v23 .promo-box-v23 .cta--main {
-        font-size: 92px;
-    }
-}
-
-.pg-courses-v23 .promo-box-v23 .cta--main:hover, .pg-courses-v23 .promo-box-v23 .cta--main:focus, .pg-courses-v23 .promo-box-v23 .cta--main:active {
-    background-color: #00192a;
 }
 
 .unibuddy-card-v23 {
@@ -41010,12 +41012,6 @@ html {
     font-size: 1.2rem;
 }
 
-.unibuddy-card-v23 .unibuddy-card-v23__cta__link {
-    font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-}
-
 .unibuddy-card-v23--general .unibuddy-card-v23__content__title {
     font-weight: 700;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -41034,72 +41030,38 @@ html {
     width: 4rem;
 }
 
+.ug-courses-v23 .unibuddy-card-v23__cta__link {
+    background-color: #d0c8c5;
+    color: #1e1e1e;
+    display: block;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.ug-courses-v23 .unibuddy-card-v23__cta__link:hover, .ug-courses-v23 .unibuddy-card-v23__cta__link:focus, .ug-courses-v23 .unibuddy-card-v23__cta__link:active {
+    background-color: #c2b8b4;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .unibuddy-card-v23__cta__link {
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ececec;
+}
+
+.pg-courses-v23 .unibuddy-card-v23__cta__link:hover, .pg-courses-v23 .unibuddy-card-v23__cta__link:focus, .pg-courses-v23 .unibuddy-card-v23__cta__link:active {
+    background-color: #00192a;
+    color: #ffffff;
+}
+
 .ug-courses-v23 .unibuddy-card-v23__content__image:after,
 .ug-courses-v23 .unibuddy-card-v23__content__title:after {
     background: #d0c8c5;
 }
 
-.ug-courses-v23 .cta--main {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #d0c8c5;
-    color: #1e1e1e;
-}
-
-.ug-courses-v23 .cta--main:hover, .ug-courses-v23 .cta--main:focus, .ug-courses-v23 .cta--main:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .ug-courses-v23 .cta--main {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .ug-courses-v23 .cta--main {
-        font-size: 92px;
-    }
-}
-
-.ug-courses-v23 .cta--main:hover, .ug-courses-v23 .cta--main:focus, .ug-courses-v23 .cta--main:active {
-    background-color: #c2b8b4;
-}
-
 .pg-courses-v23 .unibuddy-card-v23__content__image:after,
 .pg-courses-v23 .unibuddy-card-v23__content__title:after {
     background: #002b49;
-}
-
-.pg-courses-v23 .cta--main {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #002b49;
-    color: #ffffff;
-}
-
-.pg-courses-v23 .cta--main:hover, .pg-courses-v23 .cta--main:focus, .pg-courses-v23 .cta--main:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .pg-courses-v23 .cta--main {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .pg-courses-v23 .cta--main {
-        font-size: 92px;
-    }
-}
-
-.pg-courses-v23 .cta--main:hover, .pg-courses-v23 .cta--main:focus, .pg-courses-v23 .cta--main:active {
-    background-color: #00192a;
 }
 
 .courses-v23__careers__recent-employers {
@@ -41672,12 +41634,25 @@ html {
     font-size: 1.2rem;
 }
 
-.js .courses-v23__careers .alumni-card-v23__cta__link {
-    /*
-        font-weight: $font-weight-bold;
-        @include font-family(meta);
-        font-size: $font-size-delta;
-        */
+.ug-courses-v23 .alumni-card-v23__cta__link {
+    background-color: #e35205;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .alumni-card-v23__cta__link:hover, .ug-courses-v23 .alumni-card-v23__cta__link:focus, .ug-courses-v23 .alumni-card-v23__cta__link:active {
+    background-color: #c54704;
+    color: #1e1e1e;
+}
+
+.pg-courses-v23 .alumni-card-v23__cta__link {
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ececec;
+}
+
+.pg-courses-v23 .alumni-card-v23__cta__link:hover, .pg-courses-v23 .alumni-card-v23__cta__link:focus, .pg-courses-v23 .alumni-card-v23__cta__link:active {
+    background-color: #00192a;
+    color: #ffffff;
 }
 
 .ug-courses-v23 .courses-v23__careers .slider-v23__container {
@@ -41692,15 +41667,6 @@ html {
     background: #e35205;
 }
 
-.ug-courses-v23 .courses-v23__careers .cta--main {
-    background-color: #e35205;
-    color: #0c0c0e;
-}
-
-.ug-courses-v23 .courses-v23__careers .cta--main:hover, .ug-courses-v23 .courses-v23__careers .cta--main:focus, .ug-courses-v23 .courses-v23__careers .cta--main:active {
-    background-color: #c54704;
-}
-
 .pg-courses-v23 .courses-v23__careers .slider-v23__container {
     background: linear-gradient(to right, #006699 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #006699 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
@@ -41711,35 +41677,6 @@ html {
 
 .pg-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
     background: #002b49;
-}
-
-.pg-courses-v23 .courses-v23__careers .cta--main {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #002b49;
-    color: #ffffff;
-}
-
-.pg-courses-v23 .courses-v23__careers .cta--main:hover, .pg-courses-v23 .courses-v23__careers .cta--main:focus, .pg-courses-v23 .courses-v23__careers .cta--main:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .pg-courses-v23 .courses-v23__careers .cta--main {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .pg-courses-v23 .courses-v23__careers .cta--main {
-        font-size: 92px;
-    }
-}
-
-.pg-courses-v23 .courses-v23__careers .cta--main:hover, .pg-courses-v23 .courses-v23__careers .cta--main:focus, .pg-courses-v23 .courses-v23__careers .cta--main:active {
-    background-color: #00192a;
 }
 
 @media screen {
