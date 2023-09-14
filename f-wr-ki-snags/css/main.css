@@ -11378,7 +11378,6 @@ svg:not(:root) {
     display: grid;
     margin-top: 20rem;
     margin-bottom: 2rem;
-    gap: 2.25rem;
     position: relative;
     padding: 1.75rem 1rem;
 }
@@ -11421,48 +11420,33 @@ svg:not(:root) {
     }
 }
 
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details {
-    grid-column: 1 /7;
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div {
+    grid-column: span 6;
 }
 
 @media (max-width: 899px) {
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details {
-        grid-column: 1 /10;
-    }
-}
-
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap {
-    grid-column: 7 /13;
-    margin-top: 1rem;
-}
-
-@media (max-width: 899px) {
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap {
-        grid-column: 10 /19;
-    }
-}
-
-@media (max-width: 767px) {
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap {
-        margin-top: 0;
-    }
-}
-
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__wrap {
-    grid-column: 13 /19;
-}
-
-@media (max-width: 899px) {
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__wrap {
-        grid-column: 1 /10;
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div {
+        grid-column: span 9;
     }
 }
 
 @media (max-width: 649px) {
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details,
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap,
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__wrap {
-        grid-column: 1 /-1;
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div {
+        grid-column: span 18;
+        margin-bottom: 1.5rem;
+    }
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap {
+    margin-top: 1rem;
+}
+
+@media (max-width: 649px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap {
+        margin-top: 0;
     }
 }
 
@@ -11478,15 +11462,6 @@ svg:not(:root) {
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p {
     margin-bottom: 0.25rem;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.414;
-}
-
-@media (max-width: 899px) {
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p {
-        font-size: 1rem;
-    }
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content__label {
@@ -11515,17 +11490,27 @@ svg:not(:root) {
     margin-bottom: 0.5rem;
 }
 
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current, .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p,
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current,
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.414;
+}
+
+@media (max-width: 899px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p,
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current,
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
+        font-size: 1rem;
+    }
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__cta {
     margin-bottom: 1rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 649px) {
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__cta:last-child {
         margin-bottom: 0;
     }
@@ -11538,7 +11523,7 @@ svg:not(:root) {
     height: initial;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 649px) {
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst {
         margin-top: 0;
     }
