@@ -12947,9 +12947,159 @@ svg:not(:root) {
 }
 
 @media (min-width: 901px) {
-    .courses-v23 .accordion-v23 {
-        width: 66%;
+    .courses-v23__summary {
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        display: grid;
     }
+}
+
+@media (min-width: 901px) and (min-width: 650px) {
+    .courses-v23__summary {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .courses-v23__summary {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__summary h2, .courses-v23__summary h3 {
+        grid-column: 1/-1;
+    }
+    .courses-v23__summary .courses-v23__summary__content {
+        grid-column: 1/13;
+    }
+    .courses-v23__summary .courses-v23__summary__image {
+        grid-column: 13/-1;
+    }
+    .courses-v23__summary .accordion-v23 {
+        grid-column: 1/13;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__structure {
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        display: grid;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 650px) {
+    .courses-v23__structure {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .courses-v23__structure {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__structure h2, .courses-v23__structure h3 {
+        grid-column: 1/-1;
+    }
+    .courses-v23__structure .courses-v23__structure__content {
+        grid-column: 1/13;
+    }
+    .courses-v23__structure .courses-v23__structure__image {
+        grid-column: 13/-1;
+    }
+    .courses-v23__structure .accordion-v23 {
+        grid-column: 1/13;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__study-abroad {
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        display: grid;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 650px) {
+    .courses-v23__study-abroad {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .courses-v23__study-abroad {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__study-abroad h2, .courses-v23__study-abroad h3 {
+        grid-column: 1/-1;
+    }
+    .courses-v23__study-abroad .courses-v23__study-abroad__content {
+        grid-column: 1/13;
+    }
+    .courses-v23__study-abroad .courses-v23__study-abroad__image {
+        grid-column: 13/-1;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__placements {
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        display: grid;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 650px) {
+    .courses-v23__placements {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .courses-v23__placements {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__placements h2, .courses-v23__placements h3 {
+        grid-column: 1/-1;
+    }
+    .courses-v23__placements .courses-v23__placements__content {
+        grid-column: 1/13;
+    }
+    .courses-v23__placements .courses-v23__placements__image {
+        grid-column: 13/-1;
+    }
+}
+
+.courses-v23__overview__grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0;
+    display: grid;
+}
+
+@media (min-width: 650px) {
+    .courses-v23__overview__grid {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .courses-v23__overview__grid {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.courses-v23__overview {
+    grid-column: 1/7;
 }
 
 @media (min-width: 901px) {
