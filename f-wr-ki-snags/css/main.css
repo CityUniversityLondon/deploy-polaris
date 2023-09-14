@@ -11380,9 +11380,6 @@ svg:not(:root) {
     flex-direction: row;
     margin-top: 10rem;
     gap: 2.25rem;
-    background-clip: padding-box;
-    border-radius: 10px;
-    top: 5rem;
     position: relative;
     padding: 1.75rem 1rem;
 }
@@ -11433,8 +11430,6 @@ svg:not(:root) {
 @media (max-width: 767px) {
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
         flex-direction: column;
-        background-clip: padding-box;
-        border-radius: 0 0 10px 10px;
     }
 }
 
@@ -11454,12 +11449,12 @@ svg:not(:root) {
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p {
     margin-bottom: 0.5rem;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content__label {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__wrap {
@@ -22571,66 +22566,6 @@ USED IN:
     }
 }
 
-.cta--ug-v23--ask-student {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #d0c8c5;
-    color: #1e1e1e;
-}
-
-.cta--ug-v23--ask-student:hover, .cta--ug-v23--ask-student:focus, .cta--ug-v23--ask-student:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .cta--ug-v23--ask-student {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .cta--ug-v23--ask-student {
-        font-size: 92px;
-    }
-}
-
-.cta--ug-v23--ask-student:hover, .cta--ug-v23--ask-student:focus, .cta--ug-v23--ask-student:active {
-    background-color: #c2b8b4;
-}
-
-.cta--pg-v23--ask-student {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #002b49;
-    color: #ffffff;
-}
-
-.cta--pg-v23--ask-student:hover, .cta--pg-v23--ask-student:focus, .cta--pg-v23--ask-student:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .cta--pg-v23--ask-student {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .cta--pg-v23--ask-student {
-        font-size: 92px;
-    }
-}
-
-.cta--pg-v23--ask-student:hover, .cta--pg-v23--ask-student:focus, .cta--pg-v23--ask-student:active {
-    background-color: #00192a;
-}
-
 .cta--ug-v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
@@ -22780,66 +22715,6 @@ USED IN:
 .cta--pg-v23--ki--apply:hover, .cta--pg-v23--ki--apply:focus, .cta--pg-v23--ki--apply:active {
     background-color: #f0f0f0;
     outline-color: #ffffff;
-}
-
-.cta--alumni-ug-v23 {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #e35205;
-    color: #0c0c0e;
-}
-
-.cta--alumni-ug-v23:hover, .cta--alumni-ug-v23:focus, .cta--alumni-ug-v23:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .cta--alumni-ug-v23 {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .cta--alumni-ug-v23 {
-        font-size: 92px;
-    }
-}
-
-.cta--alumni-ug-v23:hover, .cta--alumni-ug-v23:focus, .cta--alumni-ug-v23:active {
-    background-color: #c54704;
-}
-
-.cta--alumni-pg-v23 {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #002b49;
-    color: #ffffff;
-}
-
-.cta--alumni-pg-v23:hover, .cta--alumni-pg-v23:focus, .cta--alumni-pg-v23:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .cta--alumni-pg-v23 {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .cta--alumni-pg-v23 {
-        font-size: 92px;
-    }
-}
-
-.cta--alumni-pg-v23:hover, .cta--alumni-pg-v23:focus, .cta--alumni-pg-v23:active {
-    background-color: #00192a;
 }
 
 .cta--v23-round {
