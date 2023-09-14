@@ -11836,78 +11836,76 @@ svg:not(:root) {
     grid-column: 17/-1;
 }
 
-.ug-courses-v23 .courses-v23__apply {
-    padding-left: initial;
-    padding-right: initial;
-}
-
-.courses-v23__apply__wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 3rem;
-}
-
-@media (max-width: 500px) {
+@media (min-width: 901px) {
     .courses-v23__apply__wrapper {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        position: relative;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .courses-v23__apply__wrapper {
+        padding-bottom: 3rem;
     }
 }
 
 .courses-v23__apply {
     position: relative;
-    background-color: #a9a19c;
     margin-top: 2rem;
 }
 
-@media (min-width: 901px) {
-    .courses-v23__apply .bracket-block__anglesA:before {
-        content: ' ';
-        position: absolute;
-        width: 3rem;
-        height: 100%;
-        border-style: solid;
-        border-color: #ffffff;
-        border-width: 1.5rem 0 0 1.5rem;
-        left: -0;
-        top: -0;
-    }
-    .courses-v23__apply .bracket-block__anglesA:after {
-        content: ' ';
-        position: absolute;
-        width: 3rem;
-        height: 100%;
-        border-style: solid;
-        border-color: #ffffff;
-        border-width: 0 0 1.5rem 1.5rem;
-        left: -0;
-        top: 0;
-    }
-    .courses-v23__apply .bracket-block__anglesB:before {
-        content: ' ';
-        position: absolute;
-        width: 3rem;
-        height: 100%;
-        border-style: solid;
-        border-color: #ffffff;
-        border-width: 1.5rem 1.5rem 0 0;
-        right: -0;
-        top: -0;
-    }
-    .courses-v23__apply .bracket-block__anglesB:after {
-        content: ' ';
-        position: absolute;
-        width: 3rem;
-        height: 100%;
-        border-style: solid;
-        border-color: #ffffff;
-        border-width: 0 1.5rem 1.5rem 0;
-        right: -0;
-        top: 0;
-    }
+.courses-v23__apply .bracket-block__anglesA:before {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1.5rem 0 0 1.5rem;
+    left: -0;
+    top: -0;
 }
 
-@media (min-width: 901px) and (max-width: 900px) {
+.courses-v23__apply .bracket-block__anglesA:after {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0 0 1.5rem 1.5rem;
+    left: -0;
+    top: 0;
+}
+
+.courses-v23__apply .bracket-block__anglesB:before {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1.5rem 1.5rem 0 0;
+    right: -0;
+    top: -0;
+}
+
+.courses-v23__apply .bracket-block__anglesB:after {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0 1.5rem 1.5rem 0;
+    right: -0;
+    top: 0;
+}
+
+@media (max-width: 900px) {
     .courses-v23__apply .bracket-block__anglesA:before {
         left: -2rem;
         border-width: 1rem 0 0 1rem;
@@ -11940,14 +11938,27 @@ svg:not(:root) {
     border-width: 0 5rem 5rem 0;
 }
 
+@media (max-width: 900px) {
+    .courses-v23__apply .bracket-block__anglesB:after, .courses-v23__apply .bracket-block__anglesB:before {
+        right: -5rem;
+    }
+    .courses-v23__apply .bracket-block__anglesB:after {
+        width: 8rem;
+        border-width: 0 3rem 3rem 0;
+    }
+    .courses-v23__apply .bracket-block__anglesB:before {
+        width: 8rem;
+        border-width: 3rem 3rem 0 0;
+    }
+}
+
 .courses-v23__apply .courses-v23__apply__promo-content {
     position: relative;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 }
 
 @media (min-width: 901px) {
@@ -11984,8 +11995,17 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__apply {
-    background-color: #a9a19c;
     color: #1e1e1e;
+}
+
+@media (max-width: 900px) {
+    .ug-courses-v23 .courses-v23__apply {
+        background-color: #a9a19c;
+    }
+}
+
+.ug-courses-v23 .courses-v23__apply .courses-v23__apply__wrapper {
+    background-color: #a9a19c;
 }
 
 .ug-courses-v23 .courses-v23__apply a {
@@ -12131,9 +12151,22 @@ svg:not(:root) {
     outline-offset: 3px;
 }
 
+.ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
+    outline-color: #1e1e1e;
+}
+
 .pg-courses-v23 .courses-v23__apply {
-    background-color: #002b49;
     color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .pg-courses-v23 .courses-v23__apply {
+        background-color: #002b49;
+    }
+}
+
+.pg-courses-v23 .courses-v23__apply .courses-v23__apply__wrapper {
+    background-color: #002b49;
 }
 
 .pg-courses-v23 .courses-v23__apply a {
@@ -12268,6 +12301,10 @@ svg:not(:root) {
     background-color: #ececec;
     color: #1e1e1e;
     border: 0.12rem solid white;
+}
+
+.pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
+    outline-color: #ffffff;
 }
 
 .student-life-v23__links .student-life-v23__links__cards {
