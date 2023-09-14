@@ -11797,43 +11797,32 @@ svg:not(:root) {
     height: auto;
 }
 
-.courses-v23 .courses-v23__student-life {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: 1440px;
-}
-
-@media (min-width: 651px) {
-    .courses-v23 .courses-v23__student-life {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+@media (min-width: 901px) {
+    .courses-v23 .courses-v23__student-life .student-life-v23__links {
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        display: grid;
     }
 }
 
-.courses-v23 .courses-v23__student-life .student-life-v23__links {
-    grid-template-columns: repeat(24, 1fr);
-    grid-column-gap: 0;
-    display: grid;
-}
-
-@media (min-width: 650px) {
+@media (min-width: 901px) and (min-width: 650px) {
     .courses-v23 .courses-v23__student-life .student-life-v23__links {
         grid-column-gap: 1rem;
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 901px) and (min-width: 901px) {
     .courses-v23 .courses-v23__student-life .student-life-v23__links {
         grid-column-gap: 1.5rem;
     }
 }
 
 .courses-v23 .courses-v23__student-life .student-life-v23__links__cards {
-    grid-column: 1/17;
+    grid-column: 1/13;
 }
 
 .courses-v23 .courses-v23__student-life .student-life-v23__links__unibuddy {
-    grid-column: 17/-1;
+    grid-column: 13/-1;
 }
 
 .courses-v23__apply {
@@ -12264,6 +12253,7 @@ svg:not(:root) {
 @media (max-width: 900px) {
     .student-life-v23__links .student-life-v23__links__cards li {
         margin-bottom: 1rem;
+        max-width: initial;
     }
 }
 
@@ -12287,6 +12277,12 @@ svg:not(:root) {
 
 .student-life-v23__links .student-life-v23__links__cards li a:active {
     outline: 0.12rem dotted #1e1e1e;
+}
+
+@media (max-width: 900px) {
+    .student-life-v23__links .student-life-v23__links__cards li a {
+        max-width: initial;
+    }
 }
 
 .student-life-v23__links .student-life-v23__links__card {
@@ -40841,13 +40837,21 @@ html {
     }
 }
 
+.student-life-v23__links__unibuddy ul {
+    margin-left: initial;
+    margin-bottom: initial;
+}
+
+.student-life-v23__links__unibuddy ul li {
+    max-width: initial;
+}
+
 .unibuddy-card-v23 {
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    max-width: 19.5rem;
 }
 
 .unibuddy-card-v23 .unibuddy-card-v23__content__image {
