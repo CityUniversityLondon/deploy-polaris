@@ -11421,18 +11421,49 @@ svg:not(:root) {
     }
 }
 
-@media (max-width: 767px) {
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
-        flex-direction: column;
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details {
+    grid-column: 1 /7;
+}
+
+@media (max-width: 899px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details {
+        grid-column: 1 /10;
     }
 }
 
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div {
-    flex: 1;
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap {
+    grid-column: 7 /13;
+    margin-top: 1rem;
 }
 
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details {
-    grid-column: 1 /6;
+@media (max-width: 899px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap {
+        grid-column: 10 /19;
+    }
+}
+
+@media (max-width: 767px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap {
+        margin-top: 0;
+    }
+}
+
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__wrap {
+    grid-column: 13 /19;
+}
+
+@media (max-width: 899px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__wrap {
+        grid-column: 1 /10;
+    }
+}
+
+@media (max-width: 649px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details,
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__ctas__wrap,
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__wrap {
+        grid-column: 1 /-1;
+    }
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__heading {
@@ -11446,9 +11477,16 @@ svg:not(:root) {
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.414;
+}
+
+@media (max-width: 899px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p {
+        font-size: 1rem;
+    }
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content__label {
@@ -11459,7 +11497,7 @@ svg:not(:root) {
     font-weight: 600;
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__wrap:before {
@@ -11477,6 +11515,12 @@ svg:not(:root) {
     margin-bottom: 0.5rem;
 }
 
+.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current, .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.414;
+}
+
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__cta {
     margin-bottom: 1rem;
 }
@@ -11491,7 +11535,7 @@ svg:not(:root) {
     padding: 1.5rem 1.25rem;
     margin-top: 1rem;
     position: relative;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    height: initial;
 }
 
 @media (max-width: 767px) {
@@ -11503,7 +11547,10 @@ svg:not(:root) {
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__text {
     margin-bottom: 1rem;
     font-size: 1.44rem;
+    font-size: 1.728rem;
+    line-height: 1.2;
     font-weight: 400;
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .ug-courses-v23 .courses-v23__key-info {
