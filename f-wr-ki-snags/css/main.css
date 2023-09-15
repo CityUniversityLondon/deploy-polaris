@@ -11350,7 +11350,6 @@ svg:not(:root) {
     padding: 0;
     width: 100vw;
     max-width: initial;
-    margin-bottom: 2rem;
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__image {
@@ -11361,10 +11360,15 @@ svg:not(:root) {
     overflow: hidden;
 }
 
+@media (max-width: 649px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__image {
+        position: relative;
+    }
+}
+
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__image img {
     width: 100%;
     object-fit: cover;
-    top: -6rem;
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
@@ -11417,6 +11421,18 @@ svg:not(:root) {
 @media (min-width: 901px) {
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
         grid-column-gap: 1.5rem;
+    }
+}
+
+@media (max-width: 649px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
+        margin-top: -2rem;
+    }
+}
+
+@media (max-width: 1439px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
+        margin-bottom: 0;
     }
 }
 
