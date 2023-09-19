@@ -11438,16 +11438,16 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 1439px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
+        margin-top: 17rem;
+    }
+}
+
 @media (max-width: 1199px) {
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
         margin-bottom: 0;
         margin-top: 20rem;
-    }
-}
-
-@media (max-width: 1439px) {
-    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info {
-        margin-top: 17rem;
     }
 }
 
