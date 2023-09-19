@@ -24418,7 +24418,6 @@ __webpack_require__.r(__webpack_exports__);
  * @author Web Development
  * @copyright City, University of London 2018-2019
  */
-//import scroll from 'zenscroll';
 
 var className = 'accordion-v23',
   headingClassName = className + '__heading',
@@ -24426,9 +24425,29 @@ var className = 'accordion-v23',
   headingIconClassName = headingClassName + '__indicator',
   bodyClassName = className + '__body',
   oneSecond = 1000,
-  tenthOfASecond = 100,
-  scrollDuration = Object(_util__WEBPACK_IMPORTED_MODULE_8__["reduceMotion"])() ? 0 : oneSecond,
-  scrollTo = true;
+  tenthOfASecond = 100;
+
+/**
+ * Only triggeered on page load when an accordion address is present in the URL. 
+ * This function ensures that the page scrolls down to this accrodion heading, by checking if it scrolled
+ * down far enough, if not then try again automatically
+ *
+ * @param {HTMLHeadingElement} heading - An accordion heading.
+ * @param {string} repeat - will try automatically repeat and scroll down to heading until achieved.
+ */
+
+function scrollToHeading(heading, repeat) {
+  var viewportOffset = heading.parentElement.getBoundingClientRect();
+  var top = viewportOffset.top;
+  scrollBy(0, top - stickyNavHeight());
+  if (repeat) {
+    setTimeout(function () {
+      if (top > 200) {
+        scrollToHeading(heading, repeat);
+      }
+    }, 700);
+  }
+}
 
 /**
  * Sets a heading and the button nested within to be open or closed.
@@ -24444,7 +24463,6 @@ function setSection(heading, open) {
   // Automatically scrolls heading into view being at the top of the page
   var viewportOffset = heading.parentElement.getBoundingClientRect();
   var top = viewportOffset.top;
-  scrollBy(0, top - stickyNavHeight());
 }
 
 /**
@@ -24540,6 +24558,7 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = '0px';
     }, tenthOfASecond);
     setSection(heading, false);
+    scrollToHeading(heading);
   } else {
     // Calclulate and save how big we're transitioning to
     var sectionHeight = calculateAccordionBodyHeight(heading);
@@ -24561,6 +24580,7 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
+    scrollToHeading(heading);
   }
 }
 
@@ -24657,6 +24677,7 @@ function launch(accordion) {
       setTimeout(function () {
         setSection(heading, true);
         heading.nextElementSibling.dataset.closed = 'false';
+        scrollToHeading(heading, 'forced');
       }, 200);
     }
   }
