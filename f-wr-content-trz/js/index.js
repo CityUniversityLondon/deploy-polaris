@@ -24420,7 +24420,6 @@ __webpack_require__.r(__webpack_exports__);
  * @author Web Development
  * @copyright City, University of London 2018-2019
  */
-//import scroll from 'zenscroll';
 
 var className = 'accordion-v23',
   headingClassName = className + '__heading',
@@ -24428,9 +24427,29 @@ var className = 'accordion-v23',
   headingIconClassName = headingClassName + '__indicator',
   bodyClassName = className + '__body',
   oneSecond = 1000,
-  tenthOfASecond = 100,
-  scrollDuration = Object(_util__WEBPACK_IMPORTED_MODULE_8__["reduceMotion"])() ? 0 : oneSecond,
-  scrollTo = true;
+  tenthOfASecond = 100;
+
+/**
+ * Only triggeered on page load when an accordion address is present in the URL. 
+ * This function ensures that the page scrolls down to this accrodion heading, by checking if it scrolled
+ * down far enough, if not then try again automatically
+ *
+ * @param {HTMLHeadingElement} heading - An accordion heading.
+ * @param {string} repeat - will try automatically repeat and scroll down to heading until achieved.
+ */
+
+function scrollToHeading(heading, repeat) {
+  var viewportOffset = heading.parentElement.getBoundingClientRect();
+  var top = viewportOffset.top;
+  scrollBy(0, top - stickyNavHeight());
+  if (repeat) {
+    setTimeout(function () {
+      if (top > 200) {
+        scrollToHeading(heading, repeat);
+      }
+    }, 700);
+  }
+}
 
 /**
  * Sets a heading and the button nested within to be open or closed.
@@ -24442,6 +24461,10 @@ function setSection(heading, open) {
   heading.dataset.open = open;
   heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
+
+  // Automatically scrolls heading into view being at the top of the page
+  var viewportOffset = heading.parentElement.getBoundingClientRect();
+  var top = viewportOffset.top;
 }
 
 /**
@@ -24486,6 +24509,17 @@ function cleanupTransition(section) {
 }
 
 /**
+ * Checking if stickyNav is present and returns its height
+ *
+ */
+function stickyNavHeight() {
+  var stickyNavEl = document.getElementsByClassName('nav-sticky')[0];
+  if (stickyNavEl) {
+    return stickyNavEl.offsetHeight;
+  }
+}
+
+/**
  * Respond to button clicks - open if closed, close if open.
  *
  * If opening, will also push the heading ID into the history, so C+Ping the URL
@@ -24526,6 +24560,7 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = '0px';
     }, tenthOfASecond);
     setSection(heading, false);
+    scrollToHeading(heading);
   } else {
     // Calclulate and save how big we're transitioning to
     var sectionHeight = calculateAccordionBodyHeight(heading);
@@ -24547,9 +24582,7 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    if (scrollTo && !(Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(heading) && Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(accordionSection))) {
-      scroll.to(heading, scrollDuration);
-    }
+    scrollToHeading(heading);
   }
 }
 
@@ -24643,8 +24676,11 @@ function launch(accordion) {
     var heading = accordion.querySelector('' + urlHash + '');
     if (heading) {
       // Wait for DOM to load before accessing selected accordion
-      setSection(heading, true);
-      heading.nextElementSibling.dataset.closed = 'false';
+      setTimeout(function () {
+        setSection(heading, true);
+        heading.nextElementSibling.dataset.closed = 'false';
+        scrollToHeading(heading, 'forced');
+      }, 200);
     }
   }
 }
@@ -24899,7 +24935,7 @@ function launch(el) {
   createObserverContentSections();
 
   /*
-  // Observer to watchinging 1st menu item then add blur effect to end of nav
+  // Observer to watchinging 1st menu item then add blur effect to start of nav
   */
 
   var stickyNavFirstItem = document.querySelector(".nav-sticky__item:first-child");
@@ -24908,14 +24944,14 @@ function launch(el) {
     var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
     if (stickyNavWidth < horizontalScrollWidth) {
       entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--right', entry.isIntersecting);
+        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--left', !entry.isIntersecting);
       });
     }
   });
   observeStickyNavFirstItem.observe(stickyNavFirstItem);
 
   /*
-  // Observer to watchinging last menu item then add blur effect to start of nav
+  // Observer to watchinging last menu item then add blur effect to end of nav
   */
 
   var stickyNavLastItem = document.querySelector(".nav-sticky__item:last-child");
@@ -24924,7 +24960,7 @@ function launch(el) {
     var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
     if (stickyNavWidth < horizontalScrollWidth) {
       entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--left', entry.isIntersecting);
+        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--right', !entry.isIntersecting);
       });
     }
   });
@@ -25191,7 +25227,6 @@ function updateButtonState(slider, controls) {
 * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
 */
 function handleNextPrevClick(slider, controls, direction) {
-  console.log('handleNextPrevClick');
   var slides = Array.from(slider.children);
   var responsive = slider.getAttribute('data-style');
   var optimised = slider.getAttribute('data-optimised');
@@ -25678,7 +25713,6 @@ function move(e, slider, controlsWrapper) {
 * @param {HTMLElement} slider - An element with the slider class
 */
 function launch(slider) {
-  console.log('slider v23 launched');
   var style = slider.dataset.style || defaultStyle,
     cardsPerRow = parseInt(slider.dataset.cardsperrow) || defaultCardsPerRow; // CardsPerRow not currently in use. Tom's old code.
   // Might have use case for bigger screen which have capacity to have more than 1 item per slide.
