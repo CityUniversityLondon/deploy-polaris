@@ -41924,18 +41924,22 @@ html {
 
 .content-transition {
     border: thick solid pink;
-    transition: opacity 1.5s ease, top 1s ease;
-    position: relative;
 }
 
 .content-transition--start {
     opacity: 0;
     top: 2rem;
+    transition: opacity 1.5s ease, top 1s ease;
+    position: relative;
 }
 
 .content-transition--end {
     opacity: 1;
     top: 0;
+}
+
+.content-transition-horizontal {
+    border: thick solid pink;
 }
 
 .courses-v23__learning-methods-icons {
