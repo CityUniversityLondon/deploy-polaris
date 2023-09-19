@@ -40701,6 +40701,7 @@ div.widget-123_test_ {
     position: absolute;
     height: 100%;
     left: -100%;
+    box-shadow: 0 0.18rem 0.24rem rgba(0, 0, 0, 0.2);
 }
 
 .nav-sticky.nav-sticky--stick {
