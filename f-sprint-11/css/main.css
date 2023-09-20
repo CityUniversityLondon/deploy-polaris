@@ -12862,8 +12862,12 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
+.courses-v23 .courses-v23__entry-requirements .entry-req-v23__heading {
+    max-width: initial;
+}
+
 .courses-v23__entry-requirements .entry-req-v23 {
-    background: #f2f2f2;
+    background: #ECEBE9;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12878,19 +12882,83 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 900px) {
+    .courses-v23__entry-requirements .entry-req-v23 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
 .courses-v23__entry-requirements .entry-req-v23__heading {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-size: 1.424rem;
+    line-height: 1.33333;
+    letter-spacing: -0.013em;
+    font-style: normal;
+    font-weight: 600;
     text-align: center;
-    font-size: 1.802rem;
+    margin-bottom: initial;
+}
+
+.courses-v23__entry-requirements .entry-req-v23__heading i,
+.courses-v23__entry-requirements .entry-req-v23__heading em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+}
+
+.courses-v23__entry-requirements .entry-req-v23__heading b,
+.courses-v23__entry-requirements .entry-req-v23__heading strong {
+    font-weight: inherit;
+}
+
+.courses-v23__entry-requirements .entry-req-v23__heading i,
+.courses-v23__entry-requirements .entry-req-v23__heading em {
+    font-style: italic;
+}
+
+.courses-v23__entry-requirements .entry-req-v23__heading u {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .courses-v23__entry-requirements .entry-req-v23__heading {
+        letter-spacing: -0.015em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .courses-v23__entry-requirements .entry-req-v23__heading {
+        letter-spacing: -0.016em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .courses-v23__entry-requirements .entry-req-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .courses-v23__entry-requirements .entry-req-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+.courses-v23__entry-requirements .entry-req-v23__heading b,
+.courses-v23__entry-requirements .entry-req-v23__heading strong {
+    font-weight: 600;
 }
 
 .courses-v23__entry-requirements .entry-req-v23__list {
     display: flex;
     flex-direction: row;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
 @media (max-width: 768px) {
     .courses-v23__entry-requirements .entry-req-v23__list {
         flex-direction: column;
+        padding: initial;
     }
 }
 
@@ -12899,6 +12967,7 @@ svg:not(:root) {
     border-right: solid 0.06rem #979797;
     text-align: center;
     padding: 1rem;
+    max-width: initial;
 }
 
 @media (max-width: 768px) {
@@ -12910,16 +12979,72 @@ svg:not(:root) {
 }
 
 .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__first-line {
-    font-size: 1.602rem;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: -0.005em;
+    font-weight: 600;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__first-line {
+        letter-spacing: -0.008em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__first-line {
+        letter-spacing: -0.011em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__first-line {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__first-line {
+        letter-spacing: -0.017em;
+    }
 }
 
 .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__second-line {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: #e35205;
     font-size: 2.28rem;
+    font-weight: 600;
 }
 
 .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__third-line {
-    font-size: 1.602rem;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: -0.005em;
+    font-weight: 600;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__third-line {
+        letter-spacing: -0.008em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__third-line {
+        letter-spacing: -0.011em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__third-line {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__third-line {
+        letter-spacing: -0.017em;
+    }
 }
 
 .courses-v23__entry-requirements .entry-req-v23__item:last-of-type {
