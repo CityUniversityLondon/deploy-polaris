@@ -22757,7 +22757,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/components-v23/nav-sticky/nav-sticky */ "./src/components/components-v23/nav-sticky/nav-sticky.js");
 /* harmony import */ var _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/components-v23/slider-v23/slider-v23 */ "./src/components/components-v23/slider-v23/slider-v23.js");
 /* harmony import */ var _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/components-v23/accordion-v23/accordion-v23 */ "./src/components/components-v23/accordion-v23/accordion-v23.js");
-/* harmony import */ var _components_components_v23_content_transition_content_transition__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/components-v23/content-transition/content-transition */ "./src/components/components-v23/content-transition/content-transition.js");
+/* harmony import */ var _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/components-v23/content-transition/content-transition-vertical */ "./src/components/components-v23/content-transition/content-transition-vertical.js");
 /* harmony import */ var _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/components-v23/content-transition/content-transition-horizontal */ "./src/components/components-v23/content-transition/content-transition-horizontal.js");
 /* harmony import */ var _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/components-v23/content-transition/square-animation */ "./src/components/components-v23/content-transition/square-animation.js");
 
@@ -22798,7 +22798,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__["default"], _components_components_v23_content_transition_content_transition__WEBPACK_IMPORTED_MODULE_33__["default"], _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_34__["default"], _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_35__["default"]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__["default"], _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_33__["default"], _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_34__["default"], _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_35__["default"]]);
 
 /***/ }),
 
@@ -24889,10 +24889,10 @@ var className = 'content-transition-horizontal';
 
 /***/ }),
 
-/***/ "./src/components/components-v23/content-transition/content-transition.js":
-/*!********************************************************************************!*\
-  !*** ./src/components/components-v23/content-transition/content-transition.js ***!
-  \********************************************************************************/
+/***/ "./src/components/components-v23/content-transition/content-transition-vertical.js":
+/*!*****************************************************************************************!*\
+  !*** ./src/components/components-v23/content-transition/content-transition-vertical.js ***!
+  \*****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -24948,56 +24948,56 @@ var className = 'content-transition';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es7_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es7.array.includes.js */ "./node_modules/core-js/modules/es7.array.includes.js");
-/* harmony import */ var core_js_modules_es7_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es7_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-
+/* harmony import */ var core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.map.js */ "./node_modules/core-js/modules/es6.array.map.js");
+/* harmony import */ var core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0__);
 
 
 
 function launch(el) {
-  var elemHeight = el.offsetHeight + 100;
+  var elemHeight = el.offsetHeight;
   var elemWidth = el.offsetWidth;
-  var squares = Math.ceil((elemHeight + elemWidth) / 100);
+  var squares = Math.ceil(elemHeight * elemWidth / 10000);
+  var squaresRef = [];
   var squareswrap = document.createElement('div');
   squareswrap.classList.add('test');
-  console.log('sq animation lanuced');
-  console.log('elemHeight : ' + elemHeight);
-  console.log('elemWidth : ' + elemWidth);
-  console.log('squares : ' + squares);
   for (var i = 0; i < squares; i++) {
     var squareContainer = document.createElement('div');
     squareContainer.classList.add('square-animation-v23__square');
-
-    //const square = document.createElement('div');
-    //squareContainer.appendChild(square);
-
     squareswrap.appendChild(squareContainer);
+
+    // creates an array acting as a reference for the amount of squares generated
+    squaresRef.push(i);
   }
   el.appendChild(squareswrap);
-  var memory = [];
   var animationTimeout = 0;
-  var _loop = function _loop() {
-    var randomNum = Math.floor(Math.random() * 7);
-    console.log('randomNum: ' + randomNum);
-    var sqs = el.querySelectorAll('.square-animation-v23__square');
-    if (memory.includes(randomNum) == false) {
-      memory.push(randomNum);
-      setTimeout(function () {
-        console.log('now..');
-        //sqs[randomNum].style.border="thin solid red";
 
-        sqs[randomNum].classList.add('square-animation-v23__animation-started');
-        // apply class with time out      
-      }, animationTimeout);
-      animationTimeout += 1000;
-    }
+  // shuffles the array
+  var sqShuffled = squaresRef.map(function (value) {
+    return {
+      value: value,
+      sort: Math.random()
+    };
+  }).sort(function (a, b) {
+    return a.sort - b.sort;
+  }).map(function (_ref) {
+    var value = _ref.value;
+    return value;
+  });
+  console.log(sqShuffled);
+  var sqs = el.querySelectorAll('.square-animation-v23__square');
+
+  // loops through the shuffled array to select the generated squares at ramdom to apply an animation to them
+  var _loop = function _loop(_i) {
+    console.log('for: ' + _i);
+    setTimeout(function () {
+      console.log('...triggering animation');
+      sqs[sqShuffled[_i]].classList.add('square-animation-v23__animation-started');
+    }, animationTimeout);
+    animationTimeout += 1000;
   };
-  do {
-    _loop();
-  } while (memory.length < squares);
-  console.log('Memory: ' + memory);
+  for (var _i = 0; _i < sqShuffled.length; _i++) {
+    _loop(_i);
+  }
 }
 var className = 'square-animation-v23';
 /* harmony default export */ __webpack_exports__["default"] = ({
