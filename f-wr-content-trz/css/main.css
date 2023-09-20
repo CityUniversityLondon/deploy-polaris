@@ -41942,6 +41942,52 @@ html {
     border: thick solid pink;
 }
 
+.square-animation-v23 {
+    position: relative;
+}
+
+.square-animation-v23 .test {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square-animation-v23 .test .square-animation-v23__square {
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.square-animation-v23 .test .square-animation-v23__square:before {
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    background: blue;
+    display: inherit;
+}
+
+.square-animation-v23 .test .square-animation-v23__animation-started:before {
+    animation: shape-1-trajectory ease-out 15s infinite;
+}
+
+@keyframes shape-1-trajectory {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+        scale: 2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .courses-v23__learning-methods-icons {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 0;

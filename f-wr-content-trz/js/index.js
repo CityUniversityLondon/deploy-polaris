@@ -24842,8 +24842,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  console.log('horzi');
-
   /*
   // Observer to watching different content sections and highlight corresponding menu item
   */
@@ -24916,7 +24914,6 @@ function launch(el) {
       if (entry.isIntersecting) {
         //highlightNavMenuItem(entryTitle);
         entry.target.classList.add('content-transition--end');
-        console.log(entry);
       }
     });
   }
@@ -24951,13 +24948,16 @@ var className = 'content-transition';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es7_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es7.array.includes.js */ "./node_modules/core-js/modules/es7.array.includes.js");
+/* harmony import */ var core_js_modules_es7_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es7_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 
 function launch(el) {
-  var elemHeight = el.offsetHeight;
+  var elemHeight = el.offsetHeight + 100;
   var elemWidth = el.offsetWidth;
   var squares = Math.ceil((elemHeight + elemWidth) / 100);
   var squareswrap = document.createElement('div');
@@ -24967,17 +24967,37 @@ function launch(el) {
   console.log('elemWidth : ' + elemWidth);
   console.log('squares : ' + squares);
   for (var i = 0; i < squares; i++) {
-    console.log("this : " + i + ' ,random');
     var squareContainer = document.createElement('div');
     squareContainer.classList.add('square-animation-v23__square');
-    var square = document.createElement('div');
-    squareContainer.appendChild(square);
+
+    //const square = document.createElement('div');
+    //squareContainer.appendChild(square);
+
     squareswrap.appendChild(squareContainer);
   }
   el.appendChild(squareswrap);
+  var memory = [];
+  var animationTimeout = 0;
+  var _loop = function _loop() {
+    var randomNum = Math.floor(Math.random() * 7);
+    console.log('randomNum: ' + randomNum);
+    var sqs = el.querySelectorAll('.square-animation-v23__square');
+    if (memory.includes(randomNum) == false) {
+      memory.push(randomNum);
+      setTimeout(function () {
+        console.log('now..');
+        //sqs[randomNum].style.border="thin solid red";
 
-  // apply animation class with time out randomly
-  console.log(Math.floor(Math.random() * 7));
+        sqs[randomNum].classList.add('square-animation-v23__animation-started');
+        // apply class with time out      
+      }, animationTimeout);
+      animationTimeout += 1000;
+    }
+  };
+  do {
+    _loop();
+  } while (memory.length < squares);
+  console.log('Memory: ' + memory);
 }
 var className = 'square-animation-v23';
 /* harmony default export */ __webpack_exports__["default"] = ({
