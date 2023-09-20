@@ -12760,6 +12760,7 @@ svg:not(:root) {
 @media (max-width: 768px) {
     .courses-v23__entry-requirements .entry-req-v23__list {
         flex-direction: column;
+        padding: initial;
     }
 }
 
