@@ -24931,7 +24931,7 @@ function launch(el) {
   }
   createObserverContentSections();
 }
-var className = 'content-transition';
+var className = 'content-transition-vertical';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
