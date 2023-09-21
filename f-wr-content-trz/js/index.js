@@ -24908,12 +24908,12 @@ function launch(el) {
   // Observer to watching different content sections and highlight corresponding menu item
   */
 
-  var transitionsSections = document.querySelectorAll('.content-transition');
+  var transitionsSections = document.querySelectorAll('.content-transition-vertical');
   function handleIntersect_transitionsSections(entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         //highlightNavMenuItem(entryTitle);
-        entry.target.classList.add('content-transition--end');
+        entry.target.classList.add('content-transition-vertical--end');
       }
     });
   }
@@ -24926,7 +24926,7 @@ function launch(el) {
     transitionsSections.forEach(function (area) {
       observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);
       observerContentSections.observe(area);
-      area.classList.add('content-transition--start');
+      area.classList.add('content-transition-vertical--start');
     });
   }
   createObserverContentSections();
