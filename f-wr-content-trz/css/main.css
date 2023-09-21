@@ -42209,7 +42209,7 @@ html {
 .content-transition--start {
     opacity: 0;
     top: 1rem;
-    transition: opacity 0.7s ease, top 0.7s ease;
+    transition: opacity 0.6s ease, top 0.4s ease;
     position: relative;
 }
 
