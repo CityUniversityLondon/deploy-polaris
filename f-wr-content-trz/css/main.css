@@ -42206,14 +42206,10 @@ html {
     }
 }
 
-.content-transition {
-    border: thick solid pink;
-}
-
 .content-transition--start {
     opacity: 0;
     top: 1rem;
-    transition: opacity 0.6s ease, top 0.6s ease;
+    transition: opacity 0.7s ease, top 0.7s ease;
     position: relative;
 }
 
