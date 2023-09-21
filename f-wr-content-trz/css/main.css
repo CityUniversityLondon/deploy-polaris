@@ -42218,8 +42218,16 @@ html {
     top: 0;
 }
 
-.content-transition-horizontal {
-    border: thick solid pink;
+.content-transition-horizontal--start {
+    opacity: 0;
+    left: -1rem;
+    transition: opacity 0.5s ease, left 0.5s ease;
+    position: relative;
+}
+
+.content-transition-horizontal--end {
+    opacity: 1;
+    left: 0;
 }
 
 .square-animation-v23 {

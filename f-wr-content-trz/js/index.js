@@ -24853,9 +24853,9 @@ function launch(el) {
         var count = 0;
         entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
           setTimeout(function () {
-            elem.classList.add('content-transition--end');
+            elem.classList.add('content-transition-horizontal--end');
           }, count);
-          count += 150;
+          count += 250;
         });
       }
     });
@@ -24872,7 +24872,7 @@ function launch(el) {
 
       /**/
       area.querySelectorAll(':scope > *').forEach(function (elem) {
-        elem.classList.add('content-transition--start');
+        elem.classList.add('content-transition-horizontal--start');
       });
 
       //area.classList.add('content-transition--start');
