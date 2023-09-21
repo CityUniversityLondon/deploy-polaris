@@ -24956,9 +24956,16 @@ __webpack_require__.r(__webpack_exports__);
 function launch(el) {
   var elemHeight = el.offsetHeight;
   var elemWidth = el.offsetWidth;
-  var squares = Math.ceil(elemHeight * elemWidth / 10000);
   var squaresRef = [];
   var squareswrap = document.createElement('div');
+  var viewportRatioVar = 1;
+  var viewPortWidth = window.innerWidth;
+  var squares = Math.ceil(elemHeight * elemWidth / 10000 * viewportRatioVar);
+
+  // CHECK WINDOW WIDTH
+  // 
+
+  console.log('elemHeight: ' + elemHeight + ' ,elemWidth: ' + elemWidth);
   squareswrap.classList.add('test');
   for (var i = 0; i < squares; i++) {
     var squareContainer = document.createElement('div');
