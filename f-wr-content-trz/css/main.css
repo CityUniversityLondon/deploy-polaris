@@ -42228,7 +42228,7 @@ html {
 .content-transition-horizontal--slow--start {
     opacity: 0;
     left: -1rem;
-    transition: opacity 1s ease, left 1s ease;
+    transition: opacity 1.5s ease, left 1.5s ease;
     position: relative;
 }
 
