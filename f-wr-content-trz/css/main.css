@@ -42225,6 +42225,13 @@ html {
     position: relative;
 }
 
+.content-transition-horizontal--slow--start {
+    opacity: 0;
+    left: -1rem;
+    transition: opacity 1s ease, left 1s ease;
+    position: relative;
+}
+
 .content-transition-horizontal--end {
     opacity: 1;
     left: 0;

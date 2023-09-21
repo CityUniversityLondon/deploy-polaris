@@ -24836,50 +24836,47 @@ var aria = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
 
 
 function launch(el) {
-  /*
-  // Observer to watching different content sections and highlight corresponding menu item
-  */
-
-  var contentSections = document.querySelectorAll('.content-transition-horizontal');
-  function handleIntersect_contentsections(entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        var count = 0;
-        entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
-          setTimeout(function () {
-            elem.classList.add('content-transition-horizontal--end');
-          }, count);
-          count += 250;
-        });
-      }
-    });
-  }
-  function createObserverContentSections() {
-    var observerContentSections;
-    var options = {
-      root: null,
-      rootMargin: "-20%"
-    };
-    contentSections.forEach(function (area) {
-      observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
-      observerContentSections.observe(area);
-
-      /**/
-      area.querySelectorAll(':scope > *').forEach(function (elem) {
-        elem.classList.add('content-transition-horizontal--start');
+  var viewPortWidth = window.innerWidth;
+  if (viewPortWidth >= 650) {
+    var contentSections = document.querySelectorAll('.content-transition-horizontal');
+    function handleIntersect_contentsections(entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var count = 0;
+          entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
+            setTimeout(function () {
+              elem.classList.add('content-transition-horizontal--end');
+            }, count);
+            count += 250;
+          });
+        }
       });
-
-      //area.classList.add('content-transition--start');
-    });
+    }
+    function createObserverContentSections() {
+      var observerContentSections;
+      var options = {
+        root: null,
+        rootMargin: "-20%"
+      };
+      contentSections.forEach(function (area) {
+        observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
+        observerContentSections.observe(area);
+        if (area.classList.contains("content-transition-horizontal--slow")) {
+          area.querySelectorAll(':scope > *').forEach(function (elem) {
+            elem.classList.add('content-transition-horizontal--slow--start');
+          });
+        } else {
+          area.querySelectorAll(':scope > *').forEach(function (elem) {
+            elem.classList.add('content-transition-horizontal--start');
+          });
+        }
+      });
+    }
+    createObserverContentSections();
   }
-
-  createObserverContentSections();
 }
 var className = 'content-transition-horizontal';
 /* harmony default export */ __webpack_exports__["default"] = ({
