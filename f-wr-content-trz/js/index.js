@@ -25007,7 +25007,7 @@ function launch(el) {
     _loop(_i);
   }
 }
-var className = 'square-animation-v23';
+var className = 'square-animation-v23--DISABLED';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
