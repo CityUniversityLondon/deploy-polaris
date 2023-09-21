@@ -11117,7 +11117,7 @@ svg:not(:root) {
 }
 
 .courses-v23__fee .courses-v23--fee__heading {
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
@@ -11133,10 +11133,11 @@ svg:not(:root) {
 }
 
 .courses-v23__fee__inner {
-    padding: 3.5rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 .courses-v23__fee__inner .fee-entry {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-weight: 450;
     margin-bottom: 0;
 }
@@ -41997,7 +41998,7 @@ html {
     background-repeat: repeat, repeat;
     background-size: auto, auto;
     background-repeat: no-repeat;
-    background-size: 6rem 6rem;
+    background-size: 3rem 3rem;
 }
 
 .ug-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
@@ -42009,7 +42010,7 @@ html {
     background-repeat: repeat, repeat;
     background-size: auto, auto;
     background-repeat: no-repeat;
-    background-size: 6rem 6rem;
+    background-size: 3rem 3rem;
 }
 
 .pg-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
