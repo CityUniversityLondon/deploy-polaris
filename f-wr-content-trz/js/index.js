@@ -24955,20 +24955,12 @@ function launch(el) {
   var elemWidth = el.offsetWidth;
   var squaresRef = [];
   var squareswrap = document.createElement('div');
-
-  // MAYBE ONLY DO CSS TO COMPENSATE?
   var viewportRatioVar = 1;
-  var viewPortWidth = window.innerWidth;
+  //const viewPortWidth = window.innerWidth;
 
   //5rem = 100px
 
   var squares = Math.ceil(elemHeight * elemWidth / 10000 * viewportRatioVar);
-
-  // CHECK WINDOW WIDTH
-  // 
-
-  //console.log('elemHeight: ' + elemHeight + ' ,elemWidth: ' + elemWidth);
-
   squareswrap.classList.add('test');
   for (var i = 0; i < squares; i++) {
     var squareContainer = document.createElement('div');
@@ -24997,7 +24989,6 @@ function launch(el) {
 
   // loops through the shuffled array to select the generated squares at ramdom to apply an animation to them
   var _loop = function _loop(_i) {
-    //console.log('for: ' + i);
     setTimeout(function () {
       sqs[sqShuffled[_i]].classList.add('square-animation-v23__animation-started');
     }, animationTimeout);
