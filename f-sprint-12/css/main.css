@@ -107,6 +107,17 @@
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 /**
  * Managing anchors is a difficult process on a website as vast as ours, and
  * given the great variety in styles our anchors take, it is of the utmost
@@ -41600,14 +41611,14 @@ html {
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__indicator .slider-v23__indicator__divider .slider-v23__indicator__divider--sr {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__indicator .slider-v23__indicator__total {
@@ -41648,14 +41659,14 @@ html {
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__prev span,
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__next span {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__prev:before {
