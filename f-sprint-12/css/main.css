@@ -97,6 +97,16 @@
     display: none;
 }
 
+.bold,
+.highlighted-content-v23__heading {
+    font-weight: 700;
+}
+
+.meta,
+.highlighted-content-v23__heading {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
 /**
  * Managing anchors is a difficult process on a website as vast as ours, and
  * given the great variety in styles our anchors take, it is of the utmost
