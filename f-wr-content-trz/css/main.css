@@ -13372,7 +13372,7 @@ svg:not(:root) {
     .courses-v23__study-abroad h2, .courses-v23__study-abroad h3 {
         grid-column: 1/-1;
     }
-    .courses-v23__study-abroad *:not(.courses-v23__study-abroad__image) {
+    .courses-v23__study-abroad .courses-v23__study-abroad__content, .courses-v23__study-abroad .courses-v23__study-abroad__heading {
         grid-column: 1/13;
     }
     .courses-v23__study-abroad .courses-v23__study-abroad__image {
@@ -42243,24 +42243,26 @@ html {
     overflow: visible;
 }
 
-.square-animation-v23 .test {
+.square-animation-v23 .square-animation-v23__wrap {
     position: absolute;
-    height: inherit;
+    height: 115%;
     width: 100%;
     top: 0;
-    display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
 }
 
-.square-animation-v23 .test .square-animation-v23__square {
-    width: 5rem;
-    height: 5rem;
+.square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square {
     justify-content: center;
     align-items: center;
     display: flex;
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
-.square-animation-v23 .test .square-animation-v23__square:before {
+.square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
     content: '';
     height: 2rem;
     width: 2rem;
@@ -42268,7 +42270,7 @@ html {
     display: inherit;
 }
 
-.square-animation-v23 .test .square-animation-v23__animation-started:before {
+.square-animation-v23 .square-animation-v23__wrap .square-animation-v23__animation-started:before {
     animation: shape-1-trajectory ease-out 10s infinite;
 }
 

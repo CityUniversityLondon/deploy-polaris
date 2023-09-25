@@ -24951,17 +24951,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  var elemHeight = el.offsetHeight;
-  var elemWidth = el.offsetWidth;
+  var elemHeight = el.querySelector('picture').offsetHeight;
+  var elemWidth = el.querySelector('picture').offsetWidth;
   var squaresRef = [];
   var squareswrap = document.createElement('div');
+  console.log('sq enimation loaded, elemHeight: ' + elemHeight + ' ,elemWidth: ' + elemWidth);
   var viewportRatioVar = 1;
   //const viewPortWidth = window.innerWidth;
 
   //5rem = 100px
 
-  var squares = Math.ceil(elemHeight * elemWidth / 10000 * viewportRatioVar);
-  squareswrap.classList.add('test');
+  //const squares = Math.ceil(((elemHeight * (elemWidth/4)) / 10000) * viewportRatioVar);
+  //const squares = 16;
+  var squares = 4 * Math.ceil(elemHeight / (elemWidth / 4));
+  squareswrap.classList.add('square-animation-v23__wrap');
+  console.log('sqs: ' + squares);
   for (var i = 0; i < squares; i++) {
     var squareContainer = document.createElement('div');
     squareContainer.classList.add('square-animation-v23__square');
@@ -24998,7 +25002,7 @@ function launch(el) {
     _loop(_i);
   }
 }
-var className = 'square-animation-v23--DISABLED';
+var className = 'square-animation-v23';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
