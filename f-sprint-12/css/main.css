@@ -11088,6 +11088,40 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 901px) {
+    .courses-v23--fee {
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        display: grid;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 650px) {
+    .courses-v23--fee {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .courses-v23--fee {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+.courses-v23--fee .cta {
+    display: inline-block;
+}
+
+.courses-v23--fee .accordion-v23,
+.courses-v23--fee .courses-v23__fee,
+.courses-v23--fee .courses-v23--fee__wys {
+    grid-column: 1/13;
+}
+
+.courses-v23--fee h2, .courses-v23--fee h3 {
+    grid-column: 1/-1;
+}
+
 .courses-v23__fee {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
@@ -11174,10 +11208,6 @@ svg:not(:root) {
 
 .courses-v23__fee__inner .fee-amount__sub {
     font-weight: 500;
-}
-
-.courses-v23--fee .cta {
-    display: inline-block;
 }
 
 .ug-courses-v23 .courses-v23__fee__inner {
