@@ -13364,6 +13364,10 @@ svg:not(:root) {
     margin-bottom: 1.25rem;
 }
 
+.courses-v23__title h1 {
+    margin: 1rem 0 0 0;
+}
+
 @media (min-width: 901px) {
     .courses-v23__structure {
         grid-template-columns: repeat(18, 1fr);
