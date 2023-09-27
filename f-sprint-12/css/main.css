@@ -13131,43 +13131,35 @@ svg:not(:root) {
     background-color: #f2f2f2;
     margin-top: 2rem;
     padding-bottom: 2rem;
+    position: relative;
+    z-index: 0;
 }
 
 .courses-v23__contact .kis-widget {
     margin-top: 2rem;
 }
 
-.courses-v23__contact__container {
-    position: relative;
-}
-
-.courses-v23__contact__container:before {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: default;
-    -webkit-touch-callout: none;
+.courses-v23__contact:after {
     content: '';
-    width: 200vw;
+    position: absolute;
     height: 100%;
-    pointer-events: none;
+    width: 100vw;
     background-color: #f2f2f2;
+    top: 0;
+    display: flex;
     z-index: -1;
 }
 
-.lt-ie10 .courses-v23__contact__container:before {
-    left: 0;
-    transform: none;
-}
-
-@media (max-width: 900px) {
-    .courses-v23__contact__container:before {
-        max-width: calc(100% + 1rem);
-    }
+.courses-v23__contact:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50vw;
+    background-color: #f2f2f2;
+    top: 0;
+    display: flex;
+    z-index: -1;
+    left: -50%;
 }
 
 .courses-v23__contact__cta li {
