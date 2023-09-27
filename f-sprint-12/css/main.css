@@ -11871,7 +11871,7 @@ svg:not(:root) {
     width: 50%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 649px) {
     .courses-v23__summary .summary__profiles__wrap {
         width: 100%;
     }
@@ -11960,13 +11960,20 @@ svg:not(:root) {
     grid-column: 13 / -1;
 }
 
+@media (max-width: 650px) {
+    .courses-v23__summary__widget__logos {
+        margin-bottom: 2rem;
+    }
+}
+
 .courses-v23__summary__widget__logos li {
     display: inline-block;
 }
 
 .courses-v23__summary__widget__logos img {
-    width: 8rem;
+    width: 4rem;
     height: auto;
+    margin-right: 1rem;
 }
 
 @media (min-width: 901px) {
