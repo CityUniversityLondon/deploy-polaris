@@ -42355,7 +42355,7 @@ html {
 }
 
 .courses-v23__learning-methods-icons {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 0;
     display: grid;
     list-style: none;
@@ -42416,31 +42416,37 @@ html {
 .courses-v23__learning-methods-icons li {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+}
+
+@media (min-width: 501px) {
+    .courses-v23__learning-methods-icons li {
+        margin-bottom: 1rem;
+    }
 }
 
 .courses-v23__learning-methods-icons .courses-v23__learning-methods-icons--icon {
-    height: 4rem;
+    height: 3rem;
 }
 
 .courses-v23__learning-methods-icons .courses-v23__learning-methods-icons--title {
-    margin-top: 1rem;
+    margin-top: 0.25rem;
     text-align: center;
-    font-size: 1.125rem;
-    line-height: 1.33333;
-    letter-spacing: -0.008em;
-    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: -0.005em;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
     .courses-v23__learning-methods-icons .courses-v23__learning-methods-icons--title {
-        letter-spacing: -0.011em;
+        letter-spacing: -0.008em;
     }
 }
 
 @media (min-width: 1920px) and (max-width: 3839px) {
     .courses-v23__learning-methods-icons .courses-v23__learning-methods-icons--title {
-        letter-spacing: -0.013em;
+        letter-spacing: -0.011em;
     }
 }
 
