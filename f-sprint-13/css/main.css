@@ -12495,7 +12495,7 @@ svg:not(:root) {
     margin-bottom: initial;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 650px) {
     .student-life-v23__links .student-life-v23__links__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
