@@ -11976,6 +11976,10 @@ svg:not(:root) {
     margin-right: 1rem;
 }
 
+.courses-v23__summary__profiles__extra {
+    margin-top: 2rem;
+}
+
 @media (min-width: 901px) {
     .courses-v23 .courses-v23__student-life .student-life-v23__links {
         grid-template-columns: repeat(18, 1fr);
