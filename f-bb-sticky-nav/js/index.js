@@ -24836,8 +24836,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  var elemFix = document.querySelector(".nav-sticky__inner");
   var scrollActiveLink = '';
+
+  /*
+  // Create the observer helper div and appended to the DOM
+  */
+  var observerHelper = document.createElement('div');
+  observerHelper.id = 'nav-sticky__helper';
+  el.parentNode.insertBefore(observerHelper, el);
+
   /*
   // Observer to watching menu position and make it stick
   */
@@ -24849,10 +24856,10 @@ function launch(el) {
   }
   function handleIntersect_stickyMenu(entries) {
     entries.forEach(function (entry) {
-      elemFix.classList.toggle('nav-sticky__inner--stick', !entry.isIntersecting);
+      el.classList.toggle('nav-sticky__inner--stick', !entry.isIntersecting);
     });
   }
-  createObserverStickyNav(el);
+  createObserverStickyNav(observerHelper);
 
   /*
   // Observer to watching different content sections and highlight corresponding menu item
@@ -24942,7 +24949,7 @@ function launch(el) {
     });
   });
 }
-var className = 'nav-sticky__helper';
+var className = 'nav-sticky__wrap';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className

@@ -40678,22 +40678,7 @@ div.widget-123_test_ {
     position: relative;
 }
 
-.nav-sticky__helper {
-    width: 100%;
-    height: 5px;
-}
-
-.nav-sticky__inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #ffffff;
-    z-index: 2;
-    max-width: 100%;
-    width: 100%;
-}
-
-.nav-sticky__inner.nav-sticky__inner--stick {
+.nav-sticky__wrap.nav-sticky__inner--stick {
     position: fixed;
     top: 0;
     left: 50%;
@@ -40702,22 +40687,35 @@ div.widget-123_test_ {
 }
 
 @media (max-width: 499px) {
-    .nav-sticky__inner.nav-sticky__inner--stick {
+    .nav-sticky__wrap.nav-sticky__inner--stick {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 }
 
 @media (min-width: 1441px) {
-    .nav-sticky__inner.nav-sticky__inner--stick {
+    .nav-sticky__wrap.nav-sticky__inner--stick {
         max-width: 1440px;
     }
 }
 
 @media (min-width: 1921px) {
-    .nav-sticky__inner.nav-sticky__inner--stick {
+    .nav-sticky__wrap.nav-sticky__inner--stick {
         max-width: 83.333%;
     }
+}
+
+.nav-sticky__helper {
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+}
+
+.nav-sticky__inner {
+    background: #ffffff;
+    z-index: 2;
+    max-width: 100%;
+    width: 100%;
 }
 
 .nav-sticky__inner:before {
@@ -40732,8 +40730,6 @@ div.widget-123_test_ {
 
 .nav-sticky {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .nav-sticky.nav-sticky--left:before {
