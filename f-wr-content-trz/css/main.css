@@ -42291,6 +42291,13 @@ html {
     display: inherit;
 }
 
+@media (max-width: 499px) {
+    .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
 .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__animation-started:before {
     animation: shape-1-trajectory ease-out 10s infinite;
 }

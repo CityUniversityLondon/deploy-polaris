@@ -24956,13 +24956,6 @@ function launch(el) {
   var squaresRef = [];
   var squareswrap = document.createElement('div');
   console.log('sq enimation loaded, elemHeight: ' + elemHeight + ' ,elemWidth: ' + elemWidth);
-  var viewportRatioVar = 1;
-  //const viewPortWidth = window.innerWidth;
-
-  //5rem = 100px
-
-  //const squares = Math.ceil(((elemHeight * (elemWidth/4)) / 10000) * viewportRatioVar);
-  //const squares = 16;
   var squares = 4 * Math.ceil(elemHeight / (elemWidth / 4));
   squareswrap.classList.add('square-animation-v23__wrap');
   console.log('sqs: ' + squares);
