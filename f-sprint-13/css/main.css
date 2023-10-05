@@ -13173,6 +13173,8 @@ svg:not(:root) {
 @media (min-width: 901px) {
     .courses-v23__contact__cta li {
         display: inline-block;
+        margin-top: 0;
+        margin-right: 0.5rem;
     }
 }
 
