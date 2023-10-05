@@ -41600,6 +41600,8 @@ html {
 
 .courses-v23__careers__recent-employers ul li img {
     background-color: #ffffff;
+    width: 100%;
+    max-width: 16rem;
 }
 
 /*
