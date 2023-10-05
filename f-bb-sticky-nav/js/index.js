@@ -24928,20 +24928,25 @@ function launch(el) {
 
   var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
   function highlightNavMenuItem(elem) {
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
     stickyNavMenuItemLinks.forEach(function (item) {
       if (item.getAttribute('href') === '#' + elem.id && !scrollActiveLink) {
         item.classList.add('nav-sticky__item__link__active');
+        scrollNavItemToView(item);
       } else if (item.getAttribute('href') === '#' + elem.id && scrollActiveLink === '#' + elem.id) {
         setTimeout(function () {
           item.classList.add('nav-sticky__item__link__active');
           scrollActiveLink = ''; // clears value to indicate the page has now scrolled down to the clicked link
-          document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
+          scrollNavItemToView(item);
         }, "300");
       } else {
         item.classList.remove('nav-sticky__item__link__active');
       }
     });
+  }
+  function scrollNavItemToView(item) {
+    var stickyNavItems = document.querySelector(".nav-sticky__items");
+    var stickyNavItemsWidth = stickyNavItems.offsetWidth;
+    stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
   }
   stickyNavMenuItemLinks.forEach(function (item) {
     item.addEventListener('click', function (event) {

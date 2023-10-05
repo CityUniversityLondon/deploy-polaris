@@ -40784,6 +40784,7 @@ div.widget-123_test_ {
     align-items: flex-start;
     list-style: none;
     overflow-x: auto;
+    scroll-behavior: smooth;
     white-space: nowrap;
     gap: 0.5rem;
     grid-column: 1/-1;
