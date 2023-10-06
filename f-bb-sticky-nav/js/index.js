@@ -24926,6 +24926,7 @@ function launch(el) {
   */
 
   var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
+  var anchorLinksOnPage = document.querySelectorAll('a[href^="#"]');
   function highlightNavMenuItem(elem) {
     stickyNavMenuItemLinks.forEach(function (item) {
       if (item.getAttribute('href') === '#' + elem.id && !scrollActiveLink) {
@@ -24934,7 +24935,7 @@ function launch(el) {
       } else if (item.getAttribute('href') === '#' + elem.id && scrollActiveLink === '#' + elem.id) {
         setTimeout(function () {
           item.classList.add('nav-sticky__item__link__active');
-          scrollActiveLink = false; // clears value to indicate the page has now scrolled down to the clicked link
+          scrollActiveLink = ''; // clears value to indicate the page has now scrolled down to the clicked link
           scrollNavItemToView(item);
         }, "300");
       } else {
@@ -24948,18 +24949,18 @@ function launch(el) {
     stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
   }
   window.addEventListener('hashchange', function () {
-    console.log('anchor clicked');
     scrollActiveLink = window.location.hash;
   });
-  // stickyNavMenuItemLinks.forEach(item => {
-  //     item.addEventListener(
-  //         'click',function(event){
-  //             scrollActiveLink = item.getAttribute('href');
-  //         }
-  //     );
-  // });
+  anchorLinksOnPage.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      // If clicked hash is already in the url remove so it gets added again to trigger the hashchange listener
+      var hrefValue = item.getAttribute('href');
+      if (hrefValue === window.location.hash) {
+        window.location.hash = '';
+      }
+    });
+  });
 }
-
 var className = 'nav-sticky__wrap';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
