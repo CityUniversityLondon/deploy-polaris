@@ -25018,8 +25018,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  var elemFix = document.querySelector(".nav-sticky");
   var scrollActiveLink = '';
+
+  /*
+  // Create the observer helper div and appended to the DOM
+  */
+  var observerHelper = document.createElement('div');
+  observerHelper.id = 'nav-sticky__helper';
+  el.parentNode.insertBefore(observerHelper, el);
 
   /*
   // Observer to watching menu position and make it stick
@@ -25032,10 +25038,10 @@ function launch(el) {
   }
   function handleIntersect_stickyMenu(entries) {
     entries.forEach(function (entry) {
-      elemFix.classList.toggle('nav-sticky--stick', !entry.isIntersecting);
+      el.classList.toggle('nav-sticky__inner--stick', !entry.isIntersecting);
     });
   }
-  createObserverStickyNav(el);
+  createObserverStickyNav(observerHelper);
 
   /*
   // Observer to watching different content sections and highlight corresponding menu item
@@ -25044,20 +25050,21 @@ function launch(el) {
   var contentSections = document.querySelectorAll('.sticky-nav__sec');
   function handleIntersect_contentSections(entries) {
     entries.forEach(function (entry) {
-      var entryTitle = entry.target.getAttribute('data-sticky');
       if (entry.isIntersecting) {
-        highlightNavMenuItem(entryTitle);
+        highlightNavMenuItem(entry.target);
       }
     });
   }
   function createObserverContentSections() {
-    var observerContentSections;
+    var header = document.querySelector('header.header');
     var options = {
       root: null,
-      rootMargin: "-50%"
+      threshold: [0],
+      rootMargin: "5% 0px -75% 0px" //Look for interaction within the top half of the viewport
     };
+
+    var observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
     contentSections.forEach(function (area) {
-      observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
       observerContentSections.observe(area);
     });
   }
@@ -25102,33 +25109,34 @@ function launch(el) {
   */
 
   var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
-  function highlightNavMenuItem(text) {
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+  function highlightNavMenuItem(elem) {
     stickyNavMenuItemLinks.forEach(function (item) {
-      if (item.innerText == text && !scrollActiveLink) {
+      if (item.getAttribute('href') === '#' + elem.id && !scrollActiveLink) {
         item.classList.add('nav-sticky__item__link__active');
-        document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
-      } else if (item.innerText == text && scrollActiveLink == text) {
+        scrollNavItemToView(item);
+      } else if (item.getAttribute('href') === '#' + elem.id && scrollActiveLink === '#' + elem.id) {
         setTimeout(function () {
           item.classList.add('nav-sticky__item__link__active');
           scrollActiveLink = ''; // clears value to indicate the page has now scrolled down to the clicked link
-          document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
+          scrollNavItemToView(item);
         }, "300");
       } else {
         item.classList.remove('nav-sticky__item__link__active');
       }
     });
   }
+  function scrollNavItemToView(item) {
+    var stickyNavItems = document.querySelector(".nav-sticky__items");
+    var stickyNavItemsWidth = stickyNavItems.offsetWidth;
+    stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
+  }
   stickyNavMenuItemLinks.forEach(function (item) {
     item.addEventListener('click', function (event) {
-      event.preventDefault();
-      var scrollToLink = item.getAttribute('href');
-      scrollActiveLink = item.innerHTML;
-      document.querySelector(scrollToLink).scrollIntoView();
+      scrollActiveLink = item.getAttribute('href');
     });
   });
 }
-var className = 'nav-sticky__helper';
+var className = 'nav-sticky__wrap';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
