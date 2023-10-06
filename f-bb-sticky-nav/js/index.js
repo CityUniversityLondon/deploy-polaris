@@ -24836,8 +24836,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  var scrollActiveLink = '';
-
+  var scrollActiveLink = window.location.hash ? window.location.hash : '';
   /*
   // Create the observer helper div and appended to the DOM
   */
@@ -24935,7 +24934,7 @@ function launch(el) {
       } else if (item.getAttribute('href') === '#' + elem.id && scrollActiveLink === '#' + elem.id) {
         setTimeout(function () {
           item.classList.add('nav-sticky__item__link__active');
-          scrollActiveLink = ''; // clears value to indicate the page has now scrolled down to the clicked link
+          scrollActiveLink = false; // clears value to indicate the page has now scrolled down to the clicked link
           scrollNavItemToView(item);
         }, "300");
       } else {
@@ -24948,12 +24947,19 @@ function launch(el) {
     var stickyNavItemsWidth = stickyNavItems.offsetWidth;
     stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
   }
-  stickyNavMenuItemLinks.forEach(function (item) {
-    item.addEventListener('click', function (event) {
-      scrollActiveLink = item.getAttribute('href');
-    });
+  window.addEventListener('hashchange', function () {
+    console.log('anchor clicked');
+    scrollActiveLink = window.location.hash;
   });
+  // stickyNavMenuItemLinks.forEach(item => {
+  //     item.addEventListener(
+  //         'click',function(event){
+  //             scrollActiveLink = item.getAttribute('href');
+  //         }
+  //     );
+  // });
 }
+
 var className = 'nav-sticky__wrap';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
