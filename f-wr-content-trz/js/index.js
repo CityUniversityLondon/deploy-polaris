@@ -24838,10 +24838,9 @@ var aria = {
 __webpack_require__.r(__webpack_exports__);
 
 
-function launch(el) {
+function launch(contentSection) {
   var viewPortWidth = window.innerWidth;
   if (viewPortWidth >= 650) {
-    var contentSections = document.querySelectorAll('.content-transition-horizontal');
     function handleIntersect_contentsections(entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -24861,19 +24860,17 @@ function launch(el) {
         root: null,
         rootMargin: "-20%"
       };
-      contentSections.forEach(function (area) {
-        observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
-        observerContentSections.observe(area);
-        if (area.classList.contains("content-transition-horizontal--slow")) {
-          area.querySelectorAll(':scope > *').forEach(function (elem) {
-            elem.classList.add('content-transition-horizontal--slow--start');
-          });
-        } else {
-          area.querySelectorAll(':scope > *').forEach(function (elem) {
-            elem.classList.add('content-transition-horizontal--start');
-          });
-        }
-      });
+      observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
+      observerContentSections.observe(contentSection);
+      if (contentSection.classList.contains("content-transition-horizontal--slow")) {
+        contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+          elem.classList.add('content-transition-horizontal--slow--start');
+        });
+      } else {
+        contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+          elem.classList.add('content-transition-horizontal--start');
+        });
+      }
     }
     createObserverContentSections();
   }
