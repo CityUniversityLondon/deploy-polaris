@@ -12867,7 +12867,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
-    background: white;
+    opacity: 0.5;
 }
 
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
@@ -12922,7 +12922,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
-    background: #99ddff;
+    opacity: 0.5;
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
