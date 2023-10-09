@@ -10835,11 +10835,17 @@ svg:not(:root) {
     outline-width: 0;
 }
 
-@media (min-width: 651px) and (max-width: 1439px) {
+@media (min-width: 651px) and (max-width: 1200px) {
     .bayes-social-links__instagram__wrapper .connect-social__card--insta a {
         width: 27rem;
         height: 27rem;
         overflow: hidden;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1439px) {
+    .bayes-social-links__instagram__wrapper .connect-social__card--insta a {
+        width: 19rem;
     }
 }
 
@@ -28414,7 +28420,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     object-fit: cover;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
     .connect-social__card--insta img {
         max-height: 25rem;
         width: auto;
