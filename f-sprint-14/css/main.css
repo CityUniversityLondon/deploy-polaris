@@ -22773,12 +22773,12 @@ USED IN:
 
 .cta--orange {
     background-color: #e35205;
-    color: #1e1e1e;
+    color: #0c0c0e;
 }
 
 .cta--orange:hover, .cta--orange:focus, .cta--orange:active {
     background-color: #c54704;
-    color: #1e1e1e;
+    color: #0c0c0e;
 }
 
 .cta--yellow {
@@ -23305,12 +23305,12 @@ USED IN:
 
 .scp--undergraduate .cta--theme--primary {
     background-color: #e35205;
-    color: #1e1e1e;
+    color: #0c0c0e;
 }
 
 .scp--undergraduate .cta--theme--primary:hover, .scp--undergraduate .cta--theme--primary:focus, .scp--undergraduate .cta--theme--primary:active {
     background-color: #c54704;
-    color: #1e1e1e;
+    color: #0c0c0e;
 }
 
 .scp--undergraduate .cta--theme--secondary {
@@ -42242,12 +42242,12 @@ html {
 
 .ug-courses-v23 .alumni-card-v23__cta__link {
     background-color: #e35205;
-    color: #1e1e1e;
+    color: #0c0c0e;
 }
 
 .ug-courses-v23 .alumni-card-v23__cta__link:hover, .ug-courses-v23 .alumni-card-v23__cta__link:focus, .ug-courses-v23 .alumni-card-v23__cta__link:active {
     background-color: #c54704;
-    color: #1e1e1e;
+    color: #0c0c0e;
 }
 
 .pg-courses-v23 .alumni-card-v23__cta__link {
