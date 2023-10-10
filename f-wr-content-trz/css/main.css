@@ -42485,9 +42485,8 @@ html {
 
 .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
     content: '';
-    height: 2rem;
-    width: 2rem;
-    background: blue;
+    height: 0.5rem;
+    width: 0.5rem;
     display: inherit;
 }
 
@@ -42499,23 +42498,56 @@ html {
 }
 
 .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__animation-started:before {
-    animation: shape-1-trajectory ease-out 10s infinite;
+    animation: square-twinkle-animation ease-out 5s infinite;
 }
 
-@keyframes shape-1-trajectory {
+.ug-courses-v23 .square-animation-v23__square:before {
+    background: #e35205;
+}
+
+.pg-courses-v23 .square-animation-v23__square:before {
+    background: #002b49;
+}
+
+@keyframes square-twinkle-animation {
     0% {
         opacity: 0.5;
+        scale: 0;
+    }
+    10% {
+        opacity: 0.5;
+        scale: 0;
+    }
+    20% {
+        opacity: 0.5;
+        scale: 1;
+    }
+    30% {
+        opacity: 0.75;
+    }
+    40% {
+        opacity: 1;
     }
     50% {
         opacity: 1;
-        scale: 0;
     }
     60% {
         opacity: 1;
+    }
+    70% {
+        opacity: 0.75;
+    }
+    80% {
+        opacity: 0.5;
+        scale: 1;
+    }
+    90% {
+        opacity: 0.5;
         scale: 0;
     }
     100% {
         opacity: 0.5;
+        scale: 0;
     }
 }
 
