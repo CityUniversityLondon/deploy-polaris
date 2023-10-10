@@ -25015,14 +25015,16 @@ var className = 'square-animation-v23--DISABLED';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
 
 
 function launch(el) {
-  var elemFix = document.querySelector(".nav-sticky");
-  var scrollActiveLink = '';
+  var scrollActiveLink = window.location.hash ? window.location.hash : '';
+  /*
+  // Create the observer helper div and appended to the DOM
+  */
+  var observerHelper = document.createElement('div');
+  observerHelper.id = 'nav-sticky__helper';
+  el.parentNode.insertBefore(observerHelper, el);
 
   /*
   // Observer to watching menu position and make it stick
@@ -25035,10 +25037,10 @@ function launch(el) {
   }
   function handleIntersect_stickyMenu(entries) {
     entries.forEach(function (entry) {
-      elemFix.classList.toggle('nav-sticky--stick', !entry.isIntersecting);
+      el.classList.toggle('nav-sticky__inner--stick', !entry.isIntersecting);
     });
   }
-  createObserverStickyNav(el);
+  createObserverStickyNav(observerHelper);
 
   /*
   // Observer to watching different content sections and highlight corresponding menu item
@@ -25047,20 +25049,20 @@ function launch(el) {
   var contentSections = document.querySelectorAll('.sticky-nav__sec');
   function handleIntersect_contentSections(entries) {
     entries.forEach(function (entry) {
-      var entryTitle = entry.target.getAttribute('data-sticky');
       if (entry.isIntersecting) {
-        highlightNavMenuItem(entryTitle);
+        highlightNavMenuItem(entry.target);
       }
     });
   }
   function createObserverContentSections() {
-    var observerContentSections;
     var options = {
       root: null,
-      rootMargin: "-50%"
+      threshold: [0],
+      rootMargin: '5% 0px -75% 0px' //Look for interaction within the top half of the viewport
     };
+
+    var observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
     contentSections.forEach(function (area) {
-      observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
       observerContentSections.observe(area);
     });
   }
@@ -25070,13 +25072,13 @@ function launch(el) {
   // Observer to watchinging 1st menu item then add blur effect to start of nav
   */
 
-  var stickyNavFirstItem = document.querySelector(".nav-sticky__item:first-child");
+  var stickyNavFirstItem = document.querySelector('.nav-sticky__item:first-child');
   var observeStickyNavFirstItem = new IntersectionObserver(function (entries) {
-    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+    var horizontalScrollWidth = document.querySelector('.nav-sticky__items').scrollWidth;
+    var stickyNavWidth = document.querySelector('.nav-sticky__items').offsetWidth;
     if (stickyNavWidth < horizontalScrollWidth) {
       entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--left', !entry.isIntersecting);
+        document.querySelector('.nav-sticky').classList.toggle('nav-sticky--left', !entry.isIntersecting);
       });
     }
   });
@@ -25086,13 +25088,13 @@ function launch(el) {
   // Observer to watchinging last menu item then add blur effect to end of nav
   */
 
-  var stickyNavLastItem = document.querySelector(".nav-sticky__item:last-child");
+  var stickyNavLastItem = document.querySelector('.nav-sticky__item:last-child');
   var observeStickyNavLastItem = new IntersectionObserver(function (entries) {
-    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+    var horizontalScrollWidth = document.querySelector('.nav-sticky__items').scrollWidth;
+    var stickyNavWidth = document.querySelector('.nav-sticky__items').offsetWidth;
     if (stickyNavWidth < horizontalScrollWidth) {
       entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--right', !entry.isIntersecting);
+        document.querySelector('.nav-sticky').classList.toggle('nav-sticky--right', !entry.isIntersecting);
       });
     }
   });
@@ -25104,34 +25106,43 @@ function launch(el) {
   // clicking on it, or scrolling to a new section
   */
 
-  var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
-  function highlightNavMenuItem(text) {
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+  var stickyNavMenuItemLinks = document.querySelector('.nav-sticky').querySelectorAll('.nav-sticky__item__link');
+  var anchorLinksOnPage = document.querySelectorAll('a[href^="#"]');
+  function highlightNavMenuItem(elem) {
     stickyNavMenuItemLinks.forEach(function (item) {
-      if (item.innerText == text && !scrollActiveLink) {
+      if (item.getAttribute('href') === '#' + elem.id && !scrollActiveLink) {
         item.classList.add('nav-sticky__item__link__active');
-        document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
-      } else if (item.innerText == text && scrollActiveLink == text) {
+        scrollNavItemToView(item);
+      } else if (item.getAttribute('href') === '#' + elem.id && scrollActiveLink === '#' + elem.id) {
         setTimeout(function () {
           item.classList.add('nav-sticky__item__link__active');
           scrollActiveLink = ''; // clears value to indicate the page has now scrolled down to the clicked link
-          document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
-        }, "300");
+          scrollNavItemToView(item);
+        }, '300');
       } else {
         item.classList.remove('nav-sticky__item__link__active');
       }
     });
   }
-  stickyNavMenuItemLinks.forEach(function (item) {
-    item.addEventListener('click', function (event) {
-      event.preventDefault();
-      var scrollToLink = item.getAttribute('href');
-      scrollActiveLink = item.innerHTML;
-      document.querySelector(scrollToLink).scrollIntoView();
+  function scrollNavItemToView(item) {
+    var stickyNavItems = document.querySelector('.nav-sticky__items');
+    var stickyNavItemsWidth = stickyNavItems.offsetWidth;
+    stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
+  }
+  window.addEventListener('hashchange', function () {
+    scrollActiveLink = window.location.hash;
+  });
+  anchorLinksOnPage.forEach(function (item) {
+    item.addEventListener('click', function () {
+      // If clicked hash is already in the url remove so it gets added again to trigger the hashchange listener
+      var hrefValue = item.getAttribute('href');
+      if (hrefValue === window.location.hash) {
+        window.location.hash = '';
+      }
     });
   });
 }
-var className = 'nav-sticky__helper';
+var className = 'nav-sticky__wrap';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
