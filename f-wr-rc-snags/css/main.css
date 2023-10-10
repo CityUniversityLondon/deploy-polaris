@@ -41727,9 +41727,6 @@ html {
         left: -100%;
         position: absolute;
     }
-    .js .slider-v23[data-style='arrows'][data-cardsperrow='1'][data-small='true'] .slide[data-sliderposition='-1'][data-smallhidden='true'] {
-        visibility: hidden;
-    }
     .js .slider-v23[data-style='arrows'][data-cardsperrow='1'][data-small='true'] .slide[data-sliderposition='0'] {
         left: 0;
         position: relative;
@@ -41738,18 +41735,11 @@ html {
         left: 100%;
         position: absolute;
     }
-    .js .slider-v23[data-style='arrows'][data-cardsperrow='1'][data-small='true'] .slide[data-sliderposition='1'][data-smallhidden='true'] {
-        visibility: hidden;
-    }
 }
 
 .js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='-1'] {
     left: -100%;
     position: absolute;
-}
-
-.js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='-1'][data-smallhidden='true'] {
-    visibility: hidden;
 }
 
 .js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='0'] {
@@ -41760,10 +41750,6 @@ html {
 .js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
-}
-
-.js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='1'][data-smallhidden='true'] {
-    visibility: hidden;
 }
 
 .js .slider-v23 + .slider-v23__controls {
@@ -41928,10 +41914,6 @@ html {
     position: absolute;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'][data-smallhidden='true'] {
-    visibility: hidden;
-}
-
 .js .slider-v23[data-style='dots'] .slide[data-sliderposition='0'] {
     left: 0;
     position: relative;
@@ -41940,10 +41922,6 @@ html {
 .js .slider-v23[data-style='dots'] .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
-}
-
-.js .slider-v23[data-style='dots'] .slide[data-sliderposition='1'][data-smallhidden='true'] {
-    visibility: hidden;
 }
 
 .js .slider-v23__container + .slider-v23__controls--dots {
@@ -42067,10 +42045,6 @@ html {
     position: absolute;
 }
 
-.js .slider-v23[data-style='responsive'] .slide[data-sliderposition='-1'][data-smallhidden='true'] {
-    visibility: hidden;
-}
-
 .js .slider-v23[data-style='responsive'] .slide[data-sliderposition='0'] {
     left: 0;
     position: relative;
@@ -42079,10 +42053,6 @@ html {
 .js .slider-v23[data-style='responsive'] .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
-}
-
-.js .slider-v23[data-style='responsive'] .slide[data-sliderposition='1'][data-smallhidden='true'] {
-    visibility: hidden;
 }
 
 @media (min-width: 768px) {

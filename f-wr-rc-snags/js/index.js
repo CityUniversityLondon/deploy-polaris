@@ -25399,7 +25399,6 @@ function handleNextPrevClick(slider, controls, direction) {
       current.addEventListener('transitionend', function hideCurrent() {
         current.removeEventListener('transitionend', hideCurrent, true);
         current.dataset.hidden = true;
-        current.dataset.smallhidden = true;
       }, true);
 
       // Updates position of slides
@@ -25413,7 +25412,6 @@ function handleNextPrevClick(slider, controls, direction) {
 
       // Sets 'active' current slide
       next.dataset.hidden = false;
-      next.dataset.smallhidden = false;
       next.classList.remove('slide--next');
       next.nextElementSibling ? next.nextElementSibling.classList.add('slide--next') : '';
       next.dataset.sliderposition = 0;
@@ -25439,7 +25437,6 @@ function handleNextPrevClick(slider, controls, direction) {
       current.addEventListener('transitionend', function hideCurrent() {
         current.removeEventListener('transitionend', hideCurrent, true);
         current.dataset.hidden = true;
-        current.dataset.smallhidden = true;
       }, true);
 
       // Updates position of slides
@@ -25453,7 +25450,6 @@ function handleNextPrevClick(slider, controls, direction) {
 
       // Sets current / active slide
       previous.dataset.hidden = false;
-      previous.dataset.smallhidden = false;
       previous.classList.remove('slide--prev');
       previous.previousElementSibling ? previous.previousElementSibling.classList.add('slide--prev') : '';
       previous.dataset.sliderposition = 0;
@@ -25493,7 +25489,6 @@ function prepareSlides(slides, current) {
       // 1 = next slide
       slide.dataset.sliderposition = 1;
       slide.dataset.hidden = 'true';
-      slide.dataset.smallhidden = 'true';
       current + 1 == i ? slide.classList.add('slide--next') : '';
       slide.querySelectorAll('a').forEach(function (anchor) {
         return anchor.setAttribute('tabindex', -1);
@@ -25619,11 +25614,6 @@ function launchArrow(slider) {
 
   slider.nextElementSibling ? slider.parentElement.insertBefore(controlsWrapper, slider.nextElementSibling) : slider.parentElement.appendChild(controlsWrapper);
 
-  /*
-      //Places controls directly after the element wrapping the 'ul' slides
-      slider.parentElement.parentElement.appendChild(controlsWrapper);
-       */
-
   // Add event listeners
   addSwipeEvents(slider, controlsWrapper);
 
@@ -25660,7 +25650,6 @@ function launchDot(slider) {
     } else {
       slide.dataset.sliderposition = 1; // 1 for 'next' slide
       slide.dataset.hidden = 'true';
-      slide.dataset.smallhidden = 'true';
     }
 
     // Creates dot buttons for each slide
@@ -25758,13 +25747,11 @@ function handleDotClick(slider, controlsWrapper, selection) {
     else if (i > selection) {
       slide.dataset.sliderposition = 1;
       slide.dataset.hidden = true;
-      // @ WR review smallhidden - what was intended by it?
     }
     // Places slides 'before' current slide in previous position
     else {
       slide.dataset.sliderposition = -1;
       slide.dataset.hidden = true;
-      // @ WR review smallhidden - what was intended by it?
     }
   });
 
