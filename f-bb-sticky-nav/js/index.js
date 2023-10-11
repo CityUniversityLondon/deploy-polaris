@@ -24830,6 +24830,9 @@ var aria = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace.js */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 function launch(el) {
@@ -24842,7 +24845,6 @@ function launch(el) {
   var lastScrollPos = window.scrollY;
   observerHelper.id = 'nav-sticky__helper';
   el.parentNode.insertBefore(observerHelper, el);
-
   /*
   // Observer to watching menu position and make it stick
   */
@@ -24858,6 +24860,14 @@ function launch(el) {
     });
   }
   createObserverStickyNav(observerHelper);
+  if (location.hash) {
+    //Needed to solve firefox issue, when a page is first loaded it doesn't scroll to position. Not an issue if page is refreshed.
+    setTimeout(function () {
+      var elId = location.hash.replace('#', '');
+      var scrollToEl = document.getElementById(elId);
+      scrollToEl.scrollIntoView(true);
+    }, 700);
+  }
 
   /*
   // Observer to watching different content sections and highlight corresponding menu item
@@ -24870,12 +24880,10 @@ function launch(el) {
       if (scrollTop >= lastScrollPos) {
         if (entry.isIntersecting) {
           highlightNavMenuItem(entry.target);
-          console.log('Highlight', entry.target.id);
         }
       } else {
         if (!entry.isIntersecting) {
           highlightNavMenuItem(entry.target.previousElementSibling);
-          console.log('Highlight', entry.target.previousElementSibling.id);
         }
       }
     });
@@ -24889,8 +24897,6 @@ function launch(el) {
     };
     var observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
     contentSections.forEach(function (area) {
-      // const sectionHeading = area.querySelector('h2');
-      // observerContentSections.observe(sectionHeading);
       observerContentSections.observe(area);
     });
   }
