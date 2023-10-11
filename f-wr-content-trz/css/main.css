@@ -42464,6 +42464,12 @@ html {
     overflow: visible;
 }
 
+@media (min-width: 901px) {
+    .square-animation-v23 {
+        padding-bottom: 3rem;
+    }
+}
+
 .square-animation-v23 .square-animation-v23__wrap {
     position: absolute;
     height: 115%;
@@ -42475,22 +42481,29 @@ html {
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
 }
 
-.square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+@media (max-width: 899px) {
+    .square-animation-v23 .square-animation-v23__wrap {
+        height: 100%;
+    }
 }
 
-.square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
-    content: '';
-    height: 0.5rem;
-    width: 0.5rem;
-    display: inherit;
+@media (min-width: 651px) {
+    .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+    .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
+        content: '';
+        height: 0.5rem;
+        width: 0.5rem;
+        display: inherit;
+    }
 }
 
-@media (max-width: 499px) {
+@media (min-width: 651px) and (max-width: 899px) {
     .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
         height: 1rem;
         width: 1rem;
@@ -42498,15 +42511,15 @@ html {
 }
 
 .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__animation-started:before {
-    animation: square-twinkle-animation ease-out 5s infinite;
+    animation: square-twinkle-animation ease-out 10s infinite;
 }
 
 .ug-courses-v23 .square-animation-v23__square:before {
-    background: #e35205;
+    background: #f1b434;
 }
 
 .pg-courses-v23 .square-animation-v23__square:before {
-    background: #002b49;
+    background: #a1a1a1;
 }
 
 @keyframes square-twinkle-animation {
@@ -42517,6 +42530,10 @@ html {
     10% {
         opacity: 0.5;
         scale: 0;
+    }
+    15% {
+        opacity: 0.5;
+        scale: 1;
     }
     20% {
         opacity: 0.5;
@@ -42538,6 +42555,10 @@ html {
         opacity: 0.75;
     }
     80% {
+        opacity: 0.5;
+        scale: 1;
+    }
+    85% {
         opacity: 0.5;
         scale: 1;
     }

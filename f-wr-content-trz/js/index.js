@@ -24952,10 +24952,10 @@ function launch(el) {
   var elemWidth = el.querySelector('picture').offsetWidth;
   var squaresRef = [];
   var squareswrap = document.createElement('div');
-  console.log('sq enimation loaded, elemHeight: ' + elemHeight + ' ,elemWidth: ' + elemWidth);
+
+  // calculates how many squares to generate
   var squares = 4 * Math.ceil(elemHeight / (elemWidth / 4));
   squareswrap.classList.add('square-animation-v23__wrap');
-  console.log('sqs: ' + squares);
   for (var i = 0; i < squares; i++) {
     var squareContainer = document.createElement('div');
     squareContainer.classList.add('square-animation-v23__square');
