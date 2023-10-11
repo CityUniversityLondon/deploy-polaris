@@ -11619,40 +11619,16 @@ svg:not(:root) {
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p,
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current,
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
-    font-weight: 400;
-    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
-    /**
-     * IBM Plex OpenType stylistic sets:
-     *
-     * ss01: 0/1 double-storey/simple 'a'
-     * ss02: 0/1 double-storey/simple 'g'
-     * ss03: 0/1 plain/slashed '0'
-     * ss04: 0/1 plain/dotted '0'
-     */
-    font-feature-settings: 'ss01' 0, 'ss02' 1, 'ss03' 1, 'ss04' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'frac' 0, 'liga' 1;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.625;
-    letter-spacing: -0.005em;
-    font-style: normal;
-    font-weight: 450;
-    max-width: 60ch;
-    line-height: 1.414;
-}
-
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p i,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p em,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current i,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current em,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a i,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a em {
-    font-feature-settings: 'ss01' 0, 'ss02' 1, 'ss03' 1, 'ss04' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'frac' 0, 'liga' 1;
+    letter-spacing: 0em;
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p,
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current,
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
-        letter-spacing: -0.008em;
+        letter-spacing: -0.004em;
     }
 }
 
@@ -11660,7 +11636,7 @@ svg:not(:root) {
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p,
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current,
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
-        letter-spacing: -0.011em;
+        letter-spacing: -0.008em;
     }
 }
 
@@ -11678,24 +11654,6 @@ svg:not(:root) {
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
         letter-spacing: -0.017em;
     }
-}
-
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p b,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p strong,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current b,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current strong,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a b,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a strong {
-    font-weight: 700;
-}
-
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p i,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p em,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current i,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current em,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a i,
-.courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a em {
-    font-style: italic;
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__cta {
