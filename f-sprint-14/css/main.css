@@ -12029,8 +12029,8 @@ svg:not(:root) {
 }
 
 .courses-v23__summary__widget__logos img {
-    width: 4rem;
-    height: auto;
+    width: auto;
+    height: 4rem;
     margin-right: 1rem;
 }
 
