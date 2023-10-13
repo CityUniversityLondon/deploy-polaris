@@ -41698,10 +41698,9 @@ html {
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1201px) {
     .courses-v23__careers__recent-employers ul {
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
