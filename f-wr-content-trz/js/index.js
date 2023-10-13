@@ -24915,7 +24915,7 @@ function launch(el) {
     var observerContentSections;
     var options = {
       root: null,
-      rootMargin: "-13%"
+      rootMargin: '-13%'
     };
     transitionsSections.forEach(function (area) {
       observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);
