@@ -12819,6 +12819,10 @@ svg:not(:root) {
     opacity: 0;
 }
 
+.js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide:not([data-sliderposition='0']) {
+    pointer-events: none;
+}
+
 .js .slider-v23--related-courses__wrap .slider-v23[data-style='responsive'] .slide.slide--next[data-sliderposition='1'][data-hidden='true'] {
     z-index: 2;
     left: 100%;
@@ -12961,7 +12965,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
-    background: #f5c96d;
+    opacity: 0.5;
 }
 
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
@@ -13016,7 +13020,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
-    background: #008fd6;
+    opacity: 0.5;
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
@@ -41818,6 +41822,8 @@ html {
 
 /*
 * Styles for arrow and responsive slider
+* These are general styles to rendering the slider at a basic fucntional level. If you need to create a unique slider then please create overriding rules 
+* in a seperate file to respresent your slider. i.e. the styles for the v23 course responsive and dot sliders are contained in its own files individually.
 */
 .js .slider-v23[data-style='arrows'] {
     display: flex;
@@ -41905,9 +41911,6 @@ html {
         left: -100%;
         position: absolute;
     }
-    .js .slider-v23[data-style='arrows'][data-cardsperrow='1'][data-small='true'] .slide[data-sliderposition='-1'][data-smallhidden='true'] {
-        visibility: hidden;
-    }
     .js .slider-v23[data-style='arrows'][data-cardsperrow='1'][data-small='true'] .slide[data-sliderposition='0'] {
         left: 0;
         position: relative;
@@ -41916,18 +41919,11 @@ html {
         left: 100%;
         position: absolute;
     }
-    .js .slider-v23[data-style='arrows'][data-cardsperrow='1'][data-small='true'] .slide[data-sliderposition='1'][data-smallhidden='true'] {
-        visibility: hidden;
-    }
 }
 
 .js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='-1'] {
     left: -100%;
     position: absolute;
-}
-
-.js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='-1'][data-smallhidden='true'] {
-    visibility: hidden;
 }
 
 .js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='0'] {
@@ -41938,10 +41934,6 @@ html {
 .js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
-}
-
-.js .slider-v23[data-style='arrows'][data-cardsperrow='1']:not([data-small='true']) .slide[data-sliderposition='1'][data-smallhidden='true'] {
-    visibility: hidden;
 }
 
 .js .slider-v23 + .slider-v23__controls {
@@ -41977,16 +41969,16 @@ html {
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__indicator .slider-v23__indicator__total {
-    color: red;
+    color: #e30613;
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__prev,
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__next {
     background-color: transparent;
-    border-color: red;
+    border-color: #e30613;
     border-style: solid;
     border-width: 0.06rem;
-    color: red;
+    color: #e30613;
     padding: 0.75rem;
     transition: background-color 0.2s ease-in, border-color 0.2s ease-in, color 0.2s ease-in;
 }
@@ -42106,10 +42098,6 @@ html {
     position: absolute;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'][data-smallhidden='true'] {
-    visibility: hidden;
-}
-
 .js .slider-v23[data-style='dots'] .slide[data-sliderposition='0'] {
     left: 0;
     position: relative;
@@ -42118,10 +42106,6 @@ html {
 .js .slider-v23[data-style='dots'] .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
-}
-
-.js .slider-v23[data-style='dots'] .slide[data-sliderposition='1'][data-smallhidden='true'] {
-    visibility: hidden;
 }
 
 .js .slider-v23__container + .slider-v23__controls--dots {
@@ -42245,10 +42229,6 @@ html {
     position: absolute;
 }
 
-.js .slider-v23[data-style='responsive'] .slide[data-sliderposition='-1'][data-smallhidden='true'] {
-    visibility: hidden;
-}
-
 .js .slider-v23[data-style='responsive'] .slide[data-sliderposition='0'] {
     left: 0;
     position: relative;
@@ -42257,10 +42237,6 @@ html {
 .js .slider-v23[data-style='responsive'] .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
-}
-
-.js .slider-v23[data-style='responsive'] .slide[data-sliderposition='1'][data-smallhidden='true'] {
-    visibility: hidden;
 }
 
 @media (min-width: 768px) {
