@@ -25015,6 +25015,9 @@ var className = 'square-animation-v23--DISABLED';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace.js */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 function launch(el) {
@@ -25023,9 +25026,10 @@ function launch(el) {
   // Create the observer helper div and appended to the DOM
   */
   var observerHelper = document.createElement('div');
+  var stickNavHeight = el.offsetHeight;
+  var lastScrollPos = window.scrollY;
   observerHelper.id = 'nav-sticky__helper';
   el.parentNode.insertBefore(observerHelper, el);
-
   /*
   // Observer to watching menu position and make it stick
   */
@@ -25041,6 +25045,14 @@ function launch(el) {
     });
   }
   createObserverStickyNav(observerHelper);
+  if (location.hash) {
+    //Needed to solve firefox issue, when a page is first loaded it doesn't scroll to position. Not an issue if page is refreshed.
+    setTimeout(function () {
+      var elId = location.hash.replace('#', '');
+      var scrollToEl = document.getElementById(elId);
+      scrollToEl.scrollIntoView(true);
+    }, 700);
+  }
 
   /*
   // Observer to watching different content sections and highlight corresponding menu item
@@ -25048,19 +25060,26 @@ function launch(el) {
 
   var contentSections = document.querySelectorAll('.sticky-nav__sec');
   function handleIntersect_contentSections(entries) {
+    var scrollTop = window.scrollY;
     entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        highlightNavMenuItem(entry.target);
+      if (scrollTop >= lastScrollPos) {
+        if (entry.isIntersecting) {
+          highlightNavMenuItem(entry.target);
+        }
+      } else {
+        if (!entry.isIntersecting) {
+          highlightNavMenuItem(entry.target.previousElementSibling);
+        }
       }
     });
+    lastScrollPos = scrollTop;
   }
   function createObserverContentSections() {
     var options = {
       root: null,
-      threshold: [0],
-      rootMargin: '5% 0px -75% 0px' //Look for interaction within the top half of the viewport
+      threshold: 0,
+      rootMargin: "-".concat(stickNavHeight, "px 0px -60% 0px")
     };
-
     var observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
     contentSections.forEach(function (area) {
       observerContentSections.observe(area);
