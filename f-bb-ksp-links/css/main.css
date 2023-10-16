@@ -29922,6 +29922,21 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-bottom: 2rem;
 }
 
+.ksp-v23-wrapper a {
+    color: #1e1e1e;
+    border-bottom-color: #1e1e1e;
+}
+
+.ksp-v23-wrapper a:hover {
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+
+.ksp-v23-wrapper a:active, .ksp-v23-wrapper a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #1e1e1e;
+}
+
 .ksp-v23-wrapper--dark {
     background-color: #7e756d;
     color: #1e1e1e;
@@ -29963,24 +29978,24 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     pointer-events: none;
 }
 
-.ug-courses-v23 a {
+.ug-courses-v23 .ksp-v23-wrapper--dark {
+    background-color: #d0c8c5;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-v23-wrapper--dark a {
     color: #1e1e1e;
     border-bottom-color: #1e1e1e;
 }
 
-.ug-courses-v23 a:hover {
+.ug-courses-v23 .ksp-v23-wrapper--dark a:hover {
     color: #ffffff;
     background-color: #1e1e1e;
 }
 
-.ug-courses-v23 a:active, .ug-courses-v23 a:focus {
+.ug-courses-v23 .ksp-v23-wrapper--dark a:active, .ug-courses-v23 .ksp-v23-wrapper--dark a:focus {
     outline-offset: 0.1875rem;
     outline-color: #1e1e1e;
-}
-
-.ug-courses-v23 .ksp-v23-wrapper--dark {
-    background-color: #d0c8c5;
-    color: #1e1e1e;
 }
 
 .ug-courses-v23 .ksp-v23-wrapper--light {
@@ -30021,24 +30036,24 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     padding-right: 0.5rem;
 }
 
-.pg-courses-v23 a {
+.pg-courses-v23 .ksp-v23-wrapper--dark {
+    background-color: #002b49;
+    color: #ffffff;
+}
+
+.pg-courses-v23 .ksp-v23-wrapper--dark a {
     color: #ffffff;
     border-bottom-color: #ffffff;
 }
 
-.pg-courses-v23 a:hover {
+.pg-courses-v23 .ksp-v23-wrapper--dark a:hover {
     color: #1e1e1e;
     background-color: #ffffff;
 }
 
-.pg-courses-v23 a:active, .pg-courses-v23 a:focus {
+.pg-courses-v23 .ksp-v23-wrapper--dark a:active, .pg-courses-v23 .ksp-v23-wrapper--dark a:focus {
     outline-offset: 0.1875rem;
     outline-color: #ffffff;
-}
-
-.pg-courses-v23 .ksp-v23-wrapper--dark {
-    background-color: #002b49;
-    color: #ffffff;
 }
 
 .pg-courses-v23 .ksp-v23-wrapper--light {
