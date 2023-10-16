@@ -29922,6 +29922,21 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-bottom: 2rem;
 }
 
+.ksp-v23-wrapper a {
+    color: #1e1e1e;
+    border-bottom-color: #1e1e1e;
+}
+
+.ksp-v23-wrapper a:hover {
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+
+.ksp-v23-wrapper a:active, .ksp-v23-wrapper a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #1e1e1e;
+}
+
 .ksp-v23-wrapper--dark {
     background-color: #7e756d;
     color: #1e1e1e;
@@ -29960,11 +29975,27 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: linear-gradient(to right, #e30613 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #e30613 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #e30613 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #e30613 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
+    pointer-events: none;
 }
 
 .ug-courses-v23 .ksp-v23-wrapper--dark {
     background-color: #d0c8c5;
     color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-v23-wrapper--dark a {
+    color: #1e1e1e;
+    border-bottom-color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-v23-wrapper--dark a:hover {
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-v23-wrapper--dark a:active, .ug-courses-v23 .ksp-v23-wrapper--dark a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #1e1e1e;
 }
 
 .ug-courses-v23 .ksp-v23-wrapper--light {
@@ -29985,6 +30016,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: linear-gradient(to right, #e35205 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #e35205 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #e35205 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #e35205 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
+    pointer-events: none;
 }
 
 .ug-courses-v23 .ksp-ordered-list--tick ul {
@@ -30009,6 +30041,21 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #ffffff;
 }
 
+.pg-courses-v23 .ksp-v23-wrapper--dark a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.pg-courses-v23 .ksp-v23-wrapper--dark a:hover {
+    color: #1e1e1e;
+    background-color: #ffffff;
+}
+
+.pg-courses-v23 .ksp-v23-wrapper--dark a:active, .pg-courses-v23 .ksp-v23-wrapper--dark a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
 .pg-courses-v23 .ksp-v23-wrapper--light {
     background-color: #ededee;
     color: #1e1e1e;
@@ -30027,6 +30074,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: linear-gradient(to right, #3457F1 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #3457F1 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #3457F1 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #3457F1 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
+    pointer-events: none;
 }
 
 .pg-courses-v23 .ksp-ordered-list--tick ul {
