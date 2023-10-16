@@ -24840,40 +24840,41 @@ __webpack_require__.r(__webpack_exports__);
 
 function launch(contentSection) {
   var viewPortWidth = window.innerWidth;
-  if (viewPortWidth >= 650) {
-    function handleIntersect_contentsections(entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var count = 0;
-          entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
-            setTimeout(function () {
-              elem.classList.add('content-transition-horizontal--end');
-            }, count);
-            count += 250;
-          });
-        }
-      });
-    }
-    function createObserverContentSections() {
-      var observerContentSections;
-      var options = {
-        root: null,
-        rootMargin: "-20%"
-      };
-      observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
-      observerContentSections.observe(contentSection);
-      if (contentSection.classList.contains("content-transition-horizontal--slow")) {
-        contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
-          elem.classList.add('content-transition-horizontal--slow--start');
-        });
-      } else {
-        contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
-          elem.classList.add('content-transition-horizontal--start');
+  if (viewPortWidth < 650) {
+    return;
+  }
+  function handleIntersect_contentsections(entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var count = 0;
+        entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
+          setTimeout(function () {
+            elem.classList.add('content-transition-horizontal--end');
+          }, count);
+          count += 250;
         });
       }
-    }
-    createObserverContentSections();
+    });
   }
+  function createObserverContentSections() {
+    var observerContentSections;
+    var options = {
+      root: null,
+      rootMargin: '-20%'
+    };
+    observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
+    observerContentSections.observe(contentSection);
+    if (contentSection.classList.contains('content-transition-horizontal--slow')) {
+      contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+        elem.classList.add('content-transition-horizontal--slow--start');
+      });
+    } else {
+      contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+        elem.classList.add('content-transition-horizontal--start');
+      });
+    }
+  }
+  createObserverContentSections();
 }
 var className = 'content-transition-horizontal';
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -24892,21 +24893,12 @@ var className = 'content-transition-horizontal';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
-
-function launch(el) {
-  /*
-  // Observer to watching different content sections and highlight corresponding menu item
-  */
-
-  var transitionsSections = document.querySelectorAll('.content-transition-vertical');
+function launch(contentSection) {
   function handleIntersect_transitionsSections(entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        //highlightNavMenuItem(entryTitle);
         entry.target.classList.add('content-transition-vertical--end');
       }
     });
@@ -24917,11 +24909,9 @@ function launch(el) {
       root: null,
       rootMargin: '-13%'
     };
-    transitionsSections.forEach(function (area) {
-      observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);
-      observerContentSections.observe(area);
-      area.classList.add('content-transition-vertical--start');
-    });
+    observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);
+    observerContentSections.observe(contentSection);
+    contentSection.classList.add('content-transition-vertical--start');
   }
   createObserverContentSections();
 }
@@ -24948,6 +24938,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
+  var viewPortWidth = window.innerWidth;
+  if (viewPortWidth < 650) {
+    return;
+  }
   var elemHeight = el.querySelector('picture').offsetHeight;
   var elemWidth = el.querySelector('picture').offsetWidth;
   var squaresRef = [];
