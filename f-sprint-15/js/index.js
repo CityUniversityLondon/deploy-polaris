@@ -24838,45 +24838,43 @@ var aria = {
 __webpack_require__.r(__webpack_exports__);
 
 
-function launch(el) {
+function launch(contentSection) {
   var viewPortWidth = window.innerWidth;
-  if (viewPortWidth >= 650) {
-    var contentSections = document.querySelectorAll('.content-transition-horizontal');
-    function handleIntersect_contentsections(entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var count = 0;
-          entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
-            setTimeout(function () {
-              elem.classList.add('content-transition-horizontal--end');
-            }, count);
-            count += 250;
-          });
-        }
-      });
-    }
-    function createObserverContentSections() {
-      var observerContentSections;
-      var options = {
-        root: null,
-        rootMargin: "-20%"
-      };
-      contentSections.forEach(function (area) {
-        observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
-        observerContentSections.observe(area);
-        if (area.classList.contains("content-transition-horizontal--slow")) {
-          area.querySelectorAll(':scope > *').forEach(function (elem) {
-            elem.classList.add('content-transition-horizontal--slow--start');
-          });
-        } else {
-          area.querySelectorAll(':scope > *').forEach(function (elem) {
-            elem.classList.add('content-transition-horizontal--start');
-          });
-        }
-      });
-    }
-    createObserverContentSections();
+  if (viewPortWidth < 650) {
+    return;
   }
+  function handleIntersect_contentsections(entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var count = 0;
+        entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
+          setTimeout(function () {
+            elem.classList.add('content-transition-horizontal--end');
+          }, count);
+          count += 250;
+        });
+      }
+    });
+  }
+  function createObserverContentSections() {
+    var observerContentSections;
+    var options = {
+      root: null,
+      rootMargin: '-20%'
+    };
+    observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
+    observerContentSections.observe(contentSection);
+    if (contentSection.classList.contains('content-transition-horizontal--slow')) {
+      contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+        elem.classList.add('content-transition-horizontal--slow--start');
+      });
+    } else {
+      contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+        elem.classList.add('content-transition-horizontal--start');
+      });
+    }
+  }
+  createObserverContentSections();
 }
 var className = 'content-transition-horizontal';
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -24895,21 +24893,12 @@ var className = 'content-transition-horizontal';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
-
-function launch(el) {
-  /*
-  // Observer to watching different content sections and highlight corresponding menu item
-  */
-
-  var transitionsSections = document.querySelectorAll('.content-transition-vertical');
+function launch(contentSection) {
   function handleIntersect_transitionsSections(entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        //highlightNavMenuItem(entryTitle);
         entry.target.classList.add('content-transition-vertical--end');
       }
     });
@@ -24918,13 +24907,11 @@ function launch(el) {
     var observerContentSections;
     var options = {
       root: null,
-      rootMargin: "-13%"
+      rootMargin: '-13%'
     };
-    transitionsSections.forEach(function (area) {
-      observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);
-      observerContentSections.observe(area);
-      area.classList.add('content-transition-vertical--start');
-    });
+    observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);
+    observerContentSections.observe(contentSection);
+    contentSection.classList.add('content-transition-vertical--start');
   }
   createObserverContentSections();
 }
@@ -24951,17 +24938,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  var elemHeight = el.offsetHeight;
-  var elemWidth = el.offsetWidth;
+  var viewPortWidth = window.innerWidth;
+  if (viewPortWidth < 650) {
+    return;
+  }
+  var elemHeight = el.querySelector('picture').offsetHeight;
+  var elemWidth = el.querySelector('picture').offsetWidth;
   var squaresRef = [];
   var squareswrap = document.createElement('div');
-  var viewportRatioVar = 1;
-  //const viewPortWidth = window.innerWidth;
 
-  //5rem = 100px
-
-  var squares = Math.ceil(elemHeight * elemWidth / 10000 * viewportRatioVar);
-  squareswrap.classList.add('test');
+  // calculates how many squares to generate
+  var squares = 4 * Math.ceil(elemHeight / (elemWidth / 4));
+  squareswrap.classList.add('square-animation-v23__wrap');
   for (var i = 0; i < squares; i++) {
     var squareContainer = document.createElement('div');
     squareContainer.classList.add('square-animation-v23__square');
@@ -24998,7 +24986,7 @@ function launch(el) {
     _loop(_i);
   }
 }
-var className = 'square-animation-v23--DISABLED';
+var className = 'square-animation-v23';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
