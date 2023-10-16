@@ -4349,10 +4349,20 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__icon:before,
     }
 }
 
+/*
+This minitype mixin will set the base font size and then increase it for anything less than the breakpoint "between".
+*/
 .mini-type {
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.625;
-    letter-spacing: 0em;
+    letter-spacing: -0.005em;
+}
+
+@media (min-width: 651px) {
+    .mini-type {
+        font-size: 0.875rem;
+        letter-spacing: 0em;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
@@ -11266,6 +11276,27 @@ svg:not(:root) {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.ug-courses-v23 .courses-v23--fee .cta {
+    background-color: #e35205;
+    color: #0c0c0e;
+}
+
+.ug-courses-v23 .courses-v23--fee .cta:hover, .ug-courses-v23 .courses-v23--fee .cta:focus, .ug-courses-v23 .courses-v23--fee .cta:active {
+    background-color: #c54704;
+    color: #0c0c0e;
+}
+
+.pg-courses-v23 .courses-v23--fee .cta {
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ececec;
+}
+
+.pg-courses-v23 .courses-v23--fee .cta:hover, .pg-courses-v23 .courses-v23--fee .cta:focus, .pg-courses-v23 .courses-v23--fee .cta:active {
+    background-color: #00192a;
+    color: #ffffff;
+}
+
 @media (min-width: 501px) {
     .courses-v23 .chart-row__items__chart {
         width: 33%;
@@ -11619,9 +11650,18 @@ svg:not(:root) {
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p,
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current,
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.625;
-    letter-spacing: 0em;
+    letter-spacing: -0.005em;
+}
+
+@media (min-width: 651px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p,
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current,
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__years a {
+        font-size: 0.875rem;
+        letter-spacing: 0em;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
@@ -12029,8 +12069,8 @@ svg:not(:root) {
 }
 
 .courses-v23__summary__widget__logos img {
-    width: 4rem;
-    height: auto;
+    width: auto;
+    height: 4rem;
     margin-right: 1rem;
 }
 
@@ -13182,6 +13222,10 @@ svg:not(:root) {
     }
 }
 
+.courses-v23__entry-requirements .accordion-v23 {
+    grid-column: 1/13;
+}
+
 .courses-v23__study-abroad .partner-institution {
     list-style-type: none;
     border-bottom: 0.06rem solid #1e1e1e;
@@ -13313,7 +13357,8 @@ svg:not(:root) {
     position: relative;
 }
 
-.courses-v23 section, .courses-v23 > div {
+.courses-v23 section,
+.courses-v23 > div {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -13321,27 +13366,31 @@ svg:not(:root) {
 }
 
 @media (max-width: 500px) {
-    .courses-v23 section, .courses-v23 > div {
+    .courses-v23 section,
+    .courses-v23 > div {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 }
 
 @media (min-width: 501px) {
-    .courses-v23 section, .courses-v23 > div {
+    .courses-v23 section,
+    .courses-v23 > div {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 }
 
 @media (min-width: 1441px) {
-    .courses-v23 section, .courses-v23 > div {
+    .courses-v23 section,
+    .courses-v23 > div {
         max-width: 1440px;
     }
 }
 
 @media (min-width: 1921px) {
-    .courses-v23 section, .courses-v23 > div {
+    .courses-v23 section,
+    .courses-v23 > div {
         max-width: 83.333%;
     }
 }
@@ -13431,6 +13480,26 @@ svg:not(:root) {
     margin-bottom: 1.25rem;
 }
 
+@media (min-width: 901px) {
+    .courses-v23__grid-18 {
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 650px) {
+    .courses-v23__grid-18 {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 901px) and (min-width: 901px) {
+    .courses-v23__grid-18 {
+        grid-column-gap: 1.5rem;
+    }
+}
+
 .courses-v23__title h1 {
     margin: 1rem 0 0 0;
 }
@@ -13456,7 +13525,8 @@ svg:not(:root) {
 }
 
 @media (min-width: 901px) {
-    .courses-v23__structure h2, .courses-v23__structure h3 {
+    .courses-v23__structure h2,
+    .courses-v23__structure h3 {
         grid-column: 1/-1;
     }
     .courses-v23__structure .courses-v23__structure__content {
@@ -13491,10 +13561,11 @@ svg:not(:root) {
 }
 
 @media (min-width: 901px) {
-    .courses-v23__study-abroad h2, .courses-v23__study-abroad h3 {
+    .courses-v23__study-abroad h2,
+    .courses-v23__study-abroad h3 {
         grid-column: 1/-1;
     }
-    .courses-v23__study-abroad *:not(.courses-v23__study-abroad__image) {
+    .courses-v23__study-abroad .courses-v23__study-abroad__content, .courses-v23__study-abroad .courses-v23__study-abroad__heading {
         grid-column: 1/13;
     }
     .courses-v23__study-abroad .courses-v23__study-abroad__image {
@@ -13523,7 +13594,8 @@ svg:not(:root) {
 }
 
 @media (min-width: 901px) {
-    .courses-v23__placements h2, .courses-v23__placements h3 {
+    .courses-v23__placements h2,
+    .courses-v23__placements h3 {
         grid-column: 1/-1;
     }
     .courses-v23__placements .courses-v23__placements__content {
@@ -29854,6 +29926,21 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-bottom: 2rem;
 }
 
+.ksp-v23-wrapper a {
+    color: #1e1e1e;
+    border-bottom-color: #1e1e1e;
+}
+
+.ksp-v23-wrapper a:hover {
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+
+.ksp-v23-wrapper a:active, .ksp-v23-wrapper a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #1e1e1e;
+}
+
 .ksp-v23-wrapper--dark {
     background-color: #7e756d;
     color: #1e1e1e;
@@ -29892,11 +29979,27 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: linear-gradient(to right, #e30613 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #e30613 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #e30613 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #e30613 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
+    pointer-events: none;
 }
 
 .ug-courses-v23 .ksp-v23-wrapper--dark {
     background-color: #d0c8c5;
     color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-v23-wrapper--dark a {
+    color: #1e1e1e;
+    border-bottom-color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-v23-wrapper--dark a:hover {
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+
+.ug-courses-v23 .ksp-v23-wrapper--dark a:active, .ug-courses-v23 .ksp-v23-wrapper--dark a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #1e1e1e;
 }
 
 .ug-courses-v23 .ksp-v23-wrapper--light {
@@ -29917,6 +30020,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: linear-gradient(to right, #e35205 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #e35205 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #e35205 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #e35205 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
+    pointer-events: none;
 }
 
 .ug-courses-v23 .ksp-ordered-list--tick ul {
@@ -29941,6 +30045,21 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #ffffff;
 }
 
+.pg-courses-v23 .ksp-v23-wrapper--dark a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.pg-courses-v23 .ksp-v23-wrapper--dark a:hover {
+    color: #1e1e1e;
+    background-color: #ffffff;
+}
+
+.pg-courses-v23 .ksp-v23-wrapper--dark a:active, .pg-courses-v23 .ksp-v23-wrapper--dark a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
 .pg-courses-v23 .ksp-v23-wrapper--light {
     background-color: #ededee;
     color: #1e1e1e;
@@ -29959,6 +30078,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: linear-gradient(to right, #3457F1 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #3457F1 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #3457F1 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #3457F1 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
+    pointer-events: none;
 }
 
 .pg-courses-v23 .ksp-ordered-list--tick ul {
@@ -41683,10 +41803,9 @@ html {
     }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1201px) {
     .courses-v23__careers__recent-employers ul {
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -42476,49 +42595,111 @@ html {
     overflow: visible;
 }
 
-.square-animation-v23 .test {
+@media (min-width: 901px) {
+    .square-animation-v23 {
+        padding-bottom: 3rem;
+    }
+}
+
+.square-animation-v23 .square-animation-v23__wrap {
     position: absolute;
-    height: inherit;
+    height: 115%;
     width: 100%;
     top: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.square-animation-v23 .test .square-animation-v23__square {
-    width: 5rem;
-    height: 5rem;
-    justify-content: center;
+    overflow: hidden;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
 }
 
-.square-animation-v23 .test .square-animation-v23__square:before {
-    content: '';
-    height: 2rem;
-    width: 2rem;
-    background: blue;
-    display: inherit;
+@media (max-width: 899px) {
+    .square-animation-v23 .square-animation-v23__wrap {
+        height: 100%;
+    }
 }
 
-.square-animation-v23 .test .square-animation-v23__animation-started:before {
-    animation: shape-1-trajectory ease-out 10s infinite;
+@media (min-width: 651px) {
+    .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+    .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
+        content: '';
+        height: 0.5rem;
+        width: 0.5rem;
+        display: inherit;
+    }
 }
 
-@keyframes shape-1-trajectory {
+@media (min-width: 651px) and (max-width: 899px) {
+    .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+.square-animation-v23 .square-animation-v23__wrap .square-animation-v23__animation-started:before {
+    animation: square-twinkle-animation ease-out 10s infinite;
+}
+
+.ug-courses-v23 .square-animation-v23__square:before {
+    background: #f1b434;
+}
+
+.pg-courses-v23 .square-animation-v23__square:before {
+    background: #a1a1a1;
+}
+
+@keyframes square-twinkle-animation {
     0% {
         opacity: 0.5;
+        scale: 0;
+    }
+    10% {
+        opacity: 0.5;
+        scale: 0;
+    }
+    15% {
+        opacity: 0.5;
+        scale: 1;
+    }
+    20% {
+        opacity: 0.5;
+        scale: 1;
+    }
+    30% {
+        opacity: 0.75;
+    }
+    40% {
+        opacity: 1;
     }
     50% {
         opacity: 1;
-        scale: 0;
     }
     60% {
         opacity: 1;
+    }
+    70% {
+        opacity: 0.75;
+    }
+    80% {
+        opacity: 0.5;
+        scale: 1;
+    }
+    85% {
+        opacity: 0.5;
+        scale: 1;
+    }
+    90% {
+        opacity: 0.5;
         scale: 0;
     }
     100% {
         opacity: 0.5;
+        scale: 0;
     }
 }
 
