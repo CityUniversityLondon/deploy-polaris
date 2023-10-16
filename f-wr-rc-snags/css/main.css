@@ -41703,6 +41703,8 @@ html {
 
 /*
 * Styles for arrow and responsive slider
+* These are general styles to rendering the slider at a basic fucntional level. If you need to create a unique slider then please create overriding rules 
+* in a seperate file to respresent your slider. i.e. the styles for the v23 course responsive and dot sliders are contained in its own files individually.
 */
 .js .slider-v23[data-style='arrows'] {
     display: flex;
@@ -41848,16 +41850,16 @@ html {
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__indicator .slider-v23__indicator__total {
-    color: red;
+    color: #e30613;
 }
 
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__prev,
 .js .slider-v23 + .slider-v23__controls .slider-v23__controls__next {
     background-color: transparent;
-    border-color: red;
+    border-color: #e30613;
     border-style: solid;
     border-width: 0.06rem;
-    color: red;
+    color: #e30613;
     padding: 0.75rem;
     transition: background-color 0.2s ease-in, border-color 0.2s ease-in, color 0.2s ease-in;
 }
