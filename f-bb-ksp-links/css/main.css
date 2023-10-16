@@ -11276,6 +11276,27 @@ svg:not(:root) {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.ug-courses-v23 .courses-v23--fee .cta {
+    background-color: #e35205;
+    color: #0c0c0e;
+}
+
+.ug-courses-v23 .courses-v23--fee .cta:hover, .ug-courses-v23 .courses-v23--fee .cta:focus, .ug-courses-v23 .courses-v23--fee .cta:active {
+    background-color: #c54704;
+    color: #0c0c0e;
+}
+
+.pg-courses-v23 .courses-v23--fee .cta {
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ececec;
+}
+
+.pg-courses-v23 .courses-v23--fee .cta:hover, .pg-courses-v23 .courses-v23--fee .cta:focus, .pg-courses-v23 .courses-v23--fee .cta:active {
+    background-color: #00192a;
+    color: #ffffff;
+}
+
 @media (min-width: 501px) {
     .courses-v23 .chart-row__items__chart {
         width: 33%;
