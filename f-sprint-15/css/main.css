@@ -12045,6 +12045,10 @@ svg:not(:root) {
     }
 }
 
+.courses-v23__summary .youtube-video__caption-element--text, .courses-v23__summary .youtube-video__caption-element--time {
+    font-size: 0.875rem;
+}
+
 .courses-v23__summary__content {
     grid-column: 1 / 13;
 }
@@ -23982,9 +23986,16 @@ USED IN:
 }
 
 .cookieconsent-optout-marketing__inner__content i:before {
-    padding: 0.75rem;
-    border: 0.12rem solid;
+    padding: 0.75rem 0.75rem 0.75rem 1rem;
     border-radius: 100%;
+    width: 4rem;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    background: #ffffff;
+    color: #e30613;
 }
 
 #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper .CybotCookiebotDialogBodyButton {
