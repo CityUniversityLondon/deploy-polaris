@@ -12875,6 +12875,24 @@ svg:not(:root) {
     width: 100%;
 }
 
+@media (max-width: 1199px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 82%;
+    }
+}
+
+@media (max-width: 899px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 82%;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 75%;
+    }
+}
+
 .js .slider-v23--related-courses__wrap .course-card-v23__details {
     background: white;
     height: 100%;
@@ -12900,8 +12918,16 @@ svg:not(:root) {
 
 .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-overflow: ellipsis;
     overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        border: thin solid lime;
+        line-clamp: 4;
+        display: -webkit-box;
+        box-orient: vertical;
+    }
 }
 
 .js .slider-v23--related-courses__wrap .course-card-v23__content {
