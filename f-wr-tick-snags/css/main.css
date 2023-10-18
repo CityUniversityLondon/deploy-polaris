@@ -13544,6 +13544,12 @@ svg:not(:root) {
     }
 }
 
+.courses-v23__structure .courses-v23__structure__content div[data-popup-def-list-category] li h5, .courses-v23__structure .courses-v23__structure__content div[data-popup-def-list-category] li h6 {
+    font-weight: 450;
+    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
 @media (min-width: 901px) {
     .courses-v23__study-abroad {
         grid-template-columns: repeat(18, 1fr);
