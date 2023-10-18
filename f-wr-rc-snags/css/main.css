@@ -12893,6 +12893,12 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 499px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 100%;
+    }
+}
+
 .js .slider-v23--related-courses__wrap .course-card-v23__details {
     background: white;
     height: 100%;
@@ -12950,6 +12956,12 @@ svg:not(:root) {
 @media (max-width: 767px) {
     .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
         -webkit-line-clamp: inherit;
+    }
+}
+
+@media (max-width: 431px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        -webkit-line-clamp: 6;
     }
 }
 
