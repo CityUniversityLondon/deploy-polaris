@@ -98,12 +98,13 @@
 }
 
 .bold,
-.highlighted-content-v23__heading {
+.highlighted-content-v23 .highlighted-content-v23__heading,
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading,
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
     font-weight: 700;
 }
 
-.meta,
-.highlighted-content-v23__heading {
+.meta {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
@@ -26268,6 +26269,65 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin: 0;
 }
 
+.highlighted-content-v23 .highlighted-content-v23__heading {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-size: 1.266rem;
+    line-height: 1.33333;
+    letter-spacing: -0.011em;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.highlighted-content-v23 .highlighted-content-v23__heading i,
+.highlighted-content-v23 .highlighted-content-v23__heading em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+}
+
+.highlighted-content-v23 .highlighted-content-v23__heading b,
+.highlighted-content-v23 .highlighted-content-v23__heading strong {
+    font-weight: inherit;
+}
+
+.highlighted-content-v23 .highlighted-content-v23__heading i,
+.highlighted-content-v23 .highlighted-content-v23__heading em {
+    font-style: italic;
+}
+
+.highlighted-content-v23 .highlighted-content-v23__heading u {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.013em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.015em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+.highlighted-content-v23 .highlighted-content-v23__heading b,
+.highlighted-content-v23 .highlighted-content-v23__heading strong {
+    font-weight: 600;
+}
+
 .ug-courses-v23 .highlighted-content-v23 {
     border-left: 0.5rem solid #e35205;
     margin-bottom: 1rem;
@@ -26282,6 +26342,65 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin: 0;
 }
 
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-size: 1.266rem;
+    line-height: 1.33333;
+    letter-spacing: -0.011em;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+}
+
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading b,
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading strong {
+    font-weight: inherit;
+}
+
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
+    font-style: italic;
+}
+
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading u {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.013em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.015em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading b,
+.ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading strong {
+    font-weight: 600;
+}
+
 .pg-courses-v23 .highlighted-content-v23 {
     border-left: 0.5rem solid #3457F1;
     margin-bottom: 1rem;
@@ -26294,6 +26413,65 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .pg-courses-v23 .highlighted-content-v23 *:last-child {
     margin: 0;
+}
+
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-size: 1.266rem;
+    line-height: 1.33333;
+    letter-spacing: -0.011em;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+}
+
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading b,
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading strong {
+    font-weight: inherit;
+}
+
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
+    font-style: italic;
+}
+
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading u {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.013em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.015em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading b,
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading strong {
+    font-weight: 600;
 }
 
 .text-highlight {
