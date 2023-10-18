@@ -12884,6 +12884,30 @@ svg:not(:root) {
     width: 100%;
 }
 
+@media (max-width: 1199px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 85%;
+    }
+}
+
+@media (max-width: 899px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 82%;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 75%;
+    }
+}
+
+@media (max-width: 499px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 100%;
+    }
+}
+
 .js .slider-v23--related-courses__wrap .course-card-v23__details {
     background: white;
     height: 100%;
@@ -12898,6 +12922,18 @@ svg:not(:root) {
     color: #1e1e1e;
 }
 
+@media (max-width: 1199px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details {
+        padding: 1.25rem;
+    }
+}
+
 .js .slider-v23--related-courses__wrap .course-card-v23__details__title {
     font-weight: 700;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -12909,8 +12945,33 @@ svg:not(:root) {
 
 .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-overflow: ellipsis;
     overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@media (max-width: 899px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        -webkit-line-clamp: 4;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        -webkit-line-clamp: inherit;
+    }
+}
+
+@media (max-width: 431px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        -webkit-line-clamp: 6;
+    }
 }
 
 .js .slider-v23--related-courses__wrap .course-card-v23__content {
