@@ -12050,6 +12050,10 @@ svg:not(:root) {
     font-size: 0.875rem;
 }
 
+.courses-v23__summary__image {
+    margin-bottom: 1rem;
+}
+
 .courses-v23__summary__content {
     grid-column: 1 / 13;
 }
@@ -42807,7 +42811,7 @@ html {
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
 }
 
-@media (max-width: 899px) {
+@media (max-width: 900px) {
     .square-animation-v23 .square-animation-v23__wrap {
         height: 100%;
     }
@@ -42823,9 +42827,10 @@ html {
     }
     .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
         content: '';
-        height: 0.5rem;
-        width: 0.5rem;
+        height: 0.75rem;
+        width: 0.75rem;
         display: inherit;
+        opacity: 0;
     }
 }
 
@@ -42845,7 +42850,7 @@ html {
 }
 
 .pg-courses-v23 .square-animation-v23__square:before {
-    background: #a1a1a1;
+    background: #006699;
 }
 
 @keyframes square-twinkle-animation {
