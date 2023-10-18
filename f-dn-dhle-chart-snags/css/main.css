@@ -12082,6 +12082,10 @@ svg:not(:root) {
     font-size: 0.875rem;
 }
 
+.courses-v23__summary__image {
+    margin-bottom: 1rem;
+}
+
 .courses-v23__summary__content {
     grid-column: 1 / 13;
 }
@@ -12912,6 +12916,30 @@ svg:not(:root) {
     width: 100%;
 }
 
+@media (max-width: 1199px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 85%;
+    }
+}
+
+@media (max-width: 899px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 82%;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 75%;
+    }
+}
+
+@media (max-width: 499px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__wrap {
+        height: 100%;
+    }
+}
+
 .js .slider-v23--related-courses__wrap .course-card-v23__details {
     background: white;
     height: 100%;
@@ -12926,6 +12954,18 @@ svg:not(:root) {
     color: #1e1e1e;
 }
 
+@media (max-width: 1199px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details {
+        padding: 1.25rem;
+    }
+}
+
 .js .slider-v23--related-courses__wrap .course-card-v23__details__title {
     font-weight: 700;
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -12937,8 +12977,33 @@ svg:not(:root) {
 
 .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
     font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-overflow: ellipsis;
     overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@media (max-width: 899px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        -webkit-line-clamp: 4;
+    }
+}
+
+@media (max-width: 767px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        -webkit-line-clamp: inherit;
+    }
+}
+
+@media (max-width: 431px) {
+    .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
+        -webkit-line-clamp: 6;
+    }
 }
 
 .js .slider-v23--related-courses__wrap .course-card-v23__content {
@@ -13577,6 +13642,12 @@ svg:not(:root) {
     }
 }
 
+.courses-v23__structure .courses-v23__structure__content div[data-popup-def-list-category] li h5, .courses-v23__structure .courses-v23__structure__content div[data-popup-def-list-category] li h6 {
+    font-weight: 450;
+    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
 @media (min-width: 901px) {
     .courses-v23__study-abroad {
         grid-template-columns: repeat(18, 1fr);
@@ -13686,16 +13757,16 @@ svg:not(:root) {
     }
 }
 
-.ug-courses-v23 .courses-v23__structure__content ul {
+.ug-courses-v23 .courses-v23__list-style-tick {
     list-style-type: none;
     margin-left: 0;
 }
 
-.ug-courses-v23 .courses-v23__structure__content ul li {
+.ug-courses-v23 .courses-v23__list-style-tick li {
     display: flex;
 }
 
-.ug-courses-v23 .courses-v23__structure__content ul li:before {
+.ug-courses-v23 .courses-v23__list-style-tick li:before {
     display: block;
     font-family: 'FontAwesome';
     content: "";
@@ -13703,16 +13774,16 @@ svg:not(:root) {
     padding-right: 0.5rem;
 }
 
-.pg-courses-v23 .courses-v23__structure__content ul {
+.pg-courses-v23 .courses-v23__list-style-tick {
     list-style-type: none;
     margin-left: 0;
 }
 
-.pg-courses-v23 .courses-v23__structure__content ul li {
+.pg-courses-v23 .courses-v23__list-style-tick li {
     display: flex;
 }
 
-.pg-courses-v23 .courses-v23__structure__content ul li:before {
+.pg-courses-v23 .courses-v23__list-style-tick li:before {
     display: block;
     font-family: 'FontAwesome';
     content: "";
@@ -42833,7 +42904,7 @@ html {
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
 }
 
-@media (max-width: 899px) {
+@media (max-width: 900px) {
     .square-animation-v23 .square-animation-v23__wrap {
         height: 100%;
     }
@@ -42849,9 +42920,10 @@ html {
     }
     .square-animation-v23 .square-animation-v23__wrap .square-animation-v23__square:before {
         content: '';
-        height: 0.5rem;
-        width: 0.5rem;
+        height: 0.75rem;
+        width: 0.75rem;
         display: inherit;
+        opacity: 0;
     }
 }
 
@@ -42871,7 +42943,7 @@ html {
 }
 
 .pg-courses-v23 .square-animation-v23__square:before {
-    background: #a1a1a1;
+    background: #006699;
 }
 
 @keyframes square-twinkle-animation {
