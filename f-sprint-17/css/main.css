@@ -11167,7 +11167,8 @@ svg:not(:root) {
     grid-column: 1/13;
 }
 
-.courses-v23--fee h2, .courses-v23--fee h3 {
+.courses-v23--fee h2,
+.courses-v23--fee h3 {
     grid-column: 1/-1;
 }
 
@@ -11234,6 +11235,12 @@ svg:not(:root) {
 
 .courses-v23__fee-block {
     grid-column: span 6;
+}
+
+@media (max-width: 650px) {
+    .courses-v23__fee-block:first-of-type .courses-v23--fee__heading {
+        margin-top: 0;
+    }
 }
 
 .courses-v23__fee__inner {
