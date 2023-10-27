@@ -42686,8 +42686,11 @@ html {
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:hover, .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:focus, .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button:active {
         background-color: #ececec;
     }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator {
+        transform: rotate(180deg);
+    }
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator:before {
-        content: "\f054";
+        content: '\f078';
         font-family: "FontAwesome";
         height: initial;
         width: initial;
@@ -42699,6 +42702,9 @@ html {
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading[data-open='true'] button {
         background-color: #ececec;
         border-bottom: none;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading[data-open='true'] .accordion-v23__heading__indicator::before {
+        transform: rotate(180deg);
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
         background-color: #ececec;
@@ -42734,7 +42740,6 @@ html {
         border-width: 0;
         position: relative;
         cursor: pointer;
-        transition: transform 1s ease;
         display: inline-block;
         border: 0.12rem solid #1e1e1e;
         border-radius: 50%;
@@ -42743,17 +42748,17 @@ html {
         justify-content: center;
     }
     .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::before, .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::after {
-        content: "";
+        content: '';
         background-color: currentColor;
         width: 0.2rem;
         height: 1rem;
         display: block;
         position: absolute;
-        animation: depressed 0.1s ease both;
         margin: 0.5rem;
+        transition: transform 0.4s ease;
     }
-    .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::after {
-        animation: bar 0.1s ease both reverse;
+    .js .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::before {
+        transform: rotate(90deg);
     }
     .js .accordion-v23 .accordion-v23__heading button:hover {
         background-color: #ffffff;
@@ -42789,11 +42794,8 @@ html {
         text-decoration: underline;
         background-color: #ffffff;
     }
-    .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator {
-        animation: pressed 0.1s ease both;
-    }
     .js .accordion-v23 .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__indicator::after {
-        animation: bar 0.1s ease both;
+        transform: rotate(90deg);
     }
     .js .accordion-v23 .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
         border: 0.12rem solid #d8d8d8;
@@ -42825,36 +42827,6 @@ html {
     }
     .js .accordion-v23 .accordion-v23__heading + .accordion-v23__body[data-closed='true'] {
         display: none;
-    }
-}
-
-@keyframes pressed {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(90deg);
-    }
-}
-
-@keyframes depressed {
-    0% {
-        transform: rotateZ(90deg);
-    }
-    99.999% {
-        transform: rotateZ(180deg);
-    }
-    100% {
-        transform: rotateZ(0deg);
-    }
-}
-
-@keyframes bar {
-    from {
-        transform: rotateZ(-90deg);
-    }
-    to {
-        transform: rotateZ(0deg);
     }
 }
 
