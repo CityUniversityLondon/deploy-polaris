@@ -24524,6 +24524,20 @@ function stickyNavHeight() {
 }
 
 /**
+ * Check if accordion is a sub accordion and return the heading
+ *
+ */
+function isSubAccordion(heading) {
+  var accordionParentBodyWrap = heading.parentElement.closest('.accordion-v23__body');
+  var parentHeadingElem = accordionParentBodyWrap.previousElementSibling;
+  if (parentHeadingElem.classList.contains("".concat(headingClassName))) {
+    return parentHeadingElem;
+  } else {
+    return false;
+  }
+}
+
+/**
  * Respond to button clicks - open if closed, close if open.
  *
  * If opening, will also push the heading ID into the history, so C+Ping the URL
@@ -24543,7 +24557,7 @@ function buttonClick(button, headings, toggleOpen) {
     history.pushState({}, null, location.href.split('#')[0]);
   } else {
     // updates URL hash with accordion heading, when accordion opens
-    history.pushState({}, null, "#".concat(button.parentElement.id));
+    history.pushState({}, null, "#".concat(heading.id));
   }
 
   /**
@@ -24563,6 +24577,8 @@ function buttonClick(button, headings, toggleOpen) {
       subAccordions.forEach(function (sub) {
         var subAccordionHeading = sub.querySelector(".".concat(headingClassName));
         var subAccordionSection = sub.querySelector(".".concat(bodyClassName));
+
+        //If the sub accordion is open close it.
         if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(sub.dataset.open)) {
           // Starting height is the current height
           setupTransition(subAccordionSection, subAccordionSection.offsetHeight + 'px');
@@ -24699,11 +24715,8 @@ function launch(accordion) {
       //Check if current accordion matches the accordion that the ID is a direct child of
       var currentAccordionHeading = heading.closest(".".concat(className)) === accordion;
       if (!currentAccordionHeading) {
-        //If not current accordion heading, find parent accordion heading.
-        var accordionParentBodyWrap = heading.parentElement.closest('.accordion-v23__body');
-        var parentHeadingElem = accordionParentBodyWrap.previousElementSibling;
-        if (parentHeadingElem.classList.contains("".concat(headingClassName))) {
-          heading = parentHeadingElem;
+        if (isSubAccordion(heading)) {
+          heading = isSubAccordion(heading);
         }
       }
       setTimeout(function () {
