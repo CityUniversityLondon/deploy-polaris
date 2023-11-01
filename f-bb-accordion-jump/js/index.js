@@ -24529,11 +24529,13 @@ function stickyNavHeight() {
  */
 function isSubAccordion(heading) {
   var accordionParentBodyWrap = heading.parentElement.closest('.accordion-v23__body');
-  var parentHeadingElem = accordionParentBodyWrap.previousElementSibling;
-  if (parentHeadingElem.classList.contains("".concat(headingClassName))) {
-    return parentHeadingElem;
-  } else {
-    return false;
+  if (accordionParentBodyWrap) {
+    var parentHeadingElem = accordionParentBodyWrap.previousElementSibling;
+    if (parentHeadingElem.classList.contains("".concat(headingClassName))) {
+      return parentHeadingElem;
+    } else {
+      return false;
+    }
   }
 }
 
@@ -24554,7 +24556,12 @@ function buttonClick(button, headings, toggleOpen) {
   var subAccordions = accordionSection.querySelectorAll('.accordion-v23__section');
   if (button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded) === 'true') {
     // updates URL hash, by removing hash from URL when accordion closes
-    history.pushState({}, null, location.href.split('#')[0]);
+    if (isSubAccordion(heading)) {
+      var subHeading = isSubAccordion(heading);
+      history.pushState({}, null, "#".concat(subHeading.id));
+    } else {
+      history.pushState({}, null, location.href.split('#')[0]);
+    }
   } else {
     // updates URL hash with accordion heading, when accordion opens
     history.pushState({}, null, "#".concat(heading.id));
