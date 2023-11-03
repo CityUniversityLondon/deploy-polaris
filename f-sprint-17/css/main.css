@@ -13774,9 +13774,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__list-style-tick li {
-    position: relative;
-    padding-left: 1.5rem;
-    list-style: none;
+    display: flex;
 }
 
 .ug-courses-v23 .courses-v23__list-style-tick li:before {
@@ -13785,8 +13783,6 @@ svg:not(:root) {
     content: "";
     color: #e35205;
     padding-right: 0.5rem;
-    position: absolute;
-    left: 0;
 }
 
 .pg-courses-v23 .courses-v23__list-style-tick {
@@ -13795,9 +13791,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__list-style-tick li {
-    position: relative;
-    padding-left: 1.5rem;
-    list-style: none;
+    display: flex;
 }
 
 .pg-courses-v23 .courses-v23__list-style-tick li:before {
@@ -13806,8 +13800,6 @@ svg:not(:root) {
     content: "";
     color: #3457F1;
     padding-right: 0.5rem;
-    position: absolute;
-    left: 0;
 }
 
 .vertical-menu__page-link,
@@ -30340,9 +30332,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .ug-courses-v23 .ksp-ordered-list--tick ul li {
-    position: relative;
-    padding-left: 1.5rem;
-    list-style: none;
+    display: flex;
 }
 
 .ug-courses-v23 .ksp-ordered-list--tick ul li:before {
@@ -30351,8 +30341,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     content: "";
     color: #e35205;
     padding-right: 0.5rem;
-    position: absolute;
-    left: 0;
 }
 
 .pg-courses-v23 .ksp-v23-wrapper--dark {
@@ -30402,9 +30390,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pg-courses-v23 .ksp-ordered-list--tick ul li {
-    position: relative;
-    padding-left: 1.5rem;
-    list-style: none;
+    display: flex;
 }
 
 .pg-courses-v23 .ksp-ordered-list--tick ul li:before {
@@ -30413,8 +30399,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     content: "";
     color: #3457F1;
     padding-right: 0.5rem;
-    position: absolute;
-    left: 0;
 }
 
 .block-links__bg {
