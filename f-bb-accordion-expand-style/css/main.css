@@ -13589,6 +13589,10 @@ svg:not(:root) {
     margin-bottom: 1.25rem;
 }
 
+.courses-v23 sub, .courses-v23 sup {
+    font-size: 0.65em;
+}
+
 @media (min-width: 901px) {
     .courses-v23__grid-18 {
         display: grid;
@@ -13770,7 +13774,9 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__list-style-tick li {
-    display: flex;
+    position: relative;
+    padding-left: 1.5rem;
+    list-style: none;
 }
 
 .ug-courses-v23 .courses-v23__list-style-tick li:before {
@@ -13779,6 +13785,8 @@ svg:not(:root) {
     content: "";
     color: #e35205;
     padding-right: 0.5rem;
+    position: absolute;
+    left: 0;
 }
 
 .pg-courses-v23 .courses-v23__list-style-tick {
@@ -13787,7 +13795,9 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__list-style-tick li {
-    display: flex;
+    position: relative;
+    padding-left: 1.5rem;
+    list-style: none;
 }
 
 .pg-courses-v23 .courses-v23__list-style-tick li:before {
@@ -13796,6 +13806,8 @@ svg:not(:root) {
     content: "";
     color: #3457F1;
     padding-right: 0.5rem;
+    position: absolute;
+    left: 0;
 }
 
 .vertical-menu__page-link,
@@ -30328,7 +30340,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .ug-courses-v23 .ksp-ordered-list--tick ul li {
-    display: flex;
+    position: relative;
+    padding-left: 1.5rem;
+    list-style: none;
 }
 
 .ug-courses-v23 .ksp-ordered-list--tick ul li:before {
@@ -30337,6 +30351,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     content: "";
     color: #e35205;
     padding-right: 0.5rem;
+    position: absolute;
+    left: 0;
 }
 
 .pg-courses-v23 .ksp-v23-wrapper--dark {
@@ -30386,7 +30402,9 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pg-courses-v23 .ksp-ordered-list--tick ul li {
-    display: flex;
+    position: relative;
+    padding-left: 1.5rem;
+    list-style: none;
 }
 
 .pg-courses-v23 .ksp-ordered-list--tick ul li:before {
@@ -30395,6 +30413,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     content: "";
     color: #3457F1;
     padding-right: 0.5rem;
+    position: absolute;
+    left: 0;
 }
 
 .block-links__bg {
