@@ -25003,13 +25003,32 @@ var className = 'square-animation-v23';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace.js */ "./node_modules/core-js/modules/es6.regexp.replace.js");
-/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.symbol.js */ "./node_modules/core-js/modules/es6.symbol.js");
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.array.from.js */ "./node_modules/core-js/modules/es6.array.from.js");
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.string.iterator.js */ "./node_modules/core-js/modules/es6.string.iterator.js");
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.object.to-string.js */ "./node_modules/core-js/modules/es6.object.to-string.js");
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.array.iterator.js */ "./node_modules/core-js/modules/es6.array.iterator.js");
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace.js */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
 
 
 
 function launch(el) {
-  var scrollActiveLink = window.location.hash ? window.location.hash : '';
+  var scrollActiveLink = '';
+
   /*
   // Create the observer helper div and appended to the DOM
   */
@@ -25018,6 +25037,11 @@ function launch(el) {
   var lastScrollPos = window.scrollY;
   observerHelper.id = 'nav-sticky__helper';
   el.parentNode.insertBefore(observerHelper, el);
+
+  /*
+  // Reference to the sticky nav sections
+  */
+  var contentSections = document.querySelectorAll('.sticky-nav__sec');
   /*
   // Observer to watching menu position and make it stick
   */
@@ -25033,42 +25057,54 @@ function launch(el) {
     });
   }
   createObserverStickyNav(observerHelper);
-  if (location.hash) {
-    //Needed to solve firefox issue, when a page is first loaded it doesn't scroll to position. Not an issue if page is refreshed.
-    setTimeout(function () {
-      var elId = location.hash.replace('#', '');
+  if (window.location.hash) {
+    var currentHash = window.location.hash.substring(1);
+    var matchedHash = Array.from(contentSections).some(function (section) {
+      return section.id === currentHash;
+    });
+    if (matchedHash) {
+      scrollActiveLink = window.location.hash;
+      var elId = scrollActiveLink.replace('#', '');
       var scrollToEl = document.getElementById(elId);
-      scrollToEl.scrollIntoView(true);
-    }, 700);
+      setTimeout(function () {
+        scrollToEl.scrollIntoView();
+        highlightNavMenuItem();
+      }, 700);
+    }
   }
 
   /*
   // Observer to watching different content sections and highlight corresponding menu item
   */
 
-  var contentSections = document.querySelectorAll('.sticky-nav__sec');
   function handleIntersect_contentSections(entries) {
     var scrollTop = window.scrollY;
-    entries.forEach(function (entry) {
-      if (scrollTop >= lastScrollPos) {
-        if (entry.isIntersecting) {
-          highlightNavMenuItem(entry.target);
+    if (!scrollActiveLink) {
+      entries.forEach(function (entry) {
+        if (scrollTop >= lastScrollPos) {
+          if (entry.isIntersecting) {
+            highlightNavMenuItem(entry.target);
+          }
+        } else {
+          if (!entry.isIntersecting) {
+            highlightNavMenuItem(entry.target.previousElementSibling);
+          }
         }
-      } else {
-        if (!entry.isIntersecting) {
-          highlightNavMenuItem(entry.target.previousElementSibling);
-        }
-      }
-    });
+      });
+    }
     lastScrollPos = scrollTop;
   }
+
+  // function setSectionObserver() {
+  // Can observe and unobserve the sections if needed.
+  // }
   function createObserverContentSections() {
-    var options = {
+    var observerContentSectionsOptions = {
       root: null,
       threshold: 0,
       rootMargin: "-".concat(stickNavHeight, "px 0px -60% 0px")
     };
-    var observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
+    var observerContentSections = new IntersectionObserver(handleIntersect_contentSections, observerContentSectionsOptions);
     contentSections.forEach(function (area) {
       observerContentSections.observe(area);
     });
@@ -25117,38 +25153,79 @@ function launch(el) {
   var anchorLinksOnPage = document.querySelectorAll('a[href^="#"]');
   function highlightNavMenuItem(elem) {
     stickyNavMenuItemLinks.forEach(function (item) {
-      if (item.getAttribute('href') === '#' + elem.id && !scrollActiveLink) {
-        item.classList.add('nav-sticky__item__link__active');
-        scrollNavItemToView(item);
-      } else if (item.getAttribute('href') === '#' + elem.id && scrollActiveLink === '#' + elem.id) {
-        setTimeout(function () {
+      if (scrollActiveLink) {
+        if (item.getAttribute('href') === scrollActiveLink) {
           item.classList.add('nav-sticky__item__link__active');
-          scrollActiveLink = ''; // clears value to indicate the page has now scrolled down to the clicked link
-          scrollNavItemToView(item);
-        }, '300');
+          scrollNavItemToView(item, 700);
+        } else {
+          item.classList.remove('nav-sticky__item__link__active');
+        }
       } else {
-        item.classList.remove('nav-sticky__item__link__active');
+        if (item.getAttribute('href') === '#' + elem.id && !scrollActiveLink) {
+          item.classList.add('nav-sticky__item__link__active');
+          scrollNavItemToView(item, 700);
+        } else {
+          item.classList.remove('nav-sticky__item__link__active');
+        }
       }
     });
+    setTimeout(function () {
+      //Once scrollend event has better support that could be used.
+      scrollActiveLink = '';
+    }, 700);
   }
   function scrollNavItemToView(item) {
+    var delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
     var stickyNavItems = document.querySelector('.nav-sticky__items');
     var stickyNavItemsWidth = stickyNavItems.offsetWidth;
-    stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
+    setTimeout(function () {
+      stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
+    }, delay);
   }
-  window.addEventListener('hashchange', function () {
-    scrollActiveLink = window.location.hash;
-  });
+
+  // window.addEventListener('hashchange', () => {
+  //     console.log('hash change');
+  //     scrollActiveLink = window.location.hash;
+  // });
+
   anchorLinksOnPage.forEach(function (item) {
-    item.addEventListener('click', function () {
+    item.addEventListener('click', function (e) {
       // If clicked hash is already in the url remove so it gets added again to trigger the hashchange listener
-      var hrefValue = item.getAttribute('href');
-      if (hrefValue === window.location.hash) {
-        window.location.hash = '';
-      }
+      var hrefValue = e.target.getAttribute('href');
+      // if (hrefValue === window.location.hash) {
+      //     window.location.hash = '';
+      // }
+      scrollActiveLink = hrefValue;
+      highlightNavMenuItem(e.target);
     });
   });
+
+  /*
+  // Create Debug Area
+  // Useful to help see when a section will trigger the observer
+  // Some settings like height and top will need amend if rootMargin is changed
+  */
+
+  // function createDebugArea() {
+  //     const debugArea = document.createElement('div');
+  //     debugArea.id = 'debugArea';
+  //     const debugAreaStyles = {
+  //         'z-index': '1000',
+  //         'background-color': 'rgba(0,128,0,.5)',
+  //         position: 'fixed',
+  //         top: '69px',
+  //         left: '0',
+  //         width: '100vw',
+  //         height: 'calc(100vh - (69px + 60%))',
+  //         'pointer-events': 'none',
+  //     };
+  //     Object.assign(debugArea.style, debugAreaStyles);
+  //     document.body.appendChild(debugArea);
+  // }
+
+  // createDebugArea();
 }
+
 var className = 'nav-sticky__wrap';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
