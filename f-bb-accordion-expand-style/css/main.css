@@ -42673,6 +42673,7 @@ html {
         border-bottom: none;
     }
     .js .accordion-v23 .accordion-v23__section[data-open='true'] {
+        position: relative;
         outline: 0.12rem dotted #1e1e1e;
         outline-offset: 0.24rem;
     }
