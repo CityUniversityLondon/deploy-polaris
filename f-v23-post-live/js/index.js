@@ -24434,7 +24434,7 @@ var className = 'accordion-v23',
   tenthOfASecond = 100;
 
 /**
- * Only triggeered on page load when an accordion address is present in the URL. 
+ * Only triggeered on page load when an accordion address is present in the URL.
  * This function ensures that the page scrolls down to this accrodion heading, by checking if it scrolled
  * down far enough, if not then try again automatically
  *
@@ -24524,6 +24524,22 @@ function stickyNavHeight() {
 }
 
 /**
+ * Check if accordion is a sub accordion and return the heading
+ *
+ */
+function isSubAccordion(heading) {
+  var accordionParentBodyWrap = heading.parentElement.closest('.accordion-v23__body');
+  if (accordionParentBodyWrap) {
+    var parentHeadingElem = accordionParentBodyWrap.previousElementSibling;
+    if (parentHeadingElem.classList.contains("".concat(headingClassName))) {
+      return parentHeadingElem;
+    } else {
+      return false;
+    }
+  }
+}
+
+/**
  * Respond to button clicks - open if closed, close if open.
  *
  * If opening, will also push the heading ID into the history, so C+Ping the URL
@@ -24535,14 +24551,20 @@ function stickyNavHeight() {
  * @param {boolean} [toggleOpen] - Should other accordion sections close? Default to false.
  */
 function buttonClick(button, headings, toggleOpen) {
-  var heading = button.parentNode,
-    accordionSection = heading.nextElementSibling;
+  var heading = button.parentNode;
+  var accordionSection = heading.nextElementSibling;
+  var subAccordions = accordionSection.querySelectorAll('.accordion-v23__section');
   if (button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded) === 'true') {
     // updates URL hash, by removing hash from URL when accordion closes
-    history.pushState({}, null, location.href.split('#')[0]);
+    if (isSubAccordion(heading)) {
+      var subHeading = isSubAccordion(heading);
+      history.pushState({}, null, "#".concat(subHeading.id));
+    } else {
+      history.pushState({}, null, location.href.split('#')[0]);
+    }
   } else {
     // updates URL hash with accordion heading, when accordion opens
-    window.location.hash = event.currentTarget.parentElement.id;
+    history.pushState({}, null, "#".concat(heading.id));
   }
 
   /**
@@ -24557,6 +24579,24 @@ function buttonClick(button, headings, toggleOpen) {
     once: true
   });
   if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded))) {
+    //Check for sub accordions and close if open
+    if (subAccordions.length > 0) {
+      subAccordions.forEach(function (sub) {
+        var subAccordionHeading = sub.querySelector(".".concat(headingClassName));
+        var subAccordionSection = sub.querySelector(".".concat(bodyClassName));
+
+        //If the sub accordion is open close it.
+        if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(sub.dataset.open)) {
+          // Starting height is the current height
+          setupTransition(subAccordionSection, subAccordionSection.offsetHeight + 'px');
+          // setTimeout lets the DOM recalculate before we continue, so the transition will fire
+          setTimeout(function () {
+            subAccordionSection.style.height = '0px';
+          }, tenthOfASecond);
+          setSection(subAccordionHeading, false);
+        }
+      });
+    }
     // Starting height is the current height
     setupTransition(accordionSection, accordionSection.offsetHeight + 'px');
     // setTimeout lets the DOM recalculate before we continue, so the transition will fire
@@ -24564,7 +24604,7 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = '0px';
     }, tenthOfASecond);
     setSection(heading, false);
-    scrollToHeading(heading);
+    //scrollToHeading(heading);
   } else {
     // Calclulate and save how big we're transitioning to
     var sectionHeight = calculateAccordionBodyHeight(heading);
@@ -24586,7 +24626,7 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    scrollToHeading(heading);
+    //scrollToHeading(heading);
   }
 }
 
@@ -24677,9 +24717,15 @@ function launch(accordion) {
   if (window.location.hash) {
     //finds accordion heading in URL
     var urlHash = window.location.hash;
-    var heading = accordion.querySelector('' + urlHash + '');
+    var heading = accordion.querySelector(urlHash);
     if (heading) {
-      // Wait for DOM to load before accessing selected accordion
+      //Check if current accordion matches the accordion that the ID is a direct child of
+      var currentAccordionHeading = heading.closest(".".concat(className)) === accordion;
+      if (!currentAccordionHeading) {
+        if (isSubAccordion(heading)) {
+          heading = isSubAccordion(heading);
+        }
+      }
       setTimeout(function () {
         setSection(heading, true);
         heading.nextElementSibling.dataset.closed = 'false';
