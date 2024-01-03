@@ -12369,8 +12369,9 @@ svg:not(:root) {
 
 .site-search__container__toggle-label:before {
     font-family: "Font Awesome 6 Pro";
-    content: \f002;
+    content: "\f002";
     font-size: 1.2rem;
+    font-weight: 900;
 }
 
 .site-search__toggle,
@@ -12421,7 +12422,8 @@ svg:not(:root) {
 
 .site-search__button span:before {
     font-family: "Font Awesome 6 Pro";
-    content: \f002;
+    content: "\f002";
+    font-weight: 900;
     font-size: 1.2rem;
     height: 100%;
     line-height: 100%;
@@ -12432,7 +12434,7 @@ svg:not(:root) {
 }
 
 .site-search__toggle:checked + .site-search__container .site-search__container__toggle-label:before {
-    content: \f00d;
+    content: "\f00d";
 }
 
 .search-page {
