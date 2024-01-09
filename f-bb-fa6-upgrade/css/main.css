@@ -28587,7 +28587,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: block;
     position: absolute;
     right: 0;
-    font-weight: 300;
 }
 
 @media (max-width: 900px) {
