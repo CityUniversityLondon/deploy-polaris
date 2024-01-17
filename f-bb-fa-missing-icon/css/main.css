@@ -1329,6 +1329,18 @@
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
+.fa-address-card::before {
+    content: "\f2bb";
+}
+
+.fa-contact-card::before {
+    content: "\f2bb";
+}
+
+.fa-vcard::before {
+    content: "\f2bb";
+}
+
 .fa-angle-down::before {
     content: "\f107";
 }
@@ -1477,6 +1489,10 @@ readers do not read off random characters that represent icons */
     content: "\f0e0";
 }
 
+.fa-fax::before {
+    content: "\f1ac";
+}
+
 .fa-file-lines::before {
     content: "\f15c";
 }
@@ -1499,6 +1515,10 @@ readers do not read off random characters that represent icons */
 
 .fa-cogs::before {
     content: "\f085";
+}
+
+.fa-globe::before {
+    content: "\f0ac";
 }
 
 .fa-graduation-cap::before {
@@ -1547,6 +1567,18 @@ readers do not read off random characters that represent icons */
 
 .fa-subtract::before {
     content: "\f068";
+}
+
+.fa-mobile::before {
+    content: "\f3ce";
+}
+
+.fa-mobile-android::before {
+    content: "\f3ce";
+}
+
+.fa-mobile-phone::before {
+    content: "\f3ce";
 }
 
 .fa-pause::before, .video-banner__play span::before {
@@ -1680,6 +1712,10 @@ readers do not read off random characters that represent icons */
 
 .fa-facebook-f:before {
     content: "\f39e";
+}
+
+.fa-google:before {
+    content: "\f1a0";
 }
 
 .fa-instagram:before {
