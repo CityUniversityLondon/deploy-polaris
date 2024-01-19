@@ -35018,8 +35018,9 @@ News events landing overrides */
 }
 
 .cass-news-search .cass-news-results__close .icon-remove:before {
-    content: '\f00d';
-    font-family: FontAwesome;
+    font-family: "Font Awesome 6 Pro";
+    content: "\f00d";
+    font-weight: 900;
 }
 
 .cass-news-search .news-finder__form {
