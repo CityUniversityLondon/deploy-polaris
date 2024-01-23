@@ -29441,7 +29441,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     }
 }
 
-.footer-meta__card h5, .footer-meta__card h3 {
+.footer-meta__card h3 {
     font-size: 0.89rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -29449,13 +29449,13 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .footer-meta__card h5, .footer-meta__card h3 {
+    .footer-meta__card h3 {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-    .footer-meta__card h5, .footer-meta__card h3 {
+    .footer-meta__card h3 {
         font-size: 92px;
     }
 }
