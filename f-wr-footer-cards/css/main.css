@@ -7247,28 +7247,7 @@ svg:not(:root) {
 }
 
 .footer__social a {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
     color: #666666;
-}
-
-.footer__social a:hover, .footer__social a:focus, .footer__social a:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
-.footer__social a:hover {
-    filter: brightness(85%);
-}
-
-.footer__social a:focus {
-    outline: 0.18rem solid #1e1e1e;
-}
-
-.footer__social a:active {
-    outline: 0.12rem dotted #1e1e1e;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
@@ -7346,6 +7325,9 @@ svg:not(:root) {
         border-bottom-color: #555555;
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
+    }
+    .footer__social a:visited {
+        border-bottom-color: #ffffff;
     }
 }
 
