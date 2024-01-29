@@ -7028,21 +7028,12 @@ svg:not(:root) {
 }
 
 .footer__address-details a {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
     background-image: none;
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
     position: relative;
-}
-
-.footer__address-details a:hover, .footer__address-details a:focus, .footer__address-details a:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
 }
 
 .footer__address-details a:focus, .footer__address-details a:active {
@@ -7070,6 +7061,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__address-details a:visited {
@@ -7085,6 +7077,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__address-details a:hover:before {
@@ -7097,6 +7090,7 @@ svg:not(:root) {
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
+    background-color: inherit;
 }
 
 .footer__misc-links {
@@ -7134,21 +7128,12 @@ svg:not(:root) {
 
 .footer__misc-links a {
     font-size: 0.89rem;
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
     background-image: none;
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
     position: relative;
-}
-
-.footer__misc-links a:hover, .footer__misc-links a:focus, .footer__misc-links a:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
 }
 
 .footer__misc-links a:focus, .footer__misc-links a:active {
@@ -7176,6 +7161,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__misc-links a:visited {
@@ -7191,6 +7177,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__misc-links a:hover:before {
@@ -7203,6 +7190,7 @@ svg:not(:root) {
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
+    background-color: inherit;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
@@ -7264,20 +7252,12 @@ svg:not(:root) {
 
 @media (min-width: 901px) {
     .footer__social a {
-        background-color: inherit;
-        color: inherit;
-        border-bottom-width: 0;
         background-image: none;
         border-bottom-color: #555555;
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
         position: relative;
-    }
-    .footer__social a:hover, .footer__social a:focus, .footer__social a:active {
-        background-color: inherit;
-        color: inherit;
-        outline-width: 0;
     }
     .footer__social a:focus, .footer__social a:active {
         outline-color: #1e1e1e;
@@ -7302,6 +7282,7 @@ svg:not(:root) {
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
+        background-color: inherit;
     }
     .footer__social a:visited {
         border-bottom-color: #555555;
@@ -7315,6 +7296,7 @@ svg:not(:root) {
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
+        background-color: inherit;
     }
     .footer__social a:hover:before {
         opacity: 1;
@@ -7325,6 +7307,7 @@ svg:not(:root) {
         border-bottom-color: #555555;
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
+        background-color: inherit;
     }
     .footer__social a:visited {
         border-bottom-color: #ffffff;
