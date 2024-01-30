@@ -7258,6 +7258,7 @@ svg:not(:root) {
         border-bottom-width: 0.12rem;
         color: #555555;
         position: relative;
+        border-bottom-color: #ffffff;
     }
     .footer__social a:focus, .footer__social a:active {
         outline-color: #1e1e1e;
