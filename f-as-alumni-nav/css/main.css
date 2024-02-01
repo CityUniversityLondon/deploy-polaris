@@ -13040,12 +13040,14 @@ svg:not(:root) {
     outline: 0.12rem dotted #1e1e1e;
 }
 
-.secondary-navigation__list--home i {
+.secondary-navigation__list--home i,
+.secondary-navigation__list--home span {
     position: relative;
-    top: 5px;
+    top: 0.075rem;
 }
 
-.secondary-navigation__list--home:hover i {
+.secondary-navigation__list--home:hover i,
+.secondary-navigation__list--home:hover span {
     top: 0px;
 }
 
