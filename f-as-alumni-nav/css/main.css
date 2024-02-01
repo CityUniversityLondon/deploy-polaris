@@ -2575,6 +2575,7 @@ h2,
 
 h2 {
     font-weight: 600;
+    line-height: 1.802rem;
 }
 
 .gamma,
@@ -7028,21 +7029,12 @@ svg:not(:root) {
 }
 
 .footer__address-details a {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
     background-image: none;
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
     position: relative;
-}
-
-.footer__address-details a:hover, .footer__address-details a:focus, .footer__address-details a:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
 }
 
 .footer__address-details a:focus, .footer__address-details a:active {
@@ -7070,6 +7062,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__address-details a:visited {
@@ -7085,6 +7078,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__address-details a:hover:before {
@@ -7097,6 +7091,7 @@ svg:not(:root) {
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
+    background-color: inherit;
 }
 
 .footer__misc-links {
@@ -7134,21 +7129,12 @@ svg:not(:root) {
 
 .footer__misc-links a {
     font-size: 0.89rem;
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
     background-image: none;
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
     position: relative;
-}
-
-.footer__misc-links a:hover, .footer__misc-links a:focus, .footer__misc-links a:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
 }
 
 .footer__misc-links a:focus, .footer__misc-links a:active {
@@ -7176,6 +7162,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__misc-links a:visited {
@@ -7191,6 +7178,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__misc-links a:hover:before {
@@ -7203,6 +7191,7 @@ svg:not(:root) {
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
+    background-color: inherit;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
@@ -7264,20 +7253,13 @@ svg:not(:root) {
 
 @media (min-width: 901px) {
     .footer__social a {
-        background-color: inherit;
-        color: inherit;
-        border-bottom-width: 0;
         background-image: none;
         border-bottom-color: #555555;
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
         position: relative;
-    }
-    .footer__social a:hover, .footer__social a:focus, .footer__social a:active {
-        background-color: inherit;
-        color: inherit;
-        outline-width: 0;
+        border-bottom-color: #ffffff;
     }
     .footer__social a:focus, .footer__social a:active {
         outline-color: #1e1e1e;
@@ -7302,6 +7284,7 @@ svg:not(:root) {
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
+        background-color: inherit;
     }
     .footer__social a:visited {
         border-bottom-color: #555555;
@@ -7315,6 +7298,7 @@ svg:not(:root) {
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
+        background-color: inherit;
     }
     .footer__social a:hover:before {
         opacity: 1;
@@ -7325,9 +7309,32 @@ svg:not(:root) {
         border-bottom-color: #555555;
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
+        background-color: inherit;
     }
     .footer__social a:visited {
         border-bottom-color: #ffffff;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer__social a {
+        background-color: inherit;
+        color: inherit;
+        border-bottom-width: 0;
+    }
+    .footer__social a:hover, .footer__social a:focus, .footer__social a:active {
+        background-color: inherit;
+        color: inherit;
+        outline-width: 0;
+    }
+    .footer__social a:hover {
+        filter: brightness(85%);
+    }
+    .footer__social a:focus {
+        outline: 0.18rem solid #1e1e1e;
+    }
+    .footer__social a:active {
+        outline: 0.12rem dotted #1e1e1e;
     }
 }
 
@@ -19082,14 +19089,14 @@ svg:not(:root) {
 
 @media (min-width: 651px) {
     .banner-vi--listing[data-animated='yes'].banner-vi--gradient,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .container,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner__container,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner__standfirst,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner__freehtml > div,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner-vi .banner-vi__container,
-    .banner-vi .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner-vi__container,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner-vi--video .video-banner__controls,
-    .banner-vi--video .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .video-banner__controls {
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .container,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner__container,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner__standfirst,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner__freehtml > div,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner-vi .banner-vi__container,
+    .banner-vi .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner-vi__container,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner-vi--video .video-banner__controls,
+    .banner-vi--video .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .video-banner__controls {
         background-size: 400% 400%;
         animation: gradient-wave ease-out 12s infinite;
     }
@@ -33092,7 +33099,8 @@ table tbody > tr > td:hover {
     border-radius: 50%;
     border: none;
     font-family: "Font Awesome 6 Pro";
-    content: \f078;
+    content: "\f078";
+    font-weight: 900;
     background: #1e1e1e;
     color: #ffffff;
     display: flex;
