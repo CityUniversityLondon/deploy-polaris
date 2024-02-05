@@ -105,7 +105,7 @@
 }
 
 .meta {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .sr-only {
@@ -2480,7 +2480,7 @@ body {
 }
 
 html {
-    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    font-family: "Plex Sans", Tahoma, Verdana, sans-serif;
     /**
      * IBM Plex OpenType stylistic sets:
      *
@@ -2537,7 +2537,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     width: 100%;
     display: block;
     flex: 1 0 auto;
@@ -2575,6 +2575,7 @@ h2,
 
 h2 {
     font-weight: 600;
+    line-height: 1.802rem;
 }
 
 .gamma,
@@ -2717,7 +2718,7 @@ figure {
 }
 
 figure figcaption {
-    font-family: "Plex Serif", Arial, Helvetica, serif;
+    font-family: "Plex Serif", Tahoma, Verdana, serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2811,7 +2812,7 @@ iframe[src*='prezi'] {
 }
 
 .h6-style {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1rem;
     line-height: 1.625;
@@ -2870,7 +2871,7 @@ iframe[src*='prezi'] {
 }
 
 .h5-style {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.125rem;
     line-height: 1.33333;
@@ -2928,7 +2929,7 @@ iframe[src*='prezi'] {
 }
 
 .h4-style {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.266rem;
     line-height: 1.33333;
@@ -2986,7 +2987,7 @@ iframe[src*='prezi'] {
 }
 
 .h3-style {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.424rem;
     line-height: 1.33333;
@@ -3044,7 +3045,7 @@ iframe[src*='prezi'] {
 }
 
 .h2-style {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.602rem;
     line-height: 1.33333;
@@ -3102,7 +3103,7 @@ iframe[src*='prezi'] {
 }
 
 .h1-style {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.802rem;
     line-height: 1.33333;
@@ -6227,7 +6228,7 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #666666;
     display: block;
     padding: 0 0.5rem;
@@ -7028,21 +7029,12 @@ svg:not(:root) {
 }
 
 .footer__address-details a {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
     background-image: none;
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
     position: relative;
-}
-
-.footer__address-details a:hover, .footer__address-details a:focus, .footer__address-details a:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
 }
 
 .footer__address-details a:focus, .footer__address-details a:active {
@@ -7070,6 +7062,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__address-details a:visited {
@@ -7085,6 +7078,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__address-details a:hover:before {
@@ -7097,6 +7091,7 @@ svg:not(:root) {
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
+    background-color: inherit;
 }
 
 .footer__misc-links {
@@ -7134,21 +7129,12 @@ svg:not(:root) {
 
 .footer__misc-links a {
     font-size: 0.89rem;
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
     background-image: none;
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
     position: relative;
-}
-
-.footer__misc-links a:hover, .footer__misc-links a:focus, .footer__misc-links a:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
 }
 
 .footer__misc-links a:focus, .footer__misc-links a:active {
@@ -7176,6 +7162,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__misc-links a:visited {
@@ -7191,6 +7178,7 @@ svg:not(:root) {
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
     color: #555555;
+    background-color: inherit;
 }
 
 .footer__misc-links a:hover:before {
@@ -7203,6 +7191,7 @@ svg:not(:root) {
     border-bottom-color: #555555;
     border-bottom-style: solid;
     border-bottom-width: 0.12rem;
+    background-color: inherit;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
@@ -7264,20 +7253,13 @@ svg:not(:root) {
 
 @media (min-width: 901px) {
     .footer__social a {
-        background-color: inherit;
-        color: inherit;
-        border-bottom-width: 0;
         background-image: none;
         border-bottom-color: #555555;
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
         position: relative;
-    }
-    .footer__social a:hover, .footer__social a:focus, .footer__social a:active {
-        background-color: inherit;
-        color: inherit;
-        outline-width: 0;
+        border-bottom-color: #ffffff;
     }
     .footer__social a:focus, .footer__social a:active {
         outline-color: #1e1e1e;
@@ -7302,6 +7284,7 @@ svg:not(:root) {
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
+        background-color: inherit;
     }
     .footer__social a:visited {
         border-bottom-color: #555555;
@@ -7315,6 +7298,7 @@ svg:not(:root) {
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
         color: #555555;
+        background-color: inherit;
     }
     .footer__social a:hover:before {
         opacity: 1;
@@ -7325,9 +7309,32 @@ svg:not(:root) {
         border-bottom-color: #555555;
         border-bottom-style: solid;
         border-bottom-width: 0.12rem;
+        background-color: inherit;
     }
     .footer__social a:visited {
         border-bottom-color: #ffffff;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer__social a {
+        background-color: inherit;
+        color: inherit;
+        border-bottom-width: 0;
+    }
+    .footer__social a:hover, .footer__social a:focus, .footer__social a:active {
+        background-color: inherit;
+        color: inherit;
+        outline-width: 0;
+    }
+    .footer__social a:hover {
+        filter: brightness(85%);
+    }
+    .footer__social a:focus {
+        outline: 0.18rem solid #1e1e1e;
+    }
+    .footer__social a:active {
+        outline: 0.12rem dotted #1e1e1e;
     }
 }
 
@@ -8526,7 +8533,7 @@ svg:not(:root) {
 }
 
 .bayes-statistic__block__text--title {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 600;
     line-height: 1;
     font-size: 1.25rem;
@@ -9259,13 +9266,13 @@ svg:not(:root) {
 }
 
 .courses-v23__fee__inner .fee-entry {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 450;
     margin-bottom: 0;
 }
 
 .courses-v23__fee__inner .fee-amount {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 900;
 }
 
@@ -9771,7 +9778,7 @@ svg:not(:root) {
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__text {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     margin-bottom: 1rem;
     line-height: 1.2;
     font-weight: 400;
@@ -9804,7 +9811,7 @@ svg:not(:root) {
 .ug-courses-v23 .cta--v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #ffffff;
@@ -9830,7 +9837,7 @@ svg:not(:root) {
 .ug-courses-v23 .cta--v23--ki--apply {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #1e1e1e;
@@ -9861,7 +9868,7 @@ svg:not(:root) {
 .ug-courses-v23 .cta--v23--ki--clearing {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #f1b434;
@@ -9915,7 +9922,7 @@ svg:not(:root) {
 .pg-courses-v23 .cta--v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #002b49;
@@ -9948,7 +9955,7 @@ svg:not(:root) {
 .pg-courses-v23 .cta--v23--ki--apply {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #ffffff;
@@ -9979,7 +9986,7 @@ svg:not(:root) {
 .pg-courses-v23 .cta--v23--ki--clearing {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #f1b434;
@@ -10355,7 +10362,7 @@ svg:not(:root) {
 .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: transparent;
@@ -10523,7 +10530,7 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: transparent;
@@ -10986,7 +10993,7 @@ svg:not(:root) {
 
 .js .slider-v23--related-courses__wrap .course-card-v23__details__title {
     font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.44rem;
     margin-bottom: 1rem;
     text-decoration: underline;
@@ -10994,7 +11001,7 @@ svg:not(:root) {
 }
 
 .js .slider-v23--related-courses__wrap .course-card-v23__details__text {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     overflow: hidden;
 }
 
@@ -11158,7 +11165,7 @@ svg:not(:root) {
     flex-direction: column;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -11175,7 +11182,7 @@ svg:not(:root) {
 }
 
 .courses-v23__entry-requirements .entry-req-v23__heading {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.424rem;
     line-height: 1.33333;
@@ -11295,7 +11302,7 @@ svg:not(:root) {
 }
 
 .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__second-line {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #e35205;
     font-size: 2.28rem;
     font-weight: 600;
@@ -11517,7 +11524,7 @@ svg:not(:root) {
 
 .courses-v23 p,
 .courses-v23 li {
-    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    font-family: "Plex Sans", Tahoma, Verdana, sans-serif;
     /**
      * IBM Plex OpenType stylistic sets:
      *
@@ -11668,7 +11675,7 @@ svg:not(:root) {
 .courses-v23__structure .courses-v23__structure__content div[data-popup-def-list-category] li h5,
 .courses-v23__structure .courses-v23__structure__content div[data-popup-def-list-category] li h6 {
     font-weight: 450;
-    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    font-family: "Plex Sans", Tahoma, Verdana, sans-serif;
     font-size: 1rem;
 }
 
@@ -12522,7 +12529,7 @@ svg:not(:root) {
 }
 
 .site-search__input {
-    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    font-family: "Plex Sans", Tahoma, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     height: 3rem;
@@ -12711,7 +12718,7 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #1e1e1e;
     display: block;
     font-weight: 700;
@@ -12790,11 +12797,11 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #1e1e1e;
     display: block;
     font-weight: 700;
@@ -13070,7 +13077,7 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #666666;
     display: block;
     padding: 0 0.5rem;
@@ -13191,7 +13198,7 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #666666;
     display: block;
     padding: 0 0.5rem;
@@ -13299,7 +13306,7 @@ svg:not(:root) {
 }
 
 .url-dropdown--ug select {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #666666;
     background: #ffffff;
     border: 0.12rem solid #a1a1a1;
@@ -13495,7 +13502,7 @@ svg:not(:root) {
     padding-top: 0.5rem;
     color: #666666;
     font-style: normal;
-    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    font-family: "Plex Sans", Tahoma, Verdana, sans-serif;
     font-weight: 400;
 }
 
@@ -13624,7 +13631,7 @@ svg:not(:root) {
 
 .accordion__content__heading-anchor {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -13901,7 +13908,7 @@ svg:not(:root) {
 
 .tabs__menu__item {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -13963,7 +13970,7 @@ svg:not(:root) {
 
 .tabs__content__heading-anchor {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -14021,7 +14028,7 @@ svg:not(:root) {
 
 .tabs.tabs--allports .tabs__content__heading-anchor {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -14079,7 +14086,7 @@ svg:not(:root) {
 
 .tabs.tabs--allports .tabs__menu__item {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -14148,7 +14155,7 @@ svg:not(:root) {
 
 .tabs--air .tabs__menu__item {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -14523,7 +14530,7 @@ svg:not(:root) {
 
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__menu__item {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -14644,7 +14651,7 @@ svg:not(:root) {
 
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -14768,7 +14775,7 @@ svg:not(:root) {
 
 .accordion-tabs__menu__item {
     transition: all 0.2s ease;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     border-bottom-width: 0;
     overflow: hidden;
     font-weight: 600;
@@ -15059,7 +15066,7 @@ svg:not(:root) {
     padding: 0.5rem 1rem;
     width: auto;
     font-size: 1.728rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .banner__content .banner__content__text__subtitle,
@@ -15376,7 +15383,7 @@ svg:not(:root) {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position: relative;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem;
     color: #555555;
     font-weight: 300;
@@ -15679,7 +15686,7 @@ svg:not(:root) {
     padding: 0.5rem 1rem;
     width: auto;
     font-size: 1.728rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .banner-new .banner__content .banner__content__text__subtitle,
@@ -18331,7 +18338,7 @@ svg:not(:root) {
     padding: 0.5rem 1rem;
     width: auto;
     font-size: 1.728rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
 }
@@ -18368,7 +18375,7 @@ svg:not(:root) {
     padding: 0.5rem 1rem;
     display: inline;
     font-size: 1.728rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 @media (max-width: 650px) {
@@ -19082,14 +19089,14 @@ svg:not(:root) {
 
 @media (min-width: 651px) {
     .banner-vi--listing[data-animated='yes'].banner-vi--gradient,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .container,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner__container,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner__standfirst,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner__freehtml > div,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner-vi .banner-vi__container,
-    .banner-vi .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner-vi__container,
-    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .banner-vi--video .video-banner__controls,
-    .banner-vi--video .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .course-finder__top .video-banner__controls {
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .container,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner__container,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner__standfirst,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner__freehtml > div,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner-vi .banner-vi__container,
+    .banner-vi .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner-vi__container,
+    .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .banner-vi--video .video-banner__controls,
+    .banner-vi--video .banner-vi--listing[data-animated='yes'].banner-vi--gradient + main .video-banner__controls {
         background-size: 400% 400%;
         animation: gradient-wave ease-out 12s infinite;
     }
@@ -19743,7 +19750,7 @@ svg:not(:root) {
     padding-top: 0.5rem;
     color: #666666;
     font-style: normal;
-    font-family: "Plex Sans", Arial, Helvetica, sans-serif;
+    font-family: "Plex Sans", Tahoma, Verdana, sans-serif;
     font-weight: 400;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -19891,7 +19898,7 @@ svg:not(:root) {
     background: none;
     color: #ffffff;
     text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #fafafa;
     font-size: 3.5rem;
     font-weight: 700;
@@ -20168,7 +20175,7 @@ USED IN:
 }
 
 .banner--text-ctas .banner__text .banner__text__subtitle {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     margin-top: -1rem;
     margin-bottom: 2rem;
@@ -20176,7 +20183,7 @@ USED IN:
 }
 
 .banner--text-ctas .banner__text p {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     font-size: 1.44rem;
     font-weight: 300;
@@ -20833,7 +20840,7 @@ USED IN:
 }
 
 .stats-block__item {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     padding-bottom: 2rem;
     padding-top: 2rem;
@@ -20874,7 +20881,7 @@ USED IN:
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     top: 50%;
     margin-top: -0.75em;
     font-size: 2.0736rem;
@@ -21383,7 +21390,7 @@ USED IN:
 .cta--v23 {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
 }
@@ -21407,7 +21414,7 @@ USED IN:
 .cta--ug-v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #ffffff;
@@ -21433,7 +21440,7 @@ USED IN:
 .cta--ug-v23--ki--apply {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #1e1e1e;
@@ -21464,7 +21471,7 @@ USED IN:
 .cta--ug-v23--ki--clearing {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #f1b434;
@@ -21494,7 +21501,7 @@ USED IN:
 .cta--pg-v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #002b49;
@@ -21527,7 +21534,7 @@ USED IN:
 .cta--pg-v23--ki--apply {
     font-size: 1rem;
     padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
     background-color: #ffffff;
@@ -21984,7 +21991,7 @@ USED IN:
 }
 
 .section--prussian .banner__text--dark-background p {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     font-size: 1.44rem;
     font-weight: 300;
@@ -21993,7 +22000,7 @@ USED IN:
 }
 
 .section--prussian .banner__text__subtitle {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     margin-top: -1rem;
     margin-bottom: 2rem;
@@ -22930,7 +22937,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     transition: opacity 0.2s ease 0s;
     content: attr(data-url);
     opacity: 0;
@@ -23741,7 +23748,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .profile-bracket-block__text__name {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -23832,7 +23839,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .dialog__box__heading {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     background-color: #ffffff;
     font-size: 1.728rem;
     position: relative;
@@ -24483,7 +24490,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: block;
     margin-bottom: 0.5rem;
     font-size: 1.728rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #e35205;
 }
 
@@ -24511,7 +24518,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .highlighted-content-v23 .highlighted-content-v23__heading {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.266rem;
     line-height: 1.33333;
@@ -24584,7 +24591,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.266rem;
     line-height: 1.33333;
@@ -24657,7 +24664,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.266rem;
     line-height: 1.33333;
@@ -25226,7 +25233,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .feature-news__card--main .feature-news__card__body__title,
 .feature-news__card--follow .feature-news__card__body__title {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .feature-news__card--main .feature-news__card__body__title a,
@@ -26127,7 +26134,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #666666;
     display: inline-block;
     overflow-x: hidden;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -27357,7 +27364,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .video-banner__text__wrapper .video-banner__text .video-banner__text__title,
 .video-banner__text__wrapper .video-banner__text .video- {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #fafafa;
     font-size: 2.0736rem;
     font-weight: 400;
@@ -29085,7 +29092,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: #fafafa;
     margin: 0;
     padding: 0.5rem 1rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
@@ -29266,7 +29273,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .standfirst {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     font-size: 1.44rem;
     font-weight: 300;
@@ -29640,7 +29647,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 600;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 @media (max-width: 900px) {
@@ -29992,7 +29999,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .cass-knowledge-listing__item__title {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
@@ -32283,7 +32290,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .chart-row__items__chart__row__legend__item {
     margin-bottom: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -33139,7 +33146,7 @@ table tbody > tr > td:hover {
 }
 
 .dropdown-filter__v23 .dropdown-heading {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.424rem;
     line-height: 1.33333;
@@ -33313,7 +33320,7 @@ table tbody > tr > td:hover {
 .carousel__item__info__body {
     color: white;
     font-size: 2.0736rem;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 700;
     margin-top: 1rem;
     animation: fade-up 1s ease-in forwards;
@@ -33450,7 +33457,7 @@ blockquote {
 }
 
 blockquote::before {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     content: "";
     text-align: center;
     margin-left: auto;
@@ -33467,7 +33474,7 @@ blockquote::before {
 }
 
 blockquote p {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem;
 }
 
@@ -33680,8 +33687,9 @@ blockquote .reference {
 }
 
 .cass-events .icon-search:before {
-    font-family: 'FontAwesome';
-    content: '\f002';
+    font-family: "Font Awesome 6 Pro";
+    content: "\f002";
+    font-weight: 900;
 }
 
 .cass-events .date-selector__wrap {
@@ -34320,7 +34328,7 @@ input:checked + .cass-events .calendar__radio__button:before {
     font-weight: 600;
     line-height: 1.5;
     vertical-align: top;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .cass-events .events-listing .events-listing__title a {
@@ -35407,7 +35415,7 @@ News events landing overrides */
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size 0.3s;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 600;
 }
 
@@ -35615,7 +35623,7 @@ News events landing overrides */
     font-size: 1.44rem;
     margin-bottom: 1rem;
     font-weight: 600;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .promo__twitter-tag {
@@ -35814,7 +35822,7 @@ News events landing overrides */
 }
 
 .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__title {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .cass-knowledge-search .news-card-categories > * {
@@ -35939,7 +35947,7 @@ News events landing overrides */
 }
 
 .news-article__news-standfirst {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     font-size: 1.44rem;
     font-weight: 300;
@@ -35947,7 +35955,7 @@ News events landing overrides */
 }
 
 .news-article__news-standfirst p {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     font-size: 1.44rem;
     font-weight: 300;
@@ -38586,6 +38594,34 @@ div.widget-123_test_ {
     max-height: 2rem;
 }
 
+.wFormContainer * {
+    font-family: "Plex Sans", Tahoma, Verdana, sans-serif !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .wFormContainer * {
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .wFormContainer * {
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .wFormContainer * {
+        font-size: 40px !important;
+    }
+}
+
+@media (min-width: 7680px) {
+    .wFormContainer * {
+        font-size: 92px !important;
+    }
+}
+
 .wFormContainer .supportInfo {
     display: none;
 }
@@ -39726,7 +39762,7 @@ div.widget-123_test_ {
 
 .bayes-video-banner__text__wrapper .video-banner__text .video-banner__text__title,
 .bayes-video-banner__text__wrapper .video-banner__text .video- {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #fafafa;
     font-size: 3.5rem;
     font-weight: 700;
@@ -39893,7 +39929,7 @@ div.widget-123_test_ {
 }
 
 .nav-sticky {
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .nav-sticky.nav-sticky--left:before {
@@ -40175,13 +40211,13 @@ html {
 
 .unibuddy-card-v23 .unibuddy-card-v23__content__details__name {
     font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem;
 }
 
 .unibuddy-card-v23--general .unibuddy-card-v23__content__title {
     font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem;
     text-align: center;
 }
@@ -40772,7 +40808,7 @@ html {
 
 .js .courses-v23__careers .alumni-card-v23__content__details__column {
     font-weight: 700;
-    font-family: "FF Meta", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem;
 }
 
