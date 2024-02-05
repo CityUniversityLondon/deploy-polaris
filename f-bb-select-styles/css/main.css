@@ -30495,7 +30495,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     border: solid #ececec;
     border-width: 0 1px 1px;
     padding: 20px 20px 0;
-    background: white;
 }
 
 .filter-box__inner h2 {
@@ -30554,7 +30553,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     width: 100%;
     font-size: 16px;
     padding: 11px;
-    height: 45px;
 }
 
 .filter-box__filter__content select:hover, .filter-box__filter__content select:focus, .filter-box__filter__content select:active {
@@ -30563,7 +30561,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 @media (min-width: 1600px) {
     .filter-box__filter__content select {
-        height: 2.5rem;
         padding: 0.75rem;
     }
 }
@@ -31296,7 +31293,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     border: solid #cccccc;
     border-width: 0 1px 1px;
     padding: 20px 20px 0;
-    background: #ffffff;
 }
 
 .filter-box__inner h2 {
@@ -33564,7 +33560,6 @@ blockquote .reference {
             appearance: none;
     font-size: 16px;
     padding: 11px;
-    height: 45px;
     background: #ffffff;
     border-color: #a9a19c;
 }
@@ -33575,7 +33570,6 @@ blockquote .reference {
 
 @media (min-width: 1600px) {
     .cass-events .cass-events__query #query-box__query {
-        height: 2.5rem;
         padding: 0.75rem;
     }
 }
@@ -34139,7 +34133,6 @@ input:checked + .cass-events .calendar__radio__button:before {
             appearance: none;
     font-size: 16px;
     padding: 11px;
-    height: 45px;
     background: #ffffff;
     border-color: #a9a19c;
     font-weight: 600;
@@ -34151,7 +34144,6 @@ input:checked + .cass-events .calendar__radio__button:before {
 
 @media (min-width: 1600px) {
     .cass-events .calendar__key select {
-        height: 2.5rem;
         padding: 0.75rem;
     }
 }
@@ -34420,7 +34412,6 @@ input:checked + .cass-events .calendar__radio__button:before {
             appearance: none;
     font-size: 16px;
     padding: 11px;
-    height: 45px;
     background: #ffffff;
     border-color: #a9a19c;
     padding-right: 1.8rem;
@@ -34432,7 +34423,6 @@ input:checked + .cass-events .calendar__radio__button:before {
 
 @media (min-width: 1600px) {
     .cass-events .cass-events__view-month select {
-        height: 2.5rem;
         padding: 0.75rem;
     }
 }
@@ -34708,7 +34698,6 @@ News events landing overrides */
             appearance: none;
     font-size: 16px;
     padding: 11px;
-    height: 45px;
     background: #ffffff;
     border-color: #a9a19c;
     border-color: #a9a19c;
@@ -34720,7 +34709,6 @@ News events landing overrides */
 
 @media (min-width: 1600px) {
     .cass-news-search .news-finder__query #query-box__query {
-        height: 2.5rem;
         padding: 0.75rem;
     }
 }
@@ -34769,7 +34757,6 @@ News events landing overrides */
             appearance: none;
     font-size: 16px;
     padding: 11px;
-    height: 45px;
     background: #ffffff;
     border-color: #a9a19c;
     font-weight: 600;
@@ -34781,7 +34768,6 @@ News events landing overrides */
 
 @media (min-width: 1600px) {
     .cass-news-search .news-finder__query .filter-box__filter__content select {
-        height: 2.5rem;
         padding: 0.75rem;
     }
 }
