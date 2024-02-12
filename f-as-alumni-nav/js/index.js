@@ -26538,7 +26538,7 @@ function prepareMenu(widget) {
   if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
     var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14); // Staffhub(SH) uses different tree due to being type2 asset in Matrix
     menu.launch();
-  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni-dev')) {
+  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
     var _menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14); // Alumni uses different tree due to being type2 asset in Matrix
     _menu.launch();
   } else {
@@ -26600,13 +26600,13 @@ function processTree(gCurrent, gTree) {
       tree: null,
       current: null
     };
-  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni-dev') && gCurrent.length < 2) {
+  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 2) {
     // left hand navigation only starts on level 2 if Alumni
     return {
       tree: null,
       current: null
     };
-  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni-dev') && gCurrent.length < 3) {
+  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 3) {
     // left hand navigation only starts on level 3
     return {
       tree: null,
@@ -26845,7 +26845,7 @@ function launch(el) {
     var nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentSH"], containerTri);
     nav.launch();
     Object(_home_link__WEBPACK_IMPORTED_MODULE_6__["default"])(containerTop);
-  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentURL"].includes('bayes.city.ac.uk/alumni-dev')) {
+  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
     // Alumni uses different tree due to being type2 asset in Matrix
     var _nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentSH"], containerTri);
     _nav.launch();
