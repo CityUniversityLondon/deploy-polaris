@@ -24030,219 +24030,111 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background: #f2f2f2;
 }
 
-.scp--undergraduate .card--course.card--course--advanced .txt__heading {
+.scp--undergraduate .card--course .txt__heading {
     background: #e35205;
     color: #1e1e1e;
 }
 
-.scp--undergraduate .card--course.card--course--advanced .summary {
+.scp--undergraduate .card--course .summary {
     color: #e35205;
 }
 
-.card--course[data-study-level=undergraduate] .txt__heading {
-    background: #e35205;
-    color: #1e1e1e;
-}
-
-.card--course[data-study-level=undergraduate] .summary {
-    color: #e35205;
-}
-
-.scp--masters .card--course.card--course--advanced .txt__heading {
+.scp--masters .card--course .txt__heading {
     background: #002b49;
     color: #ffffff;
 }
 
-.scp--masters .card--course.card--course--advanced .summary {
+.scp--masters .card--course .summary {
     color: #002b49;
 }
 
-.card--course[data-study-level=masters] .txt__heading {
-    background: #002b49;
-    color: #ffffff;
-}
-
-.card--course[data-study-level=masters] .summary {
-    color: #002b49;
-}
-
-.scp--mba .card--course.card--course--advanced .txt__heading {
+.scp--mba .card--course .txt__heading {
     background: #2e767a;
     color: #ffffff;
 }
 
-.scp--mba .card--course.card--course--advanced .summary {
+.scp--mba .card--course .summary {
     color: #2e767a;
 }
 
-.card--course[data-study-level=mba] .txt__heading {
+.scp--mmba .card--course .txt__heading {
     background: #2e767a;
     color: #ffffff;
 }
 
-.card--course[data-study-level=mba] .summary {
+.scp--mmba .card--course .summary {
     color: #2e767a;
 }
 
-.scp--mmba .card--course.card--course--advanced .txt__heading {
-    background: #2e767a;
-    color: #ffffff;
-}
-
-.scp--mmba .card--course.card--course--advanced .summary {
-    color: #2e767a;
-}
-
-.card--course[data-study-level=mmba] .txt__heading {
-    background: #2e767a;
-    color: #ffffff;
-}
-
-.card--course[data-study-level=mmba] .summary {
-    color: #2e767a;
-}
-
-.scp--emba .card--course.card--course--advanced .txt__heading {
+.scp--emba .card--course .txt__heading {
     background: #496c60;
     color: #ffffff;
 }
 
-.scp--emba .card--course.card--course--advanced .summary {
+.scp--emba .card--course .summary {
     color: #496c60;
 }
 
-.card--course[data-study-level=emba] .txt__heading {
-    background: #496c60;
-    color: #ffffff;
-}
-
-.card--course[data-study-level=emba] .summary {
-    color: #496c60;
-}
-
-.scp--demba .card--course.card--course--advanced .txt__heading {
+.scp--demba .card--course .txt__heading {
     background: #91baa3;
     color: #1e1e1e;
 }
 
-.scp--demba .card--course.card--course--advanced .summary {
+.scp--demba .card--course .summary {
     color: #91baa3;
 }
 
-.card--course[data-study-level=demba] .txt__heading {
-    background: #91baa3;
-    color: #1e1e1e;
-}
-
-.card--course[data-study-level=demba] .summary {
-    color: #91baa3;
-}
-
-.scp--omba .card--course.card--course--advanced .txt__heading {
+.scp--omba .card--course .txt__heading {
     background: #189183;
     color: #1e1e1e;
 }
 
-.scp--omba .card--course.card--course--advanced .summary {
+.scp--omba .card--course .summary {
     color: #189183;
 }
 
-.card--course[data-study-level=omba] .txt__heading {
+.scp--online-msc .card--course .txt__heading {
     background: #189183;
     color: #1e1e1e;
 }
 
-.card--course[data-study-level=omba] .summary {
+.scp--online-msc .card--course .summary {
     color: #189183;
 }
 
-.scp--online-msc .card--course.card--course--advanced .txt__heading {
-    background: #189183;
-    color: #1e1e1e;
-}
-
-.scp--online-msc .card--course.card--course--advanced .summary {
-    color: #189183;
-}
-
-.card--course[data-study-level=online-msc] .txt__heading {
-    background: #189183;
-    color: #1e1e1e;
-}
-
-.card--course[data-study-level=online-msc] .summary {
-    color: #189183;
-}
-
-.scp--phd .card--course.card--course--advanced .txt__heading {
+.scp--phd .card--course .txt__heading {
     background: #006699;
     color: #ffffff;
 }
 
-.scp--phd .card--course.card--course--advanced .summary {
+.scp--phd .card--course .summary {
     color: #006699;
 }
 
-.card--course[data-study-level=phd] .txt__heading {
-    background: #006699;
-    color: #ffffff;
-}
-
-.card--course[data-study-level=phd] .summary {
-    color: #006699;
-}
-
-.scp--cce .card--course.card--course--advanced .txt__heading {
+.scp--cce .card--course .txt__heading {
     background: #8b2433;
     color: #ffffff;
 }
 
-.scp--cce .card--course.card--course--advanced .summary {
+.scp--cce .card--course .summary {
     color: #8b2433;
 }
 
-.card--course[data-study-level=cce] .txt__heading {
-    background: #8b2433;
-    color: #ffffff;
-}
-
-.card--course[data-study-level=cce] .summary {
-    color: #8b2433;
-}
-
-.scp--executive-education .card--course.card--course--advanced .txt__heading {
+.scp--executive-education .card--course .txt__heading {
     background: #93328e;
     color: #ffffff;
 }
 
-.scp--executive-education .card--course.card--course--advanced .summary {
+.scp--executive-education .card--course .summary {
     color: #93328e;
 }
 
-.card--course[data-study-level=executive-education] .txt__heading {
-    background: #93328e;
-    color: #ffffff;
-}
-
-.card--course[data-study-level=executive-education] .summary {
-    color: #93328e;
-}
-
-.scp--corporate .card--course.card--course--advanced .txt__heading {
+.scp--corporate .card--course .txt__heading {
     background: #7e756d;
     color: #ffffff;
 }
 
-.scp--corporate .card--course.card--course--advanced .summary {
-    color: #7e756d;
-}
-
-.card--course[data-study-level=corporate] .txt__heading {
-    background: #7e756d;
-    color: #ffffff;
-}
-
-.card--course[data-study-level=corporate] .summary {
+.scp--corporate .card--course .summary {
     color: #7e756d;
 }
 
@@ -34786,7 +34678,6 @@ News events landing overrides */
 .cass-news-search .filter-box__open h2:before {
     font-family: "Font Awesome 6 Pro";
     content: "\f0b0";
-    font-weight: 900;
     margin-right: 1rem;
 }
 
@@ -34800,7 +34691,6 @@ News events landing overrides */
     margin-left: auto;
     color: #1e1e1e;
     font-family: "Font Awesome 6 Pro";
-    font-weight: 900;
 }
 
 .cass-news-search .filter-box__open .icon-angle-up:before {

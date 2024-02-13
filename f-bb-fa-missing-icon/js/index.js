@@ -25228,19 +25228,10 @@ function launch(el) {
       stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
     }, delay);
   }
-
-  // window.addEventListener('hashchange', () => {
-  //     console.log('hash change');
-  //     scrollActiveLink = window.location.hash;
-  // });
-
   anchorLinksOnPage.forEach(function (item) {
     item.addEventListener('click', function (e) {
       // If clicked hash is already in the url remove so it gets added again to trigger the hashchange listener
       var hrefValue = e.target.getAttribute('href');
-      // if (hrefValue === window.location.hash) {
-      //     window.location.hash = '';
-      // }
       scrollActiveLink = hrefValue;
       highlightNavMenuItem(e.target);
     });
