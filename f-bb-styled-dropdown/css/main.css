@@ -30569,12 +30569,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .filter-box__filter__content select:focus {
-    outline: 0.12rem solid #1e1e1e;
+    outline: 0.18rem solid #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
 .filter-box__filter__content select:active {
-    outline: 0.12rem dotted #1e1e1e;
+    outline: 0.18rem dotted #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
@@ -32658,12 +32658,12 @@ table tbody > tr > td:hover {
 }
 
 .student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box select:focus {
-    outline: 0.12rem solid #1e1e1e;
+    outline: 0.18rem solid #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
 .student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box select:active {
-    outline: 0.12rem dotted #1e1e1e;
+    outline: 0.18rem dotted #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
@@ -33003,12 +33003,12 @@ table tbody > tr > td:hover {
 }
 
 .dropdown-filter .filter--box select:focus {
-    outline: 0.12rem solid #1e1e1e;
+    outline: 0.18rem solid #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
 .dropdown-filter .filter--box select:active {
-    outline: 0.12rem dotted #1e1e1e;
+    outline: 0.18rem dotted #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
@@ -34208,12 +34208,12 @@ input:checked + .cass-events .calendar__radio__button:before {
 }
 
 .cass-events .calendar__key__wrap select:focus {
-    outline: 0.12rem solid #1e1e1e;
+    outline: 0.18rem solid #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
 .cass-events .calendar__key__wrap select:active {
-    outline: 0.12rem dotted #1e1e1e;
+    outline: 0.18rem dotted #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
@@ -34602,12 +34602,12 @@ input:checked + .cass-events .calendar__radio__button:before {
 }
 
 .cass-events .cass-events__view-month div[class^="date-"] select:focus {
-    outline: 0.12rem solid #1e1e1e;
+    outline: 0.18rem solid #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
 .cass-events .cass-events__view-month div[class^="date-"] select:active {
-    outline: 0.12rem dotted #1e1e1e;
+    outline: 0.18rem dotted #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
@@ -34980,12 +34980,12 @@ News events landing overrides */
 }
 
 .cass-news-search .news-finder__query .filter-box__filter__content select:focus {
-    outline: 0.12rem solid #1e1e1e;
+    outline: 0.18rem solid #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
 .cass-news-search .news-finder__query .filter-box__filter__content select:active {
-    outline: 0.12rem dotted #1e1e1e;
+    outline: 0.18rem dotted #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
