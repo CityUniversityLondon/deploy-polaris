@@ -30573,6 +30573,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     outline-offset: 0.1875rem;
 }
 
+.filter-box__filter__content select:active {
+    outline: 0.12rem dotted #1e1e1e;
+    outline-offset: 0.1875rem;
+}
+
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .filter-box__filter__content select {
         font-size: 40px;
@@ -32657,6 +32662,11 @@ table tbody > tr > td:hover {
     outline-offset: 0.1875rem;
 }
 
+.student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box select:active {
+    outline: 0.12rem dotted #1e1e1e;
+    outline-offset: 0.1875rem;
+}
+
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .student-profiles-search .student-profiles-search__top .student-profiles-search__filters .filter--box select {
         font-size: 40px;
@@ -32994,6 +33004,11 @@ table tbody > tr > td:hover {
 
 .dropdown-filter .filter--box select:focus {
     outline: 0.12rem solid #1e1e1e;
+    outline-offset: 0.1875rem;
+}
+
+.dropdown-filter .filter--box select:active {
+    outline: 0.12rem dotted #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
@@ -34197,6 +34212,11 @@ input:checked + .cass-events .calendar__radio__button:before {
     outline-offset: 0.1875rem;
 }
 
+.cass-events .calendar__key__wrap select:active {
+    outline: 0.12rem dotted #1e1e1e;
+    outline-offset: 0.1875rem;
+}
+
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cass-events .calendar__key__wrap select {
         font-size: 40px;
@@ -34586,6 +34606,11 @@ input:checked + .cass-events .calendar__radio__button:before {
     outline-offset: 0.1875rem;
 }
 
+.cass-events .cass-events__view-month div[class^="date-"] select:active {
+    outline: 0.12rem dotted #1e1e1e;
+    outline-offset: 0.1875rem;
+}
+
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
     .cass-events .cass-events__view-month div[class^="date-"] select {
         font-size: 40px;
@@ -34956,6 +34981,11 @@ News events landing overrides */
 
 .cass-news-search .news-finder__query .filter-box__filter__content select:focus {
     outline: 0.12rem solid #1e1e1e;
+    outline-offset: 0.1875rem;
+}
+
+.cass-news-search .news-finder__query .filter-box__filter__content select:active {
+    outline: 0.12rem dotted #1e1e1e;
     outline-offset: 0.1875rem;
 }
 
