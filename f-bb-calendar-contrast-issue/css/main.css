@@ -38550,6 +38550,11 @@ div.widget-123_test_ {
     display: none;
 }
 
+.wFormContainer .wForm .field-hint-inactive .hint {
+    opacity: 1 !important;
+    color: #666666 !important;
+}
+
 .cta.cta--yellow-inline-block {
     background-color: #f1b434;
     color: #1e1e1e;
