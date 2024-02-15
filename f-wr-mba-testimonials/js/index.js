@@ -25762,7 +25762,7 @@ function launchArrow(slider) {
 */
 function launchDot(slider) {
   // Creates pagination and control elements
-  var container = slider.getAttribute('data-container');
+  var container = slider.getAttribute('data-ul-container');
   var slides = Array.from(slider.children),
     controlsWrapper = document.createElement('nav');
 
