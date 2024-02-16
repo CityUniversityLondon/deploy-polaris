@@ -41235,7 +41235,7 @@ html {
 
 .courses-v23__careers__testimonials .testimonial-card-v23__image {
     position: relative;
-    width: 12rem;
+    width: 10.75rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
@@ -41256,10 +41256,10 @@ html {
     content: "";
     width: 2.5rem;
     height: 107%;
-    position: relative;
+    position: absolute;
     z-index: 1;
     top: 0.5rem;
-    left: 0.5rem;
+    right: 0;
     background: radial-gradient(ellipse at center, #ffffff, #ffffff 0.0625rem, transparent 0, transparent 100%);
     background-size: 1.25rem 1.25rem;
 }
@@ -41284,6 +41284,7 @@ html {
 @media (max-width: 768px) {
     .courses-v23__careers__testimonials .testimonial-card-v23__author {
         align-self: flex-start;
+        margin-bottom: 1rem;
     }
 }
 
@@ -41301,7 +41302,7 @@ html {
     color: #ffffff;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__author__tile {
+.courses-v23__careers__testimonials .testimonial-card-v23__author__title, .courses-v23__careers__testimonials .testimonial-card-v23__author__label {
     font-size: 0.89rem;
 }
 
@@ -41311,7 +41312,12 @@ html {
 
 .js .courses-v23__careers__testimonials .slider-v23__controls--dots {
     padding: 0;
-    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .js .courses-v23__careers__testimonials .slider-v23__controls--dots {
+        align-self: center;
+    }
 }
 
 .js .courses-v23__careers__testimonials .slider-v23__controls--dots button {
