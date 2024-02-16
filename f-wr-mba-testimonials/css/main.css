@@ -41183,13 +41183,19 @@ html {
 }
 
 .courses-v23__careers__testimonials .slider-v23__wrap {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .courses-v23__careers__testimonials .slider-v23__wrap {
+        flex-direction: column;
+    }
 }
 
 .courses-v23__careers__testimonials .slider-v23__controls--dots {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    align-self: flex-end;
 }
 
 .courses-v23__careers__testimonials .testimonial-card-v23__container {
@@ -41197,6 +41203,12 @@ html {
     flex-direction: row;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .courses-v23__careers__testimonials .testimonial-card-v23__container {
+        flex-direction: column-reverse;
+    }
 }
 
 .courses-v23__careers__testimonials .testimonial-card-v23__text {
@@ -41264,8 +41276,15 @@ html {
 
 .courses-v23__careers__testimonials .testimonial-card-v23__author {
     display: flex;
+    flex-direction: column;
     align-content: flex-end;
     flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .courses-v23__careers__testimonials .testimonial-card-v23__author {
+        align-self: flex-start;
+    }
 }
 
 .courses-v23__careers__testimonials .testimonial-card-v23__author p {
@@ -41286,8 +41305,13 @@ html {
     font-size: 0.89rem;
 }
 
+.js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] {
+    margin: 1rem 0;
+}
+
 .js .courses-v23__careers__testimonials .slider-v23__controls--dots {
-    margin: 0;
+    padding: 0;
+    align-self: center;
 }
 
 .js .courses-v23__careers__testimonials .slider-v23__controls--dots button {
