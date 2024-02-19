@@ -41175,30 +41175,30 @@ html {
     }
 }
 
-.courses-v23__careers__testimonials {
+.courses-v23__careers__testimonials, .testimonials-v23 {
     padding: 2rem;
     background: #2e767a;
     color: #ffffff;
     grid-column: 1/13;
 }
 
-.courses-v23__careers__testimonials .slider-v23__wrap {
+.courses-v23__careers__testimonials .slider-v23__wrap, .testimonials-v23 .slider-v23__wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-    .courses-v23__careers__testimonials .slider-v23__wrap {
+    .courses-v23__careers__testimonials .slider-v23__wrap, .testimonials-v23 .slider-v23__wrap {
         flex-direction: column;
     }
 }
 
-.courses-v23__careers__testimonials .slider-v23__controls--dots {
+.courses-v23__careers__testimonials .slider-v23__controls--dots, .testimonials-v23 .slider-v23__controls--dots {
     align-self: flex-end;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__container {
+.courses-v23__careers__testimonials .testimonial-card-v23__container, .testimonials-v23 .testimonial-card-v23__container {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 2rem;
@@ -41206,34 +41206,34 @@ html {
 }
 
 @media (max-width: 768px) {
-    .courses-v23__careers__testimonials .testimonial-card-v23__container {
+    .courses-v23__careers__testimonials .testimonial-card-v23__container, .testimonials-v23 .testimonial-card-v23__container {
         flex-direction: column-reverse;
     }
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__text {
+.courses-v23__careers__testimonials .testimonial-card-v23__text, .testimonials-v23 .testimonial-card-v23__text {
     display: flex;
     flex-direction: row;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__text:before {
+.courses-v23__careers__testimonials .testimonial-card-v23__text:before, .testimonials-v23 .testimonial-card-v23__text:before {
     content: open-quote;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__text p {
+.courses-v23__careers__testimonials .testimonial-card-v23__text p, .testimonials-v23 .testimonial-card-v23__text p {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__text p:after {
+.courses-v23__careers__testimonials .testimonial-card-v23__text p:after, .testimonials-v23 .testimonial-card-v23__text p:after {
     content: close-quote;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__text p span:first-line {
+.courses-v23__careers__testimonials .testimonial-card-v23__text p span:first-line, .testimonials-v23 .testimonial-card-v23__text p span:first-line {
     color: red;
     padding-left: 1rem;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__image {
+.courses-v23__careers__testimonials .testimonial-card-v23__image, .testimonials-v23 .testimonial-card-v23__image {
     position: relative;
     width: 10.75rem;
     margin-bottom: 1rem;
@@ -41241,7 +41241,7 @@ html {
     flex-direction: row;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__image:before {
+.courses-v23__careers__testimonials .testimonial-card-v23__image:before, .testimonials-v23 .testimonial-card-v23__image:before {
     content: "";
     border: 0.125rem solid #12E97A;
     width: 8rem;
@@ -41252,7 +41252,7 @@ html {
     top: 0;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__image:after {
+.courses-v23__careers__testimonials .testimonial-card-v23__image:after, .testimonials-v23 .testimonial-card-v23__image:after {
     content: "";
     width: 2.5rem;
     height: 107%;
@@ -41264,17 +41264,17 @@ html {
     background-size: 1.25rem 1.25rem;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__image picture {
+.courses-v23__careers__testimonials .testimonial-card-v23__image picture, .testimonials-v23 .testimonial-card-v23__image picture {
     width: 8rem;
     top: 0.5rem;
     left: 0.5rem;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__image img {
+.courses-v23__careers__testimonials .testimonial-card-v23__image img, .testimonials-v23 .testimonial-card-v23__image img {
     width: 100%;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__author {
+.courses-v23__careers__testimonials .testimonial-card-v23__author, .testimonials-v23 .testimonial-card-v23__author {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
@@ -41282,27 +41282,27 @@ html {
 }
 
 @media (max-width: 768px) {
-    .courses-v23__careers__testimonials .testimonial-card-v23__author {
+    .courses-v23__careers__testimonials .testimonial-card-v23__author, .testimonials-v23 .testimonial-card-v23__author {
         align-self: flex-start;
         margin-bottom: 1rem;
     }
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__author p {
+.courses-v23__careers__testimonials .testimonial-card-v23__author p, .testimonials-v23 .testimonial-card-v23__author p {
     margin: 0;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__author__name {
+.courses-v23__careers__testimonials .testimonial-card-v23__author__name, .testimonials-v23 .testimonial-card-v23__author__name {
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__author__name a {
+.courses-v23__careers__testimonials .testimonial-card-v23__author__name a, .testimonials-v23 .testimonial-card-v23__author__name a {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #ffffff;
 }
 
-.courses-v23__careers__testimonials .testimonial-card-v23__author__title, .courses-v23__careers__testimonials .testimonial-card-v23__author__label {
+.courses-v23__careers__testimonials .testimonial-card-v23__author__title, .courses-v23__careers__testimonials .testimonial-card-v23__author__label, .testimonials-v23 .testimonial-card-v23__author__title, .testimonials-v23 .testimonial-card-v23__author__label {
     font-size: 0.89rem;
 }
 
