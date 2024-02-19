@@ -41807,16 +41807,16 @@ html {
     grid-column: 1/13;
 }
 
-.ug-courses-v23 .testimonials-v23 {
+.ug-courses-v23 .testimonials-v23, .scp--mba .testimonials-v23 {
     background: #e35205;
     color: #1e1e1e;
 }
 
-.ug-courses-v23 .testimonials-v23 a {
+.ug-courses-v23 .testimonials-v23 a, .scp--mba .testimonials-v23 a {
     color: #1e1e1e;
 }
 
-.ug-courses-v23 .testimonial-card-v23__image:before {
+.ug-courses-v23 .testimonial-card-v23__image:before, .scp--mba .testimonial-card-v23__image:before {
     border: 0.125rem solid #f1b434;
 }
 
@@ -41828,16 +41828,16 @@ html {
     background-color: #1e1e1e;
 }
 
-.pg-courses-v23 .testimonials-v23 {
+.pg-courses-v23 .testimonials-v23, .scp--mba .testimonials-v23 {
     background: #002b49;
     color: #ffffff;
 }
 
-.pg-courses-v23 .testimonials-v23 a {
+.pg-courses-v23 .testimonials-v23 a, .scp--mba .testimonials-v23 a {
     color: #ffffff;
 }
 
-.pg-courses-v23 .testimonial-card-v23__image:before {
+.pg-courses-v23 .testimonial-card-v23__image:before, .scp--mba .testimonial-card-v23__image:before {
     border: 0.125rem solid #006699;
 }
 
@@ -41849,16 +41849,16 @@ html {
     background-color: #ffffff;
 }
 
-.mba-courses-v23 .testimonials-v23 {
+.mba-courses-v23 .testimonials-v23, .scp--mba .testimonials-v23 {
     background: #2e767a;
     color: #ffffff;
 }
 
-.mba-courses-v23 .testimonials-v23 a {
+.mba-courses-v23 .testimonials-v23 a, .scp--mba .testimonials-v23 a {
     color: #ffffff;
 }
 
-.mba-courses-v23 .testimonial-card-v23__image:before {
+.mba-courses-v23 .testimonial-card-v23__image:before, .scp--mba .testimonial-card-v23__image:before {
     border: 0.125rem solid #12E97A;
 }
 
