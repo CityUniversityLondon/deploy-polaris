@@ -11146,7 +11146,7 @@ svg:not(:root) {
 
 .mba-courses-v23 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
     background-color: #12E97A;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .courses-v23 .courses-v23__related-courses__heading {
@@ -25180,7 +25180,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .mba-courses-v23 .text-highlight {
-    color: #ffffff;
+    color: #1e1e1e;
     background-color: #12E97A;
     box-shadow: 0.5rem 0 0 #12E97A, -0.5rem 0 0 #12E97A;
     display: inline;
@@ -41871,7 +41871,13 @@ html {
 }
 
 .testimonials-v23 {
-    padding: 2rem;
+    padding: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .testimonials-v23 {
+        padding: 1rem;
+    }
 }
 
 .testimonials-v23 .slider-v23__wrap {
@@ -41886,6 +41892,10 @@ html {
     }
 }
 
+.testimonials-v23 .slider-v23__heading {
+    margin-bottom: 0;
+}
+
 .testimonials-v23 .slider-v23__controls--dots {
     align-self: flex-end;
 }
@@ -41893,8 +41903,8 @@ html {
 .testimonials-v23 .testimonial-card-v23__container {
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -41980,11 +41990,24 @@ html {
 
 .testimonials-v23 .testimonial-card-v23__author__name {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .testimonials-v23 .testimonial-card-v23__author__name a {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+.testimonials-v23 .testimonial-card-v23__author__name a:hover {
+    color: #1e1e1e;
+    background-color: #ffffff;
+}
+
+.testimonials-v23 .testimonial-card-v23__author__name a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
 }
 
 .testimonials-v23 .testimonial-card-v23__author__title,
@@ -41994,6 +42017,14 @@ html {
 
 .js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] {
     margin: 1rem 0;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'] {
+    visibility: hidden;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] .slide[data-sliderposition='1'] {
+    visibility: hidden;
 }
 
 .js .courses-v23__careers__testimonials .slider-v23__controls--dots {
