@@ -1442,6 +1442,10 @@ readers do not read off random characters that represent icons */
     content: "\f054";
 }
 
+.fa-chevron-up::before {
+    content: "\f077";
+}
+
 .fa-circle::before {
     content: "\f111";
 }
@@ -1490,6 +1494,30 @@ readers do not read off random characters that represent icons */
     content: "\f019";
 }
 
+.fa-earth-americas::before {
+    content: "\f57d";
+}
+
+.fa-earth::before {
+    content: "\f57d";
+}
+
+.fa-earth-america::before {
+    content: "\f57d";
+}
+
+.fa-globe-americas::before {
+    content: "\f57d";
+}
+
+.fa-earth-europe::before {
+    content: "\f7a2";
+}
+
+.fa-globe-europe::before {
+    content: "\f7a2";
+}
+
 .fa-envelope::before {
     content: "\f0e0";
 }
@@ -1512,6 +1540,10 @@ readers do not read off random characters that represent icons */
 
 .fa-file-pdf::before {
     content: "\f1c1";
+}
+
+.fa-filter::before {
+    content: "\f0b0";
 }
 
 .fa-gears::before {
@@ -13501,12 +13533,14 @@ svg:not(:root) {
     outline: 0.12rem dotted #1e1e1e;
 }
 
-.secondary-navigation__list--home i {
+.secondary-navigation__list--home i,
+.secondary-navigation__list--home span {
     position: relative;
-    top: 5px;
+    top: 0.075rem;
 }
 
-.secondary-navigation__list--home:hover i {
+.secondary-navigation__list--home:hover i,
+.secondary-navigation__list--home:hover span {
     top: 0px;
 }
 
@@ -33142,7 +33176,8 @@ table tbody > tr > td:hover {
 .link__pdf::before {
     font-family: "Font Awesome 6 Pro";
     font-size: 1rem;
-    content: '\f1c1';
+    content: "\f1c1";
+    font-weight: 400;
     padding-right: 0.5rem;
 }
 
@@ -34540,7 +34575,7 @@ input:checked + .cass-events .calendar__radio__button:before {
 }
 
 .cass-events .calendar__head li {
-    color: grey;
+    color: #666666;
     padding: 1rem 0.5rem;
     border-width: 0;
     font-weight: 600;
@@ -34621,7 +34656,7 @@ input:checked + .cass-events .calendar__radio__button:before {
 }
 
 .cass-events .calendar__days__day--other-month a .calendar__date {
-    color: grey;
+    color: #666666;
 }
 
 .cass-events .calendar__date {
@@ -35250,8 +35285,8 @@ News events landing overrides */
 }
 
 .cass-news-search .filter-box__open h2:before {
-    content: '\f0b0';
-    font-family: FontAwesome;
+    font-family: "Font Awesome 6 Pro";
+    content: "\f0b0";
     margin-right: 1rem;
 }
 
@@ -35264,17 +35299,15 @@ News events landing overrides */
 .cass-news-search .filter-box__open .icon-angle-down {
     margin-left: auto;
     color: #1e1e1e;
-    font-size: 1.44rem;
+    font-family: "Font Awesome 6 Pro";
 }
 
 .cass-news-search .filter-box__open .icon-angle-up:before {
-    content: '\f106';
-    font-family: FontAwesome;
+    content: "\f077";
 }
 
 .cass-news-search .filter-box__open .icon-angle-down:before {
-    content: '\f107';
-    font-family: FontAwesome;
+    content: "\f078";
 }
 
 .cass-news-search .news-finder__query .filter-box__float {
@@ -39122,6 +39155,11 @@ div.widget-123_test_ {
 
 .wFormContainer .supportInfo {
     display: none;
+}
+
+.wFormContainer .wForm .field-hint-inactive .hint {
+    opacity: 1 !important;
+    color: #666666 !important;
 }
 
 .cta.cta--yellow-inline-block {
