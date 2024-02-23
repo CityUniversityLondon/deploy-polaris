@@ -42127,10 +42127,15 @@ html {
     align-items: center;
     font-size: 4.1472rem;
     color: #2e767a;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
 .ksp-v23.ksp-v23--animated-percentages .ksp-v23__list__item__value__tag span {
     font-size: 2.0736rem;
+}
+
+.ksp-v23.ksp-v23--animated-percentages .ksp-v23__list__item__label {
+    color: #555555;
 }
 
 .ksp-v23 .ksp-v23__list {
