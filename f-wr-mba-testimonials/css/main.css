@@ -41940,7 +41940,7 @@ html {
 }
 
 .testimonials-v23 .slider-v23__heading {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .testimonials-v23 .slider-v23__controls--dots {
@@ -42070,7 +42070,7 @@ html {
 }
 
 .js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] {
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'] {
