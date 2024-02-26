@@ -41966,15 +41966,18 @@ html {
 }
 
 .testimonials-v23 .testimonial-card-v23__text:before {
-    content: open-quote;
+    content: '“';
+    left: 0;
+    position: absolute;
+    top: -0.5rem;
 }
 
-.testimonials-v23 .testimonial-card-v23__text p {
+.testimonials-v23 .testimonial-card-v23__text:after {
+    content: '”';
+}
+
+.testimonials-v23 .testimonial-card-v23__text span {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-}
-
-.testimonials-v23 .testimonial-card-v23__text p:after {
-    content: close-quote;
 }
 
 .testimonials-v23 .testimonial-card-v23__image {
