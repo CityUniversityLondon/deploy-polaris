@@ -41961,19 +41961,27 @@ html {
 }
 
 .testimonials-v23 .testimonial-card-v23__text {
-    display: flex;
-    flex-direction: row;
+    padding: 0 0 0 0.75rem;
+    margin-bottom: 1.5rem;
 }
 
 .testimonials-v23 .testimonial-card-v23__text:before {
     content: '“';
     left: 0;
     position: absolute;
-    top: -0.5rem;
+    margin: inherit;
+    height: inherit;
+    width: inherit;
+    background-color: inherit;
+    -webkit-mask: inherit;
+            mask: inherit;
 }
 
 .testimonials-v23 .testimonial-card-v23__text:after {
     content: '”';
+    right: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 .testimonials-v23 .testimonial-card-v23__text span {
@@ -42084,6 +42092,10 @@ html {
     visibility: hidden;
 }
 
+.js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] .slide.testimonial-card-v23:focus {
+    outline-color: #ffffff;
+}
+
 .js .courses-v23__careers__testimonials .slider-v23__controls--dots {
     padding: 0;
 }
@@ -42098,6 +42110,10 @@ html {
     margin: 0.375rem;
 }
 
+.js .courses-v23__careers__testimonials .slider-v23__controls--dots button:focus, .js .courses-v23__careers__testimonials .slider-v23__controls--dots button:active {
+    outline-color: #ffffff;
+}
+
 .js .courses-v23__careers__testimonials .slider-v23__controls--dots button:last-of-type {
     margin: 0.375rem;
 }
@@ -42106,4 +42122,8 @@ html {
     width: 1.75rem;
     height: 1.75rem;
     margin: 0.125rem;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23__controls--dots button[aria-expanded='true']:focus, .js .courses-v23__careers__testimonials .slider-v23__controls--dots button[aria-expanded='true']:active {
+    outline-color: #ffffff;
 }
