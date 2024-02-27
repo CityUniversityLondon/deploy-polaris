@@ -42154,6 +42154,28 @@ html {
     margin-top: 0.5rem;
 }
 
+.ksp-v23.ksp-v23--static .ksp-v23__list__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.ksp-v23.ksp-v23--static .ksp-v23__list__item:not(:last-child):after {
+    content: '';
+    width: 2.5rem;
+    height: 107%;
+    background: radial-gradient(ellipse at center, #979797, #979797 0.0625rem, transparent 0, transparent 100%);
+    background-size: 1.25rem 1.25rem;
+    background-position-x: -0.5rem;
+}
+
+.ksp-v23.ksp-v23--static .ksp-v23__list__item:last-child:after {
+    content: '';
+    width: 2.5rem;
+    height: 107%;
+    background-size: 1.25rem 1.25rem;
+}
+
 .ksp-v23 .ksp-v23__list {
     display: flex;
     flex-direction: row;
