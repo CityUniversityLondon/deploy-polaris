@@ -42154,6 +42154,10 @@ html {
     margin-top: 0.5rem;
 }
 
+.ksp-v23.ksp-v23--static .ksp-v23__heading {
+    margin-top: 1rem;
+}
+
 .ksp-v23.ksp-v23--static .ksp-v23__list__item {
     position: relative;
     display: flex;
@@ -42162,8 +42166,7 @@ html {
 
 .ksp-v23.ksp-v23--static .ksp-v23__list__item:not(:last-child):after {
     content: '';
-    width: 2.5rem;
-    height: 107%;
+    width: 2rem;
     background: radial-gradient(ellipse at center, #979797, #979797 0.0625rem, transparent 0, transparent 100%);
     background-size: 1.25rem 1.25rem;
     background-position-x: -0.5rem;
@@ -42171,9 +42174,28 @@ html {
 
 .ksp-v23.ksp-v23--static .ksp-v23__list__item:last-child:after {
     content: '';
-    width: 2.5rem;
-    height: 107%;
+    width: 2rem;
+    height: 100%;
     background-size: 1.25rem 1.25rem;
+}
+
+.ksp-v23.ksp-v23--static .ksp-v23__list__item__container {
+    flex: 1;
+    text-align: center;
+}
+
+.ksp-v23.ksp-v23--static .ksp-v23__list__item__value {
+    font-size: 4.1472rem;
+    color: #1e1e1e;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ksp-v23.ksp-v23--static .ksp-v23__list__item__value span {
+    font-size: 2.0736rem;
 }
 
 .ksp-v23 .ksp-v23__list {
