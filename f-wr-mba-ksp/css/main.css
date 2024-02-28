@@ -42115,6 +42115,7 @@ html {
 
 .ksp-mba-v23 {
     padding: 1.5rem;
+    position: relative;
 }
 
 @media (max-width: 900px) {
@@ -42126,7 +42127,7 @@ html {
 .ksp-mba-v23 .ksp-mba-v23__list {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
@@ -42166,6 +42167,12 @@ html {
     margin-top: 0.5rem;
 }
 
+@media (max-width: 900px) {
+    .ksp-mba-v23.ksp-mba-v23--static {
+        padding: 1.5rem;
+    }
+}
+
 .ksp-mba-v23.ksp-mba-v23--static .ksp-mba-v23__heading {
     margin-top: 1rem;
 }
@@ -42201,7 +42208,7 @@ html {
 
 .ksp-mba-v23.ksp-mba-v23--static .ksp-mba-v23__list__item__container {
     flex: 1;
-    text-align: center;
+    margin-right: 0.25rem;
 }
 
 .ksp-mba-v23.ksp-mba-v23--static .ksp-mba-v23__list__item__value {
@@ -42211,7 +42218,12 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .ksp-mba-v23.ksp-mba-v23--static .ksp-mba-v23__list__item__value {
+        font-size: 3.1104rem;
+    }
 }
 
 .ksp-mba-v23.ksp-mba-v23--static .ksp-mba-v23__list__item__value span {
