@@ -42114,14 +42114,8 @@ html {
 }
 
 .ksp-mba-v23 {
-    padding: 1.5rem;
     position: relative;
-}
-
-@media (max-width: 900px) {
-    .ksp-mba-v23 {
-        padding: 1rem;
-    }
+    grid-column: 1/13;
 }
 
 .ksp-mba-v23 .ksp-mba-v23__list {
@@ -42129,6 +42123,11 @@ html {
     flex-direction: row;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+.ksp-mba-v23.ksp-mba-v23--animated-graphs {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .ksp-mba-v23.ksp-mba-v23--animated-graphs .ksp-mba-v23__list[data-count='1'] .ksp-mba-v23__list__item, .ksp-mba-v23.ksp-mba-v23--animated-graphs .ksp-mba-v23__list[data-count='2'] .ksp-mba-v23__list__item, .ksp-mba-v23.ksp-mba-v23--animated-graphs .ksp-mba-v23__list[data-count='3'] .ksp-mba-v23__list__item {
@@ -42165,6 +42164,10 @@ html {
     color: #555555;
     text-align: center;
     margin-top: 0.5rem;
+}
+
+.ksp-mba-v23.ksp-mba-v23--animated-numbers {
+    padding: 1.5rem;
 }
 
 @media (max-width: 900px) {
