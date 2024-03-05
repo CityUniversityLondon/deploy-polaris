@@ -9345,7 +9345,8 @@ svg:not(:root) {
 }
 
 .courses-v23__fee__inner .fee-currency-converter {
-    padding: 0.75rem 0;
+    padding: 0.75rem 0 0 0;
+    margin: 0;
 }
 
 .courses-v23__fee__inner .fee-amount__sub {
