@@ -9283,7 +9283,6 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .courses-v23__fee .courses-v23--fee__heading {
         margin-bottom: 0.5rem;
-        margin-top: 2rem;
     }
 }
 
@@ -9291,15 +9290,13 @@ svg:not(:root) {
     grid-column: span 6;
 }
 
-@media (min-width: 650px) {
-    .courses-v23__fee-block + .fee-entry {
-        margin-top: 1rem;
-    }
+.courses-v23__fee-block + .fee-entry {
+    margin-top: 2rem;
 }
 
-@media (min-width: 901px) {
-    .courses-v23__fee-block + .fee-entry {
-        margin-top: 1.5rem;
+@media (max-width: 650px) {
+    .courses-v23__fee-block + .courses-v23__fee-block {
+        margin-top: 2rem;
     }
 }
 
@@ -9317,10 +9314,8 @@ svg:not(:root) {
     padding: 2rem 1.5rem;
 }
 
-@media (min-width: 650px) {
-    .courses-v23__fee__inner + .courses-v23__fee__inner {
-        margin-top: 1rem;
-    }
+.courses-v23__fee__inner + .courses-v23__fee__inner {
+    margin-top: 1rem;
 }
 
 @media (min-width: 901px) {
