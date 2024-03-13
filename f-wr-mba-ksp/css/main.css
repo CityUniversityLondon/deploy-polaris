@@ -42156,18 +42156,6 @@ html {
     }
 }
 
-.ksp-mba-v23 .ksp-mba-v23__list__item__label p a {
-    background-color: inherit;
-    color: inherit;
-    border-bottom-width: 0;
-}
-
-.ksp-mba-v23 .ksp-mba-v23__list__item__label p a:hover, .ksp-mba-v23 .ksp-mba-v23__list__item__label p a:focus, .ksp-mba-v23 .ksp-mba-v23__list__item__label p a:active {
-    background-color: inherit;
-    color: inherit;
-    outline-width: 0;
-}
-
 .ksp-mba-v23.ksp-mba-v23--animated-graphs {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
