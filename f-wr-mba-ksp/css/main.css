@@ -42184,7 +42184,7 @@ html {
     width: 100%;
 }
 
-.ksp-mba-v23.ksp-mba-v23--animated-graphs .ksp-mba-v23__list__item__value__tag {
+.ksp-mba-v23.ksp-mba-v23--animated-graphs .ksp-mba-v23__list__item__value__unit {
     position: absolute;
     display: flex;
     top: 0;
@@ -42197,7 +42197,7 @@ html {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
-.ksp-mba-v23.ksp-mba-v23--animated-graphs .ksp-mba-v23__list__item__value__tag span {
+.ksp-mba-v23.ksp-mba-v23--animated-graphs .ksp-mba-v23__list__item__value__unit span {
     font-size: 2.0736rem;
 }
 
