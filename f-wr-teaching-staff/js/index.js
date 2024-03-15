@@ -22757,6 +22757,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/components-v23/nav-sticky/nav-sticky */ "./src/components/components-v23/nav-sticky/nav-sticky.js");
 /* harmony import */ var _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/components-v23/slider-v23/slider-v23 */ "./src/components/components-v23/slider-v23/slider-v23.js");
 /* harmony import */ var _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/components-v23/accordion-v23/accordion-v23 */ "./src/components/components-v23/accordion-v23/accordion-v23.js");
+/* harmony import */ var _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/components-v23/content-transition/content-transition-vertical */ "./src/components/components-v23/content-transition/content-transition-vertical.js");
+/* harmony import */ var _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/components-v23/content-transition/content-transition-horizontal */ "./src/components/components-v23/content-transition/content-transition-horizontal.js");
+/* harmony import */ var _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/components-v23/content-transition/square-animation */ "./src/components/components-v23/content-transition/square-animation.js");
 
 
 
@@ -22792,7 +22795,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__["default"]]);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__["default"], _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_33__["default"], _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_34__["default"], _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_35__["default"]]);
 
 /***/ }),
 
@@ -24418,7 +24424,6 @@ __webpack_require__.r(__webpack_exports__);
  * @author Web Development
  * @copyright City, University of London 2018-2019
  */
-//import scroll from 'zenscroll';
 
 var className = 'accordion-v23',
   headingClassName = className + '__heading',
@@ -24426,9 +24431,29 @@ var className = 'accordion-v23',
   headingIconClassName = headingClassName + '__indicator',
   bodyClassName = className + '__body',
   oneSecond = 1000,
-  tenthOfASecond = 100,
-  scrollDuration = Object(_util__WEBPACK_IMPORTED_MODULE_8__["reduceMotion"])() ? 0 : oneSecond,
-  scrollTo = true;
+  tenthOfASecond = 100;
+
+/**
+ * Only triggeered on page load when an accordion address is present in the URL.
+ * This function ensures that the page scrolls down to this accrodion heading, by checking if it scrolled
+ * down far enough, if not then try again automatically
+ *
+ * @param {HTMLHeadingElement} heading - An accordion heading.
+ * @param {string} repeat - will try automatically repeat and scroll down to heading until achieved.
+ */
+
+function scrollToHeading(heading, repeat) {
+  var viewportOffset = heading.parentElement.getBoundingClientRect();
+  var top = viewportOffset.top;
+  scrollBy(0, top - stickyNavHeight());
+  if (repeat) {
+    setTimeout(function () {
+      if (top > 200) {
+        scrollToHeading(heading, repeat);
+      }
+    }, 700);
+  }
+}
 
 /**
  * Sets a heading and the button nested within to be open or closed.
@@ -24440,6 +24465,10 @@ function setSection(heading, open) {
   heading.dataset.open = open;
   heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
+
+  // Automatically scrolls heading into view being at the top of the page
+  var viewportOffset = heading.parentElement.getBoundingClientRect();
+  var top = viewportOffset.top;
 }
 
 /**
@@ -24484,6 +24513,33 @@ function cleanupTransition(section) {
 }
 
 /**
+ * Checking if stickyNav is present and returns its height
+ *
+ */
+function stickyNavHeight() {
+  var stickyNavEl = document.getElementsByClassName('nav-sticky')[0];
+  if (stickyNavEl) {
+    return stickyNavEl.offsetHeight;
+  }
+}
+
+/**
+ * Check if accordion is a sub accordion and return the heading
+ *
+ */
+function isSubAccordion(heading) {
+  var accordionParentBodyWrap = heading.parentElement.closest('.accordion-v23__body');
+  if (accordionParentBodyWrap) {
+    var parentHeadingElem = accordionParentBodyWrap.previousElementSibling;
+    if (parentHeadingElem.classList.contains("".concat(headingClassName))) {
+      return parentHeadingElem;
+    } else {
+      return false;
+    }
+  }
+}
+
+/**
  * Respond to button clicks - open if closed, close if open.
  *
  * If opening, will also push the heading ID into the history, so C+Ping the URL
@@ -24495,14 +24551,20 @@ function cleanupTransition(section) {
  * @param {boolean} [toggleOpen] - Should other accordion sections close? Default to false.
  */
 function buttonClick(button, headings, toggleOpen) {
-  var heading = button.parentNode,
-    accordionSection = heading.nextElementSibling;
+  var heading = button.parentNode;
+  var accordionSection = heading.nextElementSibling;
+  var subAccordions = accordionSection.querySelectorAll('.accordion-v23__section');
   if (button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded) === 'true') {
     // updates URL hash, by removing hash from URL when accordion closes
-    history.pushState({}, null, location.href.split('#')[0]);
+    if (isSubAccordion(heading)) {
+      var subHeading = isSubAccordion(heading);
+      history.pushState({}, null, "#".concat(subHeading.id));
+    } else {
+      history.pushState({}, null, location.href.split('#')[0]);
+    }
   } else {
     // updates URL hash with accordion heading, when accordion opens
-    window.location.hash = event.currentTarget.parentElement.id;
+    history.pushState({}, null, "#".concat(heading.id));
   }
 
   /**
@@ -24517,6 +24579,24 @@ function buttonClick(button, headings, toggleOpen) {
     once: true
   });
   if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded))) {
+    //Check for sub accordions and close if open
+    if (subAccordions.length > 0) {
+      subAccordions.forEach(function (sub) {
+        var subAccordionHeading = sub.querySelector(".".concat(headingClassName));
+        var subAccordionSection = sub.querySelector(".".concat(bodyClassName));
+
+        //If the sub accordion is open close it.
+        if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(sub.dataset.open)) {
+          // Starting height is the current height
+          setupTransition(subAccordionSection, subAccordionSection.offsetHeight + 'px');
+          // setTimeout lets the DOM recalculate before we continue, so the transition will fire
+          setTimeout(function () {
+            subAccordionSection.style.height = '0px';
+          }, tenthOfASecond);
+          setSection(subAccordionHeading, false);
+        }
+      });
+    }
     // Starting height is the current height
     setupTransition(accordionSection, accordionSection.offsetHeight + 'px');
     // setTimeout lets the DOM recalculate before we continue, so the transition will fire
@@ -24524,6 +24604,7 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = '0px';
     }, tenthOfASecond);
     setSection(heading, false);
+    //scrollToHeading(heading);
   } else {
     // Calclulate and save how big we're transitioning to
     var sectionHeight = calculateAccordionBodyHeight(heading);
@@ -24545,9 +24626,7 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    if (scrollTo && !(Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(heading) && Object(_util__WEBPACK_IMPORTED_MODULE_8__["verticallyInWindow"])(accordionSection))) {
-      scroll.to(heading, scrollDuration);
-    }
+    //scrollToHeading(heading);
   }
 }
 
@@ -24638,11 +24717,20 @@ function launch(accordion) {
   if (window.location.hash) {
     //finds accordion heading in URL
     var urlHash = window.location.hash;
-    var heading = accordion.querySelector('' + urlHash + '');
+    var heading = accordion.querySelector(urlHash);
     if (heading) {
-      // Wait for DOM to load before accessing selected accordion
-      setSection(heading, true);
-      heading.nextElementSibling.dataset.closed = 'false';
+      //Check if current accordion matches the accordion that the ID is a direct child of
+      var currentAccordionHeading = heading.closest(".".concat(className)) === accordion;
+      if (!currentAccordionHeading) {
+        if (isSubAccordion(heading)) {
+          heading = isSubAccordion(heading);
+        }
+      }
+      setTimeout(function () {
+        setSection(heading, true);
+        heading.nextElementSibling.dataset.closed = 'false';
+        scrollToHeading(heading, 'forced');
+      }, 200);
     }
   }
 }
@@ -24785,6 +24873,173 @@ var aria = {
 
 /***/ }),
 
+/***/ "./src/components/components-v23/content-transition/content-transition-horizontal.js":
+/*!*******************************************************************************************!*\
+  !*** ./src/components/components-v23/content-transition/content-transition-horizontal.js ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+function launch(contentSection) {
+  var viewPortWidth = window.innerWidth;
+  if (viewPortWidth < 650) {
+    return;
+  }
+  function handleIntersect_contentsections(entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var count = 0;
+        entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
+          setTimeout(function () {
+            elem.classList.add('content-transition-horizontal--end');
+          }, count);
+          count += 250;
+        });
+      }
+    });
+  }
+  function createObserverContentSections() {
+    var observerContentSections;
+    var options = {
+      root: null,
+      rootMargin: '-20%'
+    };
+    observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
+    observerContentSections.observe(contentSection);
+    if (contentSection.classList.contains('content-transition-horizontal--slow')) {
+      contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+        elem.classList.add('content-transition-horizontal--slow--start');
+      });
+    } else {
+      contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+        elem.classList.add('content-transition-horizontal--start');
+      });
+    }
+  }
+  createObserverContentSections();
+}
+var className = 'content-transition-horizontal';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
+/***/ "./src/components/components-v23/content-transition/content-transition-vertical.js":
+/*!*****************************************************************************************!*\
+  !*** ./src/components/components-v23/content-transition/content-transition-vertical.js ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+function launch(contentSection) {
+  function handleIntersect_transitionsSections(entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('content-transition-vertical--end');
+      }
+    });
+  }
+  function createObserverContentSections() {
+    var observerContentSections;
+    var options = {
+      root: null,
+      rootMargin: '-13%'
+    };
+    observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);
+    observerContentSections.observe(contentSection);
+    contentSection.classList.add('content-transition-vertical--start');
+  }
+  createObserverContentSections();
+}
+var className = 'content-transition-vertical';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
+/***/ "./src/components/components-v23/content-transition/square-animation.js":
+/*!******************************************************************************!*\
+  !*** ./src/components/components-v23/content-transition/square-animation.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.map.js */ "./node_modules/core-js/modules/es6.array.map.js");
+/* harmony import */ var core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0__);
+
+
+
+function launch(el) {
+  var viewPortWidth = window.innerWidth;
+  if (viewPortWidth < 650) {
+    return;
+  }
+  var elemHeight = el.querySelector('picture').offsetHeight;
+  var elemWidth = el.querySelector('picture').offsetWidth;
+  var squaresRef = [];
+  var squareswrap = document.createElement('div');
+
+  // calculates how many squares to generate
+  var squares = 4 * Math.ceil(elemHeight / (elemWidth / 4));
+  squareswrap.classList.add('square-animation-v23__wrap');
+  for (var i = 0; i < squares; i++) {
+    var squareContainer = document.createElement('div');
+    squareContainer.classList.add('square-animation-v23__square');
+    squareswrap.appendChild(squareContainer);
+
+    // creates an array acting as a reference for the amount of squares generated
+    squaresRef.push(i);
+  }
+  el.appendChild(squareswrap);
+  var animationTimeout = 0;
+
+  // shuffles the array
+  var sqShuffled = squaresRef.map(function (value) {
+    return {
+      value: value,
+      sort: Math.random()
+    };
+  }).sort(function (a, b) {
+    return a.sort - b.sort;
+  }).map(function (_ref) {
+    var value = _ref.value;
+    return value;
+  });
+  var sqs = el.querySelectorAll('.square-animation-v23__square');
+
+  // loops through the shuffled array to select the generated squares at ramdom to apply an animation to them
+  var _loop = function _loop(_i) {
+    setTimeout(function () {
+      sqs[sqShuffled[_i]].classList.add('square-animation-v23__animation-started');
+    }, animationTimeout);
+    animationTimeout += 1000;
+  };
+  for (var _i = 0; _i < sqShuffled.length; _i++) {
+    _loop(_i);
+  }
+}
+var className = 'square-animation-v23';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
 /***/ "./src/components/components-v23/nav-sticky/nav-sticky.js":
 /*!****************************************************************!*\
   !*** ./src/components/components-v23/nav-sticky/nav-sticky.js ***!
@@ -24794,15 +25049,45 @@ var aria = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.symbol.js */ "./node_modules/core-js/modules/es6.symbol.js");
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.array.from.js */ "./node_modules/core-js/modules/es6.array.from.js");
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.string.iterator.js */ "./node_modules/core-js/modules/es6.string.iterator.js");
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.object.to-string.js */ "./node_modules/core-js/modules/es6.object.to-string.js");
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.array.iterator.js */ "./node_modules/core-js/modules/es6.array.iterator.js");
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace.js */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
 
 
 
 function launch(el) {
-  var elemFix = document.querySelector(".nav-sticky");
   var scrollActiveLink = '';
 
+  /*
+  // Create the observer helper div and appended to the DOM
+  */
+  var observerHelper = document.createElement('div');
+  var stickNavHeight = el.offsetHeight;
+  var lastScrollPos = window.scrollY;
+  observerHelper.id = 'nav-sticky__helper';
+  el.parentNode.insertBefore(observerHelper, el);
+
+  /*
+  // Reference to the sticky nav sections
+  */
+  var contentSections = document.querySelectorAll('.sticky-nav__sec');
   /*
   // Observer to watching menu position and make it stick
   */
@@ -24814,64 +25099,91 @@ function launch(el) {
   }
   function handleIntersect_stickyMenu(entries) {
     entries.forEach(function (entry) {
-      elemFix.classList.toggle('nav-sticky--stick', !entry.isIntersecting);
+      el.classList.toggle('nav-sticky__inner--stick', !entry.isIntersecting);
     });
   }
-  createObserverStickyNav(el);
+  createObserverStickyNav(observerHelper);
+  if (window.location.hash) {
+    var currentHash = window.location.hash.substring(1);
+    var matchedHash = Array.from(contentSections).some(function (section) {
+      return section.id === currentHash;
+    });
+    if (matchedHash) {
+      scrollActiveLink = window.location.hash;
+      var elId = scrollActiveLink.replace('#', '');
+      var scrollToEl = document.getElementById(elId);
+      setTimeout(function () {
+        scrollToEl.scrollIntoView();
+        highlightNavMenuItem();
+      }, 700);
+    }
+  }
 
   /*
   // Observer to watching different content sections and highlight corresponding menu item
   */
 
-  var contentSections = document.querySelectorAll('.sticky-nav__sec');
   function handleIntersect_contentSections(entries) {
-    entries.forEach(function (entry) {
-      var entryTitle = entry.target.getAttribute('data-sticky');
-      if (entry.isIntersecting) {
-        highlightNavMenuItem(entryTitle);
-      }
-    });
+    var scrollTop = window.scrollY;
+    if (!scrollActiveLink) {
+      entries.forEach(function (entry) {
+        if (scrollTop >= lastScrollPos) {
+          if (entry.isIntersecting) {
+            highlightNavMenuItem(entry.target);
+          }
+        } else {
+          if (!entry.isIntersecting) {
+            highlightNavMenuItem(entry.target.previousElementSibling);
+          }
+        }
+      });
+    }
+    lastScrollPos = scrollTop;
   }
+
+  // function setSectionObserver() {
+  // Can observe and unobserve the sections if needed.
+  // }
   function createObserverContentSections() {
-    var observerContentSections;
-    var options = {
+    var observerContentSectionsOptions = {
       root: null,
-      rootMargin: "-50%"
+      threshold: 0,
+      rootMargin: "-".concat(stickNavHeight, "px 0px -60% 0px")
     };
+    var observerContentSections = new IntersectionObserver(handleIntersect_contentSections, observerContentSectionsOptions);
     contentSections.forEach(function (area) {
-      observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
       observerContentSections.observe(area);
     });
   }
   createObserverContentSections();
 
   /*
-  // Observer to watchinging 1st menu item then add blur effect to end of nav
+  // Observer to watchinging 1st menu item then add blur effect to start of nav
   */
 
-  var stickyNavFirstItem = document.querySelector(".nav-sticky__item:first-child");
+  var stickyNavFirstItem = document.querySelector('.nav-sticky__item:first-child');
   var observeStickyNavFirstItem = new IntersectionObserver(function (entries) {
-    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+    var horizontalScrollWidth = document.querySelector('.nav-sticky__items').scrollWidth;
+    var stickyNavWidth = document.querySelector('.nav-sticky__items').offsetWidth;
     if (stickyNavWidth < horizontalScrollWidth) {
       entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--right', entry.isIntersecting);
+        document.querySelector('.nav-sticky').classList.toggle('nav-sticky--left', !entry.isIntersecting);
       });
     }
   });
   observeStickyNavFirstItem.observe(stickyNavFirstItem);
 
   /*
-  // Observer to watchinging last menu item then add blur effect to start of nav
+  // Observer to watchinging last menu item then add blur effect to end of nav
   */
 
-  var stickyNavLastItem = document.querySelector(".nav-sticky__item:last-child");
+  var stickyNavLastItem = document.querySelector('.nav-sticky__item:last-child');
   var observeStickyNavLastItem = new IntersectionObserver(function (entries) {
-    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+    var horizontalScrollWidth = document.querySelector('.nav-sticky__items').scrollWidth;
+    var stickyNavWidth = document.querySelector('.nav-sticky__items').offsetWidth;
     if (stickyNavWidth < horizontalScrollWidth) {
       entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--left', entry.isIntersecting);
+        document.querySelector('.nav-sticky').classList.toggle('nav-sticky--right', !entry.isIntersecting);
       });
     }
   });
@@ -24883,34 +25195,75 @@ function launch(el) {
   // clicking on it, or scrolling to a new section
   */
 
-  var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
-  function highlightNavMenuItem(text) {
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
+  var stickyNavMenuItemLinks = document.querySelector('.nav-sticky').querySelectorAll('.nav-sticky__item__link');
+  var anchorLinksOnPage = document.querySelectorAll('a[href^="#"]');
+  function highlightNavMenuItem(elem) {
     stickyNavMenuItemLinks.forEach(function (item) {
-      if (item.innerText == text && !scrollActiveLink) {
-        item.classList.add('nav-sticky__item__link__active');
-        document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
-      } else if (item.innerText == text && scrollActiveLink == text) {
-        setTimeout(function () {
+      if (scrollActiveLink) {
+        if (item.getAttribute('href') === scrollActiveLink) {
           item.classList.add('nav-sticky__item__link__active');
-          scrollActiveLink = ''; // clears value to indicate the page has now scrolled down to the clicked link
-          document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
-        }, "300");
+          scrollNavItemToView(item, 700);
+        } else {
+          item.classList.remove('nav-sticky__item__link__active');
+        }
       } else {
-        item.classList.remove('nav-sticky__item__link__active');
+        if (item.getAttribute('href') === '#' + elem.id && !scrollActiveLink) {
+          item.classList.add('nav-sticky__item__link__active');
+          scrollNavItemToView(item, 700);
+        } else {
+          item.classList.remove('nav-sticky__item__link__active');
+        }
       }
     });
+    setTimeout(function () {
+      //Once scrollend event has better support that could be used.
+      scrollActiveLink = '';
+    }, 700);
   }
-  stickyNavMenuItemLinks.forEach(function (item) {
-    item.addEventListener('click', function (event) {
-      event.preventDefault();
-      var scrollToLink = item.getAttribute('href');
-      scrollActiveLink = item.innerHTML;
-      document.querySelector(scrollToLink).scrollIntoView();
+  function scrollNavItemToView(item) {
+    var delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+    var stickyNavItems = document.querySelector('.nav-sticky__items');
+    var stickyNavItemsWidth = stickyNavItems.offsetWidth;
+    setTimeout(function () {
+      stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
+    }, delay);
+  }
+  anchorLinksOnPage.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      // If clicked hash is already in the url remove so it gets added again to trigger the hashchange listener
+      var hrefValue = e.target.getAttribute('href');
+      scrollActiveLink = hrefValue;
+      highlightNavMenuItem(e.target);
     });
   });
+
+  /*
+  // Create Debug Area
+  // Useful to help see when a section will trigger the observer
+  // Some settings like height and top will need amend if rootMargin is changed
+  */
+
+  // function createDebugArea() {
+  //     const debugArea = document.createElement('div');
+  //     debugArea.id = 'debugArea';
+  //     const debugAreaStyles = {
+  //         'z-index': '1000',
+  //         'background-color': 'rgba(0,128,0,.5)',
+  //         position: 'fixed',
+  //         top: '69px',
+  //         left: '0',
+  //         width: '100vw',
+  //         height: 'calc(100vh - (69px + 60%))',
+  //         'pointer-events': 'none',
+  //     };
+  //     Object.assign(debugArea.style, debugAreaStyles);
+  //     document.body.appendChild(debugArea);
+  // }
+
+  // createDebugArea();
 }
-var className = 'nav-sticky__helper';
+
+var className = 'nav-sticky__wrap';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
@@ -25138,7 +25491,6 @@ function updateButtonState(slider, controls) {
 * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
 */
 function handleNextPrevClick(slider, controls, direction) {
-  console.log('handleNextPrevClick');
   var slides = Array.from(slider.children);
   var responsive = slider.getAttribute('data-style');
   var optimised = slider.getAttribute('data-optimised');
@@ -25179,7 +25531,6 @@ function handleNextPrevClick(slider, controls, direction) {
       current.addEventListener('transitionend', function hideCurrent() {
         current.removeEventListener('transitionend', hideCurrent, true);
         current.dataset.hidden = true;
-        current.dataset.smallhidden = true;
       }, true);
 
       // Updates position of slides
@@ -25187,12 +25538,19 @@ function handleNextPrevClick(slider, controls, direction) {
       previous ? previous.classList.remove('slide--prev') : '';
       current.classList.add('slide--prev');
       current.dataset.sliderposition = -1;
+      current.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.setAttribute('tabindex', -1);
+      });
+
       // Sets 'active' current slide
       next.dataset.hidden = false;
-      next.dataset.smallhidden = false;
       next.classList.remove('slide--next');
       next.nextElementSibling ? next.nextElementSibling.classList.add('slide--next') : '';
       next.dataset.sliderposition = 0;
+      next.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.removeAttribute('tabindex');
+      });
+
       // Updates pagination to current slide position
       currentPage.innerText = slides.indexOf(next) + 1;
     }
@@ -25211,7 +25569,6 @@ function handleNextPrevClick(slider, controls, direction) {
       current.addEventListener('transitionend', function hideCurrent() {
         current.removeEventListener('transitionend', hideCurrent, true);
         current.dataset.hidden = true;
-        current.dataset.smallhidden = true;
       }, true);
 
       // Updates position of slides
@@ -25219,12 +25576,19 @@ function handleNextPrevClick(slider, controls, direction) {
       next ? next.classList.remove('slide--next') : '';
       current.classList.add('slide--next');
       current.dataset.sliderposition = 1;
+      current.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.setAttribute('tabindex', -1);
+      });
+
       // Sets current / active slide
       previous.dataset.hidden = false;
-      previous.dataset.smallhidden = false;
       previous.classList.remove('slide--prev');
       previous.previousElementSibling ? previous.previousElementSibling.classList.add('slide--prev') : '';
       previous.dataset.sliderposition = 0;
+      previous.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.removeAttribute('tabindex');
+      });
+
       // Updates pagination to current slide
       currentPage.innerText = slides.indexOf(previous) + 1;
     }
@@ -25250,20 +25614,26 @@ function prepareSlides(slides, current) {
     if (i === current) {
       slide.dataset.sliderposition = 0;
       slide.dataset.hidden = false;
+      slide.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.removeAttribute('tabindex');
+      });
     } else if (i > current) {
       // 1 = next slide
       slide.dataset.sliderposition = 1;
       slide.dataset.hidden = 'true';
-      slide.dataset.smallhidden = 'true';
       current + 1 == i ? slide.classList.add('slide--next') : '';
+      slide.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.setAttribute('tabindex', -1);
+      });
     } else {
       slide.dataset.sliderposition = -1;
       slide.dataset.hidden = true;
       current - 1 == i ? slide.classList.add('slide--prev') : '';
-      // @ WR review smallhidden - what was intended by it?
+      slide.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.setAttribute('tabindex', -1);
+      });
     }
   });
-
   return slides;
 }
 
@@ -25376,11 +25746,6 @@ function launchArrow(slider) {
 
   slider.nextElementSibling ? slider.parentElement.insertBefore(controlsWrapper, slider.nextElementSibling) : slider.parentElement.appendChild(controlsWrapper);
 
-  /*
-      //Places controls directly after the element wrapping the 'ul' slides
-      slider.parentElement.parentElement.appendChild(controlsWrapper);
-       */
-
   // Add event listeners
   addSwipeEvents(slider, controlsWrapper);
 
@@ -25397,6 +25762,7 @@ function launchArrow(slider) {
 */
 function launchDot(slider) {
   // Creates pagination and control elements
+  var container = slider.getAttribute('data-ul-container');
   var slides = Array.from(slider.children),
     controlsWrapper = document.createElement('nav');
 
@@ -25417,7 +25783,6 @@ function launchDot(slider) {
     } else {
       slide.dataset.sliderposition = 1; // 1 for 'next' slide
       slide.dataset.hidden = 'true';
-      slide.dataset.smallhidden = 'true';
     }
 
     // Creates dot buttons for each slide
@@ -25473,8 +25838,9 @@ function launchDot(slider) {
   controlsWrapper.className = className + '__controls ' + className + '__controls--dots';
   controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, 'Slider navigation');
 
-  // Places controls directly after the element wrapping the 'ul' slides
-  slider.parentElement.parentElement.appendChild(controlsWrapper);
+  // Places controls directly after the element wrapping the 'ul' slides if wrapper true
+  container == 'true' ? slider.parentElement.parentElement.appendChild(controlsWrapper) : slider.parentElement.appendChild(controlsWrapper);
+
   //add event listeners
   addSwipeEvents(slider, controlsWrapper);
 
@@ -25515,13 +25881,11 @@ function handleDotClick(slider, controlsWrapper, selection) {
     else if (i > selection) {
       slide.dataset.sliderposition = 1;
       slide.dataset.hidden = true;
-      // @ WR review smallhidden - what was intended by it?
     }
     // Places slides 'before' current slide in previous position
     else {
       slide.dataset.sliderposition = -1;
       slide.dataset.hidden = true;
-      // @ WR review smallhidden - what was intended by it?
     }
   });
 
@@ -25625,7 +25989,6 @@ function move(e, slider, controlsWrapper) {
 * @param {HTMLElement} slider - An element with the slider class
 */
 function launch(slider) {
-  console.log('slider v23 launched');
   var style = slider.dataset.style || defaultStyle,
     cardsPerRow = parseInt(slider.dataset.cardsperrow) || defaultCardsPerRow; // CardsPerRow not currently in use. Tom's old code.
   // Might have use case for bigger screen which have capacity to have more than 1 item per slide.
@@ -26168,9 +26531,12 @@ function prepareMenu(widget) {
   if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
     var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14); // Staffhub(SH) uses different tree due to being type2 asset in Matrix
     menu.launch();
-  } else {
-    var _menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["current"], false, 14);
+  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
+    var _menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14); // Alumni uses different tree due to being type2 asset in Matrix
     _menu.launch();
+  } else {
+    var _menu2 = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["current"], false, 14);
+    _menu2.launch();
   }
   widget.addClass('left-hand-navigation--jsinit');
 }
@@ -26221,18 +26587,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function processTree(gCurrent, gTree) {
-  if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 3) {
+  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 2) {
+    // left hand navigation only starts on level 2 if Staffhub
     return {
       tree: null,
       current: null
-    }; // left hand navigation only starts on level 3
-  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 2) {
+    };
+  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 2) {
+    // left hand navigation only starts on level 2 if Alumni
     return {
       tree: null,
       current: null
-    }; // left hand navigation only starts on level 2 if Staffhub
+    };
+  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 3) {
+    // left hand navigation only starts on level 3
+    return {
+      tree: null,
+      current: null
+    };
   }
-
   var tree = gCurrent.slice(1, 3).reduce(function (acc, currentItem) {
     return acc.children.find(function (child) {
       return child.url === currentItem.url;
@@ -26465,9 +26838,14 @@ function launch(el) {
     var nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentSH"], containerTri);
     nav.launch();
     Object(_home_link__WEBPACK_IMPORTED_MODULE_6__["default"])(containerTop);
-  } else {
-    var _nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["current"], containerTop);
+  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
+    // Alumni uses different tree due to being type2 asset in Matrix
+    var _nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentSH"], containerTri);
     _nav.launch();
+    Object(_home_link__WEBPACK_IMPORTED_MODULE_6__["default"])(containerTop);
+  } else {
+    var _nav2 = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["current"], containerTop);
+    _nav2.launch();
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
