@@ -11307,24 +11307,6 @@ svg:not(:root) {
     opacity: 1;
 }
 
-.js .slider-v23--related-courses__wrap {
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
-}
-
-.js .slider-v23--related-courses__wrap .slider-v23__cards {
-    grid-column: 2 / -2;
-}
-
-.js .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-}
-
 .js .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive .slider-v23__indicator {
     display: none;
 }
