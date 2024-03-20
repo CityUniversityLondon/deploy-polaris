@@ -23576,7 +23576,8 @@ for (var i = 0; i <= 100; i++) {
 function actionOnScroll(element, action) {
   var repeat = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
   var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {
-    threshold: [0, 0.01, 1]
+    threshold: [0, 0.01, 1],
+    rootMargin: '-20%'
   };
   if (element && element.length > 0) {
     // normalise element
