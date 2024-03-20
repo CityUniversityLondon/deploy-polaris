@@ -2631,7 +2631,7 @@ h3 {
 
 .delta,
 h4,
-.courses-v23__fee__inner .fee-entry {
+.courses-v23__fee__inner .fee-studymode {
     font-size: 19.2px;
     font-size: 1.2rem;
     line-height: 1.355;
@@ -9266,8 +9266,7 @@ svg:not(:root) {
 }
 
 .courses-v23__fee p,
-.courses-v23__fee h2,
-.courses-v23__fee h3 {
+.courses-v23__fee h2 {
     margin-bottom: 0;
     padding: 0;
 }
@@ -9284,12 +9283,21 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .courses-v23__fee .courses-v23--fee__heading {
         margin-bottom: 0.5rem;
-        margin-top: 2rem;
     }
 }
 
 .courses-v23__fee-block {
     grid-column: span 6;
+}
+
+.courses-v23__fee-block + .fee-entry {
+    margin-top: 2rem;
+}
+
+@media (max-width: 650px) {
+    .courses-v23__fee-block + .courses-v23__fee-block {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 650px) {
@@ -9298,11 +9306,25 @@ svg:not(:root) {
     }
 }
 
+.courses-v23__fee-block .fee-tc-text {
+    margin-top: 0.75rem;
+}
+
 .courses-v23__fee__inner {
     padding: 2rem 1.5rem;
 }
 
-.courses-v23__fee__inner .fee-entry {
+.courses-v23__fee__inner + .courses-v23__fee__inner {
+    margin-top: 1rem;
+}
+
+@media (min-width: 901px) {
+    .courses-v23__fee__inner + .courses-v23__fee__inner {
+        margin-top: 1.5rem;
+    }
+}
+
+.courses-v23__fee__inner .fee-studymode {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 450;
     margin-bottom: 0;
@@ -9313,8 +9335,51 @@ svg:not(:root) {
     font-weight: 900;
 }
 
-.courses-v23__fee__inner .fee-amount--bar {
+.courses-v23__fee__inner .fee-amount:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.courses-v23__fee__inner .courses-v23__fee-studymodes-list li:nth-child(n + 2) {
+    padding-top: 0.75rem;
+}
+
+.courses-v23__fee__inner .courses-v23__fee-studymodes-list li:last-child .fee-amount {
+    margin-bottom: 0;
+}
+
+.courses-v23__fee__inner .fee-seperator {
     padding-top: 0.5rem;
+}
+
+.courses-v23__fee__inner .fee-currency-converter {
+    padding: 0.75rem 0 0 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.courses-v23__fee__inner .fee-currency-converter a {
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+.courses-v23__fee__inner .fee-currency-converter a:hover {
+    color: #1e1e1e;
+    background-color: #ffffff;
+}
+
+.courses-v23__fee__inner .fee-currency-converter a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.courses-v23__fee__inner .fee-currency-converter a:active {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
 }
 
 .courses-v23__fee__inner .fee-amount__sub {
@@ -9326,8 +9391,12 @@ svg:not(:root) {
     color: #1e1e1e;
 }
 
-.ug-courses-v23 .courses-v23__fee__inner .fee-amount--bar {
-    border-top: 1px solid rgba(0, 0, 0, 0.25);
+.ug-courses-v23 .courses-v23__fee__inner .fee-seperator {
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.25);
+}
+
+.ug-courses-v23 .courses-v23__fee-studymodes-list li {
+    border-bottom: rgba(12, 12, 14, 0.25) 0.0625rem solid;
 }
 
 .pg-courses-v23 .courses-v23__fee__inner {
@@ -9335,17 +9404,25 @@ svg:not(:root) {
     color: #ffffff;
 }
 
-.pg-courses-v23 .courses-v23__fee__inner .fee-amount--bar {
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
+.pg-courses-v23 .courses-v23__fee__inner .fee-seperator {
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.25);
+}
+
+.pg-courses-v23 .courses-v23__fee-studymodes-list li {
+    border-bottom: rgba(221, 221, 221, 0.25) 0.0625rem solid;
 }
 
 .mba-courses-v23 .courses-v23__fee__inner {
-    background-color: #ffffff;
+    background-color: #2e767a;
     color: #ffffff;
 }
 
-.mba-courses-v23 .courses-v23__fee__inner .fee-amount--bar {
-    border-top: 1px solid #ffffff;
+.mba-courses-v23 .courses-v23__fee__inner .fee-seperator {
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.25);
+}
+
+.mba-courses-v23 .courses-v23__fee-studymodes-list li {
+    border-bottom: rgba(255, 255, 255, 0.25) 0.0625rem solid;
 }
 
 .ug-courses-v23 .courses-v23--fee .cta {
@@ -10136,7 +10213,7 @@ svg:not(:root) {
 }
 
 .mba-courses-v23 .courses-v23__key-info {
-    background-color: #ffffff;
+    background-color: #2e767a;
     color: #ffffff;
 }
 
@@ -10907,12 +10984,12 @@ svg:not(:root) {
 
 @media (max-width: 900px) {
     .mba-courses-v23 .courses-v23__apply {
-        background-color: #ffffff;
+        background-color: #2e767a;
     }
 }
 
 .mba-courses-v23 .courses-v23__apply .courses-v23__apply__wrapper {
-    background-color: #ffffff;
+    background-color: #2e767a;
 }
 
 .mba-courses-v23 .courses-v23__apply a {
@@ -11572,7 +11649,7 @@ svg:not(:root) {
 }
 
 .mba-courses-v23 .courses-v23__related-courses {
-    background-color: #ffffff;
+    background-color: #2e767a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11585,7 +11662,7 @@ svg:not(:root) {
     position: absolute;
     height: 100%;
     width: 100vw;
-    background-color: #ffffff;
+    background-color: #2e767a;
     top: 0;
     display: flex;
     z-index: -1;
@@ -28947,7 +29024,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .mba-courses-v23 .ksp-v23-wrapper--dark {
-    background-color: #ffffff;
+    background-color: #2e767a;
     color: #ffffff;
 }
 
@@ -40800,7 +40877,7 @@ html {
 }
 
 .mba-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
-    background: #ffffff;
+    background: #2e767a;
     color: #ffffff;
 }
 
@@ -40913,7 +40990,7 @@ html {
 
 .mba-courses-v23 .unibuddy-card-v23__content__image:after,
 .mba-courses-v23 .unibuddy-card-v23__content__title:after {
-    background: #ffffff;
+    background: #2e767a;
 }
 
 .courses-v23__careers__recent-employers {
