@@ -25762,6 +25762,7 @@ function launchArrow(slider) {
 */
 function launchDot(slider) {
   // Creates pagination and control elements
+  var container = slider.getAttribute('data-ul-container');
   var slides = Array.from(slider.children),
     controlsWrapper = document.createElement('nav');
 
@@ -25837,8 +25838,9 @@ function launchDot(slider) {
   controlsWrapper.className = className + '__controls ' + className + '__controls--dots';
   controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, 'Slider navigation');
 
-  // Places controls directly after the element wrapping the 'ul' slides
-  slider.parentElement.parentElement.appendChild(controlsWrapper);
+  // Places controls directly after the element wrapping the 'ul' slides if wrapper true
+  container == 'true' ? slider.parentElement.parentElement.appendChild(controlsWrapper) : slider.parentElement.appendChild(controlsWrapper);
+
   //add event listeners
   addSwipeEvents(slider, controlsWrapper);
 

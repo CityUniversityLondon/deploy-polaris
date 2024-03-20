@@ -100,7 +100,8 @@
 .bold,
 .highlighted-content-v23 .highlighted-content-v23__heading,
 .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading,
-.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+.pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading,
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
     font-weight: 700;
 }
 
@@ -421,6 +422,10 @@
 
 .background--alto {
     background-color: #d0c8c5;
+}
+
+.background--emerald-ice {
+    background-color: #12E97A;
 }
 
 @font-face {
@@ -9334,6 +9339,15 @@ svg:not(:root) {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.mba-courses-v23 .courses-v23__fee__inner {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__fee__inner .fee-amount--bar {
+    border-top: 1px solid #ffffff;
+}
+
 .ug-courses-v23 .courses-v23--fee .cta {
     background-color: #e35205;
     color: #0c0c0e;
@@ -9353,6 +9367,18 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23--fee .cta:hover, .pg-courses-v23 .courses-v23--fee .cta:focus, .pg-courses-v23 .courses-v23--fee .cta:active {
     background-color: #00192a;
     color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23--fee .cta {
+    background-color: white;
+    color: #1e1e1e;
+    border: 0.12rem solid #ececec;
+}
+
+.mba-courses-v23 .courses-v23--fee .cta:hover, .mba-courses-v23 .courses-v23--fee .cta:focus, .mba-courses-v23 .courses-v23--fee .cta:active {
+    background-color: #ececec;
+    color: #1e1e1e;
+    border: 0.12rem solid white;
 }
 
 @media (min-width: 501px) {
@@ -9551,6 +9577,70 @@ svg:not(:root) {
 
 .pg-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) {
     border-left: 0.5rem solid #d0c8c5;
+}
+
+.mba-courses-v23 .chart-row__items__chart path:nth-child(1) {
+    stroke: #2e767a;
+}
+
+.mba-courses-v23 .chart-row__items__chart path:nth-child(2) {
+    stroke: #12E97A;
+}
+
+.mba-courses-v23 .chart-row__items__chart path:nth-child(3) {
+    stroke: #ffffff;
+}
+
+.mba-courses-v23 .chart-row__items__chart path:nth-child(4) {
+    stroke: #ffffff;
+}
+
+.mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.url-slide__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .media-block .fa-circle.video-preview__button:before, .media-block .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.video-preview__button:before, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion-tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__prev__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__next__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.dialog__box__heading__close__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .image-banner span.fa-circle, .image-banner .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .video-banner__play span.fa-circle, .video-banner__play .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.mba-popup__form__close__icon {
+    color: #2e767a;
+}
+
+.mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .image-banner span.fa-circle, .image-banner .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .video-banner__play span.fa-circle, .video-banner__play .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.mba-popup__form__close__icon {
+    color: #12E97A;
+}
+
+.mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.url-slide__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .media-block .fa-circle.video-preview__button:before, .media-block .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.video-preview__button:before, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion-tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__prev__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__next__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.dialog__box__heading__close__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .image-banner span.fa-circle, .image-banner .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .video-banner__play span.fa-circle, .video-banner__play .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.mba-popup__form__close__icon {
+    color: #ffffff;
+}
+
+.mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.url-slide__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .media-block .fa-circle.video-preview__button:before, .media-block .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.video-preview__button:before, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.accordion__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .js .fa-circle.tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.accordion-tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.popup-def-list-group__prevnext__prev__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.popup-def-list-group__prevnext__next__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.dialog__box__heading__close__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .image-banner span.fa-circle, .image-banner .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .video-banner__play span.fa-circle, .video-banner__play .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.mba-popup__form__close__icon {
+    color: #ffffff;
+}
+
+.mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.url-slide__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .media-block .fa-circle.video-preview__button:before, .media-block .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.video-preview__button:before, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion-tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__prev__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__next__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.dialog__box__heading__close__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .image-banner span.fa-circle, .image-banner .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .video-banner__play span.fa-circle, .video-banner__play .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.mba-popup__form__close__icon {
+    color: #2e767a;
+}
+
+.mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.url-slide__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .media-block .fa-circle.video-preview__button:before, .media-block .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.video-preview__button:before, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion-tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__prev__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__next__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.dialog__box__heading__close__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .image-banner span.fa-circle, .image-banner .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .video-banner__play span.fa-circle, .video-banner__play .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.mba-popup__form__close__icon {
+    color: #12E97A;
+}
+
+.mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .image-banner span.fa-circle, .image-banner .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .video-banner__play span.fa-circle, .video-banner__play .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.mba-popup__form__close__icon {
+    color: #ffffff;
+}
+
+.mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .image-banner span.fa-circle, .image-banner .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .video-banner__play span.fa-circle, .video-banner__play .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .mba-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.mba-popup__form__close__icon {
+    color: #ffffff;
+}
+
+.mba-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) {
+    border-left: 0.5rem solid #2e767a;
+}
+
+.mba-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) {
+    border-left: 0.5rem solid #12E97A;
+}
+
+.mba-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) {
+    border-left: 0.5rem solid #ffffff;
+}
+
+.mba-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) {
+    border-left: 0.5rem solid #ffffff;
 }
 
 .courses-v23 .courses-v23__key-info__wrap {
@@ -10045,6 +10135,124 @@ svg:not(:root) {
     background-color: #efa917;
 }
 
+.mba-courses-v23 .courses-v23__key-info {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__key-info__details a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__key-info__details a:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__key-info__details a:active, .mba-courses-v23 .courses-v23__key-info__details a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__key-info__details__content {
+    border-left: 5px solid rgba(255, 255, 255, 0.6);
+}
+
+.mba-courses-v23 .cta--v23--ki {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ffffff;
+}
+
+.mba-courses-v23 .cta--v23--ki:hover, .mba-courses-v23 .cta--v23--ki:focus, .mba-courses-v23 .cta--v23--ki:active {
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .mba-courses-v23 .cta--v23--ki {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .mba-courses-v23 .cta--v23--ki {
+        font-size: 92px;
+    }
+}
+
+.mba-courses-v23 .cta--v23--ki:hover, .mba-courses-v23 .cta--v23--ki:focus, .mba-courses-v23 .cta--v23--ki:active {
+    background-color: #00192a;
+    color: #ffffff;
+    outline-color: #ffffff;
+}
+
+.mba-courses-v23 .cta--v23--ki--apply {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.mba-courses-v23 .cta--v23--ki--apply:hover, .mba-courses-v23 .cta--v23--ki--apply:focus, .mba-courses-v23 .cta--v23--ki--apply:active {
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .mba-courses-v23 .cta--v23--ki--apply {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .mba-courses-v23 .cta--v23--ki--apply {
+        font-size: 92px;
+    }
+}
+
+.mba-courses-v23 .cta--v23--ki--apply:hover, .mba-courses-v23 .cta--v23--ki--apply:focus, .mba-courses-v23 .cta--v23--ki--apply:active {
+    background-color: #f0f0f0;
+    outline-color: #ffffff;
+}
+
+.mba-courses-v23 .cta--v23--ki--clearing {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    background-color: #f1b434;
+    color: #1e1e1e;
+}
+
+.mba-courses-v23 .cta--v23--ki--clearing:hover, .mba-courses-v23 .cta--v23--ki--clearing:focus, .mba-courses-v23 .cta--v23--ki--clearing:active {
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .mba-courses-v23 .cta--v23--ki--clearing {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .mba-courses-v23 .cta--v23--ki--clearing {
+        font-size: 92px;
+    }
+}
+
+.mba-courses-v23 .cta--v23--ki--clearing:hover, .mba-courses-v23 .cta--v23--ki--clearing:focus, .mba-courses-v23 .cta--v23--ki--clearing:active {
+    background-color: #efa917;
+}
+
 .courses-v23__summary .ksp-v23-wrapper {
     grid-column: 1 / -1;
 }
@@ -10113,6 +10321,10 @@ svg:not(:root) {
 
 .pg-courses-v23 .courses-v23__summary .summary__profile {
     border-color: #3457F1;
+}
+
+.mba-courses-v23 .courses-v23__summary .summary__profile {
+    border-color: #ffffff;
 }
 
 @media (min-width: 901px) {
@@ -10689,6 +10901,174 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
+.mba-courses-v23 .courses-v23__apply {
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .mba-courses-v23 .courses-v23__apply {
+        background-color: #ffffff;
+    }
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__wrapper {
+    background-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__apply a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__apply a:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__apply a:active, .mba-courses-v23 .courses-v23__apply a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    background-color: transparent;
+    color: #ffffff;
+    border: 0.12rem solid #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:hover, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:focus, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:active {
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
+        font-size: 92px;
+    }
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:hover, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:focus, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:active {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:hover, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:focus, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta:active {
+    color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #12E97A;
+    border-width: 1.5rem 0 0 1.5rem;
+    left: -0;
+    top: -0;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA:after {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #12E97A;
+    border-width: 0 0 1.5rem 1.5rem;
+    left: -0;
+    top: 0;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesB:before {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #12E97A;
+    border-width: 1.5rem 1.5rem 0 0;
+    right: -0;
+    top: -0;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesB:after {
+    content: ' ';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    border-style: solid;
+    border-color: #12E97A;
+    border-width: 0 1.5rem 1.5rem 0;
+    right: -0;
+    top: 0;
+}
+
+@media (max-width: 900px) {
+    .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
+        left: -2rem;
+        border-width: 1rem 0 0 1rem;
+        width: 2rem;
+    }
+    .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA:after {
+        left: -2rem;
+        border-width: 0 0 1rem 1rem;
+        width: 2rem;
+    }
+    .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesB:before {
+        right: -2rem;
+        border-width: 1rem 1rem 0 0;
+        width: 2rem;
+    }
+    .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesB:after {
+        right: -2rem;
+        border-width: 0 1rem 1rem 0;
+        width: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA:after, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA:before {
+        left: 0;
+    }
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
+    outline: 2px dotted #ffffff;
+    outline-offset: 3px;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
+    outline-color: #1e1e1e;
+}
+
 .student-life-v23__links .student-life-v23__links__cards {
     list-style: none;
     margin-left: initial;
@@ -10794,6 +11174,11 @@ svg:not(:root) {
 .pg-courses-v23 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
     background-color: #006699;
     color: #ffffff;
+}
+
+.mba-courses-v23 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
+    background-color: #12E97A;
+    color: #1e1e1e;
 }
 
 .courses-v23 .courses-v23__related-courses__heading {
@@ -11183,6 +11568,61 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
+    outline-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__related-courses {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.mba-courses-v23 .courses-v23__related-courses:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: #ffffff;
+    top: 0;
+    display: flex;
+    z-index: -1;
+}
+
+.mba-courses-v23 .courses-v23__related-courses:before {
+    content: '';
+    position: absolute;
+    height: 4.5rem;
+    width: 50vw;
+    background-color: #f2f2f2;
+    top: 0;
+    display: flex;
+    z-index: 2;
+    left: 50%;
+}
+
+.mba-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
+    width: 100%;
+}
+
+.mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
+    background: #12E97A;
+    color: #ffffff;
+    width: 3rem;
+    height: 3rem;
+}
+
+.mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus, .mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:active {
+    outline-color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
+    opacity: 0.5;
+}
+
+.mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:focus, .mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .slide:active {
     outline-color: #ffffff;
 }
 
@@ -11858,6 +12298,27 @@ svg:not(:root) {
     font-family: "Font Awesome 6 Pro";
     content: "\f00c";
     color: #3457F1;
+    padding-right: 0.5rem;
+    position: absolute;
+    left: 0;
+}
+
+.mba-courses-v23 .courses-v23__list-style-tick {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.mba-courses-v23 .courses-v23__list-style-tick li {
+    position: relative;
+    padding-left: 1.5rem;
+    list-style: none;
+}
+
+.mba-courses-v23 .courses-v23__list-style-tick li:before {
+    display: block;
+    font-family: "Font Awesome 6 Pro";
+    content: "\f00c";
+    color: #ffffff;
     padding-right: 0.5rem;
     position: absolute;
     left: 0;
@@ -24575,6 +25036,79 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     font-weight: 600;
 }
 
+.mba-courses-v23 .highlighted-content-v23 {
+    border-left: 0.5rem solid #ffffff;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    background-color: #ffffff;
+}
+
+.mba-courses-v23 .highlighted-content-v23 *:last-child {
+    margin: 0;
+}
+
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-size: 1.266rem;
+    line-height: 1.33333;
+    letter-spacing: -0.011em;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+}
+
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading b,
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading strong {
+    font-weight: inherit;
+}
+
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
+    font-style: italic;
+}
+
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading u {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.013em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.015em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading b,
+.mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading strong {
+    font-weight: 600;
+}
+
 .text-highlight {
     color: #ffffff;
     background-color: #e30613;
@@ -24600,6 +25134,16 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #ffffff;
     background-color: #006699;
     box-shadow: 0.5rem 0 0 #006699, -0.5rem 0 0 #006699;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    margin-left: 0.5rem;
+}
+
+.mba-courses-v23 .text-highlight {
+    color: #1e1e1e;
+    background-color: #12E97A;
+    box-shadow: 0.5rem 0 0 #12E97A, -0.5rem 0 0 #12E97A;
     display: inline;
     -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
@@ -28397,6 +28941,68 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     font-family: "Font Awesome 6 Pro";
     content: "";
     color: #3457F1;
+    padding-right: 0.5rem;
+    position: absolute;
+    left: 0;
+}
+
+.mba-courses-v23 .ksp-v23-wrapper--dark {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .ksp-v23-wrapper--dark a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.mba-courses-v23 .ksp-v23-wrapper--dark a:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.mba-courses-v23 .ksp-v23-wrapper--dark a:active, .mba-courses-v23 .ksp-v23-wrapper--dark a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
+.mba-courses-v23 .ksp-v23-wrapper--light {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .ksp-ordered-list--tick ul li:before {
+    color: #ffffff;
+}
+
+.mba-courses-v23 .corner-border-v23 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ffffff 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #ffffff 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #ffffff 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #ffffff 0.75rem, transparent 0.75rem) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.5rem;
+    pointer-events: none;
+}
+
+.mba-courses-v23 .ksp-ordered-list--tick ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.mba-courses-v23 .ksp-ordered-list--tick ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    list-style: none;
+}
+
+.mba-courses-v23 .ksp-ordered-list--tick ul li:before {
+    display: block;
+    font-family: "Font Awesome 6 Pro";
+    content: "";
+    color: #ffffff;
     padding-right: 0.5rem;
     position: absolute;
     left: 0;
@@ -40193,6 +40799,11 @@ html {
     color: #ffffff;
 }
 
+.mba-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
+    background: #ffffff;
+    color: #ffffff;
+}
+
 .student-life-v23__links__unibuddy ul {
     margin-left: initial;
     margin-bottom: initial;
@@ -40298,6 +40909,11 @@ html {
 .pg-courses-v23 .unibuddy-card-v23__content__image:after,
 .pg-courses-v23 .unibuddy-card-v23__content__title:after {
     background: #002b49;
+}
+
+.mba-courses-v23 .unibuddy-card-v23__content__image:after,
+.mba-courses-v23 .unibuddy-card-v23__content__title:after {
+    background: #ffffff;
 }
 
 .courses-v23__careers__recent-employers {
@@ -40560,7 +41176,7 @@ html {
     margin-left: 1rem;
 }
 
-.js .slider-v23[data-style='dots'] {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] {
     display: flex;
     overflow: hidden;
     margin: 1rem 0;
@@ -40570,27 +41186,27 @@ html {
     position: relative;
 }
 
-.js .slider-v23[data-style='dots'] .slide {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide {
     top: 0;
     transition: left 1s ease-in-out;
     width: 100%;
 }
 
 @media (max-width: 649px) {
-    .js .slider-v23[data-style='dots'] {
+    .js .slider-v23__wrap .slider-v23[data-style='dots'] {
         margin: 1rem;
     }
 }
 
 @media (min-width: 650px) {
-    .js .slider-v23[data-style='dots'][data-style='buttons'] {
+    .js .slider-v23__wrap .slider-v23[data-style='dots'][data-style='buttons'] {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
 }
 
-.js .slider-v23[data-style='dots'] .slide {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide {
     width: 100%;
     list-style: none;
     padding: 0.24rem;
@@ -40599,7 +41215,7 @@ html {
     transition: left 1s ease-in-out;
 }
 
-.js .slider-v23[data-style='dots'] .slide:focus {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide:focus {
     outline-color: #1e1e1e;
     outline-offset: 0.24rem;
     outline-style: dotted;
@@ -40607,35 +41223,39 @@ html {
     outline-offset: -0.24rem;
 }
 
-.js .slider-v23[data-style='dots'] .slide:last-of-type {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide:last-of-type {
     margin-bottom: 0;
 }
 
-.js .slider-v23[data-style='dots'] .slide.card--research {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide.card--research {
     padding: 1rem;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'] {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'] {
     left: -100%;
     position: absolute;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-sliderposition='0'] {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide[data-sliderposition='0'] {
     left: 0;
     position: relative;
 }
 
-.js .slider-v23[data-style='dots'] .slide[data-sliderposition='1'] {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
 }
 
-.js .slider-v23__container + .slider-v23__controls--dots {
+.js .slider-v23__wrap .slider-v23[data-style='dots'] .slide [data-hidden='true'] {
+    visibility: hidden;
+}
+
+.js .slider-v23__wrap .slider-v23__controls--dots {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.js .slider-v23__container + .slider-v23__controls--dots button {
+.js .slider-v23__wrap .slider-v23__controls--dots button {
     border-radius: 50%;
     width: 1.25rem;
     height: 1.25rem;
@@ -40643,19 +41263,19 @@ html {
     border: 0.12rem solid #1e1e1e;
 }
 
-.js .slider-v23__container + .slider-v23__controls--dots button:last-of-type {
+.js .slider-v23__wrap .slider-v23__controls--dots button:last-of-type {
     margin-right: 0;
 }
 
-.js .slider-v23__container + .slider-v23__controls--dots button:hover, .js .slider-v23__container + .slider-v23__controls--dots button:focus, .js .slider-v23__container + .slider-v23__controls--dots button:active {
+.js .slider-v23__wrap .slider-v23__controls--dots button:hover, .js .slider-v23__wrap .slider-v23__controls--dots button:focus, .js .slider-v23__wrap .slider-v23__controls--dots button:active {
     outline-offset: 0.1875rem;
 }
 
-.js .slider-v23__container + .slider-v23__controls--dots button[aria-expanded='true'] {
+.js .slider-v23__wrap .slider-v23__controls--dots button[aria-expanded='true'] {
     background-color: #1e1e1e;
 }
 
-.js .slider-v23__container[data-count='1'] + .slider-v23__controls--dots {
+.js .slider-v23__wrap[data-count='1'] + .slider-v23__controls--dots {
     display: none;
 }
 
@@ -40785,34 +41405,40 @@ html {
     }
 }
 
+.js .courses-v23__careers__alumni .slider-v23__heading,
 .js .courses-v23__careers .slider-v23__heading {
     padding: 0 1.5rem;
     margin-bottom: 0;
     font-size: 1.728rem;
 }
 
+.js .courses-v23__careers__alumni .slider-v23__container,
 .js .courses-v23__careers .slider-v23__container {
     padding: 1.5rem;
 }
 
+.js .courses-v23__careers__alumni .slider-v23__cards[data-style="dots"],
 .js .courses-v23__careers .slider-v23__cards[data-style="dots"] {
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
     margin: 0;
 }
 
+.js .courses-v23__careers__alumni .slider-v23__cards[data-style="dots"] .alumni-card-v23,
 .js .courses-v23__careers .slider-v23__cards[data-style="dots"] .alumni-card-v23 {
     display: flex;
     flex-direction: column;
     padding: 2rem;
 }
 
+.js .courses-v23__careers__alumni .alumni-card-v23__content__image,
 .js .courses-v23__careers .alumni-card-v23__content__image {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+.js .courses-v23__careers__alumni .alumni-card-v23__content__image img,
 .js .courses-v23__careers .alumni-card-v23__content__image img {
     width: 6.5rem;
     background-clip: padding-box;
@@ -40821,6 +41447,7 @@ html {
     margin-right: auto;
 }
 
+.js .courses-v23__careers__alumni .alumni-card-v23__content__image:after,
 .js .courses-v23__careers .alumni-card-v23__content__image:after {
     content: '';
     display: block;
@@ -40832,6 +41459,7 @@ html {
     width: 4rem;
 }
 
+.js .courses-v23__careers__alumni .alumni-card-v23__content__details,
 .js .courses-v23__careers .alumni-card-v23__content__details {
     display: flex;
     flex-direction: row;
@@ -40839,6 +41467,7 @@ html {
     margin-bottom: 1rem;
 }
 
+.js .courses-v23__careers__alumni .alumni-card-v23__content__details__column,
 .js .courses-v23__careers .alumni-card-v23__content__details__column {
     font-weight: 700;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
@@ -40867,6 +41496,7 @@ html {
     color: #ffffff;
 }
 
+.ug-courses-v23 .courses-v23__careers__alumni .slider-v23__container,
 .ug-courses-v23 .courses-v23__careers .slider-v23__container {
     background: linear-gradient(to right, #f1b434 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #f1b434 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
@@ -40875,10 +41505,12 @@ html {
     background-size: 3rem 3rem;
 }
 
+.ug-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after,
 .ug-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
     background: #e35205;
 }
 
+.pg-courses-v23 .courses-v23__careers__alumni .slider-v23__container,
 .pg-courses-v23 .courses-v23__careers .slider-v23__container {
     background: linear-gradient(to right, #006699 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #006699 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
@@ -40887,8 +41519,23 @@ html {
     background-size: 3rem 3rem;
 }
 
+.pg-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after,
 .pg-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
     background: #002b49;
+}
+
+.mba-courses-v23 .courses-v23__careers__alumni .slider-v23__container,
+.mba-courses-v23 .courses-v23__careers .slider-v23__container {
+    background: linear-gradient(to right, #12E97A 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #12E97A 3rem, transparent 3rem) 0% 100%;
+    background-repeat: repeat, repeat;
+    background-size: auto, auto;
+    background-repeat: no-repeat;
+    background-size: 3rem 3rem;
+}
+
+.mba-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after,
+.mba-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
+    background: #2e767a;
 }
 
 @media screen {
@@ -41150,6 +41797,10 @@ html {
     background: #006699;
 }
 
+.mba-courses-v23 .square-animation-v23__square:before {
+    background: #12E97A;
+}
+
 @keyframes square-twinkle-animation {
     0% {
         opacity: 0.5;
@@ -41306,4 +41957,291 @@ html {
     .courses-v23__learning-methods-icons .courses-v23__learning-methods-icons--title {
         letter-spacing: -0.017em;
     }
+}
+
+.courses-v23__careers__testimonials {
+    grid-column: 1/13;
+}
+
+.ug-courses-v23 .testimonials-v23,
+.scp--mba .testimonials-v23 {
+    background: #e35205;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .testimonials-v23 a,
+.scp--mba .testimonials-v23 a {
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .testimonial-card-v23__image:before,
+.scp--mba .testimonial-card-v23__image:before {
+    border: 0.125rem solid #f1b434;
+}
+
+.js .ug-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
+    border: 0.0625rem solid #1e1e1e;
+}
+
+.js .ug-courses-v23 .testimonials-v23 .slider-v23__controls--dots button[aria-expanded='true'] {
+    background-color: #1e1e1e;
+}
+
+.pg-courses-v23 .testimonials-v23,
+.scp--mba .testimonials-v23 {
+    background: #002b49;
+    color: #ffffff;
+}
+
+.pg-courses-v23 .testimonials-v23 a,
+.scp--mba .testimonials-v23 a {
+    color: #ffffff;
+}
+
+.pg-courses-v23 .testimonial-card-v23__image:before,
+.scp--mba .testimonial-card-v23__image:before {
+    border: 0.125rem solid #006699;
+}
+
+.js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
+    border: 0.0625rem solid #ffffff;
+}
+
+.js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--dots button[aria-expanded='true'] {
+    background-color: #ffffff;
+}
+
+.mba-courses-v23 .testimonials-v23,
+.scp--mba .testimonials-v23 {
+    background: #2e767a;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .testimonials-v23 a,
+.scp--mba .testimonials-v23 a {
+    color: #ffffff;
+}
+
+.mba-courses-v23 .testimonial-card-v23__image:before,
+.scp--mba .testimonial-card-v23__image:before {
+    border: 0.125rem solid #12E97A;
+}
+
+.js .mba-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
+    border: 0.0625rem solid #ffffff;
+}
+
+.js .mba-courses-v23 .testimonials-v23 .slider-v23__controls--dots button[aria-expanded='true'] {
+    background-color: #ffffff;
+}
+
+.testimonials-v23 {
+    padding: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .testimonials-v23 {
+        padding: 1rem;
+    }
+}
+
+.testimonials-v23 .slider-v23__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .testimonials-v23 .slider-v23__wrap {
+        flex-direction: column;
+    }
+}
+
+.testimonials-v23 .slider-v23__heading {
+    margin-bottom: 1rem;
+}
+
+.testimonials-v23 .slider-v23__controls--dots {
+    align-self: flex-end;
+}
+
+.testimonials-v23 .testimonial-card-v23__container {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .testimonials-v23 .testimonial-card-v23__container {
+        flex-direction: column-reverse;
+    }
+}
+
+.testimonials-v23 .testimonial-card-v23__text {
+    padding: 0 0 0 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials-v23 .testimonial-card-v23__text:before {
+    content: '“';
+    left: 0;
+    position: absolute;
+    margin: inherit;
+    height: inherit;
+    width: inherit;
+    background-color: inherit;
+    -webkit-mask: inherit;
+            mask: inherit;
+}
+
+.testimonials-v23 .testimonial-card-v23__text:after {
+    content: '”';
+    right: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.testimonials-v23 .testimonial-card-v23__text span {
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+}
+
+.testimonials-v23 .testimonial-card-v23__image {
+    position: relative;
+    width: 10.75rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials-v23 .testimonial-card-v23__image:before {
+    content: '';
+    width: 8rem;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.testimonials-v23 .testimonial-card-v23__image:after {
+    content: '';
+    width: 2.5rem;
+    height: 107%;
+    position: absolute;
+    z-index: 1;
+    top: 0.5rem;
+    right: 0;
+    background: radial-gradient(ellipse at center, #ffffff, #ffffff 0.0625rem, transparent 0, transparent 100%);
+    background-size: 1.25rem 1.25rem;
+}
+
+.testimonials-v23 .testimonial-card-v23__image picture {
+    width: 8rem;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.testimonials-v23 .testimonial-card-v23__image img {
+    width: 100%;
+}
+
+.testimonials-v23 .testimonial-card-v23__author {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .testimonials-v23 .testimonial-card-v23__author {
+        align-self: flex-start;
+        margin-bottom: 1rem;
+    }
+}
+
+.testimonials-v23 .testimonial-card-v23__author p {
+    margin: 0;
+}
+
+.testimonials-v23 .testimonial-card-v23__author__name {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.testimonials-v23 .testimonial-card-v23__author__name a {
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+.testimonials-v23 .testimonial-card-v23__author__name a:hover {
+    color: #1e1e1e;
+    background-color: #ffffff;
+}
+
+.testimonials-v23 .testimonial-card-v23__author__name a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.testimonials-v23 .testimonial-card-v23__author__name a:active {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
+}
+
+.testimonials-v23 .testimonial-card-v23__author__title,
+.testimonials-v23 .testimonial-card-v23__author__label {
+    font-size: 0.89rem;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] {
+    margin: 0 0 1rem 0;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] .slide[data-sliderposition='-1'] {
+    visibility: hidden;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] .slide[data-sliderposition='1'] {
+    visibility: hidden;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23[data-style='dots'] .slide.testimonial-card-v23:focus {
+    outline-color: #ffffff;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23__controls--dots {
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .js .courses-v23__careers__testimonials .slider-v23__controls--dots {
+        align-self: center;
+    }
+}
+
+.js .courses-v23__careers__testimonials .slider-v23__controls--dots button {
+    margin: 0.375rem;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23__controls--dots button:focus, .js .courses-v23__careers__testimonials .slider-v23__controls--dots button:active {
+    outline-color: #ffffff;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23__controls--dots button:last-of-type {
+    margin: 0.375rem;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23__controls--dots button[aria-expanded='true'] {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0.125rem;
+}
+
+.js .courses-v23__careers__testimonials .slider-v23__controls--dots button[aria-expanded='true']:focus, .js .courses-v23__careers__testimonials .slider-v23__controls--dots button[aria-expanded='true']:active {
+    outline-color: #ffffff;
 }
