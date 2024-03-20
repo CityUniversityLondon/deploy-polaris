@@ -11956,14 +11956,15 @@ svg:not(:root) {
     position: relative;
 }
 
-.courses-v23__modules-accordion {
-    display: flex;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-}
-
-.courses-v23__modules-accordion .accordion-v23 {
-    width: 50%;
+@media (min-width: 901px) {
+    .courses-v23__modules-accordion {
+        display: flex;
+        -moz-column-gap: 1rem;
+             column-gap: 1rem;
+    }
+    .courses-v23__modules-accordion .accordion-v23 {
+        width: 50%;
+    }
 }
 
 .courses-v23 section,
