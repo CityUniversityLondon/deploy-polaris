@@ -9339,7 +9339,7 @@ svg:not(:root) {
     margin-bottom: 0;
 }
 
-.courses-v23__fee__inner .courses-v23__fee-studymodes-list li:nth-child(n+2) {
+.courses-v23__fee__inner .courses-v23__fee-studymodes-list li:nth-child(n + 2) {
     padding-top: 0.75rem;
 }
 
@@ -9392,11 +9392,11 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__fee__inner .fee-seperator {
-    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.25);
 }
 
 .ug-courses-v23 .courses-v23__fee-studymodes-list li {
-    border-bottom: rgba(12, 12, 14, 0.25) 1px solid;
+    border-bottom: rgba(12, 12, 14, 0.25) 0.0625rem solid;
 }
 
 .pg-courses-v23 .courses-v23__fee__inner {
@@ -9405,11 +9405,11 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__fee__inner .fee-seperator {
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.25);
 }
 
 .pg-courses-v23 .courses-v23__fee-studymodes-list li {
-    border-bottom: rgba(221, 221, 221, 0.25) 1px solid;
+    border-bottom: rgba(221, 221, 221, 0.25) 0.0625rem solid;
 }
 
 .mba-courses-v23 .courses-v23__fee__inner {
@@ -9418,11 +9418,11 @@ svg:not(:root) {
 }
 
 .mba-courses-v23 .courses-v23__fee__inner .fee-seperator {
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.25);
 }
 
 .mba-courses-v23 .courses-v23__fee-studymodes-list li {
-    border-bottom: rgba(255, 255, 255, 0.25) 1px solid;
+    border-bottom: rgba(255, 255, 255, 0.25) 0.0625rem solid;
 }
 
 .ug-courses-v23 .courses-v23--fee .cta {
