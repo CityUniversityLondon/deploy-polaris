@@ -41482,41 +41482,35 @@ html {
     }
 }
 
-.js .courses-v23__careers__alumni .slider-v23__heading,
-.js .courses-v23__careers .slider-v23__heading {
+.js .courses-v23__careers__alumni .slider-v23__heading {
     padding: 0 1.5rem;
     margin-bottom: 0;
     font-size: 1.728rem;
 }
 
-.js .courses-v23__careers__alumni .slider-v23__container,
-.js .courses-v23__careers .slider-v23__container {
+.js .courses-v23__careers__alumni .slider-v23__container {
     padding: 1.5rem;
 }
 
-.js .courses-v23__careers__alumni .slider-v23__cards[data-style="dots"],
-.js .courses-v23__careers .slider-v23__cards[data-style="dots"] {
+.js .courses-v23__careers__alumni .slider-v23__cards[data-style='dots'] {
     box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
     margin: 0;
 }
 
-.js .courses-v23__careers__alumni .slider-v23__cards[data-style="dots"] .alumni-card-v23,
-.js .courses-v23__careers .slider-v23__cards[data-style="dots"] .alumni-card-v23 {
+.js .courses-v23__careers__alumni .slider-v23__cards[data-style='dots'] .alumni-card-v23 {
     display: flex;
     flex-direction: column;
     padding: 2rem;
 }
 
-.js .courses-v23__careers__alumni .alumni-card-v23__content__image,
-.js .courses-v23__careers .alumni-card-v23__content__image {
+.js .courses-v23__careers__alumni .alumni-card-v23__content__image {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.js .courses-v23__careers__alumni .alumni-card-v23__content__image img,
-.js .courses-v23__careers .alumni-card-v23__content__image img {
+.js .courses-v23__careers__alumni .alumni-card-v23__content__image img {
     width: 6.5rem;
     background-clip: padding-box;
     border-radius: 50%;
@@ -41524,8 +41518,7 @@ html {
     margin-right: auto;
 }
 
-.js .courses-v23__careers__alumni .alumni-card-v23__content__image:after,
-.js .courses-v23__careers .alumni-card-v23__content__image:after {
+.js .courses-v23__careers__alumni .alumni-card-v23__content__image:after {
     content: '';
     display: block;
     height: 0.25rem;
@@ -41536,16 +41529,14 @@ html {
     width: 4rem;
 }
 
-.js .courses-v23__careers__alumni .alumni-card-v23__content__details,
-.js .courses-v23__careers .alumni-card-v23__content__details {
+.js .courses-v23__careers__alumni .alumni-card-v23__content__details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-.js .courses-v23__careers__alumni .alumni-card-v23__content__details__column,
-.js .courses-v23__careers .alumni-card-v23__content__details__column {
+.js .courses-v23__careers__alumni .alumni-card-v23__content__details__column {
     font-weight: 700;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem;
@@ -41573,8 +41564,7 @@ html {
     color: #ffffff;
 }
 
-.ug-courses-v23 .courses-v23__careers__alumni .slider-v23__container,
-.ug-courses-v23 .courses-v23__careers .slider-v23__container {
+.ug-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
     background: linear-gradient(to right, #f1b434 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #f1b434 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
     background-size: auto, auto;
@@ -41582,13 +41572,11 @@ html {
     background-size: 3rem 3rem;
 }
 
-.ug-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after,
-.ug-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
+.ug-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after {
     background: #e35205;
 }
 
-.pg-courses-v23 .courses-v23__careers__alumni .slider-v23__container,
-.pg-courses-v23 .courses-v23__careers .slider-v23__container {
+.pg-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
     background: linear-gradient(to right, #006699 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #006699 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
     background-size: auto, auto;
@@ -41596,13 +41584,11 @@ html {
     background-size: 3rem 3rem;
 }
 
-.pg-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after,
-.pg-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
+.pg-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after {
     background: #002b49;
 }
 
-.mba-courses-v23 .courses-v23__careers__alumni .slider-v23__container,
-.mba-courses-v23 .courses-v23__careers .slider-v23__container {
+.mba-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
     background: linear-gradient(to right, #12E97A 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #12E97A 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
     background-size: auto, auto;
@@ -41610,8 +41596,7 @@ html {
     background-size: 3rem 3rem;
 }
 
-.mba-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after,
-.mba-courses-v23 .courses-v23__careers .alumni-card-v23__content__image:after {
+.mba-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after {
     background: #2e767a;
 }
 
