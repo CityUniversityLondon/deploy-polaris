@@ -11258,6 +11258,17 @@ svg:not(:root) {
     color: #1e1e1e;
 }
 
+.courses-v23 .course-card-v23__anchor {
+    max-width: 100%;
+}
+
+.courses-v23 .course-card-v23__anchor:focus {
+    background-color: #f2f2f2;
+    outline-color: #ffffff;
+    outline-offset: 0.24rem;
+    box-shadow: 0 0 0.75rem rgba(12, 12, 14, 0.3);
+}
+
 .courses-v23 .courses-v23__related-courses__heading {
     margin-top: 1.5rem;
 }
@@ -11359,10 +11370,6 @@ svg:not(:root) {
     width: 100%;
 }
 
-.ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] {
-    padding: 0;
-}
-
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #ffffff;
     color: #1e1e1e;
@@ -11370,8 +11377,9 @@ svg:not(:root) {
     height: 3rem;
 }
 
-.ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus, .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:active {
-    outline-color: #1e1e1e;
+.ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus {
+    z-index: 2;
+    outline-style: solid;
 }
 
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
@@ -11430,10 +11438,6 @@ svg:not(:root) {
     width: 100%;
 }
 
-.pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] {
-    padding: 0;
-}
-
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #ffffff;
     color: #1e1e1e;
@@ -11441,8 +11445,9 @@ svg:not(:root) {
     height: 3rem;
 }
 
-.pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus, .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:active {
-    outline-color: #ffffff;
+.pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus {
+    z-index: 2;
+    outline-style: solid;
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
@@ -11501,10 +11506,6 @@ svg:not(:root) {
     width: 100%;
 }
 
-.mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] {
-    padding: 0;
-}
-
 .mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #ffffff;
     color: #1e1e1e;
@@ -11512,8 +11513,9 @@ svg:not(:root) {
     height: 3rem;
 }
 
-.mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus, .mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:active {
-    outline-color: #ffffff;
+.mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus {
+    z-index: 2;
+    outline-style: solid;
 }
 
 .mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:disabled {
@@ -11964,7 +11966,7 @@ svg:not(:root) {
 .courses-v23 h2:not(.accordion-v23__heading),
 .courses-v23 h3:not(.accordion-v23__heading),
 .courses-v23 h4:not(.accordion-v23__heading),
-.courses-v23 a:not(.accordion-v23__heading) {
+.courses-v23 a:not(.accordion-v23__heading):not(.course-card-v23__anchor) {
     max-width: 60ch;
 }
 
@@ -41080,11 +41082,15 @@ html {
 .js .slider-v23[data-style='responsive'] {
     --slider-grid-columns:3;
     display: flex;
-    margin-left: 0;
     margin-right: 0;
     overflow: hidden;
-    margin: 1rem 0;
     position: relative;
+    width: calc(100% + 1.5rem);
+    margin-left: -0.75rem;
+}
+
+.js .slider-v23[data-style='responsive'] .slide {
+    padding: 0.75rem;
 }
 
 @media (max-width: 649px) {
@@ -41101,10 +41107,6 @@ html {
     }
 }
 
-.js .slider-v23[data-style='responsive'][data-optimised='true'] li {
-    margin-top: 0;
-}
-
 .js .slider-v23[data-style='responsive'][data-optimised='true'] li ul li a {
     height: 100%;
 }
@@ -41114,8 +41116,6 @@ html {
     transition: left 1s ease-in-out;
     width: 100%;
     list-style: none;
-    padding: 0.24rem;
-    margin-top: 0;
     max-width: inherit;
     /*
             @include media('reducemotion') {
@@ -41129,13 +41129,6 @@ html {
     max-width: 100%;
     grid-template-columns: repeat(var(--slider-grid-columns), 1fr);
     list-style-type: none;
-    margin: 1rem 0;
-}
-
-@media (max-width: 767px) {
-    .js .slider-v23[data-style='responsive'] .slide ul {
-        margin: 1rem 0;
-    }
 }
 
 .js .slider-v23[data-style='responsive'] .slide ul li {
@@ -41175,12 +41168,6 @@ html {
 .js .slider-v23[data-style='responsive'] .slide[data-sliderposition='1'] {
     left: 100%;
     position: absolute;
-}
-
-@media (min-width: 768px) {
-    .js .slider-v23[data-style='responsive'] {
-        padding: 1rem;
-    }
 }
 
 @media (min-width: 768px) {

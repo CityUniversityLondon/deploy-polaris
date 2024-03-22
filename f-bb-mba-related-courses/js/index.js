@@ -25368,10 +25368,13 @@ function addSwipeEvents(slider, controlsWrapper) {
 *
 */
 function responsiveOptimisation(slides, slider, controls, direction) {
+  var screenSize = window.innerWidth;
   var responsiveNum = slider.getAttribute('data-perslide') ? Number(slider.getAttribute('data-perslide')) : 2; // number of items per slide to display
+  if (screenSize <= 900) {
+    responsiveNum = 2;
+  }
   slider.style.setProperty('--slider-grid-columns', responsiveNum);
-  console.log(slider);
-  // console.log(responsiveNum);
+  console.log(responsiveNum);
   // responsiveNum = 2;
 
   var i;
@@ -25394,6 +25397,7 @@ function responsiveOptimisation(slides, slider, controls, direction) {
   for (i = 0; i < slides.length; i += responsiveNum) {
     var liElement = document.createElement('li');
     var ulElement = document.createElement('ul');
+    ulElement.classList.add('slider-v23__cards-inner');
     liElement.appendChild(ulElement);
     for (d = 0; d < responsiveNum; d++) {
       if (slides[i + d]) {
