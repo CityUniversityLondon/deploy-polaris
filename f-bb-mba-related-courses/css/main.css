@@ -11264,7 +11264,6 @@ svg:not(:root) {
 
 .courses-v23 .course-card-v23__anchor:focus {
     background-color: #f2f2f2;
-    outline-color: #ffffff;
     outline-offset: 0.24rem;
     box-shadow: 0 0 0.75rem rgba(12, 12, 14, 0.3);
 }
@@ -11283,6 +11282,7 @@ svg:not(:root) {
 
 .course-card-v23__content {
     background-color: #ffffff;
+    height: 100%;
 }
 
 .course-card-v23__details {
@@ -11370,6 +11370,10 @@ svg:not(:root) {
     width: 100%;
 }
 
+.ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .course-card-v23__anchor:focus {
+    outline-color: #1e1e1e;
+}
+
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #ffffff;
     color: #1e1e1e;
@@ -11378,6 +11382,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus {
+    outline-color: #1e1e1e;
     z-index: 2;
     outline-style: solid;
 }
@@ -11438,6 +11443,10 @@ svg:not(:root) {
     width: 100%;
 }
 
+.pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .course-card-v23__anchor:focus {
+    outline-color: #ffffff;
+}
+
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #ffffff;
     color: #1e1e1e;
@@ -11446,6 +11455,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus {
+    outline-color: #ffffff;
     z-index: 2;
     outline-style: solid;
 }
@@ -11506,6 +11516,10 @@ svg:not(:root) {
     width: 100%;
 }
 
+.mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] .course-card-v23__anchor:focus {
+    outline-color: #ffffff;
+}
+
 .mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button {
     background: #ffffff;
     color: #1e1e1e;
@@ -11514,6 +11528,7 @@ svg:not(:root) {
 }
 
 .mba-courses-v23 .courses-v23__related-courses .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive button:focus {
+    outline-color: #ffffff;
     z-index: 2;
     outline-style: solid;
 }
