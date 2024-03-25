@@ -24643,18 +24643,28 @@ function buttonFromHeading(heading, chevronStyle) {
     wrapper = document.createElement('div'),
     textSpan = document.createElement('span'),
     iconSpan = document.createElement('span');
-  if (heading.dataset.label) {
-    var labelSpan = document.createElement('span');
-    labelSpan.className = headingLabelClassName;
-    labelSpan.appendChild(document.createTextNode(heading.dataset.label));
-    wrapper.appendChild(labelSpan);
-  }
   textSpan.className = headingTextClassName;
   iconSpan.className = headingIconClassName;
   iconSpan.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].hidden, true);
   button.setAttribute('type', 'button');
   textSpan.appendChild(document.createTextNode(heading.textContent));
-  chevronStyle ? Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(wrapper, [textSpan, iconSpan]) : Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(wrapper, [iconSpan, textSpan]);
+  if (chevronStyle) {
+    wrapper.appendChild(textSpan);
+    if (heading.dataset.label) {
+      var labelSpan = document.createElement('span');
+      var srSpan = document.createElement('span');
+      srSpan.className = 'sr-only';
+      srSpan.appendChild(document.createTextNode('Runs in '));
+      labelSpan.className = headingLabelClassName;
+      labelSpan.appendChild(srSpan);
+      labelSpan.appendChild(document.createTextNode(heading.dataset.label));
+      wrapper.appendChild(labelSpan);
+    }
+    wrapper.appendChild(iconSpan);
+  } else {
+    wrapper.appendChild(iconSpan);
+    wrapper.appendChild(textSpan);
+  }
   button.appendChild(wrapper);
   if (heading.dataset.description) {
     var descriptionWrapper = document.createElement('div'),

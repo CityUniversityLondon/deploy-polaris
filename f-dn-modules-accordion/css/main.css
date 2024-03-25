@@ -41679,10 +41679,16 @@ html {
 
 @media screen {
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button div:not(.accordion-v23__heading__description) {
-        display: block;
+        display: flex;
         position: relative;
+        -moz-column-gap: initial;
+             column-gap: initial;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button div:not(.accordion-v23__heading__description) .accordion-v23__heading__text {
+        order: 2;
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button div:not(.accordion-v23__heading__description) .accordion-v23__heading__label {
+        order: 1;
         font-size: 0.889rem;
         line-height: 1.625;
         letter-spacing: 0em;
