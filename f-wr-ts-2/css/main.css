@@ -12033,6 +12033,115 @@ svg:not(:root) {
     position: relative;
 }
 
+.teaching-staff-v23 .featured-profile-v23 {
+    border-left-width: 0.24rem;
+    border-left-style: solid;
+    border-left-color: #12E97A;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    max-width: 60ch;
+    padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .teaching-staff-v23 .featured-profile-v23 {
+        flex-direction: column-reverse;
+    }
+}
+
+.teaching-staff-v23 .featured-profile-v23__heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.44rem;
+}
+
+.teaching-staff-v23 .featured-profile-v23__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555555;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+}
+
+.teaching-staff-v23 .featured-profile-v23__block {
+    padding: 0 0 0 0.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.teaching-staff-v23 .featured-profile-v23__block:before {
+    content: '“';
+    left: 0;
+    position: absolute;
+    margin: inherit;
+    height: inherit;
+    width: inherit;
+    background-color: inherit;
+    -webkit-mask: inherit;
+            mask: inherit;
+}
+
+.teaching-staff-v23 .featured-profile-v23__block:after {
+    content: '”';
+    right: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.teaching-staff-v23 .featured-profile-v23__block span {
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+}
+
+.teaching-staff-v23 .featured-profile-v23__img {
+    position: relative;
+    width: 10.75rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.teaching-staff-v23 .featured-profile-v23__img:before {
+    content: '';
+    width: 8rem;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    border: 0.125rem solid #12E97A;
+}
+
+.teaching-staff-v23 .featured-profile-v23__img:after {
+    content: '';
+    width: 2.5rem;
+    height: 107%;
+    z-index: 1;
+    background: radial-gradient(ellipse at center, #979797, #979797 0.0625rem, transparent 0, transparent 100%);
+    background-size: 1.25rem 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .teaching-staff-v23 .featured-profile-v23__img:after {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.teaching-staff-v23 .featured-profile-v23__img picture {
+    width: 8rem;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.teaching-staff-v23 .featured-profile-v23__img img {
+    width: 100%;
+}
+
+.teaching-staff-v23 .teaching-staff-v23__profiles-list {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
 .courses-v23 section,
 .courses-v23 > div {
     width: 100%;
