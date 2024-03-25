@@ -24660,6 +24660,7 @@ function buttonFromHeading(heading, chevronStyle) {
     var descriptionWrapper = document.createElement('div'),
       descriptionText = document.createElement('p');
     descriptionWrapper.className = 'accordion-v23__heading__description';
+    descriptionWrapper.ariaHidden = 'true';
     descriptionText.appendChild(document.createTextNode(heading.dataset.description));
     descriptionWrapper.appendChild(descriptionText);
     button.appendChild(descriptionWrapper);

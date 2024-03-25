@@ -41630,6 +41630,16 @@ html {
         padding: 0.25rem;
         border: initial;
     }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button:focus {
+        background-color: #666666;
+        color: #ffffff;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button:focus .accordion-v23__heading__description p {
+        color: #ffffff;
+    }
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button:focus .accordion-v23__heading__indicator:before {
+        color: #ffffff;
+    }
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button .accordion-v23__heading__description {
         font-weight: 600;
     }
@@ -41639,6 +41649,7 @@ html {
         letter-spacing: 0em;
         margin: initial;
         color: #666666;
+        line-height: 1.266;
     }
 }
 
@@ -41726,12 +41737,76 @@ html {
         display: none;
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
+        font-size: 0.889rem;
+        line-height: 1.625;
+        letter-spacing: 0em;
+        line-height: 1.424;
         background-color: #666666;
         color: #ffffff;
         margin-bottom: initial;
         border: initial;
         padding: 0 0.25rem 0.25rem 0.25rem;
     }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
+        letter-spacing: -0.005em;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 3839px) {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
+        letter-spacing: -0.008em;
+    }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 7679px) {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media screen and (min-width: 7680px) {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media screen {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body p {
+        font-size: 0.889rem;
+        line-height: 1.625;
+        letter-spacing: 0em;
+        line-height: 1.424;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body p {
+        letter-spacing: -0.005em;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 3839px) {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body p {
+        letter-spacing: -0.008em;
+    }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 7679px) {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body p {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media screen and (min-width: 7680px) {
+    .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body p {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media screen {
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body .youtube-video__caption-element--text,
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body .youtube-video__caption-element--time {
         font-size: 0.889rem;
