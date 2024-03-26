@@ -25374,7 +25374,6 @@ function responsiveOptimisation(slides, slider, controls, direction) {
     responsiveNum = 2;
   }
   slider.style.setProperty('--slider-grid-columns', responsiveNum);
-  console.log(responsiveNum);
   // responsiveNum = 2;
 
   var i;
@@ -25427,6 +25426,9 @@ function responsiveOptimisation(slides, slider, controls, direction) {
     updateButtonState(slider, controls);
   }
   slider.setAttribute('data-count', slides.length);
+  slides.forEach(function (slide) {
+    // console.log(slide);
+  });
   return slides;
 }
 
@@ -25761,7 +25763,7 @@ function launchArrow(slider) {
   addSwipeEvents(slider, controlsWrapper);
 
   // Set the height of the slider container to be fixed. This fixes the issue of having 'arrow navigation'
-  //slideHeightFix(slider);
+  slideHeightFix(slider);
 }
 
 /**
@@ -25927,18 +25929,17 @@ function updateDotButtonState(active, dotButtons, slider) {
 * height of the current slide
 * @param  {HTMLElement} slider - The slider element.
 */
-// function slideHeightFix(slider){
-//     let slides = Array.from(slider.children);
-//     let sliderSetHeight = 0;
-//     slider.style.minHeight = '0px';
 
-//     slides.forEach((slide) => {
-//         let slideHeight = slide.offsetHeight;
-//         slideHeight > sliderSetHeight ? sliderSetHeight = slideHeight: null;
-//     })
-//     slider.style.minHeight = sliderSetHeight+'px';
-// };
-
+function slideHeightFix(slider) {
+  var slides = slider.querySelectorAll('.course-card-v23');
+  var sliderSetHeight = 0;
+  slides.forEach(function (slide) {
+    var slideHeight = slide.offsetHeight;
+    slideHeight > sliderSetHeight ? sliderSetHeight = slideHeight : null;
+  });
+  slider.style.setProperty('--slider-min-height', "".concat(sliderSetHeight, "px"));
+}
+;
 /**
 * 3 Swipe functions below. Unify records touch coordinates to determine left or right swipe.
 * Lock function locks the ul element to prevent too many additional touches interfering with the sliding

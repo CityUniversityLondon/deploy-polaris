@@ -11258,6 +11258,10 @@ svg:not(:root) {
     color: #1e1e1e;
 }
 
+.course-card-v23__image img {
+    width: 100%;
+}
+
 .courses-v23 .course-card-v23__anchor {
     max-width: 100%;
 }
@@ -11316,6 +11320,14 @@ svg:not(:root) {
 
 .course-card-v23__anchor:hover:after {
     opacity: 1;
+}
+
+.js .slider-v23[data-style='responsive'] {
+    --slider-min-height:auto;
+}
+
+.js .slider-v23[data-style='responsive'] .course-card-v23 {
+    min-height: var(--slider-min-height);
 }
 
 .js .slider-v23[data-style='responsive'] + .slider-v23__controls--responsive .slider-v23__indicator {
@@ -41096,6 +41108,7 @@ html {
 */
 .js .slider-v23[data-style='responsive'] {
     --slider-grid-columns:3;
+    --slider-min-height:auto;
     display: flex;
     margin-right: 0;
     overflow: hidden;
@@ -41120,11 +41133,16 @@ html {
     height: 100%;
 }
 
+.js .slider-v23[data-style='responsive'] .slider-v23__cards-inner {
+    height: 100%;
+}
+
 .js .slider-v23[data-style='responsive'] .slide {
     top: 0;
     transition: left 1s ease-in-out;
     width: 100%;
     list-style: none;
+    height: 100%;
     max-width: inherit;
     /*
             @include media('reducemotion') {
