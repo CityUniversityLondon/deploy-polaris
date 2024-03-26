@@ -42146,14 +42146,9 @@ html {
 }
 
 .ksp-mba-v23 .ksp-mba-v23__list__item__label p {
-    font-size: 1rem;
-    line-height: 1.625;
-}
-
-@media (max-width: 1200px) {
-    .ksp-mba-v23 .ksp-mba-v23__list__item__label p {
-        font-size: 14px;
-    }
+    font-size: 0.89rem;
+    line-height: 1.414;
+    letter-spacing: inherit;
 }
 
 .ksp-mba-v23.ksp-mba-v23--animated-graphs {
