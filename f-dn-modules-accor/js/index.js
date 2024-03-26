@@ -24432,7 +24432,6 @@ var className = 'accordion-v23',
   headingIconClassName = headingClassName + '__indicator',
   headingLabelClassName = headingClassName + '__label',
   bodyClassName = className + '__body',
-  oneSecond = 1000,
   tenthOfASecond = 100;
 
 /**
@@ -24467,10 +24466,6 @@ function setSection(heading, open) {
   heading.dataset.open = open;
   heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
-
-  // Automatically scrolls heading into view being at the top of the page
-  var viewportOffset = heading.parentElement.getBoundingClientRect();
-  var top = viewportOffset.top;
 }
 
 /**
@@ -24629,7 +24624,6 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    //scrollToHeading(heading);
   }
 }
 
