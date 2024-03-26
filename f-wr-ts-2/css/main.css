@@ -12061,6 +12061,7 @@ svg:not(:root) {
     font-weight: 500;
     color: #555555;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    line-height: 1.2;
 }
 
 .teaching-staff-v23 .featured-profile-v23__block {
@@ -12140,6 +12141,18 @@ svg:not(:root) {
 .teaching-staff-v23 .teaching-staff-v23__profiles-list {
     list-style-type: disc;
     margin-left: 1rem;
+}
+
+.teaching-staff-v23 .teaching-staff-v23__profiles-list.teaching-staff-v23__profiles-list--column-two {
+    -moz-column-count: 2;
+         column-count: 2;
+}
+
+@media (max-width: 1200px) {
+    .teaching-staff-v23 .teaching-staff-v23__profiles-list.teaching-staff-v23__profiles-list--column-two {
+        -moz-column-count: 1;
+             column-count: 1;
+    }
 }
 
 @media (min-width: 1200px) {
