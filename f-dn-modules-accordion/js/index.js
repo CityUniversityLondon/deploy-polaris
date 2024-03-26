@@ -24588,7 +24588,6 @@ function buttonClick(button, headings, toggleOpen) {
 
         //If the sub accordion is open close it.
         if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(sub.dataset.open)) {
-          console.log(subAccordionSection);
           // Starting height is the current height
           setupTransition(subAccordionSection, subAccordionSection.offsetHeight + 'px');
           // setTimeout lets the DOM recalculate before we continue, so the transition will fire
