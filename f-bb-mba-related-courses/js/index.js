@@ -25426,9 +25426,6 @@ function responsiveOptimisation(slides, slider, controls, direction) {
     updateButtonState(slider, controls);
   }
   slider.setAttribute('data-count', slides.length);
-  slides.forEach(function (slide) {
-    // console.log(slide);
-  });
   return slides;
 }
 

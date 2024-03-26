@@ -41108,7 +41108,6 @@ html {
 */
 .js .slider-v23[data-style='responsive'] {
     --slider-grid-columns:3;
-    --slider-min-height:auto;
     display: flex;
     margin-right: 0;
     overflow: hidden;
@@ -41144,11 +41143,6 @@ html {
     list-style: none;
     height: 100%;
     max-width: inherit;
-    /*
-            @include media('reducemotion') {
-                transition: none;
-            }
-            */
 }
 
 .js .slider-v23[data-style='responsive'] .slide ul {
