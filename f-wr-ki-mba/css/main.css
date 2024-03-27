@@ -11146,6 +11146,72 @@ svg:not(:root) {
     outline-color: #1e1e1e;
 }
 
+.mba-courses-v23 .courses-v23__apply__corner-border-v23 {
+    position: absolute;
+    left: 0;
+    right: 4.5rem;
+    top: 4.5rem;
+    bottom: 4.5rem;
+    background: linear-gradient(to left, #12E97A 2.25rem, transparent 2.25rem) 100% 0, linear-gradient(to bottom, #12E97A 2.25rem, transparent 2.25rem) 100% 0, linear-gradient(to left, #12E97A 2.25rem, transparent 2.25rem) 100% 100%, linear-gradient(to top, #12E97A 2.25rem, transparent 2.25rem) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 4.5rem 4.5rem;
+}
+
+@media (max-width: 1200px) {
+    .mba-courses-v23 .courses-v23__apply__corner-border-v23 {
+        right: 2.25rem;
+        top: 2.25rem;
+        bottom: 2.25rem;
+        background: linear-gradient(to left, #12E97A 1.125rem, transparent 1.125rem) 100% 0, linear-gradient(to bottom, #12E97A 1.125rem, transparent 1.125rem) 100% 0, linear-gradient(to left, #12E97A 1.125rem, transparent 1.125rem) 100% 100%, linear-gradient(to top, #12E97A 1.125rem, transparent 1.125rem) 100% 100%;
+        background-size: 2.25rem 2.25rem;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 768px) {
+    .mba-courses-v23 .courses-v23__apply__corner-border-v23 {
+        background: none;
+    }
+}
+
+.mba-courses-v23 .courses-v23__apply__wrapper:before {
+    content: '';
+    position: absolute;
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #ffffff;
+    top: 0;
+    display: flex;
+    z-index: 1;
+    right: 0;
+}
+
+@media (max-width: 1200px) {
+    .mba-courses-v23 .courses-v23__apply__wrapper:before {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+}
+
+.mba-courses-v23 .courses-v23__apply__wrapper:after {
+    content: '';
+    position: absolute;
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #ffffff;
+    bottom: 0;
+    display: flex;
+    z-index: 1;
+    right: 0;
+}
+
+@media (max-width: 1200px) {
+    .mba-courses-v23 .courses-v23__apply__wrapper:after {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+}
+
 .student-life-v23__links .student-life-v23__links__cards {
     list-style: none;
     margin-left: initial;
@@ -12061,6 +12127,7 @@ svg:not(:root) {
     font-weight: 500;
     color: #555555;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    line-height: 1.2;
 }
 
 .teaching-staff-v23 .featured-profile-v23__block {
@@ -12140,6 +12207,18 @@ svg:not(:root) {
 .teaching-staff-v23 .teaching-staff-v23__profiles-list {
     list-style-type: disc;
     margin-left: 1rem;
+}
+
+.teaching-staff-v23 .teaching-staff-v23__profiles-list.teaching-staff-v23__profiles-list--column-two {
+    -moz-column-count: 2;
+         column-count: 2;
+}
+
+@media (max-width: 1200px) {
+    .teaching-staff-v23 .teaching-staff-v23__profiles-list.teaching-staff-v23__profiles-list--column-two {
+        -moz-column-count: 1;
+             column-count: 1;
+    }
 }
 
 @media (min-width: 1200px) {
