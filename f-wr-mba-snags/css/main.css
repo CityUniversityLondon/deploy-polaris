@@ -42249,6 +42249,18 @@ html {
     }
 }
 
+.js .mba-courses-v23 .accordion-v23 .accordion-v23__section:first-child button {
+    border-top: 0.12rem solid #cccccc;
+}
+
+.js .mba-courses-v23 .accordion-v23 .accordion-v23__section:last-child button {
+    border-bottom: 0.12rem solid #cccccc;
+}
+
+.js .mba-courses-v23 .accordion-v23 .accordion-v23__heading[data-open="true"] button {
+    border-bottom: none;
+}
+
 .content-transition-vertical--start {
     opacity: 0;
     top: 1rem;
