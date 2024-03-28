@@ -42261,6 +42261,64 @@ html {
     border-bottom: none;
 }
 
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading {
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-size: 1.424rem;
+    line-height: 1.33333;
+    letter-spacing: -0.013em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading i,
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+}
+
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading b,
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading strong {
+    font-weight: inherit;
+}
+
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading i,
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading em {
+    font-style: italic;
+}
+
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading u {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading {
+        letter-spacing: -0.015em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading {
+        letter-spacing: -0.016em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading {
+        letter-spacing: -0.017em;
+    }
+}
+
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading b,
+.js .mba-courses-v23 .accordion-v23 h4.accordion-v23__heading strong {
+    font-weight: 600;
+}
+
 .content-transition-vertical--start {
     opacity: 0;
     top: 1rem;
