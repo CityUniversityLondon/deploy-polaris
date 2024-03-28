@@ -25350,12 +25350,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 /**
-* Slider
-*
-* @module patterns/slider/slider
-* @author Web Development
-* @copyright City, University of London 2020
-*/
+ * Slider
+ *
+ * @module patterns/slider/slider
+ * @author Web Development
+ * @copyright City, University of London 2020
+ */
 
 
 
@@ -25366,11 +25366,11 @@ var className = 'slider-v23',
   arrowRight = 'ArrowRight';
 var sliderInitialSlides = ''; //Variable to store the initial launch state of the slide so it can be reset so optimised slides can be re calculated.
 /**
-* This adds a few swipe related events listeners to the "ul" element of sliders
-*
-* @param  {HTMLElement} slider - The slider ul element.
-* @param  {HTMLElement} controlsWrapper - The nav element containing the slider controls
-*/
+ * This adds a few swipe related events listeners to the "ul" element of sliders
+ *
+ * @param  {HTMLElement} slider - The slider ul element.
+ * @param  {HTMLElement} controlsWrapper - The nav element containing the slider controls
+ */
 
 function addSwipeEvents(slider, controlsWrapper) {
   slider.addEventListener('mousedown', function (e) {
@@ -25388,9 +25388,9 @@ function addSwipeEvents(slider, controlsWrapper) {
 }
 
 /**
-* Utility object that contains screen breakpoints and method to return current size based on breakpoints
-*
-*/
+ * Utility object that contains screen breakpoints and method to return current size based on breakpoints
+ *
+ */
 var Screens = {
   breakpoints: {
     mobile: {
@@ -25419,14 +25419,14 @@ var Screens = {
 };
 
 /**
-* Utitily function to get the actual index of the last visible item within a slide.
-* Used within responsiveOptimisation() to calculate correct current slide index when transitioning between different items per slide
-*
-* @param  {Number} currentSlideIndex - The index of the current active slide
-* @param  {Number} itemsPerSlide - How many items are currently shown per slide
-* @param  {Number} totalItems - How many items across all slides
-*
-*/
+ * Utitily function to get the actual index of the last visible item within a slide.
+ * Used within responsiveOptimisation() to calculate correct current slide index when transitioning between different items per slide
+ *
+ * @param  {Number} currentSlideIndex - The index of the current active slide
+ * @param  {Number} itemsPerSlide - How many items are currently shown per slide
+ * @param  {Number} totalItems - How many items across all slides
+ *
+ */
 
 function calculateLastVisibleItemIndex(currentSlideIndex, itemsPerSlide, totalItems) {
   var expectedLastVisibleItemIndex = currentSlideIndex * itemsPerSlide + (itemsPerSlide - 1);
@@ -25435,14 +25435,14 @@ function calculateLastVisibleItemIndex(currentSlideIndex, itemsPerSlide, totalIt
 }
 
 /**
-* For arrow responsive slider. Opimises slide elements for responsive slider on
-* bigger screens by creating a new "ul li" structure containing the slides
-*
-* @param  {HTMLElement} slider - The slider "ul" element.
-* @param  {Array} slides - an array containing the individual slides as li elements.
-* @param  {HTMLElement} controls - The "nav" element containing the controls
-*
-*/
+ * For arrow responsive slider. Opimises slide elements for responsive slider on
+ * bigger screens by creating a new "ul li" structure containing the slides
+ *
+ * @param  {HTMLElement} slider - The slider "ul" element.
+ * @param  {Array} slides - an array containing the individual slides as li elements.
+ * @param  {HTMLElement} controls - The "nav" element containing the controls
+ *
+ */
 
 function responsiveOptimisation(slides, slider, controls, direction) {
   var screenSize = window.innerWidth;
@@ -25458,9 +25458,9 @@ function responsiveOptimisation(slides, slider, controls, direction) {
   var currentSlide;
   var nestedSlides = slider.querySelectorAll('.slider-v23__cards-inner li');
   if (nestedSlides.length > 0) {
-    var totalItems = nestedSlides.length; // Total number of items 
+    var totalItems = nestedSlides.length; // Total number of items
     var currentSlideIndex = slides.findIndex(function (li) {
-      return li.getAttribute('data-sliderposition') === "0";
+      return li.getAttribute('data-sliderposition') === '0';
     }); //Get the current active slide
     var itemsPerSlide = slides[0].querySelectorAll('li').length; //How many items per slide
     var lastItemIndex = calculateLastVisibleItemIndex(currentSlideIndex, itemsPerSlide, totalItems); //Get the index of the last item
@@ -25529,12 +25529,12 @@ function responsiveOptimisation(slides, slider, controls, direction) {
 }
 
 /**
-* For arrow responsive slider.This reverses the optimasation (re-structure) that was done in
-* the function (responsiveOptimisation) above by creating a "normal" single structure ul list
-*
-* @param  {HTMLElement} slider - The slider "ul" element.
-* @param  {HTMLElement} controls - The "nav" element containing the controls
-*/
+ * For arrow responsive slider.This reverses the optimasation (re-structure) that was done in
+ * the function (responsiveOptimisation) above by creating a "normal" single structure ul list
+ *
+ * @param  {HTMLElement} slider - The slider "ul" element.
+ * @param  {HTMLElement} controls - The "nav" element containing the controls
+ */
 function reverseOptimisation(slider, controls, direction) {
   //formula for reverse is working
   var slides = Array.from(slider.children);
@@ -25580,11 +25580,11 @@ function reverseOptimisation(slider, controls, direction) {
 }
 
 /**
-* Updates buttons for arrow slider
-*
-* @param  {HTMLElement} slider - The slider element.
-* @param  {HTMLElement} controls - The slider controls element.
-*/
+ * Updates buttons for arrow slider
+ *
+ * @param  {HTMLElement} slider - The slider element.
+ * @param  {HTMLElement} controls - The slider controls element.
+ */
 function updateButtonState(slider, controls) {
   // Disables "next" or "prev" buttons if on first or last slide
   var nextButton = controls.querySelector(".".concat(className, "__controls__next")),
@@ -25600,11 +25600,11 @@ function updateButtonState(slider, controls) {
 }
 
 /**
-* Handle clicks on the next/previous buttons for arrow slider.
-*
-* @param  {HTMLElement} slider - The slider element.
-* @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
-*/
+ * Handle clicks on the next/previous buttons for arrow slider.
+ *
+ * @param  {HTMLElement} slider - The slider element.
+ * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
+ */
 function handleNextPrevClick(slider, controls, direction) {
   var slides = Array.from(slider.children);
   var responsive = slider.getAttribute('data-style');
@@ -25725,11 +25725,11 @@ function handleNextPrevClick(slider, controls, direction) {
 }
 
 /**
-* This is for arrow slider only. It applies the necessary data attribues needed
-*  for the functionality of the slider which positions the slides into their starting positions
-*
-* @param  {Array} slides - an array containing the individual slides as li elements
-*/
+ * This is for arrow slider only. It applies the necessary data attribues needed
+ *  for the functionality of the slider which positions the slides into their starting positions
+ *
+ * @param  {Array} slides - an array containing the individual slides as li elements
+ */
 function prepareSlides(slides, current) {
   slides.forEach(function (slide, i) {
     slide.setAttribute('tabindex', -1); // Remove inactive
@@ -25764,11 +25764,11 @@ function prepareSlides(slides, current) {
 }
 
 /**
-* Transform an element with the slider class name into a slider section controlled by arrows.
-*
-* @param {HTMLElement} slider - An element with the slider class
-*
-*/
+ * Transform an element with the slider class name into a slider section controlled by arrows.
+ *
+ * @param {HTMLElement} slider - An element with the slider class
+ *
+ */
 function launchArrow(slider) {
   // creates elements for pagination and controls
   var slides = Array.from(slider.children);
@@ -25882,12 +25882,12 @@ function launchArrow(slider) {
 }
 
 /**
-* Transform an element with the slider class name into a slider section controlled by dots.
-* This is to be launched on smaller screens only.
-*
-* @param {HTMLElement} slider - An element with the slider class
-*
-*/
+ * Transform an element with the slider class name into a slider section controlled by dots.
+ * This is to be launched on smaller screens only.
+ *
+ * @param {HTMLElement} slider - An element with the slider class
+ *
+ */
 function launchDot(slider) {
   // Creates pagination and control elements
   var container = slider.getAttribute('data-ul-container');
@@ -25977,12 +25977,12 @@ function launchDot(slider) {
 }
 
 /**
-* Handle clicks for dot slider
-*
-* @param  {HTMLElement} slider - The slider element.
-* @param  {Number} selection - pass the paramaetr of selected slide as a number
-* @param  {HTMLElement} controlsWrapper - Element containing the control buttons
-*/
+ * Handle clicks for dot slider
+ *
+ * @param  {HTMLElement} slider - The slider element.
+ * @param  {Number} selection - pass the paramaetr of selected slide as a number
+ * @param  {HTMLElement} controlsWrapper - Element containing the control buttons
+ */
 
 function handleDotClick(slider, controlsWrapper, selection) {
   var slides = Array.from(slider.children),
@@ -26022,9 +26022,9 @@ function handleDotClick(slider, controlsWrapper, selection) {
 }
 
 /**
-* @param  {number} active - This is the number/index of the 'active' slide.
-* @param  {array} dotButtons - An array of all the dot buttons.
-*/
+ * @param  {number} active - This is the number/index of the 'active' slide.
+ * @param  {array} dotButtons - An array of all the dot buttons.
+ */
 function updateDotButtonState(active, dotButtons, slider) {
   dotButtons.forEach(function (dot, i) {
     if (i === active) {
@@ -26039,11 +26039,11 @@ function updateDotButtonState(active, dotButtons, slider) {
 }
 
 /**
-* This function creates a fix height for the slider container so the height don't change depending on each
-* slides individual height which would cause the navigation arrows to move up and down when adjusting to the
-* height of the current slide
-* @param  {HTMLElement} slider - The slider element.
-*/
+ * This function creates a fix height for the slider container so the height don't change depending on each
+ * slides individual height which would cause the navigation arrows to move up and down when adjusting to the
+ * height of the current slide
+ * @param  {HTMLElement} slider - The slider element.
+ */
 
 function slideHeightFix(slider) {
   var slides = slider.querySelectorAll('.course-card-v23');
@@ -26054,19 +26054,18 @@ function slideHeightFix(slider) {
   });
   slider.style.setProperty('--slider-min-height', "".concat(sliderSetHeight, "px"));
 }
-;
 /**
-* 3 Swipe functions below. Unify records touch coordinates to determine left or right swipe.
-* Lock function locks the ul element to prevent too many additional touches interfering with the sliding
-* functionality. I.e. when a slide is in progress it locks it not to register additional touches.
-* Move function monitors the 'end' of the swipe action to determine the direction of the swipe i.e. left / right.
-* The "dx" parameter can be used to adjust the sensitivity of the swiping. The larger the number the longer the swipe needs
-* to be to register as an actual swipe.
-*
-* @param {event} e - Touch event
-* @param {HTMLElement} Slider - The ul element containing the "li" slides
-* @param {HTMLElement} ControlsWrapper - The nav element containing the slider controls
-*/
+ * 3 Swipe functions below. Unify records touch coordinates to determine left or right swipe.
+ * Lock function locks the ul element to prevent too many additional touches interfering with the sliding
+ * functionality. I.e. when a slide is in progress it locks it not to register additional touches.
+ * Move function monitors the 'end' of the swipe action to determine the direction of the swipe i.e. left / right.
+ * The "dx" parameter can be used to adjust the sensitivity of the swiping. The larger the number the longer the swipe needs
+ * to be to register as an actual swipe.
+ *
+ * @param {event} e - Touch event
+ * @param {HTMLElement} Slider - The ul element containing the "li" slides
+ * @param {HTMLElement} ControlsWrapper - The nav element containing the slider controls
+ */
 
 var x0;
 function unify(e) {
@@ -26111,10 +26110,10 @@ function move(e, slider, controlsWrapper) {
 // End of swipe functions
 
 /**
-* Transform an element with the slider class name into a slider section.
-*
-* @param {HTMLElement} slider - An element with the slider class
-*/
+ * Transform an element with the slider class name into a slider section.
+ *
+ * @param {HTMLElement} slider - An element with the slider class
+ */
 function launch(slider) {
   var style = slider.dataset.style || defaultStyle,
     cardsPerRow = parseInt(slider.dataset.cardsperrow) || defaultCardsPerRow; // CardsPerRow not currently in use. Tom's old code.
