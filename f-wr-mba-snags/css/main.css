@@ -9901,7 +9901,7 @@ svg:not(:root) {
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__entry__current {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__content p,
@@ -9991,9 +9991,10 @@ svg:not(:root) {
 .ug-courses-v23 .courses-v23__key-info__details a {
     color: #1e1e1e;
     border-bottom-color: #1e1e1e;
+    background-color: transparent;
 }
 
-.ug-courses-v23 .courses-v23__key-info__details a:hover {
+.ug-courses-v23 .courses-v23__key-info__details a:hover, .ug-courses-v23 .courses-v23__key-info__details a:active, .ug-courses-v23 .courses-v23__key-info__details a:focus {
     color: #ffffff;
     background-color: #1e1e1e;
 }
@@ -10102,9 +10103,10 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__key-info__details a {
     color: #ffffff;
     border-bottom-color: #ffffff;
+    background-color: transparent;
 }
 
-.pg-courses-v23 .courses-v23__key-info__details a:hover {
+.pg-courses-v23 .courses-v23__key-info__details a:hover, .pg-courses-v23 .courses-v23__key-info__details a:active, .pg-courses-v23 .courses-v23__key-info__details a:focus {
     color: #1e1e1e;
     background-color: #ffffff;
 }
@@ -10220,10 +10222,11 @@ svg:not(:root) {
 .mba-courses-v23 .courses-v23__key-info__details a {
     color: #ffffff;
     border-bottom-color: #ffffff;
+    background-color: rgba(30, 30, 30, 0.5);
 }
 
-.mba-courses-v23 .courses-v23__key-info__details a:hover {
-    color: #ffffff;
+.mba-courses-v23 .courses-v23__key-info__details a:hover, .mba-courses-v23 .courses-v23__key-info__details a:active, .mba-courses-v23 .courses-v23__key-info__details a:focus {
+    color: #1e1e1e;
     background-color: #ffffff;
 }
 
@@ -10242,9 +10245,8 @@ svg:not(:root) {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #002b49;
-    color: #ffffff;
-    border: 0.12rem solid #ffffff;
+    background-color: #ffffff;
+    color: #1e1e1e;
 }
 
 .mba-courses-v23 .cta--v23--ki:hover, .mba-courses-v23 .cta--v23--ki:focus, .mba-courses-v23 .cta--v23--ki:active {
@@ -10264,8 +10266,6 @@ svg:not(:root) {
 }
 
 .mba-courses-v23 .cta--v23--ki:hover, .mba-courses-v23 .cta--v23--ki:focus, .mba-courses-v23 .cta--v23--ki:active {
-    background-color: #00192a;
-    color: #ffffff;
     outline-color: #ffffff;
 }
 
@@ -10275,7 +10275,7 @@ svg:not(:root) {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #ffffff;
+    background-color: #12E97A;
     color: #1e1e1e;
 }
 
@@ -10296,7 +10296,7 @@ svg:not(:root) {
 }
 
 .mba-courses-v23 .cta--v23--ki--apply:hover, .mba-courses-v23 .cta--v23--ki--apply:focus, .mba-courses-v23 .cta--v23--ki--apply:active {
-    background-color: #f0f0f0;
+    background-color: #10cd6b;
     outline-color: #ffffff;
 }
 
@@ -29233,7 +29233,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .mba-courses-v23 .ksp-v23-wrapper--dark a:hover {
-    color: #ffffff;
+    color: #1e1e1e;
     background-color: #ffffff;
 }
 
