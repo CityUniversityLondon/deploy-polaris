@@ -25389,8 +25389,11 @@ function addSwipeEvents(slider, controlsWrapper) {
 
 /**
  * Utility object that contains screen breakpoints and method to return current size based on breakpoints
- *
+ * Usage:
+ * Return current screen type name - Screens.getType()
+ * Get min value for tablet Screens.breakpoints.tablet.min
  */
+
 var Screens = {
   breakpoints: {
     mobile: {
@@ -25447,7 +25450,7 @@ function calculateLastVisibleItemIndex(currentSlideIndex, itemsPerSlide, totalIt
 function responsiveOptimisation(slides, slider, controls, direction) {
   var screenSize = window.innerWidth;
   var responsiveNum = slider.getAttribute('data-perslide') ? Number(slider.getAttribute('data-perslide')) : 2; // number of items per slide to display
-  if (screenSize <= 900) {
+  if (screenSize <= Screens.breakpoints.medium.min) {
     responsiveNum = 2;
   }
   slider.style.setProperty('--slider-grid-columns', responsiveNum);
@@ -25615,16 +25618,16 @@ function handleNextPrevClick(slider, controls, direction) {
 
   if (responsive === 'responsive') {
     //resetOptimisation(slider);
-    if (screenSize < 768) {
+    if (screenSize < Screens.breakpoints.tablet.min) {
       if (optimised !== 'mobile') {
         reverseOptimisation(slider, controls, direction, true);
       }
-    } else if (screenSize < 900) {
+    } else if (screenSize < Screens.breakpoints.medium.min) {
       if (optimised !== 'tablet') {
         responsiveOptimisation(slides, slider, controls, direction);
       }
     } else {
-      // Assumes any screenSize >= 900
+      // Assumes any screenSize >= Screens.breakpoints.medium.min
       if (optimised !== 'medium') {
         responsiveOptimisation(slides, slider, controls, direction);
       }

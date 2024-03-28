@@ -11323,7 +11323,11 @@ svg:not(:root) {
 }
 
 .js .slider-v23[data-style='responsive'] {
-    --slider-min-height:auto;
+    --slider-min-height: auto;
+}
+
+.js .slider-v23[data-style='responsive'] .course-card-v23__anchor {
+    height: 100%;
 }
 
 .js .slider-v23[data-style='responsive'] .course-card-v23 {
