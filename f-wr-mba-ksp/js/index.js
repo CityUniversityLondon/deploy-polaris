@@ -24430,8 +24430,8 @@ var className = 'accordion-v23',
   headingClassName = className + '__heading',
   headingTextClassName = headingClassName + '__text',
   headingIconClassName = headingClassName + '__indicator',
+  headingLabelClassName = headingClassName + '__label',
   bodyClassName = className + '__body',
-  oneSecond = 1000,
   tenthOfASecond = 100;
 
 /**
@@ -24466,10 +24466,6 @@ function setSection(heading, open) {
   heading.dataset.open = open;
   heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
-
-  // Automatically scrolls heading into view being at the top of the page
-  var viewportOffset = heading.parentElement.getBoundingClientRect();
-  var top = viewportOffset.top;
 }
 
 /**
@@ -24593,6 +24589,7 @@ function buttonClick(button, headings, toggleOpen) {
           // setTimeout lets the DOM recalculate before we continue, so the transition will fire
           setTimeout(function () {
             subAccordionSection.style.height = '0px';
+            cleanupTransition(subAccordionSection);
           }, tenthOfASecond);
           setSection(subAccordionHeading, false);
         }
@@ -24627,7 +24624,6 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    //scrollToHeading(heading);
   }
 }
 
@@ -24637,7 +24633,7 @@ function buttonClick(button, headings, toggleOpen) {
  * @param {HTMLElement} heading - An accordion heading.
  * @returns {HTMLButtonElement} An accordion section button.
  */
-function buttonFromHeading(heading) {
+function buttonFromHeading(heading, chevronStyle) {
   var button = document.createElement('button'),
     // Chrome can't apply grid layout to buttons, need to wrap contents
     wrapper = document.createElement('div'),
@@ -24648,8 +24644,33 @@ function buttonFromHeading(heading) {
   iconSpan.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].hidden, true);
   button.setAttribute('type', 'button');
   textSpan.appendChild(document.createTextNode(heading.textContent));
-  Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(wrapper, [iconSpan, textSpan]);
+  if (chevronStyle) {
+    wrapper.appendChild(textSpan);
+    if (heading.dataset.label) {
+      var labelSpan = document.createElement('span');
+      var srSpan = document.createElement('span');
+      srSpan.className = 'sr-only';
+      srSpan.appendChild(document.createTextNode('Runs in '));
+      labelSpan.className = headingLabelClassName;
+      labelSpan.appendChild(srSpan);
+      labelSpan.appendChild(document.createTextNode(heading.dataset.label));
+      wrapper.appendChild(labelSpan);
+    }
+    wrapper.appendChild(iconSpan);
+  } else {
+    wrapper.appendChild(iconSpan);
+    wrapper.appendChild(textSpan);
+  }
   button.appendChild(wrapper);
+  if (heading.dataset.description) {
+    var descriptionWrapper = document.createElement('div'),
+      descriptionText = document.createElement('p');
+    descriptionWrapper.className = 'accordion-v23__heading__description';
+    descriptionWrapper.ariaHidden = 'true';
+    descriptionText.appendChild(document.createTextNode(heading.dataset.description));
+    descriptionWrapper.appendChild(descriptionText);
+    button.appendChild(descriptionWrapper);
+  }
   return button;
 }
 
@@ -24676,6 +24697,7 @@ function launch(accordion) {
   var toggleOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.toggleopen),
     defaultOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.defaultopen),
     allowSingle = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.allowsingle),
+    downChevronStyle = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.downchevronstyle || false),
     headings = Array.from(accordion.parentNode.querySelectorAll("#".concat(accordion.id, " > .").concat(headingClassName)));
   var idLinked = false;
   if (!(allowSingle || headings.length > 1)) {
@@ -24687,7 +24709,7 @@ function launch(accordion) {
   }
   headings.forEach(function (heading) {
     var content = heading.nextElementSibling,
-      button = buttonFromHeading(heading);
+      button = buttonFromHeading(heading, downChevronStyle);
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
