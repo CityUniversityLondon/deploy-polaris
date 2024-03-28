@@ -40974,6 +40974,24 @@ div.widget-123_test_ {
     outline: none;
 }
 
+.sticky-nav__sec {
+    padding-top: 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ug-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .ug-courses-v23 .nav-sticky .nav-sticky__item__link:active {
+    background: #f1b434;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .nav-sticky .nav-sticky__item__link__active {
+    background: #f1b434;
+    color: #1e1e1e;
+}
+
 .pg-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .pg-courses-v23 .nav-sticky .nav-sticky__item__link:active {
     background: #006699;
     color: #ffffff;
@@ -40984,21 +41002,14 @@ div.widget-123_test_ {
     color: #ffffff;
 }
 
-.ug-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .ug-courses-v23 .nav-sticky .nav-sticky__item__link:active {
-    background: #f1b434;
-}
-
-.ug-courses-v23 .nav-sticky .nav-sticky__item__link__active {
-    background: #f1b434;
+.mba-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .mba-courses-v23 .nav-sticky .nav-sticky__item__link:active {
+    background: #12E97A;
     color: #1e1e1e;
 }
 
-.sticky-nav__sec {
-    padding-top: 3rem;
-}
-
-html {
-    scroll-behavior: smooth;
+.mba-courses-v23 .nav-sticky .nav-sticky__item__link__active {
+    background: #12E97A;
+    color: #1e1e1e;
 }
 
 .promo-box-v23__wrapper .promo-box-v23 {
