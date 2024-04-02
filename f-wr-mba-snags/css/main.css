@@ -12201,21 +12201,32 @@ svg:not(:root) {
     width: 100%;
 }
 
-.teaching-staff-v23 .teaching-staff-v23__profiles-list {
-    list-style-type: disc;
-    margin-left: 1rem;
-}
-
-.teaching-staff-v23 .teaching-staff-v23__profiles-list.teaching-staff-v23__profiles-list--column-two {
-    -moz-column-count: 2;
-         column-count: 2;
+.teaching-staff-v23 .teaching-staff-v23__profiles-lists--column-two {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 @media (max-width: 1200px) {
-    .teaching-staff-v23 .teaching-staff-v23__profiles-list.teaching-staff-v23__profiles-list--column-two {
-        -moz-column-count: 1;
-             column-count: 1;
+    .teaching-staff-v23 .teaching-staff-v23__profiles-lists--column-two {
+        flex-direction: column;
+        gap: 0;
     }
+}
+
+.teaching-staff-v23 .teaching-staff-v23__profiles-lists--column-two .teaching-staff-v23__profiles-list {
+    flex-basis: 50%;
+}
+
+@media (max-width: 1200px) {
+    .teaching-staff-v23 .teaching-staff-v23__profiles-lists--column-two .teaching-staff-v23__profiles-list {
+        flex-basis: 100%;
+    }
+}
+
+.teaching-staff-v23 .teaching-staff-v23__profiles-list {
+    list-style-type: disc;
+    margin-left: 1rem;
 }
 
 @media (min-width: 1200px) {
