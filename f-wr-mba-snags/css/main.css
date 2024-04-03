@@ -12530,7 +12530,7 @@ svg:not(:root) {
     grid-column: 1/-1;
 }
 
-.courses-v23__careers .courses-v23__careers__content {
+.courses-v23__careers .courses-v23__careers__content, .courses-v23__careers .accordion-v23 {
     grid-column: 1/13;
 }
 
