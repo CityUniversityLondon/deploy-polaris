@@ -42897,6 +42897,8 @@ html {
 .ksp-mba-v23 {
     position: relative;
     grid-column: 1/13;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .ksp-mba-v23 .ksp-mba-v23__list {
@@ -42930,11 +42932,6 @@ html {
     font-size: 0.89rem;
     line-height: 1.414;
     letter-spacing: inherit;
-}
-
-.ksp-mba-v23.ksp-mba-v23--graphs {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
 }
 
 @media (max-width: 650px) {
