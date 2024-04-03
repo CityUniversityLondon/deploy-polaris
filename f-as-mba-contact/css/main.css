@@ -232,6 +232,10 @@
     background-color: #ececec;
 }
 
+.background--zircon-green {
+    background-color: #eceeee;
+}
+
 .background--quill {
     background-color: #a9a19c;
 }
@@ -12014,6 +12018,14 @@ svg:not(:root) {
     left: -50%;
 }
 
+.courses-v23__contact .contact__heading {
+    margin-bottom: 0;
+}
+
+.courses-v23__contact .contact-wys {
+    margin-top: 2rem;
+}
+
 .courses-v23__contact .contact-highlight {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
@@ -12022,6 +12034,14 @@ svg:not(:root) {
     letter-spacing: -0.015em;
     font-style: normal;
     font-weight: 600;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    box-shadow: 0.5rem 0 0 #1e1e1e, -0.5rem 0 0 #1e1e1e;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    margin-left: 0.5rem;
+    border: 0.25rem solid #1e1e1e;
 }
 
 .courses-v23__contact .contact-highlight i,
@@ -12106,6 +12126,64 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__contact__cta a:hover, .pg-courses-v23 .courses-v23__contact__cta a:focus, .pg-courses-v23 .courses-v23__contact__cta a:active {
     background-color: #00192a;
     color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__contact__cta a {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__contact__cta a:hover, .mba-courses-v23 .courses-v23__contact__cta a:focus, .mba-courses-v23 .courses-v23__contact__cta a:active {
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .mba-courses-v23 .courses-v23__contact__cta a {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .mba-courses-v23 .courses-v23__contact__cta a {
+        font-size: 92px;
+    }
+}
+
+.mba-courses-v23 .courses-v23__contact__cta a:hover, .mba-courses-v23 .courses-v23__contact__cta a:focus, .mba-courses-v23 .courses-v23__contact__cta a:active {
+    background-color: #3d3d3d;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__contact__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__contact__wrapper {
+        flex-direction: row;
+    }
+}
+
+.mba-courses-v23 .courses-v23__contact__container__text {
+    flex-grow: 1;
+}
+
+.mba-courses-v23 .courses-v23__contact__container__cta {
+    margin-left: 2rem;
+    flex-grow: 5;
+}
+
+@media (max-width: 900px) {
+    .mba-courses-v23 .courses-v23__contact__container__cta {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 901px) {
@@ -12259,21 +12337,32 @@ svg:not(:root) {
     width: 100%;
 }
 
-.teaching-staff-v23 .teaching-staff-v23__profiles-list {
-    list-style-type: disc;
-    margin-left: 1rem;
-}
-
-.teaching-staff-v23 .teaching-staff-v23__profiles-list.teaching-staff-v23__profiles-list--column-two {
-    -moz-column-count: 2;
-         column-count: 2;
+.teaching-staff-v23 .teaching-staff-v23__profiles-lists--column-two {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 @media (max-width: 1200px) {
-    .teaching-staff-v23 .teaching-staff-v23__profiles-list.teaching-staff-v23__profiles-list--column-two {
-        -moz-column-count: 1;
-             column-count: 1;
+    .teaching-staff-v23 .teaching-staff-v23__profiles-lists--column-two {
+        flex-direction: column;
+        gap: 0;
     }
+}
+
+.teaching-staff-v23 .teaching-staff-v23__profiles-lists--column-two .teaching-staff-v23__profiles-list {
+    flex-basis: 50%;
+}
+
+@media (max-width: 1200px) {
+    .teaching-staff-v23 .teaching-staff-v23__profiles-lists--column-two .teaching-staff-v23__profiles-list {
+        flex-basis: 100%;
+    }
+}
+
+.teaching-staff-v23 .teaching-staff-v23__profiles-list {
+    list-style-type: disc;
+    margin-left: 1rem;
 }
 
 @media (min-width: 1200px) {
@@ -12573,7 +12662,7 @@ svg:not(:root) {
     grid-column: 1/-1;
 }
 
-.courses-v23__careers .courses-v23__careers__content {
+.courses-v23__careers .courses-v23__careers__content, .courses-v23__careers .accordion-v23 {
     grid-column: 1/13;
 }
 
@@ -29309,8 +29398,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .mba-courses-v23 .ksp-v23-wrapper--light {
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: #eceeee;
+    color: #1e1e1e;
 }
 
 .mba-courses-v23 .ksp-ordered-list--tick ul li:before {
@@ -41043,6 +41132,24 @@ div.widget-123_test_ {
     outline: none;
 }
 
+.sticky-nav__sec {
+    padding-top: 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ug-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .ug-courses-v23 .nav-sticky .nav-sticky__item__link:active {
+    background: #f1b434;
+    color: #1e1e1e;
+}
+
+.ug-courses-v23 .nav-sticky .nav-sticky__item__link__active {
+    background: #f1b434;
+    color: #1e1e1e;
+}
+
 .pg-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .pg-courses-v23 .nav-sticky .nav-sticky__item__link:active {
     background: #006699;
     color: #ffffff;
@@ -41053,21 +41160,14 @@ div.widget-123_test_ {
     color: #ffffff;
 }
 
-.ug-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .ug-courses-v23 .nav-sticky .nav-sticky__item__link:active {
-    background: #f1b434;
-}
-
-.ug-courses-v23 .nav-sticky .nav-sticky__item__link__active {
-    background: #f1b434;
+.mba-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .mba-courses-v23 .nav-sticky .nav-sticky__item__link:active {
+    background: #12E97A;
     color: #1e1e1e;
 }
 
-.sticky-nav__sec {
-    padding-top: 3rem;
-}
-
-html {
-    scroll-behavior: smooth;
+.mba-courses-v23 .nav-sticky .nav-sticky__item__link__active {
+    background: #12E97A;
+    color: #1e1e1e;
 }
 
 .promo-box-v23__wrapper .promo-box-v23 {
@@ -42940,6 +43040,8 @@ html {
 .ksp-mba-v23 {
     position: relative;
     grid-column: 1/13;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .ksp-mba-v23 .ksp-mba-v23__list {
@@ -42973,11 +43075,6 @@ html {
     font-size: 0.89rem;
     line-height: 1.414;
     letter-spacing: inherit;
-}
-
-.ksp-mba-v23.ksp-mba-v23--graphs {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
 }
 
 @media (max-width: 650px) {
