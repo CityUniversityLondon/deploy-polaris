@@ -12055,6 +12055,80 @@ svg:not(:root) {
     left: -50%;
 }
 
+.courses-v23__contact .contact__heading {
+    margin-bottom: 0;
+}
+
+.courses-v23__contact .contact-wys {
+    margin-top: 2rem;
+}
+
+.courses-v23__contact .contact-highlight {
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-size: 1.602rem;
+    line-height: 1.33333;
+    letter-spacing: -0.015em;
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    box-shadow: 0.5rem 0 0 #1e1e1e, -0.5rem 0 0 #1e1e1e;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    margin-left: 0.5rem;
+    border: 0.25rem solid #1e1e1e;
+}
+
+.courses-v23__contact .contact-highlight i,
+.courses-v23__contact .contact-highlight em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+}
+
+.courses-v23__contact .contact-highlight b,
+.courses-v23__contact .contact-highlight strong {
+    font-weight: inherit;
+}
+
+.courses-v23__contact .contact-highlight i,
+.courses-v23__contact .contact-highlight em {
+    font-style: italic;
+}
+
+.courses-v23__contact .contact-highlight u {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .courses-v23__contact .contact-highlight {
+        letter-spacing: -0.016em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+    .courses-v23__contact .contact-highlight {
+        letter-spacing: -0.016em;
+    }
+}
+
+@media (min-width: 3840px) and (max-width: 7679px) {
+    .courses-v23__contact .contact-highlight {
+        letter-spacing: -0.017em;
+    }
+}
+
+@media (min-width: 7680px) {
+    .courses-v23__contact .contact-highlight {
+        letter-spacing: -0.017em;
+    }
+}
+
+.courses-v23__contact .contact-highlight b,
+.courses-v23__contact .contact-highlight strong {
+    font-weight: 600;
+}
+
 .courses-v23__contact__cta li {
     margin-top: 0.5rem;
 }
@@ -12089,6 +12163,64 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__contact__cta a:hover, .pg-courses-v23 .courses-v23__contact__cta a:focus, .pg-courses-v23 .courses-v23__contact__cta a:active {
     background-color: #00192a;
     color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__contact__cta a {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__contact__cta a:hover, .mba-courses-v23 .courses-v23__contact__cta a:focus, .mba-courses-v23 .courses-v23__contact__cta a:active {
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .mba-courses-v23 .courses-v23__contact__cta a {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .mba-courses-v23 .courses-v23__contact__cta a {
+        font-size: 92px;
+    }
+}
+
+.mba-courses-v23 .courses-v23__contact__cta a:hover, .mba-courses-v23 .courses-v23__contact__cta a:focus, .mba-courses-v23 .courses-v23__contact__cta a:active {
+    background-color: #3d3d3d;
+    color: #ffffff;
+}
+
+.mba-courses-v23 .courses-v23__contact__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__contact__wrapper {
+        flex-direction: row;
+    }
+}
+
+.mba-courses-v23 .courses-v23__contact__container__text {
+    flex-grow: 1;
+}
+
+.mba-courses-v23 .courses-v23__contact__container__cta {
+    margin-left: 2rem;
+    flex-grow: 5;
+}
+
+@media (max-width: 900px) {
+    .mba-courses-v23 .courses-v23__contact__container__cta {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 901px) {
