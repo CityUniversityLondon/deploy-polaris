@@ -11235,12 +11235,24 @@ svg:not(:root) {
     }
 }
 
+.mba-courses-v23 .courses-v23__apply__promo ul {
+    margin-left: 2rem;
+}
+
+.mba-courses-v23 .courses-v23__apply__content h3 {
+    margin-top: 3rem;
+}
+
 .mba-courses-v23 .courses-v23__apply__content__items {
     list-style: none;
 }
 
 .mba-courses-v23 .courses-v23__apply__content__item ul {
     margin-left: 2rem;
+}
+
+.mba-courses-v23 .courses-v23__apply__content__item h4 {
+    margin-top: 2rem;
 }
 
 .mba-courses-v23 .courses-v23__apply__content__item h5 {
@@ -11251,6 +11263,10 @@ svg:not(:root) {
     padding-right: 0.5rem;
     display: inline-block;
     width: initial;
+}
+
+.mba-courses-v23 .courses-v23__apply__content__item h5 ~ p {
+    margin-left: 0.75rem;
 }
 
 .student-life-v23__links .student-life-v23__links__cards {
