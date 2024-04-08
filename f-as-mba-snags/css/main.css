@@ -33047,6 +33047,11 @@ table tbody > tr > td:hover {
     border-bottom-width: 0.06rem;
 }
 
+.courses-v23 table tbody tr {
+    color: #1e1e1e;
+    background: #ffffff;
+}
+
 .courses-v23 table tbody tr:nth-child(odd) {
     background: #f2f2f2;
 }
