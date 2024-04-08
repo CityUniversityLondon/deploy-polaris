@@ -12075,6 +12075,10 @@ svg:not(:root) {
     margin-bottom: 0;
 }
 
+.courses-v23__contact .contact-wys {
+    margin-top: 2rem;
+}
+
 .courses-v23__contact .contact-highlight {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-feature-settings: 'ss01' 1, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
@@ -12141,13 +12145,6 @@ svg:not(:root) {
     font-weight: 600;
 }
 
-@media (min-width: 901px) {
-    .courses-v23__contact__cta {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
 .courses-v23__contact__cta li {
     margin-top: 0.5rem;
 }
@@ -12157,7 +12154,6 @@ svg:not(:root) {
         display: inline-block;
         margin-top: 0;
         margin-right: 0.5rem;
-        flex-grow: 1;
     }
 }
 
@@ -12433,22 +12429,6 @@ svg:not(:root) {
     }
 }
 
-.js .courses-v23__modules-accordion a {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
-    background-color: rgba(30, 30, 30, 0.5);
-}
-
-.js .courses-v23__modules-accordion a:hover, .js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
-    color: #1e1e1e;
-    background-color: #ffffff;
-}
-
-.js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
-    outline-offset: 0.1875rem;
-    outline-color: #ffffff;
-}
-
 .courses-v23 section,
 .courses-v23 > div {
     width: 100%;
@@ -12570,37 +12550,6 @@ svg:not(:root) {
 .courses-v23 .accordion-v23 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-}
-
-.courses-v23 .accordion-v23 .cta--v23 {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.courses-v23 .accordion-v23 .cta--v23:hover, .courses-v23 .accordion-v23 .cta--v23:focus, .courses-v23 .accordion-v23 .cta--v23:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .courses-v23 .accordion-v23 .cta--v23 {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .courses-v23 .accordion-v23 .cta--v23 {
-        font-size: 92px;
-    }
-}
-
-.courses-v23 .accordion-v23 .cta--v23:hover, .courses-v23 .accordion-v23 .cta--v23:focus, .courses-v23 .accordion-v23 .cta--v23:active {
-    background-color: #3d3d3d;
-    color: #ffffff;
 }
 
 .courses-v23 sub,
@@ -22355,37 +22304,6 @@ USED IN:
     .cta--v23 {
         font-size: 92px;
     }
-}
-
-.cta--v23--black {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.cta--v23--black:hover, .cta--v23--black:focus, .cta--v23--black:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .cta--v23--black {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .cta--v23--black {
-        font-size: 92px;
-    }
-}
-
-.cta--v23--black:hover, .cta--v23--black:focus, .cta--v23--black:active {
-    background-color: #3d3d3d;
-    color: #ffffff;
 }
 
 .cta--ug-v23--ki {
@@ -33057,11 +32975,6 @@ table tbody > tr > td:hover {
 
 .courses-v23 table thead th {
     border-bottom-width: 0.06rem;
-}
-
-.courses-v23 table tbody tr {
-    color: #1e1e1e;
-    background: #ffffff;
 }
 
 .courses-v23 table tbody tr:nth-child(odd) {
