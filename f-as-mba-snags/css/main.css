@@ -10334,54 +10334,6 @@ svg:not(:root) {
     background-color: #efa917;
 }
 
-.js .courses-v23__modules-accordion a {
-    color: #1e1e1e;
-    border-bottom-color: #1e1e1e;
-    background-color: transparent;
-}
-
-.js .courses-v23__modules-accordion a:hover, .js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
-    color: #ffffff;
-    background-color: #1e1e1e;
-}
-
-.js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
-    outline-offset: 0.1875rem;
-    outline-color: #1e1e1e;
-}
-
-.js .courses-v23__modules-accordion a {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
-    background-color: transparent;
-}
-
-.js .courses-v23__modules-accordion a:hover, .js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
-    color: #1e1e1e;
-    background-color: #ffffff;
-}
-
-.js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
-    outline-offset: 0.1875rem;
-    outline-color: #ffffff;
-}
-
-.js .courses-v23__modules-accordion a {
-    color: #ffffff;
-    border-bottom-color: #ffffff;
-    background-color: rgba(30, 30, 30, 0.5);
-}
-
-.js .courses-v23__modules-accordion a:hover, .js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
-    color: #1e1e1e;
-    background-color: #ffffff;
-}
-
-.js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
-    outline-offset: 0.1875rem;
-    outline-color: #ffffff;
-}
-
 .courses-v23__summary .ksp-v23-wrapper {
     grid-column: 1 / -1;
 }
@@ -12479,6 +12431,22 @@ svg:not(:root) {
     .courses-v23__modules-accordion .accordion-v23 {
         width: 50%;
     }
+}
+
+.js .courses-v23__modules-accordion a {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+.js .courses-v23__modules-accordion a:hover, .js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
+    color: #1e1e1e;
+    background-color: #ffffff;
+}
+
+.js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
+    outline-offset: 0.1875rem;
+    outline-color: #ffffff;
 }
 
 .courses-v23 section,
