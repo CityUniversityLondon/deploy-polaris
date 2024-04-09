@@ -25449,7 +25449,7 @@ function calculateLastVisibleItemIndex(currentSlideIndex, itemsPerSlide, totalIt
 
 function responsiveOptimisation(slides, slider, controls, direction) {
   var screenSize = window.innerWidth;
-  var responsiveNum = slider.getAttribute('data-perslide') ? Number(slider.getAttribute('data-perslide')) : 2; // number of items per slide to display
+  var responsiveNum = slider.getAttribute('data-perslide') ? Number(slider.getAttribute('data-perslide')) : 3; // number of items per slide to display, default 3
   if (screenSize <= Screens.breakpoints.medium.min) {
     responsiveNum = 2;
   }
