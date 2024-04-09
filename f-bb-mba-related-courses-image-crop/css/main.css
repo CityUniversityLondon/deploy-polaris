@@ -11261,7 +11261,7 @@ svg:not(:root) {
 .course-card-v23__image {
     width: 100%;
     /* Adjust the width as needed */
-    aspect-ratio: 13 / 9;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
 }
 
