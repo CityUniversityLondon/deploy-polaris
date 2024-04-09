@@ -12227,6 +12227,13 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__contact__container {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
 .mba-courses-v23 .courses-v23__contact__container__text {
     flex-grow: 1;
 }
@@ -12303,11 +12310,13 @@ svg:not(:root) {
     max-width: 60ch;
     padding-top: 1rem;
     align-items: flex-start;
+    gap: 1rem;
 }
 
 @media (max-width: 768px) {
     .teaching-staff-v23 .featured-profile-v23 {
         flex-direction: column-reverse;
+        gap: initial;
     }
 }
 
