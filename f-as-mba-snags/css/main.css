@@ -12227,6 +12227,13 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__contact__container {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
 .mba-courses-v23 .courses-v23__contact__container__text {
     flex-grow: 1;
 }
