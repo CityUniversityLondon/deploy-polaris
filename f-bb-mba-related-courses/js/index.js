@@ -25527,7 +25527,7 @@ function responsiveOptimisation(slides, slider, controls, direction) {
     updateButtonState(slider, controls);
   }
   slider.setAttribute('data-count', slides.length);
-  slideHeightFix(slider);
+  // slideHeightFix(slider);
   return slides;
 }
 
@@ -25621,15 +25621,18 @@ function handleNextPrevClick(slider, controls, direction) {
     if (screenSize < Screens.breakpoints.tablet.min) {
       if (optimised !== 'mobile') {
         reverseOptimisation(slider, controls, direction, true);
+        slideHeightFix(slider);
       }
     } else if (screenSize < Screens.breakpoints.medium.min) {
       if (optimised !== 'tablet') {
         responsiveOptimisation(slides, slider, controls, direction);
+        slideHeightFix(slider);
       }
     } else {
       // Assumes any screenSize >= Screens.breakpoints.medium.min
       if (optimised !== 'medium') {
         responsiveOptimisation(slides, slider, controls, direction);
+        slideHeightFix(slider);
       }
     }
   }
@@ -25806,7 +25809,8 @@ function launchArrow(slider) {
 
   // Sets up the positions of the cards / slides
   prepareSlides(slides, 0);
-
+  // Set the height of the slider container to be fixed. This fixes the issue of having 'arrow navigation'
+  slideHeightFix(slider);
   // Build the next button
   nextButtonSpan.appendChild(document.createTextNode('Next slide'));
   nextButton.appendChild(nextButtonSpan);
@@ -25878,10 +25882,8 @@ function launchArrow(slider) {
   slider.nextElementSibling ? slider.parentElement.insertBefore(controlsWrapper, slider.nextElementSibling) : slider.parentElement.appendChild(controlsWrapper);
 
   // Add event listeners
-  addSwipeEvents(slider, controlsWrapper);
 
-  // Set the height of the slider container to be fixed. This fixes the issue of having 'arrow navigation'
-  //slideHeightFix(slider);
+  addSwipeEvents(slider, controlsWrapper);
 }
 
 /**
@@ -26051,8 +26053,12 @@ function updateDotButtonState(active, dotButtons, slider) {
 function slideHeightFix(slider) {
   var slides = slider.querySelectorAll('.course-card-v23');
   var sliderSetHeight = 0;
+  slider.style.setProperty('--slider-min-height', "auto");
   slides.forEach(function (slide) {
     var slideHeight = slide.offsetHeight;
+    var slideImg = slide.querySelector('img');
+    console.log("img: ".concat(slideImg.offsetHeight));
+    console.log(slideHeight);
     slideHeight > sliderSetHeight ? sliderSetHeight = slideHeight : null;
   });
   slider.style.setProperty('--slider-min-height', "".concat(sliderSetHeight, "px"));
