@@ -8231,6 +8231,7 @@ svg:not(:root) {
     text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #fafafa;
+    font-weight: 700;
 }
 
 .bayes-home .bayes-youtube-embed-container:before {
