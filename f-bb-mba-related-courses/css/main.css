@@ -41116,6 +41116,7 @@ html {
     position: relative;
     width: calc(100% + 1.5rem);
     margin-left: -0.75rem;
+    margin-bottom: 1rem;
 }
 
 .js .slider-v23[data-style='responsive'] .slide {
@@ -41196,6 +41197,10 @@ html {
     .js .slider-v23[data-style='responsive'][data-count='1']:not([data-small='true']) + .slider-v23__controls {
         display: none;
     }
+}
+
+.js .slider-v23[data-style='responsive'] + .slider-v23__controls {
+    margin-top: 0;
 }
 
 .js .slider-v23[data-style='responsive'] + .slider-v23__controls button {
