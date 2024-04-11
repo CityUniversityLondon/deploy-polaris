@@ -25447,6 +25447,32 @@ function calculateLastVisibleItemIndex(currentSlideIndex, itemsPerSlide, totalIt
  *
  */
 
+function calculateNewSlideIndex(direction, currentSlideIndex, previousItemsPerSlide, newItemsPerSlide, totalItems) {
+  var targetItemIndex;
+  if (direction === 1) {
+    // Next
+    // Calculate the index of the first item for the next slide in the current configuration
+    console.log('next slide');
+    targetItemIndex = (currentSlideIndex + 1) * previousItemsPerSlide;
+    targetItemIndex = Math.min(targetItemIndex, totalItems); // Ensure it doesn't exceed total items
+  } else if (direction === -1) {
+    // Prev
+    // Calculate the index of the last item for the previous slide in the current configuration
+    // This is one less than the first item on the current slide
+    console.log('prev slide');
+    targetItemIndex = currentSlideIndex * previousItemsPerSlide - 1;
+    targetItemIndex = Math.max(0, targetItemIndex); // Ensure it doesn't go below 0
+  } else {
+    throw new Error("Invalid direction specified. Use 1 for 'next' or -1 for 'prev'.");
+  }
+
+  // Calculate the new slide index to ensure the target item is visible with the new configuration
+  var newSlideIndex = Math.floor(targetItemIndex / newItemsPerSlide);
+  return {
+    slide: newSlideIndex,
+    item: targetItemIndex
+  };
+}
 function responsiveOptimisation(slides, slider, controls, direction) {
   var screenSize = window.innerWidth;
   var responsiveNum = slider.getAttribute('data-perslide') ? Number(slider.getAttribute('data-perslide')) : 3; // number of items per slide to display, default 3
@@ -25465,12 +25491,26 @@ function responsiveOptimisation(slides, slider, controls, direction) {
     var currentSlideIndex = slides.findIndex(function (li) {
       return li.getAttribute('data-sliderposition') === '0';
     }); //Get the current active slide
+
     var itemsPerSlide = slides[0].querySelectorAll('li').length; //How many items per slide
-    var lastItemIndex = calculateLastVisibleItemIndex(currentSlideIndex, itemsPerSlide, totalItems); //Get the index of the last item
+    // const lastItemIndex = calculateLastVisibleItemIndex(
+    //     currentSlideIndex,
+    //     itemsPerSlide,
+    //     totalItems
+    // ); //Get the index of the last item
+
+    var nextIndex = calculateNewSlideIndex(direction, currentSlideIndex, itemsPerSlide, responsiveNum, totalItems);
+    console.log("current slide index ".concat(currentSlideIndex));
+    console.log("items per slide ".concat(itemsPerSlide));
+    console.log("total items ".concat(totalItems));
+    console.log("next slide index ".concat(nextIndex.slide));
+    console.log("next item index ".concat(nextIndex.item));
+    console.log("new items per slide ".concat(responsiveNum));
     var newSlidesFragment = document.createDocumentFragment();
     slider.innerHTML = '';
     nestedSlides.forEach(function (slide, index) {
-      if (index === lastItemIndex) {
+      if (index === currentSlideIndex) {
+        slide.setAttribute('data-test', 'yes');
         slide.setAttribute('data-sliderposition', '0');
       }
       newSlidesFragment.appendChild(slide);
@@ -25503,7 +25543,9 @@ function responsiveOptimisation(slides, slider, controls, direction) {
         ulElement.appendChild(slides[i + d]);
         var sliderposition = slides[i + d].getAttribute('data-sliderposition');
         if (sliderposition === '0') {
+          console.log('YES YES');
           currentSlide = i + d;
+          console.log(currentSlide);
         }
         slides[i + d].classList.remove('slide');
         slides[i + d].removeAttribute('data-sliderposition');
@@ -25625,12 +25667,14 @@ function handleNextPrevClick(slider, controls, direction) {
       }
     } else if (screenSize < Screens.breakpoints.medium.min) {
       if (optimised !== 'tablet') {
+        console.log('going to tablet');
         responsiveOptimisation(slides, slider, controls, direction);
         slideHeightFix(slider);
       }
     } else {
       // Assumes any screenSize >= Screens.breakpoints.medium.min
       if (optimised !== 'medium') {
+        console.log('going to desktop');
         responsiveOptimisation(slides, slider, controls, direction);
         slideHeightFix(slider);
       }
@@ -26057,8 +26101,6 @@ function slideHeightFix(slider) {
   slides.forEach(function (slide) {
     var slideHeight = slide.offsetHeight;
     var slideImg = slide.querySelector('img');
-    console.log("img: ".concat(slideImg.offsetHeight));
-    console.log(slideHeight);
     slideHeight > sliderSetHeight ? sliderSetHeight = slideHeight : null;
   });
   slider.style.setProperty('--slider-min-height', "".concat(sliderSetHeight, "px"));
