@@ -8234,6 +8234,13 @@ svg:not(:root) {
     font-weight: 700;
 }
 
+@media (max-width: 431px) {
+    .bayes-home .image-banner .image-banner__text__title {
+        font-size: 1.44rem;
+        font-weight: 800;
+    }
+}
+
 .bayes-home .bayes-youtube-embed-container:before {
     content: '';
     width: 100%;
