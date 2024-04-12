@@ -7104,9 +7104,7 @@ svg:not(:root) {
 }
 
 .footer__address-details a:focus {
-    border-bottom-color: #555555;
-    border-bottom-style: solid;
-    border-bottom-width: 0.12rem;
+    outline: 0.18rem solid #1e1e1e;
     color: #555555;
     background-color: inherit;
 }
@@ -7204,9 +7202,7 @@ svg:not(:root) {
 }
 
 .footer__misc-links a:focus {
-    border-bottom-color: #555555;
-    border-bottom-style: solid;
-    border-bottom-width: 0.12rem;
+    outline: 0.18rem solid #1e1e1e;
     color: #555555;
     background-color: inherit;
 }
@@ -7326,9 +7322,7 @@ svg:not(:root) {
         transition: opacity 0.2s ease, width 0.5s ease;
     }
     .footer__social a:focus {
-        border-bottom-color: #555555;
-        border-bottom-style: solid;
-        border-bottom-width: 0.12rem;
+        outline: 0.18rem solid #1e1e1e;
         color: #555555;
         background-color: inherit;
     }
