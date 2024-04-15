@@ -42479,7 +42479,6 @@ html {
         transition-property: all;
         transition-timing-function: ease;
         opacity: 0;
-        display: none;
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
         font-size: 0.889rem;
