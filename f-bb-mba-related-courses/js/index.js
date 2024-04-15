@@ -23596,7 +23596,8 @@ for (var i = 0; i <= 100; i++) {
 function actionOnScroll(element, action) {
   var repeat = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
   var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {
-    threshold: [0, 0.01, 1]
+    threshold: [0, 0.01, 1],
+    rootMargin: '-20%'
   };
   if (element && element.length > 0) {
     // normalise element
@@ -24449,8 +24450,8 @@ var className = 'accordion-v23',
   headingClassName = className + '__heading',
   headingTextClassName = headingClassName + '__text',
   headingIconClassName = headingClassName + '__indicator',
+  headingLabelClassName = headingClassName + '__label',
   bodyClassName = className + '__body',
-  oneSecond = 1000,
   tenthOfASecond = 100;
 
 /**
@@ -24485,10 +24486,6 @@ function setSection(heading, open) {
   heading.dataset.open = open;
   heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
-
-  // Automatically scrolls heading into view being at the top of the page
-  var viewportOffset = heading.parentElement.getBoundingClientRect();
-  var top = viewportOffset.top;
 }
 
 /**
@@ -24612,6 +24609,7 @@ function buttonClick(button, headings, toggleOpen) {
           // setTimeout lets the DOM recalculate before we continue, so the transition will fire
           setTimeout(function () {
             subAccordionSection.style.height = '0px';
+            cleanupTransition(subAccordionSection);
           }, tenthOfASecond);
           setSection(subAccordionHeading, false);
         }
@@ -24646,7 +24644,6 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    //scrollToHeading(heading);
   }
 }
 
@@ -24656,7 +24653,7 @@ function buttonClick(button, headings, toggleOpen) {
  * @param {HTMLElement} heading - An accordion heading.
  * @returns {HTMLButtonElement} An accordion section button.
  */
-function buttonFromHeading(heading) {
+function buttonFromHeading(heading, chevronStyle) {
   var button = document.createElement('button'),
     // Chrome can't apply grid layout to buttons, need to wrap contents
     wrapper = document.createElement('div'),
@@ -24667,8 +24664,33 @@ function buttonFromHeading(heading) {
   iconSpan.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].hidden, true);
   button.setAttribute('type', 'button');
   textSpan.appendChild(document.createTextNode(heading.textContent));
-  Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(wrapper, [iconSpan, textSpan]);
+  if (chevronStyle) {
+    wrapper.appendChild(textSpan);
+    if (heading.dataset.label) {
+      var labelSpan = document.createElement('span');
+      var srSpan = document.createElement('span');
+      srSpan.className = 'sr-only';
+      srSpan.appendChild(document.createTextNode('Runs in '));
+      labelSpan.className = headingLabelClassName;
+      labelSpan.appendChild(srSpan);
+      labelSpan.appendChild(document.createTextNode(heading.dataset.label));
+      wrapper.appendChild(labelSpan);
+    }
+    wrapper.appendChild(iconSpan);
+  } else {
+    wrapper.appendChild(iconSpan);
+    wrapper.appendChild(textSpan);
+  }
   button.appendChild(wrapper);
+  if (heading.dataset.description) {
+    var descriptionWrapper = document.createElement('div'),
+      descriptionText = document.createElement('p');
+    descriptionWrapper.className = 'accordion-v23__heading__description';
+    descriptionWrapper.ariaHidden = 'true';
+    descriptionText.appendChild(document.createTextNode(heading.dataset.description));
+    descriptionWrapper.appendChild(descriptionText);
+    button.appendChild(descriptionWrapper);
+  }
   return button;
 }
 
@@ -24695,6 +24717,7 @@ function launch(accordion) {
   var toggleOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.toggleopen),
     defaultOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.defaultopen),
     allowSingle = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.allowsingle),
+    downChevronStyle = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.downchevronstyle || false),
     headings = Array.from(accordion.parentNode.querySelectorAll("#".concat(accordion.id, " > .").concat(headingClassName)));
   var idLinked = false;
   if (!(allowSingle || headings.length > 1)) {
@@ -24706,7 +24729,7 @@ function launch(accordion) {
   }
   headings.forEach(function (heading) {
     var content = heading.nextElementSibling,
-      button = buttonFromHeading(heading);
+      button = buttonFromHeading(heading, downChevronStyle);
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
@@ -25422,28 +25445,14 @@ var Screens = {
 };
 
 /**
- * Utitily function to get the actual index of the last visible item within a slide.
+ * Function to return the index of the next slide and individual item.
  * Used within responsiveOptimisation() to calculate correct current slide index when transitioning between different items per slide
  *
+ * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
  * @param  {Number} currentSlideIndex - The index of the current active slide
- * @param  {Number} itemsPerSlide - How many items are currently shown per slide
+ * @param  {Number} previousItemsPerSlide - How many items were being shown per slide previously
+ * @param  {Number} newItemsPerSlide - How many items are now to be shown per slide
  * @param  {Number} totalItems - How many items across all slides
- *
- */
-
-function calculateLastVisibleItemIndex(currentSlideIndex, itemsPerSlide, totalItems) {
-  var expectedLastVisibleItemIndex = currentSlideIndex * itemsPerSlide + (itemsPerSlide - 1);
-  var actualLastVisibleItemIndex = Math.min(expectedLastVisibleItemIndex, totalItems - 1);
-  return actualLastVisibleItemIndex;
-}
-
-/**
- * For arrow responsive slider. Opimises slide elements for responsive slider on
- * bigger screens by creating a new "ul li" structure containing the slides
- *
- * @param  {HTMLElement} slider - The slider "ul" element.
- * @param  {Array} slides - an array containing the individual slides as li elements.
- * @param  {HTMLElement} controls - The "nav" element containing the controls
  *
  */
 
@@ -25452,14 +25461,12 @@ function calculateNewSlideIndex(direction, currentSlideIndex, previousItemsPerSl
   if (direction === 1) {
     // Next
     // Calculate the index of the first item for the next slide in the current configuration
-    console.log('next slide');
     targetItemIndex = (currentSlideIndex + 1) * previousItemsPerSlide;
     targetItemIndex = Math.min(targetItemIndex, totalItems); // Ensure it doesn't exceed total items
   } else if (direction === -1) {
     // Prev
     // Calculate the index of the last item for the previous slide in the current configuration
     // This is one less than the first item on the current slide
-    console.log('prev slide');
     targetItemIndex = currentSlideIndex * previousItemsPerSlide - 1;
     targetItemIndex = Math.max(0, targetItemIndex); // Ensure it doesn't go below 0
   } else {
@@ -25473,6 +25480,17 @@ function calculateNewSlideIndex(direction, currentSlideIndex, previousItemsPerSl
     item: targetItemIndex
   };
 }
+
+/**
+ * For arrow responsive slider. Opimises slide elements for responsive slider on
+ * bigger screens by creating a new "ul li" structure containing the slides
+ *
+ * @param  {HTMLElement} slider - The slider "ul" element.
+ * @param  {Array} slides - an array containing the individual slides as li elements.
+ * @param  {HTMLElement} controls - The "nav" element containing the controls
+ *
+ */
+
 function responsiveOptimisation(slides, slider, controls, direction) {
   var screenSize = window.innerWidth;
   var responsiveNum = slider.getAttribute('data-perslide') ? Number(slider.getAttribute('data-perslide')) : 3; // number of items per slide to display, default 3
@@ -25480,8 +25498,6 @@ function responsiveOptimisation(slides, slider, controls, direction) {
     responsiveNum = 2;
   }
   slider.style.setProperty('--slider-grid-columns', responsiveNum);
-  // responsiveNum = 2;
-
   var i;
   var d;
   var currentSlide;
@@ -25493,19 +25509,8 @@ function responsiveOptimisation(slides, slider, controls, direction) {
     }); //Get the current active slide
 
     var itemsPerSlide = slides[0].querySelectorAll('li').length; //How many items per slide
-    // const lastItemIndex = calculateLastVisibleItemIndex(
-    //     currentSlideIndex,
-    //     itemsPerSlide,
-    //     totalItems
-    // ); //Get the index of the last item
 
     var nextIndex = calculateNewSlideIndex(direction, currentSlideIndex, itemsPerSlide, responsiveNum, totalItems);
-    console.log("current slide index ".concat(currentSlideIndex));
-    console.log("items per slide ".concat(itemsPerSlide));
-    console.log("total items ".concat(totalItems));
-    console.log("next slide index ".concat(nextIndex.slide));
-    console.log("next item index ".concat(nextIndex.item));
-    console.log("new items per slide ".concat(responsiveNum));
     var newSlidesFragment = document.createDocumentFragment();
     slider.innerHTML = '';
     nestedSlides.forEach(function (slide, index) {
@@ -25543,9 +25548,7 @@ function responsiveOptimisation(slides, slider, controls, direction) {
         ulElement.appendChild(slides[i + d]);
         var sliderposition = slides[i + d].getAttribute('data-sliderposition');
         if (sliderposition === '0') {
-          console.log('YES YES');
           currentSlide = i + d;
-          console.log(currentSlide);
         }
         slides[i + d].classList.remove('slide');
         slides[i + d].removeAttribute('data-sliderposition');
@@ -25667,14 +25670,12 @@ function handleNextPrevClick(slider, controls, direction) {
       }
     } else if (screenSize < Screens.breakpoints.medium.min) {
       if (optimised !== 'tablet') {
-        console.log('going to tablet');
         responsiveOptimisation(slides, slider, controls, direction);
         slideHeightFix(slider);
       }
     } else {
       // Assumes any screenSize >= Screens.breakpoints.medium.min
       if (optimised !== 'medium') {
-        console.log('going to desktop');
         responsiveOptimisation(slides, slider, controls, direction);
         slideHeightFix(slider);
       }
