@@ -42475,7 +42475,7 @@ html {
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__description {
         overflow-y: hidden;
-        transition-duration: 0.2s;
+        transition-duration: 0.5s;
         transition-property: all;
         transition-timing-function: ease;
         opacity: 0;
