@@ -43416,13 +43416,13 @@ html {
 }
 
 .back-to-top[data-docked='false'] .back-to-top__anchor:active {
-    outline: 0.12rem dotted #a1a1a1;
+    outline: 0.12rem dotted #1e1e1e;
     background: none;
     border-bottom-width: 0;
 }
 
 .back-to-top[data-docked='false'] .back-to-top__anchor:focus {
-    outline: 0.12rem dotted lime;
+    outline: 0.12rem dotted #1e1e1e;
     border-bottom-width: 0;
 }
 
