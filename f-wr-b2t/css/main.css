@@ -43481,6 +43481,8 @@ html {
 
 .back-to-top[data-docked='false'] .back-to-top__button__arrow__label {
     font-family: "Plex Sans", Tahoma, Verdana, sans-serif;
+    vertical-align: top;
+    font-size: 0.8rem;
 }
 
 .back-to-top[data-docked='false'][hidden='true'] .back-to-top__anchor {
