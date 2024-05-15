@@ -6981,7 +6981,6 @@ svg:not(:root) {
     background-color: #ffffff;
     padding-bottom: 3.5rem;
     border-top: solid #ececec 0.18rem;
-    padding-top: 2rem;
 }
 
 .footer__back-to-top {
@@ -43338,7 +43337,6 @@ html {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    position: absolute;
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
