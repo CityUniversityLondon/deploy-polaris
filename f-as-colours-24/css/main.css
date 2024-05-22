@@ -296,6 +296,10 @@
     background-color: #f1b434;
 }
 
+.background--emerald-ice {
+    background-color: #12E97A;
+}
+
 .background--sherpa {
     background-color: #2e767a;
 }
@@ -324,8 +328,16 @@
     background-color: #4F7D65;
 }
 
+.background--blue-powerup {
+    background-color: #3457F1;
+}
+
 .background--prussian {
     background-color: #002b49;
+}
+
+.background--summer-sea {
+    background-color: #14cef5;
 }
 
 .background--allports {
@@ -404,10 +416,6 @@
     background-color: #979797;
 }
 
-.background--blue-powerup {
-    background-color: #3457F1;
-}
-
 .background--gray7 {
     background-color: #696969;
 }
@@ -426,14 +434,6 @@
 
 .background--alto {
     background-color: #d0c8c5;
-}
-
-.background--emerald-ice {
-    background-color: #12E97A;
-}
-
-.background--summer-sea {
-    background-color: #14cef5;
 }
 
 @font-face {
@@ -21849,7 +21849,7 @@ USED IN:
 .scp--masters .stats-block.stats-block--scp,
 .stats-block--scp.stats-block--postgraduate {
     color: #ffffff;
-    background-image: linear-gradient(to bottom, #002b49, #006699);
+    background-image: linear-gradient(to bottom, #002b49, #3457F1);
 }
 
 .scp--masters .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg,
@@ -21864,7 +21864,7 @@ USED IN:
 
 .scp--masters .stats-block.stats-block--scp h2,
 .stats-block--scp.stats-block--postgraduate h2 {
-    border-bottom: 0.06rem solid #006699;
+    border-bottom: 0.06rem solid #3457F1;
 }
 
 .scp--mba .stats-block.stats-block--scp,
@@ -21891,7 +21891,7 @@ USED IN:
 .scp--phd .stats-block.stats-block--scp,
 .stats-block--scp.stats-block--phd {
     color: #ffffff;
-    background-image: linear-gradient(to bottom, #006081, #006699);
+    background-image: linear-gradient(to bottom, #002b49, #3457F1);
 }
 
 .scp--phd .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg,
@@ -21906,7 +21906,7 @@ USED IN:
 
 .scp--phd .stats-block.stats-block--scp h2,
 .stats-block--scp.stats-block--phd h2 {
-    border-bottom: 0.06rem solid #5bc2e7;
+    border-bottom: 0.06rem solid #3457F1;
 }
 
 .scp--executive-education .stats-block.stats-block--scp,
@@ -33693,11 +33693,11 @@ table tbody > tr > td:hover {
 }
 
 .scp--mba .progressbar-bar {
-    background-color: #a3d5cd;
+    background-color: #2e767a;
 }
 
 .scp--masters .progressbar-bar {
-    background-color: #006699;
+    background-color: #002b49;
 }
 
 /******* mobile floating filters ***********/
@@ -37901,7 +37901,7 @@ News events landing overrides */
 .news-article__anchor__topic--executive-master {
     position: relative;
     overflow: visible !important;
-    color: #496c60 !important;
+    color: #2e767a !important;
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
     font-weight: 600;
@@ -37929,7 +37929,7 @@ News events landing overrides */
 }
 
 .news-article__anchor__topic--executive-master:after {
-    border: 0.12rem solid #496c60;
+    border: 0.12rem solid #2e767a;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
@@ -37972,7 +37972,7 @@ News events landing overrides */
 .news-article__anchor__topic--executive-mba {
     position: relative;
     overflow: visible !important;
-    color: #496c60 !important;
+    color: #2e767a !important;
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
     font-weight: 600;
@@ -38000,7 +38000,7 @@ News events landing overrides */
 }
 
 .news-article__anchor__topic--executive-mba:after {
-    border: 0.12rem solid #496c60;
+    border: 0.12rem solid #2e767a;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
@@ -38043,7 +38043,7 @@ News events landing overrides */
 .news-article__anchor__topic--executive-mba-in-dubai {
     position: relative;
     overflow: visible !important;
-    color: #4F7D65 !important;
+    color: #2e767a !important;
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
     font-weight: 600;
@@ -38071,7 +38071,7 @@ News events landing overrides */
 }
 
 .news-article__anchor__topic--executive-mba-in-dubai:after {
-    border: 0.12rem solid #4F7D65;
+    border: 0.12rem solid #2e767a;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
@@ -38185,7 +38185,7 @@ News events landing overrides */
 .news-article__anchor__topic--modular-executive-mba {
     position: relative;
     overflow: visible !important;
-    color: #496c60 !important;
+    color: #2e767a !important;
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
     font-weight: 600;
@@ -38213,7 +38213,7 @@ News events landing overrides */
 }
 
 .news-article__anchor__topic--modular-executive-mba:after {
-    border: 0.12rem solid #496c60;
+    border: 0.12rem solid #2e767a;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
@@ -38327,7 +38327,7 @@ News events landing overrides */
 .news-article__anchor__topic--online-programmes {
     position: relative;
     overflow: visible !important;
-    color: #158477 !important;
+    color: #2e767a !important;
     padding: 0.6rem;
     margin: 0.4375rem 1rem 0 0;
     font-weight: 600;
@@ -38355,7 +38355,7 @@ News events landing overrides */
 }
 
 .news-article__anchor__topic--online-programmes:after {
-    border: 0.12rem solid #158477;
+    border: 0.12rem solid #2e767a;
     transform: translateY(-7px) translateX(6px) !important;
     opacity: 0;
 }
