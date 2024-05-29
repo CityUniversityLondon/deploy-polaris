@@ -22181,43 +22181,43 @@ USED IN:
 }
 
 .cta--online-msc {
-    background-color: #189183;
-    color: #ffffff;
+    background-color: #12E97A;
+    color: #1e1e1e;
 }
 
 .cta--online-msc:hover, .cta--online-msc:focus, .cta--online-msc:active {
-    background-color: #14776b;
-    color: #ffffff;
+    background-color: #10cd6b;
+    color: #1e1e1e;
 }
 
 .cta--exec-mba {
-    background-color: #496c60;
-    color: #ffffff;
+    background-color: #12E97A;
+    color: #1e1e1e;
 }
 
 .cta--exec-mba:hover, .cta--exec-mba:focus, .cta--exec-mba:active {
-    background-color: #3d5a50;
-    color: #ffffff;
+    background-color: #10cd6b;
+    color: #1e1e1e;
 }
 
 .cta--demba {
-    background-color: #91baa3;
+    background-color: #12E97A;
     color: #1e1e1e;
 }
 
 .cta--demba:hover, .cta--demba:focus, .cta--demba:active {
-    background-color: #7eae93;
+    background-color: #10cd6b;
     color: #1e1e1e;
 }
 
 .cta--mba-secondary {
-    background-color: #a3d5cd;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .cta--mba-secondary:hover, .cta--mba-secondary:focus, .cta--mba-secondary:active {
-    background-color: #8ecbc2;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .cta--cce {
@@ -22488,43 +22488,47 @@ USED IN:
 }
 
 .scp--online-msc .cta--theme--primary {
-    background-color: #189183;
-    color: #ffffff;
+    background-color: #12E97A;
+    color: #1e1e1e;
 }
 
 .scp--online-msc .cta--theme--primary:hover, .scp--online-msc .cta--theme--primary:focus, .scp--online-msc .cta--theme--primary:active {
-    background-color: #14776b;
-    color: #ffffff;
+    background-color: #10cd6b;
+    color: #1e1e1e;
 }
 
 .scp--online-msc .cta--theme--secondary {
-    background-color: #a3d5cd;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .scp--online-msc .cta--theme--secondary:hover, .scp--online-msc .cta--theme--secondary:focus, .scp--online-msc .cta--theme--secondary:active {
-    background-color: #8ecbc2;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .scp--masters .cta--theme--primary {
+    background-color: #3457F1;
+    color: #1e1e1e;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.scp--masters .cta--theme--primary:hover, .scp--masters .cta--theme--primary:focus, .scp--masters .cta--theme--primary:active {
+    background-color: #173fef;
+    color: #1e1e1e;
+}
+
+.scp--masters .cta--theme--secondary {
     background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ececec;
 }
 
-.scp--masters .cta--theme--primary:hover, .scp--masters .cta--theme--primary:focus, .scp--masters .cta--theme--primary:active {
-    background-color: #00192a;
-    color: #ffffff;
-}
-
-.scp--masters .cta--theme--secondary {
-    background-color: #006699;
-    color: #ffffff;
-}
-
 .scp--masters .cta--theme--secondary:hover, .scp--masters .cta--theme--secondary:focus, .scp--masters .cta--theme--secondary:active {
-    background-color: #00527a;
+    background-color: #00192a;
     color: #ffffff;
 }
 
@@ -22573,63 +22577,63 @@ USED IN:
 }
 
 .scp--mba .cta--theme--primary {
+    background-color: #12E97A;
+    color: #1e1e1e;
+}
+
+.scp--mba .cta--theme--primary:hover, .scp--mba .cta--theme--primary:focus, .scp--mba .cta--theme--primary:active {
+    background-color: #10cd6b;
+    color: #1e1e1e;
+}
+
+.scp--mba .cta--theme--secondary {
     background-color: #2e767a;
     color: #ffffff;
 }
 
-.scp--mba .cta--theme--primary:hover, .scp--mba .cta--theme--primary:focus, .scp--mba .cta--theme--primary:active {
+.scp--mba .cta--theme--secondary:hover, .scp--mba .cta--theme--secondary:focus, .scp--mba .cta--theme--secondary:active {
     background-color: #266164;
     color: #ffffff;
 }
 
-.scp--mba .cta--theme--secondary {
-    background-color: #a3d5cd;
-    color: #1e1e1e;
-}
-
-.scp--mba .cta--theme--secondary:hover, .scp--mba .cta--theme--secondary:focus, .scp--mba .cta--theme--secondary:active {
-    background-color: #8ecbc2;
-    color: #1e1e1e;
-}
-
 .scp--emba .cta--theme--primary {
-    background-color: #496c60;
-    color: #ffffff;
+    background-color: #12E97A;
+    color: #1e1e1e;
 }
 
 .scp--emba .cta--theme--primary:hover, .scp--emba .cta--theme--primary:focus, .scp--emba .cta--theme--primary:active {
-    background-color: #3d5a50;
-    color: #ffffff;
+    background-color: #10cd6b;
+    color: #1e1e1e;
 }
 
 .scp--emba .cta--theme--secondary {
-    background-color: #a3d5cd;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .scp--emba .cta--theme--secondary:hover, .scp--emba .cta--theme--secondary:focus, .scp--emba .cta--theme--secondary:active {
-    background-color: #8ecbc2;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .scp--demba .cta--theme--primary {
-    background-color: #91baa3;
+    background-color: #12E97A;
     color: #1e1e1e;
 }
 
 .scp--demba .cta--theme--primary:hover, .scp--demba .cta--theme--primary:focus, .scp--demba .cta--theme--primary:active {
-    background-color: #7eae93;
+    background-color: #10cd6b;
     color: #1e1e1e;
 }
 
 .scp--demba .cta--theme--secondary {
-    background-color: #a3d5cd;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .scp--demba .cta--theme--secondary:hover, .scp--demba .cta--theme--secondary:focus, .scp--demba .cta--theme--secondary:active {
-    background-color: #8ecbc2;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .scp--cce .cta--theme--primary {
@@ -29576,19 +29580,19 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .block-links__items--undergraduate {
-    background-color: #e35205;
+    background-color: #f1b434;
 }
 
 .block-links__items--masters {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .block-links__items--mba {
-    background-color: #12E97A;
+    background-color: #2e767a;
 }
 
 .block-links__items--phd {
-    background-color: #14cef5;
+    background-color: #006699;
 }
 
 @media (max-width: 500px) {
