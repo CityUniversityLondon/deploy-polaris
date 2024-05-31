@@ -9429,7 +9429,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__fee__inner {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
@@ -9622,11 +9622,11 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .chart-row__items__chart path:nth-child(1) {
-    stroke: #3457F1;
+    stroke: #002b49;
 }
 
 .pg-courses-v23 .chart-row__items__chart path:nth-child(2) {
-    stroke: #002b49;
+    stroke: #3457F1;
 }
 
 .pg-courses-v23 .chart-row__items__chart path:nth-child(3) {
@@ -9638,11 +9638,11 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.mba-popup__form__close__icon {
-    color: #3457F1;
+    color: #002b49;
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.mba-popup__form__close__icon {
-    color: #002b49;
+    color: #3457F1;
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.mba-popup__form__close__icon {
@@ -9654,11 +9654,11 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.mba-popup__form__close__icon {
-    color: #3457F1;
+    color: #002b49;
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.mba-popup__form__close__icon {
-    color: #002b49;
+    color: #3457F1;
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.mba-popup__form__close__icon {
@@ -9670,11 +9670,11 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) {
-    border-left: 0.5rem solid #3457F1;
+    border-left: 0.5rem solid #002b49;
 }
 
 .pg-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) {
-    border-left: 0.5rem solid #002b49;
+    border-left: 0.5rem solid #3457F1;
 }
 
 .pg-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) {
@@ -10125,7 +10125,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__key-info {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
@@ -10155,7 +10155,7 @@ svg:not(:root) {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ffffff;
 }
@@ -10177,7 +10177,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .cta--v23--ki:hover, .pg-courses-v23 .cta--v23--ki:focus, .pg-courses-v23 .cta--v23--ki:active {
-    background-color: #173fef;
+    background-color: #00192a;
     color: #ffffff;
     outline-color: #ffffff;
 }
@@ -10831,8 +10831,8 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
-    background-color: #ffffff;
-    color: #1e1e1e;
+    background-color: #3d3d3d;
+    color: #ffffff;
 }
 
 .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
@@ -10855,12 +10855,12 @@ svg:not(:root) {
 
 @media (max-width: 900px) {
     .pg-courses-v23 .courses-v23__apply {
-        background-color: #3457F1;
+        background-color: #002b49;
     }
 }
 
 .pg-courses-v23 .courses-v23__apply .courses-v23__apply__wrapper {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .pg-courses-v23 .courses-v23__apply a {
@@ -10921,7 +10921,7 @@ svg:not(:root) {
     width: 3rem;
     height: 100%;
     border-style: solid;
-    border-color: #002b49;
+    border-color: #3457F1;
     border-width: 1.5rem 0 0 1.5rem;
     left: -0;
     top: -0;
@@ -10933,7 +10933,7 @@ svg:not(:root) {
     width: 3rem;
     height: 100%;
     border-style: solid;
-    border-color: #002b49;
+    border-color: #3457F1;
     border-width: 0 0 1.5rem 1.5rem;
     left: -0;
     top: 0;
@@ -10945,7 +10945,7 @@ svg:not(:root) {
     width: 3rem;
     height: 100%;
     border-style: solid;
-    border-color: #002b49;
+    border-color: #3457F1;
     border-width: 1.5rem 1.5rem 0 0;
     right: -0;
     top: -0;
@@ -10957,7 +10957,7 @@ svg:not(:root) {
     width: 3rem;
     height: 100%;
     border-style: solid;
-    border-color: #002b49;
+    border-color: #3457F1;
     border-width: 0 1.5rem 1.5rem 0;
     right: -0;
     top: 0;
@@ -11156,8 +11156,8 @@ svg:not(:root) {
 }
 
 .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
-    background-color: #ffffff;
-    color: #1e1e1e;
+    background-color: #3d3d3d;
+    color: #ffffff;
 }
 
 .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
@@ -11397,7 +11397,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .student-life-v23__links .student-life-v23__links__card--label .student-life-v23__links__card--label__heading-icon {
-    background-color: #002b49;
+    background-color: #3457F1;
     color: #ffffff;
 }
 
@@ -11554,7 +11554,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .courses-v23__related-courses {
-    background-color: #3457F1;
+    background-color: #002b49;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11579,7 +11579,7 @@ svg:not(:root) {
     position: absolute;
     height: 100%;
     width: 100vw;
-    background-color: #3457F1;
+    background-color: #002b49;
     top: 0;
     display: flex;
     z-index: -1;
@@ -16054,22 +16054,22 @@ svg:not(:root) {
 }
 
 .banner--theme--postgraduate .banner__content h1 {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
 .banner--theme--postgraduate .banner__content .banner__content__text__subtitle {
-    background-color: #002b49;
-    color: #ffffff;
-}
-
-.banner--theme--masters .banner__content h1 {
     background-color: #3457F1;
     color: #ffffff;
 }
 
-.banner--theme--masters .banner__content .banner__content__text__subtitle {
+.banner--theme--masters .banner__content h1 {
     background-color: #002b49;
+    color: #ffffff;
+}
+
+.banner--theme--masters .banner__content .banner__content__text__subtitle {
+    background-color: #3457F1;
     color: #ffffff;
 }
 
@@ -16182,31 +16182,31 @@ svg:not(:root) {
 }
 
 .scp--postgraduate .banner--theme--corporate .banner__content h1 {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
 .scp--postgraduate .banner--theme--corporate .banner__content .banner__content__text__subtitle {
-    background-color: #002b49;
+    background-color: #3457F1;
     color: #ffffff;
 }
 
 .scp--postgraduate .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .scp--masters .banner--theme--corporate .banner__content h1 {
-    background-color: #3457F1;
-    color: #ffffff;
-}
-
-.scp--masters .banner--theme--corporate .banner__content .banner__content__text__subtitle {
     background-color: #002b49;
     color: #ffffff;
 }
 
-.scp--masters .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+.scp--masters .banner--theme--corporate .banner__content .banner__content__text__subtitle {
     background-color: #3457F1;
+    color: #ffffff;
+}
+
+.scp--masters .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    background-color: #002b49;
 }
 
 .scp--phd .banner--theme--corporate .banner__content h1 {
@@ -16725,14 +16725,14 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-new.banner--theme--postgraduate .banner__content__text__item:first-child,
     .banner-no-img-varieties.banner-no-img.banner--theme--postgraduate .banner__content__text__item:first-child {
-        background-color: #3457F1;
+        background-color: #002b49;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:before,
     .banner-no-img-varieties.banner-no-img.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:before {
-        background-color: #3457F1;
+        background-color: #002b49;
     }
     .banner-new.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:after,
     .banner-no-img-varieties.banner-no-img.banner--theme--postgraduate .banner__content__promo__wrapper .banner__content__promo--bg:after {
@@ -16743,14 +16743,14 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-new.banner--theme--masters .banner__content__text__item:first-child,
     .banner-no-img-varieties.banner-no-img.banner--theme--masters .banner__content__text__item:first-child {
-        background-color: #3457F1;
+        background-color: #002b49;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:before,
     .banner-no-img-varieties.banner-no-img.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:before {
-        background-color: #3457F1;
+        background-color: #002b49;
     }
     .banner-new.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:after,
     .banner-no-img-varieties.banner-no-img.banner--theme--masters .banner__content__promo__wrapper .banner__content__promo--bg:after {
@@ -17831,54 +17831,54 @@ svg:not(:root) {
 }
 
 .scp--postgraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #3457F1 0%, #002b49 100%);
-    background-color: #002b49;
+    background-image: linear-gradient(90deg, #002b49 0%, #3457F1 100%);
+    background-color: #3457F1;
 }
 
 @media (max-width: 650px) {
     .scp--postgraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 69%);
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 69%);
         display: flex;
     }
     .scp--postgraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 46%);
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--postgraduate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #3457F1 0%, #002b49 100%);
-    background-color: #002b49;
+    background-image: linear-gradient(90deg, #002b49 0%, #3457F1 100%);
+    background-color: #3457F1;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--postgraduate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 69%);
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--postgraduate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 46%);
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--postgraduate .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 95%);
-        background-color: #002b49;
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 95%);
+        background-color: #3457F1;
     }
     .scp--postgraduate .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
-        background: #002b49;
+        background: #3457F1;
     }
 }
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--postgraduate.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 95%);
-        background-color: #002b49;
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 95%);
+        background-color: #3457F1;
     }
     .banner-vi--video-embedded.banner-vi--theme--postgraduate.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
-        background: #002b49;
+        background: #3457F1;
     }
 }
 
@@ -17891,7 +17891,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--postgraduate + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--postgraduate + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--postgraduate + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #3457F1 0%, #002b49 100%);
+    background-image: linear-gradient(90deg, #002b49 0%, #3457F1 100%);
 }
 
 @media (max-width: 650px) {
@@ -17904,13 +17904,13 @@ svg:not(:root) {
     .banner-vi .banner-vi--listing.banner-vi--theme--postgraduate + main .expert-finder__top .banner-vi__container,
     .banner-vi--listing.banner-vi--theme--postgraduate + main .expert-finder__top .banner-vi--video .video-banner__controls,
     .banner-vi--video .banner-vi--listing.banner-vi--theme--postgraduate + main .expert-finder__top .video-banner__controls {
-        background: #002b49;
+        background: #3457F1;
         display: flex;
     }
 }
 
 .scp--postgraduate .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #002b49;
+    background-color: #3457F1;
     color: #ffffff;
 }
 
@@ -17921,7 +17921,7 @@ svg:not(:root) {
 }
 
 .scp--postgraduate .banner-vi .banner-vi__shape--left svg path, .scp--postgraduate .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #3457F1;
+    fill: #002b49;
 }
 
 .scp--postgraduate .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -17929,7 +17929,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--postgraduate h1 {
-    background-color: #002b49;
+    background-color: #3457F1;
     color: #ffffff;
 }
 
@@ -17940,7 +17940,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--postgraduate .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--postgraduate .banner-vi__shape__mobile--left svg path {
-    fill: #3457F1;
+    fill: #002b49;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--postgraduate figcaption {
@@ -17948,73 +17948,73 @@ svg:not(:root) {
 }
 
 .scp--postgraduate .banner-vi.banner-vi--theme--corporate .cta, .scp--postgraduate .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
 .banner-vi.banner-vi--theme--postgraduate .cta, .banner-vi.banner-vi--theme--postgraduate .promo-cta.promo-cta--small h2::after {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
 @media (max-width: 650px) {
     .scp--postgraduate .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #002b49;
+        background-color: #3457F1;
     }
     .banner-vi.banner-vi--theme--postgraduate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #002b49;
+        background-color: #3457F1;
     }
 }
 
 .scp--masters .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #3457F1 0%, #002b49 100%);
-    background-color: #002b49;
+    background-image: linear-gradient(90deg, #002b49 0%, #3457F1 100%);
+    background-color: #3457F1;
 }
 
 @media (max-width: 650px) {
     .scp--masters .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 69%);
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 69%);
         display: flex;
     }
     .scp--masters .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 46%);
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--masters.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #3457F1 0%, #002b49 100%);
-    background-color: #002b49;
+    background-image: linear-gradient(90deg, #002b49 0%, #3457F1 100%);
+    background-color: #3457F1;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--masters.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 69%);
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--masters.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 46%);
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--masters .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 95%);
-        background-color: #002b49;
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 95%);
+        background-color: #3457F1;
     }
     .scp--masters .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
-        background: #002b49;
+        background: #3457F1;
     }
 }
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--masters.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #3457F1 0%, #002b49 95%);
-        background-color: #002b49;
+        background-image: linear-gradient(180deg, #002b49 0%, #3457F1 95%);
+        background-color: #3457F1;
     }
     .banner-vi--video-embedded.banner-vi--theme--masters.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
-        background: #002b49;
+        background: #3457F1;
     }
 }
 
@@ -18027,7 +18027,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--masters + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--masters + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--masters + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #3457F1 0%, #002b49 100%);
+    background-image: linear-gradient(90deg, #002b49 0%, #3457F1 100%);
 }
 
 @media (max-width: 650px) {
@@ -18040,13 +18040,13 @@ svg:not(:root) {
     .banner-vi .banner-vi--listing.banner-vi--theme--masters + main .expert-finder__top .banner-vi__container,
     .banner-vi--listing.banner-vi--theme--masters + main .expert-finder__top .banner-vi--video .video-banner__controls,
     .banner-vi--video .banner-vi--listing.banner-vi--theme--masters + main .expert-finder__top .video-banner__controls {
-        background: #002b49;
+        background: #3457F1;
         display: flex;
     }
 }
 
 .scp--masters .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #002b49;
+    background-color: #3457F1;
     color: #ffffff;
 }
 
@@ -18057,7 +18057,7 @@ svg:not(:root) {
 }
 
 .scp--masters .banner-vi .banner-vi__shape--left svg path, .scp--masters .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #3457F1;
+    fill: #002b49;
 }
 
 .scp--masters .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -18065,7 +18065,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--masters h1 {
-    background-color: #002b49;
+    background-color: #3457F1;
     color: #ffffff;
 }
 
@@ -18076,7 +18076,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--masters .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--masters .banner-vi__shape__mobile--left svg path {
-    fill: #3457F1;
+    fill: #002b49;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--masters figcaption {
@@ -18084,21 +18084,21 @@ svg:not(:root) {
 }
 
 .scp--masters .banner-vi.banner-vi--theme--corporate .cta, .scp--masters .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
 .banner-vi.banner-vi--theme--masters .cta, .banner-vi.banner-vi--theme--masters .promo-cta.promo-cta--small h2::after {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
 @media (max-width: 650px) {
     .scp--masters .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #002b49;
+        background-color: #3457F1;
     }
     .banner-vi.banner-vi--theme--masters.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #002b49;
+        background-color: #3457F1;
     }
 }
 
@@ -21849,7 +21849,7 @@ USED IN:
 .scp--masters .stats-block.stats-block--scp,
 .stats-block--scp.stats-block--postgraduate {
     color: #ffffff;
-    background-image: linear-gradient(to bottom, #002b49, #3457F1);
+    background-image: linear-gradient(to bottom, #3457F1, #002b49);
 }
 
 .scp--masters .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg,
@@ -21864,7 +21864,7 @@ USED IN:
 
 .scp--masters .stats-block.stats-block--scp h2,
 .stats-block--scp.stats-block--postgraduate h2 {
-    border-bottom: 0.06rem solid #3457F1;
+    border-bottom: 0.06rem solid #002b49;
 }
 
 .scp--mba .stats-block.stats-block--scp,
@@ -21891,7 +21891,7 @@ USED IN:
 .scp--phd .stats-block.stats-block--scp,
 .stats-block--scp.stats-block--phd {
     color: #ffffff;
-    background-image: linear-gradient(to bottom, #002b49, #3457F1);
+    background-image: linear-gradient(to bottom, #3457F1, #002b49);
 }
 
 .scp--phd .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg,
@@ -21906,7 +21906,7 @@ USED IN:
 
 .scp--phd .stats-block.stats-block--scp h2,
 .stats-block--scp.stats-block--phd h2 {
-    border-bottom: 0.06rem solid #3457F1;
+    border-bottom: 0.06rem solid #002b49;
 }
 
 .scp--executive-education .stats-block.stats-block--scp,
@@ -22051,23 +22051,23 @@ USED IN:
 }
 
 .cta--turquoise {
-    background-color: #91baa3;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .cta--turquoise:hover, .cta--turquoise:focus, .cta--turquoise:active {
-    background-color: #7eae93;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .cta--skyblue {
-    background-color: #5bc2e7;
-    color: #1e1e1e;
+    background-color: #14cef5;
+    color: #ffffff;
 }
 
 .cta--skyblue:hover, .cta--skyblue:focus, .cta--skyblue:active {
-    background-color: #40b8e3;
-    color: #1e1e1e;
+    background-color: #0abce1;
+    color: #ffffff;
 }
 
 .cta--shadow {
@@ -22107,13 +22107,13 @@ USED IN:
 }
 
 .cta--picton {
-    background-color: #5bc2e7;
-    color: #1e1e1e;
+    background-color: #14cef5;
+    color: #ffffff;
 }
 
 .cta--picton:hover, .cta--picton:focus, .cta--picton:active {
-    background-color: #40b8e3;
-    color: #1e1e1e;
+    background-color: #0abce1;
+    color: #ffffff;
 }
 
 .cta--black {
@@ -22123,8 +22123,8 @@ USED IN:
 }
 
 .cta--black:hover, .cta--black:active {
-    background-color: #ffffff;
-    color: #1e1e1e;
+    background-color: #3d3d3d;
+    color: #ffffff;
 }
 
 .cta--black:active {
@@ -22151,63 +22151,63 @@ USED IN:
 }
 
 .cta--montecarlo {
-    background-color: #a3d5cd;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .cta--montecarlo:hover, .cta--montecarlo:focus, .cta--montecarlo:active {
-    background-color: #8ecbc2;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .cta--neptune {
-    background-color: #91baa3;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .cta--neptune:hover, .cta--neptune:focus, .cta--neptune:active {
-    background-color: #7eae93;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .cta--fern {
-    background-color: #496c60;
+    background-color: #2e767a;
     color: #ffffff;
 }
 
 .cta--fern:hover, .cta--fern:focus, .cta--fern:active {
-    background-color: #3d5a50;
+    background-color: #266164;
     color: #ffffff;
 }
 
 .cta--online-msc {
-    background-color: #12E97A;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .cta--online-msc:hover, .cta--online-msc:focus, .cta--online-msc:active {
-    background-color: #10cd6b;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .cta--exec-mba {
-    background-color: #12E97A;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .cta--exec-mba:hover, .cta--exec-mba:focus, .cta--exec-mba:active {
-    background-color: #10cd6b;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .cta--demba {
-    background-color: #12E97A;
-    color: #1e1e1e;
+    background-color: #2e767a;
+    color: #ffffff;
 }
 
 .cta--demba:hover, .cta--demba:focus, .cta--demba:active {
-    background-color: #10cd6b;
-    color: #1e1e1e;
+    background-color: #266164;
+    color: #ffffff;
 }
 
 .cta--mba-secondary {
@@ -22406,7 +22406,7 @@ USED IN:
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ffffff;
 }
@@ -22428,7 +22428,7 @@ USED IN:
 }
 
 .cta--pg-v23--ki:hover, .cta--pg-v23--ki:focus, .cta--pg-v23--ki:active {
-    background-color: #173fef;
+    background-color: #00192a;
     color: #ffffff;
     outline-color: #ffffff;
 }
@@ -22488,28 +22488,33 @@ USED IN:
 }
 
 .scp--online-msc .cta--theme--primary {
-    background-color: #12E97A;
-    color: #1e1e1e;
+    background-color: #3457F1;
+    color: #ffffff;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
 }
 
 .scp--online-msc .cta--theme--primary:hover, .scp--online-msc .cta--theme--primary:focus, .scp--online-msc .cta--theme--primary:active {
-    background-color: #10cd6b;
-    color: #1e1e1e;
-}
-
-.scp--online-msc .cta--theme--secondary {
-    background-color: #2e767a;
+    background-color: #173fef;
     color: #ffffff;
 }
 
+.scp--online-msc .cta--theme--secondary {
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ececec;
+}
+
 .scp--online-msc .cta--theme--secondary:hover, .scp--online-msc .cta--theme--secondary:focus, .scp--online-msc .cta--theme--secondary:active {
-    background-color: #266164;
+    background-color: #00192a;
     color: #ffffff;
 }
 
 .scp--masters .cta--theme--primary {
     background-color: #3457F1;
-    color: #1e1e1e;
+    color: #ffffff;
     display: block;
     padding: 1.5rem;
     border-bottom-width: 0;
@@ -22518,7 +22523,7 @@ USED IN:
 
 .scp--masters .cta--theme--primary:hover, .scp--masters .cta--theme--primary:focus, .scp--masters .cta--theme--primary:active {
     background-color: #173fef;
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .scp--masters .cta--theme--secondary {
@@ -22681,23 +22686,23 @@ USED IN:
 }
 
 .scp--phd .cta--theme--primary {
-    background-color: #006699;
+    background-color: #14cef5;
     color: #ffffff;
 }
 
 .scp--phd .cta--theme--primary:hover, .scp--phd .cta--theme--primary:focus, .scp--phd .cta--theme--primary:active {
-    background-color: #00527a;
+    background-color: #0abce1;
     color: #ffffff;
 }
 
 .scp--phd .cta--theme--secondary {
-    background-color: #5bc2e7;
-    color: #1e1e1e;
+    background-color: #006699;
+    color: #ffffff;
 }
 
 .scp--phd .cta--theme--secondary:hover, .scp--phd .cta--theme--secondary:focus, .scp--phd .cta--theme--secondary:active {
-    background-color: #40b8e3;
-    color: #1e1e1e;
+    background-color: #00527a;
+    color: #ffffff;
 }
 
 .cta .fa-arrow-right, .cta .popup-def-list-group__prevnext__next .popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .cta .popup-def-list-group__prevnext__next__icon {
@@ -23208,12 +23213,12 @@ USED IN:
 }
 
 .scp--masters .key-info--lined {
-    border-top: 0.06rem solid #3457F1;
-    border-bottom: 0.06rem solid #3457F1;
+    border-top: 0.06rem solid #002b49;
+    border-bottom: 0.06rem solid #002b49;
 }
 
 .scp--masters .key-info__item__value {
-    color: #3457F1;
+    color: #002b49;
 }
 
 .scp--mba .key-info--lined {
@@ -24914,12 +24919,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--masters .card--course .txt__heading {
-    background: #3457F1;
+    background: #002b49;
     color: #ffffff;
 }
 
 .scp--masters .card--course .summary {
-    color: #3457F1;
+    color: #002b49;
 }
 
 .scp--mba .card--course .txt__heading {
@@ -25021,7 +25026,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pathway-cards--masters .pathway-card__txt:only-child {
-    border-top: 0.24rem solid #3457F1;
+    border-top: 0.24rem solid #002b49;
 }
 
 .pathway-cards--mba .pathway-card__txt:only-child {
@@ -25616,8 +25621,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .pg-courses-v23 .text-highlight {
     color: #ffffff;
-    background-color: #002b49;
-    box-shadow: 0.5rem 0 0 #002b49, -0.5rem 0 0 #002b49;
+    background-color: #3457F1;
+    box-shadow: 0.5rem 0 0 #3457F1, -0.5rem 0 0 #3457F1;
     display: inline;
     -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
@@ -27933,100 +27938,33 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     text-align: center;
 }
 
-.promo-cta--white {
-    background-color: white;
+.banner-vi[class*="banner-vi--theme--"] .cta {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
-.promo-cta--white h2:after {
-    background-color: #d61726;
-}
-
-.promo-cta--white-orange {
-    background-color: white;
-}
-
-.promo-cta--white-orange h2:after {
-    background-color: #e35205;
-}
-
-.promo-cta--blue {
-    background-color: #002b49;
-    color: white;
-}
-
-.promo-cta--blue h2:after {
-    background-color: #5bc2e7;
-}
-
-.promo-cta--mba {
-    background-color: #12E97A;
-    color: #1e1e1e;
-}
-
-.promo-cta--mba h2:after {
-    background-color: #2e767a;
-}
-
-.promo-cta--omba {
-    background-color: #12E97A;
-    color: #1e1e1e;
-}
-
-.promo-cta--omba h2:after {
-    background-color: #2e767a;
-}
-
-.promo-cta--emba {
-    background-color: #12E97A;
-    color: #1e1e1e;
-}
-
-.promo-cta--emba h2:after {
-    background-color: #2e767a;
-}
-
-.promo-cta--demba {
-    background-color: #12E97A;
-    color: #1e1e1e;
-}
-
-.promo-cta--demba h2:after {
-    background-color: #2e767a;
-}
-
-.promo-cta--cce {
-    background-color: #8b2433;
+.banner-vi[class*="banner-vi--theme--"] .cta:hover, .banner-vi[class*="banner-vi--theme--"] .cta:active {
+    background-color: #3d3d3d;
     color: #ffffff;
 }
 
-.promo-cta--cce h2:after {
-    background-color: #a9a19c;
+.banner-vi[class*="banner-vi--theme--"] .cta:active {
+    outline: 2px dotted #ffffff;
+    outline-offset: 3px;
 }
 
-.promo-cta--exec-phd {
-    background-color: #14cef5;
-    color: #1e1e1e;
+.banner-vi[class*="banner-vi--theme--"] .cta:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
 }
 
-.promo-cta--exec-phd h2:after {
-    background-color: #006699;
+.banner-vi[class*="banner-vi--theme--"] .cta:focus, .banner-vi[class*="banner-vi--theme--"] .cta:active {
+    outline-color: #1e1e1e;
 }
 
-.promo-cta--black {
+.banner-vi.banner-vi--theme--postgraduate .promo-cta.promo-cta--small h2::after {
     background-color: #1e1e1e;
-    color: #fafafa;
-}
-
-.promo-cta--black h2:after {
-    background-color: #666666;
-}
-
-.promo-cta--white-purple {
-    background-color: #ffffff;
-}
-
-.promo-cta--white-purple h2:after {
-    background-color: #93328e;
 }
 
 .youtube-embed-container {
@@ -28843,11 +28781,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--masters .ksp__item__figure,
 .ksp__item--masters .ksp__item__pre-figure {
-    color: #3457F1;
+    color: #002b49;
 }
 
 .ksp__item--masters .ksp__item__icon {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .ksp__item--masters .ksp__item__icon img {
@@ -28856,11 +28794,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--masters .ksp__item .ksp__item__figure,
 .scp--masters .ksp__item .ksp__item__pre-figure {
-    color: #3457F1;
+    color: #002b49;
 }
 
 .scp--masters .ksp__item .ksp__item__icon {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .scp--masters .ksp__item .ksp__item__icon img {
@@ -29374,7 +29312,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pg-courses-v23 .ksp-v23-wrapper--dark {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
@@ -29584,7 +29522,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .block-links__items--masters {
-    background-color: #002b49;
+    background-color: #3457F1;
 }
 
 .block-links__items--mba {
@@ -30192,7 +30130,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--masters {
-    border-bottom-color: #3457F1;
+    border-bottom-color: #002b49;
 }
 
 .course-search__form--masters .course-search__form__select:before {
@@ -30200,12 +30138,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--masters .course-search__form__select select {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
 }
 
 .course-search__form--mba {
-    border-bottom-color: #002b49;
+    border-bottom-color: #3457F1;
 }
 
 .course-search__form--mba .course-search__form__select:before {
@@ -30213,7 +30151,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--mba .course-search__form__select select {
-    background-color: #002b49;
+    background-color: #3457F1;
     color: #ffffff;
 }
 
@@ -30294,7 +30232,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .footer-meta.section--masters:before {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .footer-meta.section--phd, .footer-meta.section--executive-phd {
@@ -30342,7 +30280,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--masters .footer-meta.section--scp-theme:before {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .scp--phd .footer-meta.section--scp-theme:before {
@@ -33701,7 +33639,7 @@ table tbody > tr > td:hover {
 }
 
 .scp--masters .progressbar-bar {
-    background-color: #002b49;
+    background-color: #3457F1;
 }
 
 /******* mobile floating filters ***********/
@@ -34336,8 +34274,8 @@ table tbody > tr > td:hover {
 }
 
 .carousel__item__info__cta:hover, .carousel__item__info__cta:active {
-    background-color: #ffffff;
-    color: #1e1e1e;
+    background-color: #3d3d3d;
+    color: #ffffff;
 }
 
 .carousel__item__info__cta:active {
@@ -34401,7 +34339,7 @@ table tbody > tr > td:hover {
 }
 
 .scp--masters blockquote::before {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .scp--phd blockquote::before {
@@ -40765,7 +40703,7 @@ div.widget-123_test_ {
 .course-subject-list-msc .subject-bracket-block__anglesA:before, .course-subject-list-msc .subject-bracket-block__anglesA:after,
 .course-subject-list-msc .subject-bracket-block__anglesB:before,
 .course-subject-list-msc .subject-bracket-block__anglesB:after {
-    border-color: #3457F1;
+    border-color: #002b49;
 }
 
 .course-subject-list-mba .subject-bracket-block__anglesA:before, .course-subject-list-mba .subject-bracket-block__anglesA:after,
@@ -41218,12 +41156,12 @@ html {
 }
 
 .pg-courses-v23 .nav-sticky .nav-sticky__item__link:focus, .pg-courses-v23 .nav-sticky .nav-sticky__item__link:active {
-    background: #002b49;
+    background: #3457F1;
     color: #ffffff;
 }
 
 .pg-courses-v23 .nav-sticky .nav-sticky__item__link__active {
-    background: #002b49;
+    background: #3457F1;
     color: #ffffff;
 }
 
@@ -41309,7 +41247,7 @@ html {
 }
 
 .pg-courses-v23 .promo-box-v23 .promo-box-v23__heading__wrap:after {
-    background: #3457F1;
+    background: #002b49;
     color: #ffffff;
 }
 
@@ -41453,7 +41391,7 @@ html {
 
 .pg-courses-v23 .unibuddy-card-v23__content__image:after,
 .pg-courses-v23 .unibuddy-card-v23__content__title:after {
-    background: #3457F1;
+    background: #002b49;
 }
 
 .mba-courses-v23 .unibuddy-card-v23__content__image:after,
@@ -42034,7 +41972,7 @@ html {
 }
 
 .pg-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
-    background: linear-gradient(to right, #002b49 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #002b49 3rem, transparent 3rem) 0% 100%;
+    background: linear-gradient(to right, #3457F1 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #3457F1 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
     background-size: auto, auto;
     background-repeat: no-repeat;
@@ -42042,7 +41980,7 @@ html {
 }
 
 .pg-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after {
-    background: #3457F1;
+    background: #002b49;
 }
 
 .mba-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
@@ -42708,7 +42646,7 @@ html {
 }
 
 .pg-courses-v23 .square-animation-v23__square:before {
-    background: #002b49;
+    background: #3457F1;
 }
 
 .mba-courses-v23 .square-animation-v23__square:before {
@@ -42903,7 +42841,7 @@ html {
 
 .pg-courses-v23 .testimonials-v23,
 .scp--mba .testimonials-v23 {
-    background: #3457F1;
+    background: #002b49;
     color: #ffffff;
 }
 
@@ -42914,7 +42852,7 @@ html {
 
 .pg-courses-v23 .testimonial-card-v23__image:before,
 .scp--mba .testimonial-card-v23__image:before {
-    border: 0.125rem solid #002b49;
+    border: 0.125rem solid #3457F1;
 }
 
 .js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
@@ -43495,4 +43433,154 @@ html {
     .back-to-top {
         display: none;
     }
+}
+
+.landing--masters .cta-group .cta {
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ececec;
+}
+
+.landing--masters .cta-group .cta:hover, .landing--masters .cta-group .cta:focus, .landing--masters .cta-group .cta:active {
+    background-color: #00192a;
+    color: #ffffff;
+}
+
+.landing--masters .cta-group .cta:nth-child(3) {
+    background-color: #3457F1;
+    color: #ffffff;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.landing--masters .cta-group .cta:nth-child(3):hover, .landing--masters .cta-group .cta:nth-child(3):focus, .landing--masters .cta-group .cta:nth-child(3):active {
+    background-color: #173fef;
+    color: #ffffff;
+}
+
+.landing--undergraduate .cta-group .cta {
+    background-color: #f1b434;
+    color: #1e1e1e;
+}
+
+.landing--undergraduate .cta-group .cta:hover, .landing--undergraduate .cta-group .cta:focus, .landing--undergraduate .cta-group .cta:active {
+    background-color: #efa917;
+    color: #1e1e1e;
+}
+
+.landing--undergraduate .cta-group .cta:nth-child(3) {
+    background-color: #e35205;
+    color: #0c0c0e;
+}
+
+.landing--undergraduate .cta-group .cta:nth-child(3):hover, .landing--undergraduate .cta-group .cta:nth-child(3):focus, .landing--undergraduate .cta-group .cta:nth-child(3):active {
+    background-color: #c54704;
+    color: #0c0c0e;
+}
+
+.landing--mba .cta-group .cta {
+    background-color: #2e767a;
+    color: #ffffff;
+}
+
+.landing--mba .cta-group .cta:hover, .landing--mba .cta-group .cta:focus, .landing--mba .cta-group .cta:active {
+    background-color: #266164;
+    color: #ffffff;
+}
+
+.landing--mba .cta-group .cta:nth-child(3) {
+    background-color: #12E97A;
+    color: #1e1e1e;
+}
+
+.landing--mba .cta-group .cta:nth-child(3):hover, .landing--mba .cta-group .cta:nth-child(3):focus, .landing--mba .cta-group .cta:nth-child(3):active {
+    background-color: #10cd6b;
+    color: #1e1e1e;
+}
+
+.landing--phd .cta-group .cta {
+    background-color: #006699;
+    color: #ffffff;
+}
+
+.landing--phd .cta-group .cta:hover, .landing--phd .cta-group .cta:focus, .landing--phd .cta-group .cta:active {
+    background-color: #00527a;
+    color: #ffffff;
+}
+
+.landing--phd .cta-group .cta:nth-child(3) {
+    background-color: #14cef5;
+    color: #ffffff;
+}
+
+.landing--phd .cta-group .cta:nth-child(3):hover, .landing--phd .cta-group .cta:nth-child(3):focus, .landing--phd .cta-group .cta:nth-child(3):active {
+    background-color: #0abce1;
+    color: #ffffff;
+}
+
+.landing--executive-phd .cta-group .cta {
+    background-color: #006699;
+    color: #ffffff;
+}
+
+.landing--executive-phd .cta-group .cta:hover, .landing--executive-phd .cta-group .cta:focus, .landing--executive-phd .cta-group .cta:active {
+    background-color: #00527a;
+    color: #ffffff;
+}
+
+.landing--executive-phd .cta-group .cta:nth-child(3) {
+    background-color: #14cef5;
+    color: #ffffff;
+}
+
+.landing--executive-phd .cta-group .cta:nth-child(3):hover, .landing--executive-phd .cta-group .cta:nth-child(3):focus, .landing--executive-phd .cta-group .cta:nth-child(3):active {
+    background-color: #0abce1;
+    color: #ffffff;
+}
+
+.landing--executive-education .cta-group .cta {
+    background-color: #e31c79;
+    color: #1e1e1e;
+}
+
+.landing--executive-education .cta-group .cta:hover, .landing--executive-education .cta-group .cta:focus, .landing--executive-education .cta-group .cta:active {
+    background-color: #c8196a;
+    color: #1e1e1e;
+}
+
+.landing--executive-education .cta-group .cta:nth-child(3) {
+    background-color: #93328e;
+    color: #ffffff;
+}
+
+.landing--executive-education .cta-group .cta:nth-child(3):hover, .landing--executive-education .cta-group .cta:nth-child(3):focus, .landing--executive-education .cta-group .cta:nth-child(3):active {
+    background-color: #7c2a78;
+    color: #ffffff;
+}
+
+.landing--online-msc .cta-group .cta {
+    background-color: #002b49;
+    color: #ffffff;
+    border: 0.12rem solid #ececec;
+}
+
+.landing--online-msc .cta-group .cta:hover, .landing--online-msc .cta-group .cta:focus, .landing--online-msc .cta-group .cta:active {
+    background-color: #00192a;
+    color: #ffffff;
+}
+
+.landing--online-msc .cta-group .cta:nth-child(3) {
+    background-color: #3457F1;
+    color: #ffffff;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.landing--online-msc .cta-group .cta:nth-child(3):hover, .landing--online-msc .cta-group .cta:nth-child(3):focus, .landing--online-msc .cta-group .cta:nth-child(3):active {
+    background-color: #173fef;
+    color: #ffffff;
 }
