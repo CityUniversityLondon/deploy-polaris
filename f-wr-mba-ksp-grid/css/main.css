@@ -12778,6 +12778,46 @@ svg:not(:root) {
     left: 0;
 }
 
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__structure .courses-v23__structure__content {
+        grid-column: 1/12;
+    }
+    .mba-courses-v23 .courses-v23__structure .courses-v23__structure__image {
+        grid-column: 12/-1;
+    }
+    .mba-courses-v23 .courses-v23__structure .accordion-v23 {
+        grid-column: 1/12;
+    }
+}
+
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__study-abroad .courses-v23__study-abroad__content,
+    .mba-courses-v23 .courses-v23__study-abroad .courses-v23__study-abroad__heading {
+        grid-column: 1/12;
+    }
+    .mba-courses-v23 .courses-v23__study-abroad .courses-v23__study-abroad__image {
+        grid-column: 12/-1;
+    }
+}
+
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__placements .courses-v23__placements__content {
+        grid-column: 1/12;
+    }
+    .mba-courses-v23 .courses-v23__placements .courses-v23__placements__image {
+        grid-column: 12/-1;
+    }
+}
+
+.mba-courses-v23 .courses-v23__careers .courses-v23__careers__content,
+.mba-courses-v23 .courses-v23__careers .accordion-v23 {
+    grid-column: 1/12;
+}
+
+.mba-courses-v23 .courses-v23__careers .courses-v23__careers__alumni {
+    grid-column: 12/-1;
+}
+
 .vertical-menu__page-link,
 .vertical-menu__toggle-link {
     background-color: inherit;
