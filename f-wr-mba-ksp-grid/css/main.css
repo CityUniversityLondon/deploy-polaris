@@ -43320,7 +43320,13 @@ html {
 
 @media (max-width: 1440px) {
     .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__list .ksp-mba-v23__list__item {
-        flex-basis: 43%;
+        flex-basis: 41%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__list .ksp-mba-v23__list__item {
+        flex-basis: 41%;
     }
 }
 
