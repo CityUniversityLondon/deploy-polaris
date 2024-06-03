@@ -12538,13 +12538,13 @@ svg:not(:root) {
         grid-column: 1/-1;
     }
     .courses-v23__structure .courses-v23__structure__content {
-        grid-column: 1/13;
+        grid-column: 1/12;
     }
     .courses-v23__structure .courses-v23__structure__image {
-        grid-column: 13/-1;
+        grid-column: 12/-1;
     }
     .courses-v23__structure .accordion-v23 {
-        grid-column: 1/13;
+        grid-column: 1/12;
     }
 }
 
@@ -12619,10 +12619,10 @@ svg:not(:root) {
     }
     .courses-v23__study-abroad .courses-v23__study-abroad__content,
     .courses-v23__study-abroad .courses-v23__study-abroad__heading {
-        grid-column: 1/13;
+        grid-column: 1/12;
     }
     .courses-v23__study-abroad .courses-v23__study-abroad__image {
-        grid-column: 13/-1;
+        grid-column: 12/-1;
     }
 }
 
@@ -12652,10 +12652,10 @@ svg:not(:root) {
         grid-column: 1/-1;
     }
     .courses-v23__placements .courses-v23__placements__content {
-        grid-column: 1/13;
+        grid-column: 1/12;
     }
     .courses-v23__placements .courses-v23__placements__image {
-        grid-column: 13/-1;
+        grid-column: 12/-1;
     }
 }
 
@@ -12685,11 +12685,11 @@ svg:not(:root) {
 
 .courses-v23__careers .courses-v23__careers__content,
 .courses-v23__careers .accordion-v23 {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni {
-    grid-column: 13/-1;
+    grid-column: 12/-1;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni .slider-v23__container {
