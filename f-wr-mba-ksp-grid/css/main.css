@@ -9244,7 +9244,7 @@ svg:not(:root) {
 .courses-v23--fee .accordion-v23,
 .courses-v23--fee .courses-v23__fee,
 .courses-v23--fee .courses-v23--fee__wys {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .courses-v23--fee h2,
@@ -10008,6 +10008,15 @@ svg:not(:root) {
     font-weight: 400;
 }
 
+@media (min-width: 900px) {
+    .courses-v23.mba-courses-v23 .courses-v23__key-info .courses-v23__key-info__ctas__wrap {
+        grid-column: span 5;
+    }
+    .courses-v23.mba-courses-v23 .courses-v23__key-info .courses-v23__key-info__standfirst__wrap {
+        grid-column: span 7;
+    }
+}
+
 .ug-courses-v23 .courses-v23__key-info {
     background-color: #d0c8c5;
     color: #1e1e1e;
@@ -10356,11 +10365,11 @@ svg:not(:root) {
 }
 
 .courses-v23__summary .ksp-v23-wrapper {
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
 }
 
 .courses-v23__summary .accordion-v23 {
-    grid-column: 1/13;
+    grid-column: 1/12;
     margin-bottom: 2rem;
 }
 
@@ -10458,16 +10467,16 @@ svg:not(:root) {
 }
 
 .courses-v23__summary__content {
-    grid-column: 1 / 13;
+    grid-column: 1/12;
 }
 
 .courses-v23__summary__heading {
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
 }
 
 .courses-v23__summary__widget,
 .courses-v23__summary__image {
-    grid-column: 13 / -1;
+    grid-column: 12/-1;
 }
 
 @media (max-width: 650px) {
@@ -10511,11 +10520,11 @@ svg:not(:root) {
 }
 
 .courses-v23 .courses-v23__student-life .student-life-v23__links__cards {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .courses-v23 .courses-v23__student-life .student-life-v23__links__unibuddy {
-    grid-column: 13/-1;
+    grid-column: 12/-1;
 }
 
 @media (min-width: 901px) {
@@ -11891,7 +11900,7 @@ svg:not(:root) {
 }
 
 .courses-v23__entry-requirements .accordion-v23 {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .courses-v23__study-abroad .partner-institution {
@@ -12149,23 +12158,11 @@ svg:not(:root) {
 }
 
 .courses-v23__careers .courses-v23__careers__content {
-    grid-column: 1/13;
-}
-
-@media (max-width: 1199px) {
-    .courses-v23__careers .courses-v23__careers__content {
-        grid-column: 1/12;
-    }
+    grid-column: 1/12;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni {
-    grid-column: 13/-1;
-}
-
-@media (max-width: 1199px) {
-    .courses-v23__careers .courses-v23__careers__alumni {
-        grid-column: 12/-1;
-    }
+    grid-column: 12/-1;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni .slider-v23__container {
@@ -42872,7 +42869,7 @@ html {
 }
 
 .courses-v23__careers__testimonials {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .ug-courses-v23 .testimonials-v23,
@@ -43159,7 +43156,7 @@ html {
 }
 
 .courses-v23__careers__ksp {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .mba-courses-v23 .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__value {
@@ -43168,7 +43165,7 @@ html {
 
 .ksp-mba-v23 {
     position: relative;
-    grid-column: 1/13;
+    grid-column: 1/12;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -43306,12 +43303,21 @@ html {
     font-size: 2.0736rem;
 }
 
-.mba-courses-v23 .courses-v23__careers__ksp__widget {
-    grid-column: 13/-1;
-}
-
 .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--graphs {
     display: none;
+}
+
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers {
+    margin-top: 0;
+    padding: 0;
+}
+
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .corner-border-v23 {
+    background: none;
+}
+
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__heading {
+    margin-top: 0;
 }
 
 .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__list .ksp-mba-v23__list__item {
