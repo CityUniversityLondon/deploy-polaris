@@ -289,7 +289,7 @@
 }
 
 .background--flamingo {
-    background-color: #e35205;
+    background-color: #ff4e00;
 }
 
 .background--yellow {
@@ -361,7 +361,7 @@
 }
 
 .background--violet {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 .background--fern {
@@ -9455,12 +9455,12 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23--fee .cta {
-    background-color: #e35205;
+    background-color: #ff4e00;
     color: #0c0c0e;
 }
 
 .ug-courses-v23 .courses-v23--fee .cta:hover, .ug-courses-v23 .courses-v23--fee .cta:focus, .ug-courses-v23 .courses-v23--fee .cta:active {
-    background-color: #c54704;
+    background-color: #e04500;
     color: #0c0c0e;
 }
 
@@ -9558,7 +9558,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .chart-row__items__chart path:nth-child(1) {
-    stroke: #e35205;
+    stroke: #ff4e00;
 }
 
 .ug-courses-v23 .chart-row__items__chart path:nth-child(2) {
@@ -9574,7 +9574,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.url-slide__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .media-block .fa-circle.video-preview__button:before, .media-block .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.video-preview__button:before, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.tabs__content__heading-anchor__icon, .js .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.tabs__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion-tabs__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__prev__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__next__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.dialog__box__heading__close__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .image-banner span.fa-circle, .image-banner .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .video-banner__play span.fa-circle, .video-banner__play .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.mba-popup__form__close__icon {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .image-banner span.fa-circle, .image-banner .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .video-banner__play span.fa-circle, .video-banner__play .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.mba-popup__form__close__icon {
@@ -9590,7 +9590,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.url-slide__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .media-block .fa-circle.video-preview__button:before, .media-block .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.video-preview__button:before, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.tabs__content__heading-anchor__icon, .js .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.tabs__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.accordion-tabs__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.header-toggle__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__prev__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.popup-def-list-group__prevnext__next__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.dialog__box__heading__close__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .image-banner span.fa-circle, .image-banner .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) span.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .video-banner__play span.fa-circle, .video-banner__play .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) span.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(1) .fa-circle.mba-popup__form__close__icon {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.url-slide__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .media-block .fa-circle.video-preview__button:before, .media-block .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.video-preview__button:before, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.tabs__content__heading-anchor__icon, .js .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.tabs__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.accordion-tabs__content__heading-anchor__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.header-toggle__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__prev__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.popup-def-list-group__prevnext__next__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.dialog__box__heading__close__icon, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .image-banner span.fa-circle, .image-banner .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .video-banner__play span.fa-circle, .video-banner__play .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) span.fa-circle, .ug-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(2) .fa-circle.mba-popup__form__close__icon {
@@ -9606,7 +9606,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(2) {
-    border-left: 0.5rem solid #e35205;
+    border-left: 0.5rem solid #ff4e00;
 }
 
 .ug-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(3) {
@@ -9630,7 +9630,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .chart-row__items__chart path:nth-child(3) {
-    stroke: #e31c79;
+    stroke: #e60e67;
 }
 
 .pg-courses-v23 .chart-row__items__chart path:nth-child(4) {
@@ -9646,7 +9646,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) .fa-circle.mba-popup__form__close__icon {
-    color: #e31c79;
+    color: #e60e67;
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) .fa-circle.mba-popup__form__close__icon {
@@ -9662,7 +9662,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.mba-popup__form__close__icon {
-    color: #e31c79;
+    color: #e60e67;
 }
 
 .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .url-slide--right .fa-circle.url-slide__icon, .url-slide--right .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.url-slide__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .media-block .fa-circle.video-preview__button:before, .media-block .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.video-preview__button:before, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .js .fa-circle.accordion-tabs__content__heading-anchor__icon, .js .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.accordion-tabs__content__heading-anchor__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--menu .fa-circle.header-toggle__icon, .header-toggle--menu .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .header-toggle--search .fa-circle.header-toggle__icon, .header-toggle--search .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.header-toggle__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__prev .fa-circle.popup-def-list-group__prevnext__prev__icon, .popup-def-list-group__prevnext__prev .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__prev__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .popup-def-list-group__prevnext__next .fa-circle.popup-def-list-group__prevnext__next__icon, .popup-def-list-group__prevnext__next .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.popup-def-list-group__prevnext__next__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.dialog__box__heading__close__icon, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .image-banner span.fa-circle, .image-banner .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .video-banner__play span.fa-circle, .video-banner__play .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) span.fa-circle, .pg-courses-v23 .chart-row__items__chart .chart-row__items__chart__row__legend__item:nth-child(3) .fa-circle.mba-popup__form__close__icon {
@@ -9678,7 +9678,7 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(4) {
-    border-left: 0.5rem solid #e31c79;
+    border-left: 0.5rem solid #e60e67;
 }
 
 .pg-courses-v23 .workload-charts .chart-row__items__chart__row__legend__description ~ .chart-row__items__chart__row__legend__item:nth-child(5) {
@@ -10422,7 +10422,7 @@ svg:not(:root) {
 }
 
 .ug-courses-v23 .courses-v23__summary .summary__profile {
-    border-color: #e35205;
+    border-color: #ff4e00;
 }
 
 .pg-courses-v23 .courses-v23__summary .summary__profile {
@@ -11495,7 +11495,7 @@ svg:not(:root) {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, #e35205 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #e35205 0.75rem, transparent 0.75rem) 100% 100%;
+    background: linear-gradient(to left, #ff4e00 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #ff4e00 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
     pointer-events: none;
@@ -11848,7 +11848,7 @@ svg:not(:root) {
 
 .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__second-line {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    color: #e35205;
+    color: #ff4e00;
     font-size: 2.28rem;
     font-weight: 600;
 }
@@ -12725,7 +12725,7 @@ svg:not(:root) {
     display: block;
     font-family: "Font Awesome 6 Pro";
     content: "\f00c";
-    color: #e35205;
+    color: #ff4e00;
     padding-right: 0.5rem;
     position: absolute;
     left: 0;
@@ -15329,7 +15329,7 @@ svg:not(:root) {
 }
 
 .accordion-tabs--top-level-layout .accordion-tabs__content__heading-anchor.active {
-    background: #e35205;
+    background: #ff4e00;
 }
 
 .accordion-tabs--top-level-layout .tabs .tabs__content__heading-anchor.active {
@@ -15766,7 +15766,7 @@ svg:not(:root) {
     transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
     content: '';
     opacity: 0;
-    background-color: #e35205;
+    background-color: #ff4e00;
     transform: translateY(100%);
 }
 
@@ -16044,7 +16044,7 @@ svg:not(:root) {
 }
 
 .banner--theme--undergraduate .banner__content h1 {
-    background-color: #e35205;
+    background-color: #ff4e00;
     color: #1e1e1e;
 }
 
@@ -16114,7 +16114,7 @@ svg:not(:root) {
 }
 
 .banner--theme--execed .banner__content h1 {
-    background-color: #e31c79;
+    background-color: #e60e67;
     color: #ffffff;
 }
 
@@ -16124,7 +16124,7 @@ svg:not(:root) {
 }
 
 .banner--theme--executive-education .banner__content h1 {
-    background-color: #e31c79;
+    background-color: #e60e67;
     color: #ffffff;
 }
 
@@ -16168,7 +16168,7 @@ svg:not(:root) {
 }
 
 .scp--undergraduate .banner--theme--corporate .banner__content h1 {
-    background-color: #e35205;
+    background-color: #ff4e00;
     color: #1e1e1e;
 }
 
@@ -16178,7 +16178,7 @@ svg:not(:root) {
 }
 
 .scp--undergraduate .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
-    background-color: #e35205;
+    background-color: #ff4e00;
 }
 
 .scp--postgraduate .banner--theme--corporate .banner__content h1 {
@@ -16266,7 +16266,7 @@ svg:not(:root) {
 }
 
 .scp--execed .banner--theme--corporate .banner__content h1 {
-    background-color: #e31c79;
+    background-color: #e60e67;
     color: #ffffff;
 }
 
@@ -16276,11 +16276,11 @@ svg:not(:root) {
 }
 
 .scp--execed .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 .scp--executive-education .banner--theme--corporate .banner__content h1 {
-    background-color: #e31c79;
+    background-color: #e60e67;
     color: #ffffff;
 }
 
@@ -16290,7 +16290,7 @@ svg:not(:root) {
 }
 
 .scp--executive-education .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 .scp--online-msc .banner--theme--corporate .banner__content h1 {
@@ -16707,14 +16707,14 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-new.banner--theme--undergraduate .banner__content__text__item:first-child,
     .banner-no-img-varieties.banner-no-img.banner--theme--undergraduate .banner__content__text__item:first-child {
-        background-color: #e35205;
+        background-color: #ff4e00;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:before,
     .banner-no-img-varieties.banner-no-img.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:before {
-        background-color: #e35205;
+        background-color: #ff4e00;
     }
     .banner-new.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:after,
     .banner-no-img-varieties.banner-no-img.banner--theme--undergraduate .banner__content__promo__wrapper .banner__content__promo--bg:after {
@@ -16833,14 +16833,14 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-new.banner--theme--execed .banner__content__text__item:first-child,
     .banner-no-img-varieties.banner-no-img.banner--theme--execed .banner__content__text__item:first-child {
-        background-color: #e31c79;
+        background-color: #e60e67;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:before,
     .banner-no-img-varieties.banner-no-img.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:before {
-        background-color: #e31c79;
+        background-color: #e60e67;
     }
     .banner-new.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:after,
     .banner-no-img-varieties.banner-no-img.banner--theme--execed .banner__content__promo__wrapper .banner__content__promo--bg:after {
@@ -16851,14 +16851,14 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-new.banner--theme--executive-education .banner__content__text__item:first-child,
     .banner-no-img-varieties.banner-no-img.banner--theme--executive-education .banner__content__text__item:first-child {
-        background-color: #e31c79;
+        background-color: #e60e67;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:before,
     .banner-no-img-varieties.banner-no-img.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:before {
-        background-color: #e31c79;
+        background-color: #e60e67;
     }
     .banner-new.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:after,
     .banner-no-img-varieties.banner-no-img.banner--theme--executive-education .banner__content__promo__wrapper .banner__content__promo--bg:after {
@@ -17691,40 +17691,40 @@ svg:not(:root) {
 }
 
 .scp--undergraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #e35205 0%, #f1b434 100%);
+    background-image: linear-gradient(90deg, #ff4e00 0%, #f1b434 100%);
     background-color: #f1b434;
 }
 
 @media (max-width: 650px) {
     .scp--undergraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 69%);
+        background-image: linear-gradient(180deg, #ff4e00 0%, #f1b434 69%);
         display: flex;
     }
     .scp--undergraduate .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 46%);
+        background-image: linear-gradient(180deg, #ff4e00 0%, #f1b434 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--undergraduate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #e35205 0%, #f1b434 100%);
+    background-image: linear-gradient(90deg, #ff4e00 0%, #f1b434 100%);
     background-color: #f1b434;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--undergraduate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 69%);
+        background-image: linear-gradient(180deg, #ff4e00 0%, #f1b434 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--undergraduate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 46%);
+        background-image: linear-gradient(180deg, #ff4e00 0%, #f1b434 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--undergraduate .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 95%);
+        background-image: linear-gradient(180deg, #ff4e00 0%, #f1b434 95%);
         background-color: #f1b434;
     }
     .scp--undergraduate .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
@@ -17734,7 +17734,7 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--undergraduate.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #e35205 0%, #f1b434 95%);
+        background-image: linear-gradient(180deg, #ff4e00 0%, #f1b434 95%);
         background-color: #f1b434;
     }
     .banner-vi--video-embedded.banner-vi--theme--undergraduate.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
@@ -17751,7 +17751,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--undergraduate + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--undergraduate + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--undergraduate + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #e35205 0%, #f1b434 100%);
+    background-image: linear-gradient(90deg, #ff4e00 0%, #f1b434 100%);
 }
 
 @media (max-width: 650px) {
@@ -17781,7 +17781,7 @@ svg:not(:root) {
 }
 
 .scp--undergraduate .banner-vi .banner-vi__shape--left svg path, .scp--undergraduate .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #e35205;
+    fill: #ff4e00;
 }
 
 .scp--undergraduate .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -17800,7 +17800,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--undergraduate .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--undergraduate .banner-vi__shape__mobile--left svg path {
-    fill: #e35205;
+    fill: #ff4e00;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--undergraduate figcaption {
@@ -18629,40 +18629,40 @@ svg:not(:root) {
 }
 
 .scp--execed .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #e31c79 0%, #93328e 100%);
+    background-image: linear-gradient(90deg, #e60e67 0%, #93328e 100%);
     background-color: #93328e;
 }
 
 @media (max-width: 650px) {
     .scp--execed .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 69%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 69%);
         display: flex;
     }
     .scp--execed .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 46%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--execed.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #e31c79 0%, #93328e 100%);
+    background-image: linear-gradient(90deg, #e60e67 0%, #93328e 100%);
     background-color: #93328e;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--execed.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 69%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--execed.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 46%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--execed .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 95%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 95%);
         background-color: #93328e;
     }
     .scp--execed .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
@@ -18672,7 +18672,7 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--execed.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 95%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 95%);
         background-color: #93328e;
     }
     .banner-vi--video-embedded.banner-vi--theme--execed.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
@@ -18689,7 +18689,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--execed + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--execed + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--execed + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #e31c79 0%, #93328e 100%);
+    background-image: linear-gradient(90deg, #e60e67 0%, #93328e 100%);
 }
 
 @media (max-width: 650px) {
@@ -18719,7 +18719,7 @@ svg:not(:root) {
 }
 
 .scp--execed .banner-vi .banner-vi__shape--left svg path, .scp--execed .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #e31c79;
+    fill: #e60e67;
 }
 
 .scp--execed .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -18738,7 +18738,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--execed .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--execed .banner-vi__shape__mobile--left svg path {
-    fill: #e31c79;
+    fill: #e60e67;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--execed figcaption {
@@ -18763,40 +18763,40 @@ svg:not(:root) {
 }
 
 .scp--executive-education .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #e31c79 0%, #93328e 100%);
+    background-image: linear-gradient(90deg, #e60e67 0%, #93328e 100%);
     background-color: #93328e;
 }
 
 @media (max-width: 650px) {
     .scp--executive-education .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 69%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 69%);
         display: flex;
     }
     .scp--executive-education .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 46%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--executive-education.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #e31c79 0%, #93328e 100%);
+    background-image: linear-gradient(90deg, #e60e67 0%, #93328e 100%);
     background-color: #93328e;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--executive-education.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 69%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--executive-education.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 46%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--executive-education .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 95%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 95%);
         background-color: #93328e;
     }
     .scp--executive-education .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
@@ -18806,7 +18806,7 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--executive-education.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #e31c79 0%, #93328e 95%);
+        background-image: linear-gradient(180deg, #e60e67 0%, #93328e 95%);
         background-color: #93328e;
     }
     .banner-vi--video-embedded.banner-vi--theme--executive-education.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
@@ -18823,7 +18823,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--executive-education + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--executive-education + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--executive-education + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #e31c79 0%, #93328e 100%);
+    background-image: linear-gradient(90deg, #e60e67 0%, #93328e 100%);
 }
 
 @media (max-width: 650px) {
@@ -18853,7 +18853,7 @@ svg:not(:root) {
 }
 
 .scp--executive-education .banner-vi .banner-vi__shape--left svg path, .scp--executive-education .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #e31c79;
+    fill: #e60e67;
 }
 
 .scp--executive-education .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -18872,7 +18872,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--executive-education .banner-vi__shape--left svg path, .banner-vi.banner-vi--theme--executive-education .banner-vi__shape__mobile--left svg path {
-    fill: #e31c79;
+    fill: #e60e67;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--executive-education figcaption {
@@ -21113,7 +21113,7 @@ USED IN:
         left: 0;
         width: 100%;
         height: 1px;
-        background: #e35205;
+        background: #ff4e00;
     }
 }
 
@@ -21153,7 +21153,7 @@ USED IN:
     left: 0;
     width: 1px;
     height: 100%;
-    background: #e35205;
+    background: #ff4e00;
 }
 
 @media (max-width: 900px) {
@@ -21338,7 +21338,7 @@ USED IN:
 .stats-block h2 {
     padding: 1rem 0;
     margin-bottom: 0;
-    border-bottom: 0.06rem solid #e35205;
+    border-bottom: 0.06rem solid #ff4e00;
     font-size: 1rem;
 }
 
@@ -21360,7 +21360,7 @@ USED IN:
 }
 
 .stats-block.stats-block--orange {
-    background-image: linear-gradient(to bottom, #f1b434, #e35205);
+    background-image: linear-gradient(to bottom, #f1b434, #ff4e00);
     padding-left: 1rem;
     padding-right: 1rem;
     overflow: auto;
@@ -21376,7 +21376,7 @@ USED IN:
 .stats-block.stats-block--orange h2 {
     margin: 0 5%;
     width: auto;
-    border-bottom: 0.06rem solid #e35205;
+    border-bottom: 0.06rem solid #ff4e00;
 }
 
 .stats-block.stats-block--orange .stats-block__piechart .stats-block__piechart__value {
@@ -21426,7 +21426,7 @@ USED IN:
         position: relative;
     }
     .stats-block.stats-block--orange .stats-block__item:nth-child(1), .stats-block.stats-block--orange .stats-block__item:nth-child(2) {
-        border-right: 1px solid #e35205;
+        border-right: 1px solid #ff4e00;
     }
     @supports (display: flex) {
         .stats-block.stats-block--orange .stats-block__item {
@@ -21802,7 +21802,7 @@ USED IN:
 .scp--undergraduate .stats-block.stats-block--scp,
 .stats-block--scp.stats-block--undergraduate {
     color: #1e1e1e;
-    background-image: linear-gradient(to bottom, #f1b434, #e35205);
+    background-image: linear-gradient(to bottom, #f1b434, #ff4e00);
 }
 
 .scp--undergraduate .stats-block.stats-block--scp .stats-block__grid .stats-block__item__icon svg,
@@ -21817,7 +21817,7 @@ USED IN:
 
 .scp--undergraduate .stats-block.stats-block--scp h2,
 .stats-block--scp.stats-block--undergraduate h2 {
-    border-bottom: 0.06rem solid #e35205;
+    border-bottom: 0.06rem solid #ff4e00;
 }
 
 .scp--masters .stats-block.stats-block--scp,
@@ -21901,7 +21901,7 @@ USED IN:
 
 .scp--executive-education .stats-block.stats-block--scp h2,
 .stats-block--scp.stats-block--execed h2 {
-    border-bottom: 0.06rem solid #e31c79;
+    border-bottom: 0.06rem solid #e60e67;
 }
 
 .scp--corporate .stats-block.stats-block--scp,
@@ -21940,12 +21940,12 @@ USED IN:
 }
 
 .cta--orange {
-    background-color: #e35205;
+    background-color: #ff4e00;
     color: #0c0c0e;
 }
 
 .cta--orange:hover, .cta--orange:focus, .cta--orange:active {
-    background-color: #c54704;
+    background-color: #e04500;
     color: #0c0c0e;
 }
 
@@ -22005,12 +22005,12 @@ USED IN:
 }
 
 .cta--pink {
-    background-color: #e31c79;
+    background-color: #e60e67;
     color: #1e1e1e;
 }
 
 .cta--pink:hover, .cta--pink:focus, .cta--pink:active {
-    background-color: #c8196a;
+    background-color: #c90c5a;
     color: #1e1e1e;
 }
 
@@ -22512,12 +22512,12 @@ USED IN:
 }
 
 .scp--undergraduate .cta--theme--primary {
-    background-color: #e35205;
+    background-color: #ff4e00;
     color: #0c0c0e;
 }
 
 .scp--undergraduate .cta--theme--primary:hover, .scp--undergraduate .cta--theme--primary:focus, .scp--undergraduate .cta--theme--primary:active {
-    background-color: #c54704;
+    background-color: #e04500;
     color: #0c0c0e;
 }
 
@@ -22650,12 +22650,12 @@ USED IN:
 }
 
 .scp--executive-education .cta--theme--secondary {
-    background-color: #e31c79;
+    background-color: #e60e67;
     color: #1e1e1e;
 }
 
 .scp--executive-education .cta--theme--secondary:hover, .scp--executive-education .cta--theme--secondary:focus, .scp--executive-education .cta--theme--secondary:active {
-    background-color: #c8196a;
+    background-color: #c90c5a;
     color: #1e1e1e;
 }
 
@@ -23178,12 +23178,12 @@ USED IN:
 }
 
 .scp--undergraduate .key-info--lined {
-    border-top: 0.06rem solid #e35205;
-    border-bottom: 0.06rem solid #e35205;
+    border-top: 0.06rem solid #ff4e00;
+    border-bottom: 0.06rem solid #ff4e00;
 }
 
 .scp--undergraduate .key-info__item__value {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .scp--masters .key-info--lined {
@@ -23428,7 +23428,7 @@ USED IN:
 }
 
 .key-info__item__value {
-    color: #e35205;
+    color: #ff4e00;
     font-size: 18px;
     font-weight: 700;
 }
@@ -24884,12 +24884,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--undergraduate .card--course .txt__heading {
-    background: #e35205;
+    background: #ff4e00;
     color: #1e1e1e;
 }
 
 .scp--undergraduate .card--course .summary {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .scp--masters .card--course .txt__heading {
@@ -24974,12 +24974,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--executive-education .card--course .txt__heading {
-    background: #e31c79;
+    background: #e60e67;
     color: #ffffff;
 }
 
 .scp--executive-education .card--course .summary {
-    color: #e31c79;
+    color: #e60e67;
 }
 
 .scp--corporate .card--course .txt__heading {
@@ -24996,7 +24996,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pathway-cards--undergraduate .pathway-card__txt:only-child {
-    border-top: 0.24rem solid #e35205;
+    border-top: 0.24rem solid #ff4e00;
 }
 
 .pathway-cards--masters .pathway-card__txt:only-child {
@@ -25036,7 +25036,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pathway-cards--executive-education .pathway-card__txt:only-child {
-    border-top: 0.24rem solid #e31c79;
+    border-top: 0.24rem solid #e60e67;
 }
 
 .pathway-cards--corporate .pathway-card__txt:only-child {
@@ -25268,7 +25268,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     margin-bottom: 0.5rem;
     font-size: 1.728rem;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .highlight-info__support {
@@ -25354,7 +25354,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .ug-courses-v23 .highlighted-content-v23 {
-    border-left: 0.5rem solid #e35205;
+    border-left: 0.5rem solid #ff4e00;
     margin-bottom: 1rem;
     margin-top: 1rem;
     padding-bottom: 1rem;
@@ -25648,7 +25648,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .overlap-stat__overlay {
-    background-color: #e35205;
+    background-color: #ff4e00;
     padding: 2rem 1rem;
     font-weight: 500;
 }
@@ -27106,7 +27106,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    color: #e31c79;
+    color: #e60e67;
     line-height: 1;
     vertical-align: bottom;
     padding: 0 0.7em;
@@ -27124,7 +27124,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 [data-event-audience*='Prospective Student Events'] a a {
-    color: #e31c79;
+    color: #e60e67;
 }
 
 [data-event-audience*='Prospective Student Events'] a a:after {
@@ -27132,7 +27132,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 [data-event-audience*='Prospective Student Events'] a:hover {
-    color: #e31c79;
+    color: #e60e67;
 }
 
 [data-event-audience*='Prospective Student Events'] a:hover:before, [data-event-audience*='Prospective Student Events'] a:hover:after {
@@ -27466,7 +27466,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    color: #e35205;
+    color: #ff4e00;
     line-height: 1;
     vertical-align: bottom;
     padding: 0 0.7em;
@@ -27484,7 +27484,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 [data-event-audience*='Corporate'] a a {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 [data-event-audience*='Corporate'] a a:after {
@@ -27492,7 +27492,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 [data-event-audience*='Corporate'] a:hover {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 [data-event-audience*='Corporate'] a:hover:before, [data-event-audience*='Corporate'] a:hover:after {
@@ -28725,11 +28725,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--undergraduate .ksp__item__figure,
 .ksp__item--undergraduate .ksp__item__pre-figure {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .ksp__item--undergraduate .ksp__item__icon {
-    background-color: #e35205;
+    background-color: #ff4e00;
 }
 
 .ksp__item--undergraduate .ksp__item__icon img {
@@ -28738,11 +28738,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--undergraduate .ksp__item .ksp__item__figure,
 .scp--undergraduate .ksp__item .ksp__item__pre-figure {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .scp--undergraduate .ksp__item .ksp__item__icon {
-    background-color: #e35205;
+    background-color: #ff4e00;
 }
 
 .scp--undergraduate .ksp__item .ksp__item__icon img {
@@ -28985,11 +28985,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--executive-education .ksp__item__figure,
 .ksp__item--executive-education .ksp__item__pre-figure {
-    color: #e31c79;
+    color: #e60e67;
 }
 
 .ksp__item--executive-education .ksp__item__icon {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 .ksp__item--executive-education .ksp__item__icon img {
@@ -28998,11 +28998,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--executive-education .ksp__item .ksp__item__figure,
 .scp--executive-education .ksp__item .ksp__item__pre-figure {
-    color: #e31c79;
+    color: #e60e67;
 }
 
 .scp--executive-education .ksp__item .ksp__item__icon {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 .scp--executive-education .ksp__item .ksp__item__icon img {
@@ -29241,11 +29241,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .ug-courses-v23 .ksp-v23-wrapper--light .ksp-ordered-list--tick ul li:before {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .ug-courses-v23 .ksp-ordered-list--tick ul li:before {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .ug-courses-v23 .corner-border-v23 {
@@ -29254,7 +29254,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #e35205 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #e35205 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #e35205 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #e35205 0.75rem, transparent 0.75rem) 100% 100%;
+    background: linear-gradient(to right, #ff4e00 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #ff4e00 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #ff4e00 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #ff4e00 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
     pointer-events: none;
@@ -29275,7 +29275,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: block;
     font-family: "Font Awesome 6 Pro";
     content: "";
-    color: #e35205;
+    color: #ff4e00;
     padding-right: 0.5rem;
     position: absolute;
     left: 0;
@@ -30087,7 +30087,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--undergraduate {
-    border-bottom-color: #e35205;
+    border-bottom-color: #ff4e00;
 }
 
 .course-search__form--undergraduate .course-search__form__select:before {
@@ -30095,7 +30095,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--undergraduate .course-search__form__select select {
-    background-color: #e35205;
+    background-color: #ff4e00;
     color: #1e1e1e;
 }
 
@@ -30126,7 +30126,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--executive-education {
-    border-bottom-color: #e31c79;
+    border-bottom-color: #e60e67;
 }
 
 .course-search__form--executive-education .course-search__form__select:before {
@@ -30134,7 +30134,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .course-search__form--executive-education .course-search__form__select select {
-    background-color: #e31c79;
+    background-color: #e60e67;
     color: #ffffff;
 }
 
@@ -30194,11 +30194,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .footer-meta.section--undergraduate:before {
-    background-color: #e35205;
+    background-color: #ff4e00;
 }
 
 .footer-meta.section--executive-education:before {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 .footer-meta.section--masters:before {
@@ -30238,7 +30238,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .footer-meta.section--exec:before {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 .scp--corporate .footer-meta.section--scp-theme:before {
@@ -30246,7 +30246,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--undergraduate .footer-meta.section--scp-theme:before {
-    background-color: #e35205;
+    background-color: #ff4e00;
 }
 
 .scp--masters .footer-meta.section--scp-theme:before {
@@ -30274,7 +30274,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--executive-education .footer-meta.section--scp-theme:before {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 .scp--online-msc .footer-meta.section--scp-theme:before {
@@ -33112,7 +33112,7 @@ table tbody > tr > td:hover {
 }
 
 .scp--executive-education .timeline__collection .timeline__collection__icon {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 @keyframes timeline-bounce-inverse {
@@ -34305,7 +34305,7 @@ table tbody > tr > td:hover {
 }
 
 .scp--undergraduate blockquote::before {
-    background-color: #e35205;
+    background-color: #ff4e00;
 }
 
 .scp--masters blockquote::before {
@@ -34337,7 +34337,7 @@ table tbody > tr > td:hover {
 }
 
 .scp--executive-education blockquote::before {
-    background-color: #e31c79;
+    background-color: #e60e67;
 }
 
 blockquote {
@@ -39934,7 +39934,7 @@ div.widget-123_test_ {
 }
 
 .unibuddy-card--ug .unibuddy-card__details__name {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .unibuddy-card--ug h4:after {
@@ -40095,7 +40095,7 @@ div.widget-123_test_ {
 }
 
 .connect-card--unibuddy-ug .connect-card__details__name {
-    color: #e35205;
+    color: #ff4e00;
 }
 
 .connect-card--unibuddy-ug h4:after {
@@ -40667,7 +40667,7 @@ div.widget-123_test_ {
 .course-subject-list-undergraduate .subject-bracket-block__anglesA:before, .course-subject-list-undergraduate .subject-bracket-block__anglesA:after,
 .course-subject-list-undergraduate .subject-bracket-block__anglesB:before,
 .course-subject-list-undergraduate .subject-bracket-block__anglesB:after {
-    border-color: #e35205;
+    border-color: #ff4e00;
 }
 
 .course-subject-list-msc .subject-bracket-block__anglesA:before, .course-subject-list-msc .subject-bracket-block__anglesA:after,
@@ -40691,7 +40691,7 @@ div.widget-123_test_ {
 .course-subject-list-executive-education .subject-bracket-block__anglesA:before, .course-subject-list-executive-education .subject-bracket-block__anglesA:after,
 .course-subject-list-executive-education .subject-bracket-block__anglesB:before,
 .course-subject-list-executive-education .subject-bracket-block__anglesB:after {
-    border-color: #e31c79;
+    border-color: #e60e67;
 }
 
 .bayes-youtube-embed-container {
@@ -41908,12 +41908,12 @@ html {
 }
 
 .ug-courses-v23 .alumni-card-v23__cta__link {
-    background-color: #e35205;
+    background-color: #ff4e00;
     color: #0c0c0e;
 }
 
 .ug-courses-v23 .alumni-card-v23__cta__link:hover, .ug-courses-v23 .alumni-card-v23__cta__link:focus, .ug-courses-v23 .alumni-card-v23__cta__link:active {
-    background-color: #c54704;
+    background-color: #e04500;
     color: #0c0c0e;
 }
 
@@ -41938,7 +41938,7 @@ html {
 }
 
 .ug-courses-v23 .courses-v23__careers__alumni .alumni-card-v23__content__image:after {
-    background: #e35205;
+    background: #ff4e00;
 }
 
 .pg-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
@@ -42787,7 +42787,7 @@ html {
 
 .ug-courses-v23 .testimonials-v23,
 .scp--mba .testimonials-v23 {
-    background: #e35205;
+    background: #ff4e00;
     color: #1e1e1e;
 }
 
@@ -43441,12 +43441,12 @@ html {
 }
 
 .landing--undergraduate .cta-group .cta:nth-child(3) {
-    background-color: #e35205;
+    background-color: #ff4e00;
     color: #0c0c0e;
 }
 
 .landing--undergraduate .cta-group .cta:nth-child(3):hover, .landing--undergraduate .cta-group .cta:nth-child(3):focus, .landing--undergraduate .cta-group .cta:nth-child(3):active {
-    background-color: #c54704;
+    background-color: #e04500;
     color: #0c0c0e;
 }
 
@@ -43511,12 +43511,12 @@ html {
 }
 
 .landing--executive-education .cta-group .cta {
-    background-color: #e31c79;
+    background-color: #e60e67;
     color: #1e1e1e;
 }
 
 .landing--executive-education .cta-group .cta:hover, .landing--executive-education .cta-group .cta:focus, .landing--executive-education .cta-group .cta:active {
-    background-color: #c8196a;
+    background-color: #c90c5a;
     color: #1e1e1e;
 }
 
