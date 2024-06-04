@@ -17514,7 +17514,7 @@ svg:not(:root) {
 
 .scp--corporate .banner-vi .banner-vi__shape--left svg path,
 .scp--corporate .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #0c0c0e;
+    fill: #d61726;
 }
 
 .scp--corporate .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -17534,7 +17534,7 @@ svg:not(:root) {
 
 .banner-vi.banner-vi--theme--corporate .banner-vi__shape--left svg path,
 .banner-vi.banner-vi--theme--corporate .banner-vi__shape__mobile--left svg path {
-    fill: #0c0c0e;
+    fill: #d61726;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
