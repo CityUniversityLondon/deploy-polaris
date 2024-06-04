@@ -22062,12 +22062,12 @@ USED IN:
 
 .cta--skyblue {
     background-color: #14cef5;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .cta--skyblue:hover, .cta--skyblue:focus, .cta--skyblue:active {
     background-color: #0abce1;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .cta--shadow {
@@ -22108,12 +22108,12 @@ USED IN:
 
 .cta--picton {
     background-color: #14cef5;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .cta--picton:hover, .cta--picton:focus, .cta--picton:active {
     background-color: #0abce1;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .cta--black {
@@ -22687,12 +22687,12 @@ USED IN:
 
 .scp--phd .cta--theme--primary {
     background-color: #14cef5;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .scp--phd .cta--theme--primary:hover, .scp--phd .cta--theme--primary:focus, .scp--phd .cta--theme--primary:active {
     background-color: #0abce1;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .scp--phd .cta--theme--secondary {
@@ -43508,12 +43508,12 @@ html {
 
 .landing--phd .cta-group .cta:nth-child(3) {
     background-color: #14cef5;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .landing--phd .cta-group .cta:nth-child(3):hover, .landing--phd .cta-group .cta:nth-child(3):focus, .landing--phd .cta-group .cta:nth-child(3):active {
     background-color: #0abce1;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .landing--executive-phd .cta-group .cta {
@@ -43528,12 +43528,12 @@ html {
 
 .landing--executive-phd .cta-group .cta:nth-child(3) {
     background-color: #14cef5;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .landing--executive-phd .cta-group .cta:nth-child(3):hover, .landing--executive-phd .cta-group .cta:nth-child(3):focus, .landing--executive-phd .cta-group .cta:nth-child(3):active {
     background-color: #0abce1;
-    color: #ffffff;
+    color: #1e1e1e;
 }
 
 .landing--executive-education .cta-group .cta {
