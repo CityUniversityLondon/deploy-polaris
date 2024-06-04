@@ -19766,7 +19766,7 @@ svg:not(:root) {
 
 .banner-vi--image .banner-vi__shape--left svg path,
 .banner-vi--image .banner-vi__shape__mobile--left svg path {
-    fill: #1e1e1e;
+    fill: #d61726;
 }
 
 .banner-vi--image .banner-vi__content--right {
@@ -27905,6 +27905,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .promo-cta.promo-cta--small {
     padding: 5px 15px;
+    background-color: #ffffff;
 }
 
 .promo-cta.promo-cta--small h2 {
