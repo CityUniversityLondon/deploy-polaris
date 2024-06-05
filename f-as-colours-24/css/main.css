@@ -25630,6 +25630,17 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     line-height: 2.5rem;
 }
 
+.entry-req-v23__heading--highlight {
+    color: #1e1e1e;
+    background-color: #f1b434;
+    box-shadow: 0.5rem 0 0 #f1b434, -0.5rem 0 0 #f1b434;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    margin-left: 0.5rem;
+    line-height: 2.5rem;
+}
+
 .ug-courses-v23 .text-highlight {
     color: #1e1e1e;
     background-color: #ff4e00;
