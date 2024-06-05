@@ -10655,13 +10655,15 @@ svg:not(:root) {
     margin-bottom: 2rem;
     padding-top: 2rem;
     padding-right: 2.5rem;
-    padding-left: 2.5rem;
+}
+
+.courses-v23__apply .courses-v23__apply__promo-content .bracket-block__anglesA {
+    display: none;
 }
 
 @media (min-width: 901px) {
     .courses-v23__apply .courses-v23__apply__promo-content {
         padding-top: 3rem;
-        padding-left: 5rem;
         padding-bottom: 3rem;
         padding-right: 10rem;
     }
