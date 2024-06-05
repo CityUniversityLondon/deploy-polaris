@@ -10370,6 +10370,10 @@ svg:not(:root) {
     background-color: #efa917;
 }
 
+.ug-courses-v23 .cta--v23--ki {
+    border: 0.0625rem solid #1e1e1e;
+}
+
 .courses-v23__summary .ksp-v23-wrapper {
     grid-column: 1 / -1;
 }
