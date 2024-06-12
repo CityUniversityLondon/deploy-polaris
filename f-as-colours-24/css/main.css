@@ -10849,6 +10849,7 @@ svg:not(:root) {
     background-color: #1e1e1e;
     color: #ffffff;
     border: 1px solid #ffffff;
+    border: 0.06rem solid #1e1e1e;
 }
 
 .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
@@ -10864,6 +10865,10 @@ svg:not(:root) {
 .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
     outline: 3px solid #ffffff;
     outline-offset: 3px;
+}
+
+.ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
+    border: #3d3d3d;
 }
 
 .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active, .ug-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
@@ -11174,6 +11179,7 @@ svg:not(:root) {
     background-color: #1e1e1e;
     color: #ffffff;
     border: 1px solid #ffffff;
+    border: 0.06rem solid #1e1e1e;
 }
 
 .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
@@ -11189,6 +11195,10 @@ svg:not(:root) {
 .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
     outline: 3px solid #ffffff;
     outline-offset: 3px;
+}
+
+.mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
+    border: #3d3d3d;
 }
 
 .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active, .mba-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
@@ -12074,6 +12084,10 @@ svg:not(:root) {
 .ug-courses-v23 .courses-v23__contact__cta a:focus {
     outline: 3px solid #ffffff;
     outline-offset: 3px;
+}
+
+.ug-courses-v23 .courses-v23__contact__cta a:active, .ug-courses-v23 .courses-v23__contact__cta a:focus {
+    outline-color: #1e1e1e;
 }
 
 .pg-courses-v23 .courses-v23__contact__cta a {
