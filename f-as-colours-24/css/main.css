@@ -10449,7 +10449,7 @@ svg:not(:root) {
 }
 
 .mba-courses-v23 .courses-v23__summary .summary__profile {
-    border-color: #2e767a;
+    border-color: #12E97A;
 }
 
 @media (min-width: 901px) {
@@ -11662,7 +11662,7 @@ svg:not(:root) {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, #2e767a 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #2e767a 0.75rem, transparent 0.75rem) 100% 100%;
+    background: linear-gradient(to left, #12E97A 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #12E97A 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
     pointer-events: none;
@@ -25555,7 +25555,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .mba-courses-v23 .highlighted-content-v23 {
-    border-left: 0.5rem solid #2e767a;
+    border-left: 0.5rem solid #12E97A;
     margin-bottom: 1rem;
     margin-top: 1rem;
     padding-bottom: 1rem;
@@ -29446,7 +29446,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .mba-courses-v23 .ksp-ordered-list--tick ul li:before {
-    color: #2e767a;
+    color: #12E97A;
 }
 
 .mba-courses-v23 .corner-border-v23 {
@@ -29455,7 +29455,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #2e767a 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #2e767a 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #2e767a 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #2e767a 0.75rem, transparent 0.75rem) 100% 100%;
+    background: linear-gradient(to right, #12E97A 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to bottom, #12E97A 0.75rem, transparent 0.75rem) 0 0, linear-gradient(to left, #12E97A 0.75rem, transparent 0.75rem) 100% 100%, linear-gradient(to top, #12E97A 0.75rem, transparent 0.75rem) 100% 100%;
     background-repeat: no-repeat;
     background-size: 1.5rem 1.5rem;
     pointer-events: none;
@@ -29476,7 +29476,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     display: block;
     font-family: "Font Awesome 6 Pro";
     content: "";
-    color: #2e767a;
+    color: #12E97A;
     padding-right: 0.5rem;
     position: absolute;
     left: 0;
@@ -41366,39 +41366,7 @@ html {
     width: 4rem;
 }
 
-.ug-courses-v23 .unibuddy-card-v23__cta__link {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-}
-
-.ug-courses-v23 .unibuddy-card-v23__cta__link:hover, .ug-courses-v23 .unibuddy-card-v23__cta__link:active {
-    background-color: #3d3d3d;
-    color: #ffffff;
-}
-
-.ug-courses-v23 .unibuddy-card-v23__cta__link:active {
-    outline: 2px dotted #ffffff;
-    outline-offset: 3px;
-}
-
-.ug-courses-v23 .unibuddy-card-v23__cta__link:focus {
-    outline: 3px solid #ffffff;
-    outline-offset: 3px;
-}
-
-.pg-courses-v23 .unibuddy-card-v23__cta__link {
-    background-color: #002b49;
-    color: #ffffff;
-    border: 0.12rem solid #ececec;
-}
-
-.pg-courses-v23 .unibuddy-card-v23__cta__link:hover, .pg-courses-v23 .unibuddy-card-v23__cta__link:focus, .pg-courses-v23 .unibuddy-card-v23__cta__link:active {
-    background-color: #00192a;
-    color: #ffffff;
-}
-
-.mba-courses-v23 .unibuddy-card-v23__cta__link {
+.unibuddy-card-v23__cta__link {
     font-size: 1rem;
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
@@ -41408,39 +41376,29 @@ html {
     color: #ffffff;
 }
 
-.mba-courses-v23 .unibuddy-card-v23__cta__link:hover, .mba-courses-v23 .unibuddy-card-v23__cta__link:focus, .mba-courses-v23 .unibuddy-card-v23__cta__link:active {
+.unibuddy-card-v23__cta__link:hover, .unibuddy-card-v23__cta__link:focus, .unibuddy-card-v23__cta__link:active {
     outline-offset: 0.1875rem;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .mba-courses-v23 .unibuddy-card-v23__cta__link {
+    .unibuddy-card-v23__cta__link {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-    .mba-courses-v23 .unibuddy-card-v23__cta__link {
+    .unibuddy-card-v23__cta__link {
         font-size: 92px;
     }
 }
 
-.mba-courses-v23 .unibuddy-card-v23__cta__link:hover, .mba-courses-v23 .unibuddy-card-v23__cta__link:focus, .mba-courses-v23 .unibuddy-card-v23__cta__link:active {
+.unibuddy-card-v23__cta__link:hover, .unibuddy-card-v23__cta__link:focus, .unibuddy-card-v23__cta__link:active {
     background-color: #3d3d3d;
     color: #ffffff;
 }
 
-.ug-courses-v23 .unibuddy-card-v23__content__image:after,
-.ug-courses-v23 .unibuddy-card-v23__content__title:after {
-    background: #d0c8c5;
-}
-
-.pg-courses-v23 .unibuddy-card-v23__content__image:after,
-.pg-courses-v23 .unibuddy-card-v23__content__title:after {
-    background: #002b49;
-}
-
-.mba-courses-v23 .unibuddy-card-v23__content__image:after,
-.mba-courses-v23 .unibuddy-card-v23__content__title:after {
+.unibuddy-card-v23__content__image:after,
+.unibuddy-card-v23__content__title:after {
     background: #1e1e1e;
 }
 
@@ -42656,7 +42614,7 @@ html {
 }
 
 .pg-courses-v23 .square-animation-v23__square:before {
-    background: #3457F1;
+    background: #666666;
 }
 
 .mba-courses-v23 .square-animation-v23__square:before {
