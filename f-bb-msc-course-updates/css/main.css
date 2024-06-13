@@ -12205,7 +12205,7 @@ svg:not(:root) {
     color: #ffffff;
 }
 
-.mba-courses-v23 .courses-v23__contact__cta a {
+.courses-v23 .courses-v23__contact__cta a {
     font-size: 1rem;
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
@@ -12215,56 +12215,56 @@ svg:not(:root) {
     color: #ffffff;
 }
 
-.mba-courses-v23 .courses-v23__contact__cta a:hover, .mba-courses-v23 .courses-v23__contact__cta a:focus, .mba-courses-v23 .courses-v23__contact__cta a:active {
+.courses-v23 .courses-v23__contact__cta a:hover, .courses-v23 .courses-v23__contact__cta a:focus, .courses-v23 .courses-v23__contact__cta a:active {
     outline-offset: 0.1875rem;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .mba-courses-v23 .courses-v23__contact__cta a {
+    .courses-v23 .courses-v23__contact__cta a {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-    .mba-courses-v23 .courses-v23__contact__cta a {
+    .courses-v23 .courses-v23__contact__cta a {
         font-size: 92px;
     }
 }
 
-.mba-courses-v23 .courses-v23__contact__cta a:hover, .mba-courses-v23 .courses-v23__contact__cta a:focus, .mba-courses-v23 .courses-v23__contact__cta a:active {
+.courses-v23 .courses-v23__contact__cta a:hover, .courses-v23 .courses-v23__contact__cta a:focus, .courses-v23 .courses-v23__contact__cta a:active {
     background-color: #3d3d3d;
     color: #ffffff;
 }
 
-.mba-courses-v23 .courses-v23__contact__wrapper {
+.courses-v23 .courses-v23__contact__wrapper {
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 901px) {
-    .mba-courses-v23 .courses-v23__contact__wrapper {
+    .courses-v23 .courses-v23__contact__wrapper {
         flex-direction: row;
     }
 }
 
 @media (min-width: 901px) {
-    .mba-courses-v23 .courses-v23__contact__container {
+    .courses-v23 .courses-v23__contact__container {
         margin-top: 2rem;
         margin-bottom: 3rem;
     }
 }
 
-.mba-courses-v23 .courses-v23__contact__container__text {
+.courses-v23 .courses-v23__contact__container__text {
     flex-grow: 1;
 }
 
-.mba-courses-v23 .courses-v23__contact__container__cta {
+.courses-v23 .courses-v23__contact__container__cta {
     margin-left: 2rem;
     flex-grow: 5;
 }
 
 @media (max-width: 900px) {
-    .mba-courses-v23 .courses-v23__contact__container__cta {
+    .courses-v23 .courses-v23__contact__container__cta {
         margin-top: 2rem;
         margin-left: 0;
     }
