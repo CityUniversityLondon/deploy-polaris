@@ -11508,8 +11508,10 @@ svg:not(:root) {
     box-shadow: 0 0 0.75rem rgba(12, 12, 14, 0.3);
 }
 
-.courses-v23 .courses-v23__related-courses__heading {
-    margin-top: 1.5rem;
+@media (min-width: 901px) {
+    .courses-v23 .courses-v23__related-courses__heading {
+        margin-top: 1.5rem;
+    }
 }
 
 .js .slider-v23--related-courses__wrap {
@@ -11607,13 +11609,19 @@ svg:not(:root) {
 .ug-courses-v23 .courses-v23__related-courses:before {
     content: '';
     position: absolute;
-    height: 4.5rem;
+    height: 2.5rem;
     width: 50vw;
     background-color: #f2f2f2;
     top: 0;
     display: flex;
     z-index: 2;
     left: 50%;
+}
+
+@media (min-width: 901px) {
+    .ug-courses-v23 .courses-v23__related-courses:before {
+        height: 4.5rem;
+    }
 }
 
 .ug-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
@@ -11693,13 +11701,19 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__related-courses:before {
     content: '';
     position: absolute;
-    height: 4.5rem;
+    height: 2.5rem;
     width: 50vw;
     background-color: #f2f2f2;
     top: 0;
     display: flex;
     z-index: 2;
     left: 50%;
+}
+
+@media (min-width: 901px) {
+    .pg-courses-v23 .courses-v23__related-courses:before {
+        height: 4.5rem;
+    }
 }
 
 .pg-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
@@ -11779,13 +11793,19 @@ svg:not(:root) {
 .mba-courses-v23 .courses-v23__related-courses:before {
     content: '';
     position: absolute;
-    height: 4.5rem;
+    height: 2.5rem;
     width: 50vw;
     background-color: #f2f2f2;
     top: 0;
     display: flex;
     z-index: 2;
     left: 50%;
+}
+
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__related-courses:before {
+        height: 4.5rem;
+    }
 }
 
 .mba-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
@@ -23922,7 +23942,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__prev {
     text-align: left;
-    border-right: 2px solid #666666;
+    border-right: 2px solid #002b49;
     padding-left: 26px;
     padding-right: 0.5rem;
     margin-right: auto;
@@ -23944,7 +23964,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__next {
     text-align: right;
-    border-left: 2px solid #666666;
+    border-left: 2px solid #002b49;
     padding-right: 26px;
     padding-left: 0.5rem;
     margin-left: auto;
@@ -23972,7 +23992,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .popup-def-list-group__dlg.popup-def-list-group__dlg--allports .popup-def-list-group__prevnext__prev {
-    border-right: 2px solid #006699;
+    border-right: 2px solid #002b49;
 }
 
 .external-img-link-strip {
