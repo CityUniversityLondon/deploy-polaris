@@ -26424,6 +26424,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var scrollPosY;
+function noScroll(scrollPosY) {
+  console.log('no scroll active');
+  window.scrollTo(0, scrollPosY);
+}
+function noScrollWrapper() {
+  noScroll(scrollPosY);
+}
+;
 function closeDialog() {
   var focusBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
   if (current.dlg) {
@@ -26436,6 +26445,7 @@ function closeDialog() {
     current.focusBackTo = null;
   }
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').removeClass('no-scroll');
+  window.removeEventListener('scroll', noScrollWrapper);
 }
 var DEFAULT_OPTS = {
   closeOnOverlay: true,
@@ -26486,6 +26496,8 @@ function openModalDialog(title, content) {
   dlg.focus();
   current.focusTrap = focus_trap__WEBPACK_IMPORTED_MODULE_2___default()(dlg[0]).activate();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').addClass('no-scroll');
+  scrollPosY = window.scrollY;
+  window.addEventListener('scroll', noScrollWrapper);
 }
 
 /***/ }),

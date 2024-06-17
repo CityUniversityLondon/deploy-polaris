@@ -25771,10 +25771,6 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 /*html*/
-.no-scroll {
-    overflow-y: hidden;
-}
-
 @media (max-width: 320px) {
     .no-scroll--below-min {
         overflow-y: hidden;
