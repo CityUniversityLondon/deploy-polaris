@@ -30426,27 +30426,27 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .footer-meta.section--online-msc:before {
-    background-color: #002b49;
+    background-color: #3457F1;
 }
 
 .footer-meta.section--mba:before {
-    background-color: #2e767a;
+    background-color: #12E97A;
 }
 
 .footer-meta.section--demba:before {
-    background-color: #2e767a;
+    background-color: #12E97A;
 }
 
 .footer-meta.section--emba:before {
-    background-color: #2e767a;
+    background-color: #12E97A;
 }
 
 .footer-meta.section--cce:before {
-    background-color: #8b2433;
+    background-color: #a9a19c;
 }
 
 .footer-meta.section--exec:before {
-    background-color: #93328e;
+    background-color: #e60e67;
 }
 
 .scp--corporate .footer-meta.section--scp-theme:before {
