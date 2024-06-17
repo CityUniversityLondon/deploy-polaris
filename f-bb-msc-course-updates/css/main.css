@@ -10191,7 +10191,7 @@ svg:not(:root) {
     font-weight: 700;
     background-color: #ffffff;
     color: #1e1e1e;
-    border: 0.12rem solid #1e1e1e;
+    border: 0.12rem solid #ffffff;
 }
 
 .pg-courses-v23 .cta--v23--ki:hover, .pg-courses-v23 .cta--v23--ki:focus, .pg-courses-v23 .cta--v23--ki:active {
@@ -10224,6 +10224,7 @@ svg:not(:root) {
     font-weight: 700;
     background-color: #3457F1;
     color: #ffffff;
+    border: 0.12rem solid #4a69f2;
 }
 
 .pg-courses-v23 .cta--v23--ki--apply:hover, .pg-courses-v23 .cta--v23--ki--apply:focus, .pg-courses-v23 .cta--v23--ki--apply:active {
@@ -10245,7 +10246,7 @@ svg:not(:root) {
 .pg-courses-v23 .cta--v23--ki--apply:hover, .pg-courses-v23 .cta--v23--ki--apply:focus, .pg-courses-v23 .cta--v23--ki--apply:active {
     color: #ffffff;
     background-color: #173fef;
-    outline-color: #4a69f2;
+    outline-color: #ffffff;
 }
 
 .pg-courses-v23 .cta--v23--ki--clearing {
@@ -11068,6 +11069,7 @@ svg:not(:root) {
     font-weight: 700;
     background-color: #3457F1;
     color: #ffffff;
+    border: 0.12rem solid #4a69f2;
 }
 
 .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
@@ -11089,11 +11091,7 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
     color: #ffffff;
     background-color: #173fef;
-    outline-color: #4a69f2;
-}
-
-.pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
-    outline-color: #4a69f2;
+    outline-color: #ffffff;
 }
 
 .mba-courses-v23 .courses-v23__apply {
@@ -22623,7 +22621,7 @@ USED IN:
     font-weight: 700;
     background-color: #ffffff;
     color: #1e1e1e;
-    border: 0.12rem solid #1e1e1e;
+    border: 0.12rem solid #ffffff;
 }
 
 .cta--pg-v23--ki:hover, .cta--pg-v23--ki:focus, .cta--pg-v23--ki:active {
@@ -22656,6 +22654,7 @@ USED IN:
     font-weight: 700;
     background-color: #3457F1;
     color: #ffffff;
+    border: 0.12rem solid #4a69f2;
 }
 
 .cta--pg-v23--ki--apply:hover, .cta--pg-v23--ki--apply:focus, .cta--pg-v23--ki--apply:active {
@@ -22677,7 +22676,7 @@ USED IN:
 .cta--pg-v23--ki--apply:hover, .cta--pg-v23--ki--apply:focus, .cta--pg-v23--ki--apply:active {
     color: #ffffff;
     background-color: #173fef;
-    outline-color: #4a69f2;
+    outline-color: #ffffff;
 }
 
 .cta--v23-round {
@@ -42164,31 +42163,7 @@ html {
     background: #1e1e1e;
 }
 
-.ug-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
-    background: linear-gradient(to right, #ff4e00 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #ff4e00 3rem, transparent 3rem) 0% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-size: 3rem 3rem;
-}
-
-.pg-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
-    background: linear-gradient(to right, #3457F1 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #3457F1 3rem, transparent 3rem) 0% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-size: 3rem 3rem;
-}
-
-.mba-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
-    background: linear-gradient(to right, #12E97A 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #12E97A 3rem, transparent 3rem) 0% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-size: 3rem 3rem;
-}
-
-.mba-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
+.courses-v23 .courses-v23__careers__alumni .slider-v23__container {
     background: linear-gradient(to right, #666666 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #666666 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
     background-size: auto, auto;
