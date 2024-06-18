@@ -26439,7 +26439,6 @@ function closeDialog() {
     current.focusBackTo.focus();
     current.focusBackTo = null;
   }
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').removeClass('no-scroll');
   window.removeEventListener('scroll', noScroll);
 }
 var DEFAULT_OPTS = {
@@ -26490,7 +26489,6 @@ function openModalDialog(title, content) {
   }
   dlg.focus();
   current.focusTrap = focus_trap__WEBPACK_IMPORTED_MODULE_2___default()(dlg[0]).activate();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').addClass('no-scroll');
   scrollPosY = window.scrollY;
   window.addEventListener('scroll', noScroll);
 }
