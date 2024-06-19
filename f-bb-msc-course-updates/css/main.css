@@ -23941,8 +23941,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__prev {
     text-align: left;
-    border-right: 2px solid #002b49;
-    padding-left: 26px;
+    border-right: 0.125rem solid #002b49;
+    padding-left: 1.65rem;
     padding-right: 0.5rem;
     margin-right: auto;
 }
@@ -23963,14 +23963,14 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__next {
     text-align: right;
-    border-left: 2px solid #002b49;
+    border-left: 0.125rem solid #002b49;
     padding-right: 26px;
     padding-left: 0.5rem;
     margin-left: auto;
 }
 
 .popup-def-list-group__prevnext__prev + .popup-def-list-group__prevnext__next {
-    border-left: 2px solid transparent;
+    border-left: 0.125rem solid transparent;
 }
 
 .popup-def-list-group__prevnext__next:before {
@@ -23987,11 +23987,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .popup-def-list-group__dlg.popup-def-list-group__dlg--yellow .popup-def-list-group__prevnext__prev {
-    border-right: 2px solid #f1b434;
+    border-right: 0.125rem solid #f1b434;
 }
 
 .popup-def-list-group__dlg.popup-def-list-group__dlg--allports .popup-def-list-group__prevnext__prev {
-    border-right: 2px solid #002b49;
+    border-right: 0.125rem solid #002b49;
 }
 
 .external-img-link-strip {
