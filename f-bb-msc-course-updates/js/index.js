@@ -27715,7 +27715,6 @@ function findItems(widget) {
 }
 function prepareItems(widget, items) {
   var variations = Object(_js_utils_variations__WEBPACK_IMPORTED_MODULE_6__["identifyVariations"])(widget, className);
-  console.log(widget);
   var open = function open(i, identifyFocusBackTo) {
     var infinateLoop;
     var _items$i = items[i],
