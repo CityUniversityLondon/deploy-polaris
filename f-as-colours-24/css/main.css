@@ -336,6 +336,10 @@
     background-color: #3457F1;
 }
 
+.background--ultramarine-blue {
+    background-color: #4a69f2;
+}
+
 .background--prussian {
     background-color: #002b49;
 }
@@ -10185,8 +10189,8 @@ svg:not(:root) {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #002b49;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #1e1e1e;
     border: 0.12rem solid #ffffff;
 }
 
@@ -10207,8 +10211,8 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .cta--v23--ki:hover, .pg-courses-v23 .cta--v23--ki:focus, .pg-courses-v23 .cta--v23--ki:active {
-    background-color: #00192a;
-    color: #ffffff;
+    background-color: #f0f0f0;
+    color: #1e1e1e;
     outline-color: #ffffff;
 }
 
@@ -10218,8 +10222,9 @@ svg:not(:root) {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #ffffff;
-    color: #1e1e1e;
+    background-color: #3457F1;
+    color: #ffffff;
+    border: 0.12rem solid #4a69f2;
 }
 
 .pg-courses-v23 .cta--v23--ki--apply:hover, .pg-courses-v23 .cta--v23--ki--apply:focus, .pg-courses-v23 .cta--v23--ki--apply:active {
@@ -10239,7 +10244,8 @@ svg:not(:root) {
 }
 
 .pg-courses-v23 .cta--v23--ki--apply:hover, .pg-courses-v23 .cta--v23--ki--apply:focus, .pg-courses-v23 .cta--v23--ki--apply:active {
-    background-color: #f0f0f0;
+    color: #ffffff;
+    background-color: #173fef;
     outline-color: #ffffff;
 }
 
@@ -10715,7 +10721,7 @@ svg:not(:root) {
         display: flex;
         -moz-column-gap: 1rem;
              column-gap: 1rem;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 }
 
@@ -11056,18 +11062,35 @@ svg:not(:root) {
 
 .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta {
     width: 100%;
-    background-color: white;
-    color: #1e1e1e;
-    border: 0.12rem solid #ececec;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    background-color: #3457F1;
+    color: #ffffff;
+    border: 0.12rem solid #4a69f2;
 }
 
 .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
-    background-color: #ececec;
-    color: #1e1e1e;
-    border: 0.12rem solid white;
+    outline-offset: 0.1875rem;
 }
 
-.pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus {
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta {
+        font-size: 92px;
+    }
+}
+
+.pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:hover, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:focus, .pg-courses-v23 .courses-v23__apply .courses-v23__apply__promo-content__cta:active {
+    color: #ffffff;
+    background-color: #173fef;
     outline-color: #ffffff;
 }
 
@@ -11483,8 +11506,10 @@ svg:not(:root) {
     box-shadow: 0 0 0.75rem rgba(12, 12, 14, 0.3);
 }
 
-.courses-v23 .courses-v23__related-courses__heading {
-    margin-top: 1.5rem;
+@media (min-width: 901px) {
+    .courses-v23 .courses-v23__related-courses__heading {
+        margin-top: 1.5rem;
+    }
 }
 
 .js .slider-v23--related-courses__wrap {
@@ -11582,13 +11607,19 @@ svg:not(:root) {
 .ug-courses-v23 .courses-v23__related-courses:before {
     content: '';
     position: absolute;
-    height: 4.5rem;
+    height: 2.5rem;
     width: 50vw;
     background-color: #f2f2f2;
     top: 0;
     display: flex;
     z-index: 2;
     left: 50%;
+}
+
+@media (min-width: 901px) {
+    .ug-courses-v23 .courses-v23__related-courses:before {
+        height: 4.5rem;
+    }
 }
 
 .ug-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
@@ -11668,13 +11699,19 @@ svg:not(:root) {
 .pg-courses-v23 .courses-v23__related-courses:before {
     content: '';
     position: absolute;
-    height: 4.5rem;
+    height: 2.5rem;
     width: 50vw;
     background-color: #f2f2f2;
     top: 0;
     display: flex;
     z-index: 2;
     left: 50%;
+}
+
+@media (min-width: 901px) {
+    .pg-courses-v23 .courses-v23__related-courses:before {
+        height: 4.5rem;
+    }
 }
 
 .pg-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
@@ -11754,13 +11791,19 @@ svg:not(:root) {
 .mba-courses-v23 .courses-v23__related-courses:before {
     content: '';
     position: absolute;
-    height: 4.5rem;
+    height: 2.5rem;
     width: 50vw;
     background-color: #f2f2f2;
     top: 0;
     display: flex;
     z-index: 2;
     left: 50%;
+}
+
+@media (min-width: 901px) {
+    .mba-courses-v23 .courses-v23__related-courses:before {
+        height: 4.5rem;
+    }
 }
 
 .mba-courses-v23 .courses-v23__related-courses .courses-v23__related-courses__container {
@@ -12180,7 +12223,7 @@ svg:not(:root) {
     color: #ffffff;
 }
 
-.mba-courses-v23 .courses-v23__contact__cta a {
+.courses-v23 .courses-v23__contact__cta a {
     font-size: 1rem;
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
@@ -12190,56 +12233,56 @@ svg:not(:root) {
     color: #ffffff;
 }
 
-.mba-courses-v23 .courses-v23__contact__cta a:hover, .mba-courses-v23 .courses-v23__contact__cta a:focus, .mba-courses-v23 .courses-v23__contact__cta a:active {
+.courses-v23 .courses-v23__contact__cta a:hover, .courses-v23 .courses-v23__contact__cta a:focus, .courses-v23 .courses-v23__contact__cta a:active {
     outline-offset: 0.1875rem;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .mba-courses-v23 .courses-v23__contact__cta a {
+    .courses-v23 .courses-v23__contact__cta a {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-    .mba-courses-v23 .courses-v23__contact__cta a {
+    .courses-v23 .courses-v23__contact__cta a {
         font-size: 92px;
     }
 }
 
-.mba-courses-v23 .courses-v23__contact__cta a:hover, .mba-courses-v23 .courses-v23__contact__cta a:focus, .mba-courses-v23 .courses-v23__contact__cta a:active {
+.courses-v23 .courses-v23__contact__cta a:hover, .courses-v23 .courses-v23__contact__cta a:focus, .courses-v23 .courses-v23__contact__cta a:active {
     background-color: #3d3d3d;
     color: #ffffff;
 }
 
-.mba-courses-v23 .courses-v23__contact__wrapper {
+.courses-v23 .courses-v23__contact__wrapper {
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 901px) {
-    .mba-courses-v23 .courses-v23__contact__wrapper {
+    .courses-v23 .courses-v23__contact__wrapper {
         flex-direction: row;
     }
 }
 
 @media (min-width: 901px) {
-    .mba-courses-v23 .courses-v23__contact__container {
+    .courses-v23 .courses-v23__contact__container {
         margin-top: 2rem;
         margin-bottom: 3rem;
     }
 }
 
-.mba-courses-v23 .courses-v23__contact__container__text {
+.courses-v23 .courses-v23__contact__container__text {
     flex-grow: 1;
 }
 
-.mba-courses-v23 .courses-v23__contact__container__cta {
+.courses-v23 .courses-v23__contact__container__cta {
     margin-left: 2rem;
     flex-grow: 5;
 }
 
 @media (max-width: 900px) {
-    .mba-courses-v23 .courses-v23__contact__container__cta {
+    .courses-v23 .courses-v23__contact__container__cta {
         margin-top: 2rem;
         margin-left: 0;
     }
@@ -22576,8 +22619,8 @@ USED IN:
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #002b49;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #1e1e1e;
     border: 0.12rem solid #ffffff;
 }
 
@@ -22598,8 +22641,8 @@ USED IN:
 }
 
 .cta--pg-v23--ki:hover, .cta--pg-v23--ki:focus, .cta--pg-v23--ki:active {
-    background-color: #00192a;
-    color: #ffffff;
+    background-color: #f0f0f0;
+    color: #1e1e1e;
     outline-color: #ffffff;
 }
 
@@ -22609,8 +22652,9 @@ USED IN:
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #ffffff;
-    color: #1e1e1e;
+    background-color: #3457F1;
+    color: #ffffff;
+    border: 0.12rem solid #4a69f2;
 }
 
 .cta--pg-v23--ki--apply:hover, .cta--pg-v23--ki--apply:focus, .cta--pg-v23--ki--apply:active {
@@ -22630,7 +22674,8 @@ USED IN:
 }
 
 .cta--pg-v23--ki--apply:hover, .cta--pg-v23--ki--apply:focus, .cta--pg-v23--ki--apply:active {
-    background-color: #f0f0f0;
+    color: #ffffff;
+    background-color: #173fef;
     outline-color: #ffffff;
 }
 
@@ -23843,6 +23888,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext {
     margin-top: 3rem;
+    display: flex;
 }
 
 .popup-def-list-group__prevnext a {
@@ -23895,9 +23941,10 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__prev {
     text-align: left;
-    border-right: 2px solid #666666;
-    padding-left: 26px;
+    border-right: 0.125rem solid #002b49;
+    padding-left: 1.65rem;
     padding-right: 0.5rem;
+    margin-right: auto;
 }
 
 .popup-def-list-group__prevnext__prev:before {
@@ -23916,9 +23963,14 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .popup-def-list-group__prevnext__next {
     text-align: right;
-    border-left: 2px solid transparent;
+    border-left: 0.125rem solid #002b49;
     padding-right: 26px;
     padding-left: 0.5rem;
+    margin-left: auto;
+}
+
+.popup-def-list-group__prevnext__prev + .popup-def-list-group__prevnext__next {
+    border-left: 0.125rem solid transparent;
 }
 
 .popup-def-list-group__prevnext__next:before {
@@ -23935,11 +23987,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .popup-def-list-group__dlg.popup-def-list-group__dlg--yellow .popup-def-list-group__prevnext__prev {
-    border-right: 2px solid #f1b434;
+    border-right: 0.125rem solid #f1b434;
 }
 
 .popup-def-list-group__dlg.popup-def-list-group__dlg--allports .popup-def-list-group__prevnext__prev {
-    border-right: 2px solid #006699;
+    border-right: 0.125rem solid #002b49;
 }
 
 .external-img-link-strip {
@@ -42111,31 +42163,7 @@ html {
     background: #1e1e1e;
 }
 
-.ug-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
-    background: linear-gradient(to right, #ff4e00 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #ff4e00 3rem, transparent 3rem) 0% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-size: 3rem 3rem;
-}
-
-.pg-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
-    background: linear-gradient(to right, #3457F1 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #3457F1 3rem, transparent 3rem) 0% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-size: 3rem 3rem;
-}
-
-.mba-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
-    background: linear-gradient(to right, #12E97A 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #12E97A 3rem, transparent 3rem) 0% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, auto;
-    background-repeat: no-repeat;
-    background-size: 3rem 3rem;
-}
-
-.mba-courses-v23 .courses-v23__careers__alumni .slider-v23__container {
+.courses-v23 .courses-v23__careers__alumni .slider-v23__container {
     background: linear-gradient(to right, #666666 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #666666 3rem, transparent 3rem) 0% 100%;
     background-repeat: repeat, repeat;
     background-size: auto, auto;
@@ -42145,7 +42173,7 @@ html {
 
 @media screen {
     .js .accordion-v23 .accordion-v23__section:last-child button {
-        border-bottom: none;
+        border-bottom-color: transparent;
     }
     .js .accordion-v23 .accordion-v23__section[data-open='true'] {
         position: relative;
