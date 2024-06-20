@@ -16356,14 +16356,14 @@ svg:not(:root) {
     color: #ffffff;
 }
 
-.banner--theme--cce .banner__content h1 {
-    background-color: #8b2433;
+.banner--theme--centres .banner__content h1 {
+    background-color: #d61726;
     color: #ffffff;
 }
 
-.banner--theme--cce .banner__content .banner__content__text__subtitle {
-    background-color: #a9a19c;
-    color: #1e1e1e;
+.banner--theme--centres .banner__content .banner__content__text__subtitle {
+    background-color: #8b2433;
+    color: #ffffff;
 }
 
 .scp--corporate .banner--theme--corporate .banner__content h1 {
@@ -16520,18 +16520,18 @@ svg:not(:root) {
     background-color: #2e767a;
 }
 
-.scp--cce .banner--theme--corporate .banner__content h1 {
+.scp--centres .banner--theme--corporate .banner__content h1 {
+    background-color: #d61726;
+    color: #ffffff;
+}
+
+.scp--centres .banner--theme--corporate .banner__content .banner__content__text__subtitle {
     background-color: #8b2433;
     color: #ffffff;
 }
 
-.scp--cce .banner--theme--corporate .banner__content .banner__content__text__subtitle {
-    background-color: #a9a19c;
-    color: #1e1e1e;
-}
-
-.scp--cce .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
-    background-color: #8b2433;
+.scp--centres .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    background-color: #d61726;
 }
 
 .banner__standfirst__content {
@@ -17098,19 +17098,19 @@ svg:not(:root) {
 }
 
 @media (max-width: 650px) {
-    .banner-new.banner--theme--cce .banner__content__text__item:first-child,
-    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__text__item:first-child {
-        background-color: #8b2433;
+    .banner-new.banner--theme--centres .banner__content__text__item:first-child,
+    .banner-no-img-varieties.banner-no-img.banner--theme--centres .banner__content__text__item:first-child {
+        background-color: #d61726;
     }
 }
 
 @media (max-width: 650px) {
-    .banner-new.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:before,
-    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:before {
-        background-color: #8b2433;
+    .banner-new.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:before,
+    .banner-no-img-varieties.banner-no-img.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #d61726;
     }
-    .banner-new.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:after,
-    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:after {
+    .banner-new.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:after,
+    .banner-no-img-varieties.banner-no-img.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
@@ -19267,55 +19267,191 @@ svg:not(:root) {
     }
 }
 
+.scp--centres .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+    background-color: #d61726;
+}
+
+@media (max-width: 650px) {
+    .scp--centres .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
+        display: flex;
+    }
+    .scp--centres .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
+        display: flex;
+    }
+}
+
+.banner-vi.banner-vi--theme--centres.banner-vi--gradient {
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+    background-color: #d61726;
+}
+
+@media (max-width: 650px) {
+    .banner-vi.banner-vi--theme--centres.banner-vi--gradient.banner-vi--text {
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
+        display: flex;
+    }
+    .banner-vi.banner-vi--theme--centres.banner-vi--gradient.banner-vi--listing {
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
+        display: flex;
+    }
+}
+
+@media (max-width: 650px) {
+    .scp--centres .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
+        background-color: #d61726;
+    }
+    .scp--centres .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
+        background: #d61726;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-vi--video-embedded.banner-vi--theme--centres.banner-vi--gradient .banner-vi__container__gradient {
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
+        background-color: #d61726;
+    }
+    .banner-vi--video-embedded.banner-vi--theme--centres.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
+        background: #d61726;
+    }
+}
+
+.banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner-vi__container, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner-vi--video .video-banner__controls, .banner-vi--video .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .video-banner__controls,
+.banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .container,
+.banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner__container,
+.banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner__standfirst,
+.banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner__freehtml > div,
+.banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi .banner-vi__container,
+.banner-vi .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi__container,
+.banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi--video .video-banner__controls,
+.banner-vi--video .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .video-banner__controls {
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+}
+
+@media (max-width: 650px) {
+    .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .container, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner__container, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner__standfirst, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner__freehtml > div, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner-vi .banner-vi__container, .banner-vi .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner-vi__container, .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .banner-vi--video .video-banner__controls, .banner-vi--video .banner-vi--listing.banner-vi--theme--centres + main .course-finder__top .video-banner__controls,
+    .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .container,
+    .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner__container,
+    .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner__standfirst,
+    .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner__freehtml > div,
+    .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi .banner-vi__container,
+    .banner-vi .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi__container,
+    .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi--video .video-banner__controls,
+    .banner-vi--video .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .video-banner__controls {
+        background: #d61726;
+        display: flex;
+    }
+}
+
+.scp--centres .banner-vi.banner-vi--theme--corporate h1 {
+    background-color: #d61726;
+    color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .scp--centres .banner-vi.banner-vi--theme--corporate h1 {
+        text-align: center;
+    }
+}
+
+.scp--centres .banner-vi .banner-vi__shape--left svg path,
+.scp--centres .banner-vi .banner-vi__shape__mobile--left svg path {
+    fill: #d61726;
+}
+
+.scp--centres .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
+    color: #ffffff;
+}
+
+.banner-vi.banner-vi--theme--centres h1 {
+    background-color: #d61726;
+    color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .banner-vi.banner-vi--theme--centres h1 {
+        text-align: center;
+    }
+}
+
+.banner-vi.banner-vi--theme--centres .banner-vi__shape--left svg path,
+.banner-vi.banner-vi--theme--centres .banner-vi__shape__mobile--left svg path {
+    fill: #d61726;
+}
+
+.banner-vi--video-embedded.banner-vi--theme--centres figcaption {
+    color: #ffffff;
+}
+
+.scp--centres .banner-vi.banner-vi--theme--corporate .cta, .scp--centres .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
+    background-color: #0c0c0e;
+}
+
+.banner-vi.banner-vi--theme--centres .cta, .banner-vi.banner-vi--theme--centres .promo-cta.promo-cta--small h2::after {
+    background-color: #0c0c0e;
+}
+
+@media (max-width: 650px) {
+    .scp--centres .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
+        background-color: #d61726;
+    }
+    .banner-vi.banner-vi--theme--centres.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
+        background-color: #d61726;
+    }
+}
+
 .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #8b2433 0%, #a9a19c 100%);
-    background-color: #a9a19c;
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+    background-color: #d61726;
 }
 
 @media (max-width: 650px) {
     .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 69%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
         display: flex;
     }
     .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 46%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--cce.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #8b2433 0%, #a9a19c 100%);
-    background-color: #a9a19c;
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+    background-color: #d61726;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--cce.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 69%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--cce.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 46%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--cce .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 95%);
-        background-color: #a9a19c;
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
+        background-color: #d61726;
     }
     .scp--cce .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
-        background: #a9a19c;
+        background: #d61726;
     }
 }
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--cce.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #a9a19c 95%);
-        background-color: #a9a19c;
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
+        background-color: #d61726;
     }
     .banner-vi--video-embedded.banner-vi--theme--cce.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
-        background: #a9a19c;
+        background: #d61726;
     }
 }
 
@@ -19328,7 +19464,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #8b2433 0%, #a9a19c 100%);
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
 }
 
 @media (max-width: 650px) {
@@ -19341,14 +19477,14 @@ svg:not(:root) {
     .banner-vi .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .banner-vi__container,
     .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .banner-vi--video .video-banner__controls,
     .banner-vi--video .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .video-banner__controls {
-        background: #a9a19c;
+        background: #d61726;
         display: flex;
     }
 }
 
 .scp--cce .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #a9a19c;
-    color: #1e1e1e;
+    background-color: #d61726;
+    color: #ffffff;
 }
 
 @media (max-width: 650px) {
@@ -19359,16 +19495,16 @@ svg:not(:root) {
 
 .scp--cce .banner-vi .banner-vi__shape--left svg path,
 .scp--cce .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #a9a19c;
+    fill: #d61726;
 }
 
 .scp--cce .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .banner-vi.banner-vi--theme--cce h1 {
-    background-color: #a9a19c;
-    color: #1e1e1e;
+    background-color: #d61726;
+    color: #ffffff;
 }
 
 @media (max-width: 650px) {
@@ -19379,11 +19515,11 @@ svg:not(:root) {
 
 .banner-vi.banner-vi--theme--cce .banner-vi__shape--left svg path,
 .banner-vi.banner-vi--theme--cce .banner-vi__shape__mobile--left svg path {
-    fill: #a9a19c;
+    fill: #d61726;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--cce figcaption {
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .scp--cce .banner-vi.banner-vi--theme--corporate .cta, .scp--cce .banner-vi.banner-vi--theme--corporate .promo-cta.promo-cta--small h2::after {
@@ -19396,10 +19532,10 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #a9a19c;
+        background-color: #d61726;
     }
     .banner-vi.banner-vi--theme--cce.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #a9a19c;
+        background-color: #d61726;
     }
 }
 
@@ -22880,6 +23016,16 @@ USED IN:
     color: #1e1e1e;
 }
 
+.scp--centres .cta--theme--primary {
+    background-color: #d61726;
+    color: #ffffff;
+}
+
+.scp--centres .cta--theme--primary:hover, .scp--centres .cta--theme--primary:focus, .scp--centres .cta--theme--primary:active {
+    background-color: #ba1421;
+    color: #ffffff;
+}
+
 .scp--executive-education .cta--theme--primary {
     background-color: #93328e;
     color: #ffffff;
@@ -23499,13 +23645,13 @@ USED IN:
     color: #2e767a;
 }
 
-.scp--cce .key-info--lined {
-    border-top: 0.06rem solid #8b2433;
-    border-bottom: 0.06rem solid #8b2433;
+.scp--centres .key-info--lined {
+    border-top: 0.06rem solid #d61726;
+    border-bottom: 0.06rem solid #d61726;
 }
 
-.scp--cce .key-info__item__value {
-    color: #8b2433;
+.scp--centres .key-info__item__value {
+    color: #d61726;
 }
 
 .key-info {
@@ -25212,13 +25358,13 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     color: #006699;
 }
 
-.scp--cce .card--course .txt__heading {
-    background: #8b2433;
+.scp--centres .card--course .txt__heading {
+    background: #d61726;
     color: #ffffff;
 }
 
-.scp--cce .card--course .summary {
-    color: #8b2433;
+.scp--centres .card--course .summary {
+    color: #d61726;
 }
 
 .scp--executive-education .card--course .txt__heading {
@@ -25279,8 +25425,8 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     border-top: 0.24rem solid #006699;
 }
 
-.pathway-cards--cce .pathway-card__txt:only-child {
-    border-top: 0.24rem solid #8b2433;
+.pathway-cards--centres .pathway-card__txt:only-child {
+    border-top: 0.24rem solid #d61726;
 }
 
 .pathway-cards--executive-education .pathway-card__txt:only-child {
@@ -29139,29 +29285,29 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     filter: invert(0%);
 }
 
-.ksp__item--cce .ksp__item__figure,
-.ksp__item--cce .ksp__item__pre-figure {
+.ksp__item--centres .ksp__item__figure,
+.ksp__item--centres .ksp__item__pre-figure {
     color: #8b2433;
 }
 
-.ksp__item--cce .ksp__item__icon {
+.ksp__item--centres .ksp__item__icon {
     background-color: #8b2433;
 }
 
-.ksp__item--cce .ksp__item__icon img {
+.ksp__item--centres .ksp__item__icon img {
     filter: invert(0%);
 }
 
-.scp--cce .ksp__item .ksp__item__figure,
-.scp--cce .ksp__item .ksp__item__pre-figure {
+.scp--centres .ksp__item .ksp__item__figure,
+.scp--centres .ksp__item .ksp__item__pre-figure {
     color: #8b2433;
 }
 
-.scp--cce .ksp__item .ksp__item__icon {
+.scp--centres .ksp__item .ksp__item__icon {
     background-color: #8b2433;
 }
 
-.scp--cce .ksp__item .ksp__item__icon img {
+.scp--centres .ksp__item .ksp__item__icon img {
     filter: invert(0%);
 }
 
@@ -30502,7 +30648,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--corporate .footer-meta.section--scp-theme:before {
-    background-color: #f2f2f2;
+    background-color: #1e1e1e;
 }
 
 .scp--undergraduate .footer-meta.section--scp-theme:before {
@@ -30529,7 +30675,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     background-color: #12E97A;
 }
 
-.scp--cce .footer-meta.section--scp-theme:before {
+.scp--centres .footer-meta.section--scp-theme:before {
     background-color: #8b2433;
 }
 
@@ -34592,8 +34738,8 @@ table tbody > tr > td:hover {
     background-color: #12E97A;
 }
 
-.scp--cce blockquote::before {
-    background-color: #8b2433;
+.scp--centres blockquote::before {
+    background-color: #d61726;
 }
 
 .scp--executive-education blockquote::before {
@@ -43991,20 +44137,20 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--cce .bayes-corners {
+.banner-vi--theme--centres .bayes-corners {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #a9a19c 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #a9a19c 2rem, transparent 2rem) 0 0, linear-gradient(to right, #a9a19c 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #a9a19c 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #d61726 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #d61726 2rem, transparent 2rem) 0 0, linear-gradient(to right, #d61726 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #d61726 2rem, transparent 2rem) 0% 100%;
     background-repeat: no-repeat;
     background-size: 4rem 4rem;
 }
 
-.banner-vi.banner-vi--theme--cce .banner-vi__shape--left svg path,
-.banner-vi.banner-vi--theme--cce .banner-vi__shape__mobile--left svg path {
-    fill: #a9a19c;
+.banner-vi.banner-vi--theme--centres .banner-vi__shape--left svg path,
+.banner-vi.banner-vi--theme--centres .banner-vi__shape__mobile--left svg path {
+    fill: #d61726;
 }
 
 .banner-vi__content__text--v24 {
