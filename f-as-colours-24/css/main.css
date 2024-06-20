@@ -22839,31 +22839,17 @@ USED IN:
 }
 
 .scp--online-msc .cta--theme--primary {
-    background-color: #3457F1;
+    background-color: #002b49;
     color: #ffffff;
-    display: block;
-    padding: 1.5rem;
-    border-bottom-width: 0;
-    font-weight: 700;
+    border: 0.12rem solid #ececec;
 }
 
 .scp--online-msc .cta--theme--primary:hover, .scp--online-msc .cta--theme--primary:focus, .scp--online-msc .cta--theme--primary:active {
-    background-color: #173fef;
+    background-color: #00192a;
     color: #ffffff;
 }
 
 .scp--online-msc .cta--theme--secondary {
-    background-color: #002b49;
-    color: #ffffff;
-    border: 0.12rem solid #ececec;
-}
-
-.scp--online-msc .cta--theme--secondary:hover, .scp--online-msc .cta--theme--secondary:focus, .scp--online-msc .cta--theme--secondary:active {
-    background-color: #00192a;
-    color: #ffffff;
-}
-
-.scp--masters .cta--theme--primary {
     background-color: #3457F1;
     color: #ffffff;
     display: block;
@@ -22872,40 +22858,54 @@ USED IN:
     font-weight: 700;
 }
 
-.scp--masters .cta--theme--primary:hover, .scp--masters .cta--theme--primary:focus, .scp--masters .cta--theme--primary:active {
+.scp--online-msc .cta--theme--secondary:hover, .scp--online-msc .cta--theme--secondary:focus, .scp--online-msc .cta--theme--secondary:active {
     background-color: #173fef;
     color: #ffffff;
 }
 
-.scp--masters .cta--theme--secondary {
+.scp--masters .cta--theme--primary {
     background-color: #002b49;
     color: #ffffff;
     border: 0.12rem solid #ececec;
 }
 
-.scp--masters .cta--theme--secondary:hover, .scp--masters .cta--theme--secondary:focus, .scp--masters .cta--theme--secondary:active {
+.scp--masters .cta--theme--primary:hover, .scp--masters .cta--theme--primary:focus, .scp--masters .cta--theme--primary:active {
     background-color: #00192a;
     color: #ffffff;
 }
 
+.scp--masters .cta--theme--secondary {
+    background-color: #3457F1;
+    color: #ffffff;
+    display: block;
+    padding: 1.5rem;
+    border-bottom-width: 0;
+    font-weight: 700;
+}
+
+.scp--masters .cta--theme--secondary:hover, .scp--masters .cta--theme--secondary:focus, .scp--masters .cta--theme--secondary:active {
+    background-color: #173fef;
+    color: #ffffff;
+}
+
 .scp--undergraduate .cta--theme--primary {
-    background-color: #ff4e00;
-    color: #0c0c0e;
-}
-
-.scp--undergraduate .cta--theme--primary:hover, .scp--undergraduate .cta--theme--primary:focus, .scp--undergraduate .cta--theme--primary:active {
-    background-color: #e04500;
-    color: #0c0c0e;
-}
-
-.scp--undergraduate .cta--theme--secondary {
     background-color: #f1b434;
     color: #1e1e1e;
 }
 
-.scp--undergraduate .cta--theme--secondary:hover, .scp--undergraduate .cta--theme--secondary:focus, .scp--undergraduate .cta--theme--secondary:active {
+.scp--undergraduate .cta--theme--primary:hover, .scp--undergraduate .cta--theme--primary:focus, .scp--undergraduate .cta--theme--primary:active {
     background-color: #efa917;
     color: #1e1e1e;
+}
+
+.scp--undergraduate .cta--theme--secondary {
+    background-color: #ff4e00;
+    color: #0c0c0e;
+}
+
+.scp--undergraduate .cta--theme--secondary:hover, .scp--undergraduate .cta--theme--secondary:focus, .scp--undergraduate .cta--theme--secondary:active {
+    background-color: #e04500;
+    color: #0c0c0e;
 }
 
 .scp--corporate .cta--theme--primary {
@@ -30620,27 +30620,31 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .footer-meta.section--corporate:before {
-    background-color: #f2f2f2;
+    background-color: #1e1e1e;
 }
 
 .footer-meta.section--online-msc:before {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .footer-meta.section--mba:before {
-    background-color: #12E97A;
+    background-color: #2e767a;
 }
 
 .footer-meta.section--demba:before {
-    background-color: #12E97A;
+    background-color: #2e767a;
 }
 
 .footer-meta.section--emba:before {
-    background-color: #12E97A;
+    background-color: #2e767a;
 }
 
 .footer-meta.section--cce:before {
     background-color: #a9a19c;
+}
+
+.footer-meta.section--centres:before {
+    background-color: #8b2433;
 }
 
 .footer-meta.section--exec:before {
