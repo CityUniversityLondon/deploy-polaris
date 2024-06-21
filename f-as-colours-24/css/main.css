@@ -23026,6 +23026,16 @@ USED IN:
     color: #ffffff;
 }
 
+.scp--centres .cta--theme--secondary {
+    background-color: #8b2433;
+    color: #ffffff;
+}
+
+.scp--centres .cta--theme--secondary:hover, .scp--centres .cta--theme--secondary:focus, .scp--centres .cta--theme--secondary:active {
+    background-color: #731e2a;
+    color: #ffffff;
+}
+
 .scp--executive-education .cta--theme--primary {
     background-color: #93328e;
     color: #ffffff;
@@ -23565,12 +23575,12 @@ USED IN:
 }
 
 .scp--undergraduate .key-info--lined {
-    border-top: 0.06rem solid #f1b434;
-    border-bottom: 0.06rem solid #f1b434;
+    border-top: 0.06rem solid #ff4e00;
+    border-bottom: 0.06rem solid #ff4e00;
 }
 
 .scp--undergraduate .key-info__item__value {
-    color: #f1b434;
+    color: #ff4e00;
 }
 
 .scp--masters .key-info--lined {
@@ -23583,12 +23593,12 @@ USED IN:
 }
 
 .scp--mba .key-info--lined {
-    border-top: 0.06rem solid #12E97A;
-    border-bottom: 0.06rem solid #12E97A;
+    border-top: 0.06rem solid #2e767a;
+    border-bottom: 0.06rem solid #2e767a;
 }
 
 .scp--mba .key-info__item__value {
-    color: #12E97A;
+    color: #2e767a;
 }
 
 .scp--phd .key-info--lined {
@@ -23601,12 +23611,12 @@ USED IN:
 }
 
 .scp--executive-phd .key-info--lined {
-    border-top: 0.06rem solid #5bc2e7;
-    border-bottom: 0.06rem solid #5bc2e7;
+    border-top: 0.06rem solid #006699;
+    border-bottom: 0.06rem solid #006699;
 }
 
 .scp--executive-phd .key-info__item__value {
-    color: #5bc2e7;
+    color: #006699;
 }
 
 .scp--corporate .key-info--lined {
@@ -23646,12 +23656,12 @@ USED IN:
 }
 
 .scp--centres .key-info--lined {
-    border-top: 0.06rem solid #d61726;
-    border-bottom: 0.06rem solid #d61726;
+    border-top: 0.06rem solid #8b2433;
+    border-bottom: 0.06rem solid #8b2433;
 }
 
 .scp--centres .key-info__item__value {
-    color: #d61726;
+    color: #8b2433;
 }
 
 .key-info {
@@ -25297,7 +25307,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--mba .card--course .txt__heading {
     background: #2e767a;
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .scp--mba .card--course .summary {
@@ -25306,7 +25316,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--mmba .card--course .txt__heading {
     background: #2e767a;
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .scp--mmba .card--course .summary {
@@ -25315,7 +25325,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--emba .card--course .txt__heading {
     background: #2e767a;
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .scp--emba .card--course .summary {
@@ -25324,7 +25334,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--demba .card--course .txt__heading {
     background: #2e767a;
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .scp--demba .card--course .summary {
@@ -25332,26 +25342,26 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--omba .card--course .txt__heading {
-    background: #3457F1;
-    color: #1e1e1e;
+    background: #2e767a;
+    color: #ffffff;
 }
 
 .scp--omba .card--course .summary {
-    color: #3457F1;
+    color: #2e767a;
 }
 
 .scp--online-msc .card--course .txt__heading {
-    background: #3457F1;
-    color: #1e1e1e;
+    background: #002b49;
+    color: #ffffff;
 }
 
 .scp--online-msc .card--course .summary {
-    color: #3457F1;
+    color: #002b49;
 }
 
 .scp--phd .card--course .txt__heading {
     background: #006699;
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .scp--phd .card--course .summary {
@@ -25414,11 +25424,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pathway-cards--omba .pathway-card__txt:only-child {
-    border-top: 0.24rem solid #3457F1;
+    border-top: 0.24rem solid #2e767a;
 }
 
 .pathway-cards--online-msc .pathway-card__txt:only-child {
-    border-top: 0.24rem solid #3457F1;
+    border-top: 0.24rem solid #002b49;
 }
 
 .pathway-cards--phd .pathway-card__txt:only-child {
@@ -29131,11 +29141,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--undergraduate .ksp__item__figure,
 .ksp__item--undergraduate .ksp__item__pre-figure {
-    color: #f1b434;
+    color: #ff4e00;
 }
 
 .ksp__item--undergraduate .ksp__item__icon {
-    background-color: #f1b434;
+    background-color: #ff4e00;
 }
 
 .ksp__item--undergraduate .ksp__item__icon img {
@@ -29144,11 +29154,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--undergraduate .ksp__item .ksp__item__figure,
 .scp--undergraduate .ksp__item .ksp__item__pre-figure {
-    color: #f1b434;
+    color: #ff4e00;
 }
 
 .scp--undergraduate .ksp__item .ksp__item__icon {
-    background-color: #f1b434;
+    background-color: #ff4e00;
 }
 
 .scp--undergraduate .ksp__item .ksp__item__icon img {
@@ -29313,11 +29323,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--corporate .ksp__item__figure,
 .ksp__item--corporate .ksp__item__pre-figure {
-    color: #999999;
+    color: #d61726;
 }
 
 .ksp__item--corporate .ksp__item__icon {
-    background-color: #999999;
+    background-color: #d61726;
 }
 
 .ksp__item--corporate .ksp__item__icon img {
@@ -29326,11 +29336,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--corporate .ksp__item .ksp__item__figure,
 .scp--corporate .ksp__item .ksp__item__pre-figure {
-    color: #999999;
+    color: #d61726;
 }
 
 .scp--corporate .ksp__item .ksp__item__icon {
-    background-color: #999999;
+    background-color: #d61726;
 }
 
 .scp--corporate .ksp__item .ksp__item__icon img {
@@ -30668,15 +30678,15 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--mba .footer-meta.section--scp-theme:before {
-    background-color: #12E97A;
+    background-color: #2e767a;
 }
 
 .scp--demba .footer-meta.section--scp-theme:before {
-    background-color: #12E97A;
+    background-color: #2e767a;
 }
 
 .scp--emba .footer-meta.section--scp-theme:before {
-    background-color: #12E97A;
+    background-color: #2e767a;
 }
 
 .scp--centres .footer-meta.section--scp-theme:before {
@@ -30688,7 +30698,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--online-msc .footer-meta.section--scp-theme:before {
-    background-color: #3457F1;
+    background-color: #002b49;
 }
 
 .footer-meta__card {
