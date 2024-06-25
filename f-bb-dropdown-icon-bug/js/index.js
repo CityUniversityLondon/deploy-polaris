@@ -27716,6 +27716,7 @@ function findItems(widget) {
 function prepareItems(widget, items) {
   var variations = Object(_js_utils_variations__WEBPACK_IMPORTED_MODULE_6__["identifyVariations"])(widget, className);
   var open = function open(i, identifyFocusBackTo) {
+    var infinateLoop;
     var _items$i = items[i],
       title = _items$i.title,
       category = _items$i.category,
@@ -27740,7 +27741,14 @@ function prepareItems(widget, items) {
     var nextWrapper = jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').addClass('popup-def-list-group__prevnext__next').append(nextLink).append('<span class="popup-def-list-group__prevnext__next__icon" aria-hidden="true"></span>');
     var prevWrapper = jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').addClass('popup-def-list-group__prevnext__prev').append('<span class="popup-def-list-group__prevnext__prev__icon" aria-hidden="true"></span>').append(prevLink);
     var dlgContent = jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').append(content);
-    jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').addClass('popup-def-list-group__prevnext').append(prevWrapper).append(nextWrapper).appendTo(dlgContent);
+    var prevNextWrapper = jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').addClass('popup-def-list-group__prevnext');
+    if (i > 0) {
+      prevNextWrapper.append(prevWrapper);
+    }
+    if (nextIndex !== 0) {
+      prevNextWrapper.append(nextWrapper);
+    }
+    prevNextWrapper.appendTo(dlgContent);
     Object(_dialog_dialog__WEBPACK_IMPORTED_MODULE_5__["openModalDialog"])(dlgTitle, dlgContent, {
       identifyFocusBackTo: identifyFocusBackTo,
       className: Object(_js_utils_variations__WEBPACK_IMPORTED_MODULE_6__["variationClassNames"])("".concat(className, "__dlg"), variations)
