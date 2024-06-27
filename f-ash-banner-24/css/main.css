@@ -20011,11 +20011,17 @@ svg:not(:root) {
 }
 
 .banner-vi--image .banner-vi__container__column {
-    flex: 1 1 50%;
+    flex: 1 1 60%;
     align-items: center;
     display: flex;
     height: 100%;
     position: relative;
+}
+
+@media (max-width: 767px) {
+    .banner-vi--image .banner-vi__container__column {
+        flex: 1 1 70%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -20023,6 +20029,22 @@ svg:not(:root) {
         flex-basis: 100%;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+.banner-vi--image .banner-vi__container__column:nth-child(2) {
+    flex: 1 1 40%;
+}
+
+@media (max-width: 767px) {
+    .banner-vi--image .banner-vi__container__column:nth-child(2) {
+        flex: 1 1 30%;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-vi--image .banner-vi__container__column:nth-child(2) {
+        flex-basis: 100%;
     }
 }
 
