@@ -12513,6 +12513,10 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
+.js .courses-v23__modules-accordion .accordion-v23__heading__label {
+    margin-bottom: auto;
+}
+
 .js .courses-v23__modules-accordion .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator {
     align-items: flex-start;
     justify-content: flex-end;
