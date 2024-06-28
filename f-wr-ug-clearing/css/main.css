@@ -10400,6 +10400,10 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
+.ug-courses-v23 .courses-v23__apply__asset {
+    max-width: 60ch;
+}
+
 .courses-v23__summary .ksp-v23-wrapper {
     grid-column: 1 / -1;
 }
