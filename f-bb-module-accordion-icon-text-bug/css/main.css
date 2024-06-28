@@ -12513,6 +12513,17 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
+.js .courses-v23__modules-accordion .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+}
+
+.js .courses-v23__modules-accordion .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::before {
+    position: static;
+    margin: 0;
+}
+
 .courses-v23 section,
 .courses-v23 > div {
     width: 100%;
