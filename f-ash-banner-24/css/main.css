@@ -20446,6 +20446,16 @@ svg:not(:root) {
     align-self: center;
 }
 
+.banner-vi__content__corner {
+    width: 6rem;
+}
+
+@media (max-width: 650px) {
+    .banner-vi__content__corner {
+        display: none;
+    }
+}
+
 .banner-vi--listing .banner-vi__content {
     padding-left: 0;
 }
@@ -44140,14 +44150,4 @@ html {
 .banner-vi.banner-vi--theme--centres .banner-vi__shape--left svg path,
 .banner-vi.banner-vi--theme--centres .banner-vi__shape__mobile--left svg path {
     fill: #d61726;
-}
-
-.banner-vi__content__corner {
-    width: 6rem;
-}
-
-@media (max-width: 650px) {
-    .banner-vi__content__corner {
-        display: none;
-    }
 }
