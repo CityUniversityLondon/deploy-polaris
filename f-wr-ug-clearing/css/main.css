@@ -272,6 +272,10 @@
     background-color: #0c0c0e;
 }
 
+.background--zzz {
+    background-color: #222222;
+}
+
 .background--black {
     background-color: #1e1e1e;
 }
@@ -12497,6 +12501,10 @@ svg:not(:root) {
     margin-left: 1rem;
 }
 
+.courses-v23__modules-accordion .accordion-v23__heading__text {
+    padding-right: 2rem;
+}
+
 @media (min-width: 1200px) {
     .courses-v23__modules-accordion {
         display: flex;
@@ -12522,6 +12530,21 @@ svg:not(:root) {
 .js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
     outline-offset: 0.1875rem;
     outline-color: #ffffff;
+}
+
+.js .courses-v23__modules-accordion .accordion-v23__heading__label {
+    margin-bottom: auto;
+}
+
+.js .courses-v23__modules-accordion .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+}
+
+.js .courses-v23__modules-accordion .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::before {
+    position: static;
+    margin: 0;
 }
 
 .courses-v23 section,
@@ -12682,6 +12705,11 @@ svg:not(:root) {
 .courses-v23 sub,
 .courses-v23 sup {
     font-size: 0.65em;
+}
+
+.courses-v23 .youtube-embed--for-content,
+.courses-v23 figure {
+    max-width: 60ch;
 }
 
 @media (min-width: 901px) {
@@ -19996,7 +20024,13 @@ svg:not(:root) {
 
 @media (min-width: 651px) {
     .banner-vi--image .banner-vi__image {
-        max-height: 520px;
+        max-height: 32rem;
+    }
+}
+
+@media (min-width: 3841px) {
+    .banner-vi--image .banner-vi__image {
+        max-height: 45rem;
     }
 }
 
@@ -26110,6 +26144,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 /*html*/
 .no-scroll {
     overflow-y: hidden;
+    margin-right: var(--scrollbar-width);
 }
 
 @media (max-width: 320px) {
@@ -36560,14 +36595,14 @@ News events landing overrides */
     top: 0;
     right: 0;
     z-index: 1;
-    background-color: #222;
+    background-color: #222222;
     padding: 0.2em;
     display: flex;
     align-items: center;
 }
 
 .cass-news-search .image-credit[aria-expanded='true'] {
-    background-color: #222;
+    background-color: #222222;
 }
 
 .news-card .cass-news-search .image-credit {
@@ -43862,15 +43897,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--postgraduate .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--postgraduate .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #3457F1 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #3457F1 2rem, transparent 2rem) 0 0, linear-gradient(to right, #3457F1 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #3457F1 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #3457F1 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #3457F1 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #3457F1 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #3457F1 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--postgraduate .banner-vi__shape--left svg path,
@@ -43882,15 +43913,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--masters .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--masters .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #3457F1 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #3457F1 2rem, transparent 2rem) 0 0, linear-gradient(to right, #3457F1 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #3457F1 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #3457F1 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #3457F1 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #3457F1 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #3457F1 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--masters .banner-vi__shape--left svg path,
@@ -43902,15 +43929,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--online-msc .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--online-msc .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #3457F1 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #3457F1 2rem, transparent 2rem) 0 0, linear-gradient(to right, #3457F1 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #3457F1 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #3457F1 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #3457F1 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #3457F1 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #3457F1 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--online-msc .banner-vi__shape--left svg path,
@@ -43922,15 +43945,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--undergraduate .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--undergraduate .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #ff4e00 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #ff4e00 2rem, transparent 2rem) 0 0, linear-gradient(to right, #ff4e00 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #ff4e00 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #ff4e00 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #ff4e00 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #ff4e00 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #ff4e00 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--undergraduate .banner-vi__shape--left svg path,
@@ -43942,15 +43961,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--phd .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--phd .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #14cef5 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #14cef5 2rem, transparent 2rem) 0 0, linear-gradient(to right, #14cef5 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #14cef5 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #14cef5 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #14cef5 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #14cef5 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #14cef5 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--phd .banner-vi__shape--left svg path,
@@ -43962,15 +43977,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--executive-phd .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--executive-phd .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #14cef5 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #14cef5 2rem, transparent 2rem) 0 0, linear-gradient(to right, #14cef5 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #14cef5 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #14cef5 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #14cef5 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #14cef5 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #14cef5 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--executive-phd .banner-vi__shape--left svg path,
@@ -43982,15 +43993,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--executive-education .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--executive-education .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #e60e67 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #e60e67 2rem, transparent 2rem) 0 0, linear-gradient(to right, #e60e67 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #e60e67 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #e60e67 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #e60e67 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #e60e67 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #e60e67 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--executive-education .banner-vi__shape--left svg path,
@@ -44002,15 +44009,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--execed .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--execed .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #e60e67 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #e60e67 2rem, transparent 2rem) 0 0, linear-gradient(to right, #e60e67 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #e60e67 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #e60e67 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #e60e67 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #e60e67 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #e60e67 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--execed .banner-vi__shape--left svg path,
@@ -44022,15 +44025,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--mba .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--mba .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #12E97A 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #12E97A 2rem, transparent 2rem) 0 0, linear-gradient(to right, #12E97A 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #12E97A 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #12E97A 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #12E97A 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #12E97A 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #12E97A 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--mba .banner-vi__shape--left svg path,
@@ -44042,15 +44041,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--demba .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--demba .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #12E97A 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #12E97A 2rem, transparent 2rem) 0 0, linear-gradient(to right, #12E97A 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #12E97A 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #12E97A 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #12E97A 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #12E97A 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #12E97A 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--demba .banner-vi__shape--left svg path,
@@ -44062,15 +44057,11 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--emba .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--emba .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #12E97A 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #12E97A 2rem, transparent 2rem) 0 0, linear-gradient(to right, #12E97A 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #12E97A 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #12E97A 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #12E97A 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #12E97A 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #12E97A 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--emba .banner-vi__shape--left svg path,
@@ -44082,22 +44073,14 @@ html {
     position: relative;
 }
 
-.banner-vi--theme--centres .bayes-corners {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.banner-vi--theme--centres .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #d61726 2rem, transparent 2rem) 0 0, linear-gradient(to bottom, #d61726 2rem, transparent 2rem) 0 0, linear-gradient(to right, #d61726 2rem, transparent 2rem) 0% 100%, linear-gradient(to top, #d61726 2rem, transparent 2rem) 0% 100%;
+    background: linear-gradient(to right, #d61726 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #d61726 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #d61726 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #d61726 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
-    background-size: 4rem 4rem;
+    background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--centres .banner-vi__shape--left svg path,
 .banner-vi.banner-vi--theme--centres .banner-vi__shape__mobile--left svg path {
     fill: #d61726;
-}
-
-.banner-vi__content__text--v24 {
-    padding-left: 6rem;
 }
