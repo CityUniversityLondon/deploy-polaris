@@ -2644,6 +2644,7 @@ h2 {
 h3,
 .courses-v23__fee__inner .fee-amount__sub,
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__heading,
+.ug-courses-v23 .courses-v23__key-info__clearing__heading,
 .course-search__title {
     font-size: 23.04px;
     font-size: 1.44rem;
@@ -10132,36 +10133,6 @@ svg:not(:root) {
     color: #ffffff;
 }
 
-.ug-courses-v23 .cta--v23--ki--clearing {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #f1b434;
-    color: #1e1e1e;
-}
-
-.ug-courses-v23 .cta--v23--ki--clearing:hover, .ug-courses-v23 .cta--v23--ki--clearing:focus, .ug-courses-v23 .cta--v23--ki--clearing:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .ug-courses-v23 .cta--v23--ki--clearing {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .ug-courses-v23 .cta--v23--ki--clearing {
-        font-size: 92px;
-    }
-}
-
-.ug-courses-v23 .cta--v23--ki--clearing:hover, .ug-courses-v23 .cta--v23--ki--clearing:focus, .ug-courses-v23 .cta--v23--ki--clearing:active {
-    background-color: #efa917;
-}
-
 .pg-courses-v23 .courses-v23__key-info {
     background-color: #002b49;
     color: #ffffff;
@@ -10253,36 +10224,6 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
-.pg-courses-v23 .cta--v23--ki--clearing {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #f1b434;
-    color: #1e1e1e;
-}
-
-.pg-courses-v23 .cta--v23--ki--clearing:hover, .pg-courses-v23 .cta--v23--ki--clearing:focus, .pg-courses-v23 .cta--v23--ki--clearing:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .pg-courses-v23 .cta--v23--ki--clearing {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .pg-courses-v23 .cta--v23--ki--clearing {
-        font-size: 92px;
-    }
-}
-
-.pg-courses-v23 .cta--v23--ki--clearing:hover, .pg-courses-v23 .cta--v23--ki--clearing:focus, .pg-courses-v23 .cta--v23--ki--clearing:active {
-    background-color: #efa917;
-}
-
 .mba-courses-v23 .courses-v23__key-info {
     background-color: #2e767a;
     color: #ffffff;
@@ -10369,38 +10310,111 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
-.mba-courses-v23 .cta--v23--ki--clearing {
+.ug-courses-v23 .cta--v23--ki {
+    border: 0.125rem solid #1e1e1e;
+}
+
+.ug-courses-v23 .courses-v23__key-info__clearing__heading {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.ug-courses-v23 .courses-v23__key-info__clearing {
+    background-color: #ff4e00;
+    padding: 1rem;
+}
+
+.ug-courses-v23 .courses-v23__key-info__clearing:first-child {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .ug-courses-v23 .courses-v23__key-info__clearing:first-child {
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .ug-courses-v23 .courses-v23__key-info__clearing {
+        display: none;
+    }
+}
+
+.ug-courses-v23 .courses-v23__key-info__clearing p {
+    margin-bottom: 0.75rem;
+}
+
+.ug-courses-v23 .courses-v23__key-info__clearing__cta {
+    margin-bottom: 0.5rem;
+}
+
+.ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
-    background-color: #f1b434;
-    color: #1e1e1e;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 0.12rem solid #1e1e1e;
 }
 
-.mba-courses-v23 .cta--v23--ki--clearing:hover, .mba-courses-v23 .cta--v23--ki--clearing:focus, .mba-courses-v23 .cta--v23--ki--clearing:active {
+.ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:active {
     outline-offset: 0.1875rem;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .mba-courses-v23 .cta--v23--ki--clearing {
+    .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-    .mba-courses-v23 .cta--v23--ki--clearing {
+    .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
         font-size: 92px;
     }
 }
 
-.mba-courses-v23 .cta--v23--ki--clearing:hover, .mba-courses-v23 .cta--v23--ki--clearing:focus, .mba-courses-v23 .cta--v23--ki--clearing:active {
-    background-color: #efa917;
+.ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:active {
+    background-color: #3d3d3d;
+    color: #ffffff;
 }
 
-.ug-courses-v23 .cta--v23--ki {
-    border: 0.125rem solid #1e1e1e;
+.ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    border: 0.12rem solid #ffffff;
+}
+
+.ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:active {
+    outline-offset: 0.1875rem;
+}
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+    .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+    .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki {
+        font-size: 92px;
+    }
+}
+
+.ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:active {
+    background-color: #f0f0f0;
+    color: #1e1e1e;
+    outline-color: #ffffff;
+}
+
+.ug-courses-v23 .courses-v23__apply__asset {
+    max-width: 60ch;
 }
 
 .courses-v23__summary .ksp-v23-wrapper {
@@ -12235,6 +12249,7 @@ svg:not(:root) {
     font-weight: 700;
     background-color: #1e1e1e;
     color: #ffffff;
+    border: 0.12rem solid #1e1e1e;
 }
 
 .courses-v23 .courses-v23__contact__cta a:hover, .courses-v23 .courses-v23__contact__cta a:focus, .courses-v23 .courses-v23__contact__cta a:active {
@@ -12486,6 +12501,10 @@ svg:not(:root) {
     margin-left: 1rem;
 }
 
+.courses-v23__modules-accordion .accordion-v23__heading__text {
+    padding-right: 2rem;
+}
+
 @media (min-width: 1200px) {
     .courses-v23__modules-accordion {
         display: flex;
@@ -12511,6 +12530,21 @@ svg:not(:root) {
 .js .courses-v23__modules-accordion a:active, .js .courses-v23__modules-accordion a:focus {
     outline-offset: 0.1875rem;
     outline-color: #ffffff;
+}
+
+.js .courses-v23__modules-accordion .accordion-v23__heading__label {
+    margin-bottom: auto;
+}
+
+.js .courses-v23__modules-accordion .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+}
+
+.js .courses-v23__modules-accordion .accordion-v23 .accordion-v23__heading button .accordion-v23__heading__indicator::before {
+    position: static;
+    margin: 0;
 }
 
 .courses-v23 section,
@@ -12644,6 +12678,7 @@ svg:not(:root) {
     font-weight: 700;
     background-color: #1e1e1e;
     color: #ffffff;
+    border: 0.12rem solid #1e1e1e;
 }
 
 .courses-v23 .accordion-v23 .cta--v23:hover, .courses-v23 .accordion-v23 .cta--v23:focus, .courses-v23 .accordion-v23 .cta--v23:active {
@@ -12752,6 +12787,7 @@ svg:not(:root) {
     font-weight: 700;
     background-color: #1e1e1e;
     color: #ffffff;
+    border: 0.12rem solid #1e1e1e;
 }
 
 .courses-v23__structure .cta--course-spec:hover, .courses-v23__structure .cta--course-spec:focus, .courses-v23__structure .cta--course-spec:active {
@@ -16366,12 +16402,12 @@ svg:not(:root) {
 }
 
 .banner--theme--centres .banner__content h1 {
-    background-color: #d61726;
+    background-color: #8b2433;
     color: #ffffff;
 }
 
 .banner--theme--centres .banner__content .banner__content__text__subtitle {
-    background-color: #8b2433;
+    background-color: #d61726;
     color: #ffffff;
 }
 
@@ -16530,17 +16566,17 @@ svg:not(:root) {
 }
 
 .scp--centres .banner--theme--corporate .banner__content h1 {
-    background-color: #d61726;
-    color: #ffffff;
-}
-
-.scp--centres .banner--theme--corporate .banner__content .banner__content__text__subtitle {
     background-color: #8b2433;
     color: #ffffff;
 }
 
-.scp--centres .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+.scp--centres .banner--theme--corporate .banner__content .banner__content__text__subtitle {
     background-color: #d61726;
+    color: #ffffff;
+}
+
+.scp--centres .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    background-color: #8b2433;
 }
 
 .banner__standfirst__content {
@@ -17109,14 +17145,14 @@ svg:not(:root) {
 @media (max-width: 650px) {
     .banner-new.banner--theme--centres .banner__content__text__item:first-child,
     .banner-no-img-varieties.banner-no-img.banner--theme--centres .banner__content__text__item:first-child {
-        background-color: #d61726;
+        background-color: #8b2433;
     }
 }
 
 @media (max-width: 650px) {
     .banner-new.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:before,
     .banner-no-img-varieties.banner-no-img.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:before {
-        background-color: #d61726;
+        background-color: #8b2433;
     }
     .banner-new.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:after,
     .banner-no-img-varieties.banner-no-img.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:after {
@@ -19277,54 +19313,54 @@ svg:not(:root) {
 }
 
 .scp--centres .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
-    background-color: #d61726;
+    background-image: linear-gradient(90deg, #d61726 0%, #8b2433 100%);
+    background-color: #8b2433;
 }
 
 @media (max-width: 650px) {
     .scp--centres .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 69%);
         display: flex;
     }
     .scp--centres .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--centres.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
-    background-color: #d61726;
+    background-image: linear-gradient(90deg, #d61726 0%, #8b2433 100%);
+    background-color: #8b2433;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--centres.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--centres.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--centres .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
-        background-color: #d61726;
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 95%);
+        background-color: #8b2433;
     }
     .scp--centres .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
-        background: #d61726;
+        background: #8b2433;
     }
 }
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--centres.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
-        background-color: #d61726;
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 95%);
+        background-color: #8b2433;
     }
     .banner-vi--video-embedded.banner-vi--theme--centres.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
-        background: #d61726;
+        background: #8b2433;
     }
 }
 
@@ -19337,7 +19373,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+    background-image: linear-gradient(90deg, #d61726 0%, #8b2433 100%);
 }
 
 @media (max-width: 650px) {
@@ -19350,13 +19386,13 @@ svg:not(:root) {
     .banner-vi .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi__container,
     .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .banner-vi--video .video-banner__controls,
     .banner-vi--video .banner-vi--listing.banner-vi--theme--centres + main .expert-finder__top .video-banner__controls {
-        background: #d61726;
+        background: #8b2433;
         display: flex;
     }
 }
 
 .scp--centres .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #d61726;
+    background-color: #8b2433;
     color: #ffffff;
 }
 
@@ -19368,7 +19404,7 @@ svg:not(:root) {
 
 .scp--centres .banner-vi .banner-vi__shape--left svg path,
 .scp--centres .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #d61726;
+    fill: #8b2433;
 }
 
 .scp--centres .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -19376,7 +19412,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--centres h1 {
-    background-color: #d61726;
+    background-color: #8b2433;
     color: #ffffff;
 }
 
@@ -19388,7 +19424,7 @@ svg:not(:root) {
 
 .banner-vi.banner-vi--theme--centres .banner-vi__shape--left svg path,
 .banner-vi.banner-vi--theme--centres .banner-vi__shape__mobile--left svg path {
-    fill: #d61726;
+    fill: #8b2433;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--centres figcaption {
@@ -19405,62 +19441,62 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--centres .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #d61726;
+        background-color: #8b2433;
     }
     .banner-vi.banner-vi--theme--centres.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #d61726;
+        background-color: #8b2433;
     }
 }
 
 .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
-    background-color: #d61726;
+    background-image: linear-gradient(90deg, #d61726 0%, #8b2433 100%);
+    background-color: #8b2433;
 }
 
 @media (max-width: 650px) {
     .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 69%);
         display: flex;
     }
     .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--cce.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
-    background-color: #d61726;
+    background-image: linear-gradient(90deg, #d61726 0%, #8b2433 100%);
+    background-color: #8b2433;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--cce.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--cce.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--cce .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
-        background-color: #d61726;
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 95%);
+        background-color: #8b2433;
     }
     .scp--cce .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
-        background: #d61726;
+        background: #8b2433;
     }
 }
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--cce.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
-        background-color: #d61726;
+        background-image: linear-gradient(180deg, #d61726 0%, #8b2433 95%);
+        background-color: #8b2433;
     }
     .banner-vi--video-embedded.banner-vi--theme--cce.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
-        background: #d61726;
+        background: #8b2433;
     }
 }
 
@@ -19473,7 +19509,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+    background-image: linear-gradient(90deg, #d61726 0%, #8b2433 100%);
 }
 
 @media (max-width: 650px) {
@@ -19486,13 +19522,13 @@ svg:not(:root) {
     .banner-vi .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .banner-vi__container,
     .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .banner-vi--video .video-banner__controls,
     .banner-vi--video .banner-vi--listing.banner-vi--theme--cce + main .expert-finder__top .video-banner__controls {
-        background: #d61726;
+        background: #8b2433;
         display: flex;
     }
 }
 
 .scp--cce .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #d61726;
+    background-color: #8b2433;
     color: #ffffff;
 }
 
@@ -19504,7 +19540,7 @@ svg:not(:root) {
 
 .scp--cce .banner-vi .banner-vi__shape--left svg path,
 .scp--cce .banner-vi .banner-vi__shape__mobile--left svg path {
-    fill: #d61726;
+    fill: #8b2433;
 }
 
 .scp--cce .banner-vi--video-embedded.banner-vi--theme--corporate figcaption {
@@ -19512,7 +19548,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--cce h1 {
-    background-color: #d61726;
+    background-color: #8b2433;
     color: #ffffff;
 }
 
@@ -19524,7 +19560,7 @@ svg:not(:root) {
 
 .banner-vi.banner-vi--theme--cce .banner-vi__shape--left svg path,
 .banner-vi.banner-vi--theme--cce .banner-vi__shape__mobile--left svg path {
-    fill: #d61726;
+    fill: #8b2433;
 }
 
 .banner-vi--video-embedded.banner-vi--theme--cce figcaption {
@@ -19541,10 +19577,10 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--cce .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #d61726;
+        background-color: #8b2433;
     }
     .banner-vi.banner-vi--theme--cce.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #d61726;
+        background-color: #8b2433;
     }
 }
 
@@ -22654,6 +22690,7 @@ USED IN:
     font-weight: 700;
     background-color: #1e1e1e;
     color: #ffffff;
+    border: 0.12rem solid #1e1e1e;
 }
 
 .cta--v23--black:hover, .cta--v23--black:focus, .cta--v23--black:active {
@@ -22732,36 +22769,6 @@ USED IN:
 .cta--ug-v23--ki--apply:hover, .cta--ug-v23--ki--apply:focus, .cta--ug-v23--ki--apply:active {
     background-color: #3d3d3d;
     color: #ffffff;
-}
-
-.cta--ug-v23--ki--clearing {
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    background-color: #f1b434;
-    color: #1e1e1e;
-}
-
-.cta--ug-v23--ki--clearing:hover, .cta--ug-v23--ki--clearing:focus, .cta--ug-v23--ki--clearing:active {
-    outline-offset: 0.1875rem;
-}
-
-@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .cta--ug-v23--ki--clearing {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 1600px) and (min-width: 7680px) {
-    .cta--ug-v23--ki--clearing {
-        font-size: 92px;
-    }
-}
-
-.cta--ug-v23--ki--clearing:hover, .cta--ug-v23--ki--clearing:focus, .cta--ug-v23--ki--clearing:active {
-    background-color: #efa917;
 }
 
 .cta--pg-v23--ki {
@@ -23671,12 +23678,12 @@ USED IN:
 }
 
 .scp--centres .key-info--lined {
-    border-top: 0.06rem solid #8b2433;
-    border-bottom: 0.06rem solid #8b2433;
+    border-top: 0.06rem solid #d61726;
+    border-bottom: 0.06rem solid #d61726;
 }
 
 .scp--centres .key-info__item__value {
-    color: #8b2433;
+    color: #d61726;
 }
 
 .key-info {
@@ -25384,12 +25391,12 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--centres .card--course .txt__heading {
-    background: #d61726;
+    background: #8b2433;
     color: #ffffff;
 }
 
 .scp--centres .card--course .summary {
-    color: #d61726;
+    color: #8b2433;
 }
 
 .scp--executive-education .card--course .txt__heading {
@@ -25451,7 +25458,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .pathway-cards--centres .pathway-card__txt:only-child {
-    border-top: 0.24rem solid #d61726;
+    border-top: 0.24rem solid #8b2433;
 }
 
 .pathway-cards--executive-education .pathway-card__txt:only-child {
@@ -26137,6 +26144,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 /*html*/
 .no-scroll {
     overflow-y: hidden;
+    margin-right: var(--scrollbar-width);
 }
 
 @media (max-width: 320px) {
@@ -29312,11 +29320,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .ksp__item--centres .ksp__item__figure,
 .ksp__item--centres .ksp__item__pre-figure {
-    color: #8b2433;
+    color: #d61726;
 }
 
 .ksp__item--centres .ksp__item__icon {
-    background-color: #8b2433;
+    background-color: #d61726;
 }
 
 .ksp__item--centres .ksp__item__icon img {
@@ -29325,11 +29333,11 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 
 .scp--centres .ksp__item .ksp__item__figure,
 .scp--centres .ksp__item .ksp__item__pre-figure {
-    color: #8b2433;
+    color: #d61726;
 }
 
 .scp--centres .ksp__item .ksp__item__icon {
-    background-color: #8b2433;
+    background-color: #d61726;
 }
 
 .scp--centres .ksp__item .ksp__item__icon img {
@@ -30669,7 +30677,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .footer-meta.section--centres:before {
-    background-color: #8b2433;
+    background-color: #d61726;
 }
 
 .footer-meta.section--exec:before {
@@ -30705,7 +30713,7 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
 }
 
 .scp--centres .footer-meta.section--scp-theme:before {
-    background-color: #8b2433;
+    background-color: #d61726;
 }
 
 .scp--executive-education .footer-meta.section--scp-theme:before {
@@ -33539,7 +33547,7 @@ table tbody > tr > td:hover {
 }
 
 .scp--centres .timeline__collection .timeline__collection__icon {
-    background-color: #8b2433;
+    background-color: #d61726;
 }
 
 .scp--phd .timeline__collection .timeline__collection__icon {
@@ -34709,7 +34717,7 @@ table tbody > tr > td:hover {
 }
 
 .scp--centres blockquote::before {
-    background-color: #d61726;
+    background-color: #8b2433;
 }
 
 .scp--executive-education blockquote::before {
@@ -41683,6 +41691,7 @@ html {
     font-weight: 700;
     background-color: #1e1e1e;
     color: #ffffff;
+    border: 0.12rem solid #1e1e1e;
 }
 
 .unibuddy-card-v23__cta__link:hover, .unibuddy-card-v23__cta__link:focus, .unibuddy-card-v23__cta__link:active {
@@ -42252,6 +42261,7 @@ html {
     font-weight: 700;
     background-color: #1e1e1e;
     color: #ffffff;
+    border: 0.12rem solid #1e1e1e;
 }
 
 .alumni-card-v23__cta__link:hover, .alumni-card-v23__cta__link:focus, .alumni-card-v23__cta__link:active {
@@ -44065,12 +44075,12 @@ html {
 
 .banner-vi--theme--centres .banner-vi__content__corner {
     height: 100%;
-    background: linear-gradient(to right, #d61726 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #d61726 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #d61726 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #d61726 1.5rem, transparent 1.5rem) 0% 100%;
+    background: linear-gradient(to right, #8b2433 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #8b2433 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #8b2433 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #8b2433 1.5rem, transparent 1.5rem) 0% 100%;
     background-repeat: no-repeat;
     background-size: 3rem 3rem;
 }
 
 .banner-vi.banner-vi--theme--centres .banner-vi__shape--left svg path,
 .banner-vi.banner-vi--theme--centres .banner-vi__shape__mobile--left svg path {
-    fill: #d61726;
+    fill: #8b2433;
 }

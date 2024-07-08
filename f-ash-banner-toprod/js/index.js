@@ -26424,6 +26424,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+/**
+ * function that calculates the scrollbar width
+ */
+
+function getVerticalScrollbarWidth() {
+  // Creating a div element for helping to calculate scrollbar width
+  var scrollDiv = document.createElement('div');
+  scrollDiv.style.cssText = 'width: 100px; height: 100px; overflow: scroll; position: absolute; top: -9999px;';
+
+  // Appending the div to the body to measure scrollbar width
+  document.body.appendChild(scrollDiv);
+  var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+
+  // Remove the div from the body
+  document.body.removeChild(scrollDiv);
+
+  // adds scrollbar width as variable to root so can be used by CSS styles
+  var root = document.documentElement;
+  root.style.setProperty('--scrollbar-width', scrollbarWidth + 'px');
+  return scrollbarWidth;
+}
+
+/**
+ * function that enables / disables body scroll when modal opens or closes. As the scrollbar disappears
+ * to lock scrolling, a margin gets added in place of where the scrollbar use to be
+ * to prevent content from jumping
+ *
+ */
+
+function enableBodyScroll() {
+  document.documentElement.classList.remove('no-scroll');
+  document.querySelector('.back-to-top').setAttribute('hidden', 'false');
+}
+function disableBodyScroll() {
+  getVerticalScrollbarWidth();
+  document.querySelector('.back-to-top').setAttribute('hidden', 'true');
+  document.documentElement.classList.add('no-scroll');
+}
 function closeDialog() {
   var focusBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
   if (current.dlg) {
@@ -26435,7 +26474,7 @@ function closeDialog() {
     current.focusBackTo.focus();
     current.focusBackTo = null;
   }
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').removeClass('no-scroll');
+  enableBodyScroll();
 }
 var DEFAULT_OPTS = {
   closeOnOverlay: true,
@@ -26485,7 +26524,7 @@ function openModalDialog(title, content) {
   }
   dlg.focus();
   current.focusTrap = focus_trap__WEBPACK_IMPORTED_MODULE_2___default()(dlg[0]).activate();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').addClass('no-scroll');
+  disableBodyScroll();
 }
 
 /***/ }),
