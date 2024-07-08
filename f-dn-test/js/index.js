@@ -4778,6 +4778,26 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object
 
 /***/ }),
 
+/***/ "./node_modules/core-js/modules/es6.object.keys.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/modules/es6.object.keys.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.14 Object.keys(O)
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/modules/_to-object.js");
+var $keys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/modules/_object-keys.js");
+
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/modules/_object-sap.js")('keys', function () {
+  return function keys(it) {
+    return $keys(toObject(it));
+  };
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/modules/es6.object.to-string.js":
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/modules/es6.object.to-string.js ***!
@@ -22757,6 +22777,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/components-v23/nav-sticky/nav-sticky */ "./src/components/components-v23/nav-sticky/nav-sticky.js");
 /* harmony import */ var _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/components-v23/slider-v23/slider-v23 */ "./src/components/components-v23/slider-v23/slider-v23.js");
 /* harmony import */ var _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/components-v23/accordion-v23/accordion-v23 */ "./src/components/components-v23/accordion-v23/accordion-v23.js");
+/* harmony import */ var _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/components-v23/content-transition/content-transition-vertical */ "./src/components/components-v23/content-transition/content-transition-vertical.js");
+/* harmony import */ var _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/components-v23/content-transition/content-transition-horizontal */ "./src/components/components-v23/content-transition/content-transition-horizontal.js");
+/* harmony import */ var _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/components-v23/content-transition/square-animation */ "./src/components/components-v23/content-transition/square-animation.js");
+/* harmony import */ var _components_back_to_top_back_to_top__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/back-to-top/back-to-top */ "./src/components/back-to-top/back-to-top.js");
 
 
 
@@ -22792,7 +22816,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__["default"]]);
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_kis_widget_kis_widget__WEBPACK_IMPORTED_MODULE_9__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_11___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_10__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_12__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_14__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_15__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_16__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_17__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_18__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_19__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_20__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_21__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_22__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_23__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_24__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_25__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_28__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_32__["default"], _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_33__["default"], _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_34__["default"], _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_35__["default"], _components_back_to_top_back_to_top__WEBPACK_IMPORTED_MODULE_36__["default"]]);
 
 /***/ }),
 
@@ -23570,7 +23598,8 @@ for (var i = 0; i <= 100; i++) {
 function actionOnScroll(element, action) {
   var repeat = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
   var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {
-    threshold: [0, 0.01, 1]
+    threshold: [0, 0.01, 1],
+    rootMargin: '-20%'
   };
   if (element && element.length > 0) {
     // normalise element
@@ -23665,6 +23694,101 @@ function launch(el) {
   } finally {
     _iterator.f();
   }
+}
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
+/***/ "./src/components/back-to-top/back-to-top.js":
+/*!***************************************************!*\
+  !*** ./src/components/back-to-top/back-to-top.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+/**
+ * Back To Top Link Scroll
+ *
+ * @module components/back-to-top/back-to-top
+ * @author Walter Reyneke <walter.reyneke@city.ac.uk>
+ * @copyright City, University of London 2024
+ */
+//import { createHTMLElement } from '../../util';
+var className = 'back-to-top',
+  viewPortHeight = window.innerHeight;
+
+/**
+ * Back to top anchor anchor only appears on long pages and when you have scrolled down long enough
+ * Please change the parameter below to alter the behaviour of the back to top anchor.
+ *
+ * scrollPos - sets how many viewport heights you need to scroll down for back to top to appear. 1 = 1 viewport height
+ */
+var scrollPos = 2;
+
+/**
+ *
+ * @param {HTMLElement} - selects back to top parent element, which is used in return to select children elements
+ */
+
+function launch(backToTop) {
+  var backToTopAnchor = backToTop.querySelectorAll('a')[0];
+  var elem = document.createElement('span');
+  var eleNnode = document.createTextNode('top');
+  elem.classList.add('back-to-top__button__arrow__label');
+  elem.appendChild(eleNnode);
+  window.addEventListener('load', function () {
+    backToTop.querySelector('.back-to-top__button__arrow').appendChild(elem);
+    backToTop.setAttribute('hidden', 'true');
+    window.addEventListener('scroll', function () {
+      updateProgress(backToTopAnchor);
+      showAnchor(backToTop);
+    }, false);
+  });
+}
+/**
+ *  Anchor fading behaviour
+ *
+ * @param {HTMLElement} backToTop - back to top element.
+ */
+function showAnchor(backToTop) {
+  var positionOnScreen = window.pageYOffset;
+  if (positionOnScreen > viewPortHeight * scrollPos) {
+    // shows anchor when scrolled down far enough - see parameters
+    backToTop.dataset.docked = 'false';
+    backToTop.removeAttribute('hidden');
+  } else if (positionOnScreen < 200) {
+    // hides anchor when close to top of the page
+    backToTop.setAttribute('hidden', 'true');
+    backToTop.dataset.docked = 'false';
+  }
+}
+
+/**
+ *  Progress meter
+ *
+ * @param {HTMLElement} backToTopAnchor - The anchor of the back to top element.
+ */
+function updateProgress(backToTopAnchor) {
+  // Setting up SVG animation
+  var progressPath = backToTopAnchor.querySelector('path'),
+    pathLength = progressPath.getTotalLength();
+  progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+  progressPath.style.strokeDashoffset = pathLength;
+
+  // Calculate values
+  var scroll = window.pageYOffset,
+    height = document.documentElement.scrollHeight - window.innerHeight,
+    progress = pathLength - scroll * pathLength / height;
+
+  // Updates progress bar
+  progressPath.style.strokeDashoffset = progress;
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
@@ -24423,12 +24547,12 @@ var className = 'accordion-v23',
   headingClassName = className + '__heading',
   headingTextClassName = headingClassName + '__text',
   headingIconClassName = headingClassName + '__indicator',
+  headingLabelClassName = headingClassName + '__label',
   bodyClassName = className + '__body',
-  oneSecond = 1000,
   tenthOfASecond = 100;
 
 /**
- * Only triggeered on page load when an accordion address is present in the URL. 
+ * Only triggeered on page load when an accordion address is present in the URL.
  * This function ensures that the page scrolls down to this accrodion heading, by checking if it scrolled
  * down far enough, if not then try again automatically
  *
@@ -24459,10 +24583,6 @@ function setSection(heading, open) {
   heading.dataset.open = open;
   heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded, open);
-
-  // Automatically scrolls heading into view being at the top of the page
-  var viewportOffset = heading.parentElement.getBoundingClientRect();
-  var top = viewportOffset.top;
 }
 
 /**
@@ -24518,6 +24638,22 @@ function stickyNavHeight() {
 }
 
 /**
+ * Check if accordion is a sub accordion and return the heading
+ *
+ */
+function isSubAccordion(heading) {
+  var accordionParentBodyWrap = heading.parentElement.closest('.accordion-v23__body');
+  if (accordionParentBodyWrap) {
+    var parentHeadingElem = accordionParentBodyWrap.previousElementSibling;
+    if (parentHeadingElem.classList.contains("".concat(headingClassName))) {
+      return parentHeadingElem;
+    } else {
+      return false;
+    }
+  }
+}
+
+/**
  * Respond to button clicks - open if closed, close if open.
  *
  * If opening, will also push the heading ID into the history, so C+Ping the URL
@@ -24529,14 +24665,20 @@ function stickyNavHeight() {
  * @param {boolean} [toggleOpen] - Should other accordion sections close? Default to false.
  */
 function buttonClick(button, headings, toggleOpen) {
-  var heading = button.parentNode,
-    accordionSection = heading.nextElementSibling;
+  var heading = button.parentNode;
+  var accordionSection = heading.nextElementSibling;
+  var subAccordions = accordionSection.querySelectorAll('.accordion-v23__section');
   if (button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded) === 'true') {
     // updates URL hash, by removing hash from URL when accordion closes
-    history.pushState({}, null, location.href.split('#')[0]);
+    if (isSubAccordion(heading)) {
+      var subHeading = isSubAccordion(heading);
+      history.pushState({}, null, "#".concat(subHeading.id));
+    } else {
+      history.pushState({}, null, location.href.split('#')[0]);
+    }
   } else {
     // updates URL hash with accordion heading, when accordion opens
-    window.location.hash = event.currentTarget.parentElement.id;
+    history.pushState({}, null, "#".concat(heading.id));
   }
 
   /**
@@ -24551,6 +24693,25 @@ function buttonClick(button, headings, toggleOpen) {
     once: true
   });
   if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded))) {
+    //Check for sub accordions and close if open
+    if (subAccordions.length > 0) {
+      subAccordions.forEach(function (sub) {
+        var subAccordionHeading = sub.querySelector(".".concat(headingClassName));
+        var subAccordionSection = sub.querySelector(".".concat(bodyClassName));
+
+        //If the sub accordion is open close it.
+        if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(sub.dataset.open)) {
+          // Starting height is the current height
+          setupTransition(subAccordionSection, subAccordionSection.offsetHeight + 'px');
+          // setTimeout lets the DOM recalculate before we continue, so the transition will fire
+          setTimeout(function () {
+            subAccordionSection.style.height = '0px';
+            cleanupTransition(subAccordionSection);
+          }, tenthOfASecond);
+          setSection(subAccordionHeading, false);
+        }
+      });
+    }
     // Starting height is the current height
     setupTransition(accordionSection, accordionSection.offsetHeight + 'px');
     // setTimeout lets the DOM recalculate before we continue, so the transition will fire
@@ -24558,7 +24719,7 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = '0px';
     }, tenthOfASecond);
     setSection(heading, false);
-    scrollToHeading(heading);
+    //scrollToHeading(heading);
   } else {
     // Calclulate and save how big we're transitioning to
     var sectionHeight = calculateAccordionBodyHeight(heading);
@@ -24580,7 +24741,6 @@ function buttonClick(button, headings, toggleOpen) {
       });
     }
     setSection(heading, true);
-    scrollToHeading(heading);
   }
 }
 
@@ -24590,7 +24750,7 @@ function buttonClick(button, headings, toggleOpen) {
  * @param {HTMLElement} heading - An accordion heading.
  * @returns {HTMLButtonElement} An accordion section button.
  */
-function buttonFromHeading(heading) {
+function buttonFromHeading(heading, chevronStyle) {
   var button = document.createElement('button'),
     // Chrome can't apply grid layout to buttons, need to wrap contents
     wrapper = document.createElement('div'),
@@ -24601,8 +24761,33 @@ function buttonFromHeading(heading) {
   iconSpan.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].hidden, true);
   button.setAttribute('type', 'button');
   textSpan.appendChild(document.createTextNode(heading.textContent));
-  Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(wrapper, [iconSpan, textSpan]);
+  if (chevronStyle) {
+    wrapper.appendChild(textSpan);
+    if (heading.dataset.label) {
+      var labelSpan = document.createElement('span');
+      var srSpan = document.createElement('span');
+      srSpan.className = 'sr-only';
+      srSpan.appendChild(document.createTextNode('Runs in '));
+      labelSpan.className = headingLabelClassName;
+      labelSpan.appendChild(srSpan);
+      labelSpan.appendChild(document.createTextNode(heading.dataset.label));
+      wrapper.appendChild(labelSpan);
+    }
+    wrapper.appendChild(iconSpan);
+  } else {
+    wrapper.appendChild(iconSpan);
+    wrapper.appendChild(textSpan);
+  }
   button.appendChild(wrapper);
+  if (heading.dataset.description) {
+    var descriptionWrapper = document.createElement('div'),
+      descriptionText = document.createElement('p');
+    descriptionWrapper.className = 'accordion-v23__heading__description';
+    descriptionWrapper.ariaHidden = 'true';
+    descriptionText.appendChild(document.createTextNode(heading.dataset.description));
+    descriptionWrapper.appendChild(descriptionText);
+    button.appendChild(descriptionWrapper);
+  }
   return button;
 }
 
@@ -24629,6 +24814,7 @@ function launch(accordion) {
   var toggleOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.toggleopen),
     defaultOpen = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.defaultopen),
     allowSingle = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.allowsingle),
+    downChevronStyle = Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(accordion.dataset.downchevronstyle || false),
     headings = Array.from(accordion.parentNode.querySelectorAll("#".concat(accordion.id, " > .").concat(headingClassName)));
   var idLinked = false;
   if (!(allowSingle || headings.length > 1)) {
@@ -24640,7 +24826,7 @@ function launch(accordion) {
   }
   headings.forEach(function (heading) {
     var content = heading.nextElementSibling,
-      button = buttonFromHeading(heading);
+      button = buttonFromHeading(heading, downChevronStyle);
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
@@ -24671,9 +24857,15 @@ function launch(accordion) {
   if (window.location.hash) {
     //finds accordion heading in URL
     var urlHash = window.location.hash;
-    var heading = accordion.querySelector('' + urlHash + '');
+    var heading = accordion.querySelector(urlHash);
     if (heading) {
-      // Wait for DOM to load before accessing selected accordion
+      //Check if current accordion matches the accordion that the ID is a direct child of
+      var currentAccordionHeading = heading.closest(".".concat(className)) === accordion;
+      if (!currentAccordionHeading) {
+        if (isSubAccordion(heading)) {
+          heading = isSubAccordion(heading);
+        }
+      }
       setTimeout(function () {
         setSection(heading, true);
         heading.nextElementSibling.dataset.closed = 'false';
@@ -24821,50 +25013,32 @@ var aria = {
 
 /***/ }),
 
-/***/ "./src/components/components-v23/nav-sticky/nav-sticky.js":
-/*!****************************************************************!*\
-  !*** ./src/components/components-v23/nav-sticky/nav-sticky.js ***!
-  \****************************************************************/
+/***/ "./src/components/components-v23/content-transition/content-transition-horizontal.js":
+/*!*******************************************************************************************!*\
+  !*** ./src/components/components-v23/content-transition/content-transition-horizontal.js ***!
+  \*******************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
-
-function launch(el) {
-  var elemFix = document.querySelector(".nav-sticky");
-  var scrollActiveLink = '';
-
-  /*
-  // Observer to watching menu position and make it stick
-  */
-
-  function createObserverStickyNav(helperElStickyNav) {
-    var observer;
-    observer = new IntersectionObserver(handleIntersect_stickyMenu);
-    observer.observe(helperElStickyNav);
+function launch(contentSection) {
+  var viewPortWidth = window.innerWidth;
+  if (viewPortWidth < 650) {
+    return;
   }
-  function handleIntersect_stickyMenu(entries) {
+  function handleIntersect_contentsections(entries) {
     entries.forEach(function (entry) {
-      elemFix.classList.toggle('nav-sticky--stick', !entry.isIntersecting);
-    });
-  }
-  createObserverStickyNav(el);
-
-  /*
-  // Observer to watching different content sections and highlight corresponding menu item
-  */
-
-  var contentSections = document.querySelectorAll('.sticky-nav__sec');
-  function handleIntersect_contentSections(entries) {
-    entries.forEach(function (entry) {
-      var entryTitle = entry.target.getAttribute('data-sticky');
       if (entry.isIntersecting) {
-        highlightNavMenuItem(entryTitle);
+        var count = 0;
+        entry.target.querySelectorAll(':scope > *').forEach(function (elem) {
+          setTimeout(function () {
+            elem.classList.add('content-transition-horizontal--end');
+          }, count);
+          count += 250;
+        });
       }
     });
   }
@@ -24872,81 +25046,23 @@ function launch(el) {
     var observerContentSections;
     var options = {
       root: null,
-      rootMargin: "-50%"
+      rootMargin: '-20%'
     };
-    contentSections.forEach(function (area) {
-      observerContentSections = new IntersectionObserver(handleIntersect_contentSections, options);
-      observerContentSections.observe(area);
-    });
+    observerContentSections = new IntersectionObserver(handleIntersect_contentsections, options);
+    observerContentSections.observe(contentSection);
+    if (contentSection.classList.contains('content-transition-horizontal--slow')) {
+      contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+        elem.classList.add('content-transition-horizontal--slow--start');
+      });
+    } else {
+      contentSection.querySelectorAll(':scope > *').forEach(function (elem) {
+        elem.classList.add('content-transition-horizontal--start');
+      });
+    }
   }
   createObserverContentSections();
-
-  /*
-  // Observer to watchinging 1st menu item then add blur effect to start of nav
-  */
-
-  var stickyNavFirstItem = document.querySelector(".nav-sticky__item:first-child");
-  var observeStickyNavFirstItem = new IntersectionObserver(function (entries) {
-    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
-    if (stickyNavWidth < horizontalScrollWidth) {
-      entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--left', !entry.isIntersecting);
-      });
-    }
-  });
-  observeStickyNavFirstItem.observe(stickyNavFirstItem);
-
-  /*
-  // Observer to watchinging last menu item then add blur effect to end of nav
-  */
-
-  var stickyNavLastItem = document.querySelector(".nav-sticky__item:last-child");
-  var observeStickyNavLastItem = new IntersectionObserver(function (entries) {
-    var horizontalScrollWidth = document.querySelector(".nav-sticky__items").scrollWidth;
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
-    if (stickyNavWidth < horizontalScrollWidth) {
-      entries.forEach(function (entry) {
-        document.querySelector(".nav-sticky").classList.toggle('nav-sticky--right', !entry.isIntersecting);
-      });
-    }
-  });
-  observeStickyNavLastItem.observe(stickyNavLastItem);
-
-  /*
-  // Functions below, ensuring the corresponding menu item is set to active that corelates 
-  // to the section of the page you are viewing. The 'active' menu item is triggered by either
-  // clicking on it, or scrolling to a new section
-  */
-
-  var stickyNavMenuItemLinks = document.querySelector(".nav-sticky").querySelectorAll(".nav-sticky__item__link");
-  function highlightNavMenuItem(text) {
-    var stickyNavWidth = document.querySelector(".nav-sticky__items").offsetWidth;
-    stickyNavMenuItemLinks.forEach(function (item) {
-      if (item.innerText == text && !scrollActiveLink) {
-        item.classList.add('nav-sticky__item__link__active');
-        document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
-      } else if (item.innerText == text && scrollActiveLink == text) {
-        setTimeout(function () {
-          item.classList.add('nav-sticky__item__link__active');
-          scrollActiveLink = ''; // clears value to indicate the page has now scrolled down to the clicked link
-          document.querySelector(".nav-sticky__items").scrollLeft = item.offsetLeft - stickyNavWidth / 2 + item.offsetWidth / 2;
-        }, "300");
-      } else {
-        item.classList.remove('nav-sticky__item__link__active');
-      }
-    });
-  }
-  stickyNavMenuItemLinks.forEach(function (item) {
-    item.addEventListener('click', function (event) {
-      event.preventDefault();
-      var scrollToLink = item.getAttribute('href');
-      scrollActiveLink = item.innerHTML;
-      document.querySelector(scrollToLink).scrollIntoView();
-    });
-  });
 }
-var className = 'nav-sticky__helper';
+var className = 'content-transition-horizontal';
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch: launch,
   className: className
@@ -24954,9 +25070,119 @@ var className = 'nav-sticky__helper';
 
 /***/ }),
 
-/***/ "./src/components/components-v23/slider-v23/slider-v23.js":
+/***/ "./src/components/components-v23/content-transition/content-transition-vertical.js":
+/*!*****************************************************************************************!*\
+  !*** ./src/components/components-v23/content-transition/content-transition-vertical.js ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+function launch(contentSection) {
+  function handleIntersect_transitionsSections(entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('content-transition-vertical--end');
+      }
+    });
+  }
+  function createObserverContentSections() {
+    var observerContentSections;
+    var options = {
+      root: null,
+      rootMargin: '-13%'
+    };
+    observerContentSections = new IntersectionObserver(handleIntersect_transitionsSections, options);
+    observerContentSections.observe(contentSection);
+    contentSection.classList.add('content-transition-vertical--start');
+  }
+  createObserverContentSections();
+}
+var className = 'content-transition-vertical';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
+/***/ "./src/components/components-v23/content-transition/square-animation.js":
+/*!******************************************************************************!*\
+  !*** ./src/components/components-v23/content-transition/square-animation.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.map.js */ "./node_modules/core-js/modules/es6.array.map.js");
+/* harmony import */ var core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_map_js__WEBPACK_IMPORTED_MODULE_0__);
+
+
+
+function launch(el) {
+  var viewPortWidth = window.innerWidth;
+  if (viewPortWidth < 650) {
+    return;
+  }
+  var elemHeight = el.querySelector('picture').offsetHeight;
+  var elemWidth = el.querySelector('picture').offsetWidth;
+  var squaresRef = [];
+  var squareswrap = document.createElement('div');
+
+  // calculates how many squares to generate
+  var squares = 4 * Math.ceil(elemHeight / (elemWidth / 4));
+  squareswrap.classList.add('square-animation-v23__wrap');
+  for (var i = 0; i < squares; i++) {
+    var squareContainer = document.createElement('div');
+    squareContainer.classList.add('square-animation-v23__square');
+    squareswrap.appendChild(squareContainer);
+
+    // creates an array acting as a reference for the amount of squares generated
+    squaresRef.push(i);
+  }
+  el.appendChild(squareswrap);
+  var animationTimeout = 0;
+
+  // shuffles the array
+  var sqShuffled = squaresRef.map(function (value) {
+    return {
+      value: value,
+      sort: Math.random()
+    };
+  }).sort(function (a, b) {
+    return a.sort - b.sort;
+  }).map(function (_ref) {
+    var value = _ref.value;
+    return value;
+  });
+  var sqs = el.querySelectorAll('.square-animation-v23__square');
+
+  // loops through the shuffled array to select the generated squares at ramdom to apply an animation to them
+  var _loop = function _loop(_i) {
+    setTimeout(function () {
+      sqs[sqShuffled[_i]].classList.add('square-animation-v23__animation-started');
+    }, animationTimeout);
+    animationTimeout += 1000;
+  };
+  for (var _i = 0; _i < sqShuffled.length; _i++) {
+    _loop(_i);
+  }
+}
+var className = 'square-animation-v23';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
+/***/ "./src/components/components-v23/nav-sticky/nav-sticky.js":
 /*!****************************************************************!*\
-  !*** ./src/components/components-v23/slider-v23/slider-v23.js ***!
+  !*** ./src/components/components-v23/nav-sticky/nav-sticky.js ***!
   \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -24975,14 +25201,253 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
 /* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es6_math_sign_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es6.math.sign.js */ "./node_modules/core-js/modules/es6.math.sign.js");
-/* harmony import */ var core_js_modules_es6_math_sign_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_math_sign_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es6.array.slice.js */ "./node_modules/core-js/modules/es6.array.slice.js");
-/* harmony import */ var core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es6.function.name.js */ "./node_modules/core-js/modules/es6.function.name.js");
-/* harmony import */ var core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../util */ "./src/components/components-v23/util.js");
-/* harmony import */ var _aria_attributes__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../aria-attributes */ "./src/components/components-v23/aria-attributes.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es6.regexp.replace.js */ "./node_modules/core-js/modules/es6.regexp.replace.js");
+/* harmony import */ var core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_replace_js__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+
+
+function launch(el) {
+  var scrollActiveLink = '';
+
+  /*
+  // Create the observer helper div and appended to the DOM
+  */
+  var observerHelper = document.createElement('div');
+  var stickNavHeight = el.offsetHeight;
+  var lastScrollPos = window.scrollY;
+  observerHelper.id = 'nav-sticky__helper';
+  el.parentNode.insertBefore(observerHelper, el);
+
+  /*
+  // Reference to the sticky nav sections
+  */
+  var contentSections = document.querySelectorAll('.sticky-nav__sec');
+  /*
+  // Observer to watching menu position and make it stick
+  */
+
+  function createObserverStickyNav(helperElStickyNav) {
+    var observer;
+    observer = new IntersectionObserver(handleIntersect_stickyMenu);
+    observer.observe(helperElStickyNav);
+  }
+  function handleIntersect_stickyMenu(entries) {
+    entries.forEach(function (entry) {
+      el.classList.toggle('nav-sticky__inner--stick', !entry.isIntersecting);
+    });
+  }
+  createObserverStickyNav(observerHelper);
+  if (window.location.hash) {
+    var currentHash = window.location.hash.substring(1);
+    var matchedHash = Array.from(contentSections).some(function (section) {
+      return section.id === currentHash;
+    });
+    if (matchedHash) {
+      scrollActiveLink = window.location.hash;
+      var elId = scrollActiveLink.replace('#', '');
+      var scrollToEl = document.getElementById(elId);
+      setTimeout(function () {
+        scrollToEl.scrollIntoView();
+        highlightNavMenuItem();
+      }, 700);
+    }
+  }
+
+  /*
+  // Observer to watching different content sections and highlight corresponding menu item
+  */
+
+  function handleIntersect_contentSections(entries) {
+    var scrollTop = window.scrollY;
+    if (!scrollActiveLink) {
+      entries.forEach(function (entry) {
+        if (scrollTop >= lastScrollPos) {
+          if (entry.isIntersecting) {
+            highlightNavMenuItem(entry.target);
+          }
+        } else {
+          if (!entry.isIntersecting) {
+            highlightNavMenuItem(entry.target.previousElementSibling);
+          }
+        }
+      });
+    }
+    lastScrollPos = scrollTop;
+  }
+
+  // function setSectionObserver() {
+  // Can observe and unobserve the sections if needed.
+  // }
+  function createObserverContentSections() {
+    var observerContentSectionsOptions = {
+      root: null,
+      threshold: 0,
+      rootMargin: "-".concat(stickNavHeight, "px 0px -60% 0px")
+    };
+    var observerContentSections = new IntersectionObserver(handleIntersect_contentSections, observerContentSectionsOptions);
+    contentSections.forEach(function (area) {
+      observerContentSections.observe(area);
+    });
+  }
+  createObserverContentSections();
+
+  /*
+  // Observer to watchinging 1st menu item then add blur effect to start of nav
+  */
+
+  var stickyNavFirstItem = document.querySelector('.nav-sticky__item:first-child');
+  var observeStickyNavFirstItem = new IntersectionObserver(function (entries) {
+    var horizontalScrollWidth = document.querySelector('.nav-sticky__items').scrollWidth;
+    var stickyNavWidth = document.querySelector('.nav-sticky__items').offsetWidth;
+    if (stickyNavWidth < horizontalScrollWidth) {
+      entries.forEach(function (entry) {
+        document.querySelector('.nav-sticky').classList.toggle('nav-sticky--left', !entry.isIntersecting);
+      });
+    }
+  });
+  observeStickyNavFirstItem.observe(stickyNavFirstItem);
+
+  /*
+  // Observer to watchinging last menu item then add blur effect to end of nav
+  */
+
+  var stickyNavLastItem = document.querySelector('.nav-sticky__item:last-child');
+  var observeStickyNavLastItem = new IntersectionObserver(function (entries) {
+    var horizontalScrollWidth = document.querySelector('.nav-sticky__items').scrollWidth;
+    var stickyNavWidth = document.querySelector('.nav-sticky__items').offsetWidth;
+    if (stickyNavWidth < horizontalScrollWidth) {
+      entries.forEach(function (entry) {
+        document.querySelector('.nav-sticky').classList.toggle('nav-sticky--right', !entry.isIntersecting);
+      });
+    }
+  });
+  observeStickyNavLastItem.observe(stickyNavLastItem);
+
+  /*
+  // Functions below, ensuring the corresponding menu item is set to active that corelates 
+  // to the section of the page you are viewing. The 'active' menu item is triggered by either
+  // clicking on it, or scrolling to a new section
+  */
+
+  var stickyNavMenuItemLinks = document.querySelector('.nav-sticky').querySelectorAll('.nav-sticky__item__link');
+  var anchorLinksOnPage = document.querySelectorAll('a[href^="#"]');
+  function highlightNavMenuItem(elem) {
+    stickyNavMenuItemLinks.forEach(function (item) {
+      if (scrollActiveLink) {
+        if (item.getAttribute('href') === scrollActiveLink) {
+          item.classList.add('nav-sticky__item__link__active');
+          scrollNavItemToView(item, 700);
+        } else {
+          item.classList.remove('nav-sticky__item__link__active');
+        }
+      } else {
+        if (item.getAttribute('href') === '#' + elem.id && !scrollActiveLink) {
+          item.classList.add('nav-sticky__item__link__active');
+          scrollNavItemToView(item, 700);
+        } else {
+          item.classList.remove('nav-sticky__item__link__active');
+        }
+      }
+    });
+    setTimeout(function () {
+      //Once scrollend event has better support that could be used.
+      scrollActiveLink = '';
+    }, 700);
+  }
+  function scrollNavItemToView(item) {
+    var delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+    var stickyNavItems = document.querySelector('.nav-sticky__items');
+    var stickyNavItemsWidth = stickyNavItems.offsetWidth;
+    setTimeout(function () {
+      stickyNavItems.scrollLeft = item.offsetLeft - stickyNavItemsWidth / 2 + item.offsetWidth / 2;
+    }, delay);
+  }
+  anchorLinksOnPage.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      // If clicked hash is already in the url remove so it gets added again to trigger the hashchange listener
+      var hrefValue = e.target.getAttribute('href');
+      scrollActiveLink = hrefValue;
+      highlightNavMenuItem(e.target);
+    });
+  });
+
+  /*
+  // Create Debug Area
+  // Useful to help see when a section will trigger the observer
+  // Some settings like height and top will need amend if rootMargin is changed
+  */
+
+  // function createDebugArea() {
+  //     const debugArea = document.createElement('div');
+  //     debugArea.id = 'debugArea';
+  //     const debugAreaStyles = {
+  //         'z-index': '1000',
+  //         'background-color': 'rgba(0,128,0,.5)',
+  //         position: 'fixed',
+  //         top: '69px',
+  //         left: '0',
+  //         width: '100vw',
+  //         height: 'calc(100vh - (69px + 60%))',
+  //         'pointer-events': 'none',
+  //     };
+  //     Object.assign(debugArea.style, debugAreaStyles);
+  //     document.body.appendChild(debugArea);
+  // }
+
+  // createDebugArea();
+}
+
+var className = 'nav-sticky__wrap';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch: launch,
+  className: className
+});
+
+/***/ }),
+
+/***/ "./src/components/components-v23/slider-v23/slider-v23.js":
+/*!****************************************************************!*\
+  !*** ./src/components/components-v23/slider-v23/slider-v23.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es6_array_find_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.find.js */ "./node_modules/core-js/modules/es6.array.find.js");
+/* harmony import */ var core_js_modules_es6_array_find_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_object_keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.object.keys.js */ "./node_modules/core-js/modules/es6.object.keys.js");
+/* harmony import */ var core_js_modules_es6_object_keys_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_keys_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_number_constructor_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.number.constructor.js */ "./node_modules/core-js/modules/es6.number.constructor.js");
+/* harmony import */ var core_js_modules_es6_number_constructor_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_number_constructor_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_array_find_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.array.find-index.js */ "./node_modules/core-js/modules/es6.array.find-index.js");
+/* harmony import */ var core_js_modules_es6_array_find_index_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_find_index_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.symbol.js */ "./node_modules/core-js/modules/es6.symbol.js");
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es6.array.from.js */ "./node_modules/core-js/modules/es6.array.from.js");
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es6.string.iterator.js */ "./node_modules/core-js/modules/es6.string.iterator.js");
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es6.object.to-string.js */ "./node_modules/core-js/modules/es6.object.to-string.js");
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es6.array.iterator.js */ "./node_modules/core-js/modules/es6.array.iterator.js");
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es6_math_sign_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es6.math.sign.js */ "./node_modules/core-js/modules/es6.math.sign.js");
+/* harmony import */ var core_js_modules_es6_math_sign_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_math_sign_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es6.array.slice.js */ "./node_modules/core-js/modules/es6.array.slice.js");
+/* harmony import */ var core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es6.function.name.js */ "./node_modules/core-js/modules/es6.function.name.js");
+/* harmony import */ var core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../util */ "./src/components/components-v23/util.js");
+/* harmony import */ var _aria_attributes__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../aria-attributes */ "./src/components/components-v23/aria-attributes.js");
 
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -25000,13 +25465,17 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
+
+
+
+
 /**
-* Slider
-*
-* @module patterns/slider/slider
-* @author Web Development
-* @copyright City, University of London 2020
-*/
+ * Slider
+ *
+ * @module patterns/slider/slider
+ * @author Web Development
+ * @copyright City, University of London 2020
+ */
 
 
 
@@ -25015,13 +25484,13 @@ var className = 'slider-v23',
   defaultCardsPerRow = 1,
   arrowLeft = 'ArrowLeft',
   arrowRight = 'ArrowRight';
-
+var sliderInitialSlides = ''; //Variable to store the initial launch state of the slide so it can be reset so optimised slides can be re calculated.
 /**
-* This adds a few swipe related events listeners to the "ul" element of sliders
-*
-* @param  {HTMLElement} slider - The slider ul element.
-* @param  {HTMLElement} controlsWrapper - The nav element containing the slider controls
-*/
+ * This adds a few swipe related events listeners to the "ul" element of sliders
+ *
+ * @param  {HTMLElement} slider - The slider ul element.
+ * @param  {HTMLElement} controlsWrapper - The nav element containing the slider controls
+ */
 
 function addSwipeEvents(slider, controlsWrapper) {
   slider.addEventListener('mousedown', function (e) {
@@ -25039,20 +25508,119 @@ function addSwipeEvents(slider, controlsWrapper) {
 }
 
 /**
-* For arrow responsive slider. Opimises slide elements for responsive slider on
-* bigger screens by creating a new "ul li" structure containing the slides
-*
-* @param  {HTMLElement} slider - The slider "ul" element.
-* @param  {Array} slides - an array containing the individual slides as li elements.
-* @param  {HTMLElement} controls - The "nav" element containing the controls
-*
-*/
-function responsiveOptimisation(slides, slider, controls, direction) {
-  var responsiveNum = 2; // number of items per slide to display
+ * Utility object that contains screen breakpoints and method to return current size based on breakpoints
+ * Usage:
+ * Return current screen type name - Screens.getType()
+ * Get min value for tablet Screens.breakpoints.tablet.min
+ */
 
+var Screens = {
+  breakpoints: {
+    mobile: {
+      max: 767
+    },
+    tablet: {
+      min: 768,
+      max: 899
+    },
+    medium: {
+      min: 900
+    }
+  },
+  getType: function getType() {
+    var _this = this;
+    var screenWidth = window.innerWidth;
+    return Object.keys(this.breakpoints).find(function (breakpoints) {
+      var _this$breakpoints$bre = _this.breakpoints[breakpoints],
+        _this$breakpoints$bre2 = _this$breakpoints$bre.min,
+        min = _this$breakpoints$bre2 === void 0 ? 0 : _this$breakpoints$bre2,
+        _this$breakpoints$bre3 = _this$breakpoints$bre.max,
+        max = _this$breakpoints$bre3 === void 0 ? Infinity : _this$breakpoints$bre3;
+      return screenWidth >= min && screenWidth <= max;
+    }) || 'unknown';
+  }
+};
+
+/**
+ * Function to return the index of the next slide and individual item.
+ * Used within responsiveOptimisation() to calculate correct current slide index when transitioning between different items per slide
+ *
+ * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
+ * @param  {Number} currentSlideIndex - The index of the current active slide
+ * @param  {Number} previousItemsPerSlide - How many items were being shown per slide previously
+ * @param  {Number} newItemsPerSlide - How many items are now to be shown per slide
+ * @param  {Number} totalItems - How many items across all slides
+ *
+ */
+
+function calculateNewSlideIndex(direction, currentSlideIndex, previousItemsPerSlide, newItemsPerSlide, totalItems) {
+  var targetItemIndex;
+  if (direction === 1) {
+    // Next
+    // Calculate the index of the first item for the next slide in the current configuration
+    targetItemIndex = (currentSlideIndex + 1) * previousItemsPerSlide;
+    targetItemIndex = Math.min(targetItemIndex, totalItems); // Ensure it doesn't exceed total items
+  } else if (direction === -1) {
+    // Prev
+    // Calculate the index of the last item for the previous slide in the current configuration
+    // This is one less than the first item on the current slide
+    targetItemIndex = currentSlideIndex * previousItemsPerSlide - 1;
+    targetItemIndex = Math.max(0, targetItemIndex); // Ensure it doesn't go below 0
+  } else {
+    throw new Error("Invalid direction specified. Use 1 for 'next' or -1 for 'prev'.");
+  }
+
+  // Calculate the new slide index to ensure the target item is visible with the new configuration
+  var newSlideIndex = Math.floor(targetItemIndex / newItemsPerSlide);
+  return {
+    slide: newSlideIndex,
+    item: targetItemIndex
+  };
+}
+
+/**
+ * For arrow responsive slider. Opimises slide elements for responsive slider on
+ * bigger screens by creating a new "ul li" structure containing the slides
+ *
+ * @param  {HTMLElement} slider - The slider "ul" element.
+ * @param  {Array} slides - an array containing the individual slides as li elements.
+ * @param  {HTMLElement} controls - The "nav" element containing the controls
+ *
+ */
+
+function responsiveOptimisation(slides, slider, controls, direction) {
+  var screenSize = window.innerWidth;
+  var responsiveNum = slider.getAttribute('data-perslide') ? Number(slider.getAttribute('data-perslide')) : 3; // number of items per slide to display, default 3
+  if (screenSize <= Screens.breakpoints.medium.min) {
+    responsiveNum = 2;
+  }
+  slider.style.setProperty('--slider-grid-columns', responsiveNum);
   var i;
   var d;
   var currentSlide;
+  var nestedSlides = slider.querySelectorAll('.slider-v23__cards-inner li');
+  if (nestedSlides.length > 0) {
+    var totalItems = nestedSlides.length; // Total number of items
+    var currentSlideIndex = slides.findIndex(function (li) {
+      return li.getAttribute('data-sliderposition') === '0';
+    }); //Get the current active slide
+
+    var itemsPerSlide = slides[0].querySelectorAll('li').length; //How many items per slide
+
+    var nextIndex = calculateNewSlideIndex(direction, currentSlideIndex, itemsPerSlide, responsiveNum, totalItems);
+    var newSlidesFragment = document.createDocumentFragment();
+    slider.innerHTML = '';
+    nestedSlides.forEach(function (slide, index) {
+      if (index === currentSlideIndex) {
+        slide.setAttribute('data-test', 'yes');
+        slide.setAttribute('data-sliderposition', '0');
+      }
+      newSlidesFragment.appendChild(slide);
+    });
+    slider.appendChild(newSlidesFragment);
+    slides = Array.from(slider.children);
+  }
+
   // This cycles through all the current slides and re-structure the list by creating a "new" which list contains
   // the number of items per slide, as set above (responsiveNum)
   //i.e.
@@ -25070,6 +25638,7 @@ function responsiveOptimisation(slides, slider, controls, direction) {
   for (i = 0; i < slides.length; i += responsiveNum) {
     var liElement = document.createElement('li');
     var ulElement = document.createElement('ul');
+    ulElement.classList.add('slider-v23__cards-inner');
     liElement.appendChild(ulElement);
     for (d = 0; d < responsiveNum; d++) {
       if (slides[i + d]) {
@@ -25088,7 +25657,8 @@ function responsiveOptimisation(slides, slider, controls, direction) {
   slides = Array.from(slider.children);
   // Adds appropriate data attributes to slides
   prepareSlides(slides, Math.floor((currentSlide + direction) / 2));
-  slider.setAttribute('data-optimised', 'true');
+  //slider.setAttribute('data-optimised', 'true');
+  slider.setAttribute('data-optimised', Screens.getType());
 
   // Resets pagination during screensize change - not during launch
   if (controls) {
@@ -25099,16 +25669,17 @@ function responsiveOptimisation(slides, slider, controls, direction) {
     updateButtonState(slider, controls);
   }
   slider.setAttribute('data-count', slides.length);
+  // slideHeightFix(slider);
   return slides;
 }
 
 /**
-* For arrow responsive slider.This reverses the optimasation (re-structure) that was done in
-* the function (responsiveOptimisation) above by creating a "normal" single structure ul list
-*
-* @param  {HTMLElement} slider - The slider "ul" element.
-* @param  {HTMLElement} controls - The "nav" element containing the controls
-*/
+ * For arrow responsive slider.This reverses the optimasation (re-structure) that was done in
+ * the function (responsiveOptimisation) above by creating a "normal" single structure ul list
+ *
+ * @param  {HTMLElement} slider - The slider "ul" element.
+ * @param  {HTMLElement} controls - The "nav" element containing the controls
+ */
 function reverseOptimisation(slider, controls, direction) {
   //formula for reverse is working
   var slides = Array.from(slider.children);
@@ -25116,16 +25687,22 @@ function reverseOptimisation(slider, controls, direction) {
   var currentSlide;
   var adjustment = 0;
   for (i = 0; i < slides.length; i++) {
+    var _slides$i$querySelect, _slides$i$querySelect2;
     var sliderposition = slides[i].getAttribute('data-sliderposition');
     if (sliderposition === '0') {
       currentSlide = i;
     }
-    var slidesChildren = Array.from(slides[i].querySelector('ul').children);
-    slidesChildren.forEach(function (slide) {
-      slider.appendChild(slide);
-    });
+    var slidesChildren = Array.from((_slides$i$querySelect = (_slides$i$querySelect2 = slides[i].querySelector('ul')) === null || _slides$i$querySelect2 === void 0 ? void 0 : _slides$i$querySelect2.children) !== null && _slides$i$querySelect !== void 0 ? _slides$i$querySelect : []);
+    if (slidesChildren.length >= 1) {
+      slidesChildren.forEach(function (slide) {
+        slider.appendChild(slide);
+      });
+    } else {
+      slider.appendChild(slides[i]);
+    }
     slides[i].remove();
   }
+  //slider.replaceChildren(newSlidesFragment);
   // Re-map slide items after re-structure
   slides = Array.from(slider.children);
 
@@ -25136,7 +25713,7 @@ function reverseOptimisation(slider, controls, direction) {
 
   // Assigns data attributes and positioning to slides
   prepareSlides(slides, currentSlide * 2 + Math.round(direction / 2) + direction + adjustment);
-  slider.setAttribute('data-optimised', 'false');
+  slider.setAttribute('data-optimised', Screens.getType());
 
   // Resets pagination and places focus on first slide
   slides[currentSlide * 2 + (Math.round(direction / 2) + direction) + adjustment].focus();
@@ -25148,11 +25725,11 @@ function reverseOptimisation(slider, controls, direction) {
 }
 
 /**
-* Updates buttons for arrow slider
-*
-* @param  {HTMLElement} slider - The slider element.
-* @param  {HTMLElement} controls - The slider controls element.
-*/
+ * Updates buttons for arrow slider
+ *
+ * @param  {HTMLElement} slider - The slider element.
+ * @param  {HTMLElement} controls - The slider controls element.
+ */
 function updateButtonState(slider, controls) {
   // Disables "next" or "prev" buttons if on first or last slide
   var nextButton = controls.querySelector(".".concat(className, "__controls__next")),
@@ -25168,11 +25745,11 @@ function updateButtonState(slider, controls) {
 }
 
 /**
-* Handle clicks on the next/previous buttons for arrow slider.
-*
-* @param  {HTMLElement} slider - The slider element.
-* @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
-*/
+ * Handle clicks on the next/previous buttons for arrow slider.
+ *
+ * @param  {HTMLElement} slider - The slider element.
+ * @param  {Number} direction - The scroll direction, 1 = next, -1 = previous.
+ */
 function handleNextPrevClick(slider, controls, direction) {
   var slides = Array.from(slider.children);
   var responsive = slider.getAttribute('data-style');
@@ -25180,12 +25757,26 @@ function handleNextPrevClick(slider, controls, direction) {
   var screenSize = window.innerWidth;
 
   // This is for responsive slider only, checking if re-structuring is necesssary in case the viewport size changed.
-  if (responsive === 'responsive' && screenSize < 768 && optimised === 'true') {
-    reverseOptimisation(slider, controls, direction, true);
-    return;
-  } else if (responsive === 'responsive' && screenSize >= 768 && optimised !== 'true') {
-    responsiveOptimisation(slides, slider, controls, direction);
-    return;
+
+  if (responsive === 'responsive') {
+    //resetOptimisation(slider);
+    if (screenSize < Screens.breakpoints.tablet.min) {
+      if (optimised !== 'mobile') {
+        reverseOptimisation(slider, controls, direction, true);
+        slideHeightFix(slider);
+      }
+    } else if (screenSize < Screens.breakpoints.medium.min) {
+      if (optimised !== 'tablet') {
+        responsiveOptimisation(slides, slider, controls, direction);
+        slideHeightFix(slider);
+      }
+    } else {
+      // Assumes any screenSize >= Screens.breakpoints.medium.min
+      if (optimised !== 'medium') {
+        responsiveOptimisation(slides, slider, controls, direction);
+        slideHeightFix(slider);
+      }
+    }
   }
   var current = slider.querySelector('[data-sliderposition="0"]'),
     currentPage = controls.querySelector(".".concat(className, "__indicator__current")),
@@ -25214,7 +25805,6 @@ function handleNextPrevClick(slider, controls, direction) {
       current.addEventListener('transitionend', function hideCurrent() {
         current.removeEventListener('transitionend', hideCurrent, true);
         current.dataset.hidden = true;
-        current.dataset.smallhidden = true;
       }, true);
 
       // Updates position of slides
@@ -25222,12 +25812,19 @@ function handleNextPrevClick(slider, controls, direction) {
       previous ? previous.classList.remove('slide--prev') : '';
       current.classList.add('slide--prev');
       current.dataset.sliderposition = -1;
+      current.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.setAttribute('tabindex', -1);
+      });
+
       // Sets 'active' current slide
       next.dataset.hidden = false;
-      next.dataset.smallhidden = false;
       next.classList.remove('slide--next');
       next.nextElementSibling ? next.nextElementSibling.classList.add('slide--next') : '';
       next.dataset.sliderposition = 0;
+      next.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.removeAttribute('tabindex');
+      });
+
       // Updates pagination to current slide position
       currentPage.innerText = slides.indexOf(next) + 1;
     }
@@ -25246,7 +25843,6 @@ function handleNextPrevClick(slider, controls, direction) {
       current.addEventListener('transitionend', function hideCurrent() {
         current.removeEventListener('transitionend', hideCurrent, true);
         current.dataset.hidden = true;
-        current.dataset.smallhidden = true;
       }, true);
 
       // Updates position of slides
@@ -25254,12 +25850,19 @@ function handleNextPrevClick(slider, controls, direction) {
       next ? next.classList.remove('slide--next') : '';
       current.classList.add('slide--next');
       current.dataset.sliderposition = 1;
+      current.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.setAttribute('tabindex', -1);
+      });
+
       // Sets current / active slide
       previous.dataset.hidden = false;
-      previous.dataset.smallhidden = false;
       previous.classList.remove('slide--prev');
       previous.previousElementSibling ? previous.previousElementSibling.classList.add('slide--prev') : '';
       previous.dataset.sliderposition = 0;
+      previous.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.removeAttribute('tabindex');
+      });
+
       // Updates pagination to current slide
       currentPage.innerText = slides.indexOf(previous) + 1;
     }
@@ -25270,44 +25873,50 @@ function handleNextPrevClick(slider, controls, direction) {
 }
 
 /**
-* This is for arrow slider only. It applies the necessary data attribues needed
-*  for the functionality of the slider which positions the slides into their starting positions
-*
-* @param  {Array} slides - an array containing the individual slides as li elements
-*/
+ * This is for arrow slider only. It applies the necessary data attribues needed
+ *  for the functionality of the slider which positions the slides into their starting positions
+ *
+ * @param  {Array} slides - an array containing the individual slides as li elements
+ */
 function prepareSlides(slides, current) {
   slides.forEach(function (slide, i) {
     slide.setAttribute('tabindex', -1); // Remove inactive
-    slide.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, "Slide ".concat(i + 1, " of ").concat(slides.length)); // Accesiblity
+    slide.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_14__["default"].label, "Slide ".concat(i + 1, " of ").concat(slides.length)); // Accesiblity
     slide.classList.add('slide'); // Add slide class of slide
 
     // 0 = active / first slide
     if (i === current) {
       slide.dataset.sliderposition = 0;
       slide.dataset.hidden = false;
+      slide.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.removeAttribute('tabindex');
+      });
     } else if (i > current) {
       // 1 = next slide
       slide.dataset.sliderposition = 1;
       slide.dataset.hidden = 'true';
-      slide.dataset.smallhidden = 'true';
       current + 1 == i ? slide.classList.add('slide--next') : '';
+      slide.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.setAttribute('tabindex', -1);
+      });
     } else {
       slide.dataset.sliderposition = -1;
       slide.dataset.hidden = true;
       current - 1 == i ? slide.classList.add('slide--prev') : '';
-      // @ WR review smallhidden - what was intended by it?
+      slide.querySelectorAll('a').forEach(function (anchor) {
+        return anchor.setAttribute('tabindex', -1);
+      });
     }
   });
-
   return slides;
 }
 
 /**
-* Transform an element with the slider class name into a slider section controlled by arrows.
-*
-* @param {HTMLElement} slider - An element with the slider class
-*
-*/
+ * Transform an element with the slider class name into a slider section controlled by arrows.
+ *
+ * @param {HTMLElement} slider - An element with the slider class
+ *
+ */
 function launchArrow(slider) {
   // creates elements for pagination and controls
   var slides = Array.from(slider.children);
@@ -25322,15 +25931,17 @@ function launchArrow(slider) {
     divider = document.createElement('span'),
     dividerVisible = document.createElement('span'),
     dividerScreenReader = document.createElement('span');
+  slider.setAttribute('data-optimised', Screens.getType());
 
   // If not enough slides, don't create it.
   if (1 >= slides.length) {
-    Object(_util__WEBPACK_IMPORTED_MODULE_9__["removeClass"])(slider, className, false);
+    Object(_util__WEBPACK_IMPORTED_MODULE_13__["removeClass"])(slider, className, false);
     return;
   }
 
   // Reconstructs slides for responsive slider
   var responsive = slider.getAttribute('data-style');
+  sliderInitialSlides = slider.innerHTML; //Store the current state of the slider for use with reset
   var screenSize = window.innerWidth;
   if (responsive === 'responsive' && screenSize >= 768) {
     responsiveOptimisation(slides, slider);
@@ -25340,7 +25951,8 @@ function launchArrow(slider) {
 
   // Sets up the positions of the cards / slides
   prepareSlides(slides, 0);
-
+  // Set the height of the slider container to be fixed. This fixes the issue of having 'arrow navigation'
+  slideHeightFix(slider);
   // Build the next button
   nextButtonSpan.appendChild(document.createTextNode('Next slide'));
   nextButton.appendChild(nextButtonSpan);
@@ -25383,7 +25995,7 @@ function launchArrow(slider) {
   // Divider between 1 / 4 etc.
   dividerVisible.appendChild(document.createTextNode('/'));
   dividerVisible.className = className + '__indicator__divider--visible';
-  dividerVisible.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].hidden, 'true');
+  dividerVisible.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_14__["default"].hidden, 'true');
   dividerScreenReader.appendChild(document.createTextNode(' of '));
   dividerScreenReader.className = className + '__indicator__divider--sr';
   divider.appendChild(dividerVisible);
@@ -25405,44 +26017,38 @@ function launchArrow(slider) {
   controlsWrapper.appendChild(prevButton);
   controlsWrapper.appendChild(nextButton);
   responsive == 'responsive' ? controlsWrapper.className = className + '__controls ' + className + '__controls--responsive' : controlsWrapper.className = className + '__controls ' + className + '__controls--arrows';
-  controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, 'Slider navigation');
+  controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_14__["default"].label, 'Slider navigation');
 
   // Places controls directly after 'ul' containing the slides
 
   slider.nextElementSibling ? slider.parentElement.insertBefore(controlsWrapper, slider.nextElementSibling) : slider.parentElement.appendChild(controlsWrapper);
 
-  /*
-      //Places controls directly after the element wrapping the 'ul' slides
-      slider.parentElement.parentElement.appendChild(controlsWrapper);
-       */
-
   // Add event listeners
-  addSwipeEvents(slider, controlsWrapper);
 
-  // Set the height of the slider container to be fixed. This fixes the issue of having 'arrow navigation'
-  //slideHeightFix(slider);
+  addSwipeEvents(slider, controlsWrapper);
 }
 
 /**
-* Transform an element with the slider class name into a slider section controlled by dots.
-* This is to be launched on smaller screens only.
-*
-* @param {HTMLElement} slider - An element with the slider class
-*
-*/
+ * Transform an element with the slider class name into a slider section controlled by dots.
+ * This is to be launched on smaller screens only.
+ *
+ * @param {HTMLElement} slider - An element with the slider class
+ *
+ */
 function launchDot(slider) {
   // Creates pagination and control elements
+  var container = slider.getAttribute('data-ul-container');
   var slides = Array.from(slider.children),
     controlsWrapper = document.createElement('nav');
 
   // If not enough slides, don't create it.
   if (1 >= slides.length) {
-    Object(_util__WEBPACK_IMPORTED_MODULE_9__["removeClass"])(slider, className, false);
+    Object(_util__WEBPACK_IMPORTED_MODULE_13__["removeClass"])(slider, className, false);
     return;
   }
   slides.forEach(function (slide, i) {
     slide.setAttribute('tabindex', -1); // Remove inactive
-    slide.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, "Slide ".concat(i + 1, " of ").concat(slides.length)); // Accesiblity
+    slide.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_14__["default"].label, "Slide ".concat(i + 1, " of ").concat(slides.length)); // Accesiblity
     slide.classList.add('slide'); // Add slide class of slide
 
     // Sets data attributes for slides which controls their position within slide collection
@@ -25452,11 +26058,10 @@ function launchDot(slider) {
     } else {
       slide.dataset.sliderposition = 1; // 1 for 'next' slide
       slide.dataset.hidden = 'true';
-      slide.dataset.smallhidden = 'true';
     }
 
     // Creates dot buttons for each slide
-    var dot = Object(_util__WEBPACK_IMPORTED_MODULE_9__["createHTMLElement"])('button', [{
+    var dot = Object(_util__WEBPACK_IMPORTED_MODULE_13__["createHTMLElement"])('button', [{
       label: 'data-page',
       val: i
     }, {
@@ -25468,12 +26073,12 @@ function launchDot(slider) {
     }]);
     if (i === 0) {
       // Active slide
-      dot.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].current, 'slide');
-      dot.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].expanded, 'true');
+      dot.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_14__["default"].current, 'slide');
+      dot.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_14__["default"].expanded, 'true');
       dot.setAttribute('disabled', 'true');
     } else {
       // All other slides
-      dot.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].expanded, 'false');
+      dot.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_14__["default"].expanded, 'false');
     }
     dot.addEventListener('click', function () {
       return handleDotClick(slider, controlsWrapper, i);
@@ -25506,10 +26111,11 @@ function launchDot(slider) {
 
   // Wrap element around slider__controls
   controlsWrapper.className = className + '__controls ' + className + '__controls--dots';
-  controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_10__["default"].label, 'Slider navigation');
+  controlsWrapper.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_14__["default"].label, 'Slider navigation');
 
-  // Places controls directly after the element wrapping the 'ul' slides
-  slider.parentElement.parentElement.appendChild(controlsWrapper);
+  // Places controls directly after the element wrapping the 'ul' slides if wrapper true
+  container == 'true' ? slider.parentElement.parentElement.appendChild(controlsWrapper) : slider.parentElement.appendChild(controlsWrapper);
+
   //add event listeners
   addSwipeEvents(slider, controlsWrapper);
 
@@ -25518,12 +26124,12 @@ function launchDot(slider) {
 }
 
 /**
-* Handle clicks for dot slider
-*
-* @param  {HTMLElement} slider - The slider element.
-* @param  {Number} selection - pass the paramaetr of selected slide as a number
-* @param  {HTMLElement} controlsWrapper - Element containing the control buttons
-*/
+ * Handle clicks for dot slider
+ *
+ * @param  {HTMLElement} slider - The slider element.
+ * @param  {Number} selection - pass the paramaetr of selected slide as a number
+ * @param  {HTMLElement} controlsWrapper - Element containing the control buttons
+ */
 
 function handleDotClick(slider, controlsWrapper, selection) {
   var slides = Array.from(slider.children),
@@ -25550,13 +26156,11 @@ function handleDotClick(slider, controlsWrapper, selection) {
     else if (i > selection) {
       slide.dataset.sliderposition = 1;
       slide.dataset.hidden = true;
-      // @ WR review smallhidden - what was intended by it?
     }
     // Places slides 'before' current slide in previous position
     else {
       slide.dataset.sliderposition = -1;
       slide.dataset.hidden = true;
-      // @ WR review smallhidden - what was intended by it?
     }
   });
 
@@ -25565,9 +26169,9 @@ function handleDotClick(slider, controlsWrapper, selection) {
 }
 
 /**
-* @param  {number} active - This is the number/index of the 'active' slide.
-* @param  {array} dotButtons - An array of all the dot buttons.
-*/
+ * @param  {number} active - This is the number/index of the 'active' slide.
+ * @param  {array} dotButtons - An array of all the dot buttons.
+ */
 function updateDotButtonState(active, dotButtons, slider) {
   dotButtons.forEach(function (dot, i) {
     if (i === active) {
@@ -25582,35 +26186,35 @@ function updateDotButtonState(active, dotButtons, slider) {
 }
 
 /**
-* This function creates a fix height for the slider container so the height don't change depending on each
-* slides individual height which would cause the navigation arrows to move up and down when adjusting to the
-* height of the current slide
-* @param  {HTMLElement} slider - The slider element.
-*/
-// function slideHeightFix(slider){
-//     let slides = Array.from(slider.children);
-//     let sliderSetHeight = 0;
-//     slider.style.minHeight = '0px';
+ * This function creates a fix height for the slider container so the height don't change depending on each
+ * slides individual height which would cause the navigation arrows to move up and down when adjusting to the
+ * height of the current slide
+ * @param  {HTMLElement} slider - The slider element.
+ */
 
-//     slides.forEach((slide) => {
-//         let slideHeight = slide.offsetHeight;
-//         slideHeight > sliderSetHeight ? sliderSetHeight = slideHeight: null;
-//     })
-//     slider.style.minHeight = sliderSetHeight+'px';
-// };
-
+function slideHeightFix(slider) {
+  var slides = slider.querySelectorAll('.course-card-v23');
+  var sliderSetHeight = 0;
+  slider.style.setProperty('--slider-min-height', "auto");
+  slides.forEach(function (slide) {
+    var slideHeight = slide.offsetHeight;
+    var slideImg = slide.querySelector('img');
+    slideHeight > sliderSetHeight ? sliderSetHeight = slideHeight : null;
+  });
+  slider.style.setProperty('--slider-min-height', "".concat(sliderSetHeight, "px"));
+}
 /**
-* 3 Swipe functions below. Unify records touch coordinates to determine left or right swipe.
-* Lock function locks the ul element to prevent too many additional touches interfering with the sliding
-* functionality. I.e. when a slide is in progress it locks it not to register additional touches.
-* Move function monitors the 'end' of the swipe action to determine the direction of the swipe i.e. left / right.
-* The "dx" parameter can be used to adjust the sensitivity of the swiping. The larger the number the longer the swipe needs
-* to be to register as an actual swipe.
-*
-* @param {event} e - Touch event
-* @param {HTMLElement} Slider - The ul element containing the "li" slides
-* @param {HTMLElement} ControlsWrapper - The nav element containing the slider controls
-*/
+ * 3 Swipe functions below. Unify records touch coordinates to determine left or right swipe.
+ * Lock function locks the ul element to prevent too many additional touches interfering with the sliding
+ * functionality. I.e. when a slide is in progress it locks it not to register additional touches.
+ * Move function monitors the 'end' of the swipe action to determine the direction of the swipe i.e. left / right.
+ * The "dx" parameter can be used to adjust the sensitivity of the swiping. The larger the number the longer the swipe needs
+ * to be to register as an actual swipe.
+ *
+ * @param {event} e - Touch event
+ * @param {HTMLElement} Slider - The ul element containing the "li" slides
+ * @param {HTMLElement} ControlsWrapper - The nav element containing the slider controls
+ */
 
 var x0;
 function unify(e) {
@@ -25655,10 +26259,10 @@ function move(e, slider, controlsWrapper) {
 // End of swipe functions
 
 /**
-* Transform an element with the slider class name into a slider section.
-*
-* @param {HTMLElement} slider - An element with the slider class
-*/
+ * Transform an element with the slider class name into a slider section.
+ *
+ * @param {HTMLElement} slider - An element with the slider class
+ */
 function launch(slider) {
   var style = slider.dataset.style || defaultStyle,
     cardsPerRow = parseInt(slider.dataset.cardsperrow) || defaultCardsPerRow; // CardsPerRow not currently in use. Tom's old code.
@@ -25820,6 +26424,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+/**
+ * function that calculates the scrollbar width
+ */
+
+function getVerticalScrollbarWidth() {
+  // Creating a div element for helping to calculate scrollbar width
+  var scrollDiv = document.createElement('div');
+  scrollDiv.style.cssText = 'width: 100px; height: 100px; overflow: scroll; position: absolute; top: -9999px;';
+
+  // Appending the div to the body to measure scrollbar width
+  document.body.appendChild(scrollDiv);
+  var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+
+  // Remove the div from the body
+  document.body.removeChild(scrollDiv);
+
+  // adds scrollbar width as variable to root so can be used by CSS styles
+  var root = document.documentElement;
+  root.style.setProperty('--scrollbar-width', scrollbarWidth + 'px');
+  return scrollbarWidth;
+}
+
+/**
+ * function that enables / disables body scroll when modal opens or closes. As the scrollbar disappears
+ * to lock scrolling, a margin gets added in place of where the scrollbar use to be
+ * to prevent content from jumping
+ *
+ */
+
+function enableBodyScroll() {
+  document.documentElement.classList.remove('no-scroll');
+  document.querySelector('.back-to-top').setAttribute('hidden', 'false');
+}
+function disableBodyScroll() {
+  getVerticalScrollbarWidth();
+  document.querySelector('.back-to-top').setAttribute('hidden', 'true');
+  document.documentElement.classList.add('no-scroll');
+}
 function closeDialog() {
   var focusBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
   if (current.dlg) {
@@ -25831,7 +26474,7 @@ function closeDialog() {
     current.focusBackTo.focus();
     current.focusBackTo = null;
   }
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').removeClass('no-scroll');
+  enableBodyScroll();
 }
 var DEFAULT_OPTS = {
   closeOnOverlay: true,
@@ -25881,7 +26524,7 @@ function openModalDialog(title, content) {
   }
   dlg.focus();
   current.focusTrap = focus_trap__WEBPACK_IMPORTED_MODULE_2___default()(dlg[0]).activate();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html').addClass('no-scroll');
+  disableBodyScroll();
 }
 
 /***/ }),
@@ -26202,9 +26845,12 @@ function prepareMenu(widget) {
   if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
     var menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14); // Staffhub(SH) uses different tree due to being type2 asset in Matrix
     menu.launch();
-  } else {
-    var _menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["current"], false, 14);
+  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
+    var _menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentSH"], false, 14); // Alumni uses different tree due to being type2 asset in Matrix
     _menu.launch();
+  } else {
+    var _menu2 = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_5__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_4__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_4__["current"], false, 14);
+    _menu2.launch();
   }
   widget.addClass('left-hand-navigation--jsinit');
 }
@@ -26255,18 +26901,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function processTree(gCurrent, gTree) {
-  if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 3) {
+  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 2) {
+    // left hand navigation only starts on level 2 if Staffhub
     return {
       tree: null,
       current: null
-    }; // left hand navigation only starts on level 3
-  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 2) {
+    };
+  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 2) {
+    // left hand navigation only starts on level 2 if Alumni
     return {
       tree: null,
       current: null
-    }; // left hand navigation only starts on level 2 if Staffhub
+    };
+  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_4__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 3) {
+    // left hand navigation only starts on level 3
+    return {
+      tree: null,
+      current: null
+    };
   }
-
   var tree = gCurrent.slice(1, 3).reduce(function (acc, currentItem) {
     return acc.children.find(function (child) {
       return child.url === currentItem.url;
@@ -26499,9 +27152,14 @@ function launch(el) {
     var nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentSH"], containerTri);
     nav.launch();
     Object(_home_link__WEBPACK_IMPORTED_MODULE_6__["default"])(containerTop);
-  } else {
-    var _nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["current"], containerTop);
+  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
+    // Alumni uses different tree due to being type2 asset in Matrix
+    var _nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["currentSH"], containerTri);
     _nav.launch();
+    Object(_home_link__WEBPACK_IMPORTED_MODULE_6__["default"])(containerTop);
+  } else {
+    var _nav2 = new _nav_mobile__WEBPACK_IMPORTED_MODULE_4__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_5__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_5__["current"], containerTop);
+    _nav2.launch();
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -27097,6 +27755,7 @@ function findItems(widget) {
 function prepareItems(widget, items) {
   var variations = Object(_js_utils_variations__WEBPACK_IMPORTED_MODULE_6__["identifyVariations"])(widget, className);
   var open = function open(i, identifyFocusBackTo) {
+    var infinateLoop;
     var _items$i = items[i],
       title = _items$i.title,
       category = _items$i.category,
@@ -27121,7 +27780,14 @@ function prepareItems(widget, items) {
     var nextWrapper = jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').addClass('popup-def-list-group__prevnext__next').append(nextLink).append('<span class="popup-def-list-group__prevnext__next__icon" aria-hidden="true"></span>');
     var prevWrapper = jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').addClass('popup-def-list-group__prevnext__prev').append('<span class="popup-def-list-group__prevnext__prev__icon" aria-hidden="true"></span>').append(prevLink);
     var dlgContent = jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').append(content);
-    jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').addClass('popup-def-list-group__prevnext').append(prevWrapper).append(nextWrapper).appendTo(dlgContent);
+    var prevNextWrapper = jquery__WEBPACK_IMPORTED_MODULE_4___default()('<div></div>').addClass('popup-def-list-group__prevnext');
+    if (i > 0) {
+      prevNextWrapper.append(prevWrapper);
+    }
+    if (nextIndex !== 0) {
+      prevNextWrapper.append(nextWrapper);
+    }
+    prevNextWrapper.appendTo(dlgContent);
     Object(_dialog_dialog__WEBPACK_IMPORTED_MODULE_5__["openModalDialog"])(dlgTitle, dlgContent, {
       identifyFocusBackTo: identifyFocusBackTo,
       className: Object(_js_utils_variations__WEBPACK_IMPORTED_MODULE_6__["variationClassNames"])("".concat(className, "__dlg"), variations)
