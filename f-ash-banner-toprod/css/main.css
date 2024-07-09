@@ -16411,6 +16411,16 @@ svg:not(:root) {
     color: #ffffff;
 }
 
+.banner--theme--cce .banner__content h1 {
+    background-color: #8b2433;
+    color: #ffffff;
+}
+
+.banner--theme--cce .banner__content .banner__content__text__subtitle {
+    background-color: #d61726;
+    color: #ffffff;
+}
+
 .scp--corporate .banner--theme--corporate .banner__content h1 {
     background-color: #d61726;
     color: #ffffff;
@@ -16576,6 +16586,20 @@ svg:not(:root) {
 }
 
 .scp--centres .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
+    background-color: #8b2433;
+}
+
+.scp--cce .banner--theme--corporate .banner__content h1 {
+    background-color: #8b2433;
+    color: #ffffff;
+}
+
+.scp--cce .banner--theme--corporate .banner__content .banner__content__text__subtitle {
+    background-color: #d61726;
+    color: #ffffff;
+}
+
+.scp--cce .banner--theme--corporate .banner__content .banner__content__promo__wrapper .banner__content__promo--bg:before {
     background-color: #8b2433;
 }
 
@@ -17156,6 +17180,24 @@ svg:not(:root) {
     }
     .banner-new.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:after,
     .banner-no-img-varieties.banner-no-img.banner--theme--centres .banner__content__promo__wrapper .banner__content__promo--bg:after {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-new.banner--theme--cce .banner__content__text__item:first-child,
+    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__text__item:first-child {
+        background-color: #8b2433;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-new.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:before,
+    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:before {
+        background-color: #8b2433;
+    }
+    .banner-new.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:after,
+    .banner-no-img-varieties.banner-no-img.banner--theme--cce .banner__content__promo__wrapper .banner__content__promo--bg:after {
         background-color: #ffffff;
     }
 }
@@ -20162,11 +20204,6 @@ svg:not(:root) {
     position: absolute;
     height: 101%;
     width: inherit;
-}
-
-.banner-vi--v23.banner-vi--image .banner-vi__shape--left svg path,
-.banner-vi--v23.banner-vi--image .banner-vi__shape__mobile--left svg path {
-    fill: #d61726;
 }
 
 .banner-vi--v23.banner-vi--image .banner-vi__content--right {
