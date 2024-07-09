@@ -17859,54 +17859,54 @@ svg:not(:root) {
 }
 
 .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #a9a19c 0%, #999999 100%);
-    background-color: #999999;
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+    background-color: #d61726;
 }
 
 @media (max-width: 650px) {
     .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #999999 69%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
         display: flex;
     }
     .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #999999 46%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
         display: flex;
     }
 }
 
 .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient {
-    background-image: linear-gradient(90deg, #a9a19c 0%, #999999 100%);
-    background-color: #999999;
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
+    background-color: #d61726;
 }
 
 @media (max-width: 650px) {
     .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient.banner-vi--text {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #999999 69%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 69%);
         display: flex;
     }
     .banner-vi.banner-vi--theme--corporate-alt.banner-vi--gradient.banner-vi--listing {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #999999 46%);
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 46%);
         display: flex;
     }
 }
 
 @media (max-width: 650px) {
     .scp--corporate-alt .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #999999 95%);
-        background-color: #999999;
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
+        background-color: #d61726;
     }
     .scp--corporate-alt .banner-vi--video-embedded.banner-vi--theme--corporate .banner-vi__container__column:nth-child(2) {
-        background: #999999;
+        background: #d61726;
     }
 }
 
 @media (max-width: 650px) {
     .banner-vi--video-embedded.banner-vi--theme--corporate-alt.banner-vi--gradient .banner-vi__container__gradient {
-        background-image: linear-gradient(180deg, #a9a19c 0%, #999999 95%);
-        background-color: #999999;
+        background-image: linear-gradient(180deg, #8b2433 0%, #d61726 95%);
+        background-color: #d61726;
     }
     .banner-vi--video-embedded.banner-vi--theme--corporate-alt.banner-vi--gradient .banner-vi__container__column:nth-child(2) {
-        background: #999999;
+        background: #d61726;
     }
 }
 
@@ -17919,7 +17919,7 @@ svg:not(:root) {
 .banner-vi .banner-vi--listing.banner-vi--theme--corporate-alt + main .expert-finder__top .banner-vi__container,
 .banner-vi--listing.banner-vi--theme--corporate-alt + main .expert-finder__top .banner-vi--video .video-banner__controls,
 .banner-vi--video .banner-vi--listing.banner-vi--theme--corporate-alt + main .expert-finder__top .video-banner__controls {
-    background-image: linear-gradient(90deg, #a9a19c 0%, #999999 100%);
+    background-image: linear-gradient(90deg, #8b2433 0%, #d61726 100%);
 }
 
 @media (max-width: 650px) {
@@ -17932,13 +17932,13 @@ svg:not(:root) {
     .banner-vi .banner-vi--listing.banner-vi--theme--corporate-alt + main .expert-finder__top .banner-vi__container,
     .banner-vi--listing.banner-vi--theme--corporate-alt + main .expert-finder__top .banner-vi--video .video-banner__controls,
     .banner-vi--video .banner-vi--listing.banner-vi--theme--corporate-alt + main .expert-finder__top .video-banner__controls {
-        background: #999999;
+        background: #d61726;
         display: flex;
     }
 }
 
 .scp--corporate-alt .banner-vi.banner-vi--theme--corporate h1 {
-    background-color: #999999;
+    background-color: #d61726;
     color: #ffffff;
 }
 
@@ -17958,7 +17958,7 @@ svg:not(:root) {
 }
 
 .banner-vi.banner-vi--theme--corporate-alt h1 {
-    background-color: #999999;
+    background-color: #d61726;
     color: #ffffff;
 }
 
@@ -17987,10 +17987,10 @@ svg:not(:root) {
 
 @media (max-width: 650px) {
     .scp--corporate-alt .banner-vi.banner-vi--theme--corporate.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #999999;
+        background-color: #d61726;
     }
     .banner-vi.banner-vi--theme--corporate-alt.banner-vi--image--promo .banner-vi__container__column:nth-child(2)::after {
-        background-color: #999999;
+        background-color: #d61726;
     }
 }
 
