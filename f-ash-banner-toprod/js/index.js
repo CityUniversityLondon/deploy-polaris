@@ -24653,6 +24653,30 @@ function isSubAccordion(heading) {
   }
 }
 
+/***
+ * Close sub accordions
+  * @param {NodeList} elements - Sub accdionds to close
+ */
+
+function closeSubAccordions(subsections) {
+  subsections.forEach(function (sub) {
+    var subAccordionHeading = sub.querySelector(".".concat(headingClassName));
+    var subAccordionSection = sub.querySelector(".".concat(bodyClassName));
+
+    //If the sub accordion is open close it.
+    if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(sub.dataset.open)) {
+      // Starting height is the current height
+      setupTransition(subAccordionSection, subAccordionSection.offsetHeight + 'px');
+      // setTimeout lets the DOM recalculate before we continue, so the transition will fire
+      setTimeout(function () {
+        subAccordionSection.style.height = '0px';
+        cleanupTransition(subAccordionSection);
+      }, tenthOfASecond);
+      setSection(subAccordionHeading, false);
+    }
+  });
+}
+
 /**
  * Respond to button clicks - open if closed, close if open.
  *
@@ -24695,22 +24719,7 @@ function buttonClick(button, headings, toggleOpen) {
   if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].expanded))) {
     //Check for sub accordions and close if open
     if (subAccordions.length > 0) {
-      subAccordions.forEach(function (sub) {
-        var subAccordionHeading = sub.querySelector(".".concat(headingClassName));
-        var subAccordionSection = sub.querySelector(".".concat(bodyClassName));
-
-        //If the sub accordion is open close it.
-        if (Object(_util__WEBPACK_IMPORTED_MODULE_8__["toBool"])(sub.dataset.open)) {
-          // Starting height is the current height
-          setupTransition(subAccordionSection, subAccordionSection.offsetHeight + 'px');
-          // setTimeout lets the DOM recalculate before we continue, so the transition will fire
-          setTimeout(function () {
-            subAccordionSection.style.height = '0px';
-            cleanupTransition(subAccordionSection);
-          }, tenthOfASecond);
-          setSection(subAccordionHeading, false);
-        }
-      });
+      closeSubAccordions(subAccordions);
     }
     // Starting height is the current height
     setupTransition(accordionSection, accordionSection.offsetHeight + 'px');
@@ -24737,6 +24746,10 @@ function buttonClick(button, headings, toggleOpen) {
       sections.filter(function (section) {
         return section.id !== accordionSection.id;
       }).forEach(function (section) {
+        var openSubAccordions = section.querySelectorAll('.accordion-v23__section[data-open="true"]');
+        if (openSubAccordions.length > 0) {
+          closeSubAccordions(openSubAccordions);
+        }
         section.dataset.closed = 'true';
       });
     }

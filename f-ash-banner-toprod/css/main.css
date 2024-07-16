@@ -2644,7 +2644,7 @@ h2 {
 h3,
 .courses-v23__fee__inner .fee-amount__sub,
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__details__heading,
-.ug-courses-v23 .courses-v23__key-info__clearing__heading,
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__heading,
 .course-search__title {
     font-size: 23.04px;
     font-size: 1.44rem;
@@ -10310,45 +10310,52 @@ svg:not(:root) {
     outline-color: #ffffff;
 }
 
-.ug-courses-v23 .cta--v23--ki {
+.ug-courses-v23 .courses-v23__key-info__wrap .cta--v23--ki {
     border: 0.125rem solid #1e1e1e;
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing__heading {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__heading {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing {
     background-color: #ff4e00;
     padding: 1rem;
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing:first-child {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing:first-child {
     display: none;
 }
 
-@media (max-width: 650px) {
-    .ug-courses-v23 .courses-v23__key-info__clearing:first-child {
+@media (max-width: 899px) {
+    .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing:first-child {
         display: block;
+        grid-column: span 12;
     }
 }
 
-@media (max-width: 650px) {
-    .ug-courses-v23 .courses-v23__key-info__clearing {
+@media (max-width: 649px) {
+    .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing:first-child {
+        grid-column: span 18;
+    }
+}
+
+@media (max-width: 899px) {
+    .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing {
         display: none;
     }
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing p {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing p {
     margin-bottom: 0.75rem;
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing__cta {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta {
     margin-bottom: 0.5rem;
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
@@ -10359,28 +10366,28 @@ svg:not(:root) {
     border: 0.12rem solid #1e1e1e;
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:active {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:active {
     outline-offset: 0.1875rem;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
+    .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-    .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
+    .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
         font-size: 92px;
     }
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:active {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki:active {
     background-color: #3d3d3d;
     color: #ffffff;
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
@@ -10391,29 +10398,29 @@ svg:not(:root) {
     border: 0.12rem solid #ffffff;
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:active {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki:active {
     outline-offset: 0.1875rem;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki {
+    .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-    .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki {
+    .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki {
         font-size: 92px;
     }
 }
 
-.ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__clearing__cta .cta--v23--ki:active {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki:hover, .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki:focus, .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki:active {
     background-color: #f0f0f0;
     color: #1e1e1e;
     outline-color: #ffffff;
 }
 
-.ug-courses-v23 .courses-v23__apply__asset {
+.ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__apply__asset {
     max-width: 60ch;
 }
 
@@ -44457,6 +44464,22 @@ html {
 .landing--online-msc .cta-group .cta:nth-child(3):hover, .landing--online-msc .cta-group .cta:nth-child(3):focus, .landing--online-msc .cta-group .cta:nth-child(3):active {
     background-color: #173fef;
     color: #ffffff;
+}
+
+.banner-vi__content {
+    position: relative;
+}
+
+.banner-vi--theme--corporate .banner-vi__content__corner {
+    height: 100%;
+    background: linear-gradient(to right, #d61726 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to bottom, #d61726 1.5rem, transparent 1.5rem) 0 0, linear-gradient(to right, #d61726 1.5rem, transparent 1.5rem) 0% 100%, linear-gradient(to top, #d61726 1.5rem, transparent 1.5rem) 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 3rem 3rem;
+}
+
+.banner-vi.banner-vi--theme--corporate .banner-vi__shape--left svg path,
+.banner-vi.banner-vi--theme--corporate .banner-vi__shape__mobile--left svg path {
+    fill: #d61726;
 }
 
 .banner-vi__content {
