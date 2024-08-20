@@ -24839,11 +24839,11 @@ function launch(accordion) {
   }
   headings.forEach(function (heading) {
     var content = heading.nextElementSibling,
-      button = buttonFromHeading(heading, downChevronStyle);
+      button = buttonFromHeading(heading, downChevronStyle),
+      prevSibling = heading.previousElementSibling;
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_9__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
-
     // v23 added to wrap accordion heading and body in a div
     var accordionSectionWrap = document.createElement('div');
     accordionSectionWrap.classList.add('accordion-v23__section');
@@ -24851,6 +24851,10 @@ function launch(accordion) {
     Object(_util__WEBPACK_IMPORTED_MODULE_8__["appendAll"])(accordionSectionWrap, [heading, content]);
     accordion.appendChild(accordionSectionWrap);
     setSection(heading, false);
+    if (prevSibling && prevSibling.classList.contains('accordion-v23__modules-heading')) {
+      //If a module heading has been added, move it to the correct position
+      accordion.insertBefore(prevSibling, accordionSectionWrap);
+    }
     heading.nextElementSibling.dataset.closed = 'true';
     button.addEventListener('click', function () {
       return buttonClick(button, headings, toggleOpen);
