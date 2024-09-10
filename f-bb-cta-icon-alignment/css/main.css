@@ -23445,7 +23445,7 @@ USED IN:
 .scp--online-msc .cta--theme--secondary {
     background-color: #3457F1;
     color: #ffffff;
-    display: block;
+    display: flex;
     padding: 1.5rem;
     border-bottom-width: 0;
     font-weight: 700;
@@ -23470,7 +23470,7 @@ USED IN:
 .scp--masters .cta--theme--secondary {
     background-color: #3457F1;
     color: #ffffff;
-    display: block;
+    display: flex;
     padding: 1.5rem;
     border-bottom-width: 0;
     font-weight: 700;
@@ -23717,7 +23717,7 @@ USED IN:
 }
 
 .cta-group--stretched span {
-    float: right;
+    order: 2;
 }
 
 .cta-icon-left span {
@@ -44410,7 +44410,7 @@ html {
 .landing--masters .cta-group .cta:nth-child(3) {
     background-color: #3457F1;
     color: #ffffff;
-    display: block;
+    display: flex;
     padding: 1.5rem;
     border-bottom-width: 0;
     font-weight: 700;
@@ -44535,7 +44535,7 @@ html {
 .landing--online-msc .cta-group .cta:nth-child(3) {
     background-color: #3457F1;
     color: #ffffff;
-    display: block;
+    display: flex;
     padding: 1.5rem;
     border-bottom-width: 0;
     font-weight: 700;
