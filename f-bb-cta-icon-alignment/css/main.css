@@ -2702,10 +2702,8 @@ p:empty {
 @media (min-width: 1201px) {
     p.columns {
         text-align: justify;
-        -moz-column-count: 2;
-             column-count: 2;
-        -moz-column-gap: 2em;
-             column-gap: 2em;
+        column-count: 2;
+        column-gap: 2em;
     }
 }
 
@@ -8484,8 +8482,7 @@ svg:not(:root) {
     .bayes-programmes__list ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        -moz-column-gap: 1.5rem;
-             column-gap: 1.5rem;
+        column-gap: 1.5rem;
         row-gap: 0.5rem;
         width: 66.667%;
     }
@@ -10745,8 +10742,7 @@ svg:not(:root) {
     }
     .courses-v23__apply .courses-v23__apply__promo-content .courses-v23__apply__promo-content__cta-group {
         display: flex;
-        -moz-column-gap: 1rem;
-             column-gap: 1rem;
+        column-gap: 1rem;
         justify-content: flex-start;
     }
 }
@@ -41616,10 +41612,8 @@ div.widget-123_test_ {
 
 @media (min-width: 501px) {
     .course-subject-list ul {
-        -moz-column-count: 2;
-             column-count: 2;
-        -moz-column-gap: 1.5rem;
-             column-gap: 1.5rem;
+        column-count: 2;
+        column-gap: 1.5rem;
     }
 }
 
@@ -43019,8 +43013,7 @@ html {
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button div:not(.accordion-v23__heading__description) {
         display: flex;
         position: relative;
-        -moz-column-gap: initial;
-             column-gap: initial;
+        column-gap: initial;
     }
     .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button div:not(.accordion-v23__heading__description) .accordion-v23__heading__text {
         order: 2;
@@ -43836,8 +43829,7 @@ html {
 .testimonials-v23 .testimonial-card-v23__container {
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    column-gap: 1rem;
 }
 
 @media (max-width: 768px) {
