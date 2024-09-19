@@ -7924,30 +7924,36 @@ svg:not(:root) {
 
 @media (min-width: 901px) {
     .bayes-news,
-    .bayes-news__list {
+    .bayes-news__list,
+    .bayes-events,
+    .bayes-events__lists {
         grid-column: 1/-1;
     }
 }
 
 @media (max-width: 500px) {
-    .bayes-home .bayes-news {
+    .bayes-home .bayes-news,
+    .bayes-home .bayes-events {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 }
 
-.bayes-home .bayes-news__list {
+.bayes-home .bayes-news__list,
+.bayes-home .bayes-events__lists {
     padding-top: 1rem;
 }
 
 @media (min-width: 433px) {
-    .bayes-home .bayes-news__list {
+    .bayes-home .bayes-news__list,
+    .bayes-home .bayes-events__lists {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 1.5rem;
         padding-top: 2rem;
     }
-    .bayes-home .bayes-news__list .feature-news__card {
+    .bayes-home .bayes-news__list .feature-news__card,
+    .bayes-home .bayes-events__lists .feature-news__card {
         width: -moz-fit-content;
         width: fit-content;
         padding-left: initial;
@@ -7956,7 +7962,8 @@ svg:not(:root) {
 }
 
 @media (min-width: 901px) {
-    .bayes-home .bayes-news__list {
+    .bayes-home .bayes-news__list,
+    .bayes-home .bayes-events__lists {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -7971,6 +7978,7 @@ svg:not(:root) {
     margin-left: 0.5rem;
     max-width: -moz-fit-content;
     max-width: fit-content;
+    font-size: 2.28rem;
 }
 
 /*SVG controls styles*/
@@ -8749,15 +8757,17 @@ svg:not(:root) {
 }
 
 /* Statistic block styles */
-@media (min-width: 433px) {
-    .bayes-news {
+@media (min-width: 501px) {
+    .bayes-news,
+    .bayes-events {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 }
 
-.bayes-news .cta {
+.bayes-news .cta,
+.bayes-events .cta {
     font-size: 1rem;
     padding: 0.5rem;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
@@ -8769,31 +8779,56 @@ svg:not(:root) {
     border-width: 0.24rem;
 }
 
-.bayes-news .cta:hover, .bayes-news .cta:focus, .bayes-news .cta:active {
+.bayes-news .cta:hover, .bayes-news .cta:focus, .bayes-news .cta:active,
+.bayes-events .cta:hover,
+.bayes-events .cta:focus,
+.bayes-events .cta:active {
     outline-offset: 0.1875rem;
 }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-    .bayes-news .cta {
+    .bayes-news .cta,
+    .bayes-events .cta {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-    .bayes-news .cta {
+    .bayes-news .cta,
+    .bayes-events .cta {
         font-size: 92px;
     }
 }
 
-.bayes-news .cta:hover, .bayes-news .cta:focus, .bayes-news .cta:active {
+.bayes-news .cta:hover, .bayes-news .cta:focus, .bayes-news .cta:active,
+.bayes-events .cta:hover,
+.bayes-events .cta:focus,
+.bayes-events .cta:active {
     background-color: #1e1e1e;
     color: #ffffff;
 }
 
 @media (max-width: 500px) {
-    .bayes-news .cta {
+    .bayes-news .cta,
+    .bayes-events .cta {
         margin-top: 0.5rem;
     }
+}
+
+.bayes-events__lists .featured-event {
+    padding-left: initial;
+    padding-right: initial;
+}
+
+.bayes-events__lists .feature-events__cards__content {
+    width: initial;
+    padding-left: initial;
+    padding-right: initial;
+}
+
+.bayes-events__lists .featured-item__content {
+    top: initial;
+    width: initial;
 }
 
 /* News styles */
@@ -9060,120 +9095,6 @@ svg:not(:root) {
 .bayes-right-sidebar-scrolled {
     transition: background-color 1s;
     background-color: #ffffff;
-}
-
-/* events styles */
-.bayes-events {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    clear: both;
-    zoom: 1;
-    max-width: 100%;
-}
-
-@supports (display: flex) {
-    .bayes-events {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-}
-
-.bayes-events:before, .bayes-events:after {
-    content: '';
-    display: block;
-}
-
-.bayes-events:after {
-    clear: both;
-}
-
-@media (max-width: 500px) {
-    .bayes-events {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-}
-
-@media (min-width: 501px) {
-    .bayes-events {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-@media (min-width: 1441px) {
-    .bayes-events {
-        max-width: 1440px;
-    }
-}
-
-@media (min-width: 1921px) {
-    .bayes-events {
-        max-width: 83.333%;
-    }
-}
-
-@media (min-width: 1600px) {
-    .bayes-events {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-}
-
-@media (min-width: 1440px) and (max-width: 1599px) {
-    .bayes-events {
-        margin-left: calc((100% - 1440px)/2);
-        margin-right: calc((100% - 1440px)/2);
-    }
-}
-
-.bayes-events .bayes-events__title {
-    position: relative;
-    width: -moz-fit-content;
-    width: fit-content;
-    align-items: center;
-    padding: 0.5rem 2rem;
-    margin-bottom: 1rem;
-}
-
-.bayes-events .bayes-events__title h2 {
-    line-height: 1;
-    margin-bottom: 1rem;
-    font-size: 2.75rem;
-    font-weight: bold;
-}
-
-.bayes-events a {
-    width: -moz-fit-content;
-    width: fit-content;
-}
-
-@media (min-width: 900px) {
-    .bayes-events {
-        display: flex;
-    }
-    .bayes-events .bayes-events__wrapper {
-        width: 33%;
-    }
-    .bayes-events .feature-events__cards__wrapper {
-        width: 65%;
-    }
-    .bayes-events .feature-events__cards__content {
-        width: 50%;
-    }
-}
-
-@media (max-width: 899px) {
-    .bayes-events .bayes-events__wrapper {
-        margin-bottom: 1rem;
-    }
 }
 
 .polaris-guidline--fullscreen {
