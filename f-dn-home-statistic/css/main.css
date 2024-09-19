@@ -8704,7 +8704,7 @@ svg:not(:root) {
     line-height: 1.56;
 }
 
-@media (min-width: 651px) {
+@media (min-width: 769px) {
     .bayes-statistic__block {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -8718,26 +8718,20 @@ svg:not(:root) {
     align-items: flex-start;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .bayes-statistic__block li {
         padding-bottom: 1rem;
     }
 }
 
 .bayes-statistic__block__icon {
-    width: 10rem;
+    max-width: 4rem;
     margin-right: 1rem;
 }
 
 .bayes-statistic__block__icon:before {
     display: block;
     padding: 0.5rem;
-}
-
-@media (max-width: 650px) {
-    .bayes-statistic__block__icon {
-        width: 5rem;
-    }
 }
 
 .bayes-statistic__block__text {
