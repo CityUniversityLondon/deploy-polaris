@@ -8694,6 +8694,11 @@ svg:not(:root) {
     }
 }
 
+.bayes-statistic--light {
+    background-color: #ececec;
+    color: #1e1e1e;
+}
+
 .bayes-statistic__wrapper {
     width: 100%;
 }
