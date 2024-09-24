@@ -30744,6 +30744,10 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     outline-width: 0;
 }
 
+.block-links-v24 .block-links-v24__items .block-links-v24__items__anchor .block-links-v24__items__anchor__header__icon {
+    margin-left: 0.25rem;
+}
+
 .block-links-v24 .block-links-v24__items .block-links-v24__items__anchor:hover .block-links-v24__items__anchor__header__icon, .block-links-v24 .block-links-v24__items .block-links-v24__items__anchor:focus .block-links-v24__items__anchor__header__icon, .block-links-v24 .block-links-v24__items .block-links-v24__items__anchor:active .block-links-v24__items__anchor__header__icon {
     transform: translateX(0.75rem);
     transition: transform 0.2s ease-in;
