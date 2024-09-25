@@ -7966,12 +7966,13 @@ svg:not(:root) {
 
 .bayes-home .bayes-events__lists {
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 @media (min-width: 901px) {
     .bayes-home .bayes-events__lists {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1.5rem;
     }
 }
