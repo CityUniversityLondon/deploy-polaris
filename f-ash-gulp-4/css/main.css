@@ -2161,10 +2161,8 @@ p {
   @media (min-width: 1201px) {
     p.columns {
       text-align: justify;
-      -moz-column-count: 2;
-           column-count: 2;
-      -moz-column-gap: 2em;
-           column-gap: 2em; } }
+      column-count: 2;
+      column-gap: 2em; } }
 
 /**
  * Lists
@@ -6169,8 +6167,7 @@ svg:not(:root) {
       .bayes-programmes__list ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        -moz-column-gap: 1.5rem;
-             column-gap: 1.5rem;
+        column-gap: 1.5rem;
         row-gap: 0.5rem;
         width: 66.667%; } }
     @media (max-width: 649px) {
@@ -7713,8 +7710,7 @@ svg:not(:root) {
         padding-right: 10rem; }
         .courses-v23__apply .courses-v23__apply__promo-content .courses-v23__apply__promo-content__cta-group {
           display: flex;
-          -moz-column-gap: 1rem;
-               column-gap: 1rem;
+          column-gap: 1rem;
           justify-content: flex-start; } }
     @media (max-width: 900px) {
       .courses-v23__apply .courses-v23__apply__promo-content .courses-v23__apply__promo-content__cta:nth-child(n + 2) {
@@ -16542,7 +16538,7 @@ USED IN:
 .scp--online-msc .cta--theme--secondary {
   background-color: #3457F1;
   color: #ffffff;
-  display: block;
+  display: flex;
   padding: 1.5rem;
   border-bottom-width: 0;
   font-weight: 700; }
@@ -16561,7 +16557,7 @@ USED IN:
 .scp--masters .cta--theme--secondary {
   background-color: #3457F1;
   color: #ffffff;
-  display: block;
+  display: flex;
   padding: 1.5rem;
   border-bottom-width: 0;
   font-weight: 700; }
@@ -16730,9 +16726,12 @@ USED IN:
   gap: 0.5rem; }
   .cta-group--stretched .cta {
     font-size: 1rem;
-    flex: auto; }
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .cta-group--stretched span {
-    float: right; }
+    order: 2; }
 
 .cta-icon-left span {
   float: left;
@@ -24296,7 +24295,7 @@ table {
         width: 50%; }
   .student-profiles-search .progressbar-bar {
     height: 3px;
-    background-color: #f1b434; }
+    background-color: #ff4e00; }
 
 .mba-student-profile {
   display: flex;
@@ -24310,10 +24309,10 @@ table {
       max-width: 150px; }
 
 .scp--mba .progressbar-bar {
-  background-color: #12E97A; }
+  background-color: #2e767a; }
 
 .scp--masters .progressbar-bar {
-  background-color: #3457F1; }
+  background-color: #002b49; }
 
 /******* mobile floating filters ***********/
 .filter-box {
@@ -29125,10 +29124,8 @@ div.widget-123_test_ {
         margin-bottom: 0.5rem; } }
     @media (min-width: 501px) {
       .course-subject-list ul {
-        -moz-column-count: 2;
-             column-count: 2;
-        -moz-column-gap: 1.5rem;
-             column-gap: 1.5rem; } }
+        column-count: 2;
+        column-gap: 1.5rem; } }
 
 .course-subject-list-undergraduate .subject-bracket-block__anglesA:before, .course-subject-list-undergraduate .subject-bracket-block__anglesA:after,
 .course-subject-list-undergraduate .subject-bracket-block__anglesB:before,
@@ -30128,8 +30125,7 @@ html {
           .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button div:not(.accordion-v23__heading__description) {
             display: flex;
             position: relative;
-            -moz-column-gap: initial;
-                 column-gap: initial; }
+            column-gap: initial; }
             .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button div:not(.accordion-v23__heading__description) .accordion-v23__heading__text {
               order: 2; }
             .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button div:not(.accordion-v23__heading__description) .accordion-v23__heading__label {
@@ -30697,8 +30693,7 @@ html {
   .testimonials-v23 .testimonial-card-v23__container {
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem; }
+    column-gap: 1rem; }
     @media (max-width: 768px) {
       .testimonials-v23 .testimonial-card-v23__container {
         flex-direction: column-reverse; } }
@@ -31075,7 +31070,7 @@ html {
 .landing--masters .cta-group .cta:nth-child(3) {
   background-color: #3457F1;
   color: #ffffff;
-  display: block;
+  display: flex;
   padding: 1.5rem;
   border-bottom-width: 0;
   font-weight: 700; }
@@ -31164,7 +31159,7 @@ html {
 .landing--online-msc .cta-group .cta:nth-child(3) {
   background-color: #3457F1;
   color: #ffffff;
-  display: block;
+  display: flex;
   padding: 1.5rem;
   border-bottom-width: 0;
   font-weight: 700; }

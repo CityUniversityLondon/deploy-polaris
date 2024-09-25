@@ -24742,6 +24742,47 @@ function launch(el) {}
 
 /***/ }),
 
+/***/ "./src/components/devcorate/devcorate.js":
+/*!***********************************************!*\
+  !*** ./src/components/devcorate/devcorate.js ***!
+  \***********************************************/
+/*! exports provided: devcorate */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "devcorate", function() { return devcorate; });
+/* harmony import */ var _js_utils_util_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../js-utils/util.js */ "./src/js-utils/util.js");
+
+
+/**
+ * Devcorate
+ *
+ * @module components/devcorate/devcorate
+ * @author Web Development
+ * @copyright City, University of London 2024
+ */
+
+
+/**
+ * Persist a query parameter to all same-site anchors inside an element.
+ *
+ * @param {HTMLElement} elem - An element containing anchors to decorate.
+ * @param {string} param - The name of a query parameter.
+ * @param {string} value - The value for the query parameter.
+ */
+function devcorate(elem, param, value) {
+  Array.from(elem.querySelectorAll('a')).forEach(anchor => {
+    if (anchor.origin === window.location.origin) {
+      const parameters = anchor.search ? Object(_js_utils_util_js__WEBPACK_IMPORTED_MODULE_0__["parametersToObject"])(anchor.search) : {};
+      parameters[param] = value;
+      anchor.href = `${anchor.origin}${anchor.pathname}${Object(_js_utils_util_js__WEBPACK_IMPORTED_MODULE_0__["objectToParameters"])(parameters)}${anchor.hash}`;
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./src/components/dialog/dialog.js":
 /*!*****************************************!*\
   !*** ./src/components/dialog/dialog.js ***!
@@ -27036,11 +27077,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _polyfills_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./polyfills.js */ "./src/polyfills.js");
 /* harmony import */ var _plugins_plugins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./plugins/plugins */ "./src/plugins/plugins.js");
 /* harmony import */ var _plugins_plugins__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_plugins_plugins__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _component_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component-list */ "./src/component-list.js");
+/* harmony import */ var _component_list__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component-list */ "./src/component-list.js");
+/* harmony import */ var _js_utils_util_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js-utils/util.js */ "./src/js-utils/util.js");
 /* harmony import */ var _components_linkIcons_linkIcons_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/linkIcons/linkIcons.js */ "./src/components/linkIcons/linkIcons.js");
 /* harmony import */ var _components_video_preview_video_wrap_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/video-preview/video-wrap.js */ "./src/components/video-preview/video-wrap.js");
+/* harmony import */ var _components_devcorate_devcorate_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/devcorate/devcorate.js */ "./src/components/devcorate/devcorate.js");
+
 
 
 
@@ -27066,12 +27108,20 @@ function launchPattern(pattern) {
       className,
       launch
     } = pattern;
-    jquery__WEBPACK_IMPORTED_MODULE_2___default()(`.${className}:not(.${className}-njs)`).each(function () {
-      tryCatch(() => launch(this));
+    const elements = document.querySelectorAll(`.${className}:not(.${className}-njs)`);
+    elements.forEach(element => {
+      tryCatch(() => launch(element));
     });
   }
 }
-jquery__WEBPACK_IMPORTED_MODULE_2___default()(() => _component_list__WEBPACK_IMPORTED_MODULE_3__["default"].forEach(launchPattern));
+
+// DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  _component_list__WEBPACK_IMPORTED_MODULE_2__["default"].forEach(launchPattern);
+  const parameters = Object(_js_utils_util_js__WEBPACK_IMPORTED_MODULE_3__["parametersToObject"])(location.search);
+  parameters['test'] && Object(_components_devcorate_devcorate_js__WEBPACK_IMPORTED_MODULE_6__["devcorate"])(document.querySelector('body'), 'test', parameters['test']);
+  parameters['prod'] && Object(_components_devcorate_devcorate_js__WEBPACK_IMPORTED_MODULE_6__["devcorate"])(document.querySelector('body'), 'prod', parameters['prod']);
+});
 
 /***/ }),
 
@@ -27293,6 +27343,94 @@ function scrolledIntoView(elem) {
   let viewTop = Math.max(elemTop, docViewTop);
   let viewBottom = Math.min(elemBottom, docViewBottom);
   return (viewBottom - viewTop) / elemHeight;
+}
+
+/***/ }),
+
+/***/ "./src/js-utils/util.js":
+/*!******************************!*\
+  !*** ./src/js-utils/util.js ***!
+  \******************************/
+/*! exports provided: parametersToObject, objectToParameters, detectIE */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parametersToObject", function() { return parametersToObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "objectToParameters", function() { return objectToParameters; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectIE", function() { return detectIE; });
+
+
+/**
+ * Useful utility functions
+ *
+ * @module util
+ * @author Web Development
+ * @copyright City, University of London 2024
+ */
+
+/**
+ * Turn a query string into an object.
+ *
+ * @param {string} parameterString - An HTML query string.
+ * @returns {object} An object containing the parameters.
+ */
+function parametersToObject(parameterString) {
+  const parameters = {};
+  parameterString.substr(1).split('&').forEach(parameter => {
+    const [k, v] = parameter.split('=');
+    parameters[k] = v;
+  });
+  return parameters;
+}
+
+/**
+ * Turn an object into a query string.
+ *
+ * @param {object} parameterObj - An object containing the parameters and their values.
+ * @returns {string} A string of the parameters.
+ */
+function objectToParameters(parameterObj) {
+  if (Object.keys(parameterObj).length > 0) {
+    let parameters = '?';
+    for (const key in parameterObj) {
+      parameters.length !== 1 && (parameters += '&');
+      parameters += key + '=' + parameterObj[key];
+    }
+    return parameters;
+  } else {
+    return '';
+  }
+}
+
+/**
+ * Check browser user agent is IE or edge and return version number
+ */
+function detectIE() {
+  const ua = window.navigator.userAgent,
+    versionLength = 10,
+    msie = ua.indexOf('MSIE '),
+    msieVersionOffset = 5;
+  if (msie > 0) {
+    // IE 10 or older => return version number
+    return parseInt(ua.substring(msie + msieVersionOffset, ua.indexOf('.', msie)), versionLength);
+  }
+  const trident = ua.indexOf('Trident/'),
+    tridentVersionOffset = 3;
+  if (trident > 0) {
+    // IE 11 => return version number
+    let rv = ua.indexOf('rv:');
+    return parseInt(ua.substring(rv + tridentVersionOffset, ua.indexOf('.', rv)), versionLength);
+  }
+  const edge = ua.indexOf('Edge/'),
+    edgeVersionOffset = 5;
+  if (edge > 0) {
+    // Edge (IE 12+) => return version number
+    return parseInt(ua.substring(edge + edgeVersionOffset, ua.indexOf('.', edge)), versionLength);
+  }
+
+  // other browser
+  return false;
 }
 
 /***/ }),
