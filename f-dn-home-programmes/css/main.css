@@ -30751,13 +30751,15 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     border: 0.12rem #1e1e1e solid;
     background-color: #1e1e1e;
     color: #ffffff;
+    border-bottom: initial;
 }
 
 .block-links-v24 .block-links-v24__items .block-links-v24__items__anchor:active {
-    outline: 0.18rem solid #1e1e1e;
+    outline: 0.18rem dotted #1e1e1e;
     outline-offset: 0.24rem;
     background-color: transparent;
     color: #1e1e1e;
+    border-bottom: initial;
 }
 
 .block-links-v24 .block-links-v24__items__anchor__text {
