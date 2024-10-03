@@ -7869,7 +7869,7 @@ svg:not(:root) {
 
 /* styles */
 .bayes-home section {
-    padding-top: 1rem;
+    padding-top: 4rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -7902,6 +7902,13 @@ svg:not(:root) {
     }
 }
 
+@media (max-width: 500px) {
+    .bayes-home section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 @media (min-width: 901px) {
     .bayes-home section {
         display: grid;
@@ -7925,6 +7932,7 @@ svg:not(:root) {
 @media (min-width: 901px) {
     .bayes-news,
     .bayes-news__list,
+    .bayes-statistic,
     .bayes-events,
     .bayes-events__lists {
         grid-column: 1/-1;
@@ -7961,6 +7969,43 @@ svg:not(:root) {
 @media (min-width: 901px) {
     .bayes-home .bayes-news__list {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .bayes-home .bayes-statistic {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .bayes-home .bayes-statistic {
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 501px) and (min-width: 650px) {
+    .bayes-home .bayes-statistic {
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 501px) and (min-width: 901px) {
+    .bayes-home .bayes-statistic {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 501px) {
+    .bayes-home .bayes-statistic h2 {
+        grid-column: 3/-3;
+    }
+    .bayes-home .bayes-statistic .bayes-statistic__block {
+        grid-column: 3/-3;
     }
 }
 
@@ -8660,20 +8705,10 @@ svg:not(:root) {
 /* Programmes block styles */
 .bayes-statistic {
     position: relative;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: #999999;
+    background-color: #1e1e1e;
     color: #ffffff;
-}
-
-.bayes-statistic:before {
-    content: "";
-    width: 30%;
-    height: 4rem;
-    background-color: #999999;
-    position: absolute;
-    top: -4rem;
-    left: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 @media (max-width: 650px) {
@@ -8681,6 +8716,11 @@ svg:not(:root) {
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
+}
+
+.bayes-statistic--light {
+    background-color: #ececec;
+    color: #1e1e1e;
 }
 
 .bayes-statistic__wrapper {
@@ -8693,10 +8733,11 @@ svg:not(:root) {
     line-height: 1.56;
 }
 
-@media (min-width: 651px) {
+@media (min-width: 769px) {
     .bayes-statistic__block {
-        display: flex;
-        justify-content: start;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.5rem;
     }
 }
 
@@ -8706,21 +8747,15 @@ svg:not(:root) {
     align-items: flex-start;
 }
 
-@media (min-width: 651px) {
-    .bayes-statistic__block li {
-        width: 33%;
-    }
-}
-
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .bayes-statistic__block li {
         padding-bottom: 1rem;
     }
 }
 
 .bayes-statistic__block__icon {
+    max-width: 4rem;
     margin-right: 1rem;
-    border: 0.06rem solid #ffffff;
 }
 
 .bayes-statistic__block__icon:before {
@@ -8757,12 +8792,31 @@ svg:not(:root) {
     outline-width: 0;
 }
 
-.bayes-statistic__block__text--description a:focus {
+.bayes-statistic__block__text--description a:focus, .bayes-statistic__block__text--description a:active {
     outline: 0.18rem solid #ffffff;
+    outline-offset: 0.1875rem;
 }
 
-.bayes-statistic__block .bayes-statistic__block__text--description a:active {
-    outline: 0.18rem dotted #ffffff;
+.bayes-statistic__block__text--description a:active {
+    outline-style: dotted;
+}
+
+.bayes-statistic__block__text--description a:hover, .bayes-statistic__block__text--description a:focus, .bayes-statistic__block__text--description a:active {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.bayes-statistic--light .bayes-statistic__block__text--description a {
+    border-color: #1e1e1e;
+}
+
+.bayes-statistic--light .bayes-statistic__block__text--description a:focus, .bayes-statistic--light .bayes-statistic__block__text--description a:active {
+    outline-color: #1e1e1e;
+}
+
+.bayes-statistic--light .bayes-statistic__block__text--description a:hover, .bayes-statistic--light .bayes-statistic__block__text--description a:focus, .bayes-statistic--light .bayes-statistic__block__text--description a:active {
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
 /* Statistic block styles */
