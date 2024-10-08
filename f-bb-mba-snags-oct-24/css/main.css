@@ -35299,26 +35299,38 @@ table tbody > tr > td:hover {
     background-color: #93328e;
 }
 
-blockquote {
-    padding: 2rem 2rem 2rem 2rem;
+.blockquote__wrap {
     position: relative;
+    padding: 1rem;
+    padding: 3rem;
 }
 
-blockquote::before {
-    font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    content: "";
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 2rem;
-    width: 180px;
-    height: 40px;
-    background-color: black;
-    -webkit-mask: url("../img/quote.svg") no-repeat;
-            mask: url("../img/quote.svg") no-repeat;
-    -webkit-mask-size: 100%;
-            mask-size: 100%;
+.blockquote__wrap::before, .blockquote__wrap::after {
+    content: '';
+    border-style: solid;
+    border-color: inherit;
+    height: 100%;
+    width: 2rem;
+    position: absolute;
+    top: 0;
+}
+
+.blockquote__wrap::after {
+    right: 0;
+    border-width: 1rem 1rem 1rem 0;
+}
+
+.blockquote__wrap::before {
+    left: 0;
+    border-width: 1rem 0 1rem 1rem;
+}
+
+.blockquote__wrap p:last-child {
+    margin-bottom: 0;
+}
+
+blockquote {
+    position: relative;
 }
 
 blockquote p {
@@ -43650,20 +43662,38 @@ html {
     grid-column: 1/13;
 }
 
-.ug-courses-v23 .testimonials-v23,
-.scp--mba .testimonials-v23 {
-    background: #f1b434;
-    color: #1e1e1e;
+.bracket-border {
+    position: relative;
+    padding: 1rem;
 }
 
-.ug-courses-v23 .testimonials-v23 a,
-.scp--mba .testimonials-v23 a {
-    color: #1e1e1e;
+.bracket-border::before, .bracket-border::after {
+    content: '';
+    border-style: solid;
+    border-color: inherit;
+    height: 100%;
+    width: 2rem;
+    position: absolute;
+    top: 0;
+}
+
+.bracket-border::after {
+    right: 0;
+    border-width: 1rem 1rem 1rem 0;
+}
+
+.bracket-border::before {
+    left: 0;
+    border-width: 1rem 0 1rem 1rem;
 }
 
 .ug-courses-v23 .testimonial-card-v23__image:before,
 .scp--mba .testimonial-card-v23__image:before {
     border: 0.125rem solid #ff4e00;
+}
+
+.js .ug-courses-v23 .bracket-border, .js .ug-courses-v23 .blockquote__wrap {
+    border-color: #ff4e00;
 }
 
 .js .ug-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
@@ -43683,8 +43713,8 @@ html {
 }
 
 .js .ug-courses-v23 .testimonials-v23 .slider-v23__controls--arrows button {
-    background: #ffffff;
-    color: #1e1e1e;
+    background: #1e1e1e;
+    color: #ffffff;
     width: 3rem;
     height: 3rem;
     border: none;
@@ -43700,20 +43730,13 @@ html {
     opacity: 0.5;
 }
 
-.pg-courses-v23 .testimonials-v23,
-.scp--mba .testimonials-v23 {
-    background: #002b49;
-    color: #ffffff;
-}
-
-.pg-courses-v23 .testimonials-v23 a,
-.scp--mba .testimonials-v23 a {
-    color: #ffffff;
-}
-
 .pg-courses-v23 .testimonial-card-v23__image:before,
 .scp--mba .testimonial-card-v23__image:before {
     border: 0.125rem solid #3457F1;
+}
+
+.js .pg-courses-v23 .bracket-border, .js .pg-courses-v23 .blockquote__wrap {
+    border-color: #3457F1;
 }
 
 .js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
@@ -43733,8 +43756,8 @@ html {
 }
 
 .js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--arrows button {
-    background: #ffffff;
-    color: #1e1e1e;
+    background: #1e1e1e;
+    color: #ffffff;
     width: 3rem;
     height: 3rem;
     border: none;
@@ -43750,20 +43773,13 @@ html {
     opacity: 0.5;
 }
 
-.mba-courses-v23 .testimonials-v23,
-.scp--mba .testimonials-v23 {
-    background: #2e767a;
-    color: #ffffff;
-}
-
-.mba-courses-v23 .testimonials-v23 a,
-.scp--mba .testimonials-v23 a {
-    color: #ffffff;
-}
-
 .mba-courses-v23 .testimonial-card-v23__image:before,
 .scp--mba .testimonial-card-v23__image:before {
     border: 0.125rem solid #12E97A;
+}
+
+.js .mba-courses-v23 .bracket-border, .js .mba-courses-v23 .blockquote__wrap {
+    border-color: #12E97A;
 }
 
 .js .mba-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
@@ -43783,8 +43799,8 @@ html {
 }
 
 .js .mba-courses-v23 .testimonials-v23 .slider-v23__controls--arrows button {
-    background: #ffffff;
-    color: #1e1e1e;
+    background: #1e1e1e;
+    color: #ffffff;
     width: 3rem;
     height: 3rem;
     border: none;
@@ -43935,20 +43951,11 @@ html {
 
 .testimonials-v23 .testimonial-card-v23__author__name a {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    color: #ffffff;
-    border-bottom-color: #ffffff;
-    background-color: rgba(30, 30, 30, 0.5);
-}
-
-.testimonials-v23 .testimonial-card-v23__author__name a:hover {
-    color: #1e1e1e;
-    background-color: #ffffff;
 }
 
 .testimonials-v23 .testimonial-card-v23__author__name a:focus {
     outline-offset: 0.1875rem;
     outline-color: #ffffff;
-    background-color: #ffffff;
     color: #1e1e1e;
 }
 
