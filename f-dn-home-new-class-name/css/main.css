@@ -8946,6 +8946,8 @@ svg:not(:root) {
 .bayes-statistic-v24__block__icon {
     max-width: 4rem;
     margin-right: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .bayes-statistic-v24__block__icon:before {
