@@ -35301,7 +35301,7 @@ table tbody > tr > td:hover {
 
 .blockquote__wrap {
     position: relative;
-    padding: 1rem;
+    padding: 0.75rem;
     display: inline-block;
     padding: 3rem;
     margin-bottom: 1rem;
@@ -35312,19 +35312,19 @@ table tbody > tr > td:hover {
     border-style: solid;
     border-color: inherit;
     height: 100%;
-    width: 2rem;
+    width: 1.5rem;
     position: absolute;
     top: 0;
 }
 
 .blockquote__wrap::after {
     right: 0;
-    border-width: 1rem 1rem 1rem 0;
+    border-width: 0.75rem 0.75rem 0.75rem 0;
 }
 
 .blockquote__wrap::before {
     left: 0;
-    border-width: 1rem 0 1rem 1rem;
+    border-width: 0.75rem 0 0.75rem 0.75rem;
 }
 
 .blockquote__wrap p:last-child {
@@ -43666,7 +43666,7 @@ html {
 
 .bracket-border {
     position: relative;
-    padding: 1rem;
+    padding: 0.75rem;
 }
 
 .bracket-border::before, .bracket-border::after {
@@ -43674,19 +43674,19 @@ html {
     border-style: solid;
     border-color: inherit;
     height: 100%;
-    width: 2rem;
+    width: 1.5rem;
     position: absolute;
     top: 0;
 }
 
 .bracket-border::after {
     right: 0;
-    border-width: 1rem 1rem 1rem 0;
+    border-width: 0.75rem 0.75rem 0.75rem 0;
 }
 
 .bracket-border::before {
     left: 0;
-    border-width: 1rem 0 1rem 1rem;
+    border-width: 0.75rem 0 0.75rem 0.75rem;
 }
 
 .ug-courses-v23 .testimonial-card-v23__image:before,
@@ -43953,17 +43953,6 @@ html {
 
 .testimonials-v23 .testimonial-card-v23__author__name a {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-}
-
-.testimonials-v23 .testimonial-card-v23__author__name a:focus {
-    outline-offset: 0.1875rem;
-    outline-color: #ffffff;
-    color: #1e1e1e;
-}
-
-.testimonials-v23 .testimonial-card-v23__author__name a:active {
-    outline-offset: 0.1875rem;
-    outline-color: #ffffff;
 }
 
 .testimonials-v23 .testimonial-card-v23__author__title,
