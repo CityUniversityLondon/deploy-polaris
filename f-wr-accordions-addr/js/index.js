@@ -26492,6 +26492,82 @@ function launch(el) {}
 
 /***/ }),
 
+/***/ "./src/components/devcorate/devcorate.js":
+/*!***********************************************!*\
+  !*** ./src/components/devcorate/devcorate.js ***!
+  \***********************************************/
+/*! exports provided: devcorate */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "devcorate", function() { return devcorate; });
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.symbol.js */ "./node_modules/core-js/modules/es6.symbol.js");
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.array.from.js */ "./node_modules/core-js/modules/es6.array.from.js");
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.string.iterator.js */ "./node_modules/core-js/modules/es6.string.iterator.js");
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.object.to-string.js */ "./node_modules/core-js/modules/es6.object.to-string.js");
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.array.iterator.js */ "./node_modules/core-js/modules/es6.array.iterator.js");
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es6_regexp_search_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es6.regexp.search.js */ "./node_modules/core-js/modules/es6.regexp.search.js");
+/* harmony import */ var core_js_modules_es6_regexp_search_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_search_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _js_utils_util_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../js-utils/util.js */ "./src/js-utils/util.js");
+
+
+
+
+
+
+
+
+
+/**
+ * Devcorate
+ * 
+ * This module provides functionality to persist query parameters 
+ * across all same-site anchor links within a specified element.
+ * 
+ * @module components/devcorate/devcorate
+ * @author Web Development
+ * @copyright City, University of London 2024
+ */
+
+ // Utility functions to convert query parameters to/from objects
+
+/**
+ * Persist a query parameter to all same-site anchors inside an element.
+ * This ensures that a specific query parameter is appended to all 
+ * anchor links within the given element that belong to the same site.
+ *
+ * @param {HTMLElement} elem - The parent element containing anchor tags to decorate.
+ * @param {string} param - The name of the query parameter to persist.
+ * @param {string} value - The value to assign to the query parameter.
+ */
+function devcorate(elem, param, value) {
+  // Convert the NodeList of anchor elements into an array and iterate through each anchor
+  Array.from(elem.querySelectorAll('a')).forEach(function (anchor) {
+    // Only modify anchors that belong to the same origin as the current page
+    if (anchor.origin === window.location.origin) {
+      // Convert the current search parameters of the anchor to an object
+      var parameters = anchor.search ? Object(_js_utils_util_js__WEBPACK_IMPORTED_MODULE_7__["parametersToObject"])(anchor.search) // Parse existing query parameters if any
+      : {}; // If no query parameters, initialize an empty object
+
+      // Add or update the specified query parameter with the given value
+      parameters[param] = value;
+
+      // Reconstruct the anchor's href with the updated query parameters and hash
+      anchor.href = "".concat(anchor.origin).concat(anchor.pathname).concat(Object(_js_utils_util_js__WEBPACK_IMPORTED_MODULE_7__["objectToParameters"])(parameters)).concat(anchor.hash);
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./src/components/dialog/dialog.js":
 /*!*****************************************!*\
   !*** ./src/components/dialog/dialog.js ***!
@@ -29272,47 +29348,72 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _polyfills_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./polyfills.js */ "./src/polyfills.js");
-/* harmony import */ var _plugins_plugins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./plugins/plugins */ "./src/plugins/plugins.js");
-/* harmony import */ var _plugins_plugins__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_plugins_plugins__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_regexp_search_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.search.js */ "./node_modules/core-js/modules/es6.regexp.search.js");
+/* harmony import */ var core_js_modules_es6_regexp_search_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_search_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _polyfills_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./polyfills.js */ "./src/polyfills.js");
+/* harmony import */ var _plugins_plugins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plugins/plugins */ "./src/plugins/plugins.js");
+/* harmony import */ var _plugins_plugins__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_plugins_plugins__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _component_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component-list */ "./src/component-list.js");
-/* harmony import */ var _components_linkIcons_linkIcons_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/linkIcons/linkIcons.js */ "./src/components/linkIcons/linkIcons.js");
-/* harmony import */ var _components_video_preview_video_wrap_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/video-preview/video-wrap.js */ "./src/components/video-preview/video-wrap.js");
+/* harmony import */ var _js_utils_util_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js-utils/util.js */ "./src/js-utils/util.js");
+/* harmony import */ var _components_linkIcons_linkIcons_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/linkIcons/linkIcons.js */ "./src/components/linkIcons/linkIcons.js");
+/* harmony import */ var _components_video_preview_video_wrap_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/video-preview/video-wrap.js */ "./src/components/video-preview/video-wrap.js");
+/* harmony import */ var _components_devcorate_devcorate_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/devcorate/devcorate.js */ "./src/components/devcorate/devcorate.js");
 
 
 
+ // Ensures backward compatibility for older browsers
+ // Loads plugins used by the project
+ // List of components or patterns to be initialized
+ // Utility function to convert URL parameters to an object
+ // Handles link icons component
+ // Handles video preview components
+ // Function to decorate elements based on certain parameters
 
-
-
-
-
+// Error handling wrapper to safely execute a function
 function tryCatch(f) {
   try {
-    f();
+    f(); // Try to run the function
   } catch (e) {
+    // If an error occurs, log it to the console
     if (console && console.error) {
       console.error(e);
     }
   }
 }
+
+// Function to launch a given pattern or component
 function launchPattern(pattern) {
   if (typeof pattern === 'function') {
+    // If the pattern is a function, execute it safely
     tryCatch(pattern);
   } else if (pattern.className) {
+    // If the pattern has a className, initialize it on all matching elements
     var className = pattern.className,
       launch = pattern.launch;
-    jquery__WEBPACK_IMPORTED_MODULE_2___default()(".".concat(className, ":not(.").concat(className, "-njs)")).each(function () {
-      var _this = this;
+    // Select all DOM elements matching the class, excluding those already initialized
+    var elements = document.querySelectorAll(".".concat(className, ":not(.").concat(className, "-njs)"));
+    // Launch the component for each selected element
+    elements.forEach(function (element) {
       tryCatch(function () {
-        return launch(_this);
+        return launch(element);
       });
     });
   }
 }
-jquery__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return _component_list__WEBPACK_IMPORTED_MODULE_3__["default"].forEach(launchPattern);
+
+// Run once the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize all patterns or components
+  _component_list__WEBPACK_IMPORTED_MODULE_3__["default"].forEach(launchPattern);
+
+  // Convert URL parameters into an object
+  var parameters = Object(_js_utils_util_js__WEBPACK_IMPORTED_MODULE_4__["parametersToObject"])(location.search);
+
+  // If the 'test' parameter exists, apply the devcorate function to the body element
+  parameters['test'] && Object(_components_devcorate_devcorate_js__WEBPACK_IMPORTED_MODULE_7__["devcorate"])(document.querySelector('body'), 'test', parameters['test']);
+
+  // If the 'prod' parameter exists, apply the devcorate function for production mode
+  parameters['prod'] && Object(_components_devcorate_devcorate_js__WEBPACK_IMPORTED_MODULE_7__["devcorate"])(document.querySelector('body'), 'prod', parameters['prod']);
 });
 
 /***/ }),
@@ -29541,6 +29642,133 @@ function scrolledIntoView(elem) {
   var viewTop = Math.max(elemTop, docViewTop);
   var viewBottom = Math.min(elemBottom, docViewBottom);
   return (viewBottom - viewTop) / elemHeight;
+}
+
+/***/ }),
+
+/***/ "./src/js-utils/util.js":
+/*!******************************!*\
+  !*** ./src/js-utils/util.js ***!
+  \******************************/
+/*! exports provided: parametersToObject, objectToParameters, detectIE */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parametersToObject", function() { return parametersToObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "objectToParameters", function() { return objectToParameters; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectIE", function() { return detectIE; });
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.regexp.split.js */ "./node_modules/core-js/modules/es6.regexp.split.js");
+/* harmony import */ var core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_split_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_object_keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.object.keys.js */ "./node_modules/core-js/modules/es6.object.keys.js");
+/* harmony import */ var core_js_modules_es6_object_keys_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_keys_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es6.symbol.js */ "./node_modules/core-js/modules/es6.symbol.js");
+/* harmony import */ var core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_symbol_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es6.string.iterator.js */ "./node_modules/core-js/modules/es6.string.iterator.js");
+/* harmony import */ var core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_string_iterator_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es6.object.to-string.js */ "./node_modules/core-js/modules/es6.object.to-string.js");
+/* harmony import */ var core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_object_to_string_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es6.array.iterator.js */ "./node_modules/core-js/modules/es6.array.iterator.js");
+/* harmony import */ var core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/web.dom.iterable.js */ "./node_modules/core-js/modules/web.dom.iterable.js");
+/* harmony import */ var core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_iterable_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es6.array.slice.js */ "./node_modules/core-js/modules/es6.array.slice.js");
+/* harmony import */ var core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_slice_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es6.function.name.js */ "./node_modules/core-js/modules/es6.function.name.js");
+/* harmony import */ var core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_function_name_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es6.array.from.js */ "./node_modules/core-js/modules/es6.array.from.js");
+/* harmony import */ var core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_from_js__WEBPACK_IMPORTED_MODULE_9__);
+
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i.return && (_r = _i.return(), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+/**
+ * Useful utility functions
+ *
+ * @module util
+ * @author Web Development
+ * @copyright City, University of London 2024
+ */
+
+/**
+ * Turn a query string into an object.
+ *
+ * @param {string} parameterString - An HTML query string.
+ * @returns {object} An object containing the parameters.
+ */
+function parametersToObject(parameterString) {
+  var parameters = {};
+  parameterString.substr(1).split('&').forEach(function (parameter) {
+    var _parameter$split = parameter.split('='),
+      _parameter$split2 = _slicedToArray(_parameter$split, 2),
+      k = _parameter$split2[0],
+      v = _parameter$split2[1];
+    parameters[k] = v;
+  });
+  return parameters;
+}
+
+/**
+ * Turn an object into a query string.
+ *
+ * @param {object} parameterObj - An object containing the parameters and their values.
+ * @returns {string} A string of the parameters.
+ */
+function objectToParameters(parameterObj) {
+  if (Object.keys(parameterObj).length > 0) {
+    var parameters = '?';
+    for (var key in parameterObj) {
+      parameters.length !== 1 && (parameters += '&');
+      parameters += key + '=' + parameterObj[key];
+    }
+    return parameters;
+  } else {
+    return '';
+  }
+}
+
+/**
+ * Check browser user agent is IE or edge and return version number
+ */
+function detectIE() {
+  var ua = window.navigator.userAgent,
+    versionLength = 10,
+    msie = ua.indexOf('MSIE '),
+    msieVersionOffset = 5;
+  if (msie > 0) {
+    // IE 10 or older => return version number
+    return parseInt(ua.substring(msie + msieVersionOffset, ua.indexOf('.', msie)), versionLength);
+  }
+  var trident = ua.indexOf('Trident/'),
+    tridentVersionOffset = 3;
+  if (trident > 0) {
+    // IE 11 => return version number
+    var rv = ua.indexOf('rv:');
+    return parseInt(ua.substring(rv + tridentVersionOffset, ua.indexOf('.', rv)), versionLength);
+  }
+  var edge = ua.indexOf('Edge/'),
+    edgeVersionOffset = 5;
+  if (edge > 0) {
+    // Edge (IE 12+) => return version number
+    return parseInt(ua.substring(edge + edgeVersionOffset, ua.indexOf('.', edge)), versionLength);
+  }
+
+  // other browser
+  return false;
 }
 
 /***/ }),

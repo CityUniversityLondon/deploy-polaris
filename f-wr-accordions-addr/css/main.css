@@ -9625,7 +9625,7 @@ svg:not(:root) {
 .courses-v23--fee .accordion-v23,
 .courses-v23--fee .courses-v23__fee,
 .courses-v23--fee .courses-v23--fee__wys {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .courses-v23--fee h2,
@@ -10252,6 +10252,18 @@ svg:not(:root) {
     }
 }
 
+@media (min-width: 900px) {
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info .courses-v23__key-info__details {
+        grid-column: span 6;
+    }
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info .courses-v23__key-info__ctas__wrap {
+        grid-column: span 5;
+    }
+    .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info .courses-v23__key-info__standfirst__wrap {
+        grid-column: span 7;
+    }
+}
+
 .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div {
     grid-column: span 6;
 }
@@ -10793,7 +10805,7 @@ svg:not(:root) {
 }
 
 .courses-v23__summary .accordion-v23 {
-    grid-column: 1/13;
+    grid-column: 1/12;
     margin-bottom: 2rem;
 }
 
@@ -10891,7 +10903,7 @@ svg:not(:root) {
 }
 
 .courses-v23__summary__content {
-    grid-column: 1 / 13;
+    grid-column: 1 / 12;
 }
 
 .courses-v23__summary__heading {
@@ -10900,7 +10912,7 @@ svg:not(:root) {
 
 .courses-v23__summary__widget,
 .courses-v23__summary__image {
-    grid-column: 13 / -1;
+    grid-column: 12 / -1;
 }
 
 @media (max-width: 650px) {
@@ -10957,11 +10969,11 @@ svg:not(:root) {
 }
 
 .courses-v23 .courses-v23__student-life .student-life-v23__links__cards {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .courses-v23 .courses-v23__student-life .student-life-v23__links__unibuddy {
-    grid-column: 13/-1;
+    grid-column: 12/-1;
 }
 
 .courses-v23.mba-courses-v23 .courses-v23__student-life .student-life-v23__links__cards {
@@ -12241,7 +12253,7 @@ svg:not(:root) {
 }
 
 .courses-v23__entry-requirements .accordion-v23 {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .courses-v23__entry-requirements .entry-req-v23 {
@@ -12707,7 +12719,7 @@ svg:not(:root) {
 }
 
 .courses-v23__careers .courses-v23__careers__content {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 @media (max-width: 1199px) {
@@ -12717,7 +12729,7 @@ svg:not(:root) {
 }
 
 .courses-v23__careers .courses-v23__careers__alumni {
-    grid-column: 13/-1;
+    grid-column: 12/-1;
 }
 
 @media (max-width: 1199px) {
@@ -13129,13 +13141,13 @@ svg:not(:root) {
         grid-column: 1/-1;
     }
     .courses-v23__structure .courses-v23__structure__content {
-        grid-column: 1/13;
+        grid-column: 1/12;
     }
     .courses-v23__structure .courses-v23__structure__image {
-        grid-column: 13/-1;
+        grid-column: 12/-1;
     }
     .courses-v23__structure .accordion-v23 {
-        grid-column: 1/13;
+        grid-column: 1/12;
     }
 }
 
@@ -13211,10 +13223,10 @@ svg:not(:root) {
     }
     .courses-v23__study-abroad .courses-v23__study-abroad__content,
     .courses-v23__study-abroad .courses-v23__study-abroad__heading {
-        grid-column: 1/13;
+        grid-column: 1/12;
     }
     .courses-v23__study-abroad .courses-v23__study-abroad__image {
-        grid-column: 13/-1;
+        grid-column: 12/-1;
     }
 }
 
@@ -13244,10 +13256,10 @@ svg:not(:root) {
         grid-column: 1/-1;
     }
     .courses-v23__placements .courses-v23__placements__content {
-        grid-column: 1/13;
+        grid-column: 1/12;
     }
     .courses-v23__placements .courses-v23__placements__image {
-        grid-column: 13/-1;
+        grid-column: 12/-1;
     }
 }
 
@@ -13277,11 +13289,11 @@ svg:not(:root) {
 
 .courses-v23__careers .courses-v23__careers__content,
 .courses-v23__careers .accordion-v23 {
-    grid-column: 1/13;
+    grid-column: 1/12;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni {
-    grid-column: 13/-1;
+    grid-column: 12/-1;
 }
 
 .courses-v23__careers .courses-v23__careers__alumni .slider-v23__container {
@@ -30946,15 +30958,15 @@ input[type='checkbox']:checked + .header-toggle .header-toggle__content {
     opacity: 1;
 }
 
-.stats-block__piechart .stats-block__piechart__value, .chart-row__items__chart__value, .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__value path {
+.stats-block__piechart .stats-block__piechart__value, .chart-row__items__chart__value, .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value path {
     transition: stroke-dashoffset 1.5s ease 0s;
 }
 
-.stats-block__piechart .animate--svg-path--jsinit.stats-block__piechart__value, .animate--svg-path--jsinit.chart-row__items__chart__value, .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__value path.animate--svg-path--jsinit {
+.stats-block__piechart .animate--svg-path--jsinit.stats-block__piechart__value, .animate--svg-path--jsinit.chart-row__items__chart__value, .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value path.animate--svg-path--jsinit {
     visibility: hidden;
 }
 
-.stats-block__piechart .animate--svg-path--jsrun.stats-block__piechart__value, .animate--svg-path--jsrun.chart-row__items__chart__value, .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__value path.animate--svg-path--jsrun {
+.stats-block__piechart .animate--svg-path--jsrun.stats-block__piechart__value, .animate--svg-path--jsrun.chart-row__items__chart__value, .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value path.animate--svg-path--jsrun {
     visibility: visible;
 }
 
@@ -44351,62 +44363,62 @@ html {
     grid-column: 1/13;
 }
 
-.mba-courses-v23 .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__value {
-    stroke: #12E97A;
+.ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value {
+    stroke: #d61726;
 }
 
-.ksp-mba-v23 {
+.ksp-figures-v23 {
     position: relative;
     grid-column: 1/13;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.ksp-mba-v23 .ksp-mba-v23__list {
+.ksp-figures-v23 .ksp-figures-v23__list {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-.ksp-mba-v23 .ksp-mba-v23__list[data-count='1'] .ksp-mba-v23__list__item, .ksp-mba-v23 .ksp-mba-v23__list[data-count='2'] .ksp-mba-v23__list__item, .ksp-mba-v23 .ksp-mba-v23__list[data-count='3'] .ksp-mba-v23__list__item {
+.ksp-figures-v23 .ksp-figures-v23__list[data-count='1'] .ksp-figures-v23__list__item, .ksp-figures-v23 .ksp-figures-v23__list[data-count='2'] .ksp-figures-v23__list__item, .ksp-figures-v23 .ksp-figures-v23__list[data-count='3'] .ksp-figures-v23__list__item {
     flex-basis: 25%;
 }
 
 @media (max-width: 650px) {
-    .ksp-mba-v23 .ksp-mba-v23__list[data-count='1'] .ksp-mba-v23__list__item, .ksp-mba-v23 .ksp-mba-v23__list[data-count='2'] .ksp-mba-v23__list__item, .ksp-mba-v23 .ksp-mba-v23__list[data-count='3'] .ksp-mba-v23__list__item {
+    .ksp-figures-v23 .ksp-figures-v23__list[data-count='1'] .ksp-figures-v23__list__item, .ksp-figures-v23 .ksp-figures-v23__list[data-count='2'] .ksp-figures-v23__list__item, .ksp-figures-v23 .ksp-figures-v23__list[data-count='3'] .ksp-figures-v23__list__item {
         flex-basis: 50%;
     }
 }
 
-.ksp-mba-v23 .ksp-mba-v23__list[data-count='4'] .ksp-mba-v23__list__item {
+.ksp-figures-v23 .ksp-figures-v23__list[data-count='4'] .ksp-figures-v23__list__item {
     flex-basis: 23%;
 }
 
 @media (max-width: 650px) {
-    .ksp-mba-v23 .ksp-mba-v23__list[data-count='4'] .ksp-mba-v23__list__item {
+    .ksp-figures-v23 .ksp-figures-v23__list[data-count='4'] .ksp-figures-v23__list__item {
         flex-basis: 50%;
     }
 }
 
-.ksp-mba-v23 .ksp-mba-v23__list__item__label p {
+.ksp-figures-v23 .ksp-figures-v23__list__item__label p {
     font-size: 0.89rem;
     line-height: 1.414;
     letter-spacing: inherit;
 }
 
 @media (max-width: 650px) {
-    .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list[data-count='1'] .ksp-mba-v23__list__item, .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list[data-count='2'] .ksp-mba-v23__list__item, .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list[data-count='3'] .ksp-mba-v23__list__item, .ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list[data-count='4'] .ksp-mba-v23__list__item {
+    .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list[data-count='1'] .ksp-figures-v23__list__item, .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list[data-count='2'] .ksp-figures-v23__list__item, .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list[data-count='3'] .ksp-figures-v23__list__item, .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list[data-count='4'] .ksp-figures-v23__list__item {
         flex-basis: 48%;
     }
 }
 
-.ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__value {
+.ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value {
     position: relative;
     width: 100%;
 }
 
-.ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__value__number {
+.ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value__number {
     position: absolute;
     display: flex;
     top: 0;
@@ -44415,45 +44427,45 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 3.5rem;
-    color: #2e767a;
+    color: #1e1e1e;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
-.ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__value__number__unit {
+.ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value__number__unit {
     font-size: 2.0736rem;
 }
 
-.ksp-mba-v23.ksp-mba-v23--graphs .ksp-mba-v23__list__item__label {
+.ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__label {
     color: #555555;
     text-align: center;
     margin-top: 0.5rem;
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers {
+.ksp-figures-v23.ksp-figures-v23--numbers {
     padding: 1.5rem;
 }
 
 @media (max-width: 900px) {
-    .ksp-mba-v23.ksp-mba-v23--numbers {
+    .ksp-figures-v23.ksp-figures-v23--numbers {
         padding: 1.5rem;
     }
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__heading {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__heading {
     margin-top: 1rem;
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list {
     gap: 0;
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list__item {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item {
     position: relative;
     display: flex;
     flex-direction: row;
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list__item:not(:last-child):after {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:not(:last-child):after {
     content: '';
     width: 2rem;
     margin-right: 0.5rem;
@@ -44462,7 +44474,7 @@ html {
     background-position-x: -0.5rem;
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list__item:last-child:after {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:last-child:after {
     content: '';
     width: 2rem;
     height: 100%;
@@ -44470,70 +44482,137 @@ html {
 }
 
 @media (max-width: 650px) {
-    .ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list__item:nth-of-type(2):after {
+    .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:nth-of-type(2):after {
         content: inherit;
     }
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list__item__container {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__container {
     flex: 1;
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list__item__value {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__value {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list__item__value .ksp-mba-v23__list__item__value__number {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__value .ksp-figures-v23__list__item__value__number {
     font-size: 3.5rem;
     color: #1e1e1e;
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
 }
 
-.ksp-mba-v23.ksp-mba-v23--numbers .ksp-mba-v23__list__item__value .ksp-mba-v23__list__item__value__unit {
+.ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__value .ksp-figures-v23__list__item__value__unit {
     font-size: 2.0736rem;
 }
 
-.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--graphs {
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--graphs,
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--graphs {
     display: none;
 }
 
-.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers {
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers,
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers {
     padding: 0;
     margin: 0;
 }
 
-.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .corner-border-v23 {
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .corner-border-v23,
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .corner-border-v23 {
     background: none;
 }
 
-.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__heading {
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__heading,
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__heading {
     margin-top: 0;
 }
 
-.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__list .ksp-mba-v23__list__item {
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item,
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item {
     flex-basis: 45%;
 }
 
 @media (max-width: 1440px) {
-    .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__list .ksp-mba-v23__list__item {
+    .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item,
+    .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item {
         flex-basis: 41%;
     }
 }
 
 @media (max-width: 1200px) {
-    .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__list .ksp-mba-v23__list__item {
+    .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item,
+    .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item {
         flex-basis: 41%;
     }
 }
 
-.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-mba-v23--numbers .ksp-mba-v23__list .ksp-mba-v23__list__item:nth-child(2):after {
+.mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(2):after,
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(2):after {
     background: none;
 }
 
 .mba-courses-v23 .courses-v23__careers__ksp {
     grid-column: 1/12;
+}
+
+.pg-courses-v23 .courses-v23__careers__ksp__widget {
+    padding-bottom: 2rem;
+}
+
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item {
+    flex-basis: initial;
+}
+
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even) {
+    width: 45%;
+}
+
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even):after {
+    content: initial;
+    background: none;
+    width: initial;
+    margin-right: initial;
+}
+
+.pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd) {
+    width: 55%;
+}
+
+@media (max-width: 500px) {
+    .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd), .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even) {
+        width: 100%;
+    }
+    .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd):after, .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even):after {
+        content: initial;
+        background: none;
+        width: initial;
+        margin-right: initial;
+    }
+}
+
+.ug-courses-v23 .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value__number {
+    color: #f1b434;
+}
+
+.ug-courses-v23 .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value {
+    stroke: #ff4e00;
+}
+
+.pg-courses-v23 .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value__number {
+    color: #002b49;
+}
+
+.pg-courses-v23 .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value {
+    stroke: #3457F1;
+}
+
+.mba-courses-v23 .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value__number {
+    color: #2e767a;
+}
+
+.mba-courses-v23 .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value {
+    stroke: #12E97A;
 }
 
 .footer__back-to-top.back-to-top[data-docked='true'] {
@@ -45081,4 +45160,8 @@ html {
 .banner-vi.banner-vi--theme--centres .banner-vi__shape--left svg path,
 .banner-vi.banner-vi--theme--centres .banner-vi__shape__mobile--left svg path {
     fill: #8b2433;
+}
+
+.ash-class {
+    display: block;
 }
