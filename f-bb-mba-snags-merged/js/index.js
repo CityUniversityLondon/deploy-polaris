@@ -23101,7 +23101,6 @@ function scrollToHeading(heading, repeat) {
  */
 function setSection(heading, open) {
   heading.dataset.open = open;
-  heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_1__["default"].expanded, open);
 }
 
@@ -23180,8 +23179,8 @@ function isSubAccordion(heading) {
 
 function closeSubAccordions(subsections) {
   subsections.forEach(sub => {
-    const subAccordionHeading = sub.querySelector(`.${headingClassName}`);
-    const subAccordionSection = sub.querySelector(`.${bodyClassName}`);
+    const subAccordionHeading = sub;
+    const subAccordionSection = sub.nextElementSibling;
 
     //If the sub accordion is open close it.
     if (Object(_util__WEBPACK_IMPORTED_MODULE_0__["toBool"])(sub.dataset.open)) {
@@ -23211,7 +23210,7 @@ function closeSubAccordions(subsections) {
 function buttonClick(button, headings, toggleOpen) {
   const heading = button.parentNode;
   const accordionSection = heading.nextElementSibling;
-  const subAccordions = accordionSection.querySelectorAll('.accordion-v23__section');
+  const subAccordions = accordionSection.querySelectorAll('.accordion-v23__heading');
   if (button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_1__["default"].expanded) === 'true') {
     // updates URL hash, by removing hash from URL when accordion closes
     if (isSubAccordion(heading)) {
@@ -23257,10 +23256,10 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = sectionHeight;
     }, tenthOfASecond);
     if (toggleOpen) {
-      const sections = Array.from(heading.parentNode.parentNode.querySelectorAll(`#${heading.parentElement.parentElement.id} > .accordion-v23__section .${bodyClassName}`));
+      const sections = Array.from(heading.parentNode.parentNode.querySelectorAll(`#${heading.parentElement.id} > .${bodyClassName}`));
       headings.forEach(heading => setSection(heading, false));
       sections.filter(section => section.id !== accordionSection.id).forEach(section => {
-        const openSubAccordions = section.querySelectorAll('.accordion-v23__section[data-open="true"]');
+        const openSubAccordions = section.querySelectorAll('.accordion-v23__heading[data-open="true"]');
         if (openSubAccordions.length > 0) {
           closeSubAccordions(openSubAccordions);
         }
@@ -23353,22 +23352,34 @@ function launch(accordion) {
   }
   headings.forEach(heading => {
     const content = heading.nextElementSibling,
-      button = buttonFromHeading(heading, downChevronStyle),
-      prevSibling = heading.previousElementSibling;
+      button = buttonFromHeading(heading, downChevronStyle);
+
+    /// Check with Ben added ?
+    /// prevSibling = heading.previousElementSibling;
+
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_1__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
+
     // v23 added to wrap accordion heading and body in a div
+    /*
     const accordionSectionWrap = document.createElement('div');
+    
     accordionSectionWrap.classList.add('accordion-v23__section');
     accordionSectionWrap.setAttribute('data-open', 'false');
-    Object(_util__WEBPACK_IMPORTED_MODULE_0__["appendAll"])(accordionSectionWrap, [heading, content]);
+    appendAll(accordionSectionWrap, [heading, content]);
     accordion.appendChild(accordionSectionWrap);
+    */
     setSection(heading, false);
-    if (prevSibling && prevSibling.classList.contains('accordion-v23__modules-heading')) {
-      //If a module heading has been added, move it to the correct position
-      accordion.insertBefore(prevSibling, accordionSectionWrap);
+
+    /// Check with Ben added ?
+    /*
+    if(prevSibling && prevSibling.classList.contains('accordion-v23__modules-heading')) {
+        //If a module heading has been added, move it to the correct position
+        accordion.insertBefore(prevSibling, accordionSectionWrap);
     }
+    */
+
     heading.nextElementSibling.dataset.closed = 'true';
     button.addEventListener('click', () => buttonClick(button, headings, toggleOpen), true);
   });
