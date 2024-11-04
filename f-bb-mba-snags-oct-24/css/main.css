@@ -30399,7 +30399,7 @@ html {
           color: #1e1e1e;
           margin-bottom: initial;
           border: initial;
-          padding: 0 0.25rem 0.25rem 0.25rem; } }
+          padding: 0.5rem 0.25rem 0.25rem 0.25rem; } }
 
 @media screen and (min-width: 1200px) and (max-width: 1919px) {
   .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
