@@ -25272,7 +25272,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function processTree(gCurrent, gTree) {
-  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 2) {
+  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 1) {
     // left hand navigation only starts on level 2 if Staffhub
     return {
       tree: null,
