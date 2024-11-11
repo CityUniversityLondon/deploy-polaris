@@ -25615,8 +25615,8 @@ __webpack_require__.r(__webpack_exports__);
 const PARSE_REGEX = /^\s*([0-9]) ([^\s]+) [0-9] (.+)$/;
 const currentURL = document.getElementById('page_urls').innerHTML;
 function loadData() {
-  if (currentURL.includes('/staff-hub')) {
-    return document.getElementById('nav-mobile__data__tertiary').innerHTML; // Staffhub tree
+  if (currentURL.includes('ac.uk/staff-hub') || currentURL.includes('ac.uk/alumni')) {
+    return document.getElementById('nav-mobile__data__tertiary').innerHTML; // used for Hidden menu as root
   } else {
     return document.getElementById('nav-mobile__data').innerHTML; // Global tree
   }
