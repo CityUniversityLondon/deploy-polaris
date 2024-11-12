@@ -10014,15 +10014,6 @@ svg:not(:root) {
     color: white;
     background: #555555; }
 
-.site-search-modal {
-  display: none;
-  background-color: #ffffff;
-  position: absolute;
-  bottom: calc(-5.25rem + 10px - 0.12rem);
-  width: 100vw;
-  height: auto;
-  right: calc(((100vw - 1440px) / 2) - (100vw - 1440px)); }
-
 .site-search {
   /** TODO: Is min height necessary? **/
   float: left;
