@@ -23360,16 +23360,6 @@ function launch(accordion) {
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_1__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
-
-    // v23 added to wrap accordion heading and body in a div
-    /*
-    const accordionSectionWrap = document.createElement('div');
-    
-    accordionSectionWrap.classList.add('accordion-v23__section');
-    accordionSectionWrap.setAttribute('data-open', 'false');
-    appendAll(accordionSectionWrap, [heading, content]);
-    accordion.appendChild(accordionSectionWrap);
-    */
     setSection(heading, false);
 
     /// Check with Ben added ?
