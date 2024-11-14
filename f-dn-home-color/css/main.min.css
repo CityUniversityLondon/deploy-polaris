@@ -6174,9 +6174,10 @@ svg:not(:root) {
     background-color: #1e1e1e; }
 
 /*Banner Video*/
+.bayes-spotlight.bayes-full-width-container {
+  padding-top: initial; }
+
 @media (max-width: 900px) {
-  .bayes-spotlight.bayes-full-width-container {
-    padding-top: initial; }
   .bayes-spotlight .bayes-full-width-container__wrapper {
     max-width: initial;
     margin-left: initial;
