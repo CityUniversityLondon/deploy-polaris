@@ -9583,7 +9583,7 @@ svg:not(:root) {
 .mba-courses-v23 .courses-v23__careers .courses-v23__careers__alumni {
   grid-column: 12/-1; }
 
-.mba-courses-v23 .standfirst p {
+.mba-courses-v23 .standfirst {
   font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   color: #555555;
   font-size: 1.44rem;
