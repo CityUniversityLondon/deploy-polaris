@@ -9583,6 +9583,16 @@ svg:not(:root) {
 .mba-courses-v23 .courses-v23__careers .courses-v23__careers__alumni {
   grid-column: 12/-1; }
 
+.mba-courses-v23 .standfirst {
+  font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  color: #555555;
+  font-size: 1.44rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: 400; }
+
 .vertical-menu__page-link,
 .vertical-menu__toggle-link {
   background-color: inherit;
@@ -25013,6 +25023,7 @@ table {
 .scp--executive-education blockquote::before {
   background-color: #93328e; }
 
+/*==Fallback styles for blockquotes that haven't had their markup updated to included wrapper div*/
 blockquote {
   padding: 2rem 2rem 2rem 2rem;
   position: relative; }
@@ -25031,6 +25042,37 @@ blockquote {
             mask: url("../img/quote.svg") no-repeat;
     -webkit-mask-size: 100%;
             mask-size: 100%; }
+
+.blockquote__wrap {
+  position: relative;
+  padding: 0.75rem;
+  display: inline-block;
+  padding: 3rem;
+  margin-bottom: 1rem; }
+  .blockquote__wrap::before, .blockquote__wrap::after {
+    content: '';
+    border-style: solid;
+    border-color: inherit;
+    height: 100%;
+    width: 1.5rem;
+    position: absolute;
+    top: 0; }
+  .blockquote__wrap::after {
+    right: 0;
+    border-width: 0.75rem 0.75rem 0.75rem 0; }
+  .blockquote__wrap::before {
+    left: 0;
+    border-width: 0.75rem 0 0.75rem 0.75rem; }
+  .blockquote__wrap p:last-child {
+    margin-bottom: 0; }
+  .blockquote__wrap blockquote {
+    /*remove fallback styles when structure contains wrapper class*/
+    padding: 0; }
+    .blockquote__wrap blockquote::before {
+      content: none; }
+
+blockquote {
+  position: relative; }
   blockquote p {
     font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem; }
@@ -25876,13 +25918,15 @@ blockquote {
     padding: 0.22rem 0.5rem;
     border-bottom-width: 0;
     line-height: 1;
-    font-size: 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
     margin-left: 1rem;
     display: inline;
     background: #d61726; }
     .cass-events .cass-events__filter-results__close .icon-remove:before {
-      content: '\f00d';
-      font-family: FontAwesome; }
+      font-family: "Font Awesome 6 Pro";
+      content: "\f00d";
+      font-weight: 900; }
   .cass-events .fade-out {
     opacity: 0;
     pointer-events: none;
@@ -25897,8 +25941,9 @@ blockquote {
   100% {
     opacity: 0; } }
   .cass-events .icon-refresh::before {
-    content: '\f021';
-    font-family: fontAwesome; }
+    font-family: "Font Awesome 6 Pro";
+    content: "\f021";
+    font-weight: 900; }
   .cass-events .icon-spin {
     height: 0.9em;
     display: inline-block;
@@ -30303,12 +30348,12 @@ html {
           padding: 0.25rem;
           border: initial; }
           .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button:focus {
-            background-color: #666666;
-            color: #ffffff; }
+            background-color: #e5e5e5;
+            color: #1e1e1e; }
             .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button:focus .accordion-v23__heading__description p {
-              color: #ffffff; }
+              color: #1e1e1e; }
             .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button:focus .accordion-v23__heading__indicator:before {
-              color: #ffffff; }
+              color: #1e1e1e; }
           .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button .accordion-v23__heading__description {
             font-weight: 600; }
             .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading button .accordion-v23__heading__description p {
@@ -30381,7 +30426,8 @@ html {
           border: 0.12rem dotted #1e1e1e;
           border-bottom: 0; }
           .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] button {
-            color: #ffffff; }
+            background-color: #e5e5e5;
+            color: #1e1e1e; }
             .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] button .accordion-v23__heading__description {
               display: none; }
           .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] + .accordion-v23__body {
@@ -30389,11 +30435,11 @@ html {
             line-height: 1.625;
             letter-spacing: 0em;
             line-height: 1.424;
-            background-color: #666666;
-            color: #ffffff;
+            background-color: #e5e5e5;
+            color: #1e1e1e;
             margin-bottom: initial;
             border: initial;
-            padding: 0 0.25rem 0.25rem 0.25rem;
+            padding: 0.5rem 0.25rem 0.25rem 0.25rem;
             margin-bottom: 0.2rem;
             border: 0.12rem dotted #1e1e1e;
             border-top: none; } }
@@ -30469,7 +30515,7 @@ html {
 
 @media screen {
           .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] .accordion-v23__heading__indicator {
-            color: #ffffff; }
+            color: #1e1e1e; }
             .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] .accordion-v23__heading__indicator::before {
               transform: rotate(180deg); }
   .js .accordion-v23 .accordion-v23__heading {
@@ -30521,13 +30567,13 @@ html {
         .js .accordion-v23 .accordion-v23__heading button:hover .accordion-v23__heading__text {
           text-decoration: underline; }
       .js .accordion-v23 .accordion-v23__heading button:focus {
-        outline: 0.12rem solid #1e1e1e;
+        outline: 0.18rem solid #1e1e1e;
         outline-offset: 0.24rem;
         background-color: #ffffff;
         position: relative;
         z-index: 1; }
       .js .accordion-v23 .accordion-v23__heading button:active {
-        outline: 0.12rem dotted #1e1e1e;
+        outline: 0.18rem dotted #1e1e1e;
         outline-offset: 0.24rem;
         background-color: #ffffff; }
         .js .accordion-v23 .accordion-v23__heading button:active .accordion-v23__heading__text {
@@ -30790,17 +30836,30 @@ html {
 .courses-v23__careers__testimonials {
   grid-column: 1/13; }
 
-.ug-courses-v23 .testimonials-v23,
-.scp--mba .testimonials-v23 {
-  background: #f1b434;
-  color: #1e1e1e; }
-  .ug-courses-v23 .testimonials-v23 a,
-  .scp--mba .testimonials-v23 a {
-    color: #1e1e1e; }
+.bracket-border {
+  position: relative;
+  padding: 0.75rem; }
+  .bracket-border::before, .bracket-border::after {
+    content: '';
+    border-style: solid;
+    border-color: inherit;
+    height: 100%;
+    width: 1.5rem;
+    position: absolute;
+    top: 0; }
+  .bracket-border::after {
+    right: 0;
+    border-width: 0.75rem 0.75rem 0.75rem 0; }
+  .bracket-border::before {
+    left: 0;
+    border-width: 0.75rem 0 0.75rem 0.75rem; }
 
 .ug-courses-v23 .testimonial-card-v23__image:before,
 .scp--mba .testimonial-card-v23__image:before {
   border: 0.125rem solid #ff4e00; }
+
+.js .ug-courses-v23 .bracket-border, .js .ug-courses-v23 .blockquote__wrap {
+  border-color: #ff4e00; }
 
 .js .ug-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
   border: 0.0625rem solid #1e1e1e; }
@@ -30812,8 +30871,8 @@ html {
   .js .ug-courses-v23 .testimonials-v23 .slider-v23__controls--arrows .slider-v23__indicator {
     display: none; }
   .js .ug-courses-v23 .testimonials-v23 .slider-v23__controls--arrows button {
-    background: #ffffff;
-    color: #1e1e1e;
+    background: #1e1e1e;
+    color: #ffffff;
     width: 3rem;
     height: 3rem;
     border: none; }
@@ -30824,17 +30883,12 @@ html {
     .js .ug-courses-v23 .testimonials-v23 .slider-v23__controls--arrows button:disabled {
       opacity: 0.5; }
 
-.pg-courses-v23 .testimonials-v23,
-.scp--mba .testimonials-v23 {
-  background: #002b49;
-  color: #ffffff; }
-  .pg-courses-v23 .testimonials-v23 a,
-  .scp--mba .testimonials-v23 a {
-    color: #ffffff; }
-
 .pg-courses-v23 .testimonial-card-v23__image:before,
 .scp--mba .testimonial-card-v23__image:before {
   border: 0.125rem solid #3457F1; }
+
+.js .pg-courses-v23 .bracket-border, .js .pg-courses-v23 .blockquote__wrap {
+  border-color: #3457F1; }
 
 .js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
   border: 0.0625rem solid #ffffff; }
@@ -30846,8 +30900,8 @@ html {
   .js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--arrows .slider-v23__indicator {
     display: none; }
   .js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--arrows button {
-    background: #ffffff;
-    color: #1e1e1e;
+    background: #1e1e1e;
+    color: #ffffff;
     width: 3rem;
     height: 3rem;
     border: none; }
@@ -30858,17 +30912,12 @@ html {
     .js .pg-courses-v23 .testimonials-v23 .slider-v23__controls--arrows button:disabled {
       opacity: 0.5; }
 
-.mba-courses-v23 .testimonials-v23,
-.scp--mba .testimonials-v23 {
-  background: #2e767a;
-  color: #ffffff; }
-  .mba-courses-v23 .testimonials-v23 a,
-  .scp--mba .testimonials-v23 a {
-    color: #ffffff; }
-
 .mba-courses-v23 .testimonial-card-v23__image:before,
 .scp--mba .testimonial-card-v23__image:before {
   border: 0.125rem solid #12E97A; }
+
+.js .mba-courses-v23 .bracket-border, .js .mba-courses-v23 .blockquote__wrap {
+  border-color: #12E97A; }
 
 .js .mba-courses-v23 .testimonials-v23 .slider-v23__controls--dots button {
   border: 0.0625rem solid #ffffff; }
@@ -30880,8 +30929,8 @@ html {
   .js .mba-courses-v23 .testimonials-v23 .slider-v23__controls--arrows .slider-v23__indicator {
     display: none; }
   .js .mba-courses-v23 .testimonials-v23 .slider-v23__controls--arrows button {
-    background: #ffffff;
-    color: #1e1e1e;
+    background: #1e1e1e;
+    color: #ffffff;
     width: 3rem;
     height: 3rem;
     border: none; }
@@ -30980,21 +31029,7 @@ html {
     font-weight: 700;
     font-size: 1rem; }
     .testimonials-v23 .testimonial-card-v23__author__name a {
-      font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-      color: #ffffff;
-      border-bottom-color: #ffffff;
-      background-color: rgba(30, 30, 30, 0.5); }
-      .testimonials-v23 .testimonial-card-v23__author__name a:hover {
-        color: #1e1e1e;
-        background-color: #ffffff; }
-      .testimonials-v23 .testimonial-card-v23__author__name a:focus {
-        outline-offset: 0.1875rem;
-        outline-color: #ffffff;
-        background-color: #ffffff;
-        color: #1e1e1e; }
-      .testimonials-v23 .testimonial-card-v23__author__name a:active {
-        outline-offset: 0.1875rem;
-        outline-color: #ffffff; }
+      font-family: "FF Meta", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
   .testimonials-v23 .testimonial-card-v23__author__title,
   .testimonials-v23 .testimonial-card-v23__author__label {
     font-size: 0.89rem; }

@@ -22972,7 +22972,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const className = 'block-links-v24__heading';
 function launch(element) {
-  console.log('element: ' + element);
   if (_js_utils_browser_support__WEBPACK_IMPORTED_MODULE_1__["default"].intersectionObserver) {
     const easeElements = [].slice.call(element.querySelectorAll('.block-links-v24__heading__text'));
     easeElements.forEach(e => {
@@ -25126,14 +25125,11 @@ const className = 'news__image-credit__thumbnail';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.includes.js */ "./node_modules/core-js/modules/es.array.includes.js");
-/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _parse_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parse-nav */ "./src/components/left-hand-navigation/parse-nav.js");
-/* harmony import */ var _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../nav-mobile/vertical-menu-helper */ "./src/components/nav-mobile/vertical-menu-helper.js");
-/* harmony import */ var stickybits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! stickybits */ "./node_modules/stickybits/dist/stickybits.es.js");
-
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse-nav */ "./src/components/left-hand-navigation/parse-nav.js");
+/* harmony import */ var _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../nav-mobile/vertical-menu-helper */ "./src/components/nav-mobile/vertical-menu-helper.js");
+/* harmony import */ var stickybits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! stickybits */ "./node_modules/stickybits/dist/stickybits.es.js");
 
 
 
@@ -25143,9 +25139,9 @@ __webpack_require__.r(__webpack_exports__);
 function prepareStickySideNav(navigation) {
   const NAVIGATION = navigation[0];
   if (NAVIGATION) {
-    const BANNER = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.banner')[0];
-    const CONTENT = jquery__WEBPACK_IMPORTED_MODULE_1___default()('#content')[0];
-    const FOOTER = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.footer')[0];
+    const BANNER = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.banner')[0];
+    const CONTENT = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#content')[0];
+    const FOOTER = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.footer')[0];
     let classAbsolute = 'left-hand-navigation--absolute';
     let classFixed = 'left-hand-navigation--fixed';
     let classTop = 'left-hand-navigation--top';
@@ -25227,22 +25223,14 @@ function prepareMenu(widget) {
   const container = widget.find('.left-hand-navigation__menu');
   container.html(''); // remove noscript lefthand-navigation
 
-  if (_parse_nav__WEBPACK_IMPORTED_MODULE_2__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
-    const menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_2__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_2__["currentSH"], false, 14); // Staffhub(SH) uses different tree due to being type2 asset in Matrix
-    menu.launch();
-  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_2__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
-    const menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_2__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_2__["currentSH"], false, 14); // Alumni uses different tree due to being type2 asset in Matrix
-    menu.launch();
-  } else {
-    const menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_2__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_2__["current"], false, 14);
-    menu.launch();
-  }
+  const menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_1__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_1__["current"], false, 14);
+  menu.launch();
   widget.addClass('left-hand-navigation--jsinit');
 }
 function launch(element) {
-  const widget = jquery__WEBPACK_IMPORTED_MODULE_1___default()(element);
+  const widget = jquery__WEBPACK_IMPORTED_MODULE_0___default()(element);
   prepareMenu(widget);
-  Object(stickybits__WEBPACK_IMPORTED_MODULE_4__["default"])(widget);
+  Object(stickybits__WEBPACK_IMPORTED_MODULE_3__["default"])(widget);
   //prepareStickySideNav(widget);
 }
 const className = 'left-hand-navigation';
@@ -25257,15 +25245,13 @@ const className = 'left-hand-navigation';
 /*!**********************************************************!*\
   !*** ./src/components/left-hand-navigation/parse-nav.js ***!
   \**********************************************************/
-/*! exports provided: tree, current, treeSH, currentSH, currentURL */
+/*! exports provided: tree, current, currentURL */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tree", function() { return tree; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "current", function() { return current; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "treeSH", function() { return treeSH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentSH", function() { return currentSH; });
 /* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.includes.js */ "./node_modules/core-js/modules/es.array.includes.js");
 /* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../nav-mobile/parse-nav */ "./src/components/nav-mobile/parse-nav.js");
@@ -25276,7 +25262,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function processTree(gCurrent, gTree) {
-  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 2) {
+  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 1) {
     // left hand navigation only starts on level 2 if Staffhub
     return {
       tree: null,
@@ -25288,7 +25274,7 @@ function processTree(gCurrent, gTree) {
       tree: null,
       current: null
     };
-  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 3) {
+  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 3) {
     // left hand navigation only starts on level 3
     return {
       tree: null,
@@ -25306,10 +25292,6 @@ const {
   tree,
   current
 } = processTree(_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["current"], _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["tree"]);
-const {
-  tree: treeSH,
-  current: currentSH
-} = processTree(_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentSH"], _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["treeSH"]);
 
 
 /***/ }),
@@ -25499,19 +25481,13 @@ function launch(el) {
   let element = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
   const containerTop = element.find('.nav-mobile__content');
   const containerTri = element.find('.nav-mobile__tertiary__children');
-  if (_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
-    // Staffhub(SH) uses different tree due to being type2 asset in Matrix
-    let nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_2__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentSH"], containerTri);
-    nav.launch();
-    Object(_home_link__WEBPACK_IMPORTED_MODULE_4__["default"])(containerTop);
-  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
-    // Alumni uses different tree due to being type2 asset in Matrix
-    let nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_2__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentSH"], containerTri);
+  if (_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('ac.uk/staff-hub') || _parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('ac.uk/alumni')) {
+    // Staffhub(SH) and Alumni uses different tree due to being type2 asset in Matrix
+    let nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_2__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["current"], containerTri);
     nav.launch();
     Object(_home_link__WEBPACK_IMPORTED_MODULE_4__["default"])(containerTop);
   } else {
     let nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_2__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["current"], containerTop);
-    nav.launch();
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -25607,28 +25583,30 @@ class NavMobile {
 /*!************************************************!*\
   !*** ./src/components/nav-mobile/parse-nav.js ***!
   \************************************************/
-/*! exports provided: tree, current, treeSH, currentSH, currentURL */
+/*! exports provided: tree, current, currentURL */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tree", function() { return tree; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "current", function() { return current; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "treeSH", function() { return treeSH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentSH", function() { return currentSH; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentURL", function() { return currentURL; });
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.includes.js */ "./node_modules/core-js/modules/es.array.includes.js");
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 const PARSE_REGEX = /^\s*([0-9]) ([^\s]+) [0-9] (.+)$/;
 const currentURL = document.getElementById('page_urls').innerHTML;
 function loadData() {
-  return document.getElementById('nav-mobile__data').innerHTML; // Global tree
+  if (currentURL.includes('ac.uk/staff-hub') || currentURL.includes('ac.uk/alumni')) {
+    return document.getElementById('nav-mobile__data__tertiary').innerHTML; // used for Hidden menu as root
+  } else {
+    return document.getElementById('nav-mobile__data').innerHTML; // Global tree
+  }
 }
 function loadUrls() {
   return document.getElementById('page_urls').innerHTML;
-}
-function loadDataStaffHub() {
-  return document.getElementById('nav-mobile__data__tertiary').innerHTML; // Staffhub tree
 }
 function getPath(url) {
   return url.replace(/^https?:\/\/[^/]*/, '');
@@ -25707,10 +25685,6 @@ const {
   tree,
   current
 } = parseNav(loadData(), loadUrls());
-const {
-  tree: treeSH,
-  current: currentSH
-} = parseNav(loadDataStaffHub(), loadUrls());
 
 
 /***/ }),
