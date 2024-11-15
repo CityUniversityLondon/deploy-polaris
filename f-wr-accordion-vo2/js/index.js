@@ -23352,23 +23352,10 @@ function launch(accordion) {
   headings.forEach(heading => {
     const content = heading.nextElementSibling,
       button = buttonFromHeading(heading, downChevronStyle);
-
-    /// Check with Ben added ?
-    /// prevSibling = heading.previousElementSibling;
-
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_1__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
     setSection(heading, false);
-
-    /// Check with Ben added ?
-    /*
-    if(prevSibling && prevSibling.classList.contains('accordion-v23__modules-heading')) {
-        //If a module heading has been added, move it to the correct position
-        accordion.insertBefore(prevSibling, accordionSectionWrap);
-    }
-    */
-
     heading.nextElementSibling.dataset.closed = 'true';
     button.addEventListener('click', () => buttonClick(button, headings, toggleOpen), true);
   });

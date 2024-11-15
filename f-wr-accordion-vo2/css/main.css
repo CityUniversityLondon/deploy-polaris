@@ -30422,7 +30422,7 @@ html {
               transform: initial; }
         .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] {
           margin-bottom: 0;
-          background-color: #666666;
+          background-color: #e5e5e5;
           border: 0.12rem dotted #1e1e1e;
           border-bottom: 0; }
           .js .accordion-v23 .accordion-v23__body .accordion-v23[data-downchevronstyle='true'] .accordion-v23__heading[data-open='true'] button {
