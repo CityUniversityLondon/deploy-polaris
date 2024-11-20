@@ -24686,12 +24686,30 @@ function launch(slider) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _js_utils_scroll_to_v23__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js-utils/scroll-to-v23 */ "./src/js-utils/scroll-to-v23.js");
+
 
 
 function launch(el) {
-  console.log('Timeline v23 launched');
-
-  // createDebugArea();
+  const buttonShowMore = el.querySelector('.timeline-v23__show-more__button');
+  const contentShowMore = el.querySelector('.timeline-v23__show-more__content');
+  const dynamicContent = contentShowMore.getElementsByClassName('timeline-v23__year')[1];
+  buttonShowMore.addEventListener('click', function () {
+    const status = contentShowMore.getAttribute('data-open');
+    if (status === 'true') {
+      contentShowMore.setAttribute('data-open', 'false');
+      buttonShowMore.innerText = 'Show more';
+      dynamicContent.style.display = 'none';
+      const scrollToElement = el.querySelector('#timeline-year-1');
+      Object(_js_utils_scroll_to_v23__WEBPACK_IMPORTED_MODULE_0__["default"])(scrollToElement);
+    } else {
+      contentShowMore.setAttribute('data-open', 'true');
+      buttonShowMore.innerText = 'Show less';
+      dynamicContent.style.display = 'block';
+      const scrollToElement = el.querySelector('#timeline-year-2');
+      Object(_js_utils_scroll_to_v23__WEBPACK_IMPORTED_MODULE_0__["default"])(scrollToElement);
+    }
+  });
 }
 const className = 'timeline-v23';
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -27274,6 +27292,58 @@ __webpack_require__.r(__webpack_exports__);
     window.setTimeout(callback, 1000 / 60);
   };
 })());
+
+/***/ }),
+
+/***/ "./src/js-utils/scroll-to-v23.js":
+/*!***************************************!*\
+  !*** ./src/js-utils/scroll-to-v23.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return scrollToV23; });
+
+
+/**
+ * This is the ScrollTo V23 version. This is an updated version which takes into account that there may be 
+ * a sticky nav present on the page. In such case when determining how far to scroll down it will keep in mind to scroll
+ * down a bit extra to make sure the sticky nav don't obstruct the view the the element where you are scrolling to.
+ * There is also a "repeat" parameter. This is a savety switch, to force it scrolling to the element. On some pages, 
+ * some elements heights may change whilst scrolling thus throwing off the point to scroll to. This will then monitor 
+ * if the element was reached during the scroll attempt or automatically try again till reached.
+ *
+ * @param {HTMLHeadingElement} element - the element you want automatic scrolling to.
+ * @param {string} repeat - will try automatically repeat and scroll down to element until achieved.
+ */
+
+function scrollToV23(element, repeat) {
+  console.log(`element : ${element}`);
+  const viewportOffset = element.parentElement.getBoundingClientRect();
+  const top = viewportOffset.top;
+  scrollBy(0, top - stickyNavHeight());
+  if (repeat) {
+    setTimeout(() => {
+      if (top > 200) {
+        scrollToV23(element, repeat);
+      }
+    }, 700);
+  }
+}
+
+/**
+ * Checking if stickyNav is present and returns its height for scrolling estimations
+ *
+ */
+function stickyNavHeight() {
+  let stickyNavEl = document.getElementsByClassName('nav-sticky')[0];
+  if (stickyNavEl) {
+    return stickyNavEl.offsetHeight;
+  }
+  return 0;
+}
 
 /***/ }),
 

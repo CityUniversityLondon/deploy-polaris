@@ -31571,13 +31571,16 @@ html {
 
 .timeline-v23 {
   background-color: #eceeee; }
+  .timeline-v23 .timeline-v23__show-more__content[data-open='false'] .timeline-v23__year:nth-of-type(2) {
+    display: none; }
   .timeline-v23 .timeline-v23__terms {
     display: flex;
     flex-direction: row; }
   .timeline-v23 .timeline-v23__term {
     display: flex;
     flex-direction: column;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    flex-basis: 25%; }
   .timeline-v23 .timeline-v23__tablet-headings {
     display: flex;
     flex-direction: row; }
@@ -31597,14 +31600,20 @@ html {
     flex-direction: column; }
     .timeline-v23 .timeline-v23__heading span:first-child {
       text-transform: uppercase; }
-  .timeline-v23 .show-more__button__wrap {
+  .timeline-v23 .timeline-v23__show-more__button__wrap {
     margin-top: 1rem;
     display: flex;
     justify-content: center; }
-  .timeline-v23 .show-more__button {
+  .timeline-v23 .timeline-v23__show-more__button {
     background-color: #1e1e1e;
     color: #ffffff;
     border-radius: 1.25rem;
     padding: 0 0.5rem; }
+  .timeline-v23 .accordion-v23__heading {
+    background-color: #2e767a; }
+    .timeline-v23 .accordion-v23__heading .accordion-v23__heading__text {
+      color: #ffffff; }
+  .timeline-v23 .accordion-v23__heading--exams {
+    background-color: #12E97A; }
 
 /*# sourceMappingURL=main.min.css.map */
