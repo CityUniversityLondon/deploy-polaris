@@ -27356,7 +27356,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * This is the ScrollTo V23 version. This is an updated version which takes into account that there may be 
+ * This is the ScrollTo V24 version. This is an updated version which takes into account that there may be 
  * a sticky nav present on the page. In such case when determining how far to scroll down it will keep in mind to scroll
  * down a bit extra to make sure the sticky nav don't obstruct the view the the element where you are scrolling to.
  * There is also a "repeat" parameter. This is a savety switch, to force it scrolling to the element. On some pages, 
