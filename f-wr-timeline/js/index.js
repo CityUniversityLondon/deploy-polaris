@@ -26523,8 +26523,9 @@ function setOpenHeight(el, viewportWidth) {
     showMoreHeight = el.querySelector('.timeline-v24__tablet').offsetHeight;
   }
 
-  // applies height value via HTML root variables to available to CSS via style sheet
-  root.style.setProperty('--sm-open-height', `${showMoreHeight}px`);
+  // Applies height value via HTML root variables to available to CSS via style sheet.
+  // Adds additional 200px to accomodate for 'missed' margins when fetching element heights 
+  root.style.setProperty('--sm-open-height', `${showMoreHeight + 200}px`);
 }
 function setClosedHeight(el, viewportWidth) {
   const root = document.documentElement;
@@ -27356,12 +27357,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * This is the ScrollTo V24 version. This is an updated version which takes into account that there may be 
- * a sticky nav present on the page. In such case when determining how far to scroll down it will keep in mind to scroll
- * down a bit extra to make sure the sticky nav don't obstruct the view the the element where you are scrolling to.
+ * This is the ScrollTo V24 version. This is an updated version, which takes into account that there may be 
+ * a sticky nav present on the page. In such case, while determining how far to scroll down, it will keep in mind to scroll
+ * down a bit extra to accomodate the sticky nav doesn't obstruct the view of the target element you are scrolling to.
  * There is also a "repeat" parameter. This is a savety switch, to force it scrolling to the element. On some pages, 
- * some elements heights may change whilst scrolling thus throwing off the point to scroll to. This will then monitor 
- * if the element was reached during the scroll attempt or automatically try again till reached.
+ * some elements heights may change whilst scrolling, thus throwing off the point to scroll to. This will then monitor 
+ * if the element was reached during the scroll attempt, or automatically try again till reached.
  *
  * @param {HTMLHeadingElement} element - the element you want automatic scrolling to.
  * @param {string} repeat - will try automatically repeat and scroll down to element until achieved.
