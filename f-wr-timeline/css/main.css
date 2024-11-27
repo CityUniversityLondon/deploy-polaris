@@ -31567,7 +31567,8 @@ html {
   fill: #8b2433; }
 
 .mba-courses-v23 .timeline-v24 {
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  margin-top: 1rem; }
   .mba-courses-v23 .timeline-v24 table {
     width: 100%;
     border: none; }
