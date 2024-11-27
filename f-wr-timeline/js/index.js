@@ -21441,7 +21441,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/components-v23/content-transition/square-animation */ "./src/components/components-v23/content-transition/square-animation.js");
 /* harmony import */ var _components_back_to_top_back_to_top__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/back-to-top/back-to-top */ "./src/components/back-to-top/back-to-top.js");
 /* harmony import */ var _components_block_links_v24_block_links_v24__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/block-links-v24/block-links-v24 */ "./src/components/block-links-v24/block-links-v24.js");
-/* harmony import */ var _components_components_v23_timeline_v23_timeline_v23__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/components-v23/timeline-v23/timeline-v23 */ "./src/components/components-v23/timeline-v23/timeline-v23.js");
+/* harmony import */ var _components_timeline_v24_timeline_v24__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/timeline-v24/timeline-v24 */ "./src/components/timeline-v24/timeline-v24.js");
 
 
 
@@ -21482,7 +21482,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_10___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_9__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_11__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_12__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_14__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_15__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_16__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_17__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_18__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_19__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_20__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_21__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_22__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_23__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_24__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_25__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_28__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_32__["default"], _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_33__["default"], _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_34__["default"], _components_back_to_top_back_to_top__WEBPACK_IMPORTED_MODULE_35__["default"], _components_block_links_v24_block_links_v24__WEBPACK_IMPORTED_MODULE_36__["default"], _components_components_v23_timeline_v23_timeline_v23__WEBPACK_IMPORTED_MODULE_37__["default"]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_site_search__WEBPACK_IMPORTED_MODULE_4__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_10___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_9__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_11__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_12__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_14__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_15__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_16__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_17__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_18__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_19__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_20__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_21__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_22__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_23__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_24__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_25__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_28__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_32__["default"], _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_33__["default"], _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_34__["default"], _components_back_to_top_back_to_top__WEBPACK_IMPORTED_MODULE_35__["default"], _components_block_links_v24_block_links_v24__WEBPACK_IMPORTED_MODULE_36__["default"], _components_timeline_v24_timeline_v24__WEBPACK_IMPORTED_MODULE_37__["default"]]);
 
 /***/ }),
 
@@ -24677,48 +24677,6 @@ function launch(slider) {
 
 /***/ }),
 
-/***/ "./src/components/components-v23/timeline-v23/timeline-v23.js":
-/*!********************************************************************!*\
-  !*** ./src/components/components-v23/timeline-v23/timeline-v23.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _js_utils_scroll_to_v23__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js-utils/scroll-to-v23 */ "./src/js-utils/scroll-to-v23.js");
-
-
-
-function launch(el) {
-  const buttonShowMore = el.querySelector('.timeline-v23__show-more__button');
-  const contentShowMore = el.querySelector('.timeline-v23__show-more__content');
-  const dynamicContent = contentShowMore.getElementsByClassName('timeline-v23__year')[1];
-  buttonShowMore.addEventListener('click', function () {
-    const status = contentShowMore.getAttribute('data-open');
-    if (status === 'true') {
-      contentShowMore.setAttribute('data-open', 'false');
-      buttonShowMore.innerText = 'Show more';
-      dynamicContent.style.display = 'none';
-      const scrollToElement = el.querySelector('#timeline-year-1');
-      Object(_js_utils_scroll_to_v23__WEBPACK_IMPORTED_MODULE_0__["default"])(scrollToElement);
-    } else {
-      contentShowMore.setAttribute('data-open', 'true');
-      buttonShowMore.innerText = 'Show less';
-      dynamicContent.style.display = 'block';
-      const scrollToElement = el.querySelector('#timeline-year-2');
-      Object(_js_utils_scroll_to_v23__WEBPACK_IMPORTED_MODULE_0__["default"])(scrollToElement);
-    }
-  });
-}
-const className = 'timeline-v23';
-/* harmony default export */ __webpack_exports__["default"] = ({
-  launch,
-  className
-});
-
-/***/ }),
-
 /***/ "./src/components/components-v23/util.js":
 /*!***********************************************!*\
   !*** ./src/components/components-v23/util.js ***!
@@ -26510,6 +26468,96 @@ const className = 'slider-news';
 
 /***/ }),
 
+/***/ "./src/components/timeline-v24/timeline-v24.js":
+/*!*****************************************************!*\
+  !*** ./src/components/timeline-v24/timeline-v24.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _js_utils_scroll_to_v24__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../js-utils/scroll-to-v24 */ "./src/js-utils/scroll-to-v24.js");
+
+
+
+function launch(el) {
+  const buttonShowMore = el.querySelector('.timeline-v24__show-more__button');
+  const viewportWidth = window.innerWidth;
+
+  // closes showmore content on page load
+  setClosedHeight(el, viewportWidth);
+  buttonShowMore.addEventListener('click', function () {
+    const viewportWidth = window.innerWidth;
+    const status = el.getAttribute('data-open');
+    if (status === 'true') {
+      // HTML structure is differnt for desktop and tablet/ smaller viewports, therefor auto scrolls to different heading when triggered
+      const scrollToElement = viewportWidth >= 768 ? el.querySelector('#timeline-desktop-year-1') : el.querySelector('#timeline-tablet-year-1');
+      Object(_js_utils_scroll_to_v24__WEBPACK_IMPORTED_MODULE_0__["default"])(scrollToElement);
+      setClosedHeight(el, viewportWidth);
+      el.setAttribute('data-open', 'false');
+      buttonShowMore.innerText = 'Show more';
+    } else {
+      setOpenHeight(el, viewportWidth);
+      el.setAttribute('data-open', 'true');
+      buttonShowMore.innerText = 'Show less';
+
+      // HTML structure is differnt for desktop and tablet/ smaller viewports, therefor auto scrolls to different heading when triggered
+      const scrollToElement = viewportWidth >= 768 ? el.querySelector('#timeline-desktop-year-2') : el.querySelector('#timeline-tablet-year-2');
+      setTimeout(() => {
+        Object(_js_utils_scroll_to_v24__WEBPACK_IMPORTED_MODULE_0__["default"])(scrollToElement);
+      }, 350);
+    }
+  });
+}
+function setOpenHeight(el, viewportWidth) {
+  const root = document.documentElement;
+  let showMoreHeight;
+
+  // HTML structure is differnt for desktop and tablet/ smaller viewports, therefor 'showmore content' height calculated differently
+  if (viewportWidth >= 768) {
+    console.log('desktop');
+    showMoreHeight = el.querySelector('.timeline-v24__desktop').offsetHeight;
+  } else {
+    console.log('tablet');
+    showMoreHeight = el.querySelector('.timeline-v24__tablet').offsetHeight;
+  }
+
+  // applies height value via HTML root variables to available to CSS via style sheet
+  root.style.setProperty('--sm-open-height', `${showMoreHeight}px`);
+}
+function setClosedHeight(el, viewportWidth) {
+  const root = document.documentElement;
+  let showMoreHeight;
+  if (viewportWidth >= 768) {
+    const headingHeight = el.querySelector('#timeline-desktop-year-1').offsetHeight;
+    const tableRow1Height = el.querySelectorAll('tr')[0].offsetHeight;
+    const tableRow2Height = el.querySelectorAll('tr')[1].offsetHeight;
+    const tagsHeight = el.querySelectorAll('.timeline-v24__tag')[0].offsetHeight;
+
+    // determines 'showmore content area' height for when its closed, by taking into account the height of different HTML elements to set 'desired' height
+    showMoreHeight = headingHeight + tableRow1Height + tableRow2Height + tagsHeight * 3;
+    // applies height value via HTML root variables to be available to CSS via style sheet
+    root.style.setProperty('--sm-closed-height', `${showMoreHeight}px`);
+  } else {
+    const headingHeight = el.querySelector('#timeline-tablet-year-1').offsetHeight;
+    const term1Height = el.querySelectorAll('.timeline-v24__term')[0].offsetHeight;
+    const term2Height = el.querySelectorAll('.timeline-v24__term')[1].offsetHeight;
+
+    // determines 'showmore content area' height for when its closed, by taking into account the height of different HTML elements to set 'desired' height
+    showMoreHeight = headingHeight + term1Height + term2Height / 2;
+    // applies height value via HTML root variables to be available to CSS via style sheet
+    root.style.setProperty('--sm-closed-height', `${showMoreHeight}px`);
+  }
+}
+const className = 'timeline-v24';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch,
+  className
+});
+
+/***/ }),
+
 /***/ "./src/components/timeline/timeline.js":
 /*!*********************************************!*\
   !*** ./src/components/timeline/timeline.js ***!
@@ -27295,16 +27343,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js-utils/scroll-to-v23.js":
+/***/ "./src/js-utils/scroll-to-v24.js":
 /*!***************************************!*\
-  !*** ./src/js-utils/scroll-to-v23.js ***!
+  !*** ./src/js-utils/scroll-to-v24.js ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return scrollToV23; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return scrollToV24; });
 
 
 /**
@@ -27319,15 +27367,14 @@ __webpack_require__.r(__webpack_exports__);
  * @param {string} repeat - will try automatically repeat and scroll down to element until achieved.
  */
 
-function scrollToV23(element, repeat) {
-  console.log(`element : ${element}`);
+function scrollToV24(element, repeat) {
   const viewportOffset = element.parentElement.getBoundingClientRect();
   const top = viewportOffset.top;
   scrollBy(0, top - stickyNavHeight());
   if (repeat) {
     setTimeout(() => {
       if (top > 200) {
-        scrollToV23(element, repeat);
+        scrollToV24(element, repeat);
       }
     }, 700);
   }
