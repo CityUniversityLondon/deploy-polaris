@@ -1188,7 +1188,7 @@ readers do not read off random characters that represent icons */
 .fa-check::before {
   content: "\f00c"; }
 
-.fa-chevron-down::before, .accordion.accordion--simple .accordion__content__heading-anchor.active .accordion__content__heading-anchor__icon::before {
+.fa-chevron-down::before, .vertical-menu__toggle-link span::before, .accordion.accordion--simple .accordion__content__heading-anchor.active .accordion__content__heading-anchor__icon::before {
   content: "\f078"; }
 
 .fa-chevron-left::before {
@@ -1197,7 +1197,7 @@ readers do not read off random characters that represent icons */
 .fa-chevron-right::before, .accordion.accordion--simple .accordion__content__heading-anchor.inactive .accordion__content__heading-anchor__icon::before {
   content: "\f054"; }
 
-.fa-chevron-up::before {
+.fa-chevron-up::before, .vertical-menu.open > .vertical-menu__header .vertical-menu__toggle-link span::before {
   content: "\f077"; }
 
 .fa-circle::before {
@@ -1314,7 +1314,7 @@ readers do not read off random characters that represent icons */
 .fa-search::before, .header-toggle--search .header-toggle__icon::before {
   content: "\f002"; }
 
-.fa-minus::before, .vertical-menu.open > .vertical-menu__header .vertical-menu__toggle-link span::before, .accordion__content__heading-anchor.active .accordion__content__heading-anchor__icon::before, .js [aria-selected='true'] .tabs__content__heading-anchor__icon::before, .js [aria-selected='true'] .accordion-tabs__content__heading-anchor__icon::before {
+.fa-minus::before, .accordion__content__heading-anchor.active .accordion__content__heading-anchor__icon::before, .js [aria-selected='true'] .tabs__content__heading-anchor__icon::before, .js [aria-selected='true'] .accordion-tabs__content__heading-anchor__icon::before {
   content: "\f068"; }
 
 .fa-subtract::before {
@@ -1347,7 +1347,7 @@ readers do not read off random characters that represent icons */
 .fa-play::before, .image-banner span::before, .video-banner__play.video-banner__play--pause span::before {
   content: "\f04b"; }
 
-.fa-plus::before, .vertical-menu__toggle-link span::before, .accordion__content__heading-anchor.inactive .accordion__content__heading-anchor__icon::before, .js .tabs__content__heading-anchor__icon::before, .js .accordion-tabs__content__heading-anchor__icon::before {
+.fa-plus::before, .accordion__content__heading-anchor.inactive .accordion__content__heading-anchor__icon::before, .js .tabs__content__heading-anchor__icon::before, .js .accordion-tabs__content__heading-anchor__icon::before {
   content: "\2b"; }
 
 .fa-add::before {
@@ -17183,33 +17183,38 @@ USED IN:
       background: #ffffff;
       color: #d61726; }
 
-#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper .CybotCookiebotDialogBodyButton {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
-
-#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll,
-#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
-  border: 1px solid transparent;
-  color: #d61726;
-  background-color: transparent;
-  transition: border 0.2s; }
-  #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:hover,
-  #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover {
-    border: 1px solid #d61726; }
-  #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:focus, #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:active,
-  #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:focus,
-  #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:active {
-    border: 1px solid #d61726; }
-
-#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
-  background-color: #d61726;
-  transition: background-color 0.2s;
-  border: 2px dotted transparent; }
-  #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover {
-    background-color: #a8121e;
+body > #CybotCookiebotDialog {
+  font-family: 'Plex Sans', Tahoma, Verdana; }
+  body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper .CybotCookiebotDialogBodyButton {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+  body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll,
+  body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    border: 1px solid transparent;
+    color: #d61726;
+    background-color: transparent;
+    transition: border 0.2s; }
+    body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:hover,
+    body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover {
+      border: 1px solid #d61726; }
+    body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:focus, body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:active,
+    body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:focus,
+    body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:active {
+      border: 1px solid #d61726; }
+  body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+    background-color: #d61726;
+    transition: background-color 0.2s;
     border: 2px dotted transparent; }
-  #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:focus, #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:active {
-    border: 2px dotted #ffffff; }
+    body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover {
+      background-color: #a8121e;
+      border: 2px dotted transparent; }
+    body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:focus, body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:active {
+      border: 2px dotted #ffffff; }
+
+/* Branding on the banner */
+a#CybotCookiebotDialogPoweredbyCybot,
+div#CybotCookiebotDialogPoweredByText {
+  display: none; }
 
 .scp--undergraduate .key-info--lined {
   border-top: 0.06rem solid #ff4e00;
@@ -18727,7 +18732,8 @@ input.header-toggle-input {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-top: 1rem;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  max-width: 60ch; }
   .highlighted-content-v23 *:last-child {
     margin: 0; }
   .highlighted-content-v23 .highlighted-content-v23__heading {
@@ -18738,7 +18744,8 @@ input.header-toggle-input {
     letter-spacing: -0.011em;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    max-width: 60ch; }
     .highlighted-content-v23 .highlighted-content-v23__heading i,
     .highlighted-content-v23 .highlighted-content-v23__heading em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
@@ -18776,7 +18783,8 @@ input.header-toggle-input {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-top: 1rem;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  max-width: 60ch; }
   .ug-courses-v23 .highlighted-content-v23 *:last-child {
     margin: 0; }
   .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
@@ -18787,7 +18795,8 @@ input.header-toggle-input {
     letter-spacing: -0.011em;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    max-width: 60ch; }
     .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
     .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
@@ -18825,7 +18834,8 @@ input.header-toggle-input {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-top: 1rem;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  max-width: 60ch; }
   .pg-courses-v23 .highlighted-content-v23 *:last-child {
     margin: 0; }
   .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
@@ -18836,7 +18846,8 @@ input.header-toggle-input {
     letter-spacing: -0.011em;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    max-width: 60ch; }
     .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
     .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
@@ -18874,7 +18885,8 @@ input.header-toggle-input {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-top: 1rem;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  max-width: 60ch; }
   .mba-courses-v23 .highlighted-content-v23 *:last-child {
     margin: 0; }
   .mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
@@ -18885,7 +18897,8 @@ input.header-toggle-input {
     letter-spacing: -0.011em;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    max-width: 60ch; }
     .mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading i,
     .mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
@@ -21883,6 +21896,32 @@ input.header-toggle-input {
       left: 8.333%; } }
   @media (max-width: 900px) {
     .left-hand-navigation-grid__body {
+      overflow-x: hidden; } }
+
+.content--wide .left-hand-navigation-grid__body {
+  /** TODO: Is min height necessary? **/
+  float: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: relative; }
+  @supports (display: flex) {
+    .content--wide .left-hand-navigation-grid__body {
+      float: none;
+      flex: 0 1 auto; } }
+  @media (max-width: 900px) {
+    .content--wide .left-hand-navigation-grid__body {
+      width: 100%; } }
+  @media (min-width: 901px) {
+    .content--wide .left-hand-navigation-grid__body {
+      width: 66.667%; } }
+  @media (max-width: 900px) {
+    .content--wide .left-hand-navigation-grid__body {
+      left: 0; } }
+  @media (min-width: 901px) {
+    .content--wide .left-hand-navigation-grid__body {
+      left: 8.333%; } }
+  @media (max-width: 900px) {
+    .content--wide .left-hand-navigation-grid__body {
       overflow-x: hidden; } }
 
 .left-hand-navigation__menu > div > ul {
@@ -25271,7 +25310,7 @@ blockquote {
       margin-bottom: -0.06rem; }
   .cass-events .calendar__radio__button {
     background-color: #555555;
-    color: #1e1e1e;
+    color: #ffffff;
     display: inline-block;
     border: 0.06rem solid #1e1e1e;
     padding: 0 2rem;
@@ -29459,9 +29498,12 @@ div.widget-123_test_ {
           font-size: 1rem; } }
 
 .cms-editor-warning {
+  display: none; }
+
+.cms-editor .cms-editor-warning {
   display: flex;
   justify-content: center; }
-  .cms-editor-warning p {
+  .cms-editor .cms-editor-warning p {
     background-color: #790b21;
     color: #ffffff;
     padding-left: 0.5rem;
@@ -29472,7 +29514,7 @@ div.widget-123_test_ {
     padding-top: 0.5rem;
     padding-bottom: 3rem;
     position: relative; }
-    .cms-editor-warning p:after {
+    .cms-editor .cms-editor-warning p:after {
       bottom: 0.5rem;
       content: 'CMS editor warning';
       font-weight: 300;
