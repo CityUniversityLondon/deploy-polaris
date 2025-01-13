@@ -31775,12 +31775,10 @@ const svtPathAnim = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var focus_trap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! focus-trap */ "./node_modules/focus-trap/dist/focus-trap.esm.js");
-/* harmony import */ var handlebars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
-/* harmony import */ var handlebars__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(handlebars__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _js_utils_suggestions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../js-utils/suggestions */ "./src/js-utils/suggestions.js");
-/* harmony import */ var _js_utils_util__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../js-utils/util */ "./src/js-utils/util.js");
-
+/* harmony import */ var handlebars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
+/* harmony import */ var handlebars__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(handlebars__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _js_utils_suggestions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../js-utils/suggestions */ "./src/js-utils/suggestions.js");
+/* harmony import */ var _js_utils_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../js-utils/util */ "./src/js-utils/util.js");
 
 
 
@@ -31788,25 +31786,63 @@ __webpack_require__.r(__webpack_exports__);
 
 const className = 'site-search',
   modal = className + '__modal';
-const template = handlebars__WEBPACK_IMPORTED_MODULE_1___default.a.compile('<ul role="listbox" aria-label="Search suggestions" aria-activedescendant class="site-search__modal__input__suggestions--list">{{#each this}}<li role="option" id="city-university~main-cass--{{@index}}"><button type="button" data-suggestion="{{this.suggestion}}"><span class="sr-only">{{this.suggestion}}</span><span aria-hidden="hidden"><span class="site-search__modal__input__suggestions--list__key">{{this.searchTerm}}</span>{{this.sliceSearchTerm}}</span></button></li>{{/each}}</ul>');
+const template = handlebars__WEBPACK_IMPORTED_MODULE_0___default.a.compile('{{#each this}}<li role="option" id="city-university~main-cass--{{@index}}"><button type="button" data-suggestion="{{this.suggestion}}"><span class="sr-only">{{this.suggestion}}</span><span aria-hidden="hidden"><span class="site-search__modal__input__suggestions__key">{{this.searchTerm}}</span>{{this.sliceSearchTerm}}</span></button></li>{{/each}}');
 let update = false;
 let suggestionsModal = false; //boolean to indicate if modal added to DOM
-function inputKeyEvent(e) {
-  const searchKeyLength = e.target.value.length,
-    searchValue = e.target.value;
-  const suggestionWrapper = document.createElement('div');
-  suggestionWrapper.className = 'site-search__modal__input__suggestions';
-  if (searchKeyLength <= 2 && update && suggestionWrapper) {
-    update = false;
-    suggestionsModal && document.querySelector('.site-search__modal__input__suggestions').remove();
-    suggestionsModal = false;
+let showSuggestions = false;
+function inputKeyEventHandler(e) {
+  console.log('input');
+  const searchInput = e.target,
+    suggestion = searchInput.parentElement.querySelector('.site-search__modal__input__suggestions'),
+    keyboardEvent = e.code;
+  let suggectionFirstBtn = suggestion && suggestion.querySelector('li:first-of-type');
+  switch (keyboardEvent) {
+    case 'ArrowDown':
+      console.log('ArrowDown');
+      e.preventDefault();
+      suggestion.setAttribute('aria-activedescendant', suggectionFirstBtn.id);
+      suggectionFirstBtn.querySelector('button').focus();
+      break;
+    case 'ArrowUp':
+      e.preventDefault();
+      break;
+    case 'Tab':
+      if (suggestion && suggestion.classList.contains('show')) {
+        console.log('tabbed input');
+        e.preventDefault();
+        suggestion.classList.remove('show');
+        searchInput.focus();
+      }
+      break;
   }
-  ;
+}
+function suggestionEvent(e) {
+  console.log('suggestion');
+  const searchInput = e.target,
+    searchKeyLength = searchInput.value.length,
+    searchValue = searchInput.value,
+    suggestion = searchInput.parentElement.querySelector('.site-search__modal__input__suggestions'),
+    keyboardEvent = e.code,
+    navEvents = ['Tab', 'Enter', 'ArrowDown', 'ArrowUp', 'ArrowLeft', 'ArrowRight'],
+    navStrokeEvent = navEvents.some(el => el === keyboardEvent);
+  const suggestionWrapper = document.createElement('ul');
+  suggestionWrapper.role = 'listbox';
+  suggestionWrapper.ariaLabel = 'Search suggestions';
+  suggestionWrapper.className = 'site-search__modal__input__suggestions';
+  suggestionWrapper.id = 'site-search__modal__input__suggestions';
+  suggestionWrapper.ariaExpanded = true;
+  suggestionWrapper.setAttribute('aria-activedescendant', '');
+  if (showSuggestions) {
+    searchInput.classList.add('show');
+  }
+  if (searchKeyLength) {
+    searchInput.classList.add('active');
+  }
   if (searchKeyLength > 2) {
-    update && suggestionsModal && document.querySelector('.site-search__modal__input__suggestions').remove();
+    update && suggestionsModal && suggestion && suggestion.remove();
     suggestionsModal = false;
     update = true;
-    const suggestions = Object(_js_utils_suggestions__WEBPACK_IMPORTED_MODULE_2__["getSuggestions"])(e.target.value);
+    const suggestions = Object(_js_utils_suggestions__WEBPACK_IMPORTED_MODULE_1__["getSuggestions"])(e.target.value);
     suggestions.then(response => {
       const responseObj = response.map(e => {
         return {
@@ -31818,8 +31854,10 @@ function inputKeyEvent(e) {
       return template(responseObj);
     }).then(suggestionElement => {
       suggestionWrapper.innerHTML = suggestionElement;
+      suggestionWrapper.classList.add('show');
       e.target.offsetParent.querySelector('.site-search__modal__input').after(suggestionWrapper);
       suggestionsModal = true;
+      showSuggestions = true;
     }).finally(() => {
       const modalInput = document.querySelector('.site-search__modal__input__wrapper'),
         suggestionBtn = modalInput.querySelectorAll('.site-search__modal__input__suggestions button'),
@@ -31833,12 +31871,56 @@ function inputKeyEvent(e) {
             update = false;
           }
         });
+        btn.addEventListener('keydown', e => {
+          const suggestionElement = e.target.parentElement.parentElement,
+            nextSiblingBtn = e.target.parentElement.nextElementSibling,
+            previousSiblingBtn = e.target.parentElement.previousElementSibling,
+            suggestionInput = e.target.parentElement.parentElement.previousElementSibling,
+            suggestionID = suggestionElement && suggestionElement.getAttribute('aria-activedescendant'),
+            suggestionWithoutID = suggestionElement && suggestionID.slice(0, -1),
+            suggestionIDNumber = suggestionID && suggestionID.slice(-1),
+            suggestionParsedNumber = parseInt(suggestionIDNumber),
+            suggectionFirstBtn = suggestionElement && suggestionElement.querySelector('li:first-of-type');
+          switch (e.code) {
+            case 'ArrowDown':
+              nextSiblingBtn && suggestionElement.setAttribute('aria-activedescendant', nextSiblingBtn.id);
+              nextSiblingBtn && e.target.blur();
+              nextSiblingBtn && nextSiblingBtn.querySelector('button').focus();
+              break;
+            case 'ArrowUp':
+              if (previousSiblingBtn) {
+                previousSiblingBtn && suggestionElement.setAttribute('aria-activedescendant', previousSiblingBtn.id);
+                previousSiblingBtn && e.target.blur();
+                previousSiblingBtn && previousSiblingBtn.querySelector('button').focus();
+              } else {
+                e.target.blur();
+                showSuggestions = false;
+                searchInput.focus();
+              }
+              break;
+            case 'Tab':
+              e.preventDefault();
+              console.log('suggestion tab', suggestionInput.classList);
+              showSuggestions = false;
+              suggestionElement.classList.remove('show');
+              suggestionInput.ariaExpanded = false;
+              suggestionElement.ariaExpanded = false;
+              suggestionInput.focus();
+              break;
+          }
+        });
       });
     });
   }
   ;
+  if (!navStrokeEvent && searchKeyLength <= 2 && update && suggestionWrapper) {
+    update = false;
+    suggestionsModal && suggestion && suggestion.remove();
+    suggestionsModal = false;
+    showSuggestions = false;
+  }
+  ;
 }
-;
 function launch(el) {
   const navButton = el.querySelector('a');
   const navSearchButton = document.createElement('button'),
@@ -31863,7 +31945,10 @@ function launch(el) {
     inputFieldset = document.createElement('fieldset'),
     inputLabel = document.createElement('label'),
     input = document.createElement('input'),
-    inputWrapper = document.createElement('div');
+    inputWrapper = document.createElement('div'),
+    clearInputButton = document.createElement('button'),
+    clearInputButtonIcon = document.createElement('span'),
+    clearInputButtonSpanText = document.createElement('span');
   modalWrapper.className = modal;
   form.action = '/search';
   form.method = 'GET';
@@ -31877,6 +31962,12 @@ function launch(el) {
   input.name = 'query';
   input.type = 'text';
   input.autocomplete = 'off';
+  input.role = 'combobox';
+  clearInputButton.className = modal + '__input__clear-button';
+  clearInputButton.type = 'button';
+  clearInputButtonIcon.className = modal + '__input__clear-button__icon fa fa-times';
+  clearInputButtonSpanText.className = modal + '__input__clear-button__text sr-only';
+  clearInputButtonSpanText.innerHTML = 'Clear';
   inputWrapper.className = modal + '__input__wrapper';
   button.className = modal + '__query__submit';
   button.type = 'submit';
@@ -31887,6 +31978,15 @@ function launch(el) {
   textSpan.innerHTML = 'Search';
 
   //events handlers
+  clearInputButton.addEventListener('click', e => {
+    console.log(e);
+    const input = e.target.parentElement.querySelector('#site-search__modal__input'),
+      suggestions = e.target.parentElement.querySelector('.site-search__modal__input__suggestions');
+    input.value = '';
+    input.ariaExpanded = false;
+    input.classList.remove('active');
+    suggestions && suggestions.remove();
+  });
   //global nav search button
   navSearchButtonWrapper.appendChild(navSearchButtonSpanText);
   navSearchButtonWrapper.appendChild(navSearchButtonSpanIcon);
@@ -31897,8 +31997,14 @@ function launch(el) {
   buttonSpanWrapper.appendChild(iconSpan);
   buttonSpanWrapper.appendChild(textSpan);
   button.appendChild(buttonSpanWrapper);
+
+  //input clear button
+
+  clearInputButton.appendChild(clearInputButtonIcon);
+  clearInputButton.appendChild(clearInputButtonSpanText);
   inputWrapper.appendChild(inputLabel);
   inputWrapper.appendChild(input);
+  inputWrapper.appendChild(clearInputButton);
   inputFieldset.appendChild(inputWrapper);
   inputFieldset.appendChild(button);
   form.appendChild(inputFieldset);
@@ -31907,17 +32013,8 @@ function launch(el) {
   const domModal = document.querySelector('.site-search__modal'),
     domNavButton = document.querySelector('.site-search__nav-button'),
     domModalInput = domModal.querySelector('.site-search__modal__input'),
-    domModalInputWrapper = domModal.querySelector('.site-search__modal__input__wrapper');
-  const initialize = function () {
-    return Object(focus_trap__WEBPACK_IMPORTED_MODULE_0__["createFocusTrap"])(domModalInputWrapper, {
-      initialFocus: domModalInput,
-      onActivate: () => domModalInput.classList.add('show'),
-      onDeactivate: () => domModalInput.classList.remove('show'),
-      clickOutsideDeactivates: true
-    });
-  };
-  const focusTrap = initialize();
-  domModalInput.addEventListener('click', () => focusTrap.activate());
+    domModalInputWrapper = domModal.querySelector('.site-search__modal__input__wrapper'),
+    domSuggestion = domModal.querySelector('.site-search__modal__input__suggestions');
   domNavButton.addEventListener('click', e => {
     const btn = e.currentTarget,
       icon = btn.querySelector('.site-search__nav-button__icon'),
@@ -31928,17 +32025,52 @@ function launch(el) {
       icon.classList.remove('fa-times');
       icon.classList.add('fa-search');
       text.innerHTML = 'Search';
-      focusTrap.deactivate();
+      e.target.focus();
     } else {
       btn.ariaExpanded = 'true';
       btn.ariaLabel = 'Close search';
       icon.classList.remove('fa-search');
       icon.classList.add('fa-times');
       text.innerHTML = 'Close';
-      focusTrap.activate();
+      domModalInput.focus();
     }
   });
-  domModalInput.addEventListener('keyup', Object(_js_utils_util__WEBPACK_IMPORTED_MODULE_3__["debounce"])(inputKeyEvent));
+  domModalInput.addEventListener('input', Object(_js_utils_util__WEBPACK_IMPORTED_MODULE_2__["debounce"])(suggestionEvent));
+  domModalInput.addEventListener('keydown', Object(_js_utils_util__WEBPACK_IMPORTED_MODULE_2__["debounce"])(inputKeyEventHandler));
+  domModalInput.addEventListener('focus', event => {
+    console.log('focus');
+    const input = event.target,
+      inoutValue = input.value,
+      suggestion = input.nextElementSibling;
+    if (suggestion && suggestion.classList.contains('site-search__modal__input__suggestions') && suggestion.classList.contains('show')) {
+      console.log('focus to suggestion', suggestion.classList.contains('show'));
+      suggestion.classList.add('show');
+      suggestion.ariaExpanded = true;
+    }
+  });
+  // domModalInput.addEventListener('blur', (event) => {
+  //     const input = event.target,
+  //         suggestion = input.nextElementSibling,
+  //         clearInputButton = event.relatedTarget.classList.contains('site-search__modal__input__clear-button');
+
+  //         console.log('blur', event);
+  //         if (clearInputButton){
+  //             console.log('blur with clear button', event.code);
+  //             event.preventDefault();
+  //         }else if(suggestion && !input.classList.contains('active')){
+  //             console.log('blur with suggestion', event.code);
+  //             event.preventDefault();
+  //             showSuggestions = false;
+  //             suggestion.classList.remove('show');
+
+  //         } else {
+  //             console.log('else');
+  //             input.classList.remove('active');
+  //             suggestion.classList.remove('show');
+  //             suggestion.ariaExpanded = false;
+  //             input.blur();
+  //         }
+  // });
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch,

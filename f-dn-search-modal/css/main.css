@@ -31613,6 +31613,11 @@ html {
   width: 100%;
   margin-right: 1rem;
   position: relative; }
+  .site-search__modal__input__wrapper:focus-within {
+    outline-style: solid;
+    outline-width: 0.18rem;
+    outline-color: #1e1e1e;
+    outline-offset: 0.1875rem; }
 
 .site-search__modal__input {
   font-family: "Plex Sans", Tahoma, Verdana, sans-serif;
@@ -31624,11 +31629,22 @@ html {
   width: 100%;
   background-color: #f2f2f2;
   border: 0.12rem solid #1e1e1e; }
-  .site-search__modal__input:focus {
-    outline-style: solid;
-    outline-width: 0.18rem;
-    outline-color: #1e1e1e;
-    outline-offset: 0.1875rem; }
+  .site-search__modal__input:focus-visible {
+    outline: none; }
+
+.site-search__modal__input ~ .site-search__modal__input__suggestions.show {
+  display: block; }
+
+.site-search__modal__input__clear-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none; }
+  .site-search__modal__input__clear-button span {
+    pointer-events: none; }
+
+.site-search__modal__input.active ~ .site-search__modal__input__clear-button {
+  display: block; }
 
 .site-search__modal__query__submit {
   width: 3rem;
@@ -31643,21 +31659,24 @@ html {
   background-color: #f2f2f2;
   text-align: left; }
 
-.site-search__modal__input__suggestions--list button {
+.site-search__modal__input__suggestions button {
   width: 100%;
   text-align: left; }
-  .site-search__modal__input__suggestions--list button span {
+  .site-search__modal__input__suggestions button span {
     pointer-events: none; }
-  .site-search__modal__input__suggestions--list button:hover {
+  .site-search__modal__input__suggestions button:hover {
     background-color: #999999; }
-  .site-search__modal__input__suggestions--list button:focus {
+  .site-search__modal__input__suggestions button:focus {
     outline-style: solid;
     outline-width: 0.18rem;
     outline-color: #1e1e1e;
     outline-offset: 0.1875rem; }
 
-.site-search__modal__input__suggestions--list__key {
-  font-weight: bold; }
+.site-search__modal__input.show:has(~ .site-search__modal__input__suggestions):focus {
+  outline-style: solid;
+  outline-width: 0.18rem;
+  outline-color: #1e1e1e;
+  outline-offset: 0.1875rem; }
 
-.site-search__modal__input.show + .site-search__modal__input__suggestions {
-  display: block; }
+.site-search__modal__input__suggestions__key {
+  font-weight: bold; }
