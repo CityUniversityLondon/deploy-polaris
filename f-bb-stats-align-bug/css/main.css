@@ -31095,21 +31095,19 @@ html {
         padding: 1.5rem; } }
     .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__heading {
       margin-top: 1rem; }
-    .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list {
-      gap: 0; }
     .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item {
       position: relative;
       display: flex;
       flex-direction: row; }
     .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:not(:last-child):after {
-      content: '';
+      content: none;
       width: 2rem;
       margin-right: 0.5rem;
       background: radial-gradient(ellipse at center, #979797, #979797 0.0625rem, transparent 0, transparent 100%);
       background-size: 1.25rem 1.25rem;
       background-position-x: -0.5rem; }
     .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:last-child:after {
-      content: '';
+      content: none;
       width: 2rem;
       height: 100%;
       background-size: 1.25rem 1.25rem; }
@@ -31117,8 +31115,7 @@ html {
       .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:nth-of-type(2):after {
         content: inherit; } }
     .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__container {
-      flex: 1;
-      padding-right: 1rem; }
+      flex: 1; }
     .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__value {
       display: flex;
       flex-direction: row;
@@ -31146,15 +31143,15 @@ html {
     margin-top: 0; }
   .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item,
   .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item {
-    flex-basis: 45%; }
-    @media (max-width: 1440px) {
+    flex-basis: calc(50% - 0.5rem); }
+    @media (min-width: 650px) {
       .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item,
       .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item {
-        flex-basis: 41%; } }
-    @media (max-width: 1200px) {
+        flex-basis: calc(45% - 0.5rem); } }
+    @media (min-width: 900px) {
       .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item,
       .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item {
-        flex-basis: 41%; } }
+        flex-basis: calc(50% - 0.5rem); } }
     .mba-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(2):after,
     .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(2):after {
       background: none; }
