@@ -31099,18 +31099,6 @@ html {
       position: relative;
       display: flex;
       flex-direction: row; }
-    .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:not(:last-child):after {
-      content: none;
-      width: 2rem;
-      margin-right: 0.5rem;
-      background: radial-gradient(ellipse at center, #979797, #979797 0.0625rem, transparent 0, transparent 100%);
-      background-size: 1.25rem 1.25rem;
-      background-position-x: -0.5rem; }
-    .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:last-child:after {
-      content: none;
-      width: 2rem;
-      height: 100%;
-      background-size: 1.25rem 1.25rem; }
     @media (max-width: 650px) {
       .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item:nth-of-type(2):after {
         content: inherit; } }
