@@ -31956,7 +31956,7 @@ function launch(el) {
   inputLabel.htmlFor = modal + '__input';
   inputLabel.innerHTML = 'Search';
   inputLabel.className = modal + '__input-label sr-only';
-  input.placeholder = 'Search website';
+  input.placeholder = 'e.g. Business';
   input.className = modal + '__input';
   input.id = modal + '__input';
   input.name = 'query';
