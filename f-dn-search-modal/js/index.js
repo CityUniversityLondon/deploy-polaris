@@ -31791,16 +31791,14 @@ let update = false;
 let suggestionsModal = false; //boolean to indicate if modal added to DOM
 let showSuggestions = false;
 function inputKeyEventHandler(e) {
-  console.log('input');
   const searchInput = e.target,
     suggestion = searchInput.parentElement.querySelector('.site-search__modal__input__suggestions'),
     keyboardEvent = e.code;
   let suggectionFirstBtn = suggestion && suggestion.querySelector('li:first-of-type');
   switch (keyboardEvent) {
     case 'ArrowDown':
-      console.log('ArrowDown');
       e.preventDefault();
-      suggestion.setAttribute('aria-activedescendant', suggectionFirstBtn.id);
+      searchInput.setAttribute('aria-activedescendant', suggectionFirstBtn.id);
       suggectionFirstBtn.querySelector('button').focus();
       break;
     case 'ArrowUp':
@@ -31808,7 +31806,6 @@ function inputKeyEventHandler(e) {
       break;
     case 'Tab':
       if (suggestion && suggestion.classList.contains('show')) {
-        console.log('tabbed input');
         e.preventDefault();
         suggestion.classList.remove('show');
         searchInput.focus();
@@ -31817,7 +31814,6 @@ function inputKeyEventHandler(e) {
   }
 }
 function suggestionEvent(e) {
-  console.log('suggestion');
   const searchInput = e.target,
     searchKeyLength = searchInput.value.length,
     searchValue = searchInput.value,
@@ -31827,11 +31823,9 @@ function suggestionEvent(e) {
     navStrokeEvent = navEvents.some(el => el === keyboardEvent);
   const suggestionWrapper = document.createElement('ul');
   suggestionWrapper.role = 'listbox';
-  suggestionWrapper.ariaLabel = 'Search suggestions';
   suggestionWrapper.className = 'site-search__modal__input__suggestions';
   suggestionWrapper.id = 'site-search__modal__input__suggestions';
   suggestionWrapper.ariaExpanded = true;
-  suggestionWrapper.setAttribute('aria-activedescendant', '');
   if (showSuggestions) {
     searchInput.classList.add('show');
   }
@@ -31862,6 +31856,7 @@ function suggestionEvent(e) {
       const modalInput = document.querySelector('.site-search__modal__input__wrapper'),
         suggestionBtn = modalInput.querySelectorAll('.site-search__modal__input__suggestions button'),
         input = modalInput.querySelector('.site-search__modal__input');
+      input.setAttribute('aria-owns', 'site-search__modal__input__suggestions');
       suggestionBtn.forEach(btn => {
         btn.addEventListener('click', e => {
           if (e.target.nodeName === 'BUTTON') {
@@ -31869,27 +31864,23 @@ function suggestionEvent(e) {
             suggestionsModal && document.querySelector('.site-search__modal__input__suggestions').remove();
             suggestionsModal = false;
             update = false;
+            input.focus();
           }
         });
         btn.addEventListener('keydown', e => {
           const suggestionElement = e.target.parentElement.parentElement,
             nextSiblingBtn = e.target.parentElement.nextElementSibling,
             previousSiblingBtn = e.target.parentElement.previousElementSibling,
-            suggestionInput = e.target.parentElement.parentElement.previousElementSibling,
-            suggestionID = suggestionElement && suggestionElement.getAttribute('aria-activedescendant'),
-            suggestionWithoutID = suggestionElement && suggestionID.slice(0, -1),
-            suggestionIDNumber = suggestionID && suggestionID.slice(-1),
-            suggestionParsedNumber = parseInt(suggestionIDNumber),
-            suggectionFirstBtn = suggestionElement && suggestionElement.querySelector('li:first-of-type');
+            suggestionInput = e.target.parentElement.parentElement.previousElementSibling;
           switch (e.code) {
             case 'ArrowDown':
-              nextSiblingBtn && suggestionElement.setAttribute('aria-activedescendant', nextSiblingBtn.id);
+              nextSiblingBtn && input.setAttribute('aria-activedescendant', nextSiblingBtn.id);
               nextSiblingBtn && e.target.blur();
               nextSiblingBtn && nextSiblingBtn.querySelector('button').focus();
               break;
             case 'ArrowUp':
               if (previousSiblingBtn) {
-                previousSiblingBtn && suggestionElement.setAttribute('aria-activedescendant', previousSiblingBtn.id);
+                previousSiblingBtn && input.setAttribute('aria-activedescendant', previousSiblingBtn.id);
                 previousSiblingBtn && e.target.blur();
                 previousSiblingBtn && previousSiblingBtn.querySelector('button').focus();
               } else {
@@ -31900,7 +31891,6 @@ function suggestionEvent(e) {
               break;
             case 'Tab':
               e.preventDefault();
-              console.log('suggestion tab', suggestionInput.classList);
               showSuggestions = false;
               suggestionElement.classList.remove('show');
               suggestionInput.ariaExpanded = false;
@@ -31979,7 +31969,6 @@ function launch(el) {
 
   //events handlers
   clearInputButton.addEventListener('click', e => {
-    console.log(e);
     const input = e.target.parentElement.querySelector('#site-search__modal__input'),
       suggestions = e.target.parentElement.querySelector('.site-search__modal__input__suggestions');
     input.value = '';
@@ -32012,9 +32001,7 @@ function launch(el) {
   el.lastChild.after(modalWrapper);
   const domModal = document.querySelector('.site-search__modal'),
     domNavButton = document.querySelector('.site-search__nav-button'),
-    domModalInput = domModal.querySelector('.site-search__modal__input'),
-    domModalInputWrapper = domModal.querySelector('.site-search__modal__input__wrapper'),
-    domSuggestion = domModal.querySelector('.site-search__modal__input__suggestions');
+    domModalInput = domModal.querySelector('.site-search__modal__input');
   domNavButton.addEventListener('click', e => {
     const btn = e.currentTarget,
       icon = btn.querySelector('.site-search__nav-button__icon'),
@@ -32038,39 +32025,13 @@ function launch(el) {
   domModalInput.addEventListener('input', Object(_js_utils_util__WEBPACK_IMPORTED_MODULE_2__["debounce"])(suggestionEvent));
   domModalInput.addEventListener('keydown', Object(_js_utils_util__WEBPACK_IMPORTED_MODULE_2__["debounce"])(inputKeyEventHandler));
   domModalInput.addEventListener('focus', event => {
-    console.log('focus');
     const input = event.target,
-      inoutValue = input.value,
       suggestion = input.nextElementSibling;
     if (suggestion && suggestion.classList.contains('site-search__modal__input__suggestions') && suggestion.classList.contains('show')) {
-      console.log('focus to suggestion', suggestion.classList.contains('show'));
       suggestion.classList.add('show');
       suggestion.ariaExpanded = true;
     }
   });
-  // domModalInput.addEventListener('blur', (event) => {
-  //     const input = event.target,
-  //         suggestion = input.nextElementSibling,
-  //         clearInputButton = event.relatedTarget.classList.contains('site-search__modal__input__clear-button');
-
-  //         console.log('blur', event);
-  //         if (clearInputButton){
-  //             console.log('blur with clear button', event.code);
-  //             event.preventDefault();
-  //         }else if(suggestion && !input.classList.contains('active')){
-  //             console.log('blur with suggestion', event.code);
-  //             event.preventDefault();
-  //             showSuggestions = false;
-  //             suggestion.classList.remove('show');
-
-  //         } else {
-  //             console.log('else');
-  //             input.classList.remove('active');
-  //             suggestion.classList.remove('show');
-  //             suggestion.ariaExpanded = false;
-  //             input.blur();
-  //         }
-  // });
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch,
