@@ -37140,12 +37140,14 @@ function launch(el) {
     clearInputButton = document.createElement('button'),
     clearInputButtonIcon = document.createElement('span'),
     clearInputButtonSpanText = document.createElement('span');
+  const overlay = document.createElement('div');
+  overlay.className = 'search-overlay';
   modalWrapper.className = modal;
   form.action = '/search';
   form.method = 'GET';
   inputFieldset.className = modal + '__input-fieldset';
   inputLabel.htmlFor = modal + '__input';
-  inputLabel.innerHTML = 'Search';
+  inputLabel.innerHTML = 'Search this website';
   inputLabel.className = modal + '__input-label sr-only';
   input.placeholder = 'e.g. Business';
   input.className = modal + '__input';
@@ -37200,9 +37202,11 @@ function launch(el) {
   form.appendChild(inputFieldset);
   modalWrapper.appendChild(form);
   el.lastChild.after(modalWrapper);
+  el.parentElement.parentElement.after(overlay);
   const domModal = document.querySelector('.site-search__modal'),
     domNavButton = document.querySelector('.site-search__nav-button'),
-    domModalInput = domModal.querySelector('.site-search__modal__input');
+    domModalInput = domModal.querySelector('.site-search__modal__input'),
+    content = document.querySelector('.search-overlay');
   domNavButton.addEventListener('click', e => {
     const btn = e.currentTarget,
       icon = btn.querySelector('.site-search__nav-button__icon'),
@@ -37213,6 +37217,7 @@ function launch(el) {
       icon.classList.remove('fa-times');
       icon.classList.add('fa-search');
       text.innerHTML = 'Search';
+      content.classList.remove('search-overlay__active');
       e.target.focus();
     } else {
       btn.ariaExpanded = 'true';
@@ -37220,6 +37225,7 @@ function launch(el) {
       icon.classList.remove('fa-search');
       icon.classList.add('fa-times');
       text.innerHTML = 'Close';
+      content.classList.add('search-overlay__active');
       domModalInput.focus();
     }
   });
@@ -37231,6 +37237,20 @@ function launch(el) {
     if (suggestion && suggestion.classList.contains('site-search__modal__input__suggestions') && suggestion.classList.contains('show')) {
       suggestion.classList.add('show');
       suggestion.ariaExpanded = true;
+    }
+  });
+  button.addEventListener('keydown', event => {
+    if (!event.shiftKey && event.key === 'Tab') {
+      const navBtn = event.target.parentElement.parentElement.parentElement.previousElementSibling,
+        icon = navBtn.querySelector('.site-search__nav-button__icon'),
+        text = navBtn.querySelector('.site-search__nav-button__text');
+      console.log(navBtn);
+      navBtn.ariaExpanded = 'false';
+      navBtn.ariaLabel = 'Open search';
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-search');
+      text.innerHTML = 'Search';
+      content.classList.remove('search-overlay__active');
     }
   });
 }

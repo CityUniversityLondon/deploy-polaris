@@ -31474,7 +31474,7 @@ html {
   fill: #8b2433; }
 
 .site-search {
-  z-index: 3;
+  z-index: 5;
   /** TODO: Is min height necessary? **/
   float: left;
   padding-left: 0.5rem;
@@ -31592,7 +31592,7 @@ html {
       right: -0.5rem; } }
   @media (min-width: 901px) {
     .js .site-search .site-search__nav-button[aria-expanded="true"] + .site-search__modal {
-      bottom: -9rem; } }
+      bottom: -12rem; } }
   @media (min-width: 1441px) {
     .js .site-search .site-search__nav-button[aria-expanded="true"] + .site-search__modal {
       right: calc(-0.5rem - ((100vw - 1440px) / 2)); } }
@@ -31602,7 +31602,7 @@ html {
 
 @media (min-width: 901px) {
   .js .has__secondary-navigation .site-search__nav-button[aria-expanded="true"] + .site-search__modal {
-    bottom: -12.42188rem; } }
+    bottom: -13.54187rem; } }
 
 .site-search__modal__input-fieldset {
   border-style: initial;
@@ -31680,3 +31680,10 @@ html {
 
 .site-search__modal__input__suggestions__key {
   font-weight: bold; }
+
+.search-overlay__active {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: rgba(30, 30, 30, 0.7); }
