@@ -37244,7 +37244,6 @@ function launch(el) {
       const navBtn = event.target.parentElement.parentElement.parentElement.previousElementSibling,
         icon = navBtn.querySelector('.site-search__nav-button__icon'),
         text = navBtn.querySelector('.site-search__nav-button__text');
-      console.log(navBtn);
       navBtn.ariaExpanded = 'false';
       navBtn.ariaLabel = 'Open search';
       icon.classList.remove('fa-times');

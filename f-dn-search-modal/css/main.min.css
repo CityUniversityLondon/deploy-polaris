@@ -31580,7 +31580,7 @@ html {
   position: absolute;
   width: 100vw;
   z-index: 2;
-  border-top: 2px solid #ccc;
+  border-top: 0.125rem solid #ccc;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #ffffff;
