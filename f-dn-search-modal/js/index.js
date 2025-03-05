@@ -36985,15 +36985,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const className = 'site-search',
+const className = 'header__site-search',
   modal = className + '__modal';
-const template = handlebars__WEBPACK_IMPORTED_MODULE_0___default.a.compile('{{#each this}}<li role="option" id="city-university~main-cass--{{@index}}"><button type="button" data-suggestion="{{this.suggestion}}"><span class="sr-only">{{this.suggestion}}</span><span aria-hidden="hidden"><span class="site-search__modal__input__suggestions__key">{{this.searchTerm}}</span>{{this.sliceSearchTerm}}</span></button></li>{{/each}}');
+const template = handlebars__WEBPACK_IMPORTED_MODULE_0___default.a.compile('{{#each this}}<li role="option" id="city-university~main-cass--{{@index}}"><button type="button" data-suggestion="{{this.suggestion}}"><span class="sr-only">{{this.suggestion}}</span><span aria-hidden="hidden"><span class="header__site-search__modal__input__suggestions__key">{{this.searchTerm}}</span>{{this.sliceSearchTerm}}</span></button></li>{{/each}}');
 let update = false;
 let suggestionsModal = false; //boolean to indicate if modal added to DOM
 let showSuggestions = false;
 function inputKeyEventHandler(e) {
   const searchInput = e.target,
-    suggestion = searchInput.parentElement.querySelector('.site-search__modal__input__suggestions'),
+    suggestion = searchInput.parentElement.querySelector('.header__site-search__modal__input__suggestions'),
     keyboardEvent = e.code;
   let suggectionFirstBtn = suggestion && suggestion.querySelector('li:first-of-type');
   switch (keyboardEvent) {
@@ -37018,14 +37018,14 @@ function suggestionEvent(e) {
   const searchInput = e.target,
     searchKeyLength = searchInput.value.length,
     searchValue = searchInput.value,
-    suggestion = searchInput.parentElement.querySelector('.site-search__modal__input__suggestions'),
+    suggestion = searchInput.parentElement.querySelector('.header__site-search__modal__input__suggestions'),
     keyboardEvent = e.code,
     navEvents = ['Tab', 'Enter', 'ArrowDown', 'ArrowUp', 'ArrowLeft', 'ArrowRight'],
     navStrokeEvent = navEvents.some(el => el === keyboardEvent);
   const suggestionWrapper = document.createElement('ul');
   suggestionWrapper.role = 'listbox';
-  suggestionWrapper.className = 'site-search__modal__input__suggestions';
-  suggestionWrapper.id = 'site-search__modal__input__suggestions';
+  suggestionWrapper.className = 'header__site-search__modal__input__suggestions';
+  suggestionWrapper.id = 'header__site-search__modal__input__suggestions';
   suggestionWrapper.ariaExpanded = true;
   if (showSuggestions) {
     searchInput.classList.add('show');
@@ -37050,19 +37050,19 @@ function suggestionEvent(e) {
     }).then(suggestionElement => {
       suggestionWrapper.innerHTML = suggestionElement;
       suggestionWrapper.classList.add('show');
-      e.target.offsetParent.querySelector('.site-search__modal__input').after(suggestionWrapper);
+      e.target.offsetParent.querySelector('.header__site-search__modal__input').after(suggestionWrapper);
       suggestionsModal = true;
       showSuggestions = true;
     }).finally(() => {
-      const modalInput = document.querySelector('.site-search__modal__input__wrapper'),
-        suggestionBtn = modalInput.querySelectorAll('.site-search__modal__input__suggestions button'),
-        input = modalInput.querySelector('.site-search__modal__input');
-      input.setAttribute('aria-owns', 'site-search__modal__input__suggestions');
+      const modalInput = document.querySelector('.header__site-search__modal__input__wrapper'),
+        suggestionBtn = modalInput.querySelectorAll('.header__site-search__modal__input__suggestions button'),
+        input = modalInput.querySelector('.header__site-search__modal__input');
+      input.setAttribute('aria-owns', 'header__site-search__modal__input__suggestions');
       suggestionBtn.forEach(btn => {
         btn.addEventListener('click', e => {
           if (e.target.nodeName === 'BUTTON') {
             input.value = e.target.dataset.suggestion;
-            suggestionsModal && document.querySelector('.site-search__modal__input__suggestions').remove();
+            suggestionsModal && document.querySelector('.header__site-search__modal__input__suggestions').remove();
             suggestionsModal = false;
             update = false;
             input.focus();
@@ -37118,12 +37118,12 @@ function launch(el) {
     navSearchButtonWrapper = document.createElement('div'),
     navSearchButtonSpanText = document.createElement('span'),
     navSearchButtonSpanIcon = document.createElement('span');
-  navSearchButtonWrapper.className = 'site-search__wrapper';
-  navSearchButtonSpanText.className = 'site-search__nav-button__text';
+  navSearchButtonWrapper.className = 'header__site-search__wrapper';
+  navSearchButtonSpanText.className = 'header__site-search__nav-button__text';
   navSearchButtonSpanText.innerHTML = 'Search';
-  navSearchButtonSpanIcon.className = 'site-search__nav-button__icon fa fa-search';
+  navSearchButtonSpanIcon.className = 'header__site-search__nav-button__icon fa fa-search';
   navSearchButtonSpanIcon.ariaHidden = 'true';
-  navSearchButton.className = 'site-search__nav-button';
+  navSearchButton.className = 'header__site-search__nav-button';
   navSearchButton.type = 'button';
   navSearchButton.ariaExpanded = 'false';
   navSearchButton.ariaLabel = 'Open Search';
@@ -37172,8 +37172,8 @@ function launch(el) {
 
   //events handlers
   clearInputButton.addEventListener('click', e => {
-    const input = e.target.parentElement.querySelector('#site-search__modal__input'),
-      suggestions = e.target.parentElement.querySelector('.site-search__modal__input__suggestions');
+    const input = e.target.parentElement.querySelector('#header__site-search__modal__input'),
+      suggestions = e.target.parentElement.querySelector('.header__site-search__modal__input__suggestions');
     input.value = '';
     input.ariaExpanded = false;
     input.classList.remove('active');
@@ -37203,14 +37203,14 @@ function launch(el) {
   modalWrapper.appendChild(form);
   el.lastChild.after(modalWrapper);
   el.parentElement.parentElement.after(overlay);
-  const domModal = document.querySelector('.site-search__modal'),
-    domNavButton = document.querySelector('.site-search__nav-button'),
-    domModalInput = domModal.querySelector('.site-search__modal__input'),
+  const domModal = document.querySelector('.header__site-search__modal'),
+    domNavButton = document.querySelector('.header__site-search__nav-button'),
+    domModalInput = domModal.querySelector('.header__site-search__modal__input'),
     content = document.querySelector('.search-overlay');
   domNavButton.addEventListener('click', e => {
     const btn = e.currentTarget,
-      icon = btn.querySelector('.site-search__nav-button__icon'),
-      text = btn.querySelector('.site-search__nav-button__text');
+      icon = btn.querySelector('.header__site-search__nav-button__icon'),
+      text = btn.querySelector('.header__site-search__nav-button__text');
     if (btn.ariaExpanded === 'true') {
       btn.ariaExpanded = 'false';
       btn.ariaLabel = 'Open search';
@@ -37234,7 +37234,7 @@ function launch(el) {
   domModalInput.addEventListener('focus', event => {
     const input = event.target,
       suggestion = input.nextElementSibling;
-    if (suggestion && suggestion.classList.contains('site-search__modal__input__suggestions') && suggestion.classList.contains('show')) {
+    if (suggestion && suggestion.classList.contains('header__site-search__modal__input__suggestions') && suggestion.classList.contains('show')) {
       suggestion.classList.add('show');
       suggestion.ariaExpanded = true;
     }
@@ -37242,8 +37242,8 @@ function launch(el) {
   button.addEventListener('keydown', event => {
     if (!event.shiftKey && event.key === 'Tab') {
       const navBtn = event.target.parentElement.parentElement.parentElement.previousElementSibling,
-        icon = navBtn.querySelector('.site-search__nav-button__icon'),
-        text = navBtn.querySelector('.site-search__nav-button__text');
+        icon = navBtn.querySelector('.header__site-search__nav-button__icon'),
+        text = navBtn.querySelector('.header__site-search__nav-button__text');
       navBtn.ariaExpanded = 'false';
       navBtn.ariaLabel = 'Open search';
       icon.classList.remove('fa-times');
