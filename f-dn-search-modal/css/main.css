@@ -9970,7 +9970,7 @@ svg:not(:root) {
   height: 3rem;
   text-align: right;
   white-space: nowrap;
-  z-index: 3; }
+  z-index: 4; }
   @media (min-width: 501px) {
     .site-search__form {
       top: calc(100% + 0.5rem); } }
