@@ -32066,6 +32066,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/components-v23/content-transition/square-animation */ "./src/components/components-v23/content-transition/square-animation.js");
 /* harmony import */ var _components_back_to_top_back_to_top__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/back-to-top/back-to-top */ "./src/components/back-to-top/back-to-top.js");
 /* harmony import */ var _components_block_links_v24_block_links_v24__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/block-links-v24/block-links-v24 */ "./src/components/block-links-v24/block-links-v24.js");
+/* harmony import */ var _components_timeline_v24_timeline_v24__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/timeline-v24/timeline-v24 */ "./src/components/timeline-v24/timeline-v24.js");
 
 
 
@@ -32105,7 +32106,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_search_modal__WEBPACK_IMPORTED_MODULE_4__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_10___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_9__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_11__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_12__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_14__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_15__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_16__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_17__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_18__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_19__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_20__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_21__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_22__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_23__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_24__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_25__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_28__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_32__["default"], _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_33__["default"], _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_34__["default"], _components_back_to_top_back_to_top__WEBPACK_IMPORTED_MODULE_35__["default"], _components_block_links_v24_block_links_v24__WEBPACK_IMPORTED_MODULE_36__["default"]]);
+
+/* harmony default export */ __webpack_exports__["default"] = ([_components_accordion_tabs_accordion__WEBPACK_IMPORTED_MODULE_5__["default"], _components_accordion_tabs_tabs__WEBPACK_IMPORTED_MODULE_7__["default"], _components_accordion_tabs_accordion_tabs__WEBPACK_IMPORTED_MODULE_6__["default"], _components_video_preview_video_preview__WEBPACK_IMPORTED_MODULE_2__["default"], _components_popup_def_list_group_popup_def_list_group__WEBPACK_IMPORTED_MODULE_8__["default"], _components_url_dropdown_url_dropdown__WEBPACK_IMPORTED_MODULE_0__["default"], _components_url_slide_url_slide__WEBPACK_IMPORTED_MODULE_1__["default"], _components_nav_mobile__WEBPACK_IMPORTED_MODULE_3__["default"], _components_search_modal__WEBPACK_IMPORTED_MODULE_4__["default"], _components_feature_news_feature_news__WEBPACK_IMPORTED_MODULE_10___default.a, _components_primary_dropdown_primary_dropdown__WEBPACK_IMPORTED_MODULE_9__["default"], _components_scroll_animations__WEBPACK_IMPORTED_MODULE_11__["default"], _components_action_on_scroll__WEBPACK_IMPORTED_MODULE_12__["default"], _components_video_banner_video_banner__WEBPACK_IMPORTED_MODULE_13__["default"], _components_video_banner_video_gradient_video_gradient__WEBPACK_IMPORTED_MODULE_14__["default"], _components_anchor_ghost__WEBPACK_IMPORTED_MODULE_15__["default"], _components_left_hand_navigation__WEBPACK_IMPORTED_MODULE_16__["default"], _components_course_search__WEBPACK_IMPORTED_MODULE_17__["default"], _components_banner_banner_stats__WEBPACK_IMPORTED_MODULE_18__["default"], _components_timeline_timeline__WEBPACK_IMPORTED_MODULE_19__["default"], _components_mba_popup_mba_popup__WEBPACK_IMPORTED_MODULE_20__["default"], _components_filter_dropdown_filter_dropdown__WEBPACK_IMPORTED_MODULE_21__["default"], _components_carousel_carousel__WEBPACK_IMPORTED_MODULE_22__["default"], _components_news_news__WEBPACK_IMPORTED_MODULE_23__["default"], _components_slider_slider__WEBPACK_IMPORTED_MODULE_24__["default"], _components_image_credit_image_credit__WEBPACK_IMPORTED_MODULE_25__["default"], _components_bayes_carousel_bayes_carousel__WEBPACK_IMPORTED_MODULE_26__["default"], _components_bayes_home_home__WEBPACK_IMPORTED_MODULE_27__["default"], _components_bayes_home_Video_banner_bayes_video_banner__WEBPACK_IMPORTED_MODULE_28__["default"], _components_components_v23_nav_sticky_nav_sticky__WEBPACK_IMPORTED_MODULE_29__["default"], _components_components_v23_slider_v23_slider_v23__WEBPACK_IMPORTED_MODULE_30__["default"], _components_components_v23_accordion_v23_accordion_v23__WEBPACK_IMPORTED_MODULE_31__["default"], _components_components_v23_content_transition_content_transition_vertical__WEBPACK_IMPORTED_MODULE_32__["default"], _components_components_v23_content_transition_content_transition_horizontal__WEBPACK_IMPORTED_MODULE_33__["default"], _components_components_v23_content_transition_square_animation__WEBPACK_IMPORTED_MODULE_34__["default"], _components_back_to_top_back_to_top__WEBPACK_IMPORTED_MODULE_35__["default"], _components_block_links_v24_block_links_v24__WEBPACK_IMPORTED_MODULE_36__["default"], _components_timeline_v24_timeline_v24__WEBPACK_IMPORTED_MODULE_37__["default"]]);
 
 /***/ }),
 
@@ -33537,31 +33539,6 @@ __webpack_require__.r(__webpack_exports__);
 const className = 'bayes-home';
 function launch(element) {
   if (_js_utils_browser_support__WEBPACK_IMPORTED_MODULE_1__["default"].intersectionObserver) {
-    let banner = jquery__WEBPACK_IMPORTED_MODULE_2___default()(element).has('.bayes-video-banner').length ? jquery__WEBPACK_IMPORTED_MODULE_2___default()(element).find('.bayes-video-banner') : jquery__WEBPACK_IMPORTED_MODULE_2___default()(element).find('.bayes-carousel');
-    if (banner instanceof jquery__WEBPACK_IMPORTED_MODULE_2___default.a) {
-      banner = banner[0];
-    }
-
-    // what to do with observed elements
-    let actionOnScrollAction = function (entries) {
-      const leftSide = jquery__WEBPACK_IMPORTED_MODULE_2___default()(element).find('.bayes-left-sidebar');
-      const rightSide = jquery__WEBPACK_IMPORTED_MODULE_2___default()(element).find('.bayes-right-sidebar');
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          leftSide.removeClass('bayes-left-sidebar-scrolled');
-          rightSide.removeClass('bayes-right-sidebar-scrolled');
-        } else {
-          leftSide.addClass('bayes-left-sidebar-scrolled');
-          rightSide.addClass('bayes-right-sidebar-scrolled');
-        }
-      });
-    };
-
-    // set up the observer and observe our element
-    let observer = new IntersectionObserver(actionOnScrollAction, {
-      threshold: 0.5
-    });
-    observer.observe(banner);
     const easeElements = [].slice.call(element.querySelectorAll('.ease-into-view'));
     easeElements.forEach(e => {
       Object(_action_on_scroll__WEBPACK_IMPORTED_MODULE_0__["default"])(jquery__WEBPACK_IMPORTED_MODULE_2___default()(e), 'ease-into-view-completed', false, {
@@ -33725,7 +33702,6 @@ function scrollToHeading(heading, repeat) {
  */
 function setSection(heading, open) {
   heading.dataset.open = open;
-  heading.parentElement.dataset.open = open;
   heading.firstElementChild.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_1__["default"].expanded, open);
 }
 
@@ -33804,8 +33780,8 @@ function isSubAccordion(heading) {
 
 function closeSubAccordions(subsections) {
   subsections.forEach(sub => {
-    const subAccordionHeading = sub.querySelector(`.${headingClassName}`);
-    const subAccordionSection = sub.querySelector(`.${bodyClassName}`);
+    const subAccordionHeading = sub;
+    const subAccordionSection = sub.nextElementSibling;
 
     //If the sub accordion is open close it.
     if (Object(_util__WEBPACK_IMPORTED_MODULE_0__["toBool"])(sub.dataset.open)) {
@@ -33835,7 +33811,7 @@ function closeSubAccordions(subsections) {
 function buttonClick(button, headings, toggleOpen) {
   const heading = button.parentNode;
   const accordionSection = heading.nextElementSibling;
-  const subAccordions = accordionSection.querySelectorAll('.accordion-v23__section');
+  const subAccordions = accordionSection.querySelectorAll('.accordion-v23__heading');
   if (button.getAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_1__["default"].expanded) === 'true') {
     // updates URL hash, by removing hash from URL when accordion closes
     if (isSubAccordion(heading)) {
@@ -33881,10 +33857,10 @@ function buttonClick(button, headings, toggleOpen) {
       accordionSection.style.height = sectionHeight;
     }, tenthOfASecond);
     if (toggleOpen) {
-      const sections = Array.from(heading.parentNode.parentNode.querySelectorAll(`#${heading.parentElement.parentElement.id} > .accordion-v23__section .${bodyClassName}`));
+      const sections = Array.from(heading.parentNode.parentNode.querySelectorAll(`#${heading.parentElement.id} > .${bodyClassName}`));
       headings.forEach(heading => setSection(heading, false));
       sections.filter(section => section.id !== accordionSection.id).forEach(section => {
-        const openSubAccordions = section.querySelectorAll('.accordion-v23__section[data-open="true"]');
+        const openSubAccordions = section.querySelectorAll('.accordion-v23__heading[data-open="true"]');
         if (openSubAccordions.length > 0) {
           closeSubAccordions(openSubAccordions);
         }
@@ -33977,22 +33953,11 @@ function launch(accordion) {
   }
   headings.forEach(heading => {
     const content = heading.nextElementSibling,
-      button = buttonFromHeading(heading, downChevronStyle),
-      prevSibling = heading.previousElementSibling;
+      button = buttonFromHeading(heading, downChevronStyle);
     content.setAttribute(_aria_attributes__WEBPACK_IMPORTED_MODULE_1__["default"].labelledBy, heading.id);
     content.setAttribute('role', 'region');
     heading.replaceChild(button, heading.firstChild);
-    // v23 added to wrap accordion heading and body in a div
-    const accordionSectionWrap = document.createElement('div');
-    accordionSectionWrap.classList.add('accordion-v23__section');
-    accordionSectionWrap.setAttribute('data-open', 'false');
-    Object(_util__WEBPACK_IMPORTED_MODULE_0__["appendAll"])(accordionSectionWrap, [heading, content]);
-    accordion.appendChild(accordionSectionWrap);
     setSection(heading, false);
-    if (prevSibling && prevSibling.classList.contains('accordion-v23__modules-heading')) {
-      //If a module heading has been added, move it to the correct position
-      accordion.insertBefore(prevSibling, accordionSectionWrap);
-    }
     heading.nextElementSibling.dataset.closed = 'true';
     button.addEventListener('click', () => buttonClick(button, headings, toggleOpen), true);
   });
@@ -35748,14 +35713,11 @@ const className = 'news__image-credit__thumbnail';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.includes.js */ "./node_modules/core-js/modules/es.array.includes.js");
-/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _parse_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parse-nav */ "./src/components/left-hand-navigation/parse-nav.js");
-/* harmony import */ var _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../nav-mobile/vertical-menu-helper */ "./src/components/nav-mobile/vertical-menu-helper.js");
-/* harmony import */ var stickybits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! stickybits */ "./node_modules/stickybits/dist/stickybits.es.js");
-
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse-nav */ "./src/components/left-hand-navigation/parse-nav.js");
+/* harmony import */ var _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../nav-mobile/vertical-menu-helper */ "./src/components/nav-mobile/vertical-menu-helper.js");
+/* harmony import */ var stickybits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! stickybits */ "./node_modules/stickybits/dist/stickybits.es.js");
 
 
 
@@ -35765,9 +35727,9 @@ __webpack_require__.r(__webpack_exports__);
 function prepareStickySideNav(navigation) {
   const NAVIGATION = navigation[0];
   if (NAVIGATION) {
-    const BANNER = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.banner')[0];
-    const CONTENT = jquery__WEBPACK_IMPORTED_MODULE_1___default()('#content')[0];
-    const FOOTER = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.footer')[0];
+    const BANNER = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.banner')[0];
+    const CONTENT = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#content')[0];
+    const FOOTER = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.footer')[0];
     let classAbsolute = 'left-hand-navigation--absolute';
     let classFixed = 'left-hand-navigation--fixed';
     let classTop = 'left-hand-navigation--top';
@@ -35849,22 +35811,14 @@ function prepareMenu(widget) {
   const container = widget.find('.left-hand-navigation__menu');
   container.html(''); // remove noscript lefthand-navigation
 
-  if (_parse_nav__WEBPACK_IMPORTED_MODULE_2__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
-    const menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_2__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_2__["currentSH"], false, 14); // Staffhub(SH) uses different tree due to being type2 asset in Matrix
-    menu.launch();
-  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_2__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
-    const menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_2__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_2__["currentSH"], false, 14); // Alumni uses different tree due to being type2 asset in Matrix
-    menu.launch();
-  } else {
-    const menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_3__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_2__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_2__["current"], false, 14);
-    menu.launch();
-  }
+  const menu = new _nav_mobile_vertical_menu_helper__WEBPACK_IMPORTED_MODULE_2__["default"](container, _parse_nav__WEBPACK_IMPORTED_MODULE_1__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_1__["current"], false, 14);
+  menu.launch();
   widget.addClass('left-hand-navigation--jsinit');
 }
 function launch(element) {
-  const widget = jquery__WEBPACK_IMPORTED_MODULE_1___default()(element);
+  const widget = jquery__WEBPACK_IMPORTED_MODULE_0___default()(element);
   prepareMenu(widget);
-  Object(stickybits__WEBPACK_IMPORTED_MODULE_4__["default"])(widget);
+  Object(stickybits__WEBPACK_IMPORTED_MODULE_3__["default"])(widget);
   //prepareStickySideNav(widget);
 }
 const className = 'left-hand-navigation';
@@ -35879,15 +35833,13 @@ const className = 'left-hand-navigation';
 /*!**********************************************************!*\
   !*** ./src/components/left-hand-navigation/parse-nav.js ***!
   \**********************************************************/
-/*! exports provided: tree, current, treeSH, currentSH, currentURL */
+/*! exports provided: tree, current, currentURL */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tree", function() { return tree; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "current", function() { return current; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "treeSH", function() { return treeSH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentSH", function() { return currentSH; });
 /* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.includes.js */ "./node_modules/core-js/modules/es.array.includes.js");
 /* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../nav-mobile/parse-nav */ "./src/components/nav-mobile/parse-nav.js");
@@ -35898,19 +35850,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function processTree(gCurrent, gTree) {
-  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 2) {
+  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('ac.uk/staff-hub') && gCurrent.length < 1) {
     // left hand navigation only starts on level 2 if Staffhub
     return {
       tree: null,
       current: null
     };
-  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 2) {
+  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('ac.uk/alumni') && gCurrent.length < 1) {
     // left hand navigation only starts on level 2 if Alumni
     return {
       tree: null,
       current: null
     };
-  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 3) {
+  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('ac.uk/staff-hub') && gCurrent.length < 3) {
     // left hand navigation only starts on level 3
     return {
       tree: null,
@@ -35928,10 +35880,6 @@ const {
   tree,
   current
 } = processTree(_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["current"], _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["tree"]);
-const {
-  tree: treeSH,
-  current: currentSH
-} = processTree(_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentSH"], _nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["treeSH"]);
 
 
 /***/ }),
@@ -36121,19 +36069,13 @@ function launch(el) {
   let element = jquery__WEBPACK_IMPORTED_MODULE_1___default()(el);
   const containerTop = element.find('.nav-mobile__content');
   const containerTri = element.find('.nav-mobile__tertiary__children');
-  if (_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('bayes.city.ac.uk/staff-hub')) {
-    // Staffhub(SH) uses different tree due to being type2 asset in Matrix
-    let nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_2__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentSH"], containerTri);
-    nav.launch();
-    Object(_home_link__WEBPACK_IMPORTED_MODULE_4__["default"])(containerTop);
-  } else if (_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('bayes.city.ac.uk/alumni')) {
-    // Alumni uses different tree due to being type2 asset in Matrix
-    let nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_2__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["treeSH"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentSH"], containerTri);
+  if (_parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('ac.uk/staff-hub') || _parse_nav__WEBPACK_IMPORTED_MODULE_3__["currentURL"].includes('ac.uk/alumni')) {
+    // Staffhub(SH) and Alumni uses different tree due to being type2 asset in Matrix
+    let nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_2__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["current"], containerTri);
     nav.launch();
     Object(_home_link__WEBPACK_IMPORTED_MODULE_4__["default"])(containerTop);
   } else {
     let nav = new _nav_mobile__WEBPACK_IMPORTED_MODULE_2__["default"](element, _parse_nav__WEBPACK_IMPORTED_MODULE_3__["tree"], _parse_nav__WEBPACK_IMPORTED_MODULE_3__["current"], containerTop);
-    nav.launch();
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -36229,28 +36171,30 @@ class NavMobile {
 /*!************************************************!*\
   !*** ./src/components/nav-mobile/parse-nav.js ***!
   \************************************************/
-/*! exports provided: tree, current, treeSH, currentSH, currentURL */
+/*! exports provided: tree, current, currentURL */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tree", function() { return tree; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "current", function() { return current; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "treeSH", function() { return treeSH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentSH", function() { return currentSH; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentURL", function() { return currentURL; });
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.includes.js */ "./node_modules/core-js/modules/es.array.includes.js");
+/* harmony import */ var core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_includes_js__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 const PARSE_REGEX = /^\s*([0-9]) ([^\s]+) [0-9] (.+)$/;
 const currentURL = document.getElementById('page_urls').innerHTML;
 function loadData() {
-  return document.getElementById('nav-mobile__data').innerHTML; // Global tree
+  if (currentURL.includes('ac.uk/staff-hub') || currentURL.includes('ac.uk/alumni')) {
+    return document.getElementById('nav-mobile__data__tertiary').innerHTML; // used for Hidden menu as root
+  } else {
+    return document.getElementById('nav-mobile__data').innerHTML; // Global tree
+  }
 }
 function loadUrls() {
   return document.getElementById('page_urls').innerHTML;
-}
-function loadDataStaffHub() {
-  return document.getElementById('nav-mobile__data__tertiary').innerHTML; // Staffhub tree
 }
 function getPath(url) {
   return url.replace(/^https?:\/\/[^/]*/, '');
@@ -36329,10 +36273,6 @@ const {
   tree,
   current
 } = parseNav(loadData(), loadUrls());
-const {
-  tree: treeSH,
-  current: currentSH
-} = parseNav(loadDataStaffHub(), loadUrls());
 
 
 /***/ }),
@@ -37361,6 +37301,95 @@ const className = 'slider-news';
 
 /***/ }),
 
+/***/ "./src/components/timeline-v24/timeline-v24.js":
+/*!*****************************************************!*\
+  !*** ./src/components/timeline-v24/timeline-v24.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _js_utils_scroll_to_v24__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../js-utils/scroll-to-v24 */ "./src/js-utils/scroll-to-v24.js");
+
+
+
+function launch(el) {
+  const buttonShowMore = el.querySelector('.timeline-v24__show-more__button');
+  const viewportWidth = window.innerWidth;
+
+  // closes showmore content on page load
+  setClosedHeight(el, viewportWidth);
+  buttonShowMore.addEventListener('click', function () {
+    const viewportWidth = window.innerWidth;
+    const status = el.getAttribute('data-open');
+    if (status === 'true') {
+      // HTML structure is differnt for desktop and tablet/ smaller viewports, therefor auto scrolls to different heading when triggered
+      const scrollToElement = viewportWidth >= 768 ? el.querySelector('#timeline-desktop-year-1') : el.querySelector('#timeline-tablet-year-1');
+      Object(_js_utils_scroll_to_v24__WEBPACK_IMPORTED_MODULE_0__["default"])(scrollToElement);
+      setClosedHeight(el, viewportWidth);
+      el.setAttribute('data-open', 'false');
+      buttonShowMore.innerText = 'Show more';
+    } else {
+      setOpenHeight(el, viewportWidth);
+      el.setAttribute('data-open', 'true');
+      buttonShowMore.innerText = 'Show less';
+
+      // HTML structure is differnt for desktop and tablet/ smaller viewports, therefor auto scrolls to different heading when triggered
+      const scrollToElement = viewportWidth >= 768 ? el.querySelector('#timeline-desktop-year-2') : el.querySelector('#timeline-tablet-year-2');
+      setTimeout(() => {
+        Object(_js_utils_scroll_to_v24__WEBPACK_IMPORTED_MODULE_0__["default"])(scrollToElement);
+      }, 350);
+    }
+  });
+}
+function setOpenHeight(el, viewportWidth) {
+  const root = document.documentElement;
+  let showMoreHeight;
+
+  // HTML structure is differnt for desktop and tablet/ smaller viewports, therefor 'showmore content' height calculated differently
+  if (viewportWidth >= 768) {
+    showMoreHeight = el.querySelector('.timeline-v24__desktop').offsetHeight;
+  } else {
+    showMoreHeight = el.querySelector('.timeline-v24__tablet').offsetHeight;
+  }
+
+  // Applies height value via HTML root variables to available to CSS via style sheet.
+  // Adds additional 200px to accomodate for 'missed' margins when fetching element heights 
+  root.style.setProperty('--sm-open-height', `${showMoreHeight + 200}px`);
+}
+function setClosedHeight(el, viewportWidth) {
+  const root = document.documentElement;
+  let showMoreHeight;
+  if (viewportWidth >= 768) {
+    const headingHeight = el.querySelector('#timeline-desktop-year-1').offsetHeight;
+    const tableRow1Height = el.querySelectorAll('tr')[0].offsetHeight;
+    const tableRow2Height = el.querySelectorAll('tr')[1].offsetHeight;
+    const tagsHeight = el.querySelectorAll('.timeline-v24__tag')[0].offsetHeight;
+
+    // determines 'showmore content area' height for when its closed, by taking into account the height of different HTML elements to set 'desired' height
+    showMoreHeight = headingHeight + tableRow1Height + tableRow2Height + tagsHeight * 3;
+    // applies height value via HTML root variables to be available to CSS via style sheet
+    root.style.setProperty('--sm-closed-height', `${showMoreHeight}px`);
+  } else {
+    const headingHeight = el.querySelector('#timeline-tablet-year-1').offsetHeight;
+    const term1Height = el.querySelectorAll('.timeline-v24__term')[0].offsetHeight;
+    const term2Height = el.querySelectorAll('.timeline-v24__term')[1].offsetHeight;
+
+    // determines 'showmore content area' height for when its closed, by taking into account the height of different HTML elements to set 'desired' height
+    showMoreHeight = headingHeight + term1Height + term2Height / 2;
+    // applies height value via HTML root variables to be available to CSS via style sheet
+    root.style.setProperty('--sm-closed-height', `${showMoreHeight}px`);
+  }
+}
+const className = 'timeline-v24';
+/* harmony default export */ __webpack_exports__["default"] = ({
+  launch,
+  className
+});
+
+/***/ }),
+
 /***/ "./src/components/timeline/timeline.js":
 /*!*********************************************!*\
   !*** ./src/components/timeline/timeline.js ***!
@@ -38143,6 +38172,57 @@ __webpack_require__.r(__webpack_exports__);
     window.setTimeout(callback, 1000 / 60);
   };
 })());
+
+/***/ }),
+
+/***/ "./src/js-utils/scroll-to-v24.js":
+/*!***************************************!*\
+  !*** ./src/js-utils/scroll-to-v24.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return scrollToV24; });
+
+
+/**
+ * This is the ScrollTo V24 version. This is an updated version, which takes into account that there may be 
+ * a sticky nav present on the page. In such case, while determining how far to scroll down, it will keep in mind to scroll
+ * down a bit extra to accomodate the sticky nav doesn't obstruct the view of the target element you are scrolling to.
+ * There is also a "repeat" parameter. This is a savety switch, to force it scrolling to the element. On some pages, 
+ * some elements heights may change whilst scrolling, thus throwing off the point to scroll to. This will then monitor 
+ * if the element was reached during the scroll attempt, or automatically try again till reached.
+ *
+ * @param {HTMLHeadingElement} element - the element you want automatic scrolling to.
+ * @param {string} repeat - will try automatically repeat and scroll down to element until achieved.
+ */
+
+function scrollToV24(element, repeat) {
+  const viewportOffset = element.parentElement.getBoundingClientRect();
+  const top = viewportOffset.top;
+  scrollBy(0, top - stickyNavHeight());
+  if (repeat) {
+    setTimeout(() => {
+      if (top > 200) {
+        scrollToV24(element, repeat);
+      }
+    }, 700);
+  }
+}
+
+/**
+ * Checking if stickyNav is present and returns its height for scrolling estimations
+ *
+ */
+function stickyNavHeight() {
+  let stickyNavEl = document.getElementsByClassName('nav-sticky')[0];
+  if (stickyNavEl) {
+    return stickyNavEl.offsetHeight;
+  }
+  return 0;
+}
 
 /***/ }),
 
