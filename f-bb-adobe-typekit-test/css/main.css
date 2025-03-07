@@ -18647,7 +18647,11 @@ input.header-toggle-input {
   margin-bottom: 0.5rem;
   font-size: 1.728rem;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   color: #ff4e00; }
+  .highlight-info__lead i,
+  .highlight-info__lead em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
 
 .highlight-info__support {
   display: block;
@@ -19229,7 +19233,13 @@ input.header-toggle-input {
 
 .feature-news__card--main .feature-news__card__body__title,
 .feature-news__card--follow .feature-news__card__body__title {
-  font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
+  font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+  .feature-news__card--main .feature-news__card__body__title i,
+  .feature-news__card--main .feature-news__card__body__title em,
+  .feature-news__card--follow .feature-news__card__body__title i,
+  .feature-news__card--follow .feature-news__card__body__title em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   .feature-news__card--main .feature-news__card__body__title a,
   .feature-news__card--follow .feature-news__card__body__title a {
     background-color: inherit;
@@ -19862,6 +19872,7 @@ input.header-toggle-input {
   display: inline-block;
   overflow-x: hidden;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.2rem;
   font-weight: 600; }
   .feature-events__cards__content__item__title a:hover, .feature-events__cards__content__item__title a:focus, .feature-events__cards__content__item__title a:active {
@@ -19884,6 +19895,9 @@ input.header-toggle-input {
     outline: 0.18rem solid #1e1e1e; }
   .feature-events__cards__content__item__title a:active {
     outline: 0.12rem dotted #1e1e1e; }
+  .feature-events__cards__content__item__title a i,
+  .feature-events__cards__content__item__title a em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
 
 .feature-events__cards__content__item__audience a {
   background-color: inherit;
@@ -21906,9 +21920,13 @@ input.header-toggle-input {
   margin: 0;
   padding: 0.5rem 1rem;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5; }
+  .left-hand-navigation--jsinit .vertical-menu--l2 > .vertical-menu__header > .vertical-menu__page-link i,
+  .left-hand-navigation--jsinit .vertical-menu--l2 > .vertical-menu__header > .vertical-menu__page-link em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
   .left-hand-navigation--jsinit .vertical-menu--l2 > .vertical-menu__header > .vertical-menu__page-link {
@@ -22294,7 +22312,11 @@ input.header-toggle-input {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
-  font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
+  font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+  .hallway__item__title i,
+  .hallway__item__title em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
 
 @media (max-width: 900px) {
   .hallway__item__text {
@@ -22538,6 +22560,7 @@ input.header-toggle-input {
 
 .cass-knowledge-listing__item__title {
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   background-color: inherit;
   color: inherit;
   border-bottom-width: 0;
@@ -22551,6 +22574,9 @@ input.header-toggle-input {
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size 0.3s; }
+  .cass-knowledge-listing__item__title i,
+  .cass-knowledge-listing__item__title em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   .cass-knowledge-listing__item__title:hover, .cass-knowledge-listing__item__title:focus, .cass-knowledge-listing__item__title:active {
     background-color: inherit;
     color: inherit;
@@ -24961,7 +24987,11 @@ blockquote {
   position: relative; }
   blockquote p {
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.2rem; }
+    blockquote p i,
+    blockquote p em {
+      font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   blockquote .reference {
     color: #a1a1a1;
     font-size: 1rem; }
@@ -25586,7 +25616,11 @@ blockquote {
     font-weight: 600;
     line-height: 1.5;
     vertical-align: top;
-    font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
+    font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+    .cass-events .events-listing .events-listing__title i,
+    .cass-events .events-listing .events-listing__title em {
+      font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
     .cass-events .events-listing .events-listing__title a {
       color: inherit;
       background-color: inherit;
@@ -26408,6 +26442,7 @@ News events landing overrides */
     background-size: 0% 2px;
     transition: background-size 0.3s;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-weight: 600; }
     .featured-item__content__details__title a:hover, .featured-item__content__details__title a:focus, .featured-item__content__details__title a:active {
       background-color: inherit;
@@ -26427,6 +26462,9 @@ News events landing overrides */
       .featured-item__content__details__title a:hover:after {
         transform: none;
         opacity: 0; }
+    .featured-item__content__details__title a i,
+    .featured-item__content__details__title a em {
+      font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
 
 .featured-item__content__details__topic .news-article__anchor {
   color: #002b49;
@@ -26680,7 +26718,11 @@ News events landing overrides */
   .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item .image-credit__button {
     float: none; }
   .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__title {
-    font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
+    font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__title i,
+    .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__title em {
+      font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   .cass-knowledge-search .news-card-categories > * {
     display: inline-block; }
   .cass-knowledge-search .news-card-series {
