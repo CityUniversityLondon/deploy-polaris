@@ -74,7 +74,7 @@
   font-weight: 700; }
 
 .meta {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
   .meta i,
   .meta em {
@@ -1672,7 +1672,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   width: 100%;
   display: block;
@@ -1911,9 +1911,9 @@ iframe[src*='prezi'] {
   display: none !important; }
 
 .h6-style {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1rem;
   line-height: 1.625;
   letter-spacing: -0.005em;
@@ -1954,9 +1954,9 @@ iframe[src*='prezi'] {
     font-weight: 600; }
 
 .h5-style {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.125rem;
   line-height: 1.33333;
   letter-spacing: -0.008em;
@@ -1996,9 +1996,9 @@ iframe[src*='prezi'] {
     font-weight: 600; }
 
 .h4-style {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.266rem;
   line-height: 1.33333;
   letter-spacing: -0.011em;
@@ -2038,9 +2038,9 @@ iframe[src*='prezi'] {
     font-weight: 600; }
 
 .h3-style {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.424rem;
   line-height: 1.33333;
   letter-spacing: -0.013em;
@@ -2080,9 +2080,9 @@ iframe[src*='prezi'] {
     font-weight: 600; }
 
 .h2-style {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.602rem;
   line-height: 1.33333;
   letter-spacing: -0.015em;
@@ -2122,9 +2122,9 @@ iframe[src*='prezi'] {
     font-weight: 600; }
 
 .h1-style {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.802rem;
   line-height: 1.33333;
   letter-spacing: -0.016em;
@@ -4292,7 +4292,7 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #666666;
     display: block;
@@ -5505,7 +5505,7 @@ svg:not(:root) {
 .bayes-events-v24 .cta {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -5814,7 +5814,7 @@ svg:not(:root) {
       text-shadow: 1px 2px rgba(0, 0, 0, 0.3); }
   .bayes-home .image-banner .image-banner__text__title {
     text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #fafafa;
     font-weight: 700; }
@@ -6102,7 +6102,7 @@ svg:not(:root) {
   flex-direction: column; }
 
 .bayes-statistic__block__text--title {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-weight: 600;
   line-height: 1;
@@ -6178,7 +6178,7 @@ svg:not(:root) {
   flex-direction: column; }
 
 .bayes-statistic-v24__block__text--title {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-weight: 600;
   line-height: 1;
@@ -6561,7 +6561,7 @@ svg:not(:root) {
       .courses-v23__fee__inner + .courses-v23__fee__inner {
         margin-top: 1.5rem; } }
   .courses-v23__fee__inner .fee-studymode {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 450;
     margin-bottom: 0; }
@@ -6569,7 +6569,7 @@ svg:not(:root) {
     .courses-v23__fee__inner .fee-studymode em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   .courses-v23__fee__inner .fee-amount {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-weight: 900; }
     .courses-v23__fee__inner .fee-amount i,
@@ -6589,7 +6589,7 @@ svg:not(:root) {
     font-weight: 700;
     font-size: 1rem; }
     .courses-v23__fee__inner .fee-currency-converter a {
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
       color: #ffffff;
       border-bottom-color: #ffffff;
@@ -7034,7 +7034,7 @@ svg:not(:root) {
       .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst {
         margin-top: 0; } }
   .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__standfirst__text {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -7070,7 +7070,7 @@ svg:not(:root) {
 .ug-courses-v23 .cta--v23--ki {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -7093,7 +7093,7 @@ svg:not(:root) {
 .ug-courses-v23 .cta--v23--ki--apply {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -7137,7 +7137,7 @@ svg:not(:root) {
 .pg-courses-v23 .cta--v23--ki {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -7165,7 +7165,7 @@ svg:not(:root) {
 .pg-courses-v23 .cta--v23--ki--apply {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -7211,7 +7211,7 @@ svg:not(:root) {
 .mba-courses-v23 .cta--v23--ki {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -7236,7 +7236,7 @@ svg:not(:root) {
 .mba-courses-v23 .cta--v23--ki--apply {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -7289,7 +7289,7 @@ svg:not(:root) {
   .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta:first-child .cta--v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
@@ -7315,7 +7315,7 @@ svg:not(:root) {
   .ug-courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info__clearing__cta .cta--v23--ki {
     font-size: 1rem;
     padding: 0.5rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
@@ -7607,7 +7607,7 @@ svg:not(:root) {
   .ug-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
     font-size: 1rem;
     padding: 0.5rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
@@ -7732,7 +7732,7 @@ svg:not(:root) {
   .pg-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
     font-size: 1rem;
     padding: 0.5rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
@@ -7821,7 +7821,7 @@ svg:not(:root) {
     width: 100%;
     font-size: 1rem;
     padding: 0.5rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
@@ -7866,7 +7866,7 @@ svg:not(:root) {
   .mba-courses-v23 .courses-v23__apply .courses-v23__apply__cta {
     font-size: 1rem;
     padding: 0.5rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
@@ -8166,7 +8166,7 @@ svg:not(:root) {
 
 .js .course-card-v23__details__title {
   font-weight: 700;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-size: 1.44rem;
   margin-bottom: 1rem;
@@ -8396,7 +8396,7 @@ svg:not(:root) {
   grid-column: 1/12; }
 
 .courses-v23__entry-requirements .entry-req-v23 {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   width: 100%;
   display: flex;
@@ -8416,9 +8416,9 @@ svg:not(:root) {
       padding-bottom: 1.5rem; } }
 
 .courses-v23__entry-requirements .entry-req-v23__heading {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.424rem;
   line-height: 1.33333;
   letter-spacing: -0.013em;
@@ -8500,7 +8500,7 @@ svg:not(:root) {
       .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__first-line {
         letter-spacing: -0.017em; } }
   .courses-v23__entry-requirements .entry-req-v23__item .entry-req-v23__item__second-line {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #ff4e00;
     font-size: 2.28rem;
@@ -8575,9 +8575,9 @@ svg:not(:root) {
   .courses-v23__contact .contact__heading {
     margin-bottom: 0; }
   .courses-v23__contact .contact-highlight {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.602rem;
     line-height: 1.33333;
     letter-spacing: -0.015em;
@@ -8665,7 +8665,7 @@ svg:not(:root) {
 .courses-v23 .courses-v23__contact__cta a {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -8777,7 +8777,7 @@ svg:not(:root) {
   font-size: 1.2rem;
   font-weight: 500;
   color: #555555;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   line-height: 1.2; }
   .teaching-staff-v23 .featured-profile-v23__title i,
@@ -8804,7 +8804,7 @@ svg:not(:root) {
     position: absolute;
     bottom: 0; }
   .teaching-staff-v23 .featured-profile-v23__block span {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
     .teaching-staff-v23 .featured-profile-v23__block span i,
     .teaching-staff-v23 .featured-profile-v23__block span em {
@@ -8983,7 +8983,7 @@ svg:not(:root) {
   .courses-v23 .accordion-v23 .cta--v23 {
     font-size: 1rem;
     padding: 0.5rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     text-align: center;
     font-weight: 700;
@@ -9062,7 +9062,7 @@ svg:not(:root) {
 .courses-v23__structure .cta--course-spec {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -9238,7 +9238,7 @@ svg:not(:root) {
   grid-column: 12/-1; }
 
 .mba-courses-v23 .standfirst {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   color: #555555;
   font-size: 1.44rem;
@@ -9865,7 +9865,7 @@ svg:not(:root) {
     background-color: inherit;
     color: inherit;
     border-bottom-width: 0;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #1e1e1e;
     display: block;
@@ -9922,12 +9922,12 @@ svg:not(:root) {
   background-color: inherit;
   color: inherit;
   border-bottom-width: 0;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   background-color: inherit;
   color: inherit;
   border-bottom-width: 0;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   color: #1e1e1e;
   display: block;
@@ -10121,7 +10121,7 @@ svg:not(:root) {
       background-color: inherit;
       color: inherit;
       border-bottom-width: 0;
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
       color: #666666;
       display: block;
@@ -10210,7 +10210,7 @@ svg:not(:root) {
   background-color: inherit;
   color: inherit;
   border-bottom-width: 0;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   color: #666666;
   display: block;
@@ -10292,7 +10292,7 @@ svg:not(:root) {
   .url-dropdown--ug select::-ms-expand {
     display: none; }
   .url-dropdown--ug select {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #666666;
     background: #ffffff;
@@ -10548,7 +10548,7 @@ svg:not(:root) {
 
 .accordion__content__heading-anchor {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -10759,7 +10759,7 @@ svg:not(:root) {
 
 .tabs__menu__item {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -10810,7 +10810,7 @@ svg:not(:root) {
 
 .tabs__content__heading-anchor {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -10857,7 +10857,7 @@ svg:not(:root) {
 
 .tabs.tabs--allports .tabs__content__heading-anchor {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -10904,7 +10904,7 @@ svg:not(:root) {
 
 .tabs.tabs--allports .tabs__menu__item {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -10958,7 +10958,7 @@ svg:not(:root) {
 
 .tabs--air .tabs__menu__item {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -11229,7 +11229,7 @@ svg:not(:root) {
 
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--gallery .accordion-tabs__menu__item {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -11315,7 +11315,7 @@ svg:not(:root) {
 
 .accordion-tabs--top-level-layout.accordion-tabs--top-level-layout--catskill-white .accordion-tabs__menu__item {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -11404,7 +11404,7 @@ svg:not(:root) {
 
 .accordion-tabs__menu__item {
   transition: all 0.2s ease;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   border-bottom-width: 0;
   overflow: hidden;
@@ -11591,7 +11591,7 @@ svg:not(:root) {
     padding: 0.5rem 1rem;
     width: auto;
     font-size: 1.728rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
     .banner__content h1 i,
     .banner__content h1 em,
@@ -11837,7 +11837,7 @@ svg:not(:root) {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   position: relative;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-size: 1.2rem;
   color: #555555;
@@ -12044,7 +12044,7 @@ svg:not(:root) {
   padding: 0.5rem 1rem;
   width: auto;
   font-size: 1.728rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
   .banner-new .banner__content h1 i,
   .banner-new .banner__content h1 em,
@@ -14077,7 +14077,7 @@ svg:not(:root) {
   padding: 0.5rem 1rem;
   width: auto;
   font-size: 1.728rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone; }
@@ -14109,7 +14109,7 @@ svg:not(:root) {
     padding: 0.5rem 1rem;
     display: inline;
     font-size: 1.728rem;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
     .banner-vi--no-banner h1 i,
     .banner-vi--no-banner h1 em {
@@ -15413,7 +15413,7 @@ svg:not(:root) {
     background: none;
     color: #ffffff;
     text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #fafafa;
     font-size: 3.5rem;
@@ -15597,7 +15597,7 @@ USED IN:
       .banner--text-ctas .banner__text {
         width: 50%; } }
     .banner--text-ctas .banner__text .banner__text__subtitle {
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
       color: #555555;
       margin-top: -1rem;
@@ -15607,7 +15607,7 @@ USED IN:
       .banner--text-ctas .banner__text .banner__text__subtitle em {
         font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
     .banner--text-ctas .banner__text p {
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
       color: #555555;
       font-size: 1.44rem;
@@ -16031,7 +16031,7 @@ USED IN:
       width: 33.333%; } }
 
 .stats-block__item {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   padding-bottom: 2rem;
@@ -16067,7 +16067,7 @@ USED IN:
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     top: 50%;
     margin-top: -0.75em;
@@ -16425,7 +16425,7 @@ USED IN:
 .cta--v23 {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700; }
@@ -16446,7 +16446,7 @@ USED IN:
 .cta--v23--black {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -16473,7 +16473,7 @@ USED IN:
 .cta--ug-v23--ki {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -16496,7 +16496,7 @@ USED IN:
 .cta--ug-v23--ki--apply {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -16522,7 +16522,7 @@ USED IN:
 .cta--pg-v23--ki {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -16550,7 +16550,7 @@ USED IN:
 .cta--pg-v23--ki--apply {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -16905,7 +16905,7 @@ USED IN:
   background-image: linear-gradient(to right bottom, #002b49, #006699);
   color: #ffffff; }
   .section--prussian .banner__text--dark-background p {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     font-size: 1.44rem;
@@ -16916,7 +16916,7 @@ USED IN:
     .section--prussian .banner__text--dark-background p em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   .section--prussian .banner__text__subtitle {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     margin-top: -1rem;
@@ -17604,7 +17604,7 @@ input.header-toggle-input {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+        font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
         font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
         transition: opacity 0.2s ease 0s;
         content: attr(data-url);
@@ -18178,7 +18178,7 @@ input.header-toggle-input {
       width: 83.333%; } }
 
 .profile-bracket-block__text__name {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-size: 1.2rem;
   font-weight: 300; }
@@ -18251,7 +18251,7 @@ input.header-toggle-input {
       max-height: 70%; } }
 
 .dialog__box__heading {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   background-color: #ffffff;
   font-size: 1.728rem;
@@ -18647,7 +18647,7 @@ input.header-toggle-input {
   margin-bottom: 0.5rem;
   font-size: 1.728rem;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   color: #ff4e00; }
   .highlight-info__lead i,
   .highlight-info__lead em {
@@ -18672,9 +18672,9 @@ input.header-toggle-input {
   .highlighted-content-v23 *:last-child {
     margin: 0; }
   .highlighted-content-v23 .highlighted-content-v23__heading {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.266rem;
     line-height: 1.33333;
     letter-spacing: -0.011em;
@@ -18727,9 +18727,9 @@ input.header-toggle-input {
   .ug-courses-v23 .highlighted-content-v23 *:last-child {
     margin: 0; }
   .ug-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.266rem;
     line-height: 1.33333;
     letter-spacing: -0.011em;
@@ -18782,9 +18782,9 @@ input.header-toggle-input {
   .pg-courses-v23 .highlighted-content-v23 *:last-child {
     margin: 0; }
   .pg-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.266rem;
     line-height: 1.33333;
     letter-spacing: -0.011em;
@@ -18837,9 +18837,9 @@ input.header-toggle-input {
   .mba-courses-v23 .highlighted-content-v23 *:last-child {
     margin: 0; }
   .mba-courses-v23 .highlighted-content-v23 .highlighted-content-v23__heading {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.266rem;
     line-height: 1.33333;
     letter-spacing: -0.011em;
@@ -19234,7 +19234,7 @@ input.header-toggle-input {
 .feature-news__card--main .feature-news__card__body__title,
 .feature-news__card--follow .feature-news__card__body__title {
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   .feature-news__card--main .feature-news__card__body__title i,
   .feature-news__card--main .feature-news__card__body__title em,
   .feature-news__card--follow .feature-news__card__body__title i,
@@ -19872,7 +19872,7 @@ input.header-toggle-input {
   display: inline-block;
   overflow-x: hidden;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.2rem;
   font-weight: 600; }
   .feature-events__cards__content__item__title a:hover, .feature-events__cards__content__item__title a:focus, .feature-events__cards__content__item__title a:active {
@@ -20678,7 +20678,7 @@ input.header-toggle-input {
     bottom: 25px; } }
     .video-banner__text__wrapper .video-banner__text .video-banner__text__title,
     .video-banner__text__wrapper .video-banner__text .video- {
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
       color: #fafafa;
       font-size: 2.0736rem;
@@ -21920,7 +21920,7 @@ input.header-toggle-input {
   margin: 0;
   padding: 0.5rem 1rem;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5; }
@@ -22055,7 +22055,7 @@ input.header-toggle-input {
     color: #ffffff; }
 
 .standfirst {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   color: #555555;
   font-size: 1.44rem;
@@ -22313,7 +22313,7 @@ input.header-toggle-input {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   .hallway__item__title i,
   .hallway__item__title em {
     font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
@@ -22560,7 +22560,7 @@ input.header-toggle-input {
 
 .cass-knowledge-listing__item__title {
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   background-color: inherit;
   color: inherit;
   border-bottom-width: 0;
@@ -23873,7 +23873,7 @@ input.header-toggle-input {
 
 .chart-row__items__chart__row__legend__item {
   margin-bottom: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-weight: 700;
   font-size: 1.2rem; }
@@ -24705,9 +24705,9 @@ table {
     padding: 20px 20px 15px; }
 
 .dropdown-filter__v23 .dropdown-heading {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.424rem;
   line-height: 1.33333;
   letter-spacing: -0.013em;
@@ -24836,7 +24836,7 @@ table {
 .carousel__item__info__body {
   color: white;
   font-size: 2.0736rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-weight: 700;
   margin-top: 1rem;
@@ -24987,7 +24987,7 @@ blockquote {
   position: relative; }
   blockquote p {
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-size: 1.2rem; }
     blockquote p i,
     blockquote p em {
@@ -25617,7 +25617,7 @@ blockquote {
     line-height: 1.5;
     vertical-align: top;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
     .cass-events .events-listing .events-listing__title i,
     .cass-events .events-listing .events-listing__title em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
@@ -26442,7 +26442,7 @@ News events landing overrides */
     background-size: 0% 2px;
     transition: background-size 0.3s;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-weight: 600; }
     .featured-item__content__details__title a:hover, .featured-item__content__details__title a:focus, .featured-item__content__details__title a:active {
       background-color: inherit;
@@ -26590,7 +26590,7 @@ News events landing overrides */
   font-size: 1.44rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
   .promo_container__text_subtitle i,
   .promo_container__text_subtitle em {
@@ -26719,7 +26719,7 @@ News events landing overrides */
     float: none; }
   .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__title {
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
     .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__title i,
     .cass-knowledge-search .news-articles--landing .cass-knowledge-listing__item__title em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
@@ -26806,7 +26806,7 @@ News events landing overrides */
       margin-top: 0; } }
 
 .news-article__news-standfirst {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   color: #555555;
   font-size: 1.44rem;
@@ -26816,7 +26816,7 @@ News events landing overrides */
   .news-article__news-standfirst em {
     font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
   .news-article__news-standfirst p {
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     color: #555555;
     font-size: 1.44rem;
@@ -29432,7 +29432,7 @@ div.widget-123_test_ {
     bottom: 25px; } }
     .bayes-video-banner__text__wrapper .video-banner__text .video-banner__text__title,
     .bayes-video-banner__text__wrapper .video-banner__text .video- {
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
       color: #fafafa;
       font-size: 3.5rem;
@@ -29607,7 +29607,7 @@ div.widget-123_test_ {
     box-shadow: 0 0.18rem 0.24rem rgba(0, 0, 0, 0.2); }
 
 .nav-sticky {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
   .nav-sticky i,
   .nav-sticky em {
@@ -29834,7 +29834,7 @@ html {
     margin-bottom: 1rem; }
   .unibuddy-card-v23 .unibuddy-card-v23__content__details__name {
     font-weight: 700;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 1.2rem; }
     .unibuddy-card-v23 .unibuddy-card-v23__content__details__name i,
@@ -29843,7 +29843,7 @@ html {
 
 .unibuddy-card-v23--general .unibuddy-card-v23__content__title {
   font-weight: 700;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-size: 1.2rem;
   text-align: center; }
@@ -29863,7 +29863,7 @@ html {
 .unibuddy-card-v23__cta__link {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -30260,7 +30260,7 @@ html {
 
 .js .courses-v23__careers__alumni .alumni-card-v23__content__details__column {
   font-weight: 700;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-size: 1.2rem; }
   .js .courses-v23__careers__alumni .alumni-card-v23__content__details__column i,
@@ -30270,7 +30270,7 @@ html {
 .alumni-card-v23__cta__link {
   font-size: 1rem;
   padding: 0.5rem;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   text-align: center;
   font-weight: 700;
@@ -30645,9 +30645,9 @@ html {
   border-bottom: none; }
 
 .js [class*="-courses-v23"] .courses-v23__structure__content > .accordion-v23 > h4.accordion-v23__heading {
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
-  font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-size: 1.424rem;
   line-height: 1.33333;
   letter-spacing: -0.013em;
@@ -31011,7 +31011,7 @@ html {
       position: absolute;
       bottom: 0; }
     .testimonials-v23 .testimonial-card-v23__text span {
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
       .testimonials-v23 .testimonial-card-v23__text span i,
       .testimonials-v23 .testimonial-card-v23__text span em {
@@ -31061,7 +31061,7 @@ html {
     font-weight: 700;
     font-size: 1rem; }
     .testimonials-v23 .testimonial-card-v23__author__name a {
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
       .testimonials-v23 .testimonial-card-v23__author__name a i,
       .testimonials-v23 .testimonial-card-v23__author__name a em {
@@ -31146,7 +31146,7 @@ html {
     align-items: center;
     font-size: 3.5rem;
     color: #1e1e1e;
-    font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
     .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value__number i,
     .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value__number em {
@@ -31180,7 +31180,7 @@ html {
       .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__value .ksp-figures-v23__list__item__value__number {
         font-size: 3.5rem;
         color: #1e1e1e;
-        font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+        font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
         font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif; }
         .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__value .ksp-figures-v23__list__item__value__number i,
         .ksp-figures-v23.ksp-figures-v23--numbers .ksp-figures-v23__list__item__value .ksp-figures-v23__list__item__value__number em {
@@ -31698,7 +31698,7 @@ html {
       display: block; }
       .timeline-v24 .timeline-v24__heading span:first-child {
         text-transform: uppercase;
-        font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+        font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
         font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
         font-weight: 700;
         font-size: 0.889rem;
@@ -31892,7 +31892,7 @@ html {
       border-radius: 1.25rem;
       padding: 0.12rem 1.25rem;
       text-decoration: underline;
-      font-feature-settings: 'ss01' 1, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+      font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
       font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
       font-size: 0.79rem;
       line-height: 1.625;
