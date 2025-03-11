@@ -9663,7 +9663,7 @@ svg:not(:root) {
   padding-right: 0.5rem;
   position: relative;
   font-size: 14px;
-  z-index: 4; }
+  z-index: 6; }
   @supports (display: flex) {
     .nav-mobile {
       float: none;
@@ -9923,6 +9923,7 @@ svg:not(:root) {
   position: relative;
   text-align: right;
   padding-right: 0.5rem;
+  z-index: 4;
   width: 8.333%; }
   @supports (display: flex) {
     .site-search {
@@ -31980,7 +31981,7 @@ html {
       right: -0.5rem; } }
   @media (min-width: 901px) {
     .js .header__site-search .header__site-search__nav-button[aria-expanded="true"] + .header__site-search__modal {
-      bottom: -12rem; } }
+      bottom: calc($measure--huge5 - $measure--basic - $measure--basic); } }
   @media (min-width: 1441px) {
     .js .header__site-search .header__site-search__nav-button[aria-expanded="true"] + .header__site-search__modal {
       right: calc(-0.5rem - ((100vw - 1440px) / 2)); } }
@@ -31990,7 +31991,7 @@ html {
 
 @media (min-width: 901px) {
   .js .has__secondary-navigation .header__site-search__nav-button[aria-expanded="true"] + .header__site-search__modal {
-    bottom: -13.54187rem; } }
+    bottom: calc(-10rem - 1rem - 1rem - (0.875rem * 1.625) - 0.12rem); } }
 
 .header__site-search__modal__input-fieldset {
   border-style: initial;
