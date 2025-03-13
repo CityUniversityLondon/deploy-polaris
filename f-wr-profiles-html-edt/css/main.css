@@ -4622,7 +4622,7 @@ svg:not(:root) {
       width: 25%; } }
   .header__logo a,
   .header__logo img {
-    width: 8rem;
+    width: 7rem;
     display: block; }
   .header__logo a {
     background-color: inherit;
@@ -4640,9 +4640,9 @@ svg:not(:root) {
       outline: 0.12rem dotted #1e1e1e; }
   @media (max-width: 500px) {
     .header__logo a {
-      min-height: 3rem; }
+      min-height: 2rem; }
     .header__logo img {
-      width: 6rem; } }
+      width: 5rem; } }
 
 .header__toggles {
   text-align: right; }
@@ -17221,6 +17221,8 @@ body > #CybotCookiebotDialog {
       border: 2px dotted transparent; }
     body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:focus, body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:active {
       border: 2px dotted #ffffff; }
+  body > #CybotCookiebotDialog #CybotCookiebotDialogBodyEdgeMoreDetailsLink {
+    border-bottom-color: #1e1e1e; }
 
 /* Branding on the banner */
 a#CybotCookiebotDialogPoweredbyCybot,
@@ -20599,7 +20601,7 @@ input.header-toggle-input {
       background: black; }
       .image-banner:after {
         content: '';
-        background: url("https://www.bayes.city.ac.uk/__data/assets/image/0003/631785/Bayes-Business-School,-changing-our-name.jpg") no-repeat;
+        background: url("https://www.bayes.citystgeorges.ac.uk/__data/assets/image/0003/631785/Bayes-Business-School,-changing-our-name.jpg") no-repeat;
         top: 0;
         left: 0;
         bottom: 0;

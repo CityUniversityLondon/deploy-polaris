@@ -25226,19 +25226,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function processTree(gCurrent, gTree) {
-  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 1) {
+  if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('ac.uk/staff-hub') && gCurrent.length < 1) {
     // left hand navigation only starts on level 2 if Staffhub
     return {
       tree: null,
       current: null
     };
-  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/alumni') && gCurrent.length < 2) {
+  } else if (_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('ac.uk/alumni') && gCurrent.length < 1) {
     // left hand navigation only starts on level 2 if Alumni
     return {
       tree: null,
       current: null
     };
-  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('bayes.city.ac.uk/staff-hub') && gCurrent.length < 3) {
+  } else if (!_nav_mobile_parse_nav__WEBPACK_IMPORTED_MODULE_1__["currentURL"].includes('ac.uk/staff-hub') && gCurrent.length < 3) {
     // left hand navigation only starts on level 3
     return {
       tree: null,
@@ -26516,10 +26516,8 @@ function setOpenHeight(el, viewportWidth) {
 
   // HTML structure is differnt for desktop and tablet/ smaller viewports, therefor 'showmore content' height calculated differently
   if (viewportWidth >= 768) {
-    console.log('desktop');
     showMoreHeight = el.querySelector('.timeline-v24__desktop').offsetHeight;
   } else {
-    console.log('tablet');
     showMoreHeight = el.querySelector('.timeline-v24__tablet').offsetHeight;
   }
 
