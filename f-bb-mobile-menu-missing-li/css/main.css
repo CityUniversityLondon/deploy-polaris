@@ -17223,6 +17223,8 @@ body > #CybotCookiebotDialog {
       border: 2px dotted transparent; }
     body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:focus, body > #CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:active {
       border: 2px dotted #ffffff; }
+  body > #CybotCookiebotDialog #CybotCookiebotDialogBodyEdgeMoreDetailsLink {
+    border-bottom-color: #1e1e1e; }
 
 /* Branding on the banner */
 a#CybotCookiebotDialogPoweredbyCybot,
@@ -23726,12 +23728,14 @@ input.header-toggle-input {
     text-align: left; }
   .cass-experts .contact-list {
     margin-bottom: 2rem; }
-  .cass-experts .academic-details__content ol,
-  .cass-experts .academic-details__content ul {
+  .cass-experts .academic-details__content:not(#about) ol,
+  .cass-experts .academic-details__content:not(#about) ul {
     margin-left: 0; }
-    .cass-experts .academic-details__content ol li,
-    .cass-experts .academic-details__content ul li {
-      margin-bottom: 2rem; }
+  .cass-experts #about.academic-details__content ol li, .cass-experts #about.academic-details__content ul li {
+    margin-bottom: 0.75rem; }
+  .cass-experts .academic-details__content ol li,
+  .cass-experts .academic-details__content ul li {
+    margin-bottom: 2rem; }
   .cass-experts .academic-details__content cite {
     font-style: normal; }
   .cass-experts .academic-details__content .expertise-list {

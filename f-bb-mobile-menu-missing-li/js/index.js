@@ -25715,7 +25715,8 @@ class VerticalMenuHelper {
       });
       this.levelMap = {};
       prepareTreeIds(this.tree, this.levelMap);
-      this.prepareItemElement(this.tree);
+      this.prepareItemElement(this.tree, 'div');
+      console.log('launching now');
       const toggleChildren = this.toggleChildren.bind(this);
       this.menuContainer.on('click', '[data-toggle]', function (evt) {
         toggleChildren(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('data-toggle'));
@@ -25764,9 +25765,16 @@ class VerticalMenuHelper {
   closeAll() {
     this.menuContainer.find('.open').removeClass('open');
   }
+
+  /**
+   * Prepares and appends the HTML structure for a menu item.
+   * @param {Object} item - The menu item.
+   * @param {String} wrapper - Name of tag to use as wrapper for element.  Default li, to wrap the element insied <li></li>
+   */
   prepareItemElement(item) {
+    let tag = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'li';
     if (!item.element) {
-      let element = jquery__WEBPACK_IMPORTED_MODULE_0___default()('<li></li>');
+      let element = jquery__WEBPACK_IMPORTED_MODULE_0___default()(`<${tag}></${tag}>`);
       if (item.name) {
         element.addClass(`vertical-menu vertical-menu--l${item.level}`);
         let header = jquery__WEBPACK_IMPORTED_MODULE_0___default()('<div></div>').addClass('vertical-menu__header').appendTo(element);
