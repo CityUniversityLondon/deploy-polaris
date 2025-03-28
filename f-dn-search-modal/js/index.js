@@ -38448,7 +38448,7 @@ __webpack_require__.r(__webpack_exports__);
 
 async function getSuggestions(partialQuery, controller) {
   const baseURL = 'https://www.bayes.citystgeorges.ac.uk/webservices',
-    dxpSuggestRootUrl = '/funnelback-dxp-suggest/_nocache',
+    dxpSuggestRootUrl = '/funnelback-dxp-suggest',
     maximumSuggestions = 10,
     timeout = 30000,
     collection = 'city~sp-bayes-main';
