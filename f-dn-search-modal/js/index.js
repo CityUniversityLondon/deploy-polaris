@@ -37009,10 +37009,6 @@ function suggestionKeyDown(e) {
   }
 }
 function suggestionEvent(e) {
-  if (controller) {
-    controller.abort(); //abort if a request is in progress
-  }
-  controller = new AbortController();
   const searchInput = e.target,
     searchKeyLength = searchInput.value.length,
     searchValue = searchInput.value,
@@ -37025,6 +37021,12 @@ function suggestionEvent(e) {
   suggestionWrapper.className = 'header__site-search__modal__input__suggestions';
   suggestionWrapper.id = 'header__site-search__modal__input__suggestions';
   suggestionWrapper.ariaExpanded = true;
+
+  // clean up
+  if (controller) {
+    controller.abort(); //abort if a request is in progress
+  }
+  controller = new AbortController();
   if (suggestion) {
     suggestion.querySelectorAll('.header__site-search__modal__input__suggestions button').forEach(btn => {
       btn.removeEventListener('click', suggestionClickEvent);
@@ -37034,6 +37036,19 @@ function suggestionEvent(e) {
   }
   showSuggestions && searchInput.classList.add('show');
   searchKeyLength && searchInput.classList.add('active');
+
+  //Reset suggestion when open and user deletes search term
+  if (!navStrokeEvent && searchKeyLength <= 2 && update && suggestionWrapper) {
+    update = false;
+    suggestion && suggestion.querySelectorAll('.header__site-search__modal__input__suggestions button').forEach(btn => {
+      btn.removeEventListener('click', suggestionClickEvent);
+      btn.removeEventListener('keydown', suggestionKeyDown);
+    });
+    suggestionsModal && suggestion && suggestion.remove();
+    suggestionsModal = false;
+    showSuggestions = false;
+  }
+  ;
   if (searchKeyLength > 2) {
     suggestionsModal = false;
     update = true;
@@ -37073,17 +37088,6 @@ function suggestionEvent(e) {
     }).catch(error => {
       console.error('Error fetching suggestions:', error);
     });
-  }
-  ;
-  if (!navStrokeEvent && searchKeyLength <= 2 && update && suggestionWrapper) {
-    update = false;
-    suggestion && suggestion.querySelectorAll('.header__site-search__modal__input__suggestions button').forEach(btn => {
-      btn.removeEventListener('click', suggestionClickEvent);
-      btn.removeEventListener('keydown', suggestionKeyDown);
-    });
-    suggestionsModal && suggestion && suggestion.remove();
-    suggestionsModal = false;
-    showSuggestions = false;
   }
   ;
 }
@@ -37204,6 +37208,8 @@ function launch(el) {
       domModalInput.focus();
     }
   });
+
+  //Input events
   domModalInput.addEventListener('input', suggestionEvent);
   domModalInput.addEventListener('keydown', inputKeyEventHandler);
   domModalInput.addEventListener('focus', event => {
@@ -37214,6 +37220,8 @@ function launch(el) {
       suggestion.ariaExpanded = true;
     }
   });
+
+  //Suggestion btn events
   button.addEventListener('keydown', event => {
     if (!event.shiftKey && event.key === 'Tab') {
       const navBtn = event.target.parentElement.parentElement.parentElement.previousElementSibling,
