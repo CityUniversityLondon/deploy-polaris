@@ -37294,7 +37294,7 @@ function launch(el) {
     });
   });
   input.autocomplete({
-    serviceUrl: '/webservices/funnelback-16-suggest?collection=city-university~main-cass&fmt=json',
+    serviceUrl: '/webservices/funnelback-dxp-suggest?collection=city~sp-bayes-main&fmt=json',
     paramName: 'partial_query',
     transformResult: (response, query) => ({
       query,
