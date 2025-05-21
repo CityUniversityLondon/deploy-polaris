@@ -18462,7 +18462,10 @@ input.header-toggle-input {
     position: relative;
     padding: 1rem;
     background: #f2f2f2; }
-  .card--course .txt__body__delivered-by, .card--course .txt__body__delivered-by + p {
+  .card--course.card--course--programme .txt__heading a {
+    border-bottom: none;
+    color: #ffffff; }
+  .card--course.card--course--programme .txt__body__delivered-by, .card--course.card--course--programme .txt__body__delivered-by + p {
     display: inline; }
 
 .scp--undergraduate .card--course .txt__heading {
