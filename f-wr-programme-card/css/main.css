@@ -18384,7 +18384,11 @@ input.header-toggle-input {
     background: #f2f2f2; }
   .card--course.card--course--programme .txt__heading a {
     border-bottom: none;
-    color: #ffffff; }
+    color: #ffffff;
+    display: flex;
+    width: 100%; }
+    .card--course.card--course--programme .txt__heading a:hover {
+      background-color: #1e1e1e; }
   .card--course.card--course--programme .txt__body__delivered-by, .card--course.card--course--programme .txt__body__delivered-by + p {
     display: inline; }
 
