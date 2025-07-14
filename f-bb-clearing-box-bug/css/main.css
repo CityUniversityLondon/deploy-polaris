@@ -6951,7 +6951,10 @@ svg:not(:root) {
       .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info .courses-v23__key-info__ctas__wrap {
         grid-column: span 5; }
       .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info .courses-v23__key-info__standfirst__wrap {
-        grid-column: span 7; } }
+        grid-column: span 7; }
+      .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info .courses-v23__key-info__clearing ~ .courses-v23__key-info__standfirst__wrap {
+        color: green;
+        grid-column: span 6; } }
     .courses-v23 .courses-v23__key-info__wrap .courses-v23__key-info > div {
       grid-column: span 6; }
       @media (max-width: 899px) {
