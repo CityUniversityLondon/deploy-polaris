@@ -32209,6 +32209,9 @@ html {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden; }
+  @media (min-width: 1440px) {
+    .profile-slider__container {
+      overflow: visible; } }
 
 .profile-slider__slide {
   max-width: none !important; }
