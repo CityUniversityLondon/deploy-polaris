@@ -8903,57 +8903,52 @@ svg:not(:root) {
     position: static;
     margin: 0; }
 
-.courses-v23 section,
-.courses-v23 > div {
+.courses-v23 section:not(.courses-v23__section--full-width),
+.courses-v23 > div:not(.courses-v23__section--full-width) {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%; }
   @media (max-width: 500px) {
-    .courses-v23 section,
-    .courses-v23 > div {
+    .courses-v23 section:not(.courses-v23__section--full-width),
+    .courses-v23 > div:not(.courses-v23__section--full-width) {
       padding-left: 0.5rem;
       padding-right: 0.5rem; } }
   @media (min-width: 501px) {
-    .courses-v23 section,
-    .courses-v23 > div {
+    .courses-v23 section:not(.courses-v23__section--full-width),
+    .courses-v23 > div:not(.courses-v23__section--full-width) {
       padding-left: 1rem;
       padding-right: 1rem; } }
   @media (min-width: 1441px) {
-    .courses-v23 section,
-    .courses-v23 > div {
+    .courses-v23 section:not(.courses-v23__section--full-width),
+    .courses-v23 > div:not(.courses-v23__section--full-width) {
       max-width: 1440px; } }
   @media (min-width: 1921px) {
-    .courses-v23 section,
-    .courses-v23 > div {
+    .courses-v23 section:not(.courses-v23__section--full-width),
+    .courses-v23 > div:not(.courses-v23__section--full-width) {
       max-width: 83.333%; } }
-  .courses-v23 section.courses-v23__section--full-width,
-  .courses-v23 > div.courses-v23__section--full-width {
+
+.courses-v23 .courses-v23__section--full-width {
+  max-width: 100%; }
+  .courses-v23 .courses-v23__section--full-width .courses-v23__section__inner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%; }
-    .courses-v23 section.courses-v23__section--full-width .courses-v23__section__inner,
-    .courses-v23 > div.courses-v23__section--full-width .courses-v23__section__inner {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 100%; }
-      @media (max-width: 500px) {
-        .courses-v23 section.courses-v23__section--full-width .courses-v23__section__inner,
-        .courses-v23 > div.courses-v23__section--full-width .courses-v23__section__inner {
-          padding-left: 0.5rem;
-          padding-right: 0.5rem; } }
-      @media (min-width: 501px) {
-        .courses-v23 section.courses-v23__section--full-width .courses-v23__section__inner,
-        .courses-v23 > div.courses-v23__section--full-width .courses-v23__section__inner {
-          padding-left: 1rem;
-          padding-right: 1rem; } }
-      @media (min-width: 1441px) {
-        .courses-v23 section.courses-v23__section--full-width .courses-v23__section__inner,
-        .courses-v23 > div.courses-v23__section--full-width .courses-v23__section__inner {
-          max-width: 1440px; } }
-      @media (min-width: 1921px) {
-        .courses-v23 section.courses-v23__section--full-width .courses-v23__section__inner,
-        .courses-v23 > div.courses-v23__section--full-width .courses-v23__section__inner {
-          max-width: 83.333%; } }
+    @media (max-width: 500px) {
+      .courses-v23 .courses-v23__section--full-width .courses-v23__section__inner {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; } }
+    @media (min-width: 501px) {
+      .courses-v23 .courses-v23__section--full-width .courses-v23__section__inner {
+        padding-left: 1rem;
+        padding-right: 1rem; } }
+    @media (min-width: 1441px) {
+      .courses-v23 .courses-v23__section--full-width .courses-v23__section__inner {
+        max-width: 1440px; } }
+    @media (min-width: 1921px) {
+      .courses-v23 .courses-v23__section--full-width .courses-v23__section__inner {
+        max-width: 83.333%; } }
 
 .courses-v23 p,
 .courses-v23 li {
