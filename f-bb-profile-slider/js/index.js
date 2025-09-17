@@ -35289,7 +35289,7 @@ function launch(emblaNode) {
     slidesToScroll: 1,
     align: 'start',
     loop: false,
-    inViewThreshold: 0.95
+    inViewThreshold: 0.90
   };
   const emblaClassNames = Object(embla_carousel_class_names__WEBPACK_IMPORTED_MODULE_1__["default"])({
     selected: 'is-selected',
@@ -35305,30 +35305,30 @@ function launch(emblaNode) {
   // nextBtn.addEventListener('click', emblaApi.scrollNext, false);
 
   const removePrevNextBtnsClickHandlers = Object(_EmblaCarouselArrowButtons__WEBPACK_IMPORTED_MODULE_2__["addPrevNextBtnsClickHandlers"])(emblaApi, prevBtn, nextBtn);
+  const slides = emblaApi.slideNodes();
+  const slidesInView = () => {
+    console.log(emblaApi.slidesInView());
+    const inView = new Set(emblaApi.slidesInView());
+    const selected = emblaApi.selectedScrollSnap();
+    emblaApi.slideNodes().forEach((slide, idx) => {
+      slide.setAttribute('aria-hidden', inView.has(idx) ? 'false' : 'true');
+      slide.setAttribute('tabindex', idx === selected ? '0' : '-1');
+    });
+  };
+  emblaApi.on('init', slidesInView).on('reInit', slidesInView).on('slidesInView', slidesInView);
   emblaApi.on('destroy', removePrevNextBtnsClickHandlers);
+
+  //   function logSlidesInView() {
+  //     const slidesInView = emblaApi.slidesInView(true); // <-- Pass true to the slidesInView method
+  //     console.log(slidesInView);
+  //     }
+
+  // emblaApi.on('select', logSlidesInView);
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch,
   className
 });
-
-// const classNames = EmblaCarouselClassNames({
-// // defaults:
-// selected: 'is-selected',
-// inView: 'is-in-view',
-// snap: 'is-snapped'
-// });
-// const OPTIONS = {slidesToScroll: 1, align: 'start', loop: false, inViewThreshold: 0.95 };
-
-// const emblaNode = document.querySelector('.embla');
-// const viewportNode = emblaNode.querySelector('.embla__viewport');
-// const prevBtnNode = emblaNode.querySelector('.embla__prev');
-// const nextBtnNode = emblaNode.querySelector('.embla__next');
-
-// const embla = EmblaCarousel(viewportNode, OPTIONS, [classNames]);
-
-// prevBtnNode.addEventListener('click', embla.scrollPrev, false);
-// nextBtnNode.addEventListener('click', embla.scrollNext, false);
 
 /***/ }),
 
