@@ -31300,25 +31300,23 @@ html {
 
 .pg-courses-v23 .courses-v23__careers__ksp__widget {
   padding-bottom: 2rem; }
-  .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item {
-    flex-basis: initial; }
-    .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even) {
-      width: 45%; }
-      .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even):after {
+  .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even) {
+    width: 45%; }
+    .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even):after {
+      content: initial;
+      background: none;
+      width: initial;
+      margin-right: initial; }
+  .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd) {
+    width: 55%; }
+  @media (max-width: 500px) {
+    .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd), .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even) {
+      width: 100%; }
+      .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd):after, .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even):after {
         content: initial;
         background: none;
         width: initial;
-        margin-right: initial; }
-    .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd) {
-      width: 55%; }
-    @media (max-width: 500px) {
-      .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd), .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even) {
-        width: 100%; }
-        .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(odd):after, .pg-courses-v23 .courses-v23__careers__ksp__widget .ksp-figures-v23--numbers .ksp-figures-v23__list .ksp-figures-v23__list__item:nth-child(even):after {
-          content: initial;
-          background: none;
-          width: initial;
-          margin-right: initial; } }
+        margin-right: initial; } }
 
 .ug-courses-v23 .ksp-figures-v23.ksp-figures-v23--graphs .ksp-figures-v23__list__item__value__number {
   color: #f1b434; }
