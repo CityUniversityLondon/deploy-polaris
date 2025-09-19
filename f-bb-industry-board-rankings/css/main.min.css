@@ -8966,7 +8966,7 @@ svg:not(:root) {
   .courses-v23__rankings .courses-v23__rankings__item {
     display: grid;
     gap: 0.75rem;
-    grid-template-columns: 35px auto; }
+    grid-template-columns: 55px auto; }
     @media (min-width: 768px) {
       .courses-v23__rankings .courses-v23__rankings__item {
         position: relative;
@@ -8983,8 +8983,10 @@ svg:not(:root) {
           --r: 0.0625rem;
           /* dot radius */
           background: radial-gradient(circle, #979797 var(--r), transparent 0) calc(var(--r) - var(--gap) / 2) 0/var(--gap) var(--gap) repeat-y, radial-gradient(circle, #979797 var(--r), transparent 0) calc(var(--gap) + var(--r) - var(--gap) / 2) 0/var(--gap) var(--gap) repeat-y; }
-        .courses-v23__rankings .courses-v23__rankings__item:first-child:before {
-          display: none; } }
+        .courses-v23__rankings .courses-v23__rankings__item:first-child {
+          padding-left: 0; }
+          .courses-v23__rankings .courses-v23__rankings__item:first-child::before {
+            display: none; } }
   .courses-v23__rankings .courses-v23__rankings__items {
     display: grid;
     grid-template-columns: 1fr;
@@ -9000,10 +9002,15 @@ svg:not(:root) {
     font-size: 0.875rem;
     font-weight: 700; }
   .courses-v23__rankings .courses-v23__rankings__item-rank {
+    font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+    font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
     font-size: 2.027rem;
     font-weight: 700;
     line-height: 1;
     color: #3457F1; }
+    .courses-v23__rankings .courses-v23__rankings__item-rank i,
+    .courses-v23__rankings .courses-v23__rankings__item-rank em {
+      font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
 
 .courses-v23 section,
 .courses-v23 > div {
@@ -32301,8 +32308,8 @@ html {
 
 .profile-slider__btn {
   position: relative;
-  background: #1e1e1e;
-  color: #3457F1;
+  background: #3457F1;
+  color: #ffffff;
   width: 2.75rem;
   height: 2.75rem;
   display: flex;
@@ -32312,6 +32319,7 @@ html {
     outline: 2px dotted #1e1e1e;
     outline-offset: 3px; }
   .profile-slider__btn:focus {
+    z-index: 1;
     outline: 3px solid #1e1e1e;
     outline-offset: 3px; }
   .profile-slider__btn[disabled] {
