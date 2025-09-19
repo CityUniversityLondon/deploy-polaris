@@ -186,6 +186,9 @@
 .background--white-smoke {
   background-color: #f2f2f2; }
 
+.background--athens-grey {
+  background-color: #F1F1F4; }
+
 .background--gainsboro {
   background-color: #d8d8d8; }
 
@@ -8904,7 +8907,7 @@ svg:not(:root) {
     margin: 0; }
 
 .courses-v23__rankings {
-  background-color: #ececec;
+  background-color: #F1F1F4;
   padding-bottom: 3rem; }
   .courses-v23 .courses-v23__rankings {
     width: 100%;
@@ -8981,11 +8984,27 @@ svg:not(:root) {
   .courses-v23__rankings .courses-v23__rankings__item {
     display: grid;
     gap: 0.75rem;
-    grid-template-columns: 35px auto; }
+    grid-template-columns: 35px auto;
+    position: relative;
+    padding-left: 2.375rem; }
+    .courses-v23__rankings .courses-v23__rankings__item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.375rem;
+      height: 100%;
+      --gap: 1.25rem;
+      /* distance between dot centers */
+      --r: 0.0625rem;
+      /* dot radius */
+      background: radial-gradient(circle, #979797 var(--r), transparent 0) calc(var(--r) - var(--gap) / 2) 0/var(--gap) var(--gap) repeat-y, radial-gradient(circle, #979797 var(--r), transparent 0) calc(var(--gap) + var(--r) - var(--gap) / 2) 0/var(--gap) var(--gap) repeat-y; }
+    .courses-v23__rankings .courses-v23__rankings__item:first-child:before {
+      display: none; }
   .courses-v23__rankings .courses-v23__rankings__items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem; }
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem; }
   .courses-v23__rankings .courses-v23__rankings__item-text {
     display: flex;
     flex-direction: column;
