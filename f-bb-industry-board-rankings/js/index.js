@@ -35235,23 +35235,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const addTogglePrevNextBtnsActive = (emblaApi, prevBtn, nextBtn) => {
+  const btnsWrapper = prevBtn.closest('.profile-slider__btns');
   const togglePrevNextBtnsState = () => {
-    if (emblaApi.canScrollPrev()) prevBtn.removeAttribute('disabled');else prevBtn.setAttribute('disabled', 'disabled');
-    if (emblaApi.canScrollNext()) nextBtn.removeAttribute('disabled');else nextBtn.setAttribute('disabled', 'disabled');
+    const canPrev = emblaApi.canScrollPrev();
+    const canNext = emblaApi.canScrollNext();
+
+    // Enable/disable individual buttons
+    if (canPrev) prevBtn.removeAttribute('disabled');else prevBtn.setAttribute('disabled', 'disabled');
+    if (canNext) nextBtn.removeAttribute('disabled');else nextBtn.setAttribute('disabled', 'disabled');
+
+    // Toggle disabled class on container if both are disabled
+    if (btnsWrapper) {
+      if (!canPrev && !canNext) {
+        btnsWrapper.classList.add('profile-slider__btns--disabled');
+      } else {
+        btnsWrapper.classList.remove('profile-slider__btns--disabled');
+      }
+    }
   };
   emblaApi.on('select', togglePrevNextBtnsState).on('init', togglePrevNextBtnsState).on('reInit', togglePrevNextBtnsState);
   return () => {
     prevBtn.removeAttribute('disabled');
     nextBtn.removeAttribute('disabled');
+    if (btnsWrapper) {
+      btnsWrapper.classList.remove('profile-slider__btns--disabled');
+    }
   };
 };
 const addPrevNextBtnsClickHandlers = (emblaApi, prevBtn, nextBtn) => {
-  const scrollPrev = () => {
-    emblaApi.scrollPrev();
-  };
-  const scrollNext = () => {
-    emblaApi.scrollNext();
-  };
+  const scrollPrev = () => emblaApi.scrollPrev();
+  const scrollNext = () => emblaApi.scrollNext();
   prevBtn.addEventListener('click', scrollPrev, false);
   nextBtn.addEventListener('click', scrollNext, false);
   const removeTogglePrevNextBtnsActive = addTogglePrevNextBtnsActive(emblaApi, prevBtn, nextBtn);
@@ -35278,11 +35291,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _EmblaCarouselArrowButtons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EmblaCarouselArrowButtons */ "./src/components/embla-slider/EmblaCarouselArrowButtons.js");
 
 
+/*
+Markup structure required for Embla slider:
+Add your own classes to customise styling, but keep the embla__* classes.
+
+<div class="embla">
+  <div class="embla__btns">
+    <button name="prevButton" type="button" 
+      class="embla__btn embla__prev fa-solid fa-chevron-left" 
+      aria-label="Previous slide"></button>
+    <button name="nextButton" type="button" 
+      class="embla__btn embla__next fa-solid fa-chevron-right" 
+      aria-label="Next slide"></button>
+  </div>
+  <div class="embla__viewport">
+    <div class="embla__container">
+      <div class="embla__slide">
+        <!-- Slide content -->
+      </div>
+      <div class="embla__slide">
+        <!-- Slide content -->
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+  </div>
+</div>
+*/
 
 
 
 
-// Define a pattern object that launchPattern can use
 const className = 'embla';
 function launch(emblaNode) {
   const OPTIONS = {
@@ -35292,22 +35330,16 @@ function launch(emblaNode) {
     inViewThreshold: 0.90
   };
   const emblaClassNames = Object(embla_carousel_class_names__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    selected: 'is-selected',
-    inView: 'is-in-view',
-    snap: 'is-snapped'
+    selected: 'embla__slide--is-selected',
+    inView: 'embla__slide--is-in-view',
+    snap: 'embla__slide--is-snapped'
   });
   const viewportNode = emblaNode.querySelector('.embla__viewport');
   const prevBtn = emblaNode.querySelector('.embla__prev');
   const nextBtn = emblaNode.querySelector('.embla__next');
   const emblaApi = Object(embla_carousel__WEBPACK_IMPORTED_MODULE_0__["default"])(viewportNode, OPTIONS, [emblaClassNames]);
-
-  // prevBtn.addEventListener('click', emblaApi.scrollPrev, false);
-  // nextBtn.addEventListener('click', emblaApi.scrollNext, false);
-
   const removePrevNextBtnsClickHandlers = Object(_EmblaCarouselArrowButtons__WEBPACK_IMPORTED_MODULE_2__["addPrevNextBtnsClickHandlers"])(emblaApi, prevBtn, nextBtn);
-  const slides = emblaApi.slideNodes();
   const slidesInView = () => {
-    console.log(emblaApi.slidesInView());
     const inView = new Set(emblaApi.slidesInView());
     const selected = emblaApi.selectedScrollSnap();
     emblaApi.slideNodes().forEach((slide, idx) => {
@@ -35315,15 +35347,11 @@ function launch(emblaNode) {
       slide.setAttribute('tabindex', idx === selected ? '0' : '-1');
     });
   };
-  emblaApi.on('init', slidesInView).on('reInit', slidesInView).on('slidesInView', slidesInView);
+  const testFunc = () => {
+    console.log('test func');
+  };
+  emblaApi.on('init', slidesInView).on('init', testFunc).on('reInit', slidesInView).on('slidesInView', slidesInView);
   emblaApi.on('destroy', removePrevNextBtnsClickHandlers);
-
-  //   function logSlidesInView() {
-  //     const slidesInView = emblaApi.slidesInView(true); // <-- Pass true to the slidesInView method
-  //     console.log(slidesInView);
-  //     }
-
-  // emblaApi.on('select', logSlidesInView);
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
   launch,

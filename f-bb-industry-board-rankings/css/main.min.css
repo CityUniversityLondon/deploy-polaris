@@ -10638,6 +10638,55 @@ svg:not(:root) {
 .media-block .media-block__wrapper {
   width: 100%; }
 
+.embla {
+  margin: auto;
+  --slide-spacing: 1.5rem;
+  --slide-size: 100%;
+  max-width: 100%; }
+
+.embla__viewport {
+  overflow: hidden; }
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1); }
+
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  opacity: 0.5;
+  transition: opacity 600ms ease-out, transform 600ms ease-out; }
+
+.embla__slide--is-in-view, .embla__slide--is-snapped {
+  opacity: 1;
+  transform: none;
+  transition: opacity 600ms ease-out, transform 600ms ease-out; }
+
+.embla__btns {
+  display: flex; }
+
+.embla__btn {
+  position: relative;
+  background: #1e1e1e;
+  color: #ffffff;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .embla__btn:active {
+    outline: 2px dotted #1e1e1e;
+    outline-offset: 3px; }
+  .embla__btn:focus {
+    z-index: 1;
+    outline: 3px solid #1e1e1e;
+    outline-offset: 3px; }
+  .embla__btn[disabled] {
+    opacity: 0.5; }
+
 .js .accordion__content__heading-anchor.inactive + div {
   width: 1px !important;
   height: 1px !important;
@@ -32252,22 +32301,23 @@ html {
   z-index: 4;
   background-color: rgba(30, 30, 30, 0.8); }
 
-.embla {
+.profile-slider {
   margin: auto;
   --slide-spacing: 1.5rem;
   --slide-size: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  position: relative; }
   @media (min-width: 500px) {
-    .embla {
+    .profile-slider {
       --slide-size:50%; } }
   @media (min-width: 768px) {
-    .embla {
+    .profile-slider {
       --slide-size: 33%; } }
   @media (min-width: 900px) {
-    .embla {
+    .profile-slider {
       --slide-size: 25%; } }
   @media (min-width: 1920px) {
-    .embla {
+    .profile-slider {
       --slide-size: 20%; } }
 
 .courses-v23__advisory-board {
@@ -32276,57 +32326,19 @@ html {
     .courses-v23__advisory-board {
       padding-bottom: 3rem; } }
 
-.embla__viewport {
+.profile-slider__viewport {
   width: 100%; }
   @media (min-width: 500px) {
-    .embla__viewport {
+    .profile-slider__viewport {
       width: 90%; } }
   @media (min-width: 900px) {
-    .embla__viewport {
+    .profile-slider__viewport {
       width: 96%; } }
   @media (min-width: 1440px) {
-    .embla__viewport {
+    .profile-slider__viewport {
       width: 100%; } }
 
-.embla__container {
-  display: flex;
-  touch-action: pan-y pinch-zoom;
-  margin-left: calc(var(--slide-spacing) * -1); }
-
-.embla__slide {
-  transform: translate3d(0, 0, 0);
-  flex: 0 0 var(--slide-size);
-  min-width: 0;
-  padding-left: var(--slide-spacing);
-  opacity: 0.5;
-  transition: opacity 600ms ease-out, transform 600ms ease-out; }
-
-.is-in-view, .is-snapped {
-  opacity: 1;
-  transform: none;
-  transition: opacity 600ms ease-out, transform 600ms ease-out; }
-
-.profile-slider__btn {
-  position: relative;
-  background: #3457F1;
-  color: #ffffff;
-  width: 2.75rem;
-  height: 2.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .profile-slider__btn:active {
-    outline: 2px dotted #1e1e1e;
-    outline-offset: 3px; }
-  .profile-slider__btn:focus {
-    z-index: 1;
-    outline: 3px solid #1e1e1e;
-    outline-offset: 3px; }
-  .profile-slider__btn[disabled] {
-    opacity: 0.5; }
-
 .profile-slider__btns {
-  display: flex;
   justify-content: flex-end;
   margin-bottom: 0.5rem; }
   @media (min-width: 900px) {
@@ -32336,14 +32348,14 @@ html {
       right: 0;
       margin-bottom: 0; } }
 
-.profile-slider__wrap {
-  position: relative; }
+.profile-slider__viewport {
+  overflow: visible; }
 
-.profile-slider__container {
+.profile-slider__inner-container {
   position: relative;
   overflow: hidden; }
   @media (min-width: 1440px) {
-    .profile-slider__container {
+    .profile-slider__inner-container {
       overflow: visible; } }
 
 .profile-slider__slide {
@@ -32369,10 +32381,19 @@ html {
 .ug-courses-v23 .profile-slider__company {
   color: #ff4e00; }
 
+.ug-courses-v23 .profile-slider__btn {
+  background: #ff4e00; }
+
 .pg-courses-v23 .profile-slider__company {
   color: #3457F1; }
 
+.pg-courses-v23 .profile-slider__btn {
+  background: #3457F1; }
+
 .mba-courses-v23 .profile-slider__company {
   color: #12E97A; }
+
+.mba-courses-v23 .profile-slider__btn {
+  background: #12E97A; }
 
 /*# sourceMappingURL=main.min.css.map */
