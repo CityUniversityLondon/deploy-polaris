@@ -9235,6 +9235,12 @@ svg:not(:root) {
     .courses-v23__structure .cta--course-spec {
       margin-bottom: 1rem; } }
 
+.courses-v23__industry-board {
+  background-color: #F1F1F4; }
+  @media (min-width: 500px) {
+    .courses-v23__industry-board {
+      padding-bottom: 3rem; } }
+
 @media (min-width: 901px) {
   .courses-v23__study-abroad {
     grid-template-columns: repeat(18, 1fr);
@@ -32319,12 +32325,6 @@ html {
   @media (min-width: 1920px) {
     .profile-slider {
       --slide-size: 20%; } }
-
-.courses-v23__advisory-board {
-  background-color: #F1F1F4; }
-  @media (min-width: 500px) {
-    .courses-v23__advisory-board {
-      padding-bottom: 3rem; } }
 
 .profile-slider__viewport {
   width: 100%; }
