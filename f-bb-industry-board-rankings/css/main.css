@@ -32347,6 +32347,8 @@ html {
       top: -75px;
       right: 0;
       margin-bottom: 0; } }
+  .profile-slider__btns.profile-slider__btns--disabled {
+    display: none; }
 
 .profile-slider__viewport {
   overflow: visible; }
