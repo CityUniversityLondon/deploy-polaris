@@ -35347,10 +35347,7 @@ function launch(emblaNode) {
       slide.setAttribute('tabindex', idx === selected ? '0' : '-1');
     });
   };
-  const testFunc = () => {
-    console.log('test func');
-  };
-  emblaApi.on('init', slidesInView).on('init', testFunc).on('reInit', slidesInView).on('slidesInView', slidesInView);
+  emblaApi.on('init', slidesInView).on('reInit', slidesInView).on('slidesInView', slidesInView);
   emblaApi.on('destroy', removePrevNextBtnsClickHandlers);
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
