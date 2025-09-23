@@ -8907,6 +8907,7 @@ svg:not(:root) {
     margin: 0; }
 
 .courses-v23__rankings {
+  --icon-size: 65px;
   background-color: #F1F1F4;
   padding-bottom: 3rem; }
   .courses-v23__rankings .courses-v23__rankings__inner {
@@ -8963,10 +8964,10 @@ svg:not(:root) {
   .courses-v23__rankings .courses-v23__rankings__item {
     display: grid;
     gap: 0.75rem;
-    grid-template-columns: 65px auto; }
+    grid-template-columns: var(--icon-size) auto; }
     @media (min-width: 768px) {
       .courses-v23__rankings .courses-v23__rankings__item {
-        grid-template-columns: fit-content(65px) auto;
+        grid-template-columns: fit-content(var(--icon-size)) auto;
         position: relative;
         padding-left: 2.375rem; }
         .courses-v23__rankings .courses-v23__rankings__item::before {
