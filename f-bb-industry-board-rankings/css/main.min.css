@@ -8907,12 +8907,9 @@ svg:not(:root) {
     margin: 0; }
 
 .courses-v23__rankings {
-  --icon-size: 65px;
+  --icon-size: 4rem;
   background-color: #F1F1F4;
   padding-bottom: 3rem; }
-  @media (min-width: 3840px) {
-    .courses-v23__rankings {
-      --icon-size: 400px; } }
   .courses-v23__rankings .courses-v23__rankings__inner {
     display: flex;
     flex-direction: column;
