@@ -4969,7 +4969,7 @@ svg:not(:root) {
 
 .footer__social a {
   color: #666666;
-  display: flex;
+  display: inline-flex;
   align-items: center; }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
