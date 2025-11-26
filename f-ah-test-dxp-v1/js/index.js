@@ -35339,6 +35339,8 @@ function launch(emblaNode) {
   const nextBtn = emblaNode.querySelector('.embla__next');
   const emblaApi = Object(embla_carousel__WEBPACK_IMPORTED_MODULE_0__["default"])(viewportNode, OPTIONS, [emblaClassNames]);
   const removePrevNextBtnsClickHandlers = Object(_EmblaCarouselArrowButtons__WEBPACK_IMPORTED_MODULE_2__["addPrevNextBtnsClickHandlers"])(emblaApi, prevBtn, nextBtn);
+
+  // const test = {};
   const slidesInView = () => {
     const inView = new Set(emblaApi.slidesInView());
     const selected = emblaApi.selectedScrollSnap();
