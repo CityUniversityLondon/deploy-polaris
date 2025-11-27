@@ -9003,7 +9003,8 @@ svg:not(:root) {
     display: flex;
     justify-self: center; }
     .courses-v23__rankings .courses-v23__rankings__item-icon img {
-      height: 100%; }
+      height: var(--icon-size);
+      max-width: var(--icon-size); }
   .courses-v23__rankings .courses-v23__rankings__item-rank {
     font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
     font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
