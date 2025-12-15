@@ -31940,15 +31940,10 @@ function genActivateItem(widget, headingAnchors, allAnchors) {
 function deactivateAll(allAnchors) {
   allAnchors.filter('.active').removeClass('active').addClass('inactive').attr('aria-selected', 'false').attr('aria-expanded', 'false');
 }
-function prepareLinks(widget, headings) {
-  let menu = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-  let activateInitial = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
-  let headingAnchors = headings.reduce((acc, _ref) => {
-    let {
-      anchor
-    } = _ref;
-    return acc.add(anchor);
-  }, jquery__WEBPACK_IMPORTED_MODULE_0___default()());
+function prepareLinks(widget, headings, menu = null, activateInitial = null) {
+  let headingAnchors = headings.reduce((acc, {
+    anchor
+  }) => acc.add(anchor), jquery__WEBPACK_IMPORTED_MODULE_0___default()());
   let allAnchors = menu ? headingAnchors.add(menu.find('a[data-id]')) : headingAnchors;
   let activateItem = genActivateItem(widget, headingAnchors, allAnchors);
   if (menu) {
@@ -32311,11 +32306,10 @@ __webpack_require__.r(__webpack_exports__);
 
 function prepareTabsHeadings(className, widget, i, headings, content, sticky, accordionId) {
   let tabsBar = jquery__WEBPACK_IMPORTED_MODULE_0___default()('<div></div>').addClass(Object(_element_classnames__WEBPACK_IMPORTED_MODULE_1__["menuCn"])(className));
-  headings.forEach(_ref => {
-    let {
-      text,
-      id
-    } = _ref;
+  headings.forEach(({
+    text,
+    id
+  }) => {
     let anchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()('<a href="#"></a>').addClass(Object(_element_classnames__WEBPACK_IMPORTED_MODULE_1__["menuItemCn"])(className)).addClass('inactive').attr('id', `tab-${accordionId}-header-${id}`).attr('data-id', id);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('<span></span>').addClass(Object(_element_classnames__WEBPACK_IMPORTED_MODULE_1__["menuItemLabelCn"])(className)).html(text).appendTo(anchor);
     anchor.appendTo(tabsBar);
@@ -32450,12 +32444,10 @@ for (let i = 0; i <= 100; i++) {
 }
 
 // Begin observing visibility
-function actionOnScroll(element, action) {
-  let repeat = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-  let options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {
-    threshold: [0, 0.01, 1],
-    rootMargin: '-20%'
-  };
+function actionOnScroll(element, action, repeat = false, options = {
+  threshold: [0, 0.01, 1],
+  rootMargin: '-20%'
+}) {
   if (element && element.length > 0) {
     // normalise element
     if (element instanceof jquery__WEBPACK_IMPORTED_MODULE_0___default.a) {
@@ -33910,12 +33902,9 @@ function launch(el) {
   let sqShuffled = squaresRef.map(value => ({
     value,
     sort: Math.random()
-  })).sort((a, b) => a.sort - b.sort).map(_ref => {
-    let {
-      value
-    } = _ref;
-    return value;
-  });
+  })).sort((a, b) => a.sort - b.sort).map(({
+    value
+  }) => value);
   let sqs = el.querySelectorAll('.square-animation-v23__square');
 
   // loops through the shuffled array to select the generated squares at ramdom to apply an animation to them
@@ -34091,8 +34080,7 @@ function launch(el) {
       scrollActiveLink = '';
     }, 700);
   }
-  function scrollNavItemToView(item) {
-    let delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  function scrollNavItemToView(item, delay = 0) {
     const stickyNavItems = document.querySelector('.nav-sticky__items');
     const stickyNavItemsWidth = stickyNavItems.offsetWidth;
     setTimeout(() => {
@@ -35156,8 +35144,7 @@ function disableBodyScroll() {
   document.querySelector('.back-to-top').setAttribute('hidden', 'true');
   document.documentElement.classList.add('no-scroll');
 }
-function closeDialog() {
-  let focusBack = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+function closeDialog(focusBack = true) {
   if (current.dlg) {
     current.focusTrap.deactivate();
     current.dlg.remove();
@@ -35180,8 +35167,7 @@ const current = {
   dlg: null,
   focusBackTo: null
 };
-function openModalDialog(title, content) {
-  let opts = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+function openModalDialog(title, content, opts = {}) {
   closeDialog(false);
   let finalOptions = extend__WEBPACK_IMPORTED_MODULE_1___default()({}, DEFAULT_OPTS, opts);
   if (finalOptions.identifyFocusBackTo) {
@@ -36010,8 +35996,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function prepareTreeIds(tree, map) {
-  let parentId = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+function prepareTreeIds(tree, map, parentId = null) {
   tree.parentId = parentId;
   tree.id = (parentId ? parentId + '.' : '') + tree.index;
   map[tree.id] = tree;
@@ -36021,18 +36006,14 @@ function searchParams() {
   const params = ['dev', 'SQ_DESIGN_NAME', 'SQ_PAINT_LAYOUT_NAME'].map(key => ({
     key,
     match: location.search.match(new RegExp(`[?&]${key}=([^&]*)`))
-  })).filter(p => p.match).map(_ref => {
-    let {
-      key,
-      match
-    } = _ref;
-    return `${key}=${match[1]}`;
-  });
+  })).filter(p => p.match).map(({
+    key,
+    match
+  }) => `${key}=${match[1]}`);
   return (params.length > 0 ? '?' : '') + params.join('&');
 }
 class VerticalMenuHelper {
-  constructor(menuContainer, tree, defaultOpen, scroll) {
-    let maxSiblings = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
+  constructor(menuContainer, tree, defaultOpen, scroll, maxSiblings = 0) {
     if (tree) {
       this.scroll = scroll;
       this.menuContainer = menuContainer;
@@ -36042,12 +36023,9 @@ class VerticalMenuHelper {
       this.maxChildrenLevelLimit = this.maxSiblings ? this.rootLevel + defaultOpen.length - 1 : 0;
       this.searchQueryStr = searchParams();
       this.defaultOpen = [this.tree];
-      defaultOpen.slice(1).forEach((_ref2, i) => {
-        let {
-          index
-        } = _ref2;
-        return this.defaultOpen.push(this.defaultOpen[i].children[index]);
-      });
+      defaultOpen.slice(1).forEach(({
+        index
+      }, i) => this.defaultOpen.push(this.defaultOpen[i].children[index]));
       this.levelMap = {};
       prepareTreeIds(this.tree, this.levelMap);
       this.prepareItemElement(this.tree);
@@ -36058,8 +36036,7 @@ class VerticalMenuHelper {
       });
     }
   }
-  toggleChildren(item) {
-    let forceOpen = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  toggleChildren(item, forceOpen = false) {
     if (typeof item === 'string') item = this.levelMap[item];
     if (item.children.length > 0) {
       let ancestors = item.element.parents('.vertical-menu');
@@ -36070,12 +36047,9 @@ class VerticalMenuHelper {
       item.element.toggleClass('open', setOpen);
       if (setOpen) {
         ancestors.addClass('open');
-        const childrenToDisplay = item.level < this.maxChildrenLevelLimit && item.children.length > this.maxSiblings ? item.children.filter(_ref3 => {
-          let {
-            type
-          } = _ref3;
-          return type > 0;
-        }) : item.children;
+        const childrenToDisplay = item.level < this.maxChildrenLevelLimit && item.children.length > this.maxSiblings ? item.children.filter(({
+          type
+        }) => type > 0) : item.children;
         childrenToDisplay.forEach(item => this.prepareItemElement(item));
       }
       if (this.scroll && Object(_js_utils_scrolled_into_view__WEBPACK_IMPORTED_MODULE_3__["default"])(item.element) < 1) {
@@ -36249,10 +36223,9 @@ function prepareItems(widget, items) {
       className: Object(_js_utils_variations__WEBPACK_IMPORTED_MODULE_2__["variationClassNames"])(`${className}__dlg`, variations)
     });
   };
-  items.forEach((_ref, i) => {
-    let {
-      heading
-    } = _ref;
+  items.forEach(({
+    heading
+  }, i) => {
     let anchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()('<a></a>').attr('href', '#').addClass('popup-def-list-group__anchor').html(heading.html());
     anchor.on('click', evt => {
       evt.preventDefault();
@@ -36403,11 +36376,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function getAnimData(prevData, element) {
+function getAnimData(prevData, element, ...bases) {
   const data = {};
-  for (var _len = arguments.length, bases = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-    bases[_key - 2] = arguments[_key];
-  }
   bases.forEach(base => {
     const regex = new RegExp(`^data-${base}-(.+)$`);
     const el = element.get(0);
@@ -36425,11 +36395,8 @@ function getAnimData(prevData, element) {
   });
   return prevData ? extend__WEBPACK_IMPORTED_MODULE_1___default()({}, prevData, data) : data;
 }
-function launchAnimation(widget) {
+function launchAnimation(widget, ...types) {
   const widgetParams = getAnimData(null, widget, 'anim');
-  for (var _len2 = arguments.length, types = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-    types[_key2 - 1] = arguments[_key2];
-  }
   const anims = types.filter(type => _animation_types__WEBPACK_IMPORTED_MODULE_4__["default"][type]).map(type => {
     const anim = _animation_types__WEBPACK_IMPORTED_MODULE_4__["default"][type];
     const isFunction = typeof anim === 'function';
@@ -36445,21 +36412,15 @@ function launchAnimation(widget) {
       target: widget,
       params: typeParams
     }];
-    const okTargets = targets.filter(_ref => {
-      let {
+    const okTargets = targets.filter(({
+      target,
+      params
+    }) => isFunction || !anim.init || anim.init(target, params));
+    return okTargets.length > 0 && (() => {
+      okTargets.forEach(({
         target,
         params
-      } = _ref;
-      return isFunction || !anim.init || anim.init(target, params);
-    });
-    return okTargets.length > 0 && (() => {
-      okTargets.forEach(_ref2 => {
-        let {
-          target,
-          params
-        } = _ref2;
-        return func(target, params);
-      });
+      }) => func(target, params));
     });
   }).filter(f => !!f);
   if (anims.length > 0) {
@@ -37365,20 +37326,14 @@ __webpack_require__.r(__webpack_exports__);
 
 function launch(el) {
   let widget = jquery__WEBPACK_IMPORTED_MODULE_0___default()(el);
-  let data = widget.find('script').html().split('\n').map(line => line.trim().split(' ')).filter(item => item.length > 2).map(_ref => {
-    let [selected, url, ...rest] = _ref;
-    return {
-      selected,
-      url,
-      name: rest.join(' ')
-    };
-  });
-  let selectedIndex = data.findIndex(_ref2 => {
-    let {
-      selected
-    } = _ref2;
-    return selected === '1';
-  });
+  let data = widget.find('script').html().split('\n').map(line => line.trim().split(' ')).filter(item => item.length > 2).map(([selected, url, ...rest]) => ({
+    selected,
+    url,
+    name: rest.join(' ')
+  }));
+  let selectedIndex = data.findIndex(({
+    selected
+  }) => selected === '1');
   let direction = 'right';
   let other = data[selectedIndex === 0 ? 1 : 0];
   let current = data[selectedIndex];
@@ -37647,11 +37602,10 @@ const DEFAULT_PARAMS = {
     rel: 0
   }
 };
-function loadYoutubeVideo(wrapper, _ref) {
-  let {
-    id,
-    params
-  } = _ref;
+function loadYoutubeVideo(wrapper, {
+  id,
+  params
+}) {
   let iframeId = `ytev-${id}`;
   let link = null;
   link = wrapper.children('a');
@@ -38277,17 +38231,12 @@ function detectIE() {
   // other browser
   return false;
 }
-function debounce(func) {
-  var _this = this;
-  let timeout = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 300;
+function debounce(func, timeout = 300) {
   let timer;
-  return function () {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+  return (...args) => {
     clearTimeout(timer);
     timer = setTimeout(() => {
-      func.apply(_this, args);
+      func.apply(this, args);
     }, timeout);
   };
 }
@@ -38391,13 +38340,10 @@ function initPlayer(id, data) {
 function loadApi() {
   apiStatus = LOADING;
   window.onYouTubeIframeAPIReady = function () {
-    pendingPlayers.forEach(_ref => {
-      let {
-        id,
-        data
-      } = _ref;
-      return initPlayer(id, data);
-    });
+    pendingPlayers.forEach(({
+      id,
+      data
+    }) => initPlayer(id, data));
   };
   let tag = document.createElement('script');
   tag.src = 'https://www.youtube.com/iframe_api';

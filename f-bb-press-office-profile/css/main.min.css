@@ -28895,7 +28895,7 @@ div.widget-123_test_ {
         .slider-news .news-heading-toggle-link__wrap .news-heading-toggle-link {
           margin-right: 0.5rem; } }
 
-@media (min-width: 501px) {
+@media (min-width: 651px) {
   .person-profiles-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
