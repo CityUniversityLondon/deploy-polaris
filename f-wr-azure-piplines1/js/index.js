@@ -33935,7 +33935,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
-  console.log('sticky nav - JS WORKS!!!');
   let scrollActiveLink = '';
 
   /*
