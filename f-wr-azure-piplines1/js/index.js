@@ -33935,6 +33935,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function launch(el) {
+  console.log('sticky nav - JS WORKS!!!');
   let scrollActiveLink = '';
 
   /*
@@ -35493,7 +35494,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function prepareStickySideNav(navigation) {
-  console.log('prepareStickySideNav - JS WORKS!!!');
   const NAVIGATION = navigation[0];
   if (NAVIGATION) {
     const BANNER = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.banner')[0];
