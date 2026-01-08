@@ -4196,6 +4196,7 @@ svg:not(:root) {
         right: 0.5rem; } }
 
 .header__wrapper {
+  background-color: aqua;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
