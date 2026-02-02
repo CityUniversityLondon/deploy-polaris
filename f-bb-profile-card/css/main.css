@@ -28996,13 +28996,14 @@ div.widget-123_test_ {
 v26 Profile
 =======*/
 .v26-person-profiles__heading {
-  margin-bottom: 2rem; }
-  .v26-person-profiles__heading span {
-    font-size: 1.125rem;
-    color: #ffffff;
-    background-color: #d61726;
-    padding: 0.25rem 0.5rem;
-    margin-bottom: 0.5rem; }
+  display: inline-block;
+  width: auto;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: #ffffff;
+  background-color: #d61726;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem; }
 
 .v26-person-profile {
   display: grid;
@@ -29040,7 +29041,8 @@ v26 Profile
       text-decoration: underline; }
 
 .v26-person-profile__tags {
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 0.889rem; }
   .v26-person-profile__tags ul {
     margin: 0;
     border: 0;
