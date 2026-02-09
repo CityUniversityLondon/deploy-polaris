@@ -28999,11 +28999,9 @@ v26 Profile
   display: inline-block;
   width: auto;
   margin-bottom: 2rem;
-  font-size: 1.125rem;
   color: #ffffff;
   background-color: #d61726;
-  padding: 0.25rem 0.5rem;
-  margin-bottom: 0.5rem; }
+  padding: 0.5rem; }
 
 .v26-person-profile {
   display: grid;
@@ -29086,7 +29084,11 @@ v26 Profile
     overflow: visible; }
   .v26-person-profile__image img {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: left top; }
   .v26-person-profile__image:after {
     content: '';
     position: absolute;
@@ -29095,6 +29097,11 @@ v26 Profile
     border: 2px solid #d61726;
     top: -8px;
     left: -8px; }
+
+.v26-person-profile__image-inner {
+  width: 120px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden; }
 
 .unibuddy-profiles {
   padding: 2rem 0; }
