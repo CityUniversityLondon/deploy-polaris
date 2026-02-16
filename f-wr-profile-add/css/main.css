@@ -23942,8 +23942,13 @@ input.header-toggle-input {
       padding-top: 3.5rem; } }
   .cass-experts .standfirst {
     text-align: left; }
-  .cass-experts .contact-list {
+  .cass-experts .contact-lists {
+    display: flex;
+    gap: 2rem;
     margin-bottom: 2rem; }
+    @media (max-width: 649px) {
+      .cass-experts .contact-lists {
+        flex-direction: column; } }
   .cass-experts .academic-details__content:not(#about) ol,
   .cass-experts .academic-details__content:not(#about) ul {
     margin-left: 0; }
