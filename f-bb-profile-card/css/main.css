@@ -29097,11 +29097,10 @@ v26 Profile
     border: 2px solid #d61726;
     top: -8px;
     left: -8px; }
-
-.v26-person-profile__image-inner {
-  width: 120px;
-  aspect-ratio: 1 / 1;
-  overflow: hidden; }
+  .v26-person-profile__image-inner {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden; }
 
 .unibuddy-profiles {
   padding: 2rem 0; }
