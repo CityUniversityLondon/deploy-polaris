@@ -9219,7 +9219,7 @@ svg:not(:root) {
       grid-column: 1/-1; }
     .courses-v23__structure .courses-v23__structure__content {
       grid-column: 1/12; }
-    .courses-v23__structure .courses-v23__structure__image {
+    .courses-v23__structure .courses-v23__structure__image, .courses-v23__structure .courses-v23__structure__blogs {
       grid-column: 12/-1; }
     .courses-v23__structure .accordion-v23 {
       grid-column: 1/12; } }
@@ -9389,7 +9389,7 @@ svg:not(:root) {
 @media (min-width: 901px) {
   .mba-courses-v23 .courses-v23__structure .courses-v23__structure__content {
     grid-column: 1/12; }
-  .mba-courses-v23 .courses-v23__structure .courses-v23__structure__image {
+  .mba-courses-v23 .courses-v23__structure .courses-v23__structure__image, .mba-courses-v23 .courses-v23__structure .courses-v23__structure__blogs {
     grid-column: 12/-1; }
   .mba-courses-v23 .courses-v23__structure .accordion-v23 {
     grid-column: 1/12; } }
@@ -30614,6 +30614,95 @@ html {
   background: #1e1e1e; }
 
 .courses-v23 .courses-v23__careers__alumni .slider-v23__container {
+  background: linear-gradient(to right, #666666 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #666666 3rem, transparent 3rem) 0% 100%;
+  background-repeat: repeat, repeat;
+  background-size: auto, auto;
+  background-repeat: no-repeat;
+  background-size: 3rem 3rem; }
+
+.js .courses-v23__structure__blogs .slider-v23__heading {
+  padding: 0 1.5rem;
+  margin-bottom: 0;
+  font-size: 1.728rem; }
+
+.js .courses-v23__structure__blogs .slider-v23__container {
+  padding: 1.5rem; }
+
+.js .courses-v23__structure__blogs .slider-v23__cards[data-style='dots'] {
+  box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  margin: 0; }
+  .js .courses-v23__structure__blogs .slider-v23__cards[data-style='dots'] .blog-card-v23 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; }
+
+.js .courses-v23__structure__blogs .blog-card-v23__content__image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .js .courses-v23__structure__blogs .blog-card-v23__content__image img {
+    width: 6.5rem;
+    background-clip: padding-box;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .js .courses-v23__structure__blogs .blog-card-v23__content__image:after {
+    content: '';
+    display: block;
+    height: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 4rem; }
+
+.js .courses-v23__structure__blogs .blog-card-v23__content__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem; }
+
+.js .courses-v23__structure__blogs .blog-card-v23__content__details__column {
+  font-weight: 700;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  font-size: 1.2rem; }
+  .js .courses-v23__structure__blogs .blog-card-v23__content__details__column i,
+  .js .courses-v23__structure__blogs .blog-card-v23__content__details__column em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+
+.blog-card-v23__cta__link {
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
+  font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 0.12rem solid #1e1e1e; }
+  .blog-card-v23__cta__link i,
+  .blog-card-v23__cta__link em {
+    font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
+  .blog-card-v23__cta__link:hover, .blog-card-v23__cta__link:focus, .blog-card-v23__cta__link:active {
+    outline-offset: 0.1875rem; }
+
+@media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
+  .blog-card-v23__cta__link {
+    font-size: 40px; } }
+
+@media (min-width: 1600px) and (min-width: 7680px) {
+  .blog-card-v23__cta__link {
+    font-size: 92px; } }
+  .blog-card-v23__cta__link:hover, .blog-card-v23__cta__link:focus, .blog-card-v23__cta__link:active {
+    background-color: #3d3d3d;
+    color: #ffffff; }
+
+.blog-card-v23__content__image:after {
+  background: #1e1e1e; }
+
+.courses-v23 .courses-v23__structure__blog .slider-v23__container {
   background: linear-gradient(to right, #666666 3rem, transparent 3rem) 0% 100%, linear-gradient(to top, #666666 3rem, transparent 3rem) 0% 100%;
   background-repeat: repeat, repeat;
   background-size: auto, auto;
