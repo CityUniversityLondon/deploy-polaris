@@ -9142,7 +9142,7 @@ svg:not(:root) {
 .courses-v23 h2:not(.accordion-v23__heading),
 .courses-v23 h3:not(.accordion-v23__heading),
 .courses-v23 h4:not(.accordion-v23__heading),
-.courses-v23 a:not(.accordion-v23__heading):not(.course-card-v23__anchor) {
+.courses-v23 a:not(.accordion-v23__heading):not(.course-card-v23__anchor):not(.blog-card-v23__anchor) {
   max-width: 60ch; }
 
 .courses-v23 table {
@@ -30690,6 +30690,13 @@ html {
 .js .courses-v23__structure__blogs .embla__slide[tabindex='-1'] {
   max-height: 10rem; }
 
+.js .courses-v23__structure__blogs .embla__slide[tabindex='0']:focus .blog-card-v23, .js .courses-v23__structure__blogs .embla__slide[tabindex='0']:active .blog-card-v23 {
+  outline-color: #1e1e1e;
+  outline-offset: 0.24rem;
+  outline-style: dotted;
+  outline-width: 0.12rem;
+  outline-offset: -0.24rem; }
+
 .js .courses-v23__structure__blogs .embla__row {
   display: flex;
   gap: 2rem;
@@ -30721,7 +30728,8 @@ html {
   font-weight: 700;
   background-color: transparent;
   color: #1e1e1e;
-  border: 0.12rem solid #1e1e1e; }
+  border: 0.12rem solid #1e1e1e;
+  margin-bottom: 2rem; }
   .js .courses-v23__structure__blogs .blog-card-v23__cta__link i,
   .js .courses-v23__structure__blogs .blog-card-v23__cta__link em {
     font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
