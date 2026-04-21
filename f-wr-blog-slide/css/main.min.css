@@ -30654,7 +30654,8 @@ html {
   .blog-card-v23 .blog-card-v23__content__pattern {
     background: radial-gradient(ellipse at center, #a1a1a1, #a1a1a1 0.0625rem, transparent 0, transparent 100%);
     background-size: 1.25rem 1.25rem;
-    height: 2rem; }
+    height: 2rem;
+    background-position: -0.5rem top; }
   .blog-card-v23 .blog-card-v23__content__summary p {
     font-size: 1rem;
     line-height: 1.625;
@@ -30687,39 +30688,39 @@ html {
     .blog-card-v23 .blog-card-v23__content__details__column em {
       font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
 
-.js .courses-v23__structure__blogs .embla__slide[tabindex='-1'] {
+.courses-v23__structure__blogs .embla__slide[tabindex='-1'] {
   max-height: 10rem; }
 
-.js .courses-v23__structure__blogs .embla__slide[tabindex='0']:focus .blog-card-v23, .js .courses-v23__structure__blogs .embla__slide[tabindex='0']:active .blog-card-v23 {
+.courses-v23__structure__blogs .embla__slide[tabindex='0']:focus .blog-card-v23, .courses-v23__structure__blogs .embla__slide[tabindex='0']:active .blog-card-v23 {
   outline-color: #1e1e1e;
   outline-offset: 0.24rem;
   outline-style: dotted;
   outline-width: 0.12rem;
-  outline-offset: -0.24rem; }
+  outline-offset: -0.18rem; }
 
-.js .courses-v23__structure__blogs .embla__row {
+.courses-v23__structure__blogs .embla__row {
   display: flex;
   gap: 2rem;
   justify-content: space-between; }
 
-.js .courses-v23__structure__blogs .embla__heading {
+.courses-v23__structure__blogs .embla__heading {
   margin-bottom: 2rem;
   font-size: 1.728rem;
   flex: 1; }
 
-.js .courses-v23__structure__blogs .embla__btns {
+.courses-v23__structure__blogs .embla__btns {
   flex: 1;
   justify-content: flex-end; }
 
-.js .courses-v23__structure__blogs .embla__viewport {
+.courses-v23__structure__blogs .embla__viewport {
   box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
   margin: 0; }
 
-.js .courses-v23__structure__blogs .blog-card-v23 {
+.courses-v23__structure__blogs .blog-card-v23 {
   padding: 2rem; }
 
-.js .courses-v23__structure__blogs .blog-card-v23__cta__link {
+.courses-v23__structure__blogs .blog-card-v23__cta__link {
   font-size: 1rem;
   padding: 0.5rem;
   font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
@@ -30730,20 +30731,20 @@ html {
   color: #1e1e1e;
   border: 0.12rem solid #1e1e1e;
   margin-bottom: 2rem; }
-  .js .courses-v23__structure__blogs .blog-card-v23__cta__link i,
-  .js .courses-v23__structure__blogs .blog-card-v23__cta__link em {
+  .courses-v23__structure__blogs .blog-card-v23__cta__link i,
+  .courses-v23__structure__blogs .blog-card-v23__cta__link em {
     font-feature-settings: 'ss01' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1; }
-  .js .courses-v23__structure__blogs .blog-card-v23__cta__link:hover, .js .courses-v23__structure__blogs .blog-card-v23__cta__link:focus, .js .courses-v23__structure__blogs .blog-card-v23__cta__link:active {
+  .courses-v23__structure__blogs .blog-card-v23__cta__link:hover, .courses-v23__structure__blogs .blog-card-v23__cta__link:focus, .courses-v23__structure__blogs .blog-card-v23__cta__link:active {
     outline-offset: 0.1875rem; }
 
 @media (min-width: 1600px) and (min-width: 3840px) and (max-width: 7679px) {
-  .js .courses-v23__structure__blogs .blog-card-v23__cta__link {
+  .courses-v23__structure__blogs .blog-card-v23__cta__link {
     font-size: 40px; } }
 
 @media (min-width: 1600px) and (min-width: 7680px) {
-  .js .courses-v23__structure__blogs .blog-card-v23__cta__link {
+  .courses-v23__structure__blogs .blog-card-v23__cta__link {
     font-size: 92px; } }
-  .js .courses-v23__structure__blogs .blog-card-v23__cta__link:hover, .js .courses-v23__structure__blogs .blog-card-v23__cta__link:focus, .js .courses-v23__structure__blogs .blog-card-v23__cta__link:active {
+  .courses-v23__structure__blogs .blog-card-v23__cta__link:hover, .courses-v23__structure__blogs .blog-card-v23__cta__link:focus, .courses-v23__structure__blogs .blog-card-v23__cta__link:active {
     background-color: #1e1e1e;
     color: #ffffff; }
 
