@@ -33056,9 +33056,9 @@ main > article .v26-finder .v26-finder__results__list.v26-finder__results__list-
   font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
   font-family: "ff-meta-web-pro", "Helvetica Neue", Tahoma, Verdana, sans-serif;
   font-feature-settings: 'ss01' 0, 'ss02' 0, 'lnum' 1, 'onum' 0, 'pnum' 1, 'tnum' 0, 'liga' 1;
-  font-size: 1.424rem;
+  font-size: 1.266rem;
   line-height: 1.33333;
-  letter-spacing: -0.013em;
+  letter-spacing: -0.011em;
   font-style: normal;
   font-weight: 600;
   text-align: left; }
@@ -33079,11 +33079,11 @@ main > article .v26-finder .v26-finder__results__list.v26-finder__results__list-
 
 @media (min-width: 1200px) and (max-width: 1919px) {
   .v26-finder__results__summary__heading {
-    letter-spacing: -0.015em; } }
+    letter-spacing: -0.013em; } }
 
 @media (min-width: 1920px) and (max-width: 3839px) {
   .v26-finder__results__summary__heading {
-    letter-spacing: -0.016em; } }
+    letter-spacing: -0.015em; } }
 
 @media (min-width: 3840px) and (max-width: 7679px) {
   .v26-finder__results__summary__heading {
@@ -33316,8 +33316,10 @@ main > article .v26-finder .v26-finder__results__list.v26-finder__results__list-
         padding-bottom: 0.12rem; }
     .v26-pagination__wrapper .v26-pagination__controls a,
     .v26-pagination__wrapper .v26-pagination__controls button,
-    .v26-pagination__wrapper .v26-pagination__controls > span,
-    .v26-pagination__wrapper .v26-pagination__controls .v26-pagination__controls__ellipsis {
+    .v26-pagination__wrapper .v26-pagination__controls .v26-pagination__controls__ellipsis,
+    .v26-pagination__wrapper .v26-pagination__controls span.v26-pagination__controls__button--next,
+    .v26-pagination__wrapper .v26-pagination__controls span.v26-pagination__controls__button--prev,
+    .v26-pagination__wrapper .v26-pagination__controls [aria-current='page'] {
       margin-right: 0.5rem;
       margin-top: 0.75rem;
       min-height: 2.5rem;
@@ -33327,10 +33329,14 @@ main > article .v26-finder .v26-finder__results__list.v26-finder__results__list-
       .v26-pagination__wrapper .v26-pagination__controls a span,
       .v26-pagination__wrapper .v26-pagination__controls button :before,
       .v26-pagination__wrapper .v26-pagination__controls button span,
-      .v26-pagination__wrapper .v26-pagination__controls > span :before,
-      .v26-pagination__wrapper .v26-pagination__controls > span span,
       .v26-pagination__wrapper .v26-pagination__controls .v26-pagination__controls__ellipsis :before,
-      .v26-pagination__wrapper .v26-pagination__controls .v26-pagination__controls__ellipsis span {
+      .v26-pagination__wrapper .v26-pagination__controls .v26-pagination__controls__ellipsis span,
+      .v26-pagination__wrapper .v26-pagination__controls span.v26-pagination__controls__button--next :before,
+      .v26-pagination__wrapper .v26-pagination__controls span.v26-pagination__controls__button--next span,
+      .v26-pagination__wrapper .v26-pagination__controls span.v26-pagination__controls__button--prev :before,
+      .v26-pagination__wrapper .v26-pagination__controls span.v26-pagination__controls__button--prev span,
+      .v26-pagination__wrapper .v26-pagination__controls [aria-current='page'] :before,
+      .v26-pagination__wrapper .v26-pagination__controls [aria-current='page'] span {
         align-self: center; }
     .v26-pagination__wrapper .v26-pagination__controls [data-page] {
       display: none; }
@@ -33344,6 +33350,19 @@ main > article .v26-finder .v26-finder__results__list.v26-finder__results__list-
         display: flex; } }
 
 @media screen {
+    .v26-pagination__wrapper .v26-pagination__controls [aria-current='page'] {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-right: 0.5rem;
+      min-height: 2.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.25rem;
+      background-color: #ffffff;
+      align-self: center;
+      border: 0.0625rem solid transparent;
+      font-weight: 800; }
     .v26-pagination__wrapper .v26-pagination__controls .v26-pagination__controls__ellipsis {
       display: none; } }
   @media screen and (max-width: 767px) {
