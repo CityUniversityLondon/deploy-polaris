@@ -29061,18 +29061,20 @@ v26 Profile
     border: 0;
     list-style: none; }
   .v26-person-profile__tags li {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     display: inline-block;
     position: relative; }
+    .v26-person-profile__tags li a {
+      margin-right: 0.5rem; }
     .v26-person-profile__tags li::after {
       content: "";
       position: absolute;
-      right: -0.5rem;
+      right: 0;
       top: 50%;
       transform: translateY(-50%);
       height: 65%;
-      width: 2px;
-      background: #1e1e1e; }
+      border-right: 0.12rem solid #1e1e1e;
+      width: 0; }
     .v26-person-profile__tags li:last-child::after {
       content: none; }
 
