@@ -30715,7 +30715,7 @@ html {
   justify-content: flex-end; }
 
 .courses-v23__structure__blogs .embla__viewport {
-  box-shadow: 0 0 1.5rem 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 1.5rem 0.1875rem rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
   margin: 0; }
 
