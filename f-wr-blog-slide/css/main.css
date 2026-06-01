@@ -10722,7 +10722,7 @@ svg:not(:root) {
   margin-bottom: 2rem; }
   .slider-default-v26 .embla__slide[tabindex='-1'] {
     max-height: 20rem; }
-  .slider-default-v26 img {
+  .slider-default-v26 .embla__slide__image {
     object-fit: cover;
     width: 100%; }
   .slider-default-v26 .embla__btns {

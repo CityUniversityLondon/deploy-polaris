@@ -35308,12 +35308,9 @@ Add your own classes to customise styling, but keep the embla__* classes.
 
 
 const className = 'embla';
-
-// List of slider class names that require focus on the active slide when it settles. 
-const slidersUsingFocus = ['slider-default-v26'];
 function launch(emblaNode) {
-  // Check if the slider has a class that requires focus on the active slide
-  const focusOnActiveSlide = slidersUsingFocus.some(className => emblaNode.classList.contains(className));
+  // Check if the slider has an attribute to disable focus on the active slide set to true
+  const disableFocusOnActiveSlide = emblaNode.getAttribute('data-disable-focus-on-active-slide');
   const OPTIONS = {
     slidesToScroll: 1,
     align: 'start',
@@ -35345,7 +35342,7 @@ function launch(emblaNode) {
   emblaApi.on('init', slidesInView).on('reInit', slidesInView).on('slidesInView', slidesInView);
 
   // Only focus on the active slide for sliders that require it
-  focusOnActiveSlide ? emblaApi.on('settle', focusOnSlide) : null;
+  disableFocusOnActiveSlide === 'true' ? null : emblaApi.on('settle', focusOnSlide);
   emblaApi.on('destroy', removePrevNextBtnsClickHandlers);
 }
 /* harmony default export */ __webpack_exports__["default"] = ({
