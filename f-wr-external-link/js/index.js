@@ -35680,18 +35680,8 @@ __webpack_require__.r(__webpack_exports__);
     Therefore must be applied to span tag so it's in the title
 */
 
-//if ($('body').is('[class*="scp"]')) {
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('a').each(function () {
-  console.log('linkIcons.js is running');
-  /*
-  if (
-      $(this)
-          .parents()
-          .hasClass('left-hand-navigation-grid')
-  ) {
-          */
-  //  If link is external add class external which will allow FA icon (linkIcons.scss)
-
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('main a').each(function () {
+  console.log('External link finder V2 is running');
   if (checkLinkExternal(this) && !checkImage(this) && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).hasClass('pathway-card__anchor') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parents().hasClass('hallway__item')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('link__external');
   }
@@ -35707,9 +35697,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('a').each(function () {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).find('span').addClass('link__external');
     }
   }
-  //}
 });
-//}
 
 /* 
     checkLinkExternal: checks if link goes outside of domain (CASS)
@@ -35717,9 +35705,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('a').each(function () {
     checkImage: checks if image is wrapped in an A tag
 */
 function checkLinkExternal(link) {
-  if (!(location.hostname === link.hostname || !link.hostname.length) &&
-  //!$(link).hasClass('cta') &&
-  !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('connect-social__card') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('socialmedia-card')) {
+  console.log(`location.hostname: ${location.hostname}`);
+  console.log(`link.hostname: ${link.hostname}`);
+  if (!(location.hostname === link.hostname || link.hostname === 'www.bayes.city.ac.uk' || !link.hostname.length) && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).hasClass('cta') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('connect-social__card') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('socialmedia-card')) {
     return true;
   }
   return false;
