@@ -35705,8 +35705,6 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('main a').each(function () {
     checkImage: checks if image is wrapped in an A tag
 */
 function checkLinkExternal(link) {
-  console.log(`location.hostname: ${location.hostname}`);
-  console.log(`link.hostname: ${link.hostname}`);
   if (!(location.hostname === link.hostname || link.hostname === 'www.bayes.city.ac.uk' || !link.hostname.length) && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).hasClass('cta') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('connect-social__card') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('socialmedia-card')) {
     return true;
   }
