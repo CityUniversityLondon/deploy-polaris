@@ -35681,7 +35681,6 @@ __webpack_require__.r(__webpack_exports__);
 */
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('main a').each(function () {
-  console.log('External link finder V2 is running');
   if (checkLinkExternal(this) && !checkImage(this) && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).hasClass('pathway-card__anchor') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parents().hasClass('hallway__item')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('link__external');
   }
