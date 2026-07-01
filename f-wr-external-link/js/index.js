@@ -35673,11 +35673,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /*
-    This will only run for standard content pages and only in the container
-    It will add an external link to any a tag that is outside the CASS domain
+    This pattern has now been updated to run on all pages, it ignores the header and footer links and will only run on the main content of the page.
+    It will add an external link to any a tag that is outside the Bayes domain.
 
-    Specific cases have been made to work on span tags for pathway cards and hallway items so the external link icon occurs after the title
-    Therefore must be applied to span tag so it's in the title
+    Specific cases have been made to work on span tags for pathway cards and hallway items so the external link icon occurs after the title.
+    Therefore must be applied to span tag so it's in the title.
 */
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('main a').each(function () {
@@ -35700,9 +35700,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('main a').each(function () {
 });
 
 /* 
-    checkLinkExternal: checks if link goes outside of domain (CASS)
+    checkLinkExternal: checks if link goes outside of domain (Bayes)
     checkLinkPDF: checks if link contains .pdf
-    checkImage: checks if image is wrapped in an A tag
+    checkImage: checks if achor element contains an image
 */
 function checkLinkExternal(link) {
   if (!(location.hostname === link.hostname || link.hostname === 'www.bayes.city.ac.uk' || !link.hostname.length) && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).hasClass('cta') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('connect-social__card') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('socialmedia-card')) {
@@ -35717,7 +35717,7 @@ function checkLinkPDF(linkPDF) {
   return false;
 }
 function checkImage(linkImage) {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(linkImage).children('img').length) {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(linkImage).find('img').length) {
     return true;
   }
   return false;
