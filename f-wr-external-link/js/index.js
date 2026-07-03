@@ -35704,7 +35704,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('main a').each(function () {
     checkImage: checks if achor element contains an image
 */
 function checkLinkExternal(link) {
-  if (!(location.hostname === link.hostname || link.hostname === 'www.bayes.city.ac.uk' || !link.hostname.length) && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).hasClass('cta') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('connect-social__card') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('socialmedia-card')) {
+  if (!(location.hostname === link.hostname || link.hostname.includes('bayes.city.ac.uk') || !link.hostname.length) && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).hasClass('cta') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('connect-social__card') && !jquery__WEBPACK_IMPORTED_MODULE_0___default()(link).parents().hasClass('socialmedia-card')) {
     return true;
   }
   return false;
