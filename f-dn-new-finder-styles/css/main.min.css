@@ -33063,7 +33063,8 @@ html {
 
 @media (min-width: 768px) {
   .wrapper--v26-finder__filters .v26-finder__filters {
-    display: block; }
+    display: block;
+    margin-bottom: 3rem; }
     .wrapper--v26-finder__filters .v26-finder__filters .v26-finder__filter,
     .wrapper--v26-finder__filters .v26-finder__filters .v26-finder__filters__reset--desktop {
       margin-right: 1rem;
