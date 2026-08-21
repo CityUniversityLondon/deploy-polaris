@@ -32991,7 +32991,7 @@ html {
   .v26-finder__tag a .icon {
     color: #e60e67; }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .wrapper--v26-finder__filters .v26-finder__filters {
     display: block; }
     .wrapper--v26-finder__filters .v26-finder__filters .v26-finder__filter,
@@ -33004,7 +33004,7 @@ html {
       margin-right: 1rem;
       margin-top: 0.25rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .wrapper--v26-finder_filters--filters {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33040,7 +33040,7 @@ html {
 .v26-finder__filter + .v26-finder__filters__nofilters {
   display: none; }
 
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .wrapper--v26-finder__filters[data-open='true'] {
     background-color: #ffffff;
     bottom: 0;
@@ -33059,12 +33059,12 @@ html {
       padding-bottom: 4.5rem; }
   .wrapper--v26-finder__filters .v26-finder__filters {
     margin-bottom: 3rem; } }
-  @media (max-width: 767px) and (min-width: 768px) {
+  @media (max-width: 899px) and (min-width: 768px) {
     .wrapper--v26-finder__filters .v26-finder__filters {
       padding-left: 1.5rem;
       padding-right: 1.5rem; } }
 
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .wrapper--v26-finder__filters .wrapper--v26-finder_filters--filters {
     background-color: #ffffff; }
   .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply {
@@ -33072,11 +33072,11 @@ html {
     bottom: 0;
     color: #ffffff;
     width: 100%; } }
-  @media (max-width: 767px) and (min-width: 768px) {
+  @media (max-width: 899px) and (min-width: 900px) {
     .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply {
       display: none; } }
 
-@media (max-width: 767px) {
+@media (max-width: 899px) {
     .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button {
       color: #ffffff;
       border: 0;
@@ -33095,11 +33095,11 @@ html {
         border-bottom-style: solid;
         border-bottom-width: 0.12rem; } }
 
-@media (max-width: 767px) and (min-width: 433px) {
+@media (max-width: 899px) and (min-width: 433px) {
   .wrapper--v26-finder__filters .v26-finder__reset {
     margin-left: 2.5rem; } }
 
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .wrapper--v26-finder__filters .v26-finder__reset .icon {
     display: none; }
   .wrapper--v26-finder__filters .v26-finder__filters__reset--desktop {
@@ -33114,7 +33114,7 @@ html {
     .wrapper--v26-finder__filters[data-open='false'] .wrapper--v26-finder__filters--mobile__apply {
       display: none; } }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .wrapper--v26-finder__filters {
     width: 100%; }
     .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply {
@@ -33124,7 +33124,7 @@ html {
   border: solid 0.06rem #1e1e1e;
   margin-top: 1rem;
   width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     .wrapper--v26-finder__filters--mobile__toggle {
       display: none; } }
   .wrapper--v26-finder__filters--mobile__toggle:active, .wrapper--v26-finder__filters--mobile__toggle:focus {
@@ -33511,6 +33511,9 @@ html {
     outline-offset: 0.24rem;
     outline-style: dotted;
     outline-width: 0.12rem; }
+  @media (min-width: 901px) {
+    .wrapper--v26-finder__filters--mobile__filters__close {
+      display: none; } }
   .wrapper--v26-finder__filters--mobile__filters__close:focus {
     outline-offset: -0.26rem; }
   .wrapper--v26-finder__filters--mobile__filters__close span {
