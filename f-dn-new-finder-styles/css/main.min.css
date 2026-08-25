@@ -33869,7 +33869,7 @@ html {
         padding-left: 0.5rem;
         padding-right: 0.5rem; }
     .v26-pagination__wrapper .v26-pagination__controls .v26-pagination__controls__element {
-      min-width: 3rem;
+      min-width: 2rem;
       justify-content: center;
       text-align: center; } }
     @media screen and (max-width: 431px) {
@@ -34035,6 +34035,11 @@ html {
 @media screen {
   .content .v26-pagination__wrapper, .content--fixed .v26-pagination__wrapper {
     max-width: 60ch; } }
+
+.v26-pagination__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 @media print {
   .v26-pagination__wrapper .v26-pagination__controls,
@@ -34158,7 +34163,7 @@ html {
         padding-left: 0.5rem;
         padding-right: 0.5rem; }
     .v26-pagination__wrapper .v26-pagination__controls .v26-pagination__controls__element {
-      min-width: 3rem;
+      min-width: 2rem;
       justify-content: center;
       text-align: center; } }
     @media screen and (max-width: 431px) {
@@ -34324,6 +34329,11 @@ html {
 @media screen {
   .content .v26-pagination__wrapper, .content--fixed .v26-pagination__wrapper {
     max-width: 60ch; } }
+
+.v26-pagination__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .v26-finder .card {
   list-style-type: none;
