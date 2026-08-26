@@ -34028,7 +34028,8 @@ html {
 .wrapper--v26-finder__filters--mobile__toggle {
   border: solid 0.06rem #1e1e1e;
   margin-top: 1rem;
-  width: 100%; }
+  width: -moz-fit-content;
+  width: fit-content; }
   @media (min-width: 900px) {
     .wrapper--v26-finder__filters--mobile__toggle {
       display: none; } }
