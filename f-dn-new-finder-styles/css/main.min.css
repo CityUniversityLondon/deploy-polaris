@@ -33710,6 +33710,7 @@ html {
   flex-wrap: wrap; }
 
 .v26-finder__results {
+  padding-top: 1rem;
   width: 100%; }
   .v26-finder__results .wrapper--card__label__details {
     width: 100%; }
@@ -34354,12 +34355,15 @@ html {
   border-bottom-color: initial;
   border-bottom-width: initial;
   border-bottom: 0.06rem solid #646464;
+  padding: initial;
   padding-top: 2.25rem;
   padding-bottom: 2.25rem; }
   .v26-finder .card:hover, .v26-finder .card:focus, .v26-finder .card:active {
     background-color: inherit;
     color: inherit;
     outline-width: 0; }
+  .v26-finder .card:first-child {
+    padding-top: initial; }
   .v26-finder .card, .v26-finder .card:focus, .v26-finder .card:active, .v26-finder .card:visited {
     box-shadow: initial; }
   .v26-finder .card .card__heading {
@@ -34407,7 +34411,7 @@ html {
         background-size: 100% 100%;
         background-image: linear-gradient(120deg, #0c0c0e 0%, #0c0c0e 100%); }
   .v26-finder .card .card__type {
-    color: #888888;
+    color: #555555;
     margin-bottom: 0.5rem; }
   .v26-finder .card .card__description {
     margin-bottom: 0.5rem; }
@@ -34627,7 +34631,7 @@ html {
   display: block;
   height: 0.79rem;
   width: 1rem;
-  background-color: #1e1e1e;
+  background-color: #3457F1;
   -webkit-mask: url("https://www.bayes.citystgeorges.ac.uk/__data/assets/file/0008/1012121/fa-shape-checker.svg") no-repeat center/contain;
   mask: url("https://www.bayes.citystgeorges.ac.uk/__data/assets/file/0008/1012121/fa-shape-checker.svg") no-repeat center/contain; }
 
