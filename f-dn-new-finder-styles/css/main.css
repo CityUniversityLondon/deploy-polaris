@@ -33961,7 +33961,7 @@ html {
     right: 0;
     top: 0;
     width: 100vw;
-    z-index: 4;
+    z-index: 6;
     padding: 3rem 3rem 2.75rem; }
     .wrapper--v26-finder__filters[data-open='true'] .wrapper--v26-finder__filters--mobile__filters {
       -webkit-overflow-scrolling: touch;
@@ -33979,7 +33979,7 @@ html {
   .wrapper--v26-finder__filters .wrapper--v26-finder_filters--filters {
     background-color: #ffffff; }
   .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply {
-    background-color: #2e767a;
+    background-color: #1e1e1e;
     bottom: 0;
     color: #ffffff;
     width: 100%; } }
@@ -33994,6 +33994,9 @@ html {
       padding-bottom: 1rem;
       padding-top: 1rem;
       width: 100%; }
+      .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button:focus {
+        outline: 0.18rem dotted #1e1e1e;
+        outline-offset: 0.18rem; }
       .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button .icon {
         left: 1rem;
         padding-bottom: 0.25rem;
