@@ -33211,6 +33211,9 @@ html {
     background-color: #777777;
     color: #ffffff;
     border: initial; }
+  .v26-finder__clear-filter-tag:focus, .v26-finder__clear-filter-tag:active {
+    outline: 0.18rem solid #1e1e1e;
+    outline-offset: 0.1875rem; }
 
 @media (min-width: 901px) {
   .v26-finder__filters__heading {
@@ -33275,12 +33278,13 @@ html {
   top: 1rem;
   color: #ffffff;
   font-size: 1.5rem;
-  padding: 0.18rem; }
+  padding: initial; }
   @media (min-width: 901px) {
     .wrapper--v26-finder__filters--mobile__filters__close {
       display: none; } }
   .wrapper--v26-finder__filters--mobile__filters__close:focus, .wrapper--v26-finder__filters--mobile__filters__close:active {
-    outline: 0.18rem solid #1e1e1e; }
+    outline: 0.18rem solid #1e1e1e;
+    outline-offset: 0.1875rem; }
   .wrapper--v26-finder__filters--mobile__filters__close span {
     display: flex;
     justify-content: center;
@@ -34039,11 +34043,8 @@ html {
     .wrapper--v26-finder__filters--mobile__toggle {
       display: none; } }
   .wrapper--v26-finder__filters--mobile__toggle:active, .wrapper--v26-finder__filters--mobile__toggle:focus {
-    outline-color: #1e1e1e;
-    outline-offset: 0.24rem;
-    outline-style: dotted;
-    outline-width: 0.12rem;
-    outline-style: solid; }
+    outline: 0.18rem solid #1e1e1e;
+    outline-offset: 0.1875rem; }
   .wrapper--v26-finder__filters--mobile__toggle[data-filters-applied='true'] .wrapper--v26-finder__filters--mobile__toggle__count {
     color: #ffffff; }
 
@@ -34405,10 +34406,12 @@ html {
         outline: 0.12rem dotted #1e1e1e; }
       .v26-finder .card .card__heading a:hover {
         background-color: #1e1e1e; }
-      .v26-finder .card .card__heading a:focus {
+      .v26-finder .card .card__heading a:focus, .v26-finder .card .card__heading a:active {
         color: #ffffff;
         background-size: 100% 100%;
-        background-image: linear-gradient(120deg, #0c0c0e 0%, #0c0c0e 100%); }
+        background-image: linear-gradient(120deg, #0c0c0e 0%, #0c0c0e 100%);
+        outline: 0.18rem solid #1e1e1e;
+        outline-offset: 0.1875rem; }
   .v26-finder .card .card__type {
     color: #555555;
     margin-bottom: 0.5rem; }
