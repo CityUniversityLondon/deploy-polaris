@@ -33167,7 +33167,8 @@ html {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 1rem; }
   .v26-finder__results__clear-filters:empty {
     display: none; }
   @media (max-width: 899px) {
@@ -33341,11 +33342,8 @@ html {
   display: inline-flex;
   align-items: center;
   font-size: 1rem;
-  font-weight: 600; }
-  @media (max-width: 899px) {
-    .v26-finder__reset {
-      width: -moz-fit-content;
-      width: fit-content; } }
+  font-weight: 600;
+  padding: initial; }
   .v26-finder__reset:focus, .v26-finder__reset:active {
     outline: 0.18rem solid #1e1e1e;
     outline-offset: 0.1875rem;
@@ -33375,6 +33373,9 @@ html {
     text-decoration: none; }
     .wrapper--v26-finder__filters__footer .v26-finder__reset .icon {
       display: none; }
+
+.v26-finder__btn_alt {
+  border: 0.0625rem solid #0c0c0e; }
 
 @media (min-width: 900px) {
   .wrapper--v26-finder_filters--filters {
@@ -33725,11 +33726,6 @@ html {
 .no-js .wrapper--v26-finder__filters[data-open='false'] .v26-finder__filters {
   display: block; }
 
-@media (min-width: 768px) {
-  .v26-finder__reset {
-    height: 3.25rem;
-    margin-right: 1rem; } }
-
 .v26-finder__filter:last-child {
   margin-bottom: 0.75rem; }
 
@@ -33951,73 +33947,61 @@ html {
   display: none; }
 
 @media (max-width: 899px) {
-  .wrapper--v26-finder__filters[data-open='true'] {
-    background-color: #ffffff;
-    bottom: 0;
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100vw;
-    z-index: 6;
-    overflow: hidden;
-    padding: 3rem 3rem 2.75rem; }
-    .wrapper--v26-finder__filters[data-open='true'] .wrapper--v26-finder__filters--mobile__filters {
-      -webkit-overflow-scrolling: touch;
-      overflow-y: scroll; }
-    .wrapper--v26-finder__filters[data-open='true'] .wrapper--v26-finder__filters--mobile__filters__content {
-      padding-bottom: 4.5rem; }
-  .wrapper--v26-finder__filters .v26-finder__filters {
-    margin-bottom: 3rem; } }
-  @media (max-width: 899px) and (min-width: 768px) {
+  .wrapper--v26-finder__filters {
+    width: 100%; }
+    .wrapper--v26-finder__filters[data-open='true'] {
+      background-color: #ffffff;
+      bottom: 0;
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100vw;
+      z-index: 6;
+      overflow: hidden;
+      padding: 3rem 3rem 2.75rem; }
+      .wrapper--v26-finder__filters[data-open='true'] .wrapper--v26-finder__filters--mobile__filters {
+        -webkit-overflow-scrolling: touch;
+        overflow-y: scroll; }
+      .wrapper--v26-finder__filters[data-open='true'] .wrapper--v26-finder__filters--mobile__filters__content {
+        padding-bottom: 4.5rem; }
     .wrapper--v26-finder__filters .v26-finder__filters {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem; } }
-
-@media (max-width: 899px) {
-  .wrapper--v26-finder__filters .wrapper--v26-finder_filters--filters {
-    background-color: #ffffff; }
-  .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply {
-    background-color: #1e1e1e;
-    bottom: 0;
-    color: #ffffff;
-    width: 100%; } }
-  @media (max-width: 899px) and (min-width: 900px) {
+      margin-bottom: 3rem; }
+    .wrapper--v26-finder__filters .wrapper--v26-finder_filters--filters {
+      background-color: #ffffff; }
     .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply {
-      display: none; } }
-
-@media (max-width: 899px) {
-    .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button {
+      bottom: 0;
       color: #ffffff;
-      border: 0;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
-      width: 100%; }
-      .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button:focus {
-        outline: 0.18rem solid #1e1e1e;
-        outline-offset: 0.1875rem; }
-      .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button .icon {
-        left: 1rem;
-        padding-bottom: 0.25rem;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 0.25rem;
-        position: absolute; }
-      .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button .wrapper--v26-finder__filters--mobile__apply__text {
-        border-bottom-color: #ffffff;
-        border-bottom-style: solid;
-        border-bottom-width: 0.12rem; } }
-
-@media (max-width: 899px) and (min-width: 433px) {
-  .wrapper--v26-finder__filters .v26-finder__reset {
-    margin-left: 2.5rem; } }
+      width: 100%; } }
+    @media (max-width: 899px) and (min-width: 900px) {
+      .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply {
+        display: none; } }
 
 @media (max-width: 899px) {
-  .wrapper--v26-finder__filters .v26-finder__reset .icon {
-    display: none; }
-  .wrapper--v26-finder__filters .v26-finder__filters__reset--desktop {
-    display: none; } }
+      .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        border: 0;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        width: 100%; }
+        .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button:focus {
+          outline: 0.18rem solid #1e1e1e;
+          outline-offset: 0.1875rem; }
+        .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button .icon {
+          left: 1rem;
+          padding-bottom: 0.25rem;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 0.25rem;
+          position: absolute; }
+        .wrapper--v26-finder__filters .wrapper--v26-finder__filters--mobile__apply button .wrapper--v26-finder__filters--mobile__apply__text {
+          border-bottom-color: #ffffff;
+          border-bottom-style: solid;
+          border-bottom-width: 0.12rem; }
+    .wrapper--v26-finder__filters .v26-finder__filters__reset--desktop {
+      display: none; } }
 
 @media (max-width: 767px) {
   .wrapper--v26-finder__filters[data-open='false'] {
