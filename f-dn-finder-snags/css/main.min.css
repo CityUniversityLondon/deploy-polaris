@@ -33772,11 +33772,10 @@ html {
       .v26-pagination__wrapper .v26-pagination__controls a:not([aria-current='page']):focus,
       .v26-pagination__wrapper .v26-pagination__controls button:not([aria-current='page']):focus,
       .v26-pagination__wrapper .v26-pagination__controls [aria-current='page']:not([aria-current='page']):focus {
-        outline-color: #1e1e1e;
-        outline-offset: 0.24rem;
-        outline-style: dotted;
-        outline-width: 0.12rem;
+        outline: 0.18rem solid #1e1e1e;
+        outline-offset: 0.1875rem;
         background-image: linear-gradient(120deg, #1e1e1e 0%, #1e1e1e 100%);
+        background-size: 100% 100%;
         color: #ffffff;
         font-weight: 700; } }
     @media screen and (hover: hover) {
@@ -33792,10 +33791,8 @@ html {
       .v26-pagination__wrapper .v26-pagination__controls a:not([aria-current='page']):active,
       .v26-pagination__wrapper .v26-pagination__controls button:not([aria-current='page']):active,
       .v26-pagination__wrapper .v26-pagination__controls [aria-current='page']:not([aria-current='page']):active {
-        outline-color: #1e1e1e;
+        outline: 0.18rem dotted #1e1e1e;
         outline-offset: 0.24rem;
-        outline-style: dotted;
-        outline-width: 0.12rem;
         background-image: linear-gradient(120deg, #1e1e1e 0%, #1e1e1e 100%);
         background-size: 100% 100%;
         color: #ffffff;
