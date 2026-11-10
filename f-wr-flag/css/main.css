@@ -30401,7 +30401,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 1rem; }
-  .unibuddy-card-v23 .unibuddy-card-v23__content__details__flag {
+  .unibuddy-card-v23 .unibuddy-card-v23__content__details__flag img {
     border: 0.06rem solid #a1a1a1; }
   .unibuddy-card-v23 .unibuddy-card-v23__content__details__name {
     font-weight: 700;
@@ -30868,7 +30868,7 @@ html {
 .alumni-card-v23__content__image:after {
   background: #1e1e1e; }
 
-.alumni-card-v23__content__details__flag {
+.alumni-card-v23__content__details__flag img {
   border: 0.06rem solid #a1a1a1; }
 
 .courses-v23 .courses-v23__careers__alumni .slider-v23__container {
