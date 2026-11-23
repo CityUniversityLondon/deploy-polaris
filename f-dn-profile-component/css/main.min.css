@@ -29039,125 +29039,185 @@ v26 Profile
   background-color: #d61726;
   padding: 0.5rem; }
 
-.scp--undergraduate .v26-person-profile--student .v26-person-profile__image:after {
+.scp--undergraduate .v26-person-profiles .v26-person-profile__image:after {
   border-color: #ff4e00; }
 
-.scp--undergraduate .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--undergraduate .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #ff4e00; }
 
-.scp--undergraduate .v26-person-profiles__heading {
+.scp--undergraduate .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #ff4e00; }
+  background-color: #ff4e00;
+  box-shadow: 0.5rem 0 0 #ff4e00, -0.5rem 0 0 #ff4e00;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--masters .v26-person-profile--student .v26-person-profile__image:after {
+.scp--masters .v26-person-profiles .v26-person-profile__image:after {
   border-color: #3457F1; }
 
-.scp--masters .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--masters .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #3457F1; }
 
-.scp--masters .v26-person-profiles__heading {
+.scp--masters .v26-person-profiles h2 .text-highlight {
   color: #ffffff;
-  background-color: #3457F1; }
+  background-color: #3457F1;
+  box-shadow: 0.5rem 0 0 #3457F1, -0.5rem 0 0 #3457F1;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--mba .v26-person-profile--student .v26-person-profile__image:after {
+.scp--mba .v26-person-profiles .v26-person-profile__image:after {
   border-color: #12E97A; }
 
-.scp--mba .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--mba .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #12E97A; }
 
-.scp--mba .v26-person-profiles__heading {
+.scp--mba .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #12E97A; }
+  background-color: #12E97A;
+  box-shadow: 0.5rem 0 0 #12E97A, -0.5rem 0 0 #12E97A;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--mmba .v26-person-profile--student .v26-person-profile__image:after {
+.scp--mmba .v26-person-profiles .v26-person-profile__image:after {
   border-color: #12E97A; }
 
-.scp--mmba .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--mmba .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #12E97A; }
 
-.scp--mmba .v26-person-profiles__heading {
+.scp--mmba .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #12E97A; }
+  background-color: #12E97A;
+  box-shadow: 0.5rem 0 0 #12E97A, -0.5rem 0 0 #12E97A;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--emba .v26-person-profile--student .v26-person-profile__image:after {
+.scp--emba .v26-person-profiles .v26-person-profile__image:after {
   border-color: #12E97A; }
 
-.scp--emba .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--emba .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #12E97A; }
 
-.scp--emba .v26-person-profiles__heading {
+.scp--emba .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #12E97A; }
+  background-color: #12E97A;
+  box-shadow: 0.5rem 0 0 #12E97A, -0.5rem 0 0 #12E97A;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--demba .v26-person-profile--student .v26-person-profile__image:after {
+.scp--demba .v26-person-profiles .v26-person-profile__image:after {
   border-color: #12E97A; }
 
-.scp--demba .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--demba .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #12E97A; }
 
-.scp--demba .v26-person-profiles__heading {
+.scp--demba .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #12E97A; }
+  background-color: #12E97A;
+  box-shadow: 0.5rem 0 0 #12E97A, -0.5rem 0 0 #12E97A;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--omba .v26-person-profile--student .v26-person-profile__image:after {
+.scp--omba .v26-person-profiles .v26-person-profile__image:after {
   border-color: #12E97A; }
 
-.scp--omba .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--omba .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #12E97A; }
 
-.scp--omba .v26-person-profiles__heading {
+.scp--omba .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #12E97A; }
+  background-color: #12E97A;
+  box-shadow: 0.5rem 0 0 #12E97A, -0.5rem 0 0 #12E97A;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--online-msc .v26-person-profile--student .v26-person-profile__image:after {
+.scp--online-msc .v26-person-profiles .v26-person-profile__image:after {
   border-color: #3457F1; }
 
-.scp--online-msc .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--online-msc .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #3457F1; }
 
-.scp--online-msc .v26-person-profiles__heading {
+.scp--online-msc .v26-person-profiles h2 .text-highlight {
   color: #ffffff;
-  background-color: #3457F1; }
+  background-color: #3457F1;
+  box-shadow: 0.5rem 0 0 #3457F1, -0.5rem 0 0 #3457F1;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--phd .v26-person-profile--student .v26-person-profile__image:after {
+.scp--phd .v26-person-profiles .v26-person-profile__image:after {
   border-color: #14cef5; }
 
-.scp--phd .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--phd .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #14cef5; }
 
-.scp--phd .v26-person-profiles__heading {
+.scp--phd .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #14cef5; }
+  background-color: #14cef5;
+  box-shadow: 0.5rem 0 0 #14cef5, -0.5rem 0 0 #14cef5;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--centres .v26-person-profile--student .v26-person-profile__image:after {
+.scp--centres .v26-person-profiles .v26-person-profile__image:after {
   border-color: #d61726; }
 
-.scp--centres .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--centres .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #d61726; }
 
-.scp--centres .v26-person-profiles__heading {
+.scp--centres .v26-person-profiles h2 .text-highlight {
   color: #ffffff;
-  background-color: #d61726; }
+  background-color: #d61726;
+  box-shadow: 0.5rem 0 0 #d61726, -0.5rem 0 0 #d61726;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--executive-education .v26-person-profile--student .v26-person-profile__image:after {
+.scp--executive-education .v26-person-profiles .v26-person-profile__image:after {
   border-color: #e60e67; }
 
-.scp--executive-education .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--executive-education .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #e60e67; }
 
-.scp--executive-education .v26-person-profiles__heading {
+.scp--executive-education .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #e60e67; }
+  background-color: #e60e67;
+  box-shadow: 0.5rem 0 0 #e60e67, -0.5rem 0 0 #e60e67;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
-.scp--corporate .v26-person-profile--student .v26-person-profile__image:after {
+.scp--corporate .v26-person-profiles .v26-person-profile__image:after {
   border-color: #a9a19c; }
 
-.scp--corporate .v26-person-profile--student .v26-person-profile__image-inner:before {
+.scp--corporate .v26-person-profiles .v26-person-profile--student .v26-person-profile__image-inner:before {
   background-color: #a9a19c; }
 
-.scp--corporate .v26-person-profiles__heading {
+.scp--corporate .v26-person-profiles h2 .text-highlight {
   color: #1e1e1e;
-  background-color: #a9a19c; }
+  background-color: #a9a19c;
+  box-shadow: 0.5rem 0 0 #a9a19c, -0.5rem 0 0 #a9a19c;
+  display: inline;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  margin-left: 0.5rem; }
 
 .v26-person-profile {
   display: grid;
