@@ -968,6 +968,12 @@ readers do not read off random characters that represent icons */
 .fa-add::before {
   content: "\2b"; }
 
+.fa-sliders::before {
+  content: "\f1de"; }
+
+.fa-sliders-h::before {
+  content: "\f1de"; }
+
 .fa-star::before {
   content: "\f005"; }
 
@@ -1062,6 +1068,9 @@ readers do not read off random characters that represent icons */
 
 .fa-linkedin-in:before {
   content: "\f0e1"; }
+
+.fa-tiktok:before {
+  content: "\e07b"; }
 
 .fa-twitter:before {
   content: "\f099"; }
@@ -29264,6 +29273,44 @@ v26 Profile
     background-color: #d61726;
     z-index: 1;
     font-size: 0.79rem; }
+
+.v26-person-profile--student .v26-person-profile__programe,
+.v26-person-profile--student .v26-person-profile__research-fields,
+.v26-person-profile--student .v26-person-profile__job-market-paper {
+  margin-bottom: initial;
+  color: #555555; }
+
+.v26-person-profile--student .v26-person-profile__expertise,
+.v26-person-profile--student .v26-person-profile__industries {
+  font-weight: 700;
+  font-size: 0.889rem; }
+  .v26-person-profile--student .v26-person-profile__expertise ul,
+  .v26-person-profile--student .v26-person-profile__industries ul {
+    font-weight: 500;
+    margin-bottom: initial;
+    margin-left: initial;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    .v26-person-profile--student .v26-person-profile__expertise ul li,
+    .v26-person-profile--student .v26-person-profile__industries ul li {
+      position: relative;
+      display: inline-block;
+      margin-top: initial;
+      margin-right: 0.5rem; }
+      .v26-person-profile--student .v26-person-profile__expertise ul li span,
+      .v26-person-profile--student .v26-person-profile__industries ul li span {
+        margin-right: 0.5rem; }
+      .v26-person-profile--student .v26-person-profile__expertise ul li:not(:last-child):after,
+      .v26-person-profile--student .v26-person-profile__industries ul li:not(:last-child):after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 65%;
+        border-right: 0.12rem solid #1e1e1e;
+        width: 0; }
 
 .unibuddy-profiles {
   padding: 2rem 0; }
